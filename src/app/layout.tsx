@@ -4,6 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import { TrackingProvider } from "@/components/TrackingProvider";
 import { CookieConsent } from "@/components/CookieConsent";
 import { RecaptchaScript } from "@/components/RecaptchaScript";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import "./globals.css";
 
 const geist = Geist({
@@ -198,6 +199,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
+        <GoogleAnalytics />
         <RecaptchaScript />
         <TrackingProvider>
           <JsonLd />

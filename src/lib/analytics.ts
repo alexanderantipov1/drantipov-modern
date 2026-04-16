@@ -2,7 +2,7 @@
  * Google Analytics 4 - Analytics utilities
  *
  * This file contains utilities for tracking events and page views
- * with Google Analytics 4.
+ * with Google Analytics 4. Property: G-9RB71866JE
  */
 
 // Extend the Window interface to include gtag

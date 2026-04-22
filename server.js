@@ -3,7 +3,7 @@ const { parse } = require('url');
 const next = require('next');
 
 const hostname = '0.0.0.0';
-const port = 5000;
+const port = parseInt(process.env.PORT || '5000', 10);
 const app = next({ dev: false, hostname, port });
 const handle = app.getRequestHandler();
 

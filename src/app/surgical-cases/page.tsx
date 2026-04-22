@@ -1,7 +1,9 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { Section, Container } from "@/components/sections"
-import { CaseHero, CaseGrid } from "@/components/cases"
+import { CaseGrid } from "@/components/cases"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 import { Button } from "@/components/ui/button"
 import { caseCategories, allCases } from "@/constants/cases"
 import { ArrowRight, Stethoscope, Award, Users } from "lucide-react"
@@ -21,16 +23,7 @@ export default function SurgicalCasesPage() {
 
   return (
     <>
-      <CaseHero
-        title="Surgical Cases"
-        description="Transforming lives through precision surgery. Explore our comprehensive portfolio of successful surgical outcomes across corrective jaw surgery, dental implants, and facial cosmetic procedures."
-        stats={[
-          { label: "Total Cases", value: `${allCases.length}+` },
-          { label: "Jaw Surgery", value: `${caseCategories[0].count}` },
-          { label: "Dental Implants", value: `${caseCategories[1].count}` },
-          { label: "Cosmetic Surgery", value: `${caseCategories[2].count}` },
-        ]}
-      />
+      <PageHero {...heroContent["/surgical-cases"]!} />
 
       {/* Case Categories */}
       <Section background="default" padding="xl">

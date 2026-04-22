@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Calendar, Heart, Star, FileText, Phone, Mail } from "lucide-react"
 import { Metadata } from "next"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Patient Resources | Dr. Antipov Oral Surgery",
@@ -79,28 +81,7 @@ const whatToExpect = [
 export default function ForPatientsPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Patient Resources
-            </h1>
-            <p className="text-lg md:text-xl text-neutral-600 leading-relaxed">
-              Everything you need to prepare for your visit, understand your treatment, and ensure a smooth
-              recovery. We're here to support you every step of the way.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" asChild>
-                <Link href="/for-patients/consultation">Schedule Consultation</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/for-patients/testimonials">Read Patient Stories</Link>
-              </Button>
-            </div>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-patients"]!} />
 
       {/* Quick Access Resources */}
       <Section background="default" padding="xl">

@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Users, GraduationCap, Handshake, Phone, Mail, Award } from "lucide-react"
 import { Metadata } from "next"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "For Dentists - Referrals & Education | Dr. Antipov",
@@ -76,28 +78,7 @@ const whyRefer = [
 export default function ForDentistsPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Partner with Dr. Antipov
-            </h1>
-            <p className="text-lg md:text-xl text-neutral-600 leading-relaxed">
-              Your trusted surgical partner for complex oral surgery and implant cases. Providing seamless
-              referral coordination and continuing education for dental professionals.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" asChild>
-                <Link href="/for-dentists/referral-partners">Refer a Patient</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/for-dentists/education/courses">Browse CE Courses</Link>
-              </Button>
-            </div>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-dentists"]!} />
 
       {/* Services We Provide */}
       <Section background="default" padding="xl">

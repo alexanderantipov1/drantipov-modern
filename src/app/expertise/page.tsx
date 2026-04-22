@@ -1,5 +1,7 @@
 import { Section, Container } from "@/components/sections"
-import { ExpertiseHero, ServiceCard } from "@/components/expertise"
+import { ServiceCard } from "@/components/expertise"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { expertise } from "@/constants/siteConfig"
@@ -13,7 +15,7 @@ export const metadata = {
 export default function ExpertisePage() {
   return (
     <>
-      <ExpertiseHero />
+      <PageHero {...heroContent["/expertise"]!} />
 
       {/* Services Grid */}
       <Section background="default" padding="xl">

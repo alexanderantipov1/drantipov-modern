@@ -11,6 +11,9 @@
   --color-muted: #73879C;
   --color-light: #F7F9FA;
   --color-dark: #283645;
+  --color-navy: #0B1F3A;
+  --color-gold: #C9A352;
+  --color-bone: #F5EFE6;
   --font-sans: var(--font-geist-sans);
 }
 

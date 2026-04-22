@@ -43,9 +43,9 @@ export default function Navbar() {
             <Image
               src="/images/logo-d10cd66c.svg"
               alt="Dr. Alexander Antipov, DDS — Oral and Maxillofacial Surgeon"
-              width={180}
-              height={60}
-              className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+              width={220}
+              height={72}
+              className="h-14 w-auto transition-transform duration-300 group-hover:scale-105"
               priority
             />
           </a>

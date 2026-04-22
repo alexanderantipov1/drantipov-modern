@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import { Award, GraduationCap, Heart } from "lucide-react"
-import { AboutPageHero } from "@/components/about"
+import { AboutPageHero } from "@/components/about/AboutPageHero"
 import {
   getPhysicianSchema,
   getBreadcrumbSchema,

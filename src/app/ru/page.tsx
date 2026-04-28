@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
 import RussianHome from "@/components/RussianHome";
-import {
-  getRussianFunnelStructuredData,
-  russianHomePage,
-  siteUrl,
-} from "@/data/russianImplantFunnel";
-import { structuredDataScript } from "@/lib/structured-data";
+import { russianHomePage, siteUrl } from "@/data/russianImplantFunnel";
 
 export const metadata: Metadata = {
   title: russianHomePage.title,
@@ -33,16 +28,8 @@ export const metadata: Metadata = {
       },
     ],
   },
-  keywords: russianHomePage.keywords,
 };
 
 export default function RussianImplantPage() {
-  const structuredData = getRussianFunnelStructuredData(russianHomePage, "/ru");
-
-  return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={structuredDataScript(structuredData)} />
-      <RussianHome />
-    </>
-  );
+  return <RussianHome />;
 }

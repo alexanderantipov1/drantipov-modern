@@ -173,7 +173,7 @@ export default function PostOpPage() {
               <div>
                 <h3 className="text-lg font-semibold text-neutral-900 mb-2">24/7 Emergency Contact</h3>
                 <p className="text-neutral-700 leading-relaxed mb-2">
-                  For post-operative emergencies outside office hours, call: <a href="tel:9167909693" className="text-red-600 hover:underline font-bold">(916) 790-9693</a>
+                  For post-operative emergencies outside office hours, call: <a href="tel:9167832110" className="text-red-600 hover:underline font-bold">(916) 783-2110</a>
                 </p>
                 <p className="text-sm text-neutral-600">
                   For life-threatening emergencies, call 911 or go to the nearest emergency room.
@@ -393,14 +393,14 @@ export default function PostOpPage() {
             </div>
             <div className="text-center mt-8">
               <a
-                href="tel:9167909693"
+                href="tel:9167832110"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 transition-colors text-lg"
               >
                 <Phone className="h-5 w-5" />
-                Call Office: (916) 790-9693
+                Call Office: (916) 783-2110
               </a>
               <p className="text-sm text-neutral-500 mt-4">
-                After hours emergency: <a href="tel:9167909693" className="text-red-600 font-semibold hover:underline">(916) 790-9693</a>
+                After hours emergency: <a href="tel:9167832110" className="text-red-600 font-semibold hover:underline">(916) 783-2110</a>
               </p>
             </div>
           </GlassCard>

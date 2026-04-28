@@ -66,10 +66,10 @@ export default function CTA() {
               </button>
             </ConsultationModal>
             <a
-              href="tel:9167909693"
+              href="tel:9167832110"
               className="px-10 py-4 bg-white/15 backdrop-blur-sm border-2 border-white/30 text-white rounded-2xl font-bold text-lg hover:bg-white/25 transition-all duration-300"
             >
-              (916) 790-9693
+              (916) 783-2110
             </a>
           </div>
 

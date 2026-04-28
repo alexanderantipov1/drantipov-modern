@@ -129,11 +129,11 @@ export default function Navbar() {
                 </button>
               </ConsultationModal>
               <a
-                href="tel:9167909693"
+                href="tel:9167832110"
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 py-4 bg-dark text-white rounded-2xl text-center font-semibold text-lg"
               >
-                Call (916) 790-9693
+                Call (916) 783-2110
               </a>
             </div>
           </motion.div>

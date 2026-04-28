@@ -339,9 +339,9 @@ export default function JawSurgeryPage() {
                 <Link href="/contact">Schedule Consultation</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href="tel:9167909693">
+                <a href="tel:9167832110">
                   <Phone className="mr-2 h-5 w-5" />
-                  Call (916) 790-9693
+                  Call (916) 783-2110
                 </a>
               </Button>
             </div>

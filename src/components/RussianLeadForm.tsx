@@ -212,7 +212,7 @@ export default function RussianLeadForm({ defaultCity = "", landingPath }: Russi
       </button>
 
       <p className="mt-3 text-center text-xs text-muted">
-        Бесплатная консультация. Complimentary 3D CT scan is completed at the Roseville office.
+        Бесплатная консультация. 3D CT scan проводится в офисе Roseville.
       </p>
 
       {status === "success" && (

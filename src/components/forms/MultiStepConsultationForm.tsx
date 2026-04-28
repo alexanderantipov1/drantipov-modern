@@ -396,7 +396,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal" }: MultiS
           <div className="flex items-center justify-center gap-2 text-sm text-muted">
             <Phone className="h-4 w-4 text-primary" />
             <span>Questions? Call</span>
-            <a href="tel:+19167909693" className="text-primary font-semibold hover:underline">(916) 790-9693</a>
+            <a href="tel:+19167832110" className="text-primary font-semibold hover:underline">(916) 783-2110</a>
           </div>
         </div>
         {onClose && (
@@ -630,7 +630,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal" }: MultiS
         <div className="bg-red-50 border border-red-200 rounded-xl p-3 mb-3">
           <p className="text-red-600 text-xs">
             {submitErrorMessage || "Something went wrong."} Please try again or call{" "}
-            <a href="tel:+19167909693" className="font-semibold underline">(916) 790-9693</a>.
+            <a href="tel:+19167832110" className="font-semibold underline">(916) 783-2110</a>.
           </p>
         </div>
       )}

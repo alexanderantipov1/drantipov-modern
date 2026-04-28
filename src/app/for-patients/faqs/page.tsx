@@ -176,7 +176,7 @@ const faqCategories = [
       {
         question: "What should I do in a dental emergency?",
         answer:
-          "Contact our office immediately at (916) 790-9693. We provide 24/7 emergency coverage for our patients. Common emergencies include uncontrolled bleeding, severe pain, infection signs (fever, swelling), or trauma. We'll provide phone guidance and arrange to see you promptly, often the same day for urgent situations.",
+          "Contact our office immediately at (916) 783-2110. We provide 24/7 emergency coverage for our patients. Common emergencies include uncontrolled bleeding, severe pain, infection signs (fever, swelling), or trauma. We'll provide phone guidance and arrange to see you promptly, often the same day for urgent situations.",
       },
       {
         question: "How do I prepare for my first consultation?",

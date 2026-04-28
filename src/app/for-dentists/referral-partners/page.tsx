@@ -253,14 +253,14 @@ export default function ReferralPartnersPage() {
                 <Link href="/contact">Submit Referral</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href="tel:9167909693">
+                <a href="tel:9167832110">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Referral Line
                 </a>
               </Button>
             </div>
             <div className="pt-4 space-y-2 text-sm text-neutral-600">
-              <p>📞 Direct referral line: (916) 790-9693</p>
+              <p>📞 Direct referral line: (916) 783-2110</p>
               <p>📧 Email referrals: referrals@drantipov.com</p>
               <p>⏰ Same-day emergency appointments available</p>
             </div>

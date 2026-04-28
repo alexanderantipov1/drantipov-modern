@@ -105,6 +105,10 @@ automatically.
 
 ## 5. Activation — env vars
 
+The RU layer now also includes `/ru/questions` and `/ru/questions/<slug>` pages
+for direct-answer SEO/GEO content: cost, All-on-4, implants vs dentures,
+insurance/financing, recovery, and severe bone-loss questions.
+
 Drop into `.env.local` (Vercel Project Settings → Environment Variables
 in production):
 

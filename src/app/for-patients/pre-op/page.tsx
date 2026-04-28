@@ -125,7 +125,7 @@ export default function PreOpPage() {
               <div>
                 <h3 className="text-lg font-semibold text-neutral-900 mb-2">Important Reminder</h3>
                 <p className="text-neutral-700 leading-relaxed">
-                  If you develop a cold, flu, fever, or any illness within 3 days of your surgery, please call our office immediately at <a href="tel:9167909693" className="text-primary-600 hover:underline font-semibold">(916) 790-9693</a>. We may need to reschedule your procedure for your safety.
+                  If you develop a cold, flu, fever, or any illness within 3 days of your surgery, please call our office immediately at <a href="tel:9167832110" className="text-primary-600 hover:underline font-semibold">(916) 783-2110</a>. We may need to reschedule your procedure for your safety.
                 </p>
               </div>
             </div>
@@ -286,7 +286,7 @@ export default function PreOpPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:9167909693"
+                href="tel:9167832110"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 transition-colors"
               >
                 <Phone className="h-5 w-5" />

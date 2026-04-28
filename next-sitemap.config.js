@@ -1,3 +1,16 @@
+const aiCrawlerAgents = [
+  'GPTBot',
+  'OAI-SearchBot',
+  'ChatGPT-User',
+  'ClaudeBot',
+  'anthropic-ai',
+  'PerplexityBot',
+  'Googlebot',
+  'Google-Extended',
+  'Bingbot',
+  'BingPreview',
+]
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: process.env.SITE_URL || 'https://drantipov.com',
@@ -6,6 +19,11 @@ module.exports = {
   exclude: ['/api/*', '/admin/*'],
   robotsTxtOptions: {
     policies: [
+      ...aiCrawlerAgents.map((userAgent) => ({
+        userAgent,
+        allow: '/',
+        disallow: ['/api/', '/admin/'],
+      })),
       {
         userAgent: '*',
         allow: '/',

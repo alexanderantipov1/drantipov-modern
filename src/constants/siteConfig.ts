@@ -10,7 +10,7 @@ export const siteConfig = {
   },
   contact: {
     email: "info@drantipov.com",
-    phone: "(916) 790-9693",
+    phone: "(916) 783-2110",
     address: {
       street: "911 Reserve Dr",
       suite: "Ste 150",

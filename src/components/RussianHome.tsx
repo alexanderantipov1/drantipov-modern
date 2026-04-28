@@ -23,14 +23,14 @@ const trustBadges = [
   "Бесплатный CT и консультация",
   "Импланты за один день",
   "Финансирование от $99/мес",
-  "Board-certified surgeon",
+  "Сертифицированный хирург",
   "25+ лет опыта",
 ];
 
 const services = [
   {
     title: "Full Arch имплантация",
-    subtitle: "All-on-4, All-on-6, zygomatic impланты, teeth-in-a-day",
+    subtitle: "All-on-4, All-on-6, zygomatic implants, teeth-in-a-day",
     body:
       "Полный набор фиксированных зубов за один визит. Dr. Antipov использует 3D cone-beam CT и навигационную хирургию для точной установки — даже в случаях, когда другие хирурги отказались из-за нехватки кости. При тяжёлой потере кости верхней челюсти — zygomatic implants, без длительной костной пластики. В каждом случае All-on-4 / All-on-6 устанавливаются временные зубы в день операции.",
     image: "/images/procedures/dental-implants-26292ad9.jpg",
@@ -105,7 +105,7 @@ const services = [
   },
   {
     title: "Один и несколько имплантов",
-    subtitle: "Single, мостовидные протезы, snap-on dentures",
+    subtitle: "Single implants, мостовидные протезы, snap-on dentures",
     body:
       "Замена одного или нескольких зубов — самый естественный и долговечный вариант. Single tooth implants с immediate temporary crowns, implant-supported bridges для нескольких соседних зубов, snap-on dentures (overdentures) для съёмного варианта на имплантах. Все импланты ставятся под 3D CT-навигацией с титаном медицинского класса.",
     image: "/images/landing-pages/dental-implants/art/smiling-woman-7bc2b588.jpg",
@@ -131,7 +131,7 @@ const process = [
   { n: "1", title: "Заявка", body: "Расскажите ситуацию, город, желаемые сроки и удобный канал связи. Без формальностей." },
   { n: "2", title: "Бесплатный 3D CT и осмотр", body: "В офисе Roseville. CT-снимок, осмотр, обсуждение вариантов — без оплаты." },
   { n: "3", title: "Понятный план и стоимость", body: "Все опции с цифрами. Финансирование от $99/мес, до 84 месяцев под 0% APR." },
-  { n: "4", title: "Операция и follow-up", body: "Computer-guided surgery, временные зубы в день операции там, где возможно. Сопровождение до окончательного результата." },
+  { n: "4", title: "Операция и сопровождение", body: "Computer-guided surgery, временные зубы в день операции там, где возможно. Сопровождение до окончательного результата." },
 ];
 
 const faq = [
@@ -160,7 +160,7 @@ const faq = [
 const concerns = [
   {
     title: "Поймут ли меня?",
-    body: "Координатор и Dr. Antipov объяснят диагноз и план лечения на русском, без потерь смысла при переводе.",
+    body: "Координатор и Dr. Antipov объяснят диагноз и план лечения понятным языком, без потери смысла.",
   },
   {
     title: "Будет ли цена прозрачной?",
@@ -266,7 +266,7 @@ export default function RussianHome() {
                 Dr. Alexander Antipov: <strong className="text-white">All-on-4 и All-on-6</strong> full-arch имплантация,{" "}
                 <strong className="text-white">orthognathic surgery</strong>,{" "}
                 <strong className="text-white">косметология лица</strong> и{" "}
-                <strong className="text-white">органическая костная пластика</strong>. 25+ лет board-certified опыта.
+                <strong className="text-white">органическая костная пластика</strong>. 25+ лет сертифицированной практики.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}

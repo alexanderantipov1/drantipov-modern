@@ -12,7 +12,7 @@ export default function JsonLd() {
     description:
       "Board-certified oral and maxillofacial surgeon providing same-day dental implants (All-on-4, All-on-6, zygomatic implants), full arch dental implant restoration, corrective jaw surgery (orthognathic surgery), organic and holistic bone grafting, facial cosmetic surgery (rhinoplasty, face lift, eyelid surgery), and wisdom teeth removal in Roseville, CA. Serving Sacramento, San Francisco, Reno, and all of Northern California. Free consultations with complimentary 3D CT scan.",
     url: "https://drantipov.com",
-    telephone: "+1-916-790-9693",
+    telephone: "+1-916-783-2110",
     email: "info@drantipov.com",
     image: "https://drantipov.com/images/slides/1/1844-99036b3b.jpg",
     logo: "https://drantipov.com/images/logo-b97aa5c8.png",

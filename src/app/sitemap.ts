@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { russianCityPages, siteUrl } from "@/data/russianImplantFunnel";
+import { russianArticlePages, russianCityPages, siteUrl } from "@/data/russianImplantFunnel";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -20,10 +20,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteUrl}/ru/${page.slug}`,
       lastModified: now,
       changeFrequency: "weekly" as const,
-      priority: page.slug === "sacramento" ? 0.86 : 0.72,
+      priority: ["roseville", "sacramento", "rocklin", "folsom"].includes(page.slug) ? 0.86 : 0.72,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/${page.slug}`,
+        },
+      },
+    })),
+    {
+      url: `${siteUrl}/ru/questions`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.78,
+      alternates: {
+        languages: {
+          ru: `${siteUrl}/ru/questions`,
+        },
+      },
+    },
+    ...russianArticlePages.map((article) => ({
+      url: `${siteUrl}/ru/questions/${article.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+      alternates: {
+        languages: {
+          ru: `${siteUrl}/ru/questions/${article.slug}`,
         },
       },
     })),

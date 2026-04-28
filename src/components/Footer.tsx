@@ -77,10 +77,10 @@ export default function Footer() {
             </p>
             <div className="mt-6 flex items-center gap-2">
               <a
-                href="tel:9167909693"
+                href="tel:9167832110"
                 className="px-4 py-2 bg-white/10 rounded-lg text-sm text-white/80 hover:bg-primary hover:text-white transition-all duration-300"
               >
-                (916) 790-9693
+                (916) 783-2110
               </a>
               <ConsultationModal>
                 <button

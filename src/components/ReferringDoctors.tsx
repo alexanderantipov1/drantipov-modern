@@ -59,7 +59,7 @@ export default function ReferringDoctors() {
                 Download Referral Form
               </a>
               <a
-                href="tel:9167909693"
+                href="tel:9167832110"
                 className="inline-flex items-center gap-2 px-6 py-3 border-2 border-dark/10 text-dark rounded-2xl font-semibold hover:border-primary hover:text-primary transition-all duration-300"
               >
                 Call to Discuss a Case

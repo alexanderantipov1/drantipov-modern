@@ -381,7 +381,7 @@ export default function DentalImplantAftercarePost() {
                   <br />
                   911 Reserve Dr Ste 150, Roseville, CA 95678
                   <br />
-                  Phone: <a href="tel:916-790-9693" className="text-primary-600 hover:underline">916-790-9693</a>
+                  Phone: <a href="tel:916-783-2110" className="text-primary-600 hover:underline">916-783-2110</a>
                 </p>
                 <p className="text-neutral-700 leading-relaxed">
                   Our team is here to support you throughout your recovery. Don't hesitate to reach out with questions

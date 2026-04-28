@@ -181,8 +181,8 @@ export default function ForPatientsPage() {
                 <h3 className="font-semibold text-neutral-900 mb-3">Contact</h3>
                 <div className="space-y-2">
                   <p className="text-neutral-700 text-sm">
-                    <a href="tel:9167909693" className="hover:text-primary-600 transition-colors">
-                      (916) 790-9693
+                    <a href="tel:9167832110" className="hover:text-primary-600 transition-colors">
+                      (916) 783-2110
                     </a>
                   </p>
                   <p className="text-neutral-700 text-sm">
@@ -229,11 +229,11 @@ export default function ForPatientsPage() {
               24/7 emergency line.
             </p>
             <a
-              href="tel:9167909693"
+              href="tel:9167832110"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition-colors text-lg"
             >
               <Phone className="h-5 w-5" />
-              Emergency: (916) 790-9693
+              Emergency: (916) 783-2110
             </a>
             <p className="text-sm text-neutral-500 mt-4">
               For life-threatening emergencies, call 911 or go to the nearest emergency room

@@ -156,10 +156,10 @@ export default function Hero() {
                 </button>
               </ConsultationModal>
               <a
-                href="tel:9167909693"
+                href="tel:9167832110"
                 className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/25 text-white rounded-2xl font-semibold text-lg hover:bg-white/20 transition-all duration-300"
               >
-                Call (916) 790-9693
+                Call (916) 783-2110
               </a>
             </motion.div>
 

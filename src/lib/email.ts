@@ -235,8 +235,8 @@ export async function sendConsultationConfirmation(
                   <p><strong>In the meantime, feel free to reach out:</strong></p>
                   <p>
                     📞 Phone: <a href="tel:${
-                      process.env.CONTACT_PHONE || "(916) 790-9693"
-                    }">${process.env.CONTACT_PHONE || "(916) 790-9693"}</a><br>
+                      process.env.CONTACT_PHONE || "(916) 783-2110"
+                    }">${process.env.CONTACT_PHONE || "(916) 783-2110"}</a><br>
                     📧 Email: <a href="mailto:${
                       process.env.CONTACT_EMAIL || "info@drantipov.com"
                     }">${

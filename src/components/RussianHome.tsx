@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import RussianLeadForm from "@/components/RussianLeadForm";
+import RussianChatbot from "@/components/RussianChatbot";
 import StickyConciergeBar from "@/components/StickyConciergeBar";
 import { officePhone, officePhoneHref, officeAddress } from "@/data/russianImplantFunnel";
 
@@ -595,6 +596,7 @@ export default function RussianHome() {
       </footer>
 
       <StickyConciergeBar />
+      <RussianChatbot />
     </div>
   );
 }

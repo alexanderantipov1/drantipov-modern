@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RussianChatbot from "@/components/RussianChatbot";
 import StickyConciergeBar from "@/components/StickyConciergeBar";
 import { officeAddress, officePhone, officePhoneHref, siteUrl } from "@/data/russianImplantFunnel";
 
@@ -356,6 +357,7 @@ export default function RussianAboutPage() {
         </footer>
 
         <StickyConciergeBar />
+        <RussianChatbot />
       </div>
     </>
   );

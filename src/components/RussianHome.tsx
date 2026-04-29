@@ -2,8 +2,10 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import RussianLeadForm from "@/components/RussianLeadForm";
+import StickyConciergeBar from "@/components/StickyConciergeBar";
 import { officePhone, officePhoneHref, officeAddress } from "@/data/russianImplantFunnel";
 
 const implantSequence = [
@@ -205,9 +207,9 @@ export default function RussianHome() {
           </a>
           <nav className="hidden items-center gap-6 text-sm font-semibold text-muted md:flex">
             <a href="#services" className="transition hover:text-primary">Услуги</a>
-            <a href="#process" className="transition hover:text-primary">Процесс</a>
-            <a href="#about" className="transition hover:text-primary">О докторе</a>
-            <a href="#faq" className="transition hover:text-primary">FAQ</a>
+            <Link href="/ru/questions" className="transition hover:text-primary">Гиды</Link>
+            <Link href="/ru/glossary" className="transition hover:text-primary">Глоссарий</Link>
+            <Link href="/ru/about" className="transition hover:text-primary">О докторе</Link>
             <a href="#contact" className="transition hover:text-primary">Контакты</a>
           </nav>
           <div className="flex items-center gap-3">
@@ -591,6 +593,8 @@ export default function RussianHome() {
           </div>
         </div>
       </footer>
+
+      <StickyConciergeBar />
     </div>
   );
 }

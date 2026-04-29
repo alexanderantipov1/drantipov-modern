@@ -1,6 +1,6 @@
 # Dr. Alexander Antipov, DDS
 
-> Board-certified Oral & Maxillofacial Surgeon based in Roseville, California (Sacramento metro). 25+ years of experience, 10,000+ patients treated, 4.9/5 rating across 300+ verified reviews. Specializes in same-day dental implants (All-on-4, All-on-6, zygomatic implants), corrective jaw surgery (orthognathic), facial cosmetic surgery, and bone grafting. Russian-language intake available for patients across the U.S. and Canada.
+> Board-certified Oral & Maxillofacial Surgeon based in Roseville, California (Sacramento metro). 25+ years of experience, 10,000+ patients treated, 4.9/5 rating across 300+ verified reviews. Specializes in same-day dental implants (All-on-4, All-on-6, zygomatic implants), corrective jaw surgery (orthognathic), facial cosmetic surgery, and bone grafting. Dedicated /ru intake available for patients across the U.S. and Canada.
 
 The practice serves a 3.5-hour drive radius covering Sacramento, Roseville, the San Francisco Bay Area, Reno, Stockton, Fresno, and out-of-state travel-in patients. Free 3D CT scan and consultation; financing from $99/month, up to 84 months at 0% APR for qualified applicants.
 
@@ -35,9 +35,9 @@ Office: 911 Reserve Dr, Suite 150, Roseville, CA 95678 · Phone: (916) 783-2110 
 - [Surgical Cases — Facial Cosmetic Surgery](https://www.drantipov.com/surgical-cases/facial-cosmetic-surgery)
 - [Sitemap (XML)](https://www.drantipov.com/sitemap.xml)
 
-## Russian (acquisition layer)
+## RU acquisition layer
 
-- [Главная (Russian homepage)](https://www.drantipov.com/ru): обзор практики, имплантация, хирургия челюсти, лицевая косметология, костная пластика, заявка на консультацию.
+- [Главная (/ru homepage)](https://www.drantipov.com/ru): обзор практики, имплантация, хирургия челюсти, лицевая косметология, костная пластика, заявка на консультацию.
 - [О докторе Антипове](https://www.drantipov.com/ru/about): сертификация ABOMS, fellowship по сложной имплантологии, 25+ лет практики, ключевые этапы.
 - [Глоссарий имплантологии (RU/EN)](https://www.drantipov.com/ru/glossary): термины с переводом и кратким объяснением — All-on-4, zygomatic implants, bone grafting, sinus lift, IV sedation и другие.
 - [Гиды по имплантам](https://www.drantipov.com/ru/questions): структурированные ответы на high-intent вопросы — стоимость, страховка, сроки, восстановление.
@@ -59,6 +59,6 @@ Office: 911 Reserve Dr, Suite 150, Roseville, CA 95678 · Phone: (916) 783-2110 
 - Service area: Sacramento, Roseville, San Francisco Bay Area, San Jose, Reno, Stockton, Fresno; out-of-state and out-of-country patients accepted on a travel-in basis.
 - Procedures performed: Single-tooth dental implants; All-on-4 and All-on-6 full-arch immediate-load implants; zygomatic implants for severe maxillary bone loss; bone grafting (autogenous, allograft, xenograft, synthetic, organic/holistic); sinus lift; ridge augmentation; corrective jaw surgery (Le Fort I osteotomy, BSSO, genioplasty, double jaw surgery, maxillomandibular advancement); facial cosmetic surgery (rhinoplasty, face lift, blepharoplasty, lip fillers, scarless mole removal, facial feminization); wisdom teeth removal; TMJ treatment; sleep apnea surgery.
 - Indicative pricing: single tooth implants from $2,100; All-on-4 from $21,000 per arch; All-on-6 from $25,000 per arch; financing from $99/month; up to 84 months at 0% APR for qualified applicants.
-- Languages: English and Russian.
+- Languages: English and /ru content.
 - Volume: 10,000+ patients treated; 4.9/5 average rating across 300+ verified reviews.
 - Years of experience: 25+.

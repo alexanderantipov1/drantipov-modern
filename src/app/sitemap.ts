@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { fullArchLanding } from "@/data/fullArchLanding";
 import { russianArticlePages, russianCityPages, siteUrl } from "@/data/russianImplantFunnel";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -61,6 +62,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           en: siteUrl,
           ru: `${siteUrl}/ru`,
+        },
+      },
+    },
+    {
+      url: `${siteUrl}${fullArchLanding.en.path}`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+      alternates: {
+        languages: {
+          en: `${siteUrl}${fullArchLanding.en.path}`,
+          ru: `${siteUrl}${fullArchLanding.ru.path}`,
+        },
+      },
+    },
+    {
+      url: `${siteUrl}${fullArchLanding.ru.path}`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.92,
+      alternates: {
+        languages: {
+          en: `${siteUrl}${fullArchLanding.en.path}`,
+          ru: `${siteUrl}${fullArchLanding.ru.path}`,
         },
       },
     },

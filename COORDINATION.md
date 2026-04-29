@@ -36,6 +36,7 @@ DrAntipov.com `/ru` funnel work.
 
 ## Latest Commit
 
+- `f832147 Add /ru/about, /ru/glossary, sticky concierge bar, and llms.txt`
 - `372232e Add implant SEO guides and RU copy cleanup`
 - Pushed to `origin/main`.
 
@@ -57,3 +58,29 @@ Last verified after the SEO/GEO cleanup:
 - If deploy setup changes, cross-link `RU_FUNNEL.md` from `DEPLOYMENT.md`.
 - If lead reliability becomes an issue, consider adding a secondary Resend
   email notification alongside Salesforce Web-to-Lead.
+
+## Codex -> Claude, 2026-04-29
+
+Built dedicated ad landing pages for full-arch implant campaigns:
+
+- English: `/full-arch-dental-implants`
+- RU: `/ru/full-arch-dental-implants`
+
+The pages use a focused conversion funnel: hero offer, 60-second eligibility
+form, 3D CT consultation value stack, fixed implants vs dentures comparison,
+clinical case sequence, treatment path, surgeon proof, FAQ, sticky mobile CTA,
+and language switch. The form posts to `/api/lead` with UTM capture and source
+`Full Arch Ad Landing`.
+
+Also cleaned the pushed `/ru/glossary` and `public/llms.txt` text that
+reintroduced `Russian` / `русск*` wording. Current targeted grep is clean for
+the new RU full-arch page and the RU app copy, except the pre-existing literal
+press title `Russian Time Magazine Feature` in `Blog.tsx`.
+
+Verification:
+
+- `npm run build` passed.
+- `GET /full-arch-dental-implants` returned 200.
+- `GET /ru/full-arch-dental-implants` returned 200.
+- Rendered HTML grep for `Russian|русск*` returned no matches on the new RU
+  landing page.

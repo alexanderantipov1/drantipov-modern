@@ -26,6 +26,7 @@ interface LeadPayload {
   utm_content?: string;
   utm_term?: string;
   referrer?: string;
+  source?: string;
 }
 
 function splitName(full: string): { first: string; last: string } {
@@ -65,7 +66,7 @@ export async function POST(request: NextRequest) {
   params.set("last_name", last || "Unknown");
   if (data.email) params.set("email", data.email);
   if (data.phone) params.set("phone", data.phone);
-  params.set("lead_source", data.utm_source?.trim() || "Russian Dental Funnel");
+  params.set("lead_source", data.utm_source?.trim() || data.source?.trim() || "Website Lead");
   params.set("company", "Individual");
   params.set(
     "description",

@@ -48,6 +48,11 @@ module.exports = {
       priority = 1.0
       changefreq = 'daily'
     }
+    // Paid ad landing pages - high conversion priority
+    else if (['/full-arch-dental-implants', '/ru/full-arch-dental-implants'].includes(path)) {
+      priority = 0.92
+      changefreq = 'weekly'
+    }
     // Main landing pages - high priority
     else if (['/about', '/contact', '/expertise'].includes(path)) {
       priority = 0.9

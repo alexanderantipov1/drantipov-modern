@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import RussianChatbot from "@/components/RussianChatbot";
 import StickyConciergeBar from "@/components/StickyConciergeBar";
 import { officePhone, officePhoneHref, siteUrl } from "@/data/russianImplantFunnel";
 
 export const metadata: Metadata = {
   title: "Глоссарий имплантологии и челюстной хирургии — RU/EN",
   description:
-    "Русско-английский словарь терминов имплантологии и oral surgery: All-on-4, zygomatic implants, bone grafting, sinus lift, IV sedation, osseointegration. Термины с переводом и кратким объяснением для пациентов Dr. Antipov.",
+    "RU/EN словарь терминов имплантологии и oral surgery: All-on-4, zygomatic implants, bone grafting, sinus lift, IV sedation, osseointegration. Термины с переводом и кратким объяснением для пациентов Dr. Antipov.",
   alternates: {
     canonical: `${siteUrl}/ru/glossary`,
     languages: {
@@ -232,7 +233,7 @@ const definedTermSetSchema = {
   "@id": `${siteUrl}/ru/glossary#termset`,
   name: "Глоссарий имплантологии и челюстной хирургии",
   description:
-    "Русско-английский глоссарий ключевых терминов имплантологии, ортогнатической хирургии, костной пластики и анестезии у Dr. Alexander Antipov, Roseville, CA.",
+    "RU/EN глоссарий ключевых терминов имплантологии, ортогнатической хирургии, костной пластики и анестезии у Dr. Alexander Antipov, Roseville, CA.",
   inLanguage: ["ru", "en"],
   hasDefinedTerm: allTerms.map((t) => ({
     "@type": "DefinedTerm",
@@ -287,7 +288,7 @@ export default function RussianGlossaryPage() {
                 Имплантология и челюстная хирургия — термины
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-muted">
-                Русско-английский словарь основных терминов: что значит «All-on-4», чем zygomatic implants
+                RU/EN словарь основных терминов: что значит «All-on-4», чем zygomatic implants
                 отличаются от обычных, что такое sinus lift и почему 3D CT важнее панорамного снимка. Термины,
                 которые вы услышите от Dr. Antipov на консультации.
               </p>
@@ -380,6 +381,7 @@ export default function RussianGlossaryPage() {
         </footer>
 
         <StickyConciergeBar />
+        <RussianChatbot />
       </div>
     </>
   );

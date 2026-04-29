@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import RussianLeadForm from "@/components/RussianLeadForm";
+import RussianMultiStepForm from "@/components/RussianMultiStepForm";
 import RussianChatbot from "@/components/RussianChatbot";
 import StickyConciergeBar from "@/components/StickyConciergeBar";
 import { officePhone, officePhoneHref, officeAddress } from "@/data/russianImplantFunnel";
@@ -540,6 +540,69 @@ export default function RussianHome() {
           </div>
         </section>
 
+        {/* Financing & insurance trust block */}
+        <section className="bg-dark py-20 text-white lg:py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary-light">
+                Финансирование и оплата
+              </p>
+              <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+                Прозрачные цены, удобная оплата
+              </h2>
+              <p className="mt-5 text-lg leading-8 text-white/80">
+                Бесплатная консультация и 3D CT снимок — без оплаты до того, как вы поймёте план лечения и
+                стоимость. Финансирование от $99/мес делает имплантацию доступной без единовременной оплаты.
+              </p>
+            </div>
+            <div className="mt-14 grid gap-6 md:grid-cols-3">
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-7">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-primary-light">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={1.6} viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+                  </svg>
+                </div>
+                <h3 className="mt-5 text-xl font-bold">от $99/мес</h3>
+                <p className="mt-3 leading-7 text-white/75">
+                  Финансирование до 84 месяцев под 0% APR для квалифицированных заявителей. Через CareCredit,
+                  LendingClub и другие медицинские партнёры — заявка занимает ~5 минут.
+                </p>
+              </div>
+
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-7">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-primary-light">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={1.6} viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="mt-5 text-xl font-bold">Бесплатный 3D CT</h3>
+                <p className="mt-3 leading-7 text-white/75">
+                  Первичная консультация и компьютерная томография — без оплаты. Никаких обязательств: вы получаете
+                  понятный план и стоимость прежде, чем что-то решить.
+                </p>
+              </div>
+
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-7">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-primary-light">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth={1.6} viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="mt-5 text-xl font-bold">Принимаем большинство страховок</h3>
+                <p className="mt-3 leading-7 text-white/75">
+                  Мы работаем с PPO-планами и помогаем разобраться, что именно покрывает ваш план. Если страховка
+                  не покрывает имплант — финансирование закрывает остаток. Координатор уточнит детали по
+                  телефону.
+                </p>
+              </div>
+            </div>
+            <p className="mx-auto mt-12 max-w-3xl text-center text-sm text-white/50">
+              Указанная стоимость — ориентировочная. Точная цена и условия финансирования называются после
+              осмотра, 3D CT и обсуждения плана лечения. Никаких скрытых платежей в день операции.
+            </p>
+          </div>
+        </section>
+
         {/* Contact */}
         <section id="contact" className="bg-light py-24 lg:py-32">
           <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-8">
@@ -580,7 +643,7 @@ export default function RussianHome() {
                 </div>
               </div>
             </div>
-            <RussianLeadForm defaultCity="" landingPath="/ru" />
+            <RussianMultiStepForm defaultCity="" landingPath="/ru" />
           </div>
         </section>
       </main>

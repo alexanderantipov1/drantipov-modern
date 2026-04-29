@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import RussianChatbot from "@/components/RussianChatbot";
 import StickyConciergeBar from "@/components/StickyConciergeBar";
+import MicrosoftClarity from "@/components/MicrosoftClarity";
 import { officeAddress, officePhone, officePhoneHref, siteUrl } from "@/data/russianImplantFunnel";
 
 export const metadata: Metadata = {
@@ -358,6 +359,7 @@ export default function RussianAboutPage() {
 
         <StickyConciergeBar />
         <RussianChatbot />
+        <MicrosoftClarity />
       </div>
     </>
   );

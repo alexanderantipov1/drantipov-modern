@@ -7,6 +7,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import RussianMultiStepForm from "@/components/RussianMultiStepForm";
 import RussianChatbot from "@/components/RussianChatbot";
 import StickyConciergeBar from "@/components/StickyConciergeBar";
+import MicrosoftClarity from "@/components/MicrosoftClarity";
+import RealReviews from "@/components/RealReviews";
 import { officePhone, officePhoneHref, officeAddress } from "@/data/russianImplantFunnel";
 
 const implantSequence = [
@@ -208,7 +210,7 @@ export default function RussianHome() {
           </a>
           <nav className="hidden items-center gap-6 text-sm font-semibold text-muted md:flex">
             <a href="#services" className="transition hover:text-primary">Услуги</a>
-            <Link href="/ru/questions" className="transition hover:text-primary">Гиды</Link>
+            <Link href="/ru/articles" className="transition hover:text-primary">Гиды</Link>
             <Link href="/ru/glossary" className="transition hover:text-primary">Глоссарий</Link>
             <Link href="/ru/about" className="transition hover:text-primary">О докторе</Link>
             <a href="#contact" className="transition hover:text-primary">Контакты</a>
@@ -514,6 +516,9 @@ export default function RussianHome() {
           </div>
         </section>
 
+        {/* Real reviews */}
+        <RealReviews />
+
         {/* FAQ */}
         <section id="faq" className="py-24 lg:py-32">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -660,6 +665,7 @@ export default function RussianHome() {
 
       <StickyConciergeBar />
       <RussianChatbot />
+      <MicrosoftClarity />
     </div>
   );
 }

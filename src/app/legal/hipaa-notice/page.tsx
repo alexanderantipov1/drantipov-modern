@@ -1,6 +1,8 @@
 import { Section, Container, GlassCard } from "@/components/sections"
 import { siteConfig } from "@/constants/siteConfig"
 import { Shield, Info } from "lucide-react"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata = {
   title: "HIPAA Notice of Privacy Practices | Dr. Antipov",
@@ -14,22 +16,7 @@ export default function HIPAANoticePage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-4 max-w-3xl mx-auto">
-            <div className="flex justify-center mb-4">
-              <div className="p-4 rounded-full bg-primary-100">
-                <Shield className="h-12 w-12 text-primary-600" />
-              </div>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-neutral-900">
-              HIPAA Notice of Privacy Practices
-            </h1>
-            <p className="text-lg text-neutral-600">Effective Date: {effectiveDate}</p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/legal/hipaa-notice"]!} />
 
       {/* Main Content */}
       <Section background="default" padding="xl">

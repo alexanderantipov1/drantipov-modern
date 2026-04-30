@@ -119,6 +119,106 @@ const heroContent: Record<string, HeroContent> = {
       "Dr. Antipov shares expertise at national and international dental conferences.",
     overlay: "navy",
   },
+  "/for-patients/pre-op": {
+    image: "/images/landing-pages/dental-implants/art/slider01-e9be043d.jpg",
+    eyebrow: "Pre-Operative Care",
+    title: "Preparing for Your Surgery",
+    subtitle:
+      "Detailed pre-operative guidelines, what to expect, and how to prepare for a smooth surgical experience.",
+    overlay: "navy",
+  },
+  "/for-patients/post-op": {
+    image: "/images/landing-pages/dental-implants/art/slider04-9fcf8bdd.jpg",
+    eyebrow: "Recovery Care",
+    title: "Post-Operative Instructions",
+    subtitle:
+      "Essential recovery guidelines, pain management, diet recommendations, and what to expect during healing.",
+    overlay: "navy",
+  },
+  "/for-dentists/refer-patients": {
+    image: "/images/landing-pages/dental-implants/art/service01-ff510575.jpg",
+    eyebrow: "Referral Process",
+    title: "Refer a Patient",
+    subtitle:
+      "Simple referral process with 24–48 hour scheduling, detailed operative reports, and seamless coordination for your practice.",
+    overlay: "navy",
+  },
+  "/for-dentists/referral-partners": {
+    image: "/images/landing-pages/dental-implants/art/humans01-b16de30b.jpg",
+    eyebrow: "Partnership",
+    title: "Become a Referral Partner",
+    subtitle:
+      "Join our network of 100+ Northern California dentists. Excellent communication, collaborative care, and exceptional outcomes.",
+    overlay: "navy",
+  },
+  "/for-dentists/education/courses": {
+    image: "/images/landing-pages/dental-implants/art/photograph01-lg-d1051d16.jpg",
+    eyebrow: "Continuing Education",
+    title: "CE Courses & Workshops",
+    subtitle:
+      "Expand your knowledge with Dr. Antipov's evidence-based courses on implant dentistry, bone grafting, and surgical techniques.",
+    overlay: "navy",
+  },
+  "/surgical-cases/dental-implants": {
+    image: "/images/landing-pages/dental-implants/art/product01-bdc8ea68.jpg",
+    eyebrow: "Implant Cases",
+    title: "Dental Implant Transformations",
+    subtitle:
+      "Real before-and-after results from single-tooth implants, All-on-4, All-on-6, and full-arch reconstruction cases.",
+    overlay: "dark",
+  },
+  "/surgical-cases/corrective-jaw-surgery": {
+    image: "/images/landing-pages/dental-implants/art/slider02-ff45c735.jpg",
+    eyebrow: "Jaw Surgery Cases",
+    title: "Corrective Jaw Surgery Results",
+    subtitle:
+      "Orthognathic surgery transformations including Le Fort osteotomies, BSSO, genioplasty, and facial asymmetry correction.",
+    overlay: "dark",
+  },
+  "/surgical-cases/facial-cosmetic-surgery": {
+    image: "/images/landing-pages/dental-implants/art/smiling-woman-7bc2b588.jpg",
+    eyebrow: "Facial Cosmetic Cases",
+    title: "Cosmetic Surgery Transformations",
+    subtitle:
+      "Rhinoplasty, face lift, eyelid surgery, and facial feminization results showcasing precision and artistry.",
+    overlay: "dark",
+  },
+  "/full-arch-dental-implants": {
+    image: "/images/landing-pages/dental-implants/art/product01-bdc8ea68.jpg",
+    eyebrow: "Full Arch Specialists",
+    title: "All-on-4 & All-on-6 Dental Implants",
+    subtitle:
+      "Same-day teeth, immediate-load protocols, and zygomatic implants for severe bone loss — performed by board-certified surgeons.",
+    overlay: "navy",
+  },
+  "/legal/privacy-policy": {
+    image: "/images/landing-pages/dental-implants/art/pattern-background01-5a7afc40.jpg",
+    eyebrow: "Legal",
+    title: "Privacy Policy",
+    subtitle: "How we collect, use, and protect your information.",
+    overlay: "navy",
+  },
+  "/legal/terms-of-service": {
+    image: "/images/landing-pages/dental-implants/art/pattern-background01-5a7afc40.jpg",
+    eyebrow: "Legal",
+    title: "Terms of Service",
+    subtitle: "The terms and conditions for using our website and services.",
+    overlay: "navy",
+  },
+  "/legal/hipaa-notice": {
+    image: "/images/landing-pages/dental-implants/art/pattern-background01-5a7afc40.jpg",
+    eyebrow: "Legal",
+    title: "HIPAA Notice of Privacy Practices",
+    subtitle: "Your rights and our responsibilities regarding your protected health information.",
+    overlay: "navy",
+  },
+  "/legal/medical-disclaimer": {
+    image: "/images/landing-pages/dental-implants/art/pattern-background01-5a7afc40.jpg",
+    eyebrow: "Legal",
+    title: "Medical Disclaimer",
+    subtitle: "Important information about the medical content on this website.",
+    overlay: "navy",
+  },
 };
 
 export default heroContent;

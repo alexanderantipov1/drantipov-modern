@@ -1,9 +1,10 @@
 import { Section, Container, GlassCard } from "@/components/sections"
-import { ReferralHero } from "@/components/for-dentists"
 import { BenefitsList, ProcessTimeline } from "@/components/expertise"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Phone, Award, Users, Clock, FileText, MessageSquare, CheckCircle } from "lucide-react"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata = {
   title: "Dental Referral Partners | Trusted Oral Surgery Referrals | Dr. Antipov",
@@ -87,7 +88,7 @@ const services = [
 export default function ReferralPartnersPage() {
   return (
     <>
-      <ReferralHero />
+      <PageHero {...heroContent["/for-dentists/referral-partners"]!} />
 
       {/* Why Choose Dr. Antipov Section */}
       <Section background="default" padding="xl">

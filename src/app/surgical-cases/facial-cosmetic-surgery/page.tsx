@@ -1,10 +1,12 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { Section, Container } from "@/components/sections"
-import { CaseHero, CaseGrid } from "@/components/cases"
+import { CaseGrid } from "@/components/cases"
 import { Button } from "@/components/ui/button"
 import { facialCosmeticSurgeryCases } from "@/constants/cases"
 import { ArrowLeft } from "lucide-react"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Facial Cosmetic Surgery Cases - Aesthetic Procedures | Dr. Antipov",
@@ -19,16 +21,7 @@ export const metadata: Metadata = {
 export default function FacialCosmeticSurgeryPage() {
   return (
     <>
-      <CaseHero
-        title="Facial Cosmetic Surgery Cases"
-        description="Aesthetic procedures for facial enhancement and rejuvenation. These cases demonstrate our commitment to natural-looking results through advanced techniques including scarless mole removal, dermal fillers, and facial rejuvenation procedures."
-        stats={[
-          { label: "Total Cases", value: `${facialCosmeticSurgeryCases.length}` },
-          { label: "Scarless Procedures", value: "3" },
-          { label: "Dermal Fillers", value: "2" },
-          { label: "Facial Rejuvenation", value: "1" },
-        ]}
-      />
+      <PageHero {...heroContent["/surgical-cases/facial-cosmetic-surgery"]!} />
 
       {/* Back Navigation */}
       <Section background="default" padding="sm">

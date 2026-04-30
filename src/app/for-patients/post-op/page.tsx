@@ -4,6 +4,8 @@ import { AlertTriangle, CheckCircle, Phone, Clock, Thermometer, Pill } from "luc
 import { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Post-Operative Care Instructions | Recovery Guide | Dr. Antipov",
@@ -147,22 +149,7 @@ const whenToCall = [
 export default function PostOpPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <Badge variant="secondary" className="mb-2">
-              Patient Resources
-            </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Post-Operative Care Instructions
-            </h1>
-            <p className="text-lg md:text-xl text-neutral-600 leading-relaxed">
-              Following these instructions carefully will promote proper healing, minimize discomfort, and help you recover quickly from your oral surgery.
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-patients/post-op"]!} />
 
       {/* Emergency Contact */}
       <Section background="default" padding="md">

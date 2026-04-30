@@ -1,5 +1,7 @@
 import { Section, Container, GlassCard } from "@/components/sections"
 import { siteConfig } from "@/constants/siteConfig"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata = {
   title: "Terms of Service | Dr. Antipov",
@@ -13,17 +15,7 @@ export default function TermsOfServicePage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-4 max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-neutral-900">
-              Terms of Service
-            </h1>
-            <p className="text-lg text-neutral-600">Last Updated: {lastUpdated}</p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/legal/terms-of-service"]!} />
 
       {/* Main Content */}
       <Section background="default" padding="xl">

@@ -1,10 +1,12 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { Section, Container } from "@/components/sections"
-import { CaseHero, CaseGrid } from "@/components/cases"
+import { CaseGrid } from "@/components/cases"
 import { Button } from "@/components/ui/button"
 import { correctiveJawSurgeryCases } from "@/constants/cases"
 import { ArrowLeft } from "lucide-react"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Corrective Jaw Surgery Cases - Orthognathic Surgery Results | Dr. Antipov",
@@ -19,16 +21,7 @@ export const metadata: Metadata = {
 export default function CorrectiveJawSurgeryPage() {
   return (
     <>
-      <CaseHero
-        title="Corrective Jaw Surgery Cases"
-        description="Advanced orthognathic surgical procedures to correct jaw deformities, skeletal malocclusions, and facial asymmetries. These complex cases demonstrate precision surgical planning and execution for optimal functional and aesthetic outcomes."
-        stats={[
-          { label: "Total Cases", value: `${correctiveJawSurgeryCases.length}` },
-          { label: "Class II/III Corrections", value: "30+" },
-          { label: "Maxillomandibular Adv.", value: "25+" },
-          { label: "Combined Procedures", value: "20+" },
-        ]}
-      />
+      <PageHero {...heroContent["/surgical-cases/corrective-jaw-surgery"]!} />
 
       {/* Back Navigation */}
       <Section background="default" padding="sm">

@@ -2,23 +2,13 @@ import { Section, Container, GlassCard } from "@/components/sections"
 import { ContactForm } from "@/components/forms/ContactForm"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 import { siteConfig } from "@/constants/siteConfig"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export default function ContactPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <h1 className="text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Contact Us
-            </h1>
-            <p className="text-xl lg:text-2xl text-neutral-600">
-              We're here to answer your questions and schedule your consultation
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/contact"]!} />
 
       {/* Contact Form & Info */}
       <Section background="default" padding="xl">

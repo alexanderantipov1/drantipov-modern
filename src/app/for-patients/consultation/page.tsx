@@ -2,6 +2,8 @@ import { Section, Container, GlassCard } from "@/components/sections"
 import { ConsultationForm } from "@/components/forms/ConsultationForm"
 import { Clock, MapPin, Phone, Mail, CheckCircle } from "lucide-react"
 import { siteConfig } from "@/constants/siteConfig"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata = {
   title: "Schedule Your Consultation | Dr. Antipov | Northern California",
@@ -35,19 +37,7 @@ const whatToExpect = [
 export default function ConsultationPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Schedule Your Consultation
-            </h1>
-            <p className="text-xl lg:text-2xl text-neutral-600">
-              Take the first step toward a healthier, more confident smile
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-patients/consultation"]!} />
 
       {/* Main Content - Form and Info */}
       <Section background="default" padding="xl">

@@ -4,6 +4,8 @@ import { AlertTriangle, CheckCircle, XCircle, Phone, Calendar } from "lucide-rea
 import { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Pre-Operative Instructions | Preparing for Surgery | Dr. Antipov",
@@ -99,22 +101,7 @@ const dayOfSurgery = [
 export default function PreOpPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <Badge variant="secondary" className="mb-2">
-              Patient Resources
-            </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Pre-Operative Instructions
-            </h1>
-            <p className="text-lg md:text-xl text-neutral-600 leading-relaxed">
-              Preparing properly for your surgery ensures the best possible outcome and smooth recovery. Please read these instructions carefully and contact us with any questions.
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-patients/pre-op"]!} />
 
       {/* Important Notice */}
       <Section background="default" padding="md">

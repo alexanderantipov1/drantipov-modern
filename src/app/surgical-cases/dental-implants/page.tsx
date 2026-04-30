@@ -1,10 +1,12 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { Section, Container } from "@/components/sections"
-import { CaseHero, CaseGrid } from "@/components/cases"
+import { CaseGrid } from "@/components/cases"
 import { Button } from "@/components/ui/button"
 import { dentalImplantsCases } from "@/constants/cases"
 import { ArrowLeft, CheckCircle } from "lucide-react"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Dental Implant Cases - All-on-4 and Immediate Implants | Dr. Antipov",
@@ -19,16 +21,7 @@ export const metadata: Metadata = {
 export default function DentalImplantsPage() {
   return (
     <>
-      <CaseHero
-        title="Dental Implant Cases"
-        description="All-on-4 and immediate implant solutions for complete smile restoration. These cases showcase our expertise in full-arch rehabilitation with same-day teeth, providing patients with immediate functional and aesthetic results."
-        stats={[
-          { label: "Total Cases", value: `${dentalImplantsCases.length}` },
-          { label: "All-on-4 Solutions", value: "10+" },
-          { label: "Immediate Implants", value: "15+" },
-          { label: "Same-Day Teeth", value: "95%" },
-        ]}
-      />
+      <PageHero {...heroContent["/surgical-cases/dental-implants"]!} />
 
       {/* Back Navigation */}
       <Section background="default" padding="sm">

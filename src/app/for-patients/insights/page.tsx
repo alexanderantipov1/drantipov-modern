@@ -5,6 +5,8 @@ import Link from "next/link"
 import { BookOpen, Calendar, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Patient Insights & Education | Dr. Antipov Oral Surgery",
@@ -66,26 +68,7 @@ const blogPosts = [
 export default function InsightsPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <Badge className="text-base px-4 py-2 bg-primary-100 text-primary-700 hover:bg-primary-200">
-              <BookOpen className="h-4 w-4 inline mr-2" />
-              Patient Education
-            </Badge>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Insights & Education
-            </h1>
-
-            <p className="text-xl lg:text-2xl text-neutral-600">
-              Expert insights on dental implants, oral surgery, and oral health to help you make informed decisions
-              about your care
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-patients/insights"]!} />
 
       {/* Blog Posts Grid */}
       <Section background="default" padding="xl">

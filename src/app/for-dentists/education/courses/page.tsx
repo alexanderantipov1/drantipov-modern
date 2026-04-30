@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Award, Clock, Users, BookOpen, Video, CheckCircle, ExternalLink } from "lucide-react"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata = {
   title: "Dental Implant Education & Courses | Fusion Dental Academy | Dr. Antipov",
@@ -139,24 +141,7 @@ const benefits = [
 export default function EducationCoursesPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <Badge className="text-base px-4 py-2 bg-accent-100 text-accent-700 hover:bg-accent-200">
-              Fusion Dental Academy
-            </Badge>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Master Advanced Implant Techniques
-            </h1>
-
-            <p className="text-xl lg:text-2xl text-neutral-600">
-              Hands-on training courses to elevate your implant practice with confidence
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-dentists/education/courses"]!} />
 
       {/* Why Choose Section */}
       <Section background="default" padding="xl">

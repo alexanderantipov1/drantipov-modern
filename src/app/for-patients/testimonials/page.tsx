@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Star, Quote, Heart } from "lucide-react"
 import { YouTubeShortsSection } from "@/components/home/YouTubeShortsSection"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata = {
   title: "Patient Testimonials & Reviews | Real Results | Dr. Antipov",
@@ -72,24 +74,7 @@ const stats = [
 export default function TestimonialsPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <Badge className="text-base px-4 py-2 bg-primary-100 text-primary-700 hover:bg-primary-200">
-              Patient Stories
-            </Badge>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Real Patients. Life-Changing Results.
-            </h1>
-
-            <p className="text-xl lg:text-2xl text-neutral-600">
-              Hear directly from patients about their experiences with Dr. Antipov
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-patients/testimonials"]!} />
 
       {/* Stats Section */}
       <Section background="default" padding="lg">

@@ -2,6 +2,8 @@ import { Section, Container, GlassCard } from "@/components/sections"
 import { ContactForm } from "@/components/forms/ContactForm"
 import { Phone, Mail, MapPin, Clock, CheckCircle, ArrowRight } from "lucide-react"
 import { siteConfig } from "@/constants/siteConfig"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 const referralBenefits = [
   {
@@ -29,18 +31,7 @@ const referralBenefits = [
 export default function ReferPatientsPage() {
   return (
     <>
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <h1 className="text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Refer a Patient
-            </h1>
-            <p className="text-xl lg:text-2xl text-neutral-600">
-              Partner with Dr. Antipov for your patients' surgical needs. We handle the complex procedures and send patients back to you for restorative care.
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-dentists/refer-patients"]!} />
 
       <Section background="default" padding="xl">
         <Container size="lg">

@@ -61,9 +61,16 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            <a
+              href="/ru"
+              className="ml-2 rounded-full border border-dark/15 px-3 py-1.5 text-xs font-semibold text-muted hover:border-primary/40 hover:text-dark transition-all"
+              aria-label="Switch to Russian version"
+            >
+              RU
+            </a>
             <ConsultationModal>
               <button
-                className="ml-4 px-6 py-2.5 bg-primary text-white rounded-full text-sm font-semibold hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 pulse-glow cursor-pointer"
+                className="ml-2 px-6 py-2.5 bg-primary text-white rounded-full text-sm font-semibold hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 pulse-glow cursor-pointer"
               >
                 Free Consultation
               </button>
@@ -134,6 +141,13 @@ export default function Navbar() {
                 className="mt-2 py-4 bg-dark text-white rounded-2xl text-center font-semibold text-lg"
               >
                 Call (916) 783-2110
+              </a>
+              <a
+                href="/ru"
+                onClick={() => setMobileOpen(false)}
+                className="mt-2 py-3 border-2 border-dark/15 text-dark rounded-2xl text-center font-medium text-base hover:border-primary hover:text-primary transition-colors"
+              >
+                🇷🇺 Русская версия
               </a>
             </div>
           </motion.div>

@@ -15,6 +15,22 @@ const heroContent: Record<string, HeroContent> = {
       "Dr. Antipov and Dr. Kahwach bring decades of combined surgical experience, advanced training, and a shared commitment to exceptional patient care.",
     overlay: "gradient",
   },
+  "/results": {
+    image: "/images/landing-pages/dental-implants/art/office01-d1051d16.jpg",
+    eyebrow: "Why Patients Choose Us",
+    title: "Results That Speak for Themselves",
+    subtitle:
+      "Explore our state-of-the-art facility, see real patient transformations, and discover what sets our practice apart.",
+    overlay: "navy",
+  },
+  "/locations": {
+    image: "/images/locations/locations@2x-dc292d32.jpg",
+    eyebrow: "Find Us",
+    title: "Our Locations & Service Area",
+    subtitle:
+      "Convenient offices serving Roseville, Sacramento, and 46+ cities across Northern California and Nevada.",
+    overlay: "navy",
+  },
   "/expertise": {
     image: "/images/landing-pages/dental-implants/art/product01-bdc8ea68.jpg",
     eyebrow: "Comprehensive Oral Surgery",

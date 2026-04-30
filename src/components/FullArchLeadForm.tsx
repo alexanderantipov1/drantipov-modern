@@ -2,6 +2,7 @@
 
 import { FormEvent, useEffect, useRef, useState } from "react";
 import type { FullArchLandingContent } from "@/data/fullArchLanding";
+import { collectLeadAttribution } from "@/lib/lead-attribution";
 
 interface FullArchLeadFormProps {
   content: FullArchLandingContent;
@@ -25,7 +26,6 @@ export default function FullArchLeadForm({ content }: FullArchLeadFormProps) {
 
     const form = formRef.current;
     const data = new FormData(form);
-    const query = new URLSearchParams(window.location.search);
     const condition = String(data.get("condition") ?? "");
     const arch = String(data.get("arch") ?? "");
 
@@ -41,14 +41,11 @@ export default function FullArchLeadForm({ content }: FullArchLeadFormProps) {
       website: data.get("website") ?? "",
       lang: content.locale,
       source: "Full Arch Ad Landing",
-      landing_path: content.path,
-      started_at: String(startedAtRef.current),
-      utm_source: query.get("utm_source") ?? "",
-      utm_medium: query.get("utm_medium") ?? "",
-      utm_campaign: query.get("utm_campaign") ?? "",
-      utm_content: query.get("utm_content") ?? "",
-      utm_term: query.get("utm_term") ?? "",
-      referrer: typeof document !== "undefined" ? document.referrer : "",
+      ...collectLeadAttribution({
+        startedAt: startedAtRef.current,
+        landingPath: content.path,
+        formVariant: `${content.locale}-full-arch-ad`,
+      }),
     };
 
     try {

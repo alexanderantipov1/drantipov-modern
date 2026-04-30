@@ -19,6 +19,7 @@ import ReferringDoctors from "@/components/ReferringDoctors";
 import Blog from "@/components/Blog";
 import PatientResources from "@/components/PatientResources";
 import FullArchShowcase from "@/components/FullArchShowcase";
+import SurgeonAuthority from "@/components/SurgeonAuthority";
 import PriceCalculator from "@/components/PriceCalculator";
 import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
@@ -39,6 +40,7 @@ export default function Home() {
         <TrustBadges />
         <Services />
         <FullArchShowcase />
+        <SurgeonAuthority lang="en" />
         <StatsCounter />
         <ProcedureVideos />
         <Process />

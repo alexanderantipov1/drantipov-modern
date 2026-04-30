@@ -9,6 +9,7 @@ import RussianChatbot from "@/components/RussianChatbot";
 import StickyConciergeBar from "@/components/StickyConciergeBar";
 import MicrosoftClarity from "@/components/MicrosoftClarity";
 import RealReviews from "@/components/RealReviews";
+import SurgeonAuthority from "@/components/SurgeonAuthority";
 import { officePhone, officePhoneHref, officeAddress } from "@/data/russianImplantFunnel";
 
 const implantSequence = [
@@ -428,6 +429,8 @@ export default function RussianHome() {
             </div>
           </div>
         </section>
+
+        <SurgeonAuthority lang="ru" />
 
         {/* Process */}
         <section id="process" className="bg-light py-24 lg:py-32">

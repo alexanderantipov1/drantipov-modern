@@ -6,6 +6,7 @@ import {
   timingOptions,
   treatmentOptions,
 } from "@/data/russianImplantFunnel";
+import { collectLeadAttribution } from "@/lib/lead-attribution";
 
 interface Props {
   defaultCity?: string;
@@ -73,18 +74,14 @@ export default function RussianMultiStepForm({
     if (!step2Valid()) return;
     setStatus("sending");
     setErrorMsg(null);
-    const query = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
     const payload = {
       ...form,
       lang: "ru",
-      landing_path: landingPath,
-      started_at: String(startedAtRef.current),
-      utm_source: query.get("utm_source") ?? "",
-      utm_medium: query.get("utm_medium") ?? "",
-      utm_campaign: query.get("utm_campaign") ?? "",
-      utm_content: query.get("utm_content") ?? "",
-      utm_term: query.get("utm_term") ?? "",
-      referrer: typeof document !== "undefined" ? document.referrer : "",
+      ...collectLeadAttribution({
+        startedAt: startedAtRef.current,
+        landingPath,
+        formVariant: "ru-multi-step",
+      }),
     };
     try {
       const res = await fetch("/api/lead", {
@@ -114,8 +111,8 @@ export default function RussianMultiStepForm({
           </div>
           <h3 className="mt-5 text-2xl font-bold text-dark">Заявка получена</h3>
           <p className="mt-3 max-w-md leading-7 text-muted">
-            Координатор перезвонит на русском в течение 24 часов и объяснит следующий шаг. Обычно сначала
-            отправляем несколько уточняющих вопросов в WhatsApp / Telegram, чтобы консультация прошла быстрее.
+            Координатор перезвонит в течение 24 часов и объяснит следующий шаг. Обычно сначала отправляем
+            несколько уточняющих вопросов в WhatsApp / Telegram, чтобы консультация прошла быстрее.
           </p>
           <p className="mt-6 text-sm text-muted">
             Если хотите быстрее —{" "}

@@ -6,6 +6,7 @@ import {
   timingOptions,
   treatmentOptions,
 } from "@/data/russianImplantFunnel";
+import { collectLeadAttribution } from "@/lib/lead-attribution";
 
 interface RussianLeadFormProps {
   defaultCity?: string;
@@ -30,7 +31,6 @@ export default function RussianLeadForm({ defaultCity = "", landingPath }: Russi
 
     const form = formRef.current;
     const data = new FormData(form);
-    const query = new URLSearchParams(window.location.search);
 
     const payload = {
       name: data.get("name") ?? "",
@@ -43,14 +43,11 @@ export default function RussianLeadForm({ defaultCity = "", landingPath }: Russi
       message: data.get("message") ?? "",
       website: data.get("website") ?? "",
       lang: "ru",
-      landing_path: landingPath,
-      started_at: String(startedAtRef.current),
-      utm_source: query.get("utm_source") ?? "",
-      utm_medium: query.get("utm_medium") ?? "",
-      utm_campaign: query.get("utm_campaign") ?? "",
-      utm_content: query.get("utm_content") ?? "",
-      utm_term: query.get("utm_term") ?? "",
-      referrer: typeof document !== "undefined" ? document.referrer : "",
+      ...collectLeadAttribution({
+        startedAt: startedAtRef.current,
+        landingPath,
+        formVariant: "ru-standard-lead",
+      }),
     };
 
     try {

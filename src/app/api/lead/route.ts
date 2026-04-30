@@ -19,13 +19,35 @@ interface LeadPayload {
   message?: string;
   lang?: string;
   landing_path?: string;
+  landing_url?: string;
+  first_landing_page?: string;
+  current_page?: string;
   website?: string;
   started_at?: string;
+  time_on_page?: string;
+  form_variant?: string;
   utm_source?: string;
   utm_medium?: string;
   utm_campaign?: string;
   utm_content?: string;
   utm_term?: string;
+  utm_id?: string;
+  utm_location?: string;
+  utm_adgroup?: string;
+  utm_creative?: string;
+  gclid?: string;
+  gbraid?: string;
+  wbraid?: string;
+  fbclid?: string;
+  msclkid?: string;
+  ttclid?: string;
+  campaign_id?: string;
+  adset_id?: string;
+  ad_id?: string;
+  creative?: string;
+  session_id?: string;
+  client_id?: string;
+  device_type?: string;
   referrer?: string;
   source?: string;
 }
@@ -45,13 +67,35 @@ function buildDescription(data: LeadPayload, geo: string): string {
     data.timing ? `Timing: ${data.timing}` : null,
     data.contactPreference ? `Preferred contact: ${data.contactPreference}` : null,
     data.lang ? `Language: ${data.lang}` : null,
+    data.form_variant ? `Form variant: ${data.form_variant}` : null,
     data.utm_source ? `UTM source: ${data.utm_source}` : null,
     data.utm_medium ? `UTM medium: ${data.utm_medium}` : null,
     data.utm_campaign ? `UTM campaign: ${data.utm_campaign}` : null,
     data.utm_content ? `UTM content: ${data.utm_content}` : null,
     data.utm_term ? `UTM term: ${data.utm_term}` : null,
+    data.utm_id ? `UTM id: ${data.utm_id}` : null,
+    data.utm_location ? `UTM location: ${data.utm_location}` : null,
+    data.utm_adgroup ? `UTM adgroup: ${data.utm_adgroup}` : null,
+    data.utm_creative ? `UTM creative: ${data.utm_creative}` : null,
+    data.gclid ? `GCLID: ${data.gclid}` : null,
+    data.gbraid ? `GBRAID: ${data.gbraid}` : null,
+    data.wbraid ? `WBRAID: ${data.wbraid}` : null,
+    data.fbclid ? `FBCLID: ${data.fbclid}` : null,
+    data.msclkid ? `MSCLKID: ${data.msclkid}` : null,
+    data.ttclid ? `TTCLID: ${data.ttclid}` : null,
+    data.campaign_id ? `Campaign ID: ${data.campaign_id}` : null,
+    data.adset_id ? `Ad set ID: ${data.adset_id}` : null,
+    data.ad_id ? `Ad ID: ${data.ad_id}` : null,
+    data.creative ? `Creative: ${data.creative}` : null,
     data.referrer ? `Referrer: ${data.referrer}` : null,
     data.landing_path ? `Landing path: ${data.landing_path}` : null,
+    data.landing_url ? `Landing URL: ${data.landing_url}` : null,
+    data.first_landing_page ? `First landing page: ${data.first_landing_page}` : null,
+    data.current_page ? `Current page: ${data.current_page}` : null,
+    data.time_on_page ? `Time on page (ms): ${data.time_on_page}` : null,
+    data.session_id ? `Session ID: ${data.session_id}` : null,
+    data.client_id ? `Client ID: ${data.client_id}` : null,
+    data.device_type ? `Device: ${data.device_type}` : null,
     data.message ? `\n${data.message}` : null,
   ]
     .filter(Boolean)

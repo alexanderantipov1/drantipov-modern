@@ -10,7 +10,7 @@ const INDEX_URL = `${siteUrl}/ru/articles`;
 export const metadata: Metadata = {
   title: "Гиды по имплантации — Dr. Antipov",
   description:
-    "Подробные русскоязычные гиды по dental implants: same-day immediate load, zygomatic implants при потере кости, финансирование и FAQ. Без маркетинга — честно, что возможно и для кого.",
+    "Подробные гиды по dental implants: same-day immediate load, zygomatic implants при потере кости, финансирование и FAQ. Без маркетинга — честно, что возможно и для кого.",
   alternates: {
     canonical: INDEX_URL,
     languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Гиды по имплантации — Dr. Antipov",
-    description: "Same-day implants, zygomatic implants и другие подробные гиды на русском.",
+    description: "Same-day implants, zygomatic implants и другие подробные гиды понятным языком.",
     url: INDEX_URL,
     locale: "ru_RU",
     type: "website",
@@ -140,8 +140,8 @@ export default function ArticlesIndex() {
               Готовы обсудить ваш случай?
             </h2>
             <p className="mt-5 text-lg leading-8 text-white/80">
-              Бесплатная консультация и 3D CT. Координатор перезвонит на русском в течение 24 часов и
-              объяснит, что подготовить.
+              Бесплатная консультация и 3D CT. Координатор перезвонит в течение 24 часов и объяснит,
+              что подготовить.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Link

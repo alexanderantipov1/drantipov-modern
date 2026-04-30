@@ -224,14 +224,16 @@ export const fullArchLanding: Record<FullArchLocale, FullArchLandingContent> = {
     },
     surgeon: {
       eyebrow: "Why Dr. Antipov",
-      title: "Complex implant surgery belongs with a surgical specialist",
+      title: "A surgeon-led plan for the implants, the bite, and the final arch",
       body:
-        "Full-arch cases can involve extractions, bone grafting, sinus anatomy, severe upper-jaw bone loss, IV sedation, and medical risk review. Dr. Antipov's practice is built around oral and maxillofacial surgery.",
+        "Full-arch cases can involve extractions, bone grafting, sinus anatomy, severe upper-jaw bone loss, IV sedation, bite design, and final prosthetic management. Dr. Antipov's practice connects oral and maxillofacial surgery, prosthodontic planning, and an in-house dental lab so the case is designed from surgery through the final bridge.",
       bullets: [
         "25+ years of surgical experience",
         "10,000+ restored smiles referenced across the practice site",
-        "3D CT-guided planning",
+        "3D CT-guided planning with prosthetic and bite design",
+        "In-house dental lab and 50+ team members supporting patient and prosthetic management",
         "Experience with zygomatic implants and severe bone-loss cases",
+        "Planning philosophy: Do it once. Do it right. Do it forever.",
       ],
     },
     faq: [
@@ -406,14 +408,16 @@ export const fullArchLanding: Record<FullArchLocale, FullArchLandingContent> = {
     },
     surgeon: {
       eyebrow: "Почему Dr. Antipov",
-      title: "Сложная implant surgery должна быть у хирургического специалиста",
+      title: "План от хирурга: implants, прикус и final arch как единая система",
       body:
-        "Full-arch cases могут включать extractions, bone grafting, sinus anatomy, сильную потерю кости верхней челюсти, IV sedation и medical risk review. Практика Dr. Antipov построена вокруг oral and maxillofacial surgery.",
+        "Full-arch cases могут включать extractions, bone grafting, sinus anatomy, сильную потерю кости верхней челюсти, IV sedation, bite design и final prosthetic management. Практика Dr. Antipov соединяет oral and maxillofacial surgery, prosthodontic planning и собственную лабораторию, чтобы случай проектировался от операции до final bridge.",
       bullets: [
         "25+ лет хирургического опыта",
         "10,000+ восстановленных улыбок указаны на сайте практики",
-        "3D CT-guided planning",
+        "3D CT-guided planning с prosthetic и bite design",
+        "In-house dental lab и 50+ team members для patient и prosthetic management",
         "Опыт со zygomatic implants и severe bone-loss cases",
+        "Философия планирования: Сделать один раз. Сделать правильно. Сделать навсегда.",
       ],
     },
     faq: [

@@ -244,7 +244,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Главная (Russian)",
+      name: "Главная",
       item: `${siteUrl}/ru`,
     },
   ],

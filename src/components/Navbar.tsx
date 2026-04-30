@@ -6,13 +6,13 @@ import Image from "next/image";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Results", href: "#results" },
-  { label: "Before & After", href: "#before-after" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/expertise" },
+  { label: "About", href: "/about" },
+  { label: "Results", href: "/results" },
+  { label: "Before & After", href: "/surgical-cases" },
+  { label: "Testimonials", href: "/for-patients/testimonials" },
+  { label: "FAQ", href: "/for-patients/faqs" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {

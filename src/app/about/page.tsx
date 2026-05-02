@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import { Award, GraduationCap, Heart } from "lucide-react"
-import { AboutPageHero } from "@/components/about/AboutPageHero"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 import {
   getPhysicianSchema,
   getBreadcrumbSchema,
@@ -53,7 +54,7 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={structuredDataScript(structuredData)}
       />
 
-      <AboutPageHero />
+      <PageHero {...heroContent["/about"]!} />
 
       {/* Biography Section */}
       <Section background="default" padding="xl">

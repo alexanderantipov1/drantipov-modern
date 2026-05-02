@@ -26,7 +26,7 @@ export default function PageHero({
       : "bg-navy/80";
 
   return (
-    <section className="relative h-[420px] sm:h-[480px] flex items-center overflow-hidden">
+    <section className="relative min-h-[520px] sm:min-h-[600px] lg:min-h-[640px] flex items-center overflow-hidden pt-24">
       <div className="absolute inset-0">
         <Image
           src={image}
@@ -41,7 +41,7 @@ export default function PageHero({
         <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

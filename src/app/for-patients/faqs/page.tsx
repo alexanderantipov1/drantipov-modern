@@ -10,6 +10,8 @@ import {
 import { Phone, Mail, Calendar, HelpCircle } from "lucide-react"
 import Link from "next/link"
 import { siteConfig } from "@/constants/siteConfig"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions | Dr. Alexander Antipov",
@@ -189,25 +191,19 @@ const faqCategories = [
 
 export default function FAQsPage() {
   return (
-    <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 backdrop-blur-sm border border-white/20 mb-6">
-            <HelpCircle className="w-8 h-8 text-primary" />
+    <>
+      <PageHero {...heroContent["/for-patients/faqs"]!} />
+      <div className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Can't find what you're looking for?{" "}
+              <Link href="/contact" className="text-primary hover:underline">
+                Contact us
+              </Link>
+              .
+            </p>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Frequently Asked Questions
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Find answers to common questions about dental implants, oral surgery
-            procedures, and patient care. Can't find what you're looking for?{" "}
-            <Link href="/contact" className="text-primary hover:underline">
-              Contact us
-            </Link>
-            .
-          </p>
-        </div>
 
         {/* Quick Contact */}
         <Card className="p-6 mb-12 bg-gradient-to-br from-primary/5 to-accent/5 backdrop-blur-sm border-white/20">
@@ -329,7 +325,8 @@ export default function FAQsPage() {
             </Button>
           </Card>
         </div>
+        </div>
       </div>
-    </div>
+    </>
   )
 }

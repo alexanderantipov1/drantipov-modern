@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustBadges from "@/components/TrustBadges";
 import Services from "@/components/Services";
@@ -23,7 +22,6 @@ import SurgeonAuthority from "@/components/SurgeonAuthority";
 import PriceCalculator from "@/components/PriceCalculator";
 import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -34,8 +32,7 @@ export default function Home() {
       >
         Skip to main content
       </a>
-      <Navbar />
-      <main id="main-content">
+      <div id="main-content">
         <Hero />
         <TrustBadges />
         <Services />
@@ -60,8 +57,7 @@ export default function Home() {
         <PatientResources />
         <CTA />
         <Contact />
-      </main>
-      <Footer />
+      </div>
     </>
   );
 }

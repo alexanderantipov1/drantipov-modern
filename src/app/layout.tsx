@@ -5,6 +5,7 @@ import { TrackingProvider } from "@/components/TrackingProvider";
 import { CookieConsent } from "@/components/CookieConsent";
 import { RecaptchaScript } from "@/components/RecaptchaScript";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { SiteNavbar, SiteFooter } from "@/components/SiteChrome";
 import "./globals.css";
 
 const geist = Geist({
@@ -203,7 +204,9 @@ export default function RootLayout({
         <RecaptchaScript />
         <TrackingProvider>
           <JsonLd />
-          {children}
+          <SiteNavbar />
+          <main className="flex-1">{children}</main>
+          <SiteFooter />
           <CookieConsent />
         </TrackingProvider>
       </body>

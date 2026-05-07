@@ -81,7 +81,7 @@ export function YouTubeShortsSection() {
           variants={staggerContainer}
         >
           <motion.h2
-            className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4"
+            className="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4"
             variants={fadeInUp}
           >
             Life-Changing Smiles

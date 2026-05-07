@@ -64,7 +64,7 @@ export default function CaseDetailPage({ params }: CaseDetailPageProps) {
                 Case ID: {caseData.id}
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900">
                 {caseData.title}
               </h1>
 
@@ -174,7 +174,7 @@ export default function CaseDetailPage({ params }: CaseDetailPageProps) {
       <Section background="gradient" padding="xl">
         <Container size="lg">
           <div className="max-w-3xl mx-auto text-center space-y-8 bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-glass">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Interested in This Procedure?
             </h2>
             <p className="text-xl text-neutral-600">

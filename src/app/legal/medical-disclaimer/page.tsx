@@ -39,7 +39,7 @@ export default function MedicalDisclaimerPage() {
 
               {/* Not Medical Advice */}
               <div className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   1. Not Medical Advice
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -66,7 +66,7 @@ export default function MedicalDisclaimerPage() {
 
               {/* No Doctor-Patient Relationship */}
               <div className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   2. No Doctor-Patient Relationship
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -90,7 +90,7 @@ export default function MedicalDisclaimerPage() {
 
               {/* Consult Qualified Provider */}
               <div className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   3. Consult a Qualified Healthcare Provider
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -125,7 +125,7 @@ export default function MedicalDisclaimerPage() {
 
               {/* Accuracy of Information */}
               <div className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   4. Accuracy and Currency of Information
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -153,7 +153,7 @@ export default function MedicalDisclaimerPage() {
 
               {/* Individual Results Vary */}
               <div className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   5. Individual Results May Vary
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -174,7 +174,7 @@ export default function MedicalDisclaimerPage() {
 
               {/* Testimonials Disclaimer */}
               <div className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   6. Testimonials Disclaimer
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -196,7 +196,7 @@ export default function MedicalDisclaimerPage() {
 
               {/* Before/After Photos */}
               <div className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   7. Before and After Photos Disclaimer
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -217,7 +217,7 @@ export default function MedicalDisclaimerPage() {
 
               {/* External Links */}
               <div className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   8. External Links and Third-Party Content
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -238,7 +238,7 @@ export default function MedicalDisclaimerPage() {
 
               {/* Limitation of Liability */}
               <div className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   9. Limitation of Liability
                 </h2>
                 <p className="text-neutral-700 leading-relaxed">
@@ -256,7 +256,7 @@ export default function MedicalDisclaimerPage() {
 
               {/* Contact */}
               <div className="mb-8">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   10. Questions or Concerns
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">

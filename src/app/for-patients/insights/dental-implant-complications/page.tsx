@@ -53,7 +53,7 @@ export default function DentalImplantComplicationsPost() {
             </div>
 
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-6 leading-tight">
               Dental Implant Complications: Understanding Risks and How to Manage Them
             </h1>
 
@@ -84,7 +84,7 @@ export default function DentalImplantComplicationsPost() {
                 </div>
               </GlassCard>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">
                 9 Possible Dental Implant Complications
               </h2>
 
@@ -244,7 +244,7 @@ export default function DentalImplantComplicationsPost() {
                 </GlassCard>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">
                 Minimizing Your Risk
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
@@ -328,7 +328,7 @@ export default function DentalImplantComplicationsPost() {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">The Bottom Line</h2>
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">The Bottom Line</h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Dental implants remain one of the most successful and predictable procedures in dentistry, with success
                 rates exceeding 95%. While it's important to be aware of potential complications, understanding risks
@@ -342,7 +342,7 @@ export default function DentalImplantComplicationsPost() {
             <GlassCard className="mt-12 p-8">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl font-serif font-bold text-primary-700">DA</span>
+                  <span className="text-2xl font-bold text-primary-700">DA</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Dr. Alexander V. Antipov</h3>
@@ -357,7 +357,7 @@ export default function DentalImplantComplicationsPost() {
             {/* CTA */}
             <div className="mt-12 text-center">
               <GlassCard className="p-8">
-                <h3 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h3 className="text-2xl font-bold text-neutral-900 mb-4">
                   Have Questions About Dental Implants?
                 </h3>
                 <p className="text-neutral-700 mb-6">

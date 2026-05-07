@@ -22,7 +22,7 @@ export function ReferralHero() {
           </motion.div>
 
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900"
             variants={fadeInUp}
           >
             Your Trusted Surgical Partner

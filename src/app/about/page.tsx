@@ -72,7 +72,7 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900">
+              <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900">
                 About Dr. Alexander Antipov
               </h2>
 
@@ -109,7 +109,7 @@ export default function AboutPage() {
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
             <GraduationCap className="h-12 w-12 text-primary-600 mx-auto" />
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Education & Training
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -144,7 +144,7 @@ export default function AboutPage() {
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
             <Award className="h-12 w-12 text-primary-600 mx-auto" />
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Board Certifications & Professional Affiliations
             </h2>
           </div>
@@ -164,7 +164,7 @@ export default function AboutPage() {
         <Container size="lg">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <Heart className="h-12 w-12 text-primary-600 mx-auto" />
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Practice Philosophy
             </h2>
 

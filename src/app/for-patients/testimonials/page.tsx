@@ -98,7 +98,7 @@ export default function TestimonialsPage() {
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
             <Quote className="h-12 w-12 text-primary-600 mx-auto" />
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Patient Reviews
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -155,7 +155,7 @@ export default function TestimonialsPage() {
         <Container size="lg">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <Heart className="h-12 w-12 text-primary-600 mx-auto" />
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Join Our Family of Happy Patients
             </h2>
             <p className="text-xl text-neutral-600">
@@ -183,7 +183,7 @@ export default function TestimonialsPage() {
       <Section background="default" padding="xl">
         <Container size="lg">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Ready to Start Your Journey?
             </h2>
             <p className="text-xl text-neutral-600">

@@ -28,7 +28,7 @@ export function AboutSection() {
             variants={fadeInLeft}
           >
             <div className="space-y-4">
-              <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+              <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
                 Meet Dr. Alexander Antipov
               </h2>
               <p className="text-xl text-neutral-600">

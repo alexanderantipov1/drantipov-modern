@@ -17,7 +17,7 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-serif font-bold text-neutral-900 mb-6">
+                <h2 className="text-3xl font-bold text-neutral-900 mb-6">
                   Get In Touch
                 </h2>
                 <p className="text-lg text-neutral-600">
@@ -102,7 +102,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div>
               <GlassCard>
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-6">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-6">
                   Send Us a Message
                 </h2>
                 <ContactForm />

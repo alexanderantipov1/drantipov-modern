@@ -30,7 +30,7 @@ export function ExpertisePageHero({ title, subtitle, badge }: ExpertisePageHeroP
           )}
 
           <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900"
             variants={fadeInUp}
           >
             {title}

@@ -38,7 +38,7 @@ export default function ReferPatientsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-serif font-bold text-neutral-900 mb-6">
+                <h2 className="text-3xl font-bold text-neutral-900 mb-6">
                   A True Partnership for Your Practice
                 </h2>
                 <div className="space-y-4 text-lg text-neutral-600">
@@ -55,7 +55,7 @@ export default function ReferPatientsPage() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-2xl font-serif font-bold text-neutral-900">
+                <h3 className="text-2xl font-bold text-neutral-900">
                   Why Dentists Choose to Refer to Dr. Antipov
                 </h3>
                 {referralBenefits.map((benefit, index) => (
@@ -109,7 +109,7 @@ export default function ReferPatientsPage() {
 
             <div>
               <GlassCard>
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-2">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-2">
                   Submit a Referral
                 </h2>
                 <p className="text-neutral-600 mb-6">
@@ -125,7 +125,7 @@ export default function ReferPatientsPage() {
       <Section background="gradient" padding="xl">
         <Container size="lg">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900">
+            <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900">
               Our Referral Process
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">

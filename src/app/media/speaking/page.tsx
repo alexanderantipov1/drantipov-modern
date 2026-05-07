@@ -232,7 +232,7 @@ export default function SpeakingPage() {
       <Section background="accent" padding="lg">
         <Container size="xl">
           <div className="text-center mb-12 max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Available Speaking Topics
             </h2>
             <p className="text-lg text-neutral-600">
@@ -244,7 +244,7 @@ export default function SpeakingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {speakingTopics.map((topic) => (
               <GlassCard key={topic.id} className="p-6 md:p-8">
-                <h3 className="text-2xl font-serif font-bold text-neutral-900 mb-3">
+                <h3 className="text-2xl font-bold text-neutral-900 mb-3">
                   {topic.title}
                 </h3>
                 <p className="text-neutral-700 leading-relaxed mb-6">
@@ -291,7 +291,7 @@ export default function SpeakingPage() {
       <Section background="default" padding="lg">
         <Container size="xl">
           <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-2">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-2">
               Upcoming Engagements
             </h2>
             <p className="text-lg text-neutral-600">
@@ -337,7 +337,7 @@ export default function SpeakingPage() {
       <Section background="default" padding="lg">
         <Container size="xl">
           <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-2">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-2">
               Past Speaking Engagements
             </h2>
             <p className="text-lg text-neutral-600">
@@ -373,7 +373,7 @@ export default function SpeakingPage() {
                       <Badge variant="secondary" className="mb-2">
                         {engagement.type}
                       </Badge>
-                      <h3 className="text-2xl font-serif font-bold text-neutral-900 mb-2">
+                      <h3 className="text-2xl font-bold text-neutral-900 mb-2">
                         {engagement.title}
                       </h3>
                       <p className="text-lg text-primary-700 font-medium">
@@ -415,7 +415,7 @@ export default function SpeakingPage() {
               <div className="inline-flex p-4 rounded-full bg-primary-100 mb-4">
                 <Mic2 className="h-8 w-8 text-primary-600" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
                 Book Dr. Antipov for Your Event
               </h2>
               <p className="text-lg text-neutral-600 max-w-2xl mx-auto">

@@ -82,7 +82,7 @@ export default function TermsOfServicePage() {
 
               {/* Acceptance of Terms */}
               <div id="acceptance" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   1. Acceptance of Terms
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -105,7 +105,7 @@ export default function TermsOfServicePage() {
 
               {/* Use of Website */}
               <div id="use-of-website" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   2. Use of Website
                 </h2>
 
@@ -152,7 +152,7 @@ export default function TermsOfServicePage() {
 
               {/* Intellectual Property */}
               <div id="intellectual-property" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   3. Intellectual Property Rights
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -172,7 +172,7 @@ export default function TermsOfServicePage() {
 
               {/* User Content */}
               <div id="user-content" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   4. User-Submitted Content
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -200,7 +200,7 @@ export default function TermsOfServicePage() {
 
               {/* Disclaimers */}
               <div id="disclaimers" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   5. Disclaimer of Warranties
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -231,7 +231,7 @@ export default function TermsOfServicePage() {
 
               {/* Limitation of Liability */}
               <div id="limitation" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   6. Limitation of Liability
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -255,7 +255,7 @@ export default function TermsOfServicePage() {
 
               {/* Governing Law */}
               <div id="governing-law" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   7. Governing Law and Dispute Resolution
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -283,7 +283,7 @@ export default function TermsOfServicePage() {
 
               {/* Contact */}
               <div id="contact" className="mb-8">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   8. Contact Information
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">

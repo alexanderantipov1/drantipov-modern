@@ -147,7 +147,7 @@ export default function EducationCoursesPage() {
       <Section background="default" padding="xl">
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Why Fusion Dental Academy?
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -178,7 +178,7 @@ export default function EducationCoursesPage() {
       <Section background="gradient" padding="xl">
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Available Courses
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -192,7 +192,7 @@ export default function EducationCoursesPage() {
                 <div className="p-6 space-y-4 flex flex-col flex-grow">
                   {/* Course Header */}
                   <div className="space-y-3">
-                    <h3 className="text-xl font-serif font-bold text-neutral-900 min-h-[3.5rem]">
+                    <h3 className="text-xl font-bold text-neutral-900 min-h-[3.5rem]">
                       {course.title}
                     </h3>
                     <div className="flex flex-wrap gap-2">
@@ -252,7 +252,7 @@ export default function EducationCoursesPage() {
                   </div>
                 </div>
                 <div className="lg:col-span-2 space-y-4">
-                  <h2 className="text-3xl font-serif font-bold text-neutral-900">
+                  <h2 className="text-3xl font-bold text-neutral-900">
                     Learn from a Master Clinician
                   </h2>
                   <p className="text-neutral-700 leading-relaxed">
@@ -280,7 +280,7 @@ export default function EducationCoursesPage() {
       <Section background="gradient" padding="xl">
         <Container size="lg">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Ready to Advance Your Skills?
             </h2>
             <p className="text-xl text-neutral-600">

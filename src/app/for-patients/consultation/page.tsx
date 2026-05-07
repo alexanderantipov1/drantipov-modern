@@ -48,7 +48,7 @@ export default function ConsultationPage() {
               <GlassCard className="p-8">
                 <div className="space-y-6">
                   <div>
-                    <h2 className="text-3xl font-serif font-bold text-neutral-900 mb-2">
+                    <h2 className="text-3xl font-bold text-neutral-900 mb-2">
                       Request a Consultation
                     </h2>
                     <p className="text-neutral-600">
@@ -157,7 +157,7 @@ export default function ConsultationPage() {
       <Section background="gradient" padding="xl">
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               What to Expect at Your Consultation
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">

@@ -55,7 +55,7 @@ export default function ImplantsVsDenturesPost() {
             </div>
 
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-6 leading-tight">
               Say Goodbye to Dentures: Discover the Cutting-Edge Dental Implants of 2024
             </h1>
 
@@ -78,7 +78,7 @@ export default function ImplantsVsDenturesPost() {
                 comfort, functionality, and aesthetics.
               </p>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">
                 The Evolution of Dental Implants
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
@@ -87,7 +87,7 @@ export default function ImplantsVsDenturesPost() {
                 foundation that looks, feels, and functions like natural teeth.
               </p>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">
                 10 Revolutionary Technologies Transforming Dental Implants in 2024
               </h2>
 
@@ -181,7 +181,7 @@ export default function ImplantsVsDenturesPost() {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">
                 Why Choose Implants Over Dentures?
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
@@ -190,7 +190,7 @@ export default function ImplantsVsDenturesPost() {
                 favorite foods without restriction.
               </p>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">
                 The Future is Bright
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
@@ -205,7 +205,7 @@ export default function ImplantsVsDenturesPost() {
             <GlassCard className="mt-12 p-8">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl font-serif font-bold text-primary-700">DA</span>
+                  <span className="text-2xl font-bold text-primary-700">DA</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Dr. Alexander V. Antipov</h3>
@@ -220,7 +220,7 @@ export default function ImplantsVsDenturesPost() {
             {/* CTA */}
             <div className="mt-12 text-center">
               <GlassCard className="p-8">
-                <h3 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h3 className="text-2xl font-bold text-neutral-900 mb-4">
                   Ready to Explore Dental Implants?
                 </h3>
                 <p className="text-neutral-700 mb-6">

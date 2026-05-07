@@ -84,7 +84,7 @@ export default function ForDentistsPage() {
       <Section background="default" padding="xl">
         <Container size="xl">
           <div className="text-center mb-12 max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Surgical Services
             </h2>
             <p className="text-lg text-neutral-600">
@@ -110,7 +110,7 @@ export default function ForDentistsPage() {
       <Section background="accent" padding="xl">
         <Container size="lg">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Why Refer to Dr. Antipov?
             </h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
@@ -139,7 +139,7 @@ export default function ForDentistsPage() {
               <div className="inline-flex p-4 rounded-full bg-primary-100 mb-6">
                 <Handshake className="h-10 w-10 text-primary-600" />
               </div>
-              <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+              <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                 Become a Referral Partner
               </h2>
               <p className="text-neutral-700 mb-6 leading-relaxed">
@@ -174,7 +174,7 @@ export default function ForDentistsPage() {
               <div className="inline-flex p-4 rounded-full bg-accent-100 mb-6">
                 <GraduationCap className="h-10 w-10 text-accent-600" />
               </div>
-              <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+              <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                 Continuing Education
               </h2>
               <p className="text-neutral-700 mb-6 leading-relaxed">
@@ -211,7 +211,7 @@ export default function ForDentistsPage() {
       <Section background="gradient" padding="lg">
         <Container size="md">
           <GlassCard className="p-8 md:p-12 text-center">
-            <h2 className="text-3xl font-serif font-bold text-neutral-900 mb-4">Questions About Referrals?</h2>
+            <h2 className="text-3xl font-bold text-neutral-900 mb-4">Questions About Referrals?</h2>
             <p className="text-lg text-neutral-600 mb-8">
               Our team is here to help. Contact us to discuss a patient case or learn more about our referral
               process.

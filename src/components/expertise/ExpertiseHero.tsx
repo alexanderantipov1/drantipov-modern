@@ -15,7 +15,7 @@ export function ExpertiseHero() {
           variants={staggerContainer}
         >
           <motion.h1
-            className="text-5xl lg:text-6xl font-serif font-bold text-neutral-900"
+            className="text-5xl lg:text-6xl font-bold text-neutral-900"
             variants={fadeInUp}
           >
             Specialized Oral Surgery Expertise

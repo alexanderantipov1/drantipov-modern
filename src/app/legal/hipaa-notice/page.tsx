@@ -84,7 +84,7 @@ export default function HIPAANoticePage() {
 
               {/* Overview */}
               <div id="overview" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">1. Overview</h2>
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">1. Overview</h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
                   This Notice of Privacy Practices describes how medical information about you may be used and
                   disclosed by our practice and how you can get access to this information.
@@ -113,7 +113,7 @@ export default function HIPAANoticePage() {
 
               {/* Uses and Disclosures */}
               <div id="uses-disclosures" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   2. How We May Use and Disclose Your Health Information
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-6">
@@ -223,7 +223,7 @@ export default function HIPAANoticePage() {
 
               {/* Your Rights */}
               <div id="your-rights" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   3. Your Rights Regarding Your Health Information
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-6">
@@ -277,7 +277,7 @@ export default function HIPAANoticePage() {
 
               {/* Our Responsibilities */}
               <div id="our-responsibilities" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   4. Our Legal Duties and Responsibilities
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">We are required by law to:</p>
@@ -301,7 +301,7 @@ export default function HIPAANoticePage() {
 
               {/* Changes */}
               <div id="changes" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   5. Changes to This Notice
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -317,7 +317,7 @@ export default function HIPAANoticePage() {
 
               {/* Complaints */}
               <div id="complaints" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">6. Complaints</h2>
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">6. Complaints</h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
                   If you believe your privacy rights have been violated, you may file a complaint with:
                 </p>
@@ -370,7 +370,7 @@ export default function HIPAANoticePage() {
 
               {/* Contact */}
               <div id="contact" className="mb-8">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   7. Contact Information
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">

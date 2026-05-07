@@ -175,7 +175,7 @@ export default function PostOpPage() {
       <Section background="accent" padding="xl">
         <Container size="xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Immediate Post-Operative Care
             </h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
@@ -208,7 +208,7 @@ export default function PostOpPage() {
       <Section background="default" padding="lg">
         <Container size="lg">
           <GlassCard className="p-8 md:p-12">
-            <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-6">
+            <h2 className="text-2xl font-bold text-neutral-900 mb-6">
               Controlling Bleeding
             </h2>
             <div className="space-y-3">
@@ -227,7 +227,7 @@ export default function PostOpPage() {
       <Section background="default" padding="xl">
         <Container size="lg">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Diet Guidelines
             </h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
@@ -294,7 +294,7 @@ export default function PostOpPage() {
       <Section background="accent" padding="lg">
         <Container size="lg">
           <GlassCard className="p-8 md:p-12">
-            <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-6 text-center">
+            <h2 className="text-2xl font-bold text-neutral-900 mb-6 text-center">
               Oral Hygiene Timeline
             </h2>
             <div className="space-y-6 max-w-3xl mx-auto">
@@ -315,7 +315,7 @@ export default function PostOpPage() {
       <Section background="default" padding="lg">
         <Container size="lg">
           <GlassCard className="p-8 md:p-12 bg-amber-50/50">
-            <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-6 text-center">
+            <h2 className="text-2xl font-bold text-neutral-900 mb-6 text-center">
               What to Avoid During Recovery
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
@@ -334,7 +334,7 @@ export default function PostOpPage() {
       <Section background="default" padding="xl">
         <Container size="lg">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Normal Post-Operative Symptoms
             </h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
@@ -363,7 +363,7 @@ export default function PostOpPage() {
       <Section background="gradient" padding="lg">
         <Container size="lg">
           <GlassCard className="p-8 md:p-12 border-2 border-red-500">
-            <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-6 text-center flex items-center justify-center gap-2">
+            <h2 className="text-2xl font-bold text-neutral-900 mb-6 text-center flex items-center justify-center gap-2">
               <Phone className="h-6 w-6 text-red-600" />
               When to Call Our Office
             </h2>
@@ -398,7 +398,7 @@ export default function PostOpPage() {
       <Section background="default" padding="lg">
         <Container size="md">
           <GlassCard className="p-8 text-center">
-            <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-2xl font-bold text-neutral-900 mb-4">
               Follow-Up Appointment
             </h2>
             <p className="text-neutral-700 mb-6 leading-relaxed">

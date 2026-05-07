@@ -42,7 +42,7 @@ export function LatestInsightsSection() {
             <BookOpen className="h-4 w-4 inline mr-2" />
             Patient Education
           </Badge>
-          <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900 mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-4">
             Latest Insights
           </h2>
           <p className="text-xl text-neutral-600 max-w-3xl mx-auto">

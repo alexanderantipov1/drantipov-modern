@@ -87,7 +87,7 @@ export default function ForPatientsPage() {
       <Section background="default" padding="xl">
         <Container size="xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Quick Access Resources
             </h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
@@ -116,7 +116,7 @@ export default function ForPatientsPage() {
       <Section background="accent" padding="xl">
         <Container size="lg">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               What to Expect
             </h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
@@ -147,7 +147,7 @@ export default function ForPatientsPage() {
         <Container size="lg">
           <GlassCard className="p-8 md:p-12">
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mb-4">
+              <h2 className="text-3xl font-bold text-neutral-900 mb-4">
                 Visit Our Office
               </h2>
               <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
@@ -201,7 +201,7 @@ export default function ForPatientsPage() {
       <Section background="default" padding="lg">
         <Container size="lg">
           <div className="text-center">
-            <h2 className="text-3xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-4">
               Have Questions?
             </h2>
             <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto">
@@ -221,7 +221,7 @@ export default function ForPatientsPage() {
             <div className="inline-flex p-4 rounded-full bg-red-100 mb-4">
               <Phone className="h-8 w-8 text-red-600" />
             </div>
-            <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-3">
+            <h2 className="text-2xl font-bold text-neutral-900 mb-3">
               Post-Operative Emergency?
             </h2>
             <p className="text-neutral-700 mb-6">

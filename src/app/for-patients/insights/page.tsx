@@ -101,7 +101,7 @@ export default function InsightsPage() {
                         </div>
                       </div>
 
-                      <h2 className="text-2xl md:text-3xl font-serif font-bold text-neutral-900 leading-tight">
+                      <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 leading-tight">
                         {post.title}
                       </h2>
 
@@ -128,7 +128,7 @@ export default function InsightsPage() {
       <Section background="gradient" padding="xl">
         <Container size="lg">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Have Questions About Your Oral Health?
             </h2>
             <p className="text-xl text-neutral-600">

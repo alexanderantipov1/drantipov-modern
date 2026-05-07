@@ -174,7 +174,7 @@ export default function MoleRemovalPage() {
         <Container size="lg">
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="text-center space-y-4">
-              <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+              <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
                 Advanced Technology for Flawless Results
               </h2>
               <p className="text-xl text-neutral-600">
@@ -213,7 +213,7 @@ export default function MoleRemovalPage() {
         <Container size="lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-6">
-              <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+              <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
                 Why Choose Radio Wave Surgery?
               </h2>
               <p className="text-xl text-neutral-600">
@@ -227,7 +227,7 @@ export default function MoleRemovalPage() {
               <GlassCard variant="hover">
                 <div className="space-y-4">
                   <Radio className="h-12 w-12 text-primary-600" />
-                  <h3 className="text-2xl font-serif font-bold text-neutral-900">
+                  <h3 className="text-2xl font-bold text-neutral-900">
                     Ellman® Radio Wave Technology
                   </h3>
                   <p className="text-neutral-600 leading-relaxed">
@@ -242,7 +242,7 @@ export default function MoleRemovalPage() {
               <GlassCard variant="hover">
                 <div className="space-y-4">
                   <Award className="h-12 w-12 text-primary-600" />
-                  <h3 className="text-2xl font-serif font-bold text-neutral-900">
+                  <h3 className="text-2xl font-bold text-neutral-900">
                     Facial Cosmetic Surgery Expertise
                   </h3>
                   <p className="text-neutral-600 leading-relaxed">
@@ -261,7 +261,7 @@ export default function MoleRemovalPage() {
       <Section background="default" padding="xl">
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Is Radio Wave Mole Removal Right for You?
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -285,7 +285,7 @@ export default function MoleRemovalPage() {
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
             <Clock className="h-12 w-12 text-primary-600 mx-auto" />
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               The Radio Wave Mole Removal Process
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -307,7 +307,7 @@ export default function MoleRemovalPage() {
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
                   <Sparkles className="h-10 w-10 text-primary-600" />
-                  <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900">
+                  <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900">
                     Real Patient Success
                   </h2>
                 </div>
@@ -358,7 +358,7 @@ export default function MoleRemovalPage() {
         <Container size="lg">
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="text-center space-y-4">
-              <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+              <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
                 Frequently Asked Questions
               </h2>
             </div>
@@ -385,7 +385,7 @@ export default function MoleRemovalPage() {
       <Section background="default" padding="xl">
         <Container size="lg">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Ready for Scarless Mole Removal?
             </h2>
             <p className="text-xl text-neutral-600">

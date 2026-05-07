@@ -29,7 +29,7 @@ export default function SurgicalCasesPage() {
       <Section background="default" padding="xl">
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Explore By Specialty
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -74,7 +74,7 @@ export default function SurgicalCasesPage() {
       <Section background="gradient" padding="xl">
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Featured Surgical Cases
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -105,7 +105,7 @@ export default function SurgicalCasesPage() {
       <Section background="default" padding="xl">
         <Container size="lg">
           <div className="max-w-3xl mx-auto text-center space-y-8 bg-gradient-to-br from-primary-50 to-accent-50 rounded-3xl p-12">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Ready to Begin Your Transformation?
             </h2>
             <p className="text-xl text-neutral-600">

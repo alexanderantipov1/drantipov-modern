@@ -19,7 +19,7 @@ export function CaseHero({ title, description, stats }: CaseHeroProps) {
       <Container size="lg">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <motion.div {...fadeInUp} className="space-y-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900">
               {title}
             </h1>
             <p className="text-xl md:text-2xl text-neutral-600 leading-relaxed">

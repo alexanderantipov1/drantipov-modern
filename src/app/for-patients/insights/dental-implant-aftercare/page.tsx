@@ -53,7 +53,7 @@ export default function DentalImplantAftercarePost() {
             </div>
 
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-6 leading-tight">
               Dental Implant Aftercare: Tips for a Successful Recovery
             </h1>
 
@@ -89,7 +89,7 @@ export default function DentalImplantAftercarePost() {
                 implant success. Here's your comprehensive guide to post-operative care.
               </p>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">
                 9 Essential Aftercare Tips for Successful Recovery
               </h2>
 
@@ -334,7 +334,7 @@ export default function DentalImplantAftercarePost() {
                 </GlassCard>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">Recovery Timeline</h2>
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">Recovery Timeline</h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Understanding what to expect during recovery helps reduce anxiety:
               </p>
@@ -372,7 +372,7 @@ export default function DentalImplantAftercarePost() {
                 </GlassCard>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">
                 Contact Our Office
               </h2>
               <GlassCard className="p-6 mb-8">
@@ -394,7 +394,7 @@ export default function DentalImplantAftercarePost() {
             <GlassCard className="mt-12 p-8">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl font-serif font-bold text-primary-700">DA</span>
+                  <span className="text-2xl font-bold text-primary-700">DA</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Dr. Alexander V. Antipov</h3>
@@ -409,7 +409,7 @@ export default function DentalImplantAftercarePost() {
             {/* CTA */}
             <div className="mt-12 text-center">
               <GlassCard className="p-8">
-                <h3 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h3 className="text-2xl font-bold text-neutral-900 mb-4">
                   Ready to Transform Your Smile?
                 </h3>
                 <p className="text-neutral-700 mb-6">

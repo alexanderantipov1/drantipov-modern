@@ -41,7 +41,7 @@ export function WhyChooseSection() {
     <Section background="default" padding="xl" id="why-choose">
       <Container size="lg">
         <div className="text-center space-y-4 mb-12">
-          <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+          <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
             Why Choose Dr. Antipov
           </h2>
           <p className="text-xl text-neutral-600 max-w-3xl mx-auto">

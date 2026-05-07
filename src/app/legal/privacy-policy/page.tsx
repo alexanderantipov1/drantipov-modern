@@ -76,7 +76,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Information We Collect */}
               <div id="information-we-collect" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   1. Information We Collect
                 </h2>
 
@@ -124,7 +124,7 @@ export default function PrivacyPolicyPage() {
 
               {/* How We Use Information */}
               <div id="how-we-use-information" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   2. How We Use Your Information
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -142,7 +142,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Data Security */}
               <div id="data-security" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   3. Data Security Measures
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -163,7 +163,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Cookies */}
               <div id="cookies" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   4. Cookies and Tracking Technologies
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -192,7 +192,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Third-Party Services */}
               <div id="third-party" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   5. Third-Party Services
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
@@ -254,7 +254,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Your Rights */}
               <div id="your-rights" className="mb-12">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">
                   6. Your Privacy Rights
                 </h2>
 
@@ -306,7 +306,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Contact */}
               <div id="contact" className="mb-8">
-                <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">7. Contact Us</h2>
+                <h2 className="text-2xl font-bold text-neutral-900 mb-4">7. Contact Us</h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
                   If you have questions about this Privacy Policy or our privacy practices, please contact
                   us:

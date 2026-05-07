@@ -219,7 +219,7 @@ export default function VideosPage() {
       <Section background="default" padding="lg">
         <Container size="xl">
           <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-2">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-2">
               Featured Videos
             </h2>
             <p className="text-lg text-neutral-600">
@@ -285,7 +285,7 @@ export default function VideosPage() {
       <Section background="accent" padding="lg">
         <Container size="xl">
           <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-2">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-2">
               Recent Uploads
             </h2>
             <p className="text-lg text-neutral-600">Latest educational content and surgical videos</p>
@@ -336,7 +336,7 @@ export default function VideosPage() {
       <Section background="default" padding="lg">
         <Container size="xl">
           <div className="mb-8">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-2">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-2">
               Conference Presentations
             </h2>
             <p className="text-lg text-neutral-600">
@@ -361,7 +361,7 @@ export default function VideosPage() {
                   {/* Content */}
                   <div className="flex-1 space-y-3">
                     <div>
-                      <h3 className="text-2xl font-serif font-bold text-neutral-900 mb-2">
+                      <h3 className="text-2xl font-bold text-neutral-900 mb-2">
                         {talk.title}
                       </h3>
                       <div className="text-sm text-neutral-600 space-y-1">
@@ -388,7 +388,7 @@ export default function VideosPage() {
       <Section background="gradient" padding="lg">
         <Container size="md">
           <GlassCard className="p-8 md:p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Subscribe for More Content
             </h2>
             <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto">

@@ -22,7 +22,7 @@ export function CTASection() {
         <GlassCard className="text-center">
           <div className="max-w-3xl mx-auto space-y-8">
             <div className="space-y-4">
-              <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900">
+              <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900">
                 Ready to Transform Your Smile?
               </h2>
               <p className="text-lg lg:text-xl text-neutral-600">

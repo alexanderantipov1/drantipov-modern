@@ -40,7 +40,7 @@ export default function CorrectiveJawSurgeryPage() {
         <Container size="lg">
           <div className="space-y-12">
             <div className="max-w-3xl mx-auto text-center space-y-4">
-              <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900">
+              <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900">
                 Transformative Jaw Surgery Results
               </h2>
               <p className="text-lg text-neutral-600">
@@ -57,7 +57,7 @@ export default function CorrectiveJawSurgeryPage() {
       <Section background="default" padding="xl">
         <Container size="lg">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-8 text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900 mb-8 text-center">
               Common Procedures in Corrective Jaw Surgery
             </h2>
 
@@ -106,7 +106,7 @@ export default function CorrectiveJawSurgeryPage() {
       <Section background="gradient" padding="xl">
         <Container size="lg">
           <div className="max-w-3xl mx-auto text-center space-y-8 bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-glass">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Considering Corrective Jaw Surgery?
             </h2>
             <p className="text-xl text-neutral-600">

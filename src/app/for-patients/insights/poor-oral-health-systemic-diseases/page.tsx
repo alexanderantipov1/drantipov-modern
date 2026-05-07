@@ -53,7 +53,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
             </div>
 
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 mb-6 leading-tight">
               The Hidden Link: How Poor Oral Health Can Lead to Cancer and Systemic Diseases
             </h1>
 
@@ -84,7 +84,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 </div>
               </GlassCard>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">
                 Understanding the Oral-Systemic Connection
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
@@ -98,7 +98,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 systemic disease and the oral diseases that influence systemic health." - Dr. Jennifer Webster-Cyriaque
               </blockquote>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">
                 The Cancer Connection
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
@@ -133,7 +133,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 </GlassCard>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">
                 Other Systemic Diseases Linked to Oral Health
               </h2>
 
@@ -178,7 +178,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">
                 The Role of Chronic Inflammation
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
@@ -192,7 +192,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 cancer treatment more difficult." - Dr. Xi Chen
               </blockquote>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">Startling Statistics</h2>
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">Startling Statistics</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                 <GlassCard className="p-6 text-center">
                   <div className="text-4xl font-bold text-primary-600 mb-2">3.5B</div>
@@ -204,7 +204,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 </GlassCard>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">Prevention is Key</h2>
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">Prevention is Key</h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 The good news is that most oral health problems are preventable. Here's how to protect both your oral
                 and overall health:
@@ -248,7 +248,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 </GlassCard>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">Conclusion</h2>
+              <h2 className="text-3xl font-bold text-neutral-900 mt-12 mb-6">Conclusion</h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Your oral health is a window into your overall health. By maintaining good oral hygiene and seeking
                 regular dental care, you're not just protecting your smile—you're safeguarding your entire body against
@@ -261,7 +261,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
             <GlassCard className="mt-12 p-8">
               <div className="flex items-start gap-6">
                 <div className="w-20 h-20 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl font-serif font-bold text-primary-700">DA</span>
+                  <span className="text-2xl font-bold text-primary-700">DA</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Dr. Alexander V. Antipov</h3>
@@ -276,7 +276,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
             {/* CTA */}
             <div className="mt-12 text-center">
               <GlassCard className="p-8">
-                <h3 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                <h3 className="text-2xl font-bold text-neutral-900 mb-4">
                   Protect Your Overall Health with Better Oral Care
                 </h3>
                 <p className="text-neutral-700 mb-6">

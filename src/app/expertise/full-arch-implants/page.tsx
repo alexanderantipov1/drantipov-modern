@@ -138,7 +138,7 @@ export default function FullArchImplantsPage() {
         <Container size="lg">
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="text-center space-y-4">
-              <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+              <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
                 What Are Full-Arch Dental Implants?
               </h2>
               <p className="text-xl text-neutral-600">
@@ -173,7 +173,7 @@ export default function FullArchImplantsPage() {
         <Container size="lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-6">
-              <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+              <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
                 Life-Changing Benefits
               </h2>
               <p className="text-xl text-neutral-600">
@@ -187,7 +187,7 @@ export default function FullArchImplantsPage() {
               <GlassCard variant="hover">
                 <div className="space-y-4">
                   <Award className="h-12 w-12 text-primary-600" />
-                  <h3 className="text-2xl font-serif font-bold text-neutral-900">
+                  <h3 className="text-2xl font-bold text-neutral-900">
                     Dr. Antipov's Expertise
                   </h3>
                   <p className="text-neutral-600 leading-relaxed">
@@ -201,7 +201,7 @@ export default function FullArchImplantsPage() {
               <GlassCard variant="hover">
                 <div className="space-y-4">
                   <Users className="h-12 w-12 text-primary-600" />
-                  <h3 className="text-2xl font-serif font-bold text-neutral-900">
+                  <h3 className="text-2xl font-bold text-neutral-900">
                     Trusted by Dentists
                   </h3>
                   <p className="text-neutral-600 leading-relaxed">
@@ -221,7 +221,7 @@ export default function FullArchImplantsPage() {
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
             <Clock className="h-12 w-12 text-primary-600 mx-auto" />
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Your Journey to a New Smile
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -240,7 +240,7 @@ export default function FullArchImplantsPage() {
         <Container size="lg">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <Heart className="h-12 w-12 text-primary-600 mx-auto" />
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Is Full-Arch Restoration Right for You?
             </h2>
 
@@ -310,7 +310,7 @@ export default function FullArchImplantsPage() {
         <Container size="lg">
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="text-center space-y-4">
-              <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+              <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
                 Frequently Asked Questions
               </h2>
               <p className="text-xl text-neutral-600">
@@ -340,7 +340,7 @@ export default function FullArchImplantsPage() {
       <Section background="gradient" padding="xl">
         <Container size="lg">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900">
               Ready to Transform Your Smile?
             </h2>
             <p className="text-xl text-neutral-600">

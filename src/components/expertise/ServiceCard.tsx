@@ -48,7 +48,7 @@ export function ServiceCard({ title, description, icon, href, index }: ServiceCa
             <Icon className="h-12 w-12 text-primary-600" />
           </div>
 
-          <h3 className="text-2xl font-serif font-bold text-neutral-900">
+          <h3 className="text-2xl font-bold text-neutral-900">
             {title}
           </h3>
 

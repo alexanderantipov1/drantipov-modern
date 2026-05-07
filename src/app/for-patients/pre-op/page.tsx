@@ -124,7 +124,7 @@ export default function PreOpPage() {
       <Section background="accent" padding="xl">
         <Container size="xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Before Your Surgery
             </h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
@@ -157,7 +157,7 @@ export default function PreOpPage() {
       <Section background="default" padding="lg">
         <Container size="lg">
           <GlassCard className="p-8 md:p-12">
-            <h2 className="text-3xl font-serif font-bold text-neutral-900 mb-6 text-center">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-6 text-center">
               What to Bring on Surgery Day
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
@@ -178,7 +178,7 @@ export default function PreOpPage() {
       <Section background="default" padding="lg">
         <Container size="lg">
           <GlassCard className="p-8 md:p-12 bg-red-50/50">
-            <h2 className="text-3xl font-serif font-bold text-neutral-900 mb-6 text-center">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-6 text-center">
               What NOT to Do Before Surgery
             </h2>
             <div className="space-y-3 max-w-3xl mx-auto">
@@ -197,7 +197,7 @@ export default function PreOpPage() {
       <Section background="default" padding="xl">
         <Container size="lg">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
               Day of Surgery
             </h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
@@ -220,7 +220,7 @@ export default function PreOpPage() {
       <Section background="accent" padding="lg">
         <Container size="lg">
           <GlassCard className="p-8 md:p-12">
-            <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-6 text-center">
+            <h2 className="text-2xl font-bold text-neutral-900 mb-6 text-center">
               Special Instructions for IV Sedation or General Anesthesia
             </h2>
             <div className="space-y-4 max-w-3xl mx-auto">
@@ -265,7 +265,7 @@ export default function PreOpPage() {
       <Section background="gradient" padding="lg">
         <Container size="md">
           <GlassCard className="p-8 md:p-12 text-center">
-            <h2 className="text-3xl font-serif font-bold text-neutral-900 mb-4">
+            <h2 className="text-3xl font-bold text-neutral-900 mb-4">
               Questions About Your Procedure?
             </h2>
             <p className="text-lg text-neutral-600 mb-8 max-w-2xl mx-auto">

@@ -185,10 +185,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://drantipov.com",
   },
-  icons: {
-    icon: "/images/logo-b97aa5c8.png",
-    apple: "/images/logo-b97aa5c8.png",
-  },
   category: "Health",
 };
 

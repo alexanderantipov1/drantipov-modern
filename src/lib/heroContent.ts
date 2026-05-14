@@ -9,7 +9,7 @@ export interface HeroContent {
 const heroContent: Record<string, HeroContent> = {
   // ===== Top-level pages =====
   "/about": {
-    image: "/images/landing-pages/dental-implants/art/meet-the-doctor-76c0424d.jpg",
+    image: "/heroes/about.jpg",
     eyebrow: "Meet Your Surgeons",
     title: "Two Experts. One Mission.",
     subtitle:
@@ -17,7 +17,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "gradient",
   },
   "/results": {
-    image: "/images/office-tour/1/gallery@2x-ecef5848.jpg",
+    image: "/heroes/results.jpg",
     eyebrow: "Why Patients Choose Us",
     title: "Results That Speak for Themselves",
     subtitle:
@@ -25,7 +25,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "navy",
   },
   "/locations": {
-    image: "/images/locations/locations@2x-dc292d32.jpg",
+    image: "/heroes/locations.jpg",
     eyebrow: "Find Us",
     title: "Our Locations & Service Area",
     subtitle:
@@ -33,7 +33,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "navy",
   },
   "/contact": {
-    image: "/images/invitations/schedule@2x-d30ac039.jpg",
+    image: "/heroes/contact.jpg",
     eyebrow: "Get in Touch",
     title: "Contact Our Practice",
     subtitle:
@@ -41,7 +41,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "gradient",
   },
   "/full-arch-dental-implants": {
-    image: "/images/fullarch/08-final-result.jpeg",
+    image: "/heroes/full-arch.jpg",
     eyebrow: "Full Arch Specialists",
     title: "All-on-4 & All-on-6 Dental Implants",
     subtitle:
@@ -51,7 +51,7 @@ const heroContent: Record<string, HeroContent> = {
 
   // ===== Expertise hub =====
   "/expertise": {
-    image: "/images/procedures/dental-implants@2x-06d1b2ea.jpg",
+    image: "/heroes/expertise.jpg",
     eyebrow: "Comprehensive Oral Surgery",
     title: "Advanced Surgical Specialties & Procedures",
     subtitle:
@@ -61,7 +61,7 @@ const heroContent: Record<string, HeroContent> = {
 
   // ===== Surgical Cases =====
   "/surgical-cases": {
-    image: "/images/landing-pages/dental-implants/art/smiling-woman-7bc2b588.jpg",
+    image: "/heroes/surgical-cases.jpg",
     eyebrow: "Real Patient Transformations",
     title: "Before & After Gallery",
     subtitle:
@@ -69,7 +69,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "dark",
   },
   "/surgical-cases/dental-implants": {
-    image: "/images/dental-implants/dental-implants@2x-0aad592f.jpg",
+    image: "/heroes/dental-implants.jpg",
     eyebrow: "Implant Cases",
     title: "Dental Implant Transformations",
     subtitle:
@@ -77,7 +77,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "dark",
   },
   "/surgical-cases/corrective-jaw-surgery": {
-    image: "/images/corrective-jaw-surgery/corrective-jaw-surgery-97156448.jpg",
+    image: "/heroes/jaw-surgery.jpg",
     eyebrow: "Jaw Surgery Cases",
     title: "Corrective Jaw Surgery Results",
     subtitle:
@@ -85,7 +85,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "dark",
   },
   "/surgical-cases/facial-cosmetic-surgery": {
-    image: "/images/procedures/facial-cosmetic-surgery@2x-d3793d23.jpg",
+    image: "/heroes/facial-cosmetic.jpg",
     eyebrow: "Facial Cosmetic Cases",
     title: "Cosmetic Surgery Transformations",
     subtitle:
@@ -95,7 +95,7 @@ const heroContent: Record<string, HeroContent> = {
 
   // ===== For Patients =====
   "/for-patients": {
-    image: "/images/landing-pages/dental-implants/art/office01-d1051d16.jpg",
+    image: "/heroes/for-patients.jpg",
     eyebrow: "Patient Resources",
     title: "Everything You Need to Know",
     subtitle:
@@ -103,7 +103,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "navy",
   },
   "/for-patients/testimonials": {
-    image: "/images/testimonials/video-preview-1@2x-61d7adf2.jpg",
+    image: "/heroes/testimonials.jpg",
     eyebrow: "Patient Reviews",
     title: "Hear from Our Patients",
     subtitle:
@@ -111,7 +111,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "navy",
   },
   "/for-patients/faqs": {
-    image: "/images/invitations/information@2x-2c417502.jpg",
+    image: "/heroes/faqs.jpg",
     eyebrow: "Common Questions",
     title: "Frequently Asked Questions",
     subtitle:
@@ -119,7 +119,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "navy",
   },
   "/for-patients/consultation": {
-    image: "/images/invitations/schedule-a16fad8c.jpg",
+    image: "/heroes/consultation.jpg",
     eyebrow: "Get Started Today",
     title: "Schedule Your Free Consultation",
     subtitle:
@@ -127,7 +127,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "gradient",
   },
   "/for-patients/insights": {
-    image: "/images/blog/2023-04-10/dental-implants-process-c1577863.jpg",
+    image: "/heroes/insights.jpg",
     eyebrow: "Education & Insights",
     title: "Patient Education Articles",
     subtitle:
@@ -135,7 +135,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "navy",
   },
   "/for-patients/pre-op": {
-    image: "/images/blog/2023-04-13/dental-implant-aftercare-3ae5a0d1.jpg",
+    image: "/heroes/pre-op.jpg",
     eyebrow: "Pre-Operative Care",
     title: "Preparing for Your Surgery",
     subtitle:
@@ -143,7 +143,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "navy",
   },
   "/for-patients/post-op": {
-    image: "/images/blog/2015-12-30/patient-post-op-visit@2x-6de2a75d.jpg",
+    image: "/heroes/post-op.jpg",
     eyebrow: "Recovery Care",
     title: "Post-Operative Instructions",
     subtitle:
@@ -153,7 +153,7 @@ const heroContent: Record<string, HeroContent> = {
 
   // ===== For Dentists =====
   "/for-dentists": {
-    image: "/images/blog/2015-06-22/surgery-team-411cef8b.jpg",
+    image: "/heroes/for-dentists.jpg",
     eyebrow: "For Dental Professionals",
     title: "Partner with Us",
     subtitle:
@@ -161,7 +161,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "gradient",
   },
   "/for-dentists/refer-patients": {
-    image: "/images/online-consultation/online-consult@2x-6555264c.jpg",
+    image: "/heroes/refer-patients.jpg",
     eyebrow: "Referral Process",
     title: "Refer a Patient",
     subtitle:
@@ -169,7 +169,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "navy",
   },
   "/for-dentists/referral-partners": {
-    image: "/images/blog/2015-06-22/baltic-sea-group-photo-1e17f44d.jpg",
+    image: "/heroes/referral-partners.jpg",
     eyebrow: "Partnership",
     title: "Become a Referral Partner",
     subtitle:
@@ -177,7 +177,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "navy",
   },
   "/for-dentists/education/courses": {
-    image: "/images/blog/2017-06-12/2017-bscoso-summer-course@2x-da40cb05.jpg",
+    image: "/heroes/education-courses.jpg",
     eyebrow: "Continuing Education",
     title: "CE Courses & Workshops",
     subtitle:
@@ -187,7 +187,7 @@ const heroContent: Record<string, HeroContent> = {
 
   // ===== Media =====
   "/media/videos": {
-    image: "/images/testimonials/video-preview-3@2x-adae89ec.jpg",
+    image: "/heroes/media-videos.jpg",
     eyebrow: "Media & Videos",
     title: "Watch Our Procedures",
     subtitle:
@@ -195,7 +195,7 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "dark",
   },
   "/media/speaking": {
-    image: "/images/blog/2014-12-05/speaker-dr-antipov-8af6f91c.jpg",
+    image: "/heroes/media-speaking.jpg",
     eyebrow: "Speaking & Education",
     title: "Conference Presentations",
     subtitle:
@@ -205,28 +205,28 @@ const heroContent: Record<string, HeroContent> = {
 
   // ===== Legal =====
   "/legal/privacy-policy": {
-    image: "/images/landing-pages/dental-implants/art/pattern-background01-5a7afc40.jpg",
+    image: "/heroes/legal.jpg",
     eyebrow: "Legal",
     title: "Privacy Policy",
     subtitle: "How we collect, use, and protect your information.",
     overlay: "navy",
   },
   "/legal/terms-of-service": {
-    image: "/images/landing-pages/dental-implants/art/pattern-background01-5a7afc40.jpg",
+    image: "/heroes/legal.jpg",
     eyebrow: "Legal",
     title: "Terms of Service",
     subtitle: "The terms and conditions for using our website and services.",
     overlay: "navy",
   },
   "/legal/hipaa-notice": {
-    image: "/images/landing-pages/dental-implants/art/pattern-background01-5a7afc40.jpg",
+    image: "/heroes/legal.jpg",
     eyebrow: "Legal",
     title: "HIPAA Notice of Privacy Practices",
     subtitle: "Your rights and our responsibilities regarding your protected health information.",
     overlay: "navy",
   },
   "/legal/medical-disclaimer": {
-    image: "/images/landing-pages/dental-implants/art/pattern-background01-5a7afc40.jpg",
+    image: "/heroes/legal.jpg",
     eyebrow: "Legal",
     title: "Medical Disclaimer",
     subtitle: "Important information about the medical content on this website.",

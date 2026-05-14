@@ -39,7 +39,7 @@ const services = [
     subtitle: "All-on-4, All-on-6, zygomatic implants, teeth-in-a-day",
     body:
       "Полный набор фиксированных зубов за один визит. Dr. Antipov использует 3D cone-beam CT и навигационную хирургию для точной установки — даже в случаях, когда другие хирурги отказались из-за нехватки кости. При тяжёлой потере кости верхней челюсти — zygomatic implants, без длительной костной пластики. В каждом случае All-on-4 / All-on-6 устанавливаются временные зубы в день операции.",
-    image: "/images/procedures/dental-implants-26292ad9.jpg",
+    image: "/heroes/services/full-arch.jpg",
     features: [
       "All-on-4 / All-on-6",
       "Zygomatic implants",
@@ -54,7 +54,7 @@ const services = [
     subtitle: "Orthognathic, Le Fort, BSSO, genioplasty",
     body:
       "Компьютерное планирование исправления прикуса, восстановления функции жевания и гармонии лица. Mesial / distal occlusion, открытый прикус, перекрёстный прикус, асимметрия лица, обструктивное апноэ. Le Fort I osteotomy, BSSO, genioplasty, maxillomandibular advancement, double jaw surgery — с точностью до миллиметра по 3D-планированию.",
-    image: "/images/procedures/corrective-jaw-surgery-406b79a4.jpg",
+    image: "/heroes/services/jaw-surgery.jpg",
     features: [
       "Orthognathic surgery",
       "Le Fort I osteotomy",
@@ -69,7 +69,7 @@ const services = [
     subtitle: "Rhinoplasty, face lift, blepharoplasty, филлеры",
     body:
       "Эстетические процедуры, выполненные board-certified челюстно-лицевым хирургом, который знает анатомию лица на самом глубоком уровне. Ринопластика, фейслифтинг, верхняя и нижняя blepharoplasty, азиатская двойная веко, facial feminization, удаление родинок без шрама, Juvederm, увеличение губ, аутологичный жировой transfer.",
-    image: "/images/procedures/facial-cosmetic-surgery-e97fd634.jpg",
+    image: "/heroes/services/facial-cosmetic.jpg",
     features: [
       "Rhinoplasty",
       "Face lift",
@@ -84,7 +84,7 @@ const services = [
     subtitle: "Organic, holistic и аутогенная регенерация кости",
     body:
       "Восстановление кости челюсти, потерянной из-за удаления зубов, пародонтита или травмы. Sinus lift, ridge augmentation, socket preservation, block bone graft, guided bone regeneration. Аутогенный, allograft, xenograft и синтетические материалы — включая натуральные органические варианты для подготовки к имплантации.",
-    image: "/images/procedures/extractions-1896b4c1.jpg",
+    image: "/heroes/services/bone-grafting.jpg",
     features: [
       "Sinus lift",
       "Ridge augmentation",
@@ -99,7 +99,7 @@ const services = [
     subtitle: "Зубы мудрости, TMJ, IV sedation",
     body:
       "Комплексная хирургия полости рта: удаление impacted зубов мудрости, сложные удаления, хирургическое раскрытие impacted зубов для ортодонтии, лечение TMJ, удаление кист и опухолей, pre-prosthetic surgery. Все процедуры — под комфортной IV-седацией или общей анестезией в Roseville surgical center.",
-    image: "/images/landing-pages/dental-implants/art/slider02-ff45c735.jpg",
+    image: "/heroes/services/oral-surgery.jpg",
     features: [
       "Wisdom teeth",
       "Impacted teeth",
@@ -114,7 +114,7 @@ const services = [
     subtitle: "Single implants, мостовидные протезы, snap-on dentures",
     body:
       "Замена одного или нескольких зубов — самый естественный и долговечный вариант. Single tooth implants с immediate temporary crowns, implant-supported bridges для нескольких соседних зубов, snap-on dentures (overdentures) для съёмного варианта на имплантах. Все импланты ставятся под 3D CT-навигацией с титаном медицинского класса.",
-    image: "/images/landing-pages/dental-implants/art/smiling-woman-7bc2b588.jpg",
+    image: "/heroes/services/single-implants.jpg",
     features: [
       "Single tooth implant",
       "Implant bridge",

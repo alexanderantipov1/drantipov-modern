@@ -68,9 +68,9 @@ export default function Footer() {
             <Image
               src="/images/logo-d10cd66c.svg"
               alt="Dr. Alexander Antipov, DDS — Oral and Maxillofacial Surgery — Roseville, CA"
-              width={180}
-              height={60}
-              className="h-10 w-auto brightness-200 invert"
+              width={220}
+              height={72}
+              className="h-14 w-auto bg-white rounded-xl p-2"
             />
             <p className="mt-4 max-w-sm text-sm leading-relaxed">
               Board-certified oral &amp; maxillofacial surgeon specializing in same-day dental implants (All-on-4, All-on-6, zygomatic), full arch restoration, corrective jaw surgery, organic bone grafting, facial cosmetic surgery, and wisdom teeth removal. Serving Roseville, Sacramento, San Francisco, Reno, and all of Northern California.

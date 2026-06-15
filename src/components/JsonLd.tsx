@@ -345,9 +345,18 @@ export default function JsonLd() {
         { "@type": "Organization", name: "California Dental Association", alternateName: "CDA", sameAs: "https://www.cda.org" },
       ],
       hasCredential: [
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "Diplomate, American Board of Oral and Maxillofacial Surgery (ABOMS)" },
         { "@type": "EducationalOccupationalCredential", credentialCategory: "license", name: "California Dental License", identifier: "50724" },
         { "@type": "EducationalOccupationalCredential", credentialCategory: "license", name: "DEA Certificate", identifier: "FA 0689717" },
-        { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "General Anesthesia Permit", identifier: "GA 1446" },
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "General Anesthesia Permit (in-office IV sedation)", identifier: "GA 1446" },
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "Elective Facial Cosmetic Surgery Permit" },
+        { "@type": "EducationalOccupationalCredential", credentialCategory: "registration", name: "Continuing Education Registered Provider", identifier: "00948675" },
+      ],
+      affiliation: [
+        { "@type": "Hospital", name: "Sutter Roseville Medical Center", sameAs: "https://www.sutterhealth.org/srmc" },
+        { "@type": "Hospital", name: "Sutter General Hospital", sameAs: "https://www.sutterhealth.org" },
+        { "@type": "Hospital", name: "Mercy General Hospital", sameAs: "https://www.dignityhealth.org/sacramento/locations/mercygeneral" },
+        { "@type": "Hospital", name: "Mercy San Juan Medical Center", sameAs: "https://www.dignityhealth.org/sacramento/locations/mercysanjuan" },
       ],
     },
     employee: [

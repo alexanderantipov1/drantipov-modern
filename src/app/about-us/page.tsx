@@ -14,7 +14,7 @@ import Blog from "@/components/Blog";
 import CTA from "@/components/CTA";
 
 import type { Metadata } from "next";
-import { getPhysicianSchema, getKahwachPhysicianSchema, getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data";
+import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data";
 import { siteConfig } from "@/constants/siteConfig";
 
 export const metadata: Metadata = {
@@ -75,8 +75,6 @@ export default function AboutUsPage() {
               "@id": `${siteConfig.url}/#physician`,
             },
           },
-          getPhysicianSchema(),
-          getKahwachPhysicianSchema(),
           getBreadcrumbSchema([
             { name: "Home", url: siteConfig.url },
             { name: "About Us", url: `${siteConfig.url}/about-us` },

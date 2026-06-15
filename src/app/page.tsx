@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import TrustBadges from "@/components/TrustBadges";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import PracticePhilosophy from "@/components/PracticePhilosophy";
@@ -17,7 +16,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Dr. Alexander Antipov, DDS — Oral Surgeon | Roseville, CA",
+    absolute: "Same-Day Dental Implants & Oral Surgery — Dr. Antipov, Roseville CA",
   },
   description:
     "Board-certified oral & maxillofacial surgeon in Roseville, CA. Same-day full-arch implants, jaw surgery, sleep apnea, bone grafting. 25+ years.",
@@ -29,22 +28,22 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Dr. Alexander Antipov — Oral Surgeon in Roseville, CA",
+    title: "Same-Day Dental Implants & Oral Surgery — Dr. Antipov, Roseville CA",
     description: "Board-certified oral & maxillofacial surgeon. Same-day full-arch implants, jaw surgery, sleep apnea. 25+ years.",
     images: [
       {
-        url: "/images/drantipov-main-gemini.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Dr. Alexander Antipov — Oral Surgeon in Roseville, CA",
+        url: "/images/Antipov_white.jpg",
+        width: 1016,
+        height: 1400,
+        alt: "Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon, Roseville CA",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Alexander Antipov — Oral Surgeon in Roseville, CA",
+    title: "Same-Day Dental Implants & Oral Surgery — Dr. Antipov, Roseville CA",
     description: "Board-certified oral & maxillofacial surgeon. Same-day full-arch implants, jaw surgery, sleep apnea. 25+ years.",
-    images: ["/images/drantipov-main-gemini.jpg"],
+    images: ["/images/Antipov_white.jpg"],
   }
 };
 
@@ -80,7 +79,6 @@ export default function Home() {
       </a>
       <div id="main-content">
         <Hero />
-        <TrustBadges />
         <About />
         <PracticePhilosophy />
         <Services />

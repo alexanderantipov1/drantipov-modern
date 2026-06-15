@@ -5,8 +5,14 @@ import { cities } from "@/constants/cities";
 
 const siteUrl = siteConfig.url;
 
+// Static ISO dates — Google ignores `lastmod` that churns every build
+const lastModRecent = new Date("2026-06-14"); // Hero, About, expertise hub (recent updates)
+const lastModBoneGraft = new Date("2026-06-12"); // bone-grafting (new anchors)
+const lastModSeason = new Date("2026-06-01"); // procedures + insurance (seasonal refresh)
+const lastModLegacy = new Date("2026-05-01"); // legal, locations, cases
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const now = lastModRecent;
 
   return [
     {

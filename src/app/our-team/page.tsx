@@ -23,9 +23,7 @@ import { Timeline } from "@/components/our-team/Timeline"
 import { CEAccordion } from "@/components/our-team/CEAccordion"
 import { Reveal } from "@/components/our-team/Reveal"
 import {
-  getPhysicianSchema,
   getAntipovPersonSchema,
-  getKahwachPhysicianSchema,
   getBreadcrumbSchema,
   structuredDataScript,
 } from "@/lib/structured-data"
@@ -200,9 +198,7 @@ const kahwachHighlights = [
 
 export default function OurTeamPage() {
   const structuredData = [
-    getPhysicianSchema(),
     getAntipovPersonSchema(),
-    getKahwachPhysicianSchema(),
     getBreadcrumbSchema([
       { name: "Home", url: siteConfig.url },
       { name: "Our Team", url: `${siteConfig.url}/our-team` },

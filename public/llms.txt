@@ -1,9 +1,11 @@
-# Dr. Alexander V. Antipov, DDS — Personal Brand & Education Hub
+# Dr. Alexander Antipov, DDS — Personal Brand & Education Hub
+> Last updated: 2026-06-14 — site is EN-only. Russian and Spanish localizations were removed in this delivery.
 
-> Personal website of Dr. Alexander V. Antipov, DDS, board-certified oral and maxillofacial surgeon based in Roseville, California (since 2008). The site is an educational and personal-brand hub. Surgical and implant services are delivered through two affiliated practices: Galleria Oral & Facial Surgery (oral & maxillofacial surgery, jaw surgery, sleep apnea, facial cosmetic procedures) and Fusion Dental Implants (full-arch and single-tooth dental implant restoration). Dr. Antipov practices alongside Dr. André-David Kahwach, DDS, MD.
+
+> Personal website of Dr. Alexander Antipov, DDS, board-certified oral and maxillofacial surgeon based in Roseville, California (since 2008). The site is an educational and personal-brand hub. Surgical and implant services are delivered through two affiliated practices: Galleria Oral & Facial Surgery (oral & maxillofacial surgery, jaw surgery, sleep apnea, facial cosmetic procedures) and Fusion Dental Implants (full-arch and single-tooth dental implant restoration). Dr. Antipov practices alongside Dr. André-David Kahwach, DDS, MD.
 
 ## About Dr. Antipov
-- Full name: Alexander V. Antipov, DDS
+- Full name: Alexander Antipov, DDS
 - Education:
   - Master of Dental Surgery — Moscow State Medical Stomatology University, Russian Federation (1995–2000)
   - Doctor of Dental Surgery (DDS) — Loma Linda University School of Dentistry (2001–2003)
@@ -19,7 +21,7 @@
 - Contracted Oral Surgeon, California Department of Corrections and Rehabilitation (Folsom) — 2009–present
 - Contracted Oral Surgeon, Sacramento State Prison — 2009–present
 - Founder & Director, Smile Again Foundation (2025–present)
-- Languages: English, Russian
+- Languages: English
 
 ## About Dr. Kahwach
 - Full name: André-David Kahwach, DDS, MD
@@ -72,6 +74,15 @@
 - Saturday – Sunday: Closed
 - Emergency on-call: 24/7
 
+## Hero Video on Homepage
+
+The homepage features a 25-second looping background video showing the digital full-arch implant workflow performed by Dr. Antipov: 3D CBCT scanning, exocad treatment planning, surgical guide design, and immediate-load placement. Silent, autoplay, looped. Captioned via on-page text. Direct URLs:
+- https://drantipov.com/videos/hero.mp4 (H.264 MP4, ~5 MB)
+- https://drantipov.com/videos/hero.webm (VP9 WebM, ~3 MB)
+- https://drantipov.com/videos/hero-poster.jpg (first-frame poster, 79 KB)
+
+The video demonstrates Dr. Antipov's modern digital workflow with technology partners Zirkonzahn, exocad, and Fusion Dental Academy. The workflow shown is suitable for All-on-4, All-on-6, and zygomatic implant cases performed in a single day.
+
 ## Service Area
 Roseville, Sacramento, Folsom, Rocklin, El Dorado Hills, Lincoln, Auburn, Granite Bay, Elk Grove, Citrus Heights, Carmichael, Rancho Cordova, Davis, Woodland, West Sacramento, Placerville, San Francisco Bay Area, Napa, Sonoma, Reno, South Lake Tahoe, Truckee, Chico, Redding, Stockton, Modesto, Fresno — all of Northern California and Northern Nevada.
 
@@ -81,6 +92,8 @@ Roseville, Sacramento, Folsom, Rocklin, El Dorado Hills, Lincoln, Auburn, Granit
 - [Full-arch dental implants (All-on-4, All-on-6, zygomatic)](https://drantipov.com/expertise/full-arch-implants)
 - [Single tooth & bridge replacement](https://drantipov.com/expertise/single-tooth)
 - [Bone grafting & sinus lifts](https://drantipov.com/expertise/bone-grafting)
+  - [Sinus Lift Surgery (anchor)](https://drantipov.com/expertise/bone-grafting#sinus-lift)
+  - [Organic & Synthetic Bone Graft Materials (anchor)](https://drantipov.com/expertise/bone-grafting#organic-materials) — Autogenous, Allograft, Xenograft (Bio-Oss), Synthetic (hydroxyapatite, tricalcium phosphate)
 - [Corrective jaw surgery (orthognathic)](https://drantipov.com/expertise/jaw-surgery)
 - [Sleep apnea surgical solutions](https://drantipov.com/expertise/sleep-apnea)
 - [Scarless mole removal](https://drantipov.com/expertise/mole-removal)
@@ -97,79 +110,3 @@ Roseville, Sacramento, Folsom, Rocklin, El Dorado Hills, Lincoln, Auburn, Granit
 - [Dental implant complications — understanding risks and management](https://drantipov.com/for-patients/insights/dental-implant-complications) — Infection, implant failure, nerve damage, peri-implantitis. Prevention and treatment.
 - [The hidden emotional toll of tooth loss](https://drantipov.com/for-patients/insights/tooth-lost-emotional-toll) — How tooth loss affects self-esteem and mental health, plus coping strategies and treatment options.
 - [Poor oral health and systemic diseases](https://drantipov.com/for-patients/insights/poor-oral-health-systemic-diseases) — Connection between oral bacteria and cardiovascular disease, diabetes, cancer.
-- [Русская версия / Russian-language site](https://drantipov.com/ru)
-- [Versión en español / Spanish-language site](https://drantipov.com/es)
-
-## Russian-language site (Полная карта /ru)
-
-Dr. Antipov is a native Russian speaker. The Russian-language site mirrors the full English experience for Russian-speaking patients across California, Bay Area, Los Angeles, Seattle, New York, Miami and other U.S. cities, plus Vancouver and Toronto.
-
-### Core pages
-- [Главная (Homepage)](https://drantipov.com/ru)
-- [Услуги (Expertise overview)](https://drantipov.com/ru/expertise)
-  - [Имплантация полной дуги — All-on-4](https://drantipov.com/ru/expertise/full-arch-implants)
-  - [Одиночные импланты](https://drantipov.com/ru/expertise/single-tooth)
-  - [Костная пластика](https://drantipov.com/ru/expertise/bone-grafting)
-  - [Корригирующая хирургия челюсти](https://drantipov.com/ru/expertise/jaw-surgery)
-  - [Хирургия апноэ сна](https://drantipov.com/ru/expertise/sleep-apnea)
-  - [Удаление родинок](https://drantipov.com/ru/expertise/mole-removal)
-- [О докторе Антипове](https://drantipov.com/ru/about)
-- [Команда](https://drantipov.com/ru/our-team)
-- [Контакты и запись](https://drantipov.com/ru/contact)
-- [До и после](https://drantipov.com/ru/beforeafter)
-- [Результаты пациентов](https://drantipov.com/ru/results)
-- [Страховка и финансирование](https://drantipov.com/ru/insurance)
-
-### Patient resources (/ru/for-patients)
-- [Информация для пациентов](https://drantipov.com/ru/for-patients)
-- [Запись на консультацию](https://drantipov.com/ru/for-patients/consultation)
-- [Подготовка к операции (pre-op)](https://drantipov.com/ru/for-patients/pre-op)
-- [Восстановление после операции (post-op)](https://drantipov.com/ru/for-patients/post-op)
-- [Частые вопросы (FAQ)](https://drantipov.com/ru/for-patients/faqs)
-- [Отзывы пациентов](https://drantipov.com/ru/for-patients/testimonials)
-- [Образовательные материалы](https://drantipov.com/ru/for-patients/insights)
-
-### For dentists (/ru/for-dentists)
-- [Сотрудничество со стоматологами](https://drantipov.com/ru/for-dentists)
-- [Направление пациентов](https://drantipov.com/ru/for-dentists/refer-patients)
-- [Партнёрская программа](https://drantipov.com/ru/for-dentists/referral-partners)
-
-### Educational content
-- [Гиды по имплантации (Articles hub)](https://drantipov.com/ru/for-patients)
-- [Zygomatic implants: когда нужны и как работают](https://drantipov.com/ru/for-patients/zygomatic-implants)
-- [Импланты за один день — миф или реальность (Same-day immediate load)](https://drantipov.com/ru/for-patients/same-day-implants)
-- [Гиды по частым вопросам](https://drantipov.com/ru/questions)
-- [Глоссарий RU/EN терминов](https://drantipov.com/ru/glossary)
-
-### Media (/ru/media)
-- [Образовательные видео и лекции](https://drantipov.com/ru/media/videos)
-- [Выступления на конференциях](https://drantipov.com/ru/media/speaking)
-
-### Legal (/ru/legal)
-- [Политика конфиденциальности](https://drantipov.com/ru/legal/privacy-policy)
-- [Условия использования](https://drantipov.com/ru/legal/terms-of-service)
-- [HIPAA Notice](https://drantipov.com/ru/legal/hipaa-notice)
-- [Медицинский дисклеймер](https://drantipov.com/ru/legal/medical-disclaimer)
-
-### Russian-speaking patient cities (/ru/[city])
-Dr. Antipov regularly treats Russian-speaking patients from outside Northern California: Sacramento, Roseville, San Francisco, Los Angeles, Seattle, New York, Miami, Reno, plus Toronto and Vancouver. City landing pages explain travel logistics, lodging, multi-day treatment plans and bilingual care.
-
-### Russian-language key facts
-- Двуязычный приём: английский и русский (доктор Антипов — носитель русского языка)
-- Главный офис: 911 Reserve Drive, Suite 150, Roseville, CA 95678 (30 минут от международного аэропорта Сакраменто SMF)
-- Принимаем пациентов со всей территории США и Канады для All-on-4, zygomatic implants и сложных реконструктивных случаев
-
-## Procedures and Specialties
-- Full-arch dental implants: All-on-4, All-on-6, All-on-X, zygomatic implants, same-day teeth, immediate-load protocols
-- Single-tooth implants, implant-supported bridges, snap-on dentures
-- Bone grafting: socket preservation, ridge augmentation, sinus lift (lateral and crestal), block grafts, guided bone regeneration; autogenous, allograft, and xenograft materials
-- Corrective jaw surgery (orthognathic): Le Fort I osteotomy, bilateral sagittal split osteotomy (BSSO), genioplasty, two-jaw (bimaxillary) surgery, virtual surgical planning
-- Sleep apnea: maxillomandibular advancement (MMA), genioglossus advancement, hyoid suspension
-- Elective facial cosmetic surgery
-- Scarless mole removal using radio-wave surgical technique
-- Wisdom teeth removal with IV sedation
-- TMJ treatment
-- In-office IV sedation and general anesthesia
-
-## Languages
-- English, Russian (русский), Spanish (español)

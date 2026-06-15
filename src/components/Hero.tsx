@@ -3,22 +3,55 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
+import { getVideoSchema, structuredDataScript } from "@/lib/structured-data";
+import { siteConfig } from "@/constants/siteConfig";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image */}
+      {/* VideoObject schema for hero.mp4 — eligible for video rich snippet in Google */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={structuredDataScript(
+          getVideoSchema({
+            name: "Full-Arch Dental Implant Surgery — Workflow with Dr. Alexander Antipov, DDS",
+            description: "Same-day All-on-4 / All-on-6 dental implant surgical workflow including digital planning, 3D scanning, and immediate-load placement performed by Dr. Antipov in Roseville, CA.",
+            thumbnailUrl: `${siteConfig.url}/videos/hero-poster.jpg`,
+            uploadDate: "2026-06-14",
+            duration: "PT25S",
+            contentUrl: `${siteConfig.url}/videos/hero.mp4`,
+          })
+        )}
+      />
+      {/* Background: looping video (desktop) + poster image (mobile) + navy overlay */}
       <div className="absolute inset-0">
+        {/* Desktop: full-arch surgical workflow video, muted + looped */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover hidden lg:block"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="none"
+          poster="/videos/hero-poster.jpg"
+          aria-hidden="true"
+        >
+          <source src="/videos/hero.webm" type="video/webm" />
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
+        {/* Mobile: doctor portrait (face above the fold, higher trust signal) */}
         <Image
-          src="/images/landing-pages/dental-implants/art/slider02-ff45c735.jpg"
-          alt="Dr. Alexander Antipov — board-certified oral and maxillofacial surgeon performing same-day dental implants at his Roseville, CA practice"
+          src="/images/Antipov_white.jpg"
+          alt="Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
           fill
-          className="object-cover"
+          className="object-cover object-top lg:hidden"
           priority
-          quality={90}
+          quality={85}
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-navy" />
+        {/* Semi-transparent navy overlay (65%) for text contrast */}
+        <div className="absolute inset-0 bg-navy/65" />
+        {/* Bottom gradient (preserved from original) */}
         <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent" />
       </div>
 
@@ -26,8 +59,11 @@ export default function Hero() {
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      {/* Subtle fade to white at very bottom — softens edge between video and white About */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white/30 pointer-events-none z-[5]" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left: Text Content */}
           <div>
             <motion.div
@@ -129,42 +165,44 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="hidden lg:block"
+            className="hidden lg:block lg:absolute lg:right-0 lg:bottom-0 lg:w-[600px] lg:z-10"
           >
             <div className="relative">
               {/*
-                No rounded corners, no border, no shadow — photo's navy background
-                (#0e3e5e via PIL bg-replacement) is identical to site navy, so the
-                photo edges become invisible.
+                Cutout portrait (transparent background) — doctor stands free
+                directly over the looping background video. drop-shadow grounds
+                him visually without a card frame.
               */}
-              <div className="relative w-full aspect-[3/4] overflow-hidden rounded-bl-[64px] rounded-br-[64px]">
-                <Image
-                  src="/images/drantipov-hero-navy-v3.jpg"
-                  alt="Dr. Alexander V. Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
-                  fill
-                  className="object-cover object-top"
-                  quality={92}
-                  sizes="(min-width: 1024px) 50vw, 0vw"
-                  priority
-                />
-                {/* Bottom gradient with caption (mirrors RU style) */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6">
-                  <span className="text-primary text-xs font-bold tracking-widest uppercase">
-                    Diplomate · ABOMS
-                  </span>
-                  <h3 className="font-serif text-white text-xl font-bold mt-1">
-                    Dr. Alexander V. Antipov, DDS
-                  </h3>
-                  <p className="text-white/70 text-sm mt-0.5">
-                    Oral &amp; Maxillofacial Surgeon
-                  </p>
-                </div>
-              </div>
+              <Image
+                src="/images/drantipov-hero-cutout-v5.png"
+                alt="Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon performing same-day full-arch dental implants in Roseville, California"
+                width={1080}
+                height={1623}
+                quality={92}
+                sizes="(min-width: 1024px) 50vw, 0vw"
+                className="w-full h-auto drop-shadow-2xl"
+              />
 
-              {/* Caption */}
-              <p className="text-center text-white/40 text-xs mt-3">
-                Personally performing every surgery since 2008
-              </p>
+              {/* Credential caption — overlay at bottom of photo, photo position unchanged */}
+              <div className="absolute bottom-0 left-0 right-0 pt-20 pb-6 px-6 text-center bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                <a
+                  href="https://www.aboms.org"
+                  target="_blank"
+                  rel="noopener nofollow"
+                  className="text-primary text-xs font-bold tracking-widest uppercase hover:text-primary-light transition-colors"
+                >
+                  Diplomate · ABOMS
+                </a>
+                <h3 className="font-serif text-white text-xl font-bold mt-1">
+                  Dr. Alexander Antipov, DDS
+                </h3>
+                <p className="text-white/70 text-sm mt-0.5">
+                  Oral &amp; Maxillofacial Surgeon
+                </p>
+                <p className="text-white/70 text-sm mt-3">
+                  Personally performing every surgery since 2008
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>

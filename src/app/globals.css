@@ -23,8 +23,19 @@
   --font-signature-cyrillic: var(--font-caveat), "Brush Script MT", cursive;
 }
 
-html {
+/* Smooth scroll ONLY on anchor link clicks (focus-within),
+   NOT during browser back-forward scroll restoration or Next.js Link
+   scroll-to-top — those need instant scroll to land at the right position.
+   This fixes mobile bug where Link landed at random scroll position. */
+html:focus-within {
   scroll-behavior: smooth;
+}
+
+/* Disable smooth scroll for users with reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
 }
 
 body {

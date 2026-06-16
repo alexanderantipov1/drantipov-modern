@@ -23,17 +23,23 @@
   --font-signature-cyrillic: var(--font-caveat), "Brush Script MT", cursive;
 }
 
-/* Smooth scroll ONLY on anchor link clicks (focus-within),
-   NOT during browser back-forward scroll restoration or Next.js Link
-   scroll-to-top — those need instant scroll to land at the right position.
-   This fixes mobile bug where Link landed at random scroll position. */
-html:focus-within {
-  scroll-behavior: smooth;
+/* Smooth scroll ONLY on desktop (precise pointers like mouse).
+   Mobile gets instant scroll ALWAYS — critical because:
+   1. With smooth scroll on, Next.js Link's scrollTo(0,0) animates from
+      current scroll (far down homepage) to 0 — on a shorter destination
+      page that target gets clamped to its bottom → user lands at bottom.
+   2. Browser back-forward scroll restoration also breaks with smooth scroll
+      → user lands at top of source page instead of where they clicked.
+   `@media (hover: hover) and (pointer: fine)` matches mouse devices only;
+   touchscreens get instant scroll → native behavior works correctly. */
+@media (hover: hover) and (pointer: fine) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
-/* Disable smooth scroll for users with reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
+  html {
     scroll-behavior: auto;
   }
 }

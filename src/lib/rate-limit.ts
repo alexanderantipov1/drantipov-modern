@@ -74,7 +74,8 @@ export function getClientIp(req: Request): string {
   const xff = req.headers.get("x-forwarded-for");
   if (xff) {
     // x-forwarded-for can be "client, proxy1, proxy2" — first is client
-    return xff.split(",")[0].trim();
+    const first = xff.split(",")[0];
+    if (first) return first.trim();
   }
   const real = req.headers.get("x-real-ip");
   if (real) return real.trim();

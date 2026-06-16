@@ -168,7 +168,7 @@ async function postToResend(
 }
 
 export async function POST(request: NextRequest) {
-  const rl = checkRateLimit(req, { prefix: "lead", max: 10, windowMs: 60_000 });
+  const rl = checkRateLimit(request, { prefix: "lead", max: 10, windowMs: 60_000 });
   if (rl) return rl;
 
   let data: LeadPayload;

@@ -1,4 +1,6 @@
-import { NextRequest, NextResponse } from "next/server"
+import { NextRequest, NextResponse } from "next/server";
+import { checkRateLimit } from "@/lib/rate-limit";
+import { verifyRecaptcha } from "@/lib/recaptcha";
 
 const SALESFORCE_API_URL = "https://api.fusiondentalimplants.com/api/v1/user-data"
 
@@ -21,7 +23,7 @@ const ALLOWED_FIELDS = new Set([
 ])
 
 export async function POST(request: NextRequest) {
-  const rl = checkRateLimit(req, { prefix: "submit-consultation", max: 10, windowMs: 60_000 });
+  const rl = checkRateLimit(request, { prefix: "submit-consultation", max: 10, windowMs: 60_000 });
   if (rl) return rl;
 
   try {

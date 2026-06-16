@@ -25,9 +25,6 @@ export const metadata: Metadata = {
     "post-operative emergency",
     "Dr. Antipov reviews",
   ],
-  alternates: {
-    canonical: "/for-patients",
-  },
   openGraph: {
     title: "Resources for Our Patients",
     description: "Schedule, prepare for, and recover from oral surgery with Dr. Antipov — all patient resources in one place.",

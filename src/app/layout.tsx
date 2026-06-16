@@ -4,8 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import { TrackingProvider } from "@/components/TrackingProvider";
 import { CookieConsent } from "@/components/CookieConsent";
 import { RecaptchaScript } from "@/components/RecaptchaScript";
-import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
-import MicrosoftClarity from "@/components/MicrosoftClarity";
+import { ConsentGatedTracking } from "@/components/analytics/ConsentGatedTracking";
 import { SiteNavbar, SiteFooter } from "@/components/SiteChrome";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import "./globals.css";
@@ -129,8 +128,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} ${merriweather.variable} ${dancingScript.variable} ${caveat.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
-        <GoogleAnalytics />
-        <MicrosoftClarity />
+        <ConsentGatedTracking />
         <RecaptchaScript />
         <TrackingProvider>
           <JsonLd />

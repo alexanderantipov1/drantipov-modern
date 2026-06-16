@@ -8,7 +8,7 @@ export const metadata = {
   title: "HIPAA Notice of Privacy Practices | Dr. Antipov",
   description:
     "HIPAA Notice of Privacy Practices for Dr. Alexander Antipov's practice. Learn how we protect your health information.",
-  robots: "noindex, nofollow",
+  robots: "index, follow",
   alternates: { canonical: "/legal/hipaa-notice" }
 }
 

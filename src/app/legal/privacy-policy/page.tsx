@@ -6,7 +6,7 @@ import heroContent from "@/lib/heroContent"
 export const metadata = {
   title: "Privacy Policy | Dr. Antipov",
   description: "Privacy policy for Dr. Alexander Antipov's website. Learn how we collect, use, and protect your information.",
-  robots: "noindex, nofollow",
+  robots: "index, follow",
   alternates: { canonical: "/legal/privacy-policy" }
 }
 

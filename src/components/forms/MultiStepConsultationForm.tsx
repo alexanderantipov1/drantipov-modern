@@ -14,7 +14,7 @@ declare global {
   }
 }
 
-const RECAPTCHA_SITE_KEY = "6LfAv8grAAAAAFkd5EJ1HC4fbmTfdq3yce7rgPtg"
+const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? "6LfAv8grAAAAAFkd5EJ1HC4fbmTfdq3yce7rgPtg"
 
 const US_STATES = [
   { value: "AL", label: "Alabama" }, { value: "AK", label: "Alaska" },

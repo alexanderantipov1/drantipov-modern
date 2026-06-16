@@ -59,6 +59,9 @@ interface ChatRequest {
 }
 
 export async function POST(request: NextRequest) {
+  const rl = checkRateLimit(req, { prefix: "chat", max: 30, windowMs: 3_600_000 });
+  if (rl) return rl;
+
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
     console.error("[chat] ANTHROPIC_API_KEY not set");
@@ -87,6 +90,13 @@ export async function POST(request: NextRequest) {
         m && (m.role === "user" || m.role === "assistant") && typeof m.content === "string" && m.content.trim().length > 0,
     )
     .slice(-MAX_HISTORY_TURNS);
+
+  // Cost-abuse cap: reject overly long messages that would burn Claude tokens
+  for (const m of messages) {
+    if (m.content.length > 4000) {
+      return NextResponse.json({ ok: false, error: "message_too_long" }, { status: 400 });
+    }
+  }
 
   if (messages.length === 0 || messages[messages.length - 1]?.role !== "user") {
     return NextResponse.json({ ok: false, error: "no_user_message" }, { status: 400 });

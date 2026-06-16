@@ -7,7 +7,7 @@ export const metadata = {
   title: "Terms of Service | Dr. Antipov",
   description:
     "Terms of service for Dr. Alexander Antipov's website. Please read these terms carefully before using our website.",
-  robots: "noindex, nofollow",
+  robots: "index, follow",
   alternates: { canonical: "/legal/terms-of-service" }
 }
 

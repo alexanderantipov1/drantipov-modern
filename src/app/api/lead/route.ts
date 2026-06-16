@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { checkRateLimit } from "@/lib/rate-limit"
 import { isEmailConfigured, sendContactNotification } from "@/lib/email";
 
 export const runtime = "nodejs";
@@ -167,6 +168,9 @@ async function postToResend(
 }
 
 export async function POST(request: NextRequest) {
+  const rl = checkRateLimit(req, { prefix: "lead", max: 10, windowMs: 60_000 });
+  if (rl) return rl;
+
   let data: LeadPayload;
   try {
     data = (await request.json()) as LeadPayload;
@@ -204,7 +208,7 @@ export async function POST(request: NextRequest) {
 
   if (sf.ok || email.ok) {
     if (!sf.ok && oid) {
-      console.error("[lead] Salesforce failed but email backup sent", sf.status, sf.body);
+      console.error("[lead] Salesforce failed but email backup sent (status:", sf.status, ")");
     }
     if (!email.ok && email.reason !== "not_configured") {
       console.warn("[lead] Email backup failed", email.reason);
@@ -215,12 +219,11 @@ export async function POST(request: NextRequest) {
     });
   }
 
-  // Both attempts failed (or both unconfigured). Log the full payload so the
-  // operator can recover the lead from Vercel logs.
-  console.error("[lead] All delivery paths failed; lead in logs only", {
-    sf: { configured: !!oid, status: sf.status, body: sf.body },
+  // Both attempts failed (or both unconfigured). Log only non-PHI metadata —
+  // operator must rely on monitoring + retry rather than reading PHI from logs.
+  console.error("[lead] All delivery paths failed (PHI redacted)", {
+    sf: { configured: !!oid, status: sf.status },
     email: { configured: isEmailConfigured(), reason: email.reason },
-    data,
   });
 
   // Critical decision: still return ok=true to the user so the form shows

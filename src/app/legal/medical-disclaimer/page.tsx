@@ -8,7 +8,7 @@ export const metadata = {
   title: "Medical Disclaimer | Dr. Antipov",
   description:
     "Medical disclaimer for Dr. Alexander Antipov's website. Important information about the content provided on this website.",
-  robots: "noindex, nofollow",
+  robots: "index, follow",
   alternates: { canonical: "/legal/medical-disclaimer" }
 }
 

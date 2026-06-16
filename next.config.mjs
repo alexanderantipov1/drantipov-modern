@@ -50,6 +50,7 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      { source: '/about-us', destination: '/about', permanent: true },
       { source: '/services', destination: '/expertise', permanent: true },
       { source: '/before-after', destination: '/surgical-cases', permanent: true },
       { source: '/testimonials', destination: '/for-patients/testimonials', permanent: true },

@@ -45,11 +45,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Top-level pages
     // ============================================================
     {
-      url: `${siteUrl}/about-us`,
+      url: `${siteUrl}/about`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.9,
-      alternates: { languages: { en: `${siteUrl}/about-us`, "x-default": `${siteUrl}/about-us` } },
+      alternates: { languages: { en: `${siteUrl}/about`, "x-default": `${siteUrl}/about` } },
     },
     {
       url: `${siteUrl}/our-team`,

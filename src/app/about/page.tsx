@@ -18,13 +18,13 @@ import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data
 import { siteConfig } from "@/constants/siteConfig";
 
 export const metadata: Metadata = {
-  title: { absolute: "About Us — Dr. Alexander V. Antipov, DDS" },
+  title: { absolute: "About — Dr. Alexander V. Antipov, DDS" },
   description: "Meet Dr. Antipov & Dr. Kahwach. Board-certified oral & maxillofacial surgeons with 25+ years of combined experience in Roseville, CA.",
   alternates: {
-    canonical: "/about-us",
+    canonical: "/about",
     languages: {
-      "x-default": "https://drantipov.com/about-us",
-      en: "https://drantipov.com/about-us",
+      "x-default": "https://drantipov.com/about",
+      en: "https://drantipov.com/about",
     },
   },
   openGraph: {
@@ -48,10 +48,10 @@ export const metadata: Metadata = {
 };
 
 /**
- * About Us — mirror of the homepage, available as a dedicated /about-us route.
+ * About — mirror of the homepage, available as a dedicated /about route.
  *
  * This page renders the exact same composition as the homepage. It exists so
- * "About Us" can appear in the top navigation as a discrete entry point even
+ * "About" can appear in the top navigation as a discrete entry point even
  * though clicking the logo also brings the user back to the same content.
  */
 export default function AboutUsPage() {
@@ -64,8 +64,8 @@ export default function AboutUsPage() {
           {
             "@context": "https://schema.org",
             "@type": "AboutPage",
-            "@id": `${siteConfig.url}/about-us`,
-            url: `${siteConfig.url}/about-us`,
+            "@id": `${siteConfig.url}/about`,
+            url: `${siteConfig.url}/about`,
             name: "About Dr. Alexander Antipov, DDS",
             description:
               "Board-certified oral and maxillofacial surgeon practicing in Roseville, California. Diplomate of the American Board of Oral and Maxillofacial Surgery (ABOMS), with 25+ years of surgical experience.",
@@ -77,7 +77,7 @@ export default function AboutUsPage() {
           },
           getBreadcrumbSchema([
             { name: "Home", url: siteConfig.url },
-            { name: "About Us", url: `${siteConfig.url}/about-us` },
+            { name: "About", url: `${siteConfig.url}/about` },
           ]),
         ])}
       />

@@ -107,7 +107,7 @@ src/
 │   ├── sitemap.ts             # Dynamic sitemap.xml
 │   ├── robots.ts              # Dynamic robots.txt
 │   ├── manifest.ts            # PWA manifest
-│   ├── about-us/              # About Dr. Antipov
+│   ├── about/                  # About Dr. Antipov
 │   ├── our-team/              # Team page
 │   ├── expertise/             # Service pages (full-arch, single-tooth, etc.)
 │   ├── for-patients/          # Patient resources + insights articles

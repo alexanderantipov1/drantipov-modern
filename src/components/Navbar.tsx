@@ -17,7 +17,7 @@ const expertiseItems = [
 ];
 
 const navLinks = [
-  { label: "About Us", href: "/about-us" },
+  { label: "About", href: "/about" },
   { label: "Our Team", href: "/our-team" },
   { label: "Results", href: "/results" },
   { label: "Before & After", href: "/surgical-cases" },
@@ -75,12 +75,12 @@ export default function Navbar() {
             className="hidden lg:flex items-center gap-1"
             onMouseLeave={() => setMegaOpen(false)}
           >
-            {/* About Us — first */}
+            {/* About — first */}
             <a
-              href="/about-us"
+              href="/about"
               className="px-3 py-2 rounded-full text-sm font-medium transition-all duration-300 text-dark hover:text-primary hover:bg-primary/10"
             >
-              About Us
+              About
             </a>
 
             {/* Services mega-menu trigger */}
@@ -212,16 +212,16 @@ export default function Navbar() {
             className="fixed inset-0 z-40 glass pt-24 px-6 lg:hidden"
           >
             <div className="flex flex-col gap-2">
-              {/* About Us */}
+              {/* About */}
               <motion.a
-                href="/about-us"
+                href="/about"
                 onClick={() => setMobileOpen(false)}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.02 }}
                 className="text-lg font-medium text-dark py-3 px-4 rounded-xl hover:bg-primary/10 hover:text-primary transition-colors"
               >
-                About Us
+                About
               </motion.a>
               {/* Services */}
               <motion.a

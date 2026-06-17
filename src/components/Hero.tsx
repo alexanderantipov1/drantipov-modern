@@ -41,7 +41,7 @@ export default function Hero() {
         </video>
         {/* Mobile: doctor portrait (face above the fold, higher trust signal) */}
         <Image
-          src="/images/Antipov_white.jpg"
+          src="/images/doctor-hand3-mobile.jpg"
           alt="Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
           fill
           className="object-cover object-top lg:hidden"
@@ -165,7 +165,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="hidden lg:block lg:absolute lg:right-0 lg:bottom-0 lg:w-[600px] lg:z-10"
+            className="hidden lg:block lg:absolute lg:right-0 lg:bottom-0 lg:w-[660px] lg:translate-y-[5%] lg:z-10"
           >
             <div className="relative">
               {/*
@@ -174,10 +174,10 @@ export default function Hero() {
                 him visually without a card frame.
               */}
               <Image
-                src="/images/drantipov-hero-cutout-v5.png"
-                alt="Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon performing same-day full-arch dental implants in Roseville, California"
-                width={1080}
-                height={1623}
+                src="/images/doctor-hand3-cutout.png"
+                alt="Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
+                width={854}
+                height={1239}
                 quality={92}
                 sizes="(min-width: 1024px) 50vw, 0vw"
                 className="w-full h-auto drop-shadow-2xl"

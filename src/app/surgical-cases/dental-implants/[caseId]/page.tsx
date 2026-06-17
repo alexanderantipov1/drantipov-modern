@@ -11,9 +11,9 @@ import { ArrowLeft, Calendar, User, Stethoscope } from "lucide-react"
 import DualCTA from "@/components/DualCTA"
 
 interface CaseDetailPageProps {
-  params: {
+  params: Promise<{
     caseId: string
-  }
+  }>
 }
 
 export async function generateStaticParams() {
@@ -23,7 +23,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: CaseDetailPageProps): Promise<Metadata> {
-  const caseData = dentalImplantsCases.find((c) => c.id === params.caseId)
+  const { caseId } = await params
+  const caseData = dentalImplantsCases.find((c) => c.id === caseId)
 
   if (!caseData) {
     return {
@@ -42,8 +43,9 @@ export async function generateMetadata({ params }: CaseDetailPageProps): Promise
   }
 }
 
-export default function CaseDetailPage({ params }: CaseDetailPageProps) {
-  const caseData = dentalImplantsCases.find((c) => c.id === params.caseId)
+export default async function CaseDetailPage({ params }: CaseDetailPageProps) {
+  const { caseId } = await params
+  const caseData = dentalImplantsCases.find((c) => c.id === caseId)
 
   if (!caseData) {
     notFound()

@@ -33,6 +33,7 @@ All "Book Consultation", "Free Consultation", and "Schedule Consultation" button
 - Primary color: #1ABB9C (teal), secondary: #004987, accent: #00AEEF
 
 ## Project Structure
+The Next.js app lives at the **repository root** (single app, no subfolders). The dev workflow runs `npx next dev` from the root.
 - `src/app/` - Next.js app router pages and layouts
 - `src/app/api/` - API routes (submit-consultation, consultation, contact)
 - `src/components/` - React components (flat structure: Navbar.tsx, Hero.tsx, etc.)

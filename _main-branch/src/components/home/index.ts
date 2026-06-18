@@ -1,6 +1,0 @@
-export { HeroSection } from "./HeroSection"
-export { AboutSection } from "./AboutSection"
-export { ExpertiseSection } from "./ExpertiseSection"
-export { WhyChooseSection } from "./WhyChooseSection"
-export { CTASection } from "./CTASection"
-export { LatestInsightsSection } from "./LatestInsightsSection"

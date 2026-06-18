@@ -14,6 +14,29 @@ export interface SurgicalCase {
   }[]
 }
 
+/**
+ * Long-form, blog-style write-up for a surgical case.
+ * Keyed by the case `id` in src/constants/caseArticles. Rendered on the
+ * /surgical-cases/[category]/[caseId] detail pages by <CaseArticleBody />.
+ */
+export interface CaseArticle {
+  /** Keyword-rich <title>, ~55–65 chars. */
+  metaTitle: string
+  /** Meta description, ~150–160 chars. */
+  metaDescription: string
+  /** 8–15 SEO keywords (local + procedure). */
+  keywords: string[]
+  /** Estimated read time in minutes. */
+  readMinutes: number
+  /** 1–2 sentence lead shown under the title in the article header. */
+  excerpt: string
+  /** Body of the article: keyword-rich H2 headings + prose paragraphs. */
+  sections: {
+    heading: string
+    paragraphs: string[]
+  }[]
+}
+
 export const correctiveJawSurgeryCases: SurgicalCase[] = [
   {
     id: "oms000052",

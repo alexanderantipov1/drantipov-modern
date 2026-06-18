@@ -1,4 +1,1 @@
-- [Next.js dev preview on Replit](nextjs-replit-preview.md) — blank preview unless allowedDevOrigins + dev-relaxed frame-ancestors/X-Frame-Options
-- [Large untracked nested dirs lose source files](large-untracked-nested-dirs.md) — keep a pristine /tmp copy; mv a sibling node_modules to dodge stalling installs
-- [Next.js metadata title template duplication](nextjs-title-template.md) — per-page metaTitle that already includes the brand suffix gets doubled by root layout title.template; use title:{absolute}
-- [Pushing to GitHub when local git is blocked](github-push-via-api.md) — git mutations are guarded even in Task envs; push via GitHub Git Data API, content-address blobs to skip re-uploading unchanged/large files
+- [bash git-path guard](bash-git-guard.md) — bash blocks filesystem ops on any `.git*` path (rm stops mid-list at `.gitignore`); sequence restructures to avoid `.git*`, user deletes leftovers + pushes.

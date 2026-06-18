@@ -3,6 +3,10 @@ import { dirname } from 'node:path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
+// In dev (Replit preview), the app is embedded in a cross-origin proxy iframe,
+// so frame-blocking headers must be relaxed. Production keeps them strict.
+const isDev = process.env.NODE_ENV === 'development'
+
 // Content Security Policy — permissive enough for current third parties but no inline-everything
 const csp = [
   "default-src 'self'",
@@ -29,13 +33,18 @@ const csp = [
   // Form actions (forms submit to self only)
   "form-action 'self'",
   // Frame ancestors (clickjacking — same as X-Frame-Options SAMEORIGIN)
-  "frame-ancestors 'self'",
+  isDev ? "frame-ancestors 'self' https://*.replit.dev https://*.replit.app https://*.janeway.replit.dev" : "frame-ancestors 'self'",
   // Upgrade HTTP→HTTPS
   "upgrade-insecure-requests",
 ].join('; ')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  allowedDevOrigins: [
+    '*.janeway.replit.dev',
+    '*.replit.dev',
+    '*.replit.app',
+  ],
   turbopack: {
     root: __dirname,
   },
@@ -66,7 +75,7 @@ const nextConfig = {
           { key: 'Content-Security-Policy', value: csp },
           { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
           { key: 'X-Content-Type-Options', value: 'nosniff' },
-          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+          ...(isDev ? [] : [{ key: 'X-Frame-Options', value: 'SAMEORIGIN' }]),
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
           { key: 'Permissions-Policy', value: 'camera=(self), microphone=(), geolocation=(), interest-cohort=()' },
           // X-XSS-Protection removed — deprecated by modern browsers, CSP replaces it

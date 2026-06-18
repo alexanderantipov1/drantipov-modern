@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Calendar, ArrowLeft, Clock, AlertTriangle } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
+import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
   title: "Oral Health & Systemic Disease — The Link",
@@ -48,6 +49,15 @@ export const metadata: Metadata = {
 export default function PoorOralHealthSystemicDiseasesPost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={structuredDataScript(getBreadcrumbSchema([
+          { name: "Home", url: "https://drantipov.com" },
+          { name: "For Patients", url: "https://drantipov.com/for-patients" },
+          { name: "Insights", url: "https://drantipov.com/for-patients/insights" },
+          { name: "The Hidden Link: How Poor Oral Health Can Lead to Cancer and Systemic Diseases", url: "https://drantipov.com/for-patients/insights/poor-oral-health-systemic-diseases" },
+        ]))}
+      />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
         <Container size="lg">

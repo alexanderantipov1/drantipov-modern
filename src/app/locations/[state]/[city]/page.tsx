@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import { MapPin, Clock, Phone, Navigation, Shield, Award } from "lucide-react";
-import { cities, citySlugs, getCityBySlug } from "@/constants/cities";
+import {
+  cities,
+  getCityByStateAndSlug,
+  getStateName,
+} from "@/constants/cities";
 import { siteConfig } from "@/constants/siteConfig";
+import { buildMetadata } from "@/lib/seo";
 import {
   getCityLocalBusinessSchema,
   getBreadcrumbSchema,
@@ -47,41 +51,29 @@ const SERVICE_LABELS: Record<string, { label: string; href: string; description:
 };
 
 export async function generateStaticParams() {
-  return citySlugs.map((city) => ({ city }));
+  return cities.map((c) => ({ state: c.state.toLowerCase(), city: c.slug }));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ city: string }>;
+  params: Promise<{ state: string; city: string }>;
 }): Promise<Metadata> {
-  const { city: slug } = await params;
-  const city = getCityBySlug(slug);
+  const { state, city: slug } = await params;
+  const city = getCityByStateAndSlug(state, slug);
   if (!city) return {};
 
   const title = `Oral Surgeon serving ${city.city}, ${city.state} — Dr. Alexander V. Antipov`;
   const description = `Board-certified oral & maxillofacial surgeon for patients in ${city.city}. Just ${city.driveTime} from our Roseville office. Dental implants, jaw surgery, sleep apnea (MMA), facial cosmetic surgery. Free 3D CT consultation.`;
 
-  return {
-    title,
+  return buildMetadata({
+    path: `/locations/${state}/${city.slug}`,
+    absoluteTitle: title,
     description,
-    alternates: { canonical: `/locations/${city.slug}` },
-    openGraph: {
-      title,
-      description,
-      url: `${siteConfig.url}/locations/${city.slug}`,
-      type: "website",
-      locale: "en_US",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-    },
-  };
+  });
 }
 
-function getCityFAQs(city: ReturnType<typeof getCityBySlug>) {
+function getCityFAQs(city: ReturnType<typeof getCityByStateAndSlug>) {
   if (!city) return [];
   return [
     {
@@ -113,12 +105,14 @@ function getCityFAQs(city: ReturnType<typeof getCityBySlug>) {
 export default async function CityPage({
   params,
 }: {
-  params: Promise<{ city: string }>;
+  params: Promise<{ state: string; city: string }>;
 }) {
-  const { city: slug } = await params;
-  const city = getCityBySlug(slug);
+  const { state, city: slug } = await params;
+  const city = getCityByStateAndSlug(state, slug);
   if (!city) notFound();
 
+  const stateName = getStateName(state) ?? city.stateName;
+  const stateSlug = city.state.toLowerCase();
   const faqs = getCityFAQs(city);
   const services = city.servicesEmphasis
     .map((s) => SERVICE_LABELS[s])
@@ -129,7 +123,8 @@ export default async function CityPage({
     getBreadcrumbSchema([
       { name: "Home", url: siteConfig.url },
       { name: "Locations", url: `${siteConfig.url}/locations` },
-      { name: city.city, url: `${siteConfig.url}/locations/${city.slug}` },
+      { name: stateName, url: `${siteConfig.url}/locations/${stateSlug}` },
+      { name: city.city, url: `${siteConfig.url}/locations/${stateSlug}/${city.slug}` },
     ]),
     getFAQSchema(faqs),
   ];
@@ -151,6 +146,10 @@ export default async function CityPage({
             <span className="mx-2">/</span>
             <Link href="/locations" className="hover:text-white">
               Locations
+            </Link>
+            <span className="mx-2">/</span>
+            <Link href={`/locations/${stateSlug}`} className="hover:text-white">
+              {stateName}
             </Link>
             <span className="mx-2">/</span>
             <span className="text-white">{city.city}</span>

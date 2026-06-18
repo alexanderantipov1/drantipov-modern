@@ -454,7 +454,7 @@ export default function ServiceArea() {
                         <li key={city.name} className="flex items-center justify-between text-sm">
                           {slug ? (
                             <Link
-                              href={`/locations/${slug}`}
+                              href={`/locations/ca/${slug}`}
                               className="text-primary font-semibold hover:underline"
                             >
                               {city.name}

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/constants/siteConfig";
 import { allCases, caseCategories } from "@/constants/cases";
-import { cities } from "@/constants/cities";
+import { cities, stateSlugs, getStateName } from "@/constants/cities";
 
 const siteUrl = siteConfig.url;
 
@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.92,
       alternates: { languages: { en: `${siteUrl}/expertise`, "x-default": `${siteUrl}/expertise` } },
     },
-    ...(["full-arch-implants", "single-tooth", "bone-grafting", "jaw-surgery", "sleep-apnea", "mole-removal", "tmj", "wisdom-teeth"] as const).map((slug) => ({
+    ...(["full-arch-implants", "single-tooth", "bone-grafting", "jaw-surgery", "sleep-apnea", "mole-removal", "tmj", "wisdom-teeth", "tooth-extractions", "sedation-anesthesia", "zygomatic-implants", "implant-rescue", "snap-on-dentures", "facial-cosmetic", "oral-pathology"] as const).map((slug) => ({
       url: `${siteUrl}/expertise/${slug}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
@@ -168,10 +168,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
 
     // ============================================================
-    // Cities
+    // State hubs + Cities (/locations/[state] and /locations/[state]/[city])
     // ============================================================
+    ...stateSlugs
+      .filter((s) => Boolean(getStateName(s)))
+      .map((s) => ({
+        url: `${siteUrl}/locations/${s}`,
+        lastModified: now,
+        changeFrequency: "monthly" as const,
+        priority: 0.8,
+      })),
     ...cities.map((c) => ({
-      url: `${siteUrl}/locations/${c.slug}`,
+      url: `${siteUrl}/locations/${c.state.toLowerCase()}/${c.slug}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.75,

@@ -171,3 +171,37 @@ export function getCityBySlug(slug: string): CityPage | undefined {
 }
 
 export const citySlugs = cities.map((c) => c.slug);
+
+/** Lowercased unique state slugs used in /locations/[state] URLs (e.g. "ca"). */
+export const stateSlugs = Array.from(
+  new Set(cities.map((c) => c.state.toLowerCase()))
+);
+
+/** Map a state slug ("ca") to its full display name ("California"). */
+export function getStateName(stateSlug: string): string | undefined {
+  return cities.find((c) => c.state.toLowerCase() === stateSlug.toLowerCase())
+    ?.stateName;
+}
+
+/** All cities in a given state slug, in declaration order. */
+export function getCitiesByState(stateSlug: string): CityPage[] {
+  return cities.filter(
+    (c) => c.state.toLowerCase() === stateSlug.toLowerCase()
+  );
+}
+
+/** Resolve a city by its state slug + city slug (validates both segments). */
+export function getCityByStateAndSlug(
+  stateSlug: string,
+  citySlug: string
+): CityPage | undefined {
+  return cities.find(
+    (c) =>
+      c.state.toLowerCase() === stateSlug.toLowerCase() && c.slug === citySlug
+  );
+}
+
+/** Canonical path for a city page under the state/city hierarchy. */
+export function cityPath(city: Pick<CityPage, "slug" | "state">): string {
+  return `/locations/${city.state.toLowerCase()}/${city.slug}`;
+}

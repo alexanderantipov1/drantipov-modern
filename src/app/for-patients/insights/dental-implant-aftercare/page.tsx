@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Calendar, ArrowLeft, Clock, Heart, Check } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
+import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
   title: "Dental Implant Aftercare — Recovery Tips",
@@ -48,6 +49,15 @@ export const metadata: Metadata = {
 export default function DentalImplantAftercarePost() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={structuredDataScript(getBreadcrumbSchema([
+          { name: "Home", url: "https://drantipov.com" },
+          { name: "For Patients", url: "https://drantipov.com/for-patients" },
+          { name: "Insights", url: "https://drantipov.com/for-patients/insights" },
+          { name: "Dental Implant Aftercare: Tips for a Successful Recovery", url: "https://drantipov.com/for-patients/insights/dental-implant-aftercare" },
+        ]))}
+      />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
         <Container size="lg">

@@ -3,6 +3,20 @@ import { dirname } from 'node:path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
+// City slugs for legacy /locations/[city] → /locations/[state]/[city] 308s.
+// Kept in sync with src/constants/cities.ts (all current cities are CA).
+const LEGACY_CITY_REDIRECTS = [
+  'sacramento',
+  'folsom',
+  'rocklin',
+  'granite-bay',
+  'lincoln',
+].map((slug) => ({
+  source: `/locations/${slug}`,
+  destination: `/locations/ca/${slug}`,
+  permanent: true,
+}))
+
 // In dev (Replit preview), the app is embedded in a cross-origin proxy iframe,
 // so frame-blocking headers must be relaxed. Production keeps them strict.
 const isDev = process.env.NODE_ENV === 'development'
@@ -65,6 +79,7 @@ const nextConfig = {
       { source: '/testimonials', destination: '/for-patients/testimonials', permanent: true },
       { source: '/faq', destination: '/for-patients/faqs', permanent: true },
       { source: '/resources', destination: '/for-patients', permanent: true },
+      ...LEGACY_CITY_REDIRECTS,
     ]
   },
   async headers() {

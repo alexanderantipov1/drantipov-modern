@@ -784,10 +784,10 @@ export function getCityLocalBusinessSchema(city: {
   return {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "@id": `${siteConfig.url}/locations/${city.slug}#business`,
+    "@id": `${siteConfig.url}/locations/${city.state.toLowerCase()}/${city.slug}#business`,
     name: `${siteConfig.name} — Serving ${city.city}, ${city.state}`,
     description: `Oral & maxillofacial surgery practice serving patients in ${city.city}, ${city.stateName}. Led by Dr. Alexander V. Antipov, board-certified by ABOMS, practicing since 2008.`,
-    url: `${siteConfig.url}/locations/${city.slug}`,
+    url: `${siteConfig.url}/locations/${city.state.toLowerCase()}/${city.slug}`,
     telephone: siteConfig.contact.phone,
     email: siteConfig.contact.email,
     image: `${siteConfig.url}/images/drantipov.png`,

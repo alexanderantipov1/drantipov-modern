@@ -62,6 +62,13 @@ export default function ExpertisePage() {
         { "@type": "ListItem", position: 6, name: "Mole Removal", url: `${siteConfig.url}/expertise/mole-removal` },
         { "@type": "ListItem", position: 7, name: "TMJ Treatment", url: `${siteConfig.url}/expertise/tmj` },
         { "@type": "ListItem", position: 8, name: "Wisdom Teeth Removal", url: `${siteConfig.url}/expertise/wisdom-teeth` },
+        { "@type": "ListItem", position: 9, name: "Tooth Extractions", url: `${siteConfig.url}/expertise/tooth-extractions` },
+        { "@type": "ListItem", position: 10, name: "Sedation & Anesthesia", url: `${siteConfig.url}/expertise/sedation-anesthesia` },
+        { "@type": "ListItem", position: 11, name: "Zygomatic & Pterygoid Implants", url: `${siteConfig.url}/expertise/zygomatic-implants` },
+        { "@type": "ListItem", position: 12, name: "Implant Rescue & Redo", url: `${siteConfig.url}/expertise/implant-rescue` },
+        { "@type": "ListItem", position: 13, name: "Snap-On Dentures", url: `${siteConfig.url}/expertise/snap-on-dentures` },
+        { "@type": "ListItem", position: 14, name: "Facial Cosmetic Treatments", url: `${siteConfig.url}/expertise/facial-cosmetic` },
+        { "@type": "ListItem", position: 15, name: "Oral Pathology & Biopsy", url: `${siteConfig.url}/expertise/oral-pathology` },
       ],
     },
   ]

@@ -324,7 +324,7 @@ export default function JsonLd() {
       },
     ],
     founder: {
-      "@type": "Physician",
+      "@type": "Person",
       name: "Dr. Alexander V. Antipov, DDS",
       givenName: "Alexander",
       familyName: "Antipov",
@@ -353,15 +353,15 @@ export default function JsonLd() {
         { "@type": "EducationalOccupationalCredential", credentialCategory: "registration", name: "Continuing Education Registered Provider", identifier: "00948675" },
       ],
       affiliation: [
-        { "@type": "Hospital", name: "Sutter Roseville Medical Center", sameAs: "https://www.sutterhealth.org/srmc" },
-        { "@type": "Hospital", name: "Sutter General Hospital", sameAs: "https://www.sutterhealth.org" },
-        { "@type": "Hospital", name: "Mercy General Hospital", sameAs: "https://www.dignityhealth.org/sacramento/locations/mercygeneral" },
-        { "@type": "Hospital", name: "Mercy San Juan Medical Center", sameAs: "https://www.dignityhealth.org/sacramento/locations/mercysanjuan" },
+        { "@type": "MedicalOrganization", name: "Sutter Roseville Medical Center", sameAs: "https://www.sutterhealth.org/srmc" },
+        { "@type": "MedicalOrganization", name: "Sutter General Hospital", sameAs: "https://www.sutterhealth.org" },
+        { "@type": "MedicalOrganization", name: "Mercy General Hospital", sameAs: "https://www.dignityhealth.org/sacramento/locations/mercygeneral" },
+        { "@type": "MedicalOrganization", name: "Mercy San Juan Medical Center", sameAs: "https://www.dignityhealth.org/sacramento/locations/mercysanjuan" },
       ],
     },
     employee: [
       {
-        "@type": "Physician",
+        "@type": "Person",
         "@id": "https://drantipov.com/#physician",
         name: "Dr. Alexander V. Antipov, DDS",
         jobTitle: "Founder · Oral & Maxillofacial Surgeon",
@@ -369,7 +369,7 @@ export default function JsonLd() {
         image: "https://drantipov.com/images/drantipov@2x-b80a5ccf.jpg",
       },
       {
-        "@type": "Physician",
+        "@type": "Person",
         "@id": "https://drantipov.com/#physician-kahwach",
         name: "Dr. André-David Kahwach, DDS, MD",
         jobTitle: "Oral & Maxillofacial Surgeon",
@@ -380,7 +380,7 @@ export default function JsonLd() {
           { "@type": "EducationalOrganization", name: "Loma Linda University School of Medicine", sameAs: "https://medicine.llu.edu" },
         ],
         worksFor: {
-          "@type": "MedicalBusiness",
+          "@type": "MedicalOrganization",
           name: "Galleria Oral & Facial Surgery",
           url: "https://www.galleriaoms.com",
         },

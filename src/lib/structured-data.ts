@@ -58,7 +58,7 @@ export function getOrganizationSchema() {
     ],
     employee: [
       {
-        "@type": "Physician",
+        "@type": "Person",
         "@id": `${siteConfig.url}/#physician`,
         name: "Dr. Alexander V. Antipov, DDS",
         jobTitle: "Founder · Oral & Maxillofacial Surgeon",
@@ -66,7 +66,7 @@ export function getOrganizationSchema() {
         image: `${siteConfig.url}/images/drantipov@2x-b80a5ccf.jpg`,
       },
       {
-        "@type": "Physician",
+        "@type": "Person",
         "@id": `${siteConfig.url}/#physician-kahwach`,
         name: "Dr. André-David Kahwach, DDS, MD",
         jobTitle: "Oral & Maxillofacial Surgeon",
@@ -84,7 +84,7 @@ export function getOrganizationSchema() {
 export function getPhysicianSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "Physician",
+    "@type": "Person",
     "@id": `${siteConfig.url}/#physician`,
     name: "Dr. Alexander Antipov",
     givenName: "Alexander",
@@ -200,40 +200,40 @@ export function getPhysicianSchema() {
     ],
     affiliation: [
       {
-        "@type": "Hospital",
+        "@type": "MedicalOrganization",
         name: "Sutter Roseville Medical Center",
         sameAs: "https://www.sutterhealth.org/srmc",
       },
       {
-        "@type": "Hospital",
+        "@type": "MedicalOrganization",
         name: "Sutter General Hospital",
         sameAs: "https://www.sutterhealth.org",
       },
       {
-        "@type": "Hospital",
+        "@type": "MedicalOrganization",
         name: "Mercy General Hospital",
         sameAs: "https://www.dignityhealth.org/sacramento/locations/mercygeneral",
       },
       {
-        "@type": "Hospital",
+        "@type": "MedicalOrganization",
         name: "Mercy San Juan Medical Center",
         sameAs: "https://www.dignityhealth.org/sacramento/locations/mercysanjuan",
       },
       {
-        "@type": "MedicalBusiness",
+        "@type": "MedicalOrganization",
         name: "Galleria Oral & Facial Surgery",
         sameAs: "https://www.galleriaoms.com",
       },
     ],
     worksFor: [
       {
-        "@type": "MedicalBusiness",
+        "@type": "MedicalOrganization",
         name: "Galleria Oral & Facial Surgery",
         url: "https://www.galleriaoms.com",
         description: "Oral and maxillofacial surgical practice in Roseville, California — corrective jaw surgery, sleep apnea surgery, facial cosmetic surgery, scarless mole removal.",
       },
       {
-        "@type": "MedicalBusiness",
+        "@type": "MedicalOrganization",
         name: "Fusion Dental Implants",
         url: "https://www.fusiondentalimplants.com",
         description: "Dental implant practice — All-on-4, All-on-X, zygomatic implants, single tooth implants, bone grafting, same-day teeth.",
@@ -271,12 +271,6 @@ export function getPhysicianSchema() {
       "Oral Surgery",
       "Maxillofacial Surgery",
     ],
-    medicalSpecialty: [
-      "Oral Surgery",
-      "Maxillofacial Surgery",
-      "Implant Dentistry",
-      "Reconstructive Surgery",
-    ],
   }
 }
 
@@ -287,7 +281,7 @@ export function getPhysicianSchema() {
 export function getKahwachPhysicianSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "Physician",
+    "@type": "Person",
     "@id": `${siteConfig.url}/#physician-kahwach`,
     name: "Dr. André-David Kahwach",
     givenName: "André-David",
@@ -325,13 +319,13 @@ export function getKahwachPhysicianSchema() {
     ],
     affiliation: [
       {
-        "@type": "MedicalBusiness",
+        "@type": "MedicalOrganization",
         name: "Galleria Oral & Facial Surgery",
         sameAs: "https://www.galleriaoms.com",
       },
     ],
     worksFor: {
-      "@type": "MedicalBusiness",
+      "@type": "MedicalOrganization",
       name: "Galleria Oral & Facial Surgery",
       url: "https://www.galleriaoms.com",
       description: "Full-scope oral and maxillofacial surgical practice in Roseville, California.",
@@ -345,11 +339,6 @@ export function getKahwachPhysicianSchema() {
       "Facial Cosmetic Surgery",
       "IV Sedation",
       "General Anesthesia",
-    ],
-    medicalSpecialty: [
-      "Oral Surgery",
-      "Maxillofacial Surgery",
-      "Implant Dentistry",
     ],
   }
 }
@@ -803,11 +792,6 @@ export function getCityLocalBusinessSchema(city: {
     email: siteConfig.contact.email,
     image: `${siteConfig.url}/images/drantipov.png`,
     priceRange: "$$-$$$$",
-    medicalSpecialty: [
-      "OralAndMaxillofacialSurgery",
-      "DentalImplantSurgery",
-      "FacialCosmeticSurgery",
-    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: `${siteConfig.contact.address.street}, ${siteConfig.contact.address.suite}`,
@@ -833,9 +817,6 @@ export function getCityLocalBusinessSchema(city: {
         latitude: city.lat,
         longitude: city.lng,
       },
-    },
-    physician: {
-      "@id": `${siteConfig.url}/#physician`,
     },
     parentOrganization: {
       "@id": `${siteConfig.url}/#organization`,

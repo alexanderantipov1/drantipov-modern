@@ -1,1 +1,2 @@
 - [bash git-path guard](bash-git-guard.md) — bash blocks filesystem ops on any `.git*` path (rm stops mid-list at `.gitignore`); sequence restructures to avoid `.git*`, user deletes leftovers + pushes.
+- [Schema Physician vs Person](schema-physician-vs-person.md) — JSON-LD: model humans as Person not Physician (a business type); org refs as MedicalOrganization; ListItems need item/url.

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Refer Patients — Dr. Antipov Oral Surgery",
     description: "Streamlined referral process for complex oral & maxillofacial surgery cases. Detailed reporting, fast scheduling.",
-    url: "https://drantipov.com/for-dentists/refer-patients",
+    url: "https://www.drantipov.com/for-dentists/refer-patients",
     type: "website",
   },
 };

@@ -52,10 +52,10 @@ export default function PoorOralHealthSystemicDiseasesPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={structuredDataScript(getBreadcrumbSchema([
-          { name: "Home", url: "https://drantipov.com" },
-          { name: "For Patients", url: "https://drantipov.com/for-patients" },
-          { name: "Insights", url: "https://drantipov.com/for-patients/insights" },
-          { name: "The Hidden Link: How Poor Oral Health Can Lead to Cancer and Systemic Diseases", url: "https://drantipov.com/for-patients/insights/poor-oral-health-systemic-diseases" },
+          { name: "Home", url: "https://www.drantipov.com" },
+          { name: "For Patients", url: "https://www.drantipov.com/for-patients" },
+          { name: "Insights", url: "https://www.drantipov.com/for-patients/insights" },
+          { name: "The Hidden Link: How Poor Oral Health Can Lead to Cancer and Systemic Diseases", url: "https://www.drantipov.com/for-patients/insights/poor-oral-health-systemic-diseases" },
         ]))}
       />
       {/* Back Button */}

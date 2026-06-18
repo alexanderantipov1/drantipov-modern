@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/contact",
     languages: {
-      "x-default": "https://drantipov.com/contact",
-      en: "https://drantipov.com/contact",
+      "x-default": "https://www.drantipov.com/contact",
+      en: "https://www.drantipov.com/contact",
     },
   },
   openGraph: {

@@ -52,10 +52,10 @@ export default function DentalImplantAftercarePost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={structuredDataScript(getBreadcrumbSchema([
-          { name: "Home", url: "https://drantipov.com" },
-          { name: "For Patients", url: "https://drantipov.com/for-patients" },
-          { name: "Insights", url: "https://drantipov.com/for-patients/insights" },
-          { name: "Dental Implant Aftercare: Tips for a Successful Recovery", url: "https://drantipov.com/for-patients/insights/dental-implant-aftercare" },
+          { name: "Home", url: "https://www.drantipov.com" },
+          { name: "For Patients", url: "https://www.drantipov.com/for-patients" },
+          { name: "Insights", url: "https://www.drantipov.com/for-patients/insights" },
+          { name: "Dental Implant Aftercare: Tips for a Successful Recovery", url: "https://www.drantipov.com/for-patients/insights/dental-implant-aftercare" },
         ]))}
       />
       {/* Back Button */}

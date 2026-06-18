@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/for-patients/faqs",
     languages: {
-      "x-default": "https://drantipov.com/for-patients/faqs",
-      en: "https://drantipov.com/for-patients/faqs",
+      "x-default": "https://www.drantipov.com/for-patients/faqs",
+      en: "https://www.drantipov.com/for-patients/faqs",
     },
   }
 }

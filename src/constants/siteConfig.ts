@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Dr. Alexander Antipov - Northern California's Premier Oral Surgeon",
   description:
     "Board-certified oral surgeon Dr. Alexander Antipov specializes in dental implants, full-arch restoration, and corrective jaw surgery. Trusted by dentists across Northern California.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://drantipov.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.drantipov.com",
   ogImage: "/og-image.jpg",
   links: {
     calendly: process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/dr-antipov",

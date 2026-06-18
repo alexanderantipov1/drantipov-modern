@@ -42,7 +42,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://drantipov.com"),
+  metadataBase: new URL("https://www.drantipov.com"),
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
     yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION,
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://drantipov.com",
+    url: "https://www.drantipov.com",
     siteName: "Dr. Alexander Antipov, DDS — Oral & Maxillofacial Surgery",
     title:
       "Dr. Antipov — Oral Surgeon & Implant Specialist, Roseville",

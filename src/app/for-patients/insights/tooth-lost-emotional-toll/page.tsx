@@ -52,10 +52,10 @@ export default function ToothLossEmotionalTollPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={structuredDataScript(getBreadcrumbSchema([
-          { name: "Home", url: "https://drantipov.com" },
-          { name: "For Patients", url: "https://drantipov.com/for-patients" },
-          { name: "Insights", url: "https://drantipov.com/for-patients/insights" },
-          { name: "The Hidden Emotional Toll of Tooth Loss: Understanding Patient Struggles", url: "https://drantipov.com/for-patients/insights/tooth-lost-emotional-toll" },
+          { name: "Home", url: "https://www.drantipov.com" },
+          { name: "For Patients", url: "https://www.drantipov.com/for-patients" },
+          { name: "Insights", url: "https://www.drantipov.com/for-patients/insights" },
+          { name: "The Hidden Emotional Toll of Tooth Loss: Understanding Patient Struggles", url: "https://www.drantipov.com/for-patients/insights/tooth-lost-emotional-toll" },
         ]))}
       />
       {/* Back Button */}

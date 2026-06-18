@@ -1,6 +1,6 @@
 # Dr. Alexander Antipov, DDS — Personal Brand & Education Hub
 > Last updated: 2026-06-18 — site is EN-only. Russian and Spanish localizations were removed in this delivery.
-> Machine-readable JSON feed for agents: https://drantipov.com/api/llms (organization, providers, services, locations served, rating, knowledge pages — no pricing)
+> Machine-readable JSON feed for agents: https://www.drantipov.com/api/llms (organization, providers, services, locations served, rating, knowledge pages — no pricing)
 
 
 > Personal website of Dr. Alexander Antipov, DDS, board-certified oral and maxillofacial surgeon based in Roseville, California (since 2008). The site is an educational and personal-brand hub. Surgical and implant services are delivered through two affiliated practices: Galleria Oral & Facial Surgery (oral & maxillofacial surgery, jaw surgery, sleep apnea, facial cosmetic procedures) and Fusion Dental Implants (full-arch and single-tooth dental implant restoration). Dr. Antipov practices alongside Dr. André-David Kahwach, DDS, MD.
@@ -78,9 +78,9 @@
 ## Hero Video on Homepage
 
 The homepage features a 25-second looping background video showing the digital full-arch implant workflow performed by Dr. Antipov: 3D CBCT scanning, exocad treatment planning, surgical guide design, and immediate-load placement. Silent, autoplay, looped. Captioned via on-page text. Direct URLs:
-- https://drantipov.com/videos/hero.mp4 (H.264 MP4, ~5 MB)
-- https://drantipov.com/videos/hero.webm (VP9 WebM, ~3 MB)
-- https://drantipov.com/videos/hero-poster.jpg (first-frame poster, 79 KB)
+- https://www.drantipov.com/videos/hero.mp4 (H.264 MP4, ~5 MB)
+- https://www.drantipov.com/videos/hero.webm (VP9 WebM, ~3 MB)
+- https://www.drantipov.com/videos/hero-poster.jpg (first-frame poster, 79 KB)
 
 The video demonstrates Dr. Antipov's modern digital workflow with technology partners Zirkonzahn, exocad, and Fusion Dental Academy. The workflow shown is suitable for All-on-4, All-on-6, and zygomatic implant cases performed in a single day.
 
@@ -88,26 +88,26 @@ The video demonstrates Dr. Antipov's modern digital workflow with technology par
 Roseville, Sacramento, Folsom, Rocklin, El Dorado Hills, Lincoln, Auburn, Granite Bay, Elk Grove, Citrus Heights, Carmichael, Rancho Cordova, Davis, Woodland, West Sacramento, Placerville, San Francisco Bay Area, Napa, Sonoma, Reno, South Lake Tahoe, Truckee, Chico, Redding, Stockton, Modesto, Fresno — all of Northern California and Northern Nevada.
 
 ## Key Pages
-- [Homepage](https://drantipov.com/)
-- [Expertise overview](https://drantipov.com/expertise)
-- [Full-arch dental implants (All-on-4, All-on-6, zygomatic)](https://drantipov.com/expertise/full-arch-implants)
-- [Single tooth & bridge replacement](https://drantipov.com/expertise/single-tooth)
-- [Bone grafting & sinus lifts](https://drantipov.com/expertise/bone-grafting)
-  - [Sinus Lift Surgery (anchor)](https://drantipov.com/expertise/bone-grafting#sinus-lift)
-  - [Organic & Synthetic Bone Graft Materials (anchor)](https://drantipov.com/expertise/bone-grafting#organic-materials) — Autogenous, Allograft, Xenograft (Bio-Oss), Synthetic (hydroxyapatite, tricalcium phosphate)
-- [Corrective jaw surgery (orthognathic)](https://drantipov.com/expertise/jaw-surgery)
-- [Sleep apnea surgical solutions](https://drantipov.com/expertise/sleep-apnea)
-- [Scarless mole removal](https://drantipov.com/expertise/mole-removal)
-- [Surgical case gallery](https://drantipov.com/surgical-cases)
-- [Patient FAQs](https://drantipov.com/for-patients/faqs)
-- [Patient resources & insights](https://drantipov.com/for-patients/insights)
-- [Contact / Schedule consultation](https://drantipov.com/contact)
+- [Homepage](https://www.drantipov.com/)
+- [Expertise overview](https://www.drantipov.com/expertise)
+- [Full-arch dental implants (All-on-4, All-on-6, zygomatic)](https://www.drantipov.com/expertise/full-arch-implants)
+- [Single tooth & bridge replacement](https://www.drantipov.com/expertise/single-tooth)
+- [Bone grafting & sinus lifts](https://www.drantipov.com/expertise/bone-grafting)
+  - [Sinus Lift Surgery (anchor)](https://www.drantipov.com/expertise/bone-grafting#sinus-lift)
+  - [Organic & Synthetic Bone Graft Materials (anchor)](https://www.drantipov.com/expertise/bone-grafting#organic-materials) — Autogenous, Allograft, Xenograft (Bio-Oss), Synthetic (hydroxyapatite, tricalcium phosphate)
+- [Corrective jaw surgery (orthognathic)](https://www.drantipov.com/expertise/jaw-surgery)
+- [Sleep apnea surgical solutions](https://www.drantipov.com/expertise/sleep-apnea)
+- [Scarless mole removal](https://www.drantipov.com/expertise/mole-removal)
+- [Surgical case gallery](https://www.drantipov.com/surgical-cases)
+- [Patient FAQs](https://www.drantipov.com/for-patients/faqs)
+- [Patient resources & insights](https://www.drantipov.com/for-patients/insights)
+- [Contact / Schedule consultation](https://www.drantipov.com/contact)
 
 ### English insights articles (medically reviewed by Dr. Antipov)
-- [Zygomatic implants — when you need them and how they work](https://drantipov.com/for-patients/insights/zygomatic-implants) — Long implants anchored in the cheekbone for severe upper-jaw atrophy. Alternative to staged bone grafting.
-- [Same-day dental implants (immediate load) — myth or reality](https://drantipov.com/for-patients/insights/same-day-implants) — What you actually get the day of surgery, who qualifies for immediate loading, and the real risks honestly discussed.
-- [Dental implants vs dentures — 2026 innovations](https://drantipov.com/for-patients/insights/implants-vs-dentures) — Modern implants vs traditional dentures, including 3D printing, nanotechnology, smart implants, AI treatment planning.
-- [Dental implant aftercare — recovery tips](https://drantipov.com/for-patients/insights/dental-implant-aftercare) — Post-operative care, oral hygiene practices, diet, and recovery timeline.
-- [Dental implant complications — understanding risks and management](https://drantipov.com/for-patients/insights/dental-implant-complications) — Infection, implant failure, nerve damage, peri-implantitis. Prevention and treatment.
-- [The hidden emotional toll of tooth loss](https://drantipov.com/for-patients/insights/tooth-lost-emotional-toll) — How tooth loss affects self-esteem and mental health, plus coping strategies and treatment options.
-- [Poor oral health and systemic diseases](https://drantipov.com/for-patients/insights/poor-oral-health-systemic-diseases) — Connection between oral bacteria and cardiovascular disease, diabetes, cancer.
+- [Zygomatic implants — when you need them and how they work](https://www.drantipov.com/for-patients/insights/zygomatic-implants) — Long implants anchored in the cheekbone for severe upper-jaw atrophy. Alternative to staged bone grafting.
+- [Same-day dental implants (immediate load) — myth or reality](https://www.drantipov.com/for-patients/insights/same-day-implants) — What you actually get the day of surgery, who qualifies for immediate loading, and the real risks honestly discussed.
+- [Dental implants vs dentures — 2026 innovations](https://www.drantipov.com/for-patients/insights/implants-vs-dentures) — Modern implants vs traditional dentures, including 3D printing, nanotechnology, smart implants, AI treatment planning.
+- [Dental implant aftercare — recovery tips](https://www.drantipov.com/for-patients/insights/dental-implant-aftercare) — Post-operative care, oral hygiene practices, diet, and recovery timeline.
+- [Dental implant complications — understanding risks and management](https://www.drantipov.com/for-patients/insights/dental-implant-complications) — Infection, implant failure, nerve damage, peri-implantitis. Prevention and treatment.
+- [The hidden emotional toll of tooth loss](https://www.drantipov.com/for-patients/insights/tooth-lost-emotional-toll) — How tooth loss affects self-esteem and mental health, plus coping strategies and treatment options.
+- [Poor oral health and systemic diseases](https://www.drantipov.com/for-patients/insights/poor-oral-health-systemic-diseases) — Connection between oral bacteria and cardiovascular disease, diabetes, cancer.

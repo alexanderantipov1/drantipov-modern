@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/our-team",
     languages: {
-      "x-default": "https://drantipov.com/our-team",
-      en: "https://drantipov.com/our-team",
+      "x-default": "https://www.drantipov.com/our-team",
+      en: "https://www.drantipov.com/our-team",
     },
   },
   openGraph: {

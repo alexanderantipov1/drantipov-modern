@@ -153,7 +153,7 @@ const knowledgePages = [
 
 export async function GET() {
   const data = {
-    "@context": "https://drantipov.com/api/llms",
+    "@context": "https://www.drantipov.com/api/llms",
     generated: "static",
     organization: {
       name: siteConfig.name,

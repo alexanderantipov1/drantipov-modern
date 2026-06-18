@@ -30,6 +30,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin/"],
       },
     ],
-    sitemap: "https://drantipov.com/sitemap.xml",
+    sitemap: "https://www.drantipov.com/sitemap.xml",
   };
 }

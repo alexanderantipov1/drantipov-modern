@@ -2,7 +2,7 @@ export default function JsonLd() {
   const localBusiness = {
     "@context": "https://schema.org",
     "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
-    "@id": "https://drantipov.com/#organization",
+    "@id": "https://www.drantipov.com/#organization",
     name: "Dr. Alexander Antipov, DDS — Oral & Maxillofacial Surgery",
     alternateName: [
       "Alexander V. Antipov, DDS, Inc.",
@@ -11,11 +11,11 @@ export default function JsonLd() {
     ],
     description:
       "Board-certified oral and maxillofacial surgeon providing same-day dental implants (All-on-4, All-on-6, zygomatic implants), full arch dental implant restoration, corrective jaw surgery (orthognathic surgery), organic and holistic bone grafting, facial cosmetic surgery (rhinoplasty, face lift, eyelid surgery), and wisdom teeth removal in Roseville, CA. Serving Sacramento, San Francisco, Reno, and all of Northern California. Free consultations with complimentary 3D CT scan.",
-    url: "https://drantipov.com",
+    url: "https://www.drantipov.com",
     telephone: "+1-916-783-2110",
     email: "info@galleriaoms.com",
-    image: "https://drantipov.com/images/slides/1/1844-99036b3b.jpg",
-    logo: "https://drantipov.com/images/logo-b97aa5c8.png",
+    image: "https://www.drantipov.com/images/slides/1/1844-99036b3b.jpg",
+    logo: "https://www.drantipov.com/images/logo-b97aa5c8.png",
     priceRange: "$$",
     currenciesAccepted: "USD",
     paymentAccepted: "Cash, Credit Card, Financing, CareCredit, HSA, FSA, Insurance",
@@ -362,19 +362,19 @@ export default function JsonLd() {
     employee: [
       {
         "@type": "Person",
-        "@id": "https://drantipov.com/#physician",
+        "@id": "https://www.drantipov.com/#physician",
         name: "Dr. Alexander V. Antipov, DDS",
         jobTitle: "Founder · Oral & Maxillofacial Surgeon",
-        url: "https://drantipov.com/our-team",
-        image: "https://drantipov.com/images/drantipov@2x-b80a5ccf.jpg",
+        url: "https://www.drantipov.com/our-team",
+        image: "https://www.drantipov.com/images/drantipov@2x-b80a5ccf.jpg",
       },
       {
         "@type": "Person",
-        "@id": "https://drantipov.com/#physician-kahwach",
+        "@id": "https://www.drantipov.com/#physician-kahwach",
         name: "Dr. André-David Kahwach, DDS, MD",
         jobTitle: "Oral & Maxillofacial Surgeon",
-        url: "https://drantipov.com/our-team",
-        image: "https://drantipov.com/images/dr-kahwach-v3.jpg",
+        url: "https://www.drantipov.com/our-team",
+        image: "https://www.drantipov.com/images/dr-kahwach-v3.jpg",
         alumniOf: [
           { "@type": "EducationalOrganization", name: "University of California, San Francisco, School of Dentistry", sameAs: "https://dentistry.ucsf.edu" },
           { "@type": "EducationalOrganization", name: "Loma Linda University School of Medicine", sameAs: "https://medicine.llu.edu" },
@@ -500,7 +500,7 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     name: "Dr. Alexander Antipov, DDS — Oral & Maxillofacial Surgery",
-    url: "https://drantipov.com",
+    url: "https://www.drantipov.com",
     about: {
       "@type": "MedicalSpecialty",
       name: "Oral and Maxillofacial Surgery",

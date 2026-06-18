@@ -35,6 +35,13 @@ export async function generateMetadata({ params }: CaseDetailPageProps): Promise
       caseData.description ||
       `Facial cosmetic surgery case ${caseData.id}: ${caseData.title}. View detailed procedure information and results.`,
     keywords: article?.keywords,
+    alternates: {
+      canonical: `/surgical-cases/facial-cosmetic-surgery/${caseId}`,
+      languages: {
+        en: `/surgical-cases/facial-cosmetic-surgery/${caseId}`,
+        "x-default": `/surgical-cases/facial-cosmetic-surgery/${caseId}`,
+      },
+    },
     openGraph: {
       title: article?.metaTitle || `${caseData.title} | Dr. Alexander Antipov`,
       description: article?.metaDescription || caseData.description || caseData.title,

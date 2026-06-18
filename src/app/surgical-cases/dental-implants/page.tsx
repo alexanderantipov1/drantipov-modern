@@ -12,6 +12,13 @@ import DualCTA from "@/components/DualCTA"
 export const metadata: Metadata = {
   title: "Dental Implant Cases - All-on-4 and Immediate Implants | Dr. Antipov",
   description: "Explore Dr. Antipov's dental implant portfolio featuring All-on-4, immediate implants, and full-arch restoration cases. See real patient transformations with same-day teeth solutions.",
+  alternates: {
+    canonical: "/surgical-cases/dental-implants",
+    languages: {
+      en: "/surgical-cases/dental-implants",
+      "x-default": "/surgical-cases/dental-implants",
+    },
+  },
   openGraph: {
     title: "Dental Implant Cases - All-on-4 Solutions | Dr. Alexander Antipov",
     description: "Expert dental implant surgery results including All-on-4 and immediate implant placement. Real transformations from Roseville, CA.",

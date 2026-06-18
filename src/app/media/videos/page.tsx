@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     "implant dentistry videos",
     "jaw surgery presentations",
   ],
+  alternates: {
+    canonical: "/media/videos",
+    languages: {
+      en: "/media/videos",
+      "x-default": "/media/videos",
+    },
+  },
   openGraph: {
     title: "Educational Videos & Lectures | Dr. Alexander Antipov",
     description: "Watch educational videos and surgical demonstrations from Dr. Antipov",

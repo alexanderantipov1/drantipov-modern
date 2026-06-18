@@ -35,6 +35,13 @@ export async function generateMetadata({ params }: CaseDetailPageProps): Promise
       caseData.description ||
       `Corrective jaw surgery case ${caseData.id}: ${caseData.title}. View detailed surgical outcome and procedure information.`,
     keywords: article?.keywords,
+    alternates: {
+      canonical: `/surgical-cases/corrective-jaw-surgery/${caseId}`,
+      languages: {
+        en: `/surgical-cases/corrective-jaw-surgery/${caseId}`,
+        "x-default": `/surgical-cases/corrective-jaw-surgery/${caseId}`,
+      },
+    },
     openGraph: {
       title: article?.metaTitle || `${caseData.title} | Dr. Alexander Antipov`,
       description: article?.metaDescription || caseData.description || caseData.title,

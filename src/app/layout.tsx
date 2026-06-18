@@ -43,13 +43,6 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://drantipov.com"),
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/",
-      "x-default": "/",
-    },
-  },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
     yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION,

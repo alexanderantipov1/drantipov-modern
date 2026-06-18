@@ -12,6 +12,13 @@ import DualCTA from "@/components/DualCTA"
 export const metadata: Metadata = {
   title: "Corrective Jaw Surgery Cases — Real Results",
   description: "Dr. Antipov's corrective jaw surgery portfolio — orthognathic procedures, mandibular advancement, and facial skeletal corrections with real patient outcomes.",
+  alternates: {
+    canonical: "/surgical-cases/corrective-jaw-surgery",
+    languages: {
+      en: "/surgical-cases/corrective-jaw-surgery",
+      "x-default": "/surgical-cases/corrective-jaw-surgery",
+    },
+  },
   openGraph: {
     title: "Corrective Jaw Surgery Cases | Dr. Alexander Antipov",
     description: "Expert orthognathic surgery results from Northern California's premier oral surgeon. View real patient transformations.",

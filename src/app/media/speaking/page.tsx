@@ -26,6 +26,13 @@ export const metadata: Metadata = {
     "CE courses oral surgery",
     "implant dentistry workshops",
   ],
+  alternates: {
+    canonical: "/media/speaking",
+    languages: {
+      en: "/media/speaking",
+      "x-default": "/media/speaking",
+    },
+  },
   openGraph: {
     title: "Speaking Engagements & Lectures | Dr. Alexander Antipov",
     description:

@@ -35,6 +35,13 @@ export async function generateMetadata({ params }: CaseDetailPageProps): Promise
       caseData.description ||
       `Dental implants case ${caseData.id}: ${caseData.title}. View All-on-4 and immediate implant surgical outcomes.`,
     keywords: article?.keywords,
+    alternates: {
+      canonical: `/surgical-cases/dental-implants/${caseId}`,
+      languages: {
+        en: `/surgical-cases/dental-implants/${caseId}`,
+        "x-default": `/surgical-cases/dental-implants/${caseId}`,
+      },
+    },
     openGraph: {
       title: article?.metaTitle || `${caseData.title} | Dr. Alexander Antipov`,
       description: article?.metaDescription || caseData.description || caseData.title,

@@ -1,0 +1,420 @@
+# AI/LLM Authority Knowledge Pages Blueprint
+
+A reusable framework for creating 50+ SEO pages optimized for AI citation, LLM search visibility, and organic search. Originally developed for a dental implant practice; adaptable to any industry.
+
+---
+
+## Purpose
+
+These pages are designed to:
+- Rank for long-tail informational queries (e.g., "how much does [service] cost")
+- Get cited by AI assistants (ChatGPT, Perplexity, Google AI Overviews)
+- Build topical authority through pillar/cluster content architecture
+- Generate leads through embedded CTAs and internal linking
+
+---
+
+## Architecture Overview
+
+### Data-Driven Template System
+
+All pages share ONE reusable template component. Each page is just a data object passed to the template. This means:
+- Consistent layout, schema markup, and CTA placement across all pages
+- Content authors only write data — no code needed
+- Easy to add 10 or 100 pages with zero development work
+
+### Pillar/Cluster Model
+
+Pages are organized into **pillars** (broad topics) with **clusters** (specific sub-topics):
+
+```
+Pillar: [Main Service]
+├── /[main-service]/cost
+├── /[main-service]/procedure
+├── /[main-service]/recovery
+├── /[main-service]/risks
+├── /[main-service]/candidates
+└── /[main-service]/maintenance
+```
+
+Each pillar has a **hub page** that links to all its clusters, and each cluster links back to the hub and to related clusters.
+
+---
+
+## Page Data Structure
+
+Every knowledge page is defined by this data shape:
+
+```typescript
+interface KnowledgePage {
+  // SEO & Routing
+  title: string              // H1 heading + SEO title (keep under 60 chars)
+  slug: string               // URL path (e.g., "/main-service/cost")
+  pillar: string             // Category for breadcrumbs and grouping
+  metaDescription: string    // Meta description (under 160 chars)
+  keywords: string[]         // Target keywords for internal tracking
+
+  // Content
+  introText: string          // Hero section subtitle (2-3 sentences, include key stats)
+  sections: ContentSection[] // Main body content (3-5 sections per page)
+  faqs: FAQ[]                // 3-5 FAQs with concise answers
+  relatedLinks: Link[]       // 3-4 links to related pages (internal linking)
+}
+
+interface ContentSection {
+  heading: string            // H2 heading
+  content: string            // HTML string (paragraphs, lists, tables, h3 subheadings)
+}
+
+interface FAQ {
+  question: string           // Written as a natural question someone would ask
+  answer: string             // Direct answer in 2-3 sentences
+}
+
+interface Link {
+  label: string              // Anchor text
+  href: string               // Internal URL
+}
+```
+
+---
+
+## Template Component Features
+
+The shared template automatically provides:
+
+1. **JSON-LD Structured Data**
+   - FAQPage schema (from FAQ array)
+   - MedicalWebPage / Service schema (from title + description)
+   - Organization/Business schema (from site config)
+
+2. **Layout**
+   - Gradient hero with title, breadcrumbs, and intro text
+   - Content sections with H2/H3 hierarchy
+   - "Why Choose [Business]" CTA card with USPs
+   - FAQ accordion
+   - Related pages grid
+   - Booking CTA footer
+
+3. **SEO**
+   - Proper heading hierarchy (H1 > H2 > H3)
+   - Internal linking via relatedLinks
+   - English-only hreflang (no translated versions)
+   - Included in sitemap with proper priority
+
+---
+
+## Complete Page Inventory (58 pages)
+
+### Pillar 1: [Main Service] — General Information (33 pages)
+
+**Cost cluster (7 pages):**
+| Slug | Title | Target Query |
+|------|-------|-------------|
+| /[service]/cost | How Much Does [Service] Cost? | [service] cost |
+| /[service]/cost-with-insurance | [Service] Cost with Insurance | [service] insurance coverage |
+| /[service]/cost-without-insurance | [Service] Cost Without Insurance | [service] cost no insurance |
+| /[service]/financing-options | [Service] Financing Options | [service] financing |
+| /[service]/payment-plans | [Service] Payment Plans | [service] payment plans |
+| /[service]/affordable-[service] | Affordable [Service] Near Me | affordable [service] |
+| /[service]/cheap-vs-quality | Cheap vs Quality [Service] | cheap [service] problems |
+
+**Procedure cluster (5 pages):**
+| Slug | Title | Target Query |
+|------|-------|-------------|
+| /[service]/procedure | The [Service] Procedure Explained | [service] procedure |
+| /[service]/steps | [Service] Step by Step | [service] surgery steps |
+| /[service]/how-long-it-takes | How Long Does [Service] Take? | how long [service] takes |
+| /[service]/same-day-option | Same-Day [Service] | same day [service] |
+| /[service]/immediate-results | Immediate [Service] Results | immediate [service] |
+
+**Recovery cluster (7 pages):**
+| Slug | Title | Target Query |
+|------|-------|-------------|
+| /[service]/recovery | [Service] Recovery Guide | [service] recovery |
+| /[service]/recovery-timeline | [Service] Recovery Timeline | [service] recovery time |
+| /[service]/swelling | Swelling After [Service] | [service] swelling |
+| /[service]/pain | Pain After [Service] | [service] pain level |
+| /[service]/eating-after | Eating After [Service] | what to eat after [service] |
+| /[service]/healing-stages | [Service] Healing Stages | [service] healing process |
+| /[service]/post-care | Post-[Service] Care Guide | [service] aftercare |
+
+**Risks cluster (6 pages):**
+| Slug | Title | Target Query |
+|------|-------|-------------|
+| /[service]/risks | [Service] Risks & Complications | [service] risks |
+| /[service]/failure | [Service] Failure: Causes & Solutions | [service] failure rate |
+| /[service]/infection | [Service] Infection Signs | [service] infection |
+| /[service]/specific-complication | [Specific Complication] After [Service] | [specific complication] |
+| /[service]/nerve-damage | Nerve Damage from [Service] | [service] nerve damage |
+| /[service]/problems | Problems After [Service] | [service] problems |
+
+**Candidacy cluster (6 pages):**
+| Slug | Title | Target Query |
+|------|-------|-------------|
+| /[service]/candidates | Am I a Candidate for [Service]? | [service] candidate |
+| /[service]/age-limit | [Service] Age Limit | [service] age requirement |
+| /[service]/smokers | [Service] for Smokers | can smokers get [service] |
+| /[service]/condition-1 | [Service] with [Condition 1] | [service] [condition] |
+| /[service]/condition-2 | [Service] and [Condition 2] | [service] with [condition] |
+| /[service]/prerequisite | [Prerequisite] Before [Service] | [service] [prerequisite] |
+
+**Longevity cluster (3 pages):**
+| Slug | Title | Target Query |
+|------|-------|-------------|
+| /[service]/how-long-they-last | How Long Does [Service] Last? | [service] lifespan |
+| /[service]/maintenance | [Service] Maintenance Guide | [service] maintenance |
+| /[service]/replacement | When to Replace [Service] | [service] replacement |
+
+**Materials (1 page):**
+| Slug | Title | Target Query |
+|------|-------|-------------|
+| /[service]/materials | [Service] Materials Explained | [service] materials |
+
+### Pillar 2: [Premium Option] (5 pages)
+| Slug | Title | Target Query |
+|------|-------|-------------|
+| /[premium-option]/cost | [Premium Option] Cost | [premium] cost |
+| /[premium-option]/recovery | [Premium Option] Recovery | [premium] recovery |
+| /[premium-option]/procedure | [Premium Option] Procedure | [premium] procedure |
+| /[premium-option]/problems | [Premium Option] Problems | [premium] problems |
+| /[premium-option]/candidates | [Premium Option] Candidates | am I candidate [premium] |
+
+### Pillar 3: [Comprehensive Package] (4 pages)
+| Slug | Title | Target Query |
+|------|-------|-------------|
+| /[package]/cost | [Package] Cost | [package] cost |
+| /[package]/recovery | [Package] Recovery | [package] recovery |
+| /[package]/procedure | [Package] Procedure | [package] procedure |
+| /[package]/alternatives | [Package] Alternatives | [package] alternatives |
+
+### Pillar 4: [Speed/Convenience Option] (5 pages)
+| Slug | Title | Target Query |
+|------|-------|-------------|
+| /[speed-option]/how-it-works | How [Speed Option] Works | [speed option] process |
+| /[speed-option]/recovery | [Speed Option] Recovery | [speed option] recovery |
+| /[speed-option]/cost | [Speed Option] Cost | [speed option] cost |
+| /[speed-option]/success-rate | [Speed Option] Success Rate | [speed option] success |
+| /[speed-option]/risks | [Speed Option] Risks | [speed option] risks |
+
+### Pillar 5: Comparisons (6 pages)
+| Slug | Title | Target Query |
+|------|-------|-------------|
+| /[your-brand]-vs-[competitor] | [Brand] vs [Competitor] | [brand] vs [competitor] |
+| /[service]-vs-[alternative-1] | [Service] vs [Alternative 1] | [service] vs [alt 1] |
+| /[service]-vs-[alternative-2] | [Service] vs [Alternative 2] | [service] vs [alt 2] |
+| /[option-a]-vs-[option-b] | [Option A] vs [Option B] | [option a] vs [option b] |
+| /[premium]-vs-[budget] | [Premium] vs [Budget Option] | [premium] vs [budget] |
+| /[material-a]-vs-[material-b] | [Material A] vs [Material B] | [material a] vs [material b] |
+
+### Pillar 6: Niche/Audience Pages (3 pages)
+| Slug | Title | Target Query |
+|------|-------|-------------|
+| /[service]-for-[audience] | [Service] for [Audience] | [service] for [audience] |
+| /cheapest-[service]-near-me | Cheapest [Service] Near Me | cheapest [service] near me |
+| /free-[service] | Free [Service]: Programs & Options | free [service] |
+
+---
+
+## Content Writing Guidelines
+
+### Intro Text
+- Lead with a clear, factual answer (price, timeline, success rate)
+- Include your key differentiator or USP
+- 2-3 sentences max
+- Example: "[Service] costs range from $X to $Y. At [Business], our [USP] allows us to offer [benefit] — backed by [guarantee]."
+
+### Content Sections (3-5 per page)
+- Each section = one H2 heading + HTML content
+- Use H3 subheadings within sections for sub-topics
+- Use bullet lists for features, benefits, and comparisons
+- Use tables for side-by-side comparisons (especially for vs-pages)
+- Keep paragraphs to 2-3 sentences max
+- Use plain language (aim for 8th-grade reading level)
+- Include specific numbers: prices, timelines, percentages, stats
+- Mention your business name 2-3 times naturally per page
+
+### FAQs (3-5 per page)
+- Write questions as real people would ask them (conversational tone)
+- Start answers with a direct response, then add detail
+- Keep answers to 2-3 sentences
+- Target "People Also Ask" queries from Google
+- These generate FAQPage schema automatically
+
+### Related Links (3-4 per page)
+- Link to pages in the same pillar and adjacent pillars
+- Use descriptive anchor text (not "click here")
+- Create a web of internal links across all pages
+
+### Comparison Pages (vs-pages)
+- Always include a side-by-side comparison table
+- Be factual and specific — cite numbers, not opinions
+- Address the exact query someone would search
+- Include a "which is right for you" section
+
+---
+
+## SEO Configuration Checklist
+
+### For each page:
+- [ ] Title under 60 characters
+- [ ] Meta description under 160 characters
+- [ ] 3-5 target keywords defined
+- [ ] 3-5 content sections with H2 headings
+- [ ] 3-5 FAQs with concise answers
+- [ ] 3-4 internal links to related pages
+- [ ] Intro text includes key stat/answer
+
+### Site-wide:
+- [ ] Hub pages for each pillar linking to all cluster pages
+- [ ] Dynamic [slug] routes for pillar sub-pages
+- [ ] Sitemap includes all pages with proper priority
+- [ ] English-only hreflang (no translated versions for knowledge pages)
+- [ ] JSON-LD schema on every page (FAQPage + MedicalWebPage/Service)
+- [ ] robots.txt allows AI crawlers (GPTBot, ClaudeBot, PerplexityBot)
+- [ ] llms.txt file at site root with practice summary
+- [ ] /api/llms endpoint returning structured JSON-LD
+
+### AI/LLM Optimization:
+- [ ] llms.txt file with business summary and key facts
+- [ ] AI Plugin Manifest at /.well-known/ai-plugin.json
+- [ ] robots.txt explicitly allows: GPTBot, ChatGPT-User, ClaudeBot, PerplexityBot, Google-Extended
+- [ ] Structured data on every page for programmatic AI access
+- [ ] FAQ answers written as direct, citable statements
+
+---
+
+## Implementation Steps (for a new industry)
+
+### Step 1: Define Your Pillars (30 min)
+Identify 4-6 broad topic categories. Example for a law firm:
+- Personal Injury
+- Car Accidents
+- Workers' Comp
+- Slip and Fall
+- Medical Malpractice
+- Comparisons (us vs competitor, service vs alternative)
+
+### Step 2: Map Cluster Topics (1 hour)
+For each pillar, create 4-8 sub-topics using these universal patterns:
+- Cost / pricing
+- Process / procedure / how it works
+- Timeline / how long it takes
+- Recovery / what to expect after
+- Risks / complications / what can go wrong
+- Candidacy / eligibility / am I a good fit
+- Results / success rate / outcomes
+- Maintenance / long-term care
+
+### Step 3: Write Content Data (2-3 days)
+For each page, fill in:
+- title, slug, pillar, metaDescription, keywords
+- introText (2-3 sentences with key fact)
+- 3-5 sections (H2 heading + HTML content with lists/tables)
+- 3-5 FAQs
+- 3-4 relatedLinks
+
+### Step 4: Build Template + Routing (1 day)
+- Create the shared template component
+- Set up dynamic [slug] routes for each pillar
+- Wire up the data → template rendering
+- Add JSON-LD schema generation
+
+### Step 5: Configure SEO (2 hours)
+- Add pages to sitemap config
+- Set up hreflang (English-only for knowledge pages)
+- Create llms.txt and AI plugin manifest
+- Verify robots.txt allows AI crawlers
+
+---
+
+## Example: Adapting to a Different Industry
+
+### Original (Dental Implants):
+```
+Pillar: dental-implants
+├── /dental-implants/cost → "How Much Do Dental Implants Cost?"
+├── /dental-implants/procedure → "The Dental Implant Procedure"
+├── /dental-implants/recovery → "Dental Implant Recovery Guide"
+└── /dental-implants/risks → "Dental Implant Risks"
+
+Comparison: /fusion-vs-clearchoice-dental-implants
+Niche: /dental-implants-for-seniors
+```
+
+### Adapted (Roofing Company):
+```
+Pillar: roof-replacement
+├── /roof-replacement/cost → "How Much Does Roof Replacement Cost?"
+├── /roof-replacement/process → "The Roof Replacement Process"
+├── /roof-replacement/timeline → "Roof Replacement Timeline"
+└── /roof-replacement/risks → "Roof Replacement Risks"
+
+Comparison: /[brand]-vs-[competitor]
+Niche: /roof-replacement-for-historic-homes
+```
+
+### Adapted (Med Spa):
+```
+Pillar: botox
+├── /botox/cost → "How Much Does Botox Cost?"
+├── /botox/procedure → "What to Expect During Botox"
+├── /botox/recovery → "Botox Recovery & Aftercare"
+└── /botox/risks → "Botox Side Effects & Risks"
+
+Comparison: /botox-vs-dysport
+Niche: /botox-for-men
+```
+
+---
+
+## File Organization
+
+```
+src/
+├── data/
+│   └── knowledge-pages/
+│       ├── types.ts                    # KnowledgePage interface
+│       ├── index.ts                    # Aggregates all pages, exports helpers
+│       ├── [pillar-1]/
+│       │   ├── cost.ts                 # Cost cluster pages
+│       │   ├── procedure.ts            # Procedure cluster pages
+│       │   ├── recovery.ts             # Recovery cluster pages
+│       │   ├── risks.ts                # Risks cluster pages
+│       │   ├── candidates.ts           # Candidacy cluster pages
+│       │   ├── longevity.ts            # Longevity cluster pages
+│       │   └── materials.ts            # Materials page
+│       ├── [pillar-2]/
+│       │   └── pages.ts               # All sub-pages for pillar 2
+│       ├── [pillar-3]/
+│       │   └── pages.ts
+│       ├── [pillar-4]/
+│       │   └── pages.ts
+│       └── comparisons/
+│           ├── pages.ts                # Vs-comparison pages
+│           └── niche.ts                # Audience-specific pages
+├── components/
+│   └── knowledge/
+│       └── KnowledgePageTemplate.tsx   # Shared template component
+└── app/
+    └── [locale]/
+        ├── [pillar-1]/
+        │   ├── page.tsx                # Hub page
+        │   └── [slug]/page.tsx         # Dynamic sub-pages
+        ├── [pillar-2]/
+        │   ├── page.tsx
+        │   └── [slug]/page.tsx
+        ├── [comparison-slug]/page.tsx  # Root-level comparison pages
+        └── [niche-slug]/page.tsx       # Root-level niche pages
+```
+
+---
+
+## Key Metrics to Track
+
+- **Pages indexed**: All 58 pages appearing in Google Search Console
+- **AI citations**: Monitor mentions in ChatGPT, Perplexity, Google AI Overviews
+- **Organic impressions**: Growth in informational query impressions
+- **Click-through rate**: From search results to your pages
+- **Internal link equity**: Pages receiving clicks from knowledge page links
+- **Lead conversions**: Booking button clicks from knowledge pages

@@ -79,6 +79,12 @@ const nextConfig = {
       { source: '/testimonials', destination: '/for-patients/testimonials', permanent: true },
       { source: '/faq', destination: '/for-patients/faqs', permanent: true },
       { source: '/resources', destination: '/for-patients', permanent: true },
+      // Legacy URLs with inbound backlinks — preserve link equity (301)
+      { source: '/cases/:path*', destination: '/surgical-cases/:path*', permanent: true },
+      { source: '/procedure-videos', destination: '/media/videos', permanent: true },
+      { source: '/meet-the-doctor', destination: '/about', permanent: true },
+      { source: '/choose-your-option', destination: '/for-patients/consultation', permanent: true },
+      { source: '/policy', destination: '/legal/privacy-policy', permanent: true },
       ...LEGACY_CITY_REDIRECTS,
     ]
   },

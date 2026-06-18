@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "EKhboUHeqpiYQ_2Vhb4IQ"
+uri = "file://dist/drantipov-modern.zip"
+type = "unspecified"
+title = "drantipov-modern (full project source)"

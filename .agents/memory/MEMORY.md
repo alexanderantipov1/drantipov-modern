@@ -1,4 +1,0 @@
-- [next.config redirect slugs](next-config-redirect-slugs.md) — next.config.mjs can't import .ts; legacy city 308 slugs are hardcoded and must stay in sync with cities.ts.
-- [Next.js metadata alternates leak](nextjs-metadata-alternates-leak.md) — a layout-level canonical leaks to all child pages; every route must set its own self-referencing alternates.
-- [Canonical domain is www](canonical-domain-www.md) — prod serves https://www.drantipov.com (apex 307-redirects to www); all canonical/hreflang/sitemap/JSON-LD must use www.
-- [Schema Physician vs Person](schema-physician-vs-person.md) — model humans as Person not Physician (a LocalBusiness type needing address); org refs use MedicalOrganization; root cause of the structured-data error wave.

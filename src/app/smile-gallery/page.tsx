@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import heroContent from "@/lib/heroContent";
 import SmileGallery from "@/components/SmileGallery";
-import { smileGalleryPhotos } from "@/lib/smileGalleryPhotos";
+import { smileGalleryPhotos, behindTheScenesPhotos } from "@/lib/smileGalleryPhotos";
 import CTA from "@/components/CTA";
 import { structuredDataScript } from "@/lib/structured-data";
 
@@ -45,11 +45,11 @@ export default function SmileGalleryPage() {
   const imageGallerySchema = {
     "@context": "https://schema.org",
     "@type": "ImageGallery",
-    name: "Patient Smile Gallery",
+    name: "Smile Gallery & Behind the Scenes",
     description:
-      "Real patient smile transformations after full-arch dental implant restoration with Dr. Alexander Antipov in Roseville, CA.",
+      "Real patient smile transformations plus behind-the-scenes lab and surgery photos from Dr. Alexander Antipov's full-arch dental implant practice in Roseville, CA.",
     url: `${SITE_URL}/smile-gallery`,
-    image: smileGalleryPhotos.map((p) => ({
+    image: [...smileGalleryPhotos, ...behindTheScenesPhotos].map((p) => ({
       "@type": "ImageObject",
       contentUrl: `${SITE_URL}${p.src}`,
       caption: p.caption ?? p.alt,
@@ -64,6 +64,14 @@ export default function SmileGalleryPage() {
       />
       <PageHero {...heroContent["/smile-gallery"]!} />
       <SmileGallery photos={smileGalleryPhotos} />
+      <SmileGallery
+        photos={behindTheScenesPhotos}
+        id="behind-the-scenes"
+        background="white"
+        eyebrow="Behind the Scenes"
+        title="In the Lab & In Surgery"
+        description="A look inside the operatory and lab — Dr. Antipov and his team crafting custom prosthetics and placing implants with precision."
+      />
       <CTA />
     </>
   );

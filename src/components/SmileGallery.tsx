@@ -16,6 +16,8 @@ interface SmileGalleryProps {
   eyebrow?: string;
   title?: string;
   description?: string;
+  background?: "light" | "white";
+  id?: string;
 }
 
 export default function SmileGallery({
@@ -23,6 +25,8 @@ export default function SmileGallery({
   eyebrow = "Smile Gallery",
   title = "Real Patient Smiles",
   description = "A selection of completed cases. Every smile is restored with full-arch dental implants and custom prosthetics by Dr. Antipov.",
+  background = "light",
+  id = "smile-gallery",
 }: SmileGalleryProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const dialogRef = useRef<HTMLDivElement | null>(null);
@@ -80,7 +84,7 @@ export default function SmileGallery({
   const active = activeIndex === null ? null : photos[activeIndex];
 
   return (
-    <section id="smile-gallery" className="py-24 lg:py-32 bg-light overflow-hidden">
+    <section id={id} className={`py-24 lg:py-32 overflow-hidden ${background === "white" ? "bg-white" : "bg-light"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

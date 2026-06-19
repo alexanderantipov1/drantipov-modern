@@ -18,3 +18,26 @@ export const smileGalleryPhotos: SmilePhoto[] = [
   { src: "/images/smile-gallery/patient-15.jpeg", alt: "Female patient smiling after full-arch restoration", caption: "Full-Arch Restoration" },
   { src: "/images/smile-gallery/patient-16.jpeg", alt: "Close-up of completed implant-supported smile", caption: "Zirconia Smile Detail" },
 ];
+
+export const behindTheScenesPhotos: SmilePhoto[] = [
+  { src: "/images/gallery-behind-scenes/lab-01.jpeg", alt: "Custom dental prosthesis being shade-matched and finished in the lab", caption: "In the Lab" },
+  { src: "/images/gallery-behind-scenes/lab-02.jpeg", alt: "Technician staining a full-arch prosthesis for a natural shade", caption: "In the Lab" },
+  { src: "/images/gallery-behind-scenes/lab-03.jpeg", alt: "Detailing the teeth on a custom implant prosthesis", caption: "In the Lab" },
+  { src: "/images/gallery-behind-scenes/surgery-01.jpeg", alt: "Surgical team preparing implant instruments in the operatory", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-02.jpeg", alt: "Dr. Antipov and surgical team during a dental implant procedure", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-03.jpeg", alt: "Dr. Antipov performing oral surgery with an assistant", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-04.jpeg", alt: "Dr. Antipov focused during an oral surgery procedure", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-05.jpeg", alt: "Dr. Antipov placing a dental implant with a surgical assistant", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-06.jpeg", alt: "Dr. Antipov and assistant working together during surgery", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-07.jpeg", alt: "Dr. Antipov in surgical loupes during a full-arch procedure", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-08.jpeg", alt: "Dr. Antipov preparing a surgical handpiece in the operatory", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-09.jpeg", alt: "Dr. Antipov and surgical team during an implant placement", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-10.jpeg", alt: "Precision oral surgery with the full surgical team", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-11.jpeg", alt: "Dr. Antipov and assistants during a dental implant surgery", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-12.jpeg", alt: "Surgical team performing a full-arch implant procedure", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-13.jpeg", alt: "Dr. Antipov and team focused during oral surgery", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-14.jpeg", alt: "Coordinated surgical team during an implant procedure", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-15.jpeg", alt: "Dr. Antipov and assistants during a dental implant surgery", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-16.jpeg", alt: "Wide view of the surgical operatory during a procedure", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/with-patients-01.jpeg", alt: "Happy patients with Dr. Antipov after treatment", caption: "Happy Patients" },
+];

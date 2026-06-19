@@ -6,6 +6,8 @@ import { smileGalleryPhotos, behindTheScenesPhotos } from "@/lib/smileGalleryPho
 import CTA from "@/components/CTA";
 import { structuredDataScript } from "@/lib/structured-data";
 
+const ogImage = smileGalleryPhotos[0]?.src ?? "/images/smile-gallery/patient-01.jpeg";
+
 export const metadata: Metadata = {
   title: { absolute: "Smile Gallery — Real Patient Results | Dr. Antipov" },
   description:
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
       "Real patient smile transformations after full-arch dental implant restoration in Roseville, CA.",
     images: [
       {
-        url: smileGalleryPhotos[0].src,
+        url: ogImage,
         width: 1200,
         height: 630,
         alt: "Patient smile result",
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
     title: "Smile Gallery — Real Patient Results",
     description:
       "Real patient smile transformations after full-arch dental implant restoration in Roseville, CA.",
-    images: [smileGalleryPhotos[0].src],
+    images: [ogImage],
   },
 };
 
@@ -69,8 +71,8 @@ export default function SmileGalleryPage() {
         id="behind-the-scenes"
         background="white"
         eyebrow="Behind the Scenes"
-        title="In the Lab & In Surgery"
-        description="A look inside the operatory and lab — Dr. Antipov and his team crafting custom prosthetics and placing implants with precision."
+        title="In the Lab, In Surgery & Clinical Results"
+        description="A look inside the operatory and lab — Dr. Antipov and his team crafting custom prosthetics and placing implants with precision — alongside clinical before and after close-ups of real cases."
       />
       <CTA />
     </>

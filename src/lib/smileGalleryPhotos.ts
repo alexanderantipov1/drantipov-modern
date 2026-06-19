@@ -21,6 +21,13 @@ export const smileGalleryPhotos: SmilePhoto[] = [
   { src: "/images/smile-gallery/patient-18.jpeg", alt: "Close-up of a patient's restored smile after dental implants", caption: "Implant Restoration" },
   { src: "/images/smile-gallery/patient-19.jpeg", alt: "Female patient smiling after full-arch dental implant treatment", caption: "Full-Arch Restoration" },
   { src: "/images/smile-gallery/patient-20.jpeg", alt: "Male patient smiling after dental implant treatment", caption: "Implant Restoration" },
+  { src: "/images/smile-gallery/patient-21.jpeg", alt: "Male patient smiling after full-arch dental implant restoration", caption: "Full-Arch Restoration" },
+  { src: "/images/smile-gallery/patient-22.jpeg", alt: "Male patient smiling after dental implant treatment", caption: "Implant Restoration" },
+  { src: "/images/smile-gallery/patient-23.jpeg", alt: "Close-up of a patient smile after full-arch implant restoration", caption: "Full-Arch Restoration" },
+  { src: "/images/smile-gallery/patient-24.jpeg", alt: "Female patient smiling after dental implant treatment", caption: "Implant Restoration" },
+  { src: "/images/smile-gallery/patient-25.jpeg", alt: "Male patient smiling after full-arch dental implant restoration", caption: "Full-Arch Restoration" },
+  { src: "/images/smile-gallery/patient-26.jpeg", alt: "Male patient smiling after dental implant treatment", caption: "Implant Restoration" },
+  { src: "/images/smile-gallery/patient-27.jpeg", alt: "Female patient smiling after full-arch dental implant restoration", caption: "Full-Arch Restoration" },
 ];
 
 export const behindTheScenesPhotos: SmilePhoto[] = [
@@ -48,4 +55,18 @@ export const behindTheScenesPhotos: SmilePhoto[] = [
   { src: "/images/gallery-behind-scenes/with-patients-01.jpeg", alt: "Happy patients with Dr. Antipov after treatment", caption: "Happy Patients" },
   { src: "/images/gallery-behind-scenes/with-patients-02.jpeg", alt: "Dr. Antipov with a smiling patient after dental implant treatment", caption: "Happy Patients" },
   { src: "/images/gallery-behind-scenes/with-patients-03.jpeg", alt: "Dr. Antipov with a happy full-arch implant patient", caption: "Happy Patients" },
+  { src: "/images/gallery-behind-scenes/before-01.jpeg", alt: "Patient with worn and damaged teeth before dental implant treatment", caption: "Before Treatment", badge: "Before" },
+  { src: "/images/gallery-behind-scenes/before-02.jpeg", alt: "Patient with missing teeth before full-arch restoration", caption: "Before Treatment", badge: "Before" },
+  { src: "/images/gallery-behind-scenes/before-03.jpeg", alt: "Close-up of damaged teeth before implant treatment", caption: "Before Treatment", badge: "Before" },
+  { src: "/images/gallery-behind-scenes/before-04.jpeg", alt: "Close-up of failing dentition before full-arch restoration", caption: "Before Treatment", badge: "Before" },
+  { src: "/images/gallery-behind-scenes/before-05.jpeg", alt: "Close-up of missing and damaged teeth before treatment", caption: "Before Treatment", badge: "Before" },
+  { src: "/images/gallery-behind-scenes/before-06.jpeg", alt: "Close-up of severe tooth decay before dental implant treatment", caption: "Before Treatment", badge: "Before" },
+  { src: "/images/gallery-behind-scenes/before-07.jpeg", alt: "Close-up of advanced tooth decay before full-arch restoration", caption: "Before Treatment", badge: "Before" },
+  { src: "/images/gallery-behind-scenes/before-08.jpeg", alt: "Patient with missing teeth before dental implant treatment", caption: "Before Treatment", badge: "Before" },
+  { src: "/images/gallery-behind-scenes/before-09.jpeg", alt: "Patient with failing dentition before full-arch restoration", caption: "Before Treatment", badge: "Before" },
+  { src: "/images/gallery-behind-scenes/result-01.jpeg", alt: "Close-up of a completed full-arch implant restoration", caption: "Implant Result", badge: "After" },
+  { src: "/images/gallery-behind-scenes/result-02.jpeg", alt: "Close-up of restored teeth after dental implant treatment", caption: "Implant Result", badge: "After" },
+  { src: "/images/gallery-behind-scenes/result-03.jpeg", alt: "Patient showing a completed full-arch implant restoration", caption: "Final Result", badge: "After" },
+  { src: "/images/gallery-behind-scenes/result-04.jpeg", alt: "Close-up of a finished implant-supported full-arch prosthesis", caption: "Implant Result", badge: "After" },
+  { src: "/images/gallery-behind-scenes/result-05.jpeg", alt: "Close-up of an upper arch implant restoration result", caption: "Implant Result", badge: "After" },
 ];

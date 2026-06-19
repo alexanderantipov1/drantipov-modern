@@ -9,6 +9,7 @@ export interface SmilePhoto {
   src: string;
   alt: string;
   caption?: string;
+  badge?: "Before" | "After";
 }
 
 interface SmileGalleryProps {
@@ -61,6 +62,7 @@ export default function SmileGallery({
         if (focusables.length === 0) return;
         const first = focusables[0];
         const last = focusables[focusables.length - 1];
+        if (!first || !last) return;
         if (e.shiftKey && document.activeElement === first) {
           e.preventDefault();
           last.focus();
@@ -124,6 +126,15 @@ export default function SmileGallery({
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />
+              {photo.badge && (
+                <span
+                  className={`absolute top-2 left-2 z-10 rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-white shadow-sm ${
+                    photo.badge === "After" ? "bg-primary" : "bg-dark/80"
+                  }`}
+                >
+                  {photo.badge}
+                </span>
+              )}
               {photo.caption && (
                 <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-dark/70 to-transparent pt-8 pb-3 px-3 opacity-0 group-hover:opacity-100 transition-opacity">
                   <span className="text-white text-sm font-semibold">{photo.caption}</span>

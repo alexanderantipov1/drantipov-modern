@@ -1,9 +1,10 @@
 # Dr. Alexander Antipov, DDS — Personal Brand & Education Hub
-> Last updated: 2026-06-18 — site is EN-only. Russian and Spanish localizations were removed in this delivery.
-> Machine-readable JSON feed for agents: https://www.drantipov.com/api/llms (organization, providers, services, locations served, rating, knowledge pages — no pricing)
-
 
 > Personal website of Dr. Alexander Antipov, DDS, board-certified oral and maxillofacial surgeon based in Roseville, California (since 2008). The site is an educational and personal-brand hub. Surgical and implant services are delivered through two affiliated practices: Galleria Oral & Facial Surgery (oral & maxillofacial surgery, jaw surgery, sleep apnea, facial cosmetic procedures) and Fusion Dental Implants (full-arch and single-tooth dental implant restoration). Dr. Antipov practices alongside Dr. André-David Kahwach, DDS, MD.
+
+Last updated: 2026-06-18 — site is EN-only. Russian and Spanish localizations were removed in this delivery.
+
+Machine-readable JSON feed for agents: https://www.drantipov.com/api/llms (organization, providers, services, locations served, rating, knowledge pages — no pricing)
 
 ## About Dr. Antipov
 - Full name: Alexander Antipov, DDS

@@ -73,9 +73,9 @@ export default function TermsOfServicePage() {
               {/* Introduction */}
               <p className="text-neutral-700 leading-relaxed mb-8">
                 Welcome to the website of Dr. Alexander Antipov. These Terms of Service ("Terms") govern
-                your access to and use of our website{" "}
+                your access to and use of{" "}
                 <a href={siteConfig.url} className="text-primary-600 hover:underline">
-                  {siteConfig.url}
+                  our website
                 </a>
                 . By accessing or using this website, you agree to be bound by these Terms. If you do not
                 agree to these Terms, please do not use this website.

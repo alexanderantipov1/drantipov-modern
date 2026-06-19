@@ -68,9 +68,9 @@ export default function PrivacyPolicyPage() {
               <p className="text-neutral-700 leading-relaxed mb-8">
                 Dr. Alexander Antipov ("we," "our," or "us") respects your privacy and is committed to
                 protecting your personal information. This Privacy Policy explains how we collect, use,
-                disclose, and safeguard your information when you visit our website{" "}
+                disclose, and safeguard your information when you visit{" "}
                 <a href={siteConfig.url} className="text-primary-600 hover:underline">
-                  {siteConfig.url}
+                  our website
                 </a>
                 .
               </p>

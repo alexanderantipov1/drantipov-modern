@@ -17,7 +17,7 @@ export function ExpertisePageHero({ title, subtitle, badge, image }: ExpertisePa
   // If an image is provided, render the dark hero variant with photo background.
   if (image) {
     return (
-      <section className="relative overflow-hidden pt-32 pb-20 lg:pb-28 text-white">
+      <section className="relative min-h-[520px] sm:min-h-[600px] lg:min-h-[640px] flex items-center overflow-hidden pt-24 text-white">
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
@@ -28,12 +28,13 @@ export function ExpertisePageHero({ title, subtitle, badge, image }: ExpertisePa
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-navy/90 via-navy/80 to-navy/70" />
+          <div className="absolute inset-0 bg-navy/80" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent" />
         </div>
 
         <Container size="lg">
           <motion.div
-            className="relative z-10 text-center space-y-6 max-w-4xl mx-auto"
+            className="relative z-10 text-center space-y-6 max-w-4xl mx-auto py-12"
             initial="initial"
             animate="animate"
             variants={staggerContainer}
@@ -47,20 +48,22 @@ export function ExpertisePageHero({ title, subtitle, badge, image }: ExpertisePa
             )}
 
             <motion.h1
-              className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold drop-shadow"
+              className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-bone drop-shadow"
               variants={fadeInUp}
             >
               {title}
             </motion.h1>
 
             <motion.p
-              className="text-xl lg:text-2xl text-white/90"
+              className="text-xl lg:text-2xl text-bone/80"
               variants={fadeInUp}
             >
               {subtitle}
             </motion.p>
           </motion.div>
         </Container>
+
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent" />
       </section>
     )
   }

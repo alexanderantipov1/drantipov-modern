@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/constants/siteConfig";
 import DualCTA from "@/components/DualCTA";
+import InsuranceCrossLinks from "@/components/InsuranceCrossLinks";
 
 export const metadata: Metadata = {
   title: "Delta Dental — Implant & Surgery Coverage",
@@ -89,6 +90,8 @@ export default function DeltaDentalPage() {
           </div>
         </div>
       </section>
+
+      <InsuranceCrossLinks currentSlug="delta-dental" />
 
       <DualCTA />
     </>

@@ -2,6 +2,7 @@ import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
+import { RelatedArticles } from "@/components/RelatedArticles"
 import { Calendar, ArrowLeft, Clock, AlertTriangle } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
@@ -355,6 +356,8 @@ export default function PoorOralHealthSystemicDiseasesPost() {
           </article>
         </Container>
       </Section>
+
+      <RelatedArticles currentSlug="poor-oral-health-systemic-diseases" />
     </>
   )
 }

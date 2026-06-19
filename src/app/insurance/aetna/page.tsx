@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/constants/siteConfig";
 import DualCTA from "@/components/DualCTA";
+import InsuranceCrossLinks from "@/components/InsuranceCrossLinks";
 
 export const metadata: Metadata = {
   title: "Aetna Insurance & Dental Implants | Dr. Antipov | Roseville, CA",
@@ -89,6 +90,8 @@ export default function AetnaPage() {
           </div>
         </div>
       </section>
+
+      <InsuranceCrossLinks currentSlug="aetna" />
 
       <DualCTA />
     </>

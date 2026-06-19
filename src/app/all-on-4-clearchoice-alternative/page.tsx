@@ -160,6 +160,27 @@ export default function AllOn4AlternativesPage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
+        <h2 className="font-serif text-2xl font-bold text-neutral-900 mb-8 text-center">Keep researching your options</h2>
+        <div className="grid gap-6 md:grid-cols-3">
+          <Link href="/all-on-4-cost" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Pricing</p>
+            <h3 className="font-bold text-neutral-900 leading-snug">All-on-4 cost breakdown</h3>
+            <p className="text-sm text-neutral-600 mt-2 leading-6">What full-arch implants actually cost and what drives the price.</p>
+          </Link>
+          <Link href="/expertise/full-arch-implants" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Procedure</p>
+            <h3 className="font-bold text-neutral-900 leading-snug">Full-arch implant treatment</h3>
+            <p className="text-sm text-neutral-600 mt-2 leading-6">How fixed full-arch restoration works from consultation to final teeth.</p>
+          </Link>
+          <Link href="/surgical-cases/dental-implants" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Results</p>
+            <h3 className="font-bold text-neutral-900 leading-snug">Dental implant case gallery</h3>
+            <p className="text-sm text-neutral-600 mt-2 leading-6">Real before-and-after full-arch and single-tooth outcomes.</p>
+          </Link>
+        </div>
+      </section>
+
       <DualCTA />
     </>
   );

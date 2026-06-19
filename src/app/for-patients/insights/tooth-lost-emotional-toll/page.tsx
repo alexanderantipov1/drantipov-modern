@@ -2,6 +2,7 @@ import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
+import { RelatedArticles } from "@/components/RelatedArticles"
 import { Calendar, ArrowLeft, Clock, Heart } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
@@ -340,6 +341,8 @@ export default function ToothLossEmotionalTollPost() {
           </article>
         </Container>
       </Section>
+
+      <RelatedArticles currentSlug="tooth-lost-emotional-toll" />
     </>
   )
 }

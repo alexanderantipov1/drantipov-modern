@@ -52,7 +52,11 @@ export default function CorrectiveJawSurgeryPage() {
                 Transformative Jaw Surgery Results
               </h2>
               <p className="text-lg text-neutral-600">
-                Each case represents a comprehensive treatment approach combining surgical expertise with advanced imaging and treatment planning. Procedures include Le Fort I osteotomy, bilateral sagittal split osteotomy (BSSO), and genioplasty.
+                Each case represents a comprehensive treatment approach combining surgical expertise with advanced imaging and treatment planning. Procedures include Le Fort I osteotomy, bilateral sagittal split osteotomy (BSSO), and genioplasty. Wondering what healing looks like afterward? See our{" "}
+                <Link href="/jaw-surgery-recovery-timeline" className="text-primary-600 hover:underline font-semibold">
+                  week-by-week jaw surgery recovery timeline
+                </Link>
+                .
               </p>
             </div>
 

@@ -2,7 +2,13 @@ import Link from "next/link"
 import Image from "next/image"
 import { Section, Container } from "@/components/sections"
 import { Button } from "@/components/ui/button"
-import { SurgicalCase, CaseArticle } from "@/constants/cases"
+import {
+  SurgicalCase,
+  CaseArticle,
+  correctiveJawSurgeryCases,
+  dentalImplantsCases,
+  facialCosmeticSurgeryCases,
+} from "@/constants/cases"
 import { getCaseSchema, getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 import { siteConfig } from "@/constants/siteConfig"
 import { ArrowLeft, Calendar, User, Stethoscope, Activity, Clock } from "lucide-react"
@@ -19,9 +25,32 @@ interface CaseDetailProps {
   article?: CaseArticle
 }
 
+const CASES_BY_CATEGORY: Record<SurgicalCase["category"], SurgicalCase[]> = {
+  "corrective-jaw-surgery": correctiveJawSurgeryCases,
+  "dental-implants": dentalImplantsCases,
+  "facial-cosmetic-surgery": facialCosmeticSurgeryCases,
+}
+
+/**
+ * Returns up to `count` sibling cases from the same category, chosen cyclically
+ * starting after the current case so every case is surfaced as a "related" item
+ * by an equal number of siblings.
+ */
+function getRelatedCases(caseData: SurgicalCase, count = 3): SurgicalCase[] {
+  const siblings = CASES_BY_CATEGORY[caseData.category]
+  const index = siblings.findIndex((c) => c.id === caseData.id)
+  if (index === -1) return siblings.slice(0, count)
+  const related: SurgicalCase[] = []
+  for (let i = 1; i <= count && i < siblings.length; i++) {
+    related.push(siblings[(index + i) % siblings.length]!)
+  }
+  return related
+}
+
 export function CaseDetail({ caseData, article }: CaseDetailProps) {
   const categoryLabel = CATEGORY_LABEL[caseData.category]
   const backHref = `/surgical-cases/${caseData.category}`
+  const relatedCases = getRelatedCases(caseData)
   const url = `${siteConfig.url}/surgical-cases/${caseData.category}/${caseData.id}`
   const lead = article?.excerpt || caseData.description
 
@@ -236,6 +265,54 @@ export function CaseDetail({ caseData, article }: CaseDetailProps) {
           </div>
         </Container>
       </Section>
+
+      {/* Related Cases */}
+      {relatedCases.length > 0 && (
+        <Section background="gradient" padding="xl">
+          <Container size="lg">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-neutral-900 text-center mb-3">
+                Related {categoryLabel} Cases
+              </h2>
+              <p className="text-center text-neutral-600 mb-10">
+                Explore more {categoryLabel.toLowerCase()} outcomes from our practice.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {relatedCases.map((c) => (
+                  <Link
+                    key={c.id}
+                    href={`/surgical-cases/${c.category}/${c.id}`}
+                    className="group block overflow-hidden rounded-2xl bg-white shadow-glass border border-neutral-100 transition-all duration-300 hover:shadow-glass-lg hover:-translate-y-1"
+                  >
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <Image
+                        src={c.imagePath}
+                        alt={`${c.title} — ${categoryLabel.toLowerCase()} case by Dr. Antipov in Roseville, CA`}
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                    </div>
+                    <div className="p-5">
+                      <span className="text-xs font-medium uppercase tracking-wide text-primary-600">
+                        Case {c.id.toUpperCase()}
+                      </span>
+                      <h3 className="mt-1.5 text-base font-semibold text-neutral-900 leading-snug line-clamp-2 group-hover:text-primary-600 transition-colors">
+                        {c.title}
+                      </h3>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              <div className="text-center mt-10">
+                <Button asChild variant="outline">
+                  <Link href={backHref}>View all {categoryLabel} cases</Link>
+                </Button>
+              </div>
+            </div>
+          </Container>
+        </Section>
+      )}
 
       <DualCTA
         variant="surgical"

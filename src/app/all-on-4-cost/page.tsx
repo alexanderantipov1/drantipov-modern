@@ -257,6 +257,27 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
+        <h2 className="font-serif text-2xl font-bold text-neutral-900 mb-8 text-center">Keep researching your options</h2>
+        <div className="grid gap-6 md:grid-cols-3">
+          <Link href="/all-on-4-clearchoice-alternative" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Compare</p>
+            <h3 className="font-bold text-neutral-900 leading-snug">All-on-4 vs. ClearChoice</h3>
+            <p className="text-sm text-neutral-600 mt-2 leading-6">How a private oral surgeon compares to the corporate full-arch model.</p>
+          </Link>
+          <Link href="/expertise/full-arch-implants" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Procedure</p>
+            <h3 className="font-bold text-neutral-900 leading-snug">Full-arch implant treatment</h3>
+            <p className="text-sm text-neutral-600 mt-2 leading-6">How fixed full-arch restoration works from consultation to final teeth.</p>
+          </Link>
+          <Link href="/expertise/zygomatic-implants" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Advanced</p>
+            <h3 className="font-bold text-neutral-900 leading-snug">Zygomatic implants</h3>
+            <p className="text-sm text-neutral-600 mt-2 leading-6">A graft-free option when there isn't enough upper-jaw bone.</p>
+          </Link>
+        </div>
+      </section>
+
       <DualCTA />
     </>
   );

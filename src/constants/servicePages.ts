@@ -147,6 +147,7 @@ export const servicePages = {
       { label: "Sedation & Anesthesia", href: "/expertise/sedation-anesthesia" },
       { label: "Single Tooth Implants", href: "/expertise/single-tooth" },
       { label: "Bone Grafting", href: "/expertise/bone-grafting" },
+      { label: "Oral Pathology & Biopsy", href: "/expertise/oral-pathology" },
     ],
   },
 
@@ -321,6 +322,7 @@ export const servicePages = {
       { label: "Full-Arch Implants", href: "/expertise/full-arch-implants" },
       { label: "Implant Rescue & Redo", href: "/expertise/implant-rescue" },
       { label: "Bone Grafting", href: "/expertise/bone-grafting" },
+      { label: "Snap-On Dentures", href: "/expertise/snap-on-dentures" },
     ],
   },
 
@@ -418,6 +420,7 @@ export const servicePages = {
       { label: "Full-Arch Implants", href: "/expertise/full-arch-implants" },
       { label: "Zygomatic & Pterygoid Implants", href: "/expertise/zygomatic-implants" },
       { label: "Bone Grafting", href: "/expertise/bone-grafting" },
+      { label: "Snap-On Dentures", href: "/expertise/snap-on-dentures" },
     ],
   },
 

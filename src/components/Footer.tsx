@@ -50,7 +50,7 @@ const LOCATION_LINKS: LinkItem[] = [
 ];
 
 const RESOURCE_LINKS: LinkItem[] = [
-  { href: "/for-patients/insights", label: "Patient Insights" },
+  { href: "/for-patients/insights", label: "Blog — News, Research & Education" },
   { href: "/surgical-cases", label: "Surgical Case Gallery" },
   { href: "/results", label: "Before & After Results" },
   { href: "/for-patients/testimonials", label: "Patient Testimonials" },

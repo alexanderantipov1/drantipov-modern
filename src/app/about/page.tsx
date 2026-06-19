@@ -10,7 +10,6 @@ import OfficeTour from "@/components/OfficeTour";
 import ServiceArea from "@/components/ServiceArea";
 import Locations from "@/components/Locations";
 import ReferringDoctors from "@/components/ReferringDoctors";
-import Blog from "@/components/Blog";
 import CTA from "@/components/CTA";
 
 import type { Metadata } from "next";
@@ -97,7 +96,6 @@ export default function AboutUsPage() {
         <ServiceArea />
         <Locations />
         <ReferringDoctors />
-        <Blog />
         <CTA />
       </div>
     </>

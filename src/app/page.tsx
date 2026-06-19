@@ -9,7 +9,6 @@ import OfficeTour from "@/components/OfficeTour";
 import ServiceArea from "@/components/ServiceArea";
 import Locations from "@/components/Locations";
 import ReferringDoctors from "@/components/ReferringDoctors";
-import Blog from "@/components/Blog";
 import CTA from "@/components/CTA";
 
 import type { Metadata } from "next";
@@ -58,8 +57,7 @@ export const metadata: Metadata = {
  *   5. BeforeAfter     — surgical cases preview (proof / E-E-A-T)
  *   6. Testimonials    — social proof
  *   7. FAQ             — common patient questions
- *   8. Blog            — patient education insights
- *   9. CTA             — book a free consultation
+ *   8. CTA             — book a free consultation
  *
  * Removed from previous version to focus the personal-brand narrative
  * and improve Core Web Vitals (24 sections → 9):
@@ -89,7 +87,6 @@ export default function Home() {
         <ServiceArea />
         <Locations />
         <ReferringDoctors />
-        <Blog />
         <CTA />
       </div>
     </>

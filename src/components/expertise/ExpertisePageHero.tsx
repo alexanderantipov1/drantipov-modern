@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Section, Container } from "@/components/sections"
 import { motion } from "framer-motion"
 import { fadeInUp, staggerContainer } from "@/lib/animations"
@@ -9,9 +10,10 @@ interface ExpertisePageHeroProps {
   title: string
   subtitle: string
   badge?: string
+  image?: string
 }
 
-export function ExpertisePageHero({ title, subtitle, badge }: ExpertisePageHeroProps) {
+export function ExpertisePageHero({ title, subtitle, badge, image }: ExpertisePageHeroProps) {
   return (
     <Section background="gradient" padding="xl" className="pt-32">
       <Container size="lg">
@@ -42,6 +44,21 @@ export function ExpertisePageHero({ title, subtitle, badge }: ExpertisePageHeroP
           >
             {subtitle}
           </motion.p>
+
+          {image && (
+            <motion.div
+              variants={fadeInUp}
+              className="relative mx-auto mt-4 aspect-video w-full max-w-3xl overflow-hidden rounded-2xl shadow-lg"
+            >
+              <Image
+                src={image}
+                alt={title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 768px"
+              />
+            </motion.div>
+          )}
         </motion.div>
       </Container>
     </Section>

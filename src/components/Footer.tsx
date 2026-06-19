@@ -1,70 +1,170 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { Phone, MapPin, ChevronDown } from "lucide-react";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 
-const footerLinks: { title: string; links: { label: string; href: string }[] }[] = [
-  {
-    title: "Dental Implant Services",
-    links: [
-      { label: "All-on-4 Dental Implants", href: "/expertise/full-arch-implants" },
-      { label: "All-on-6 Dental Implants", href: "/expertise/full-arch-implants#faq" },
-      { label: "Zygomatic Implants", href: "/for-patients/insights/zygomatic-implants" },
-      { label: "Single Tooth Implants", href: "/expertise/single-tooth" },
-      { label: "Implant-Supported Bridge", href: "/expertise/single-tooth#faq" },
-      { label: "Snap-On Dentures", href: "/expertise/full-arch-implants" },
-      { label: "Same-Day Teeth", href: "/for-patients/insights/same-day-implants" },
-      { label: "Full Mouth Reconstruction", href: "/expertise/full-arch-implants" },
-    ],
-  },
-  {
-    title: "Surgical Services",
-    links: [
-      { label: "Corrective Jaw Surgery", href: "/expertise/jaw-surgery" },
-      { label: "Orthognathic Surgery", href: "/expertise/jaw-surgery" },
-      { label: "Bone Grafting", href: "/expertise/bone-grafting" },
-      { label: "Organic Bone Grafting", href: "/expertise/bone-grafting#organic-materials" },
-      { label: "Sinus Lift Surgery", href: "/expertise/bone-grafting#sinus-lift" },
-      { label: "Wisdom Teeth Removal", href: "/expertise/wisdom-teeth" },
-      { label: "TMJ Treatment", href: "/expertise/tmj" },
-      { label: "Sleep Apnea Surgery", href: "/expertise/sleep-apnea" },
-    ],
-  },
-  {
-    title: "Facial Cosmetics",
-    links: [
-      { label: "Rhinoplasty", href: "/surgical-cases/facial-cosmetic-surgery" },
-      { label: "Face Lift Surgery", href: "/surgical-cases/facial-cosmetic-surgery" },
-      { label: "Eyelid Surgery", href: "/surgical-cases/facial-cosmetic-surgery" },
-      { label: "Double Eyelid Surgery", href: "/surgical-cases/facial-cosmetic-surgery" },
-      { label: "Facial Feminization", href: "/surgical-cases/facial-cosmetic-surgery" },
-      { label: "Mole Removal", href: "/expertise/mole-removal" },
-      { label: "Juvederm Fillers", href: "/surgical-cases/facial-cosmetic-surgery" },
-      { label: "Lip Augmentation", href: "/surgical-cases/facial-cosmetic-surgery" },
-    ],
-  },
-  {
-    title: "Patient Info",
-    links: [
-      { label: "Free Consultation", href: "/for-patients/consultation" },
-      { label: "Financing Options", href: "/insurance" },
-      { label: "Patient Forms", href: "/#resources" },
-      { label: "Insurance Info", href: "/insurance" },
-      { label: "Schedule Online", href: "/for-patients/consultation" },
-      { label: "Meet Dr. Antipov", href: "/our-team" },
-      { label: "Office Tour", href: "/#office-tour" },
-      { label: "Referring Doctors", href: "/for-dentists" },
-    ],
-  },
+type LinkItem = { href: string; label: string };
+
+// ---- Edit these lists to change what appears in the footer ----
+
+// Services: the money pages, ordered broad → specific.
+const IMPLANT_LINKS: LinkItem[] = [
+  { href: "/expertise/full-arch-implants", label: "All-on-4 Full-Arch Implants" },
+  { href: "/all-on-4-cost", label: "All-on-4 Implant Cost" },
+  { href: "/all-on-4-clearchoice-alternative", label: "All-on-4 vs. ClearChoice" },
+  { href: "/full-arch-dental-implants", label: "Full Mouth Dental Implants" },
+  { href: "/expertise/zygomatic-implants", label: "Zygomatic Implants" },
+  { href: "/expertise/single-tooth", label: "Single Tooth Implants" },
+  { href: "/expertise/snap-on-dentures", label: "Snap-On Dentures" },
+  { href: "/expertise/implant-rescue", label: "Implant Rescue & Revision" },
+  { href: "/expertise/bone-grafting", label: "Bone Grafting & Sinus Lift" },
+  { href: "/for-patients/insights/same-day-implants", label: "Same-Day Teeth" },
+  { href: "/surgical-cases/dental-implants", label: "Implant Case Gallery" },
 ];
 
+const SURGICAL_LINKS: LinkItem[] = [
+  { href: "/expertise/jaw-surgery", label: "Corrective Jaw Surgery" },
+  { href: "/jaw-surgery-recovery-timeline", label: "Jaw Surgery Recovery Timeline" },
+  { href: "/expertise/wisdom-teeth", label: "Wisdom Teeth Removal" },
+  { href: "/expertise/tooth-extractions", label: "Tooth Extractions" },
+  { href: "/expertise/tmj", label: "TMJ Treatment" },
+  { href: "/expertise/sleep-apnea", label: "Sleep Apnea Surgery" },
+  { href: "/expertise/sedation-anesthesia", label: "Sedation & Anesthesia" },
+  { href: "/expertise/facial-cosmetic", label: "Facial Cosmetic Surgery" },
+  { href: "/expertise/mole-removal", label: "Mole Removal" },
+  { href: "/expertise/oral-pathology", label: "Oral Pathology" },
+  { href: "/expertise", label: "All Procedures" },
+];
+
+// Cities We Serve: pure local SEO. Ends with a catch-all "View All Locations".
+const LOCATION_LINKS: LinkItem[] = [
+  { href: "/locations/ca/sacramento", label: "Sacramento" },
+  { href: "/locations/ca/folsom", label: "Folsom" },
+  { href: "/locations/ca/rocklin", label: "Rocklin" },
+  { href: "/locations/ca/granite-bay", label: "Granite Bay" },
+  { href: "/locations/ca/lincoln", label: "Lincoln" },
+  { href: "/locations", label: "View All Locations" },
+];
+
+const RESOURCE_LINKS: LinkItem[] = [
+  { href: "/for-patients/insights", label: "Patient Insights" },
+  { href: "/surgical-cases", label: "Surgical Case Gallery" },
+  { href: "/results", label: "Before & After Results" },
+  { href: "/for-patients/testimonials", label: "Patient Testimonials" },
+  { href: "/for-patients/insights/implants-vs-dentures", label: "Implants vs. Dentures" },
+  { href: "/for-patients/insights/dental-implant-aftercare", label: "Dental Implant Aftercare" },
+  { href: "/for-patients/insights/dental-implant-complications", label: "Implant Complications" },
+  { href: "/for-patients/faqs", label: "Patient FAQs" },
+  { href: "/media/videos", label: "Videos" },
+  { href: "/glossary", label: "Glossary" },
+];
+
+const PATIENT_LINKS: LinkItem[] = [
+  { href: "/for-patients/consultation", label: "Free Consultation" },
+  { href: "/for-patients", label: "Patient Information" },
+  { href: "/for-patients/pre-op", label: "Before Your Surgery" },
+  { href: "/for-patients/post-op", label: "After Your Surgery" },
+  { href: "/for-patients/travel", label: "Traveling Patients" },
+  { href: "/insurance", label: "Insurance & Financing" },
+  { href: "/insurance/aetna", label: "Aetna Coverage" },
+  { href: "/insurance/anthem-blue-cross", label: "Anthem Blue Cross" },
+  { href: "/insurance/delta-dental", label: "Delta Dental" },
+];
+
+const COMPANY_LINKS: LinkItem[] = [
+  { href: "/about", label: "About Dr. Antipov" },
+  { href: "/our-team", label: "Meet the Team" },
+  { href: "/for-dentists", label: "For Dentists" },
+  { href: "/for-dentists/refer-patients", label: "Refer a Patient" },
+  { href: "/for-dentists/referral-partners", label: "Referral Partners" },
+  { href: "/for-dentists/education/courses", label: "CE Courses" },
+  { href: "/media/speaking", label: "Speaking & Media" },
+  { href: "/smile-again-foundation", label: "Smile Again Foundation" },
+  { href: "/contact", label: "Contact Us" },
+];
+
+const LEGAL_LINKS: LinkItem[] = [
+  { href: "/legal/privacy-policy", label: "Privacy Policy" },
+  { href: "/legal/terms-of-service", label: "Terms of Service" },
+  { href: "/legal/hipaa-notice", label: "HIPAA Notice" },
+  { href: "/legal/medical-disclaimer", label: "Medical Disclaimer" },
+  { href: "/sitemap.xml", label: "Sitemap" },
+];
+
+const SECTIONS: { title: string; links: LinkItem[] }[] = [
+  { title: "Dental Implant Services", links: IMPLANT_LINKS },
+  { title: "Surgical & Facial Services", links: SURGICAL_LINKS },
+  { title: "Cities We Serve", links: LOCATION_LINKS },
+  { title: "Patient Resources", links: RESOURCE_LINKS },
+  { title: "For Patients", links: PATIENT_LINKS },
+  { title: "Company", links: COMPANY_LINKS },
+  { title: "Legal", links: LEGAL_LINKS },
+];
+
+// Collapsible on mobile (toggled), always-open columns on desktop.
+function FooterSection({
+  title,
+  links,
+  isOpen,
+  onToggle,
+}: {
+  title: string;
+  links: LinkItem[];
+  isOpen: boolean;
+  onToggle: () => void;
+}) {
+  return (
+    <div className="border-b border-white/10 lg:border-0">
+      {/* Mobile: collapsible toggle */}
+      <h4 className="lg:hidden">
+        <button
+          type="button"
+          onClick={onToggle}
+          aria-expanded={isOpen}
+          className="flex w-full items-center justify-between py-4 text-sm font-semibold text-white"
+        >
+          {title}
+          <ChevronDown
+            className={`h-5 w-5 text-primary transition-transform duration-200 ${
+              isOpen ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+      </h4>
+      {/* Desktop: static heading (sections are always expanded) */}
+      <h4 className="hidden lg:block mb-4 text-sm font-semibold text-white">
+        {title}
+      </h4>
+      <ul
+        className={`space-y-2.5 pb-4 lg:pb-0 lg:block ${isOpen ? "block" : "hidden"}`}
+      >
+        {links.map((link) => (
+          <li key={link.href}>
+            <Link
+              href={link.href}
+              className="text-xs text-white/60 hover:text-primary transition-colors duration-300"
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export default function Footer() {
+  const [openSection, setOpenSection] = useState<string | null>(null);
+
   return (
     <footer className="bg-navy text-white/60">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-10">
-          {/* Brand */}
-          <div className="lg:col-span-2">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-16">
+        {/* Always-visible brand block */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-8 border-b border-white/10">
+          <div>
             <Image
               src="/images/logo-d10cd66c.svg"
               alt="Dr. Alexander Antipov, DDS — Oral and Maxillofacial Surgery — Roseville, CA"
@@ -72,26 +172,38 @@ export default function Footer() {
               height={60}
               className="h-10 w-auto brightness-200 invert"
             />
-            <p className="mt-4 max-w-sm text-sm leading-relaxed">
-              Board-certified oral &amp; maxillofacial surgeon specializing in same-day dental implants (All-on-4, All-on-6, zygomatic), full arch restoration, corrective jaw surgery, organic bone grafting, facial cosmetic surgery, and wisdom teeth removal. Serving Roseville, Sacramento, San Francisco, Reno, and all of Northern California.
+            <p className="mt-4 max-w-md text-sm leading-relaxed">
+              Board-certified oral &amp; maxillofacial surgeon specializing in same-day dental implants
+              (All-on-4, All-on-6, zygomatic), full arch restoration, corrective jaw surgery, organic bone
+              grafting, facial cosmetic surgery, and wisdom teeth removal. Serving Roseville, Sacramento,
+              San Francisco, Reno, and all of Northern California.
             </p>
-            <div className="mt-6 flex items-center gap-2">
+            <a
+              href="https://maps.google.com/?q=911+Reserve+Dr+Ste+150,+Roseville,+CA+95678"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-start gap-2 text-sm text-white/70 hover:text-primary transition-colors"
+            >
+              <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
+              <span>911 Reserve Dr, Ste 150, Roseville, CA 95678</span>
+            </a>
+          </div>
+          <div className="lg:text-right">
+            <div className="flex flex-wrap items-center gap-2 lg:justify-end">
               <a
                 href="tel:9167832110"
-                className="px-4 py-2 bg-white/10 rounded-lg text-sm text-white/80 hover:bg-primary hover:text-white transition-all duration-300"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-lg text-sm text-white/80 hover:bg-primary hover:text-white transition-all duration-300"
               >
-                (916) 783-2110
+                <Phone className="h-4 w-4" /> (916) 783-2110
               </a>
               <ConsultationModal>
-                <button
-                  className="px-4 py-2 bg-primary rounded-lg text-sm text-white font-medium hover:bg-primary-dark transition-all duration-300 cursor-pointer"
-                >
+                <button className="px-4 py-2 bg-primary rounded-lg text-sm text-white font-medium hover:bg-primary-dark transition-all duration-300 cursor-pointer">
                   Free Consultation
                 </button>
               </ConsultationModal>
             </div>
             {/* Social */}
-            <div className="mt-6 flex gap-3">
+            <div className="mt-6 flex gap-3 lg:justify-end">
               <a href="https://www.facebook.com/drantipov" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" aria-label="Facebook">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
               </a>
@@ -103,28 +215,27 @@ export default function Footer() {
               </a>
             </div>
           </div>
-
-          {/* Links */}
-          {footerLinks.map((section) => (
-            <div key={section.title}>
-              <h4 className="text-white font-semibold mb-4 text-sm">
-                {section.title}
-              </h4>
-              <ul className="space-y-2.5">
-                {section.links.map((link) => (
-                  <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-xs hover:text-primary transition-colors duration-300"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
         </div>
+
+        {/* Collapsible link sections */}
+        <nav
+          aria-label="Footer navigation"
+          className="mt-2 lg:mt-10 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:gap-y-10"
+        >
+          {SECTIONS.map((section) => (
+            <FooterSection
+              key={section.title}
+              title={section.title}
+              links={section.links}
+              isOpen={openSection === section.title}
+              onToggle={() =>
+                setOpenSection((prev) =>
+                  prev === section.title ? null : section.title
+                )
+              }
+            />
+          ))}
+        </nav>
 
         {/* SEO text */}
         <div className="mt-12 pt-8 border-t border-white/10">
@@ -138,11 +249,11 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-wrap items-center justify-between gap-4 text-xs">
           <p>&copy; {new Date().getFullYear()} Alexander V. Antipov, DDS, Inc. All rights reserved.</p>
-          <div className="flex gap-6">
-            <a href="/legal/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="/legal/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</a>
-            <a href="/legal/hipaa-notice" className="hover:text-primary transition-colors">HIPAA Notice</a>
-            <a href="/legal/medical-disclaimer" className="hover:text-primary transition-colors">Medical Disclaimer</a>
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <Link href="/legal/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link href="/legal/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
+            <Link href="/legal/hipaa-notice" className="hover:text-primary transition-colors">HIPAA Notice</Link>
+            <Link href="/legal/medical-disclaimer" className="hover:text-primary transition-colors">Medical Disclaimer</Link>
             <a href="/sitemap.xml" className="hover:text-primary transition-colors">Sitemap</a>
           </div>
         </div>

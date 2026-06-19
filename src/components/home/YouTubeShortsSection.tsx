@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight, Play } from "lucide-react"
 import { useRef, useState } from "react"
 
 /**
- * YouTube Shorts from Fusion Dental Implants channel
+ * YouTube Shorts — dental implant education from Dr. Antipov
  */
 const youtubeShorts = [
   {

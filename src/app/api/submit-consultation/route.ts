@@ -1,4 +1,6 @@
-import { NextRequest, NextResponse } from "next/server"
+import { NextRequest, NextResponse } from "next/server";
+import { checkRateLimit } from "@/lib/rate-limit";
+import { verifyRecaptcha } from "@/lib/recaptcha";
 
 const SALESFORCE_API_URL = "https://api.fusiondentalimplants.com/api/v1/user-data"
 
@@ -21,10 +23,22 @@ const ALLOWED_FIELDS = new Set([
 ])
 
 export async function POST(request: NextRequest) {
+  const rl = checkRateLimit(request, { prefix: "submit-consultation", max: 10, windowMs: 60_000 });
+  if (rl) return rl;
+
   try {
     const body = await request.json()
 
-    if (!body.firstName || !body.lastName || !body.email || !body.phone) {
+    
+    // Server-side reCAPTCHA verification (don't trust client-side validation alone)
+    const recaptchaResult = await verifyRecaptcha(body?.recaptchaToken);
+    if (!recaptchaResult.valid) {
+      return NextResponse.json(
+        { error: "Anti-bot verification failed. Please refresh and try again." },
+        { status: 403 }
+      );
+    }
+if (!body.firstName || !body.lastName || !body.email || !body.phone) {
       return NextResponse.json(
         { success: false, message: "Please fill in all required fields." },
         { status: 400 }
@@ -44,7 +58,6 @@ export async function POST(request: NextRequest) {
     sanitizedData["business_unit"] = "Fusion Dental Implants"
     sanitizedData["landing_page"] = "Drantipov.com"
 
-    console.log("[Submit] Sending consultation request with", Object.keys(sanitizedData).length, "fields")
 
     const payload = JSON.stringify(sanitizedData)
 
@@ -57,8 +70,6 @@ export async function POST(request: NextRequest) {
     })
 
     const responseText = await response.text()
-    console.log("[Submit] Salesforce response status:", response.status)
-    console.log("[Submit] Salesforce response body:", responseText)
 
     let data
     try {
@@ -72,7 +83,7 @@ export async function POST(request: NextRequest) {
       { status: response.status }
     )
   } catch (error) {
-    console.error("API proxy error:", error)
+    console.error("API proxy error:", error instanceof Error ? error.message : "Unknown error")
     return NextResponse.json(
       { success: false, message: "Something went wrong. Please try again." },
       { status: 500 }

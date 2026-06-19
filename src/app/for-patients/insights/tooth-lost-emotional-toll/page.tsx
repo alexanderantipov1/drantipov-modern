@@ -8,9 +8,16 @@ import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
-  title: "The Hidden Emotional Toll of Tooth Loss: Understanding Patient Struggles | Dr. Antipov",
+  title: "The Hidden Emotional Toll of Tooth Loss",
   description:
     "Explore the psychological and emotional impacts of tooth loss, coping strategies, and how dental implants can restore confidence and quality of life.",
+  alternates: {
+    canonical: "/for-patients/insights/tooth-lost-emotional-toll",
+    languages: {
+      "en": "/for-patients/insights/tooth-lost-emotional-toll",
+      "x-default": "/for-patients/insights/tooth-lost-emotional-toll",
+    },
+  },
   keywords: [
     "tooth loss emotional impact",
     "dental anxiety",
@@ -19,6 +26,24 @@ export const metadata: Metadata = {
     "tooth loss psychology",
     "dental restoration",
   ],
+  openGraph: {
+    title: "The Emotional Toll of Tooth Loss",
+    description: "How tooth loss affects self-esteem, social interactions, and mental health — and what to do about it.",
+    images: [
+      {
+        url: "/images/blog/2024-08-09/tooth-lost-emotional-toll-fcc97e30.jpg",
+        width: 1200,
+        height: 630,
+        alt: "The Emotional Toll of Tooth Loss",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Emotional Toll of Tooth Loss",
+    description: "How tooth loss affects self-esteem, social interactions, and mental health — and what to do about it.",
+    images: ["/images/blog/2024-08-09/tooth-lost-emotional-toll-fcc97e30.jpg"],
+  }
 }
 
 export default function ToothLossEmotionalTollPost() {
@@ -67,7 +92,13 @@ export default function ToothLossEmotionalTollPost() {
               The Hidden Emotional Toll of Tooth Loss: Understanding Patient Struggles
             </h1>
 
-            {/* Featured Image */}
+            
+
+            {/* E-E-A-T: Medically reviewed byline */}
+            <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
+              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+            </p>
+{/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
               <Image
                 src="/images/blog/2024-08-09/tooth-lost-emotional-toll-fcc97e30.jpg"
@@ -75,6 +106,7 @@ export default function ToothLossEmotionalTollPost() {
                 fill
                 className="object-cover"
                 priority
+                sizes="100vw"
               />
             </div>
 
@@ -251,6 +283,18 @@ export default function ToothLossEmotionalTollPost() {
               </p>
             </div>
 
+            {/* Sources / Authoritative References */}
+            <section className="mt-12 pt-8 border-t border-neutral-200">
+              <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
+              <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
+              <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/11048395/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Davis DM, Fiske J — The emotional effects of tooth loss in a group of partially dentate people</a></li>
+                <li><a href="https://www.who.int/news-room/fact-sheets/detail/oral-health" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">WHO — Oral Health Fact Sheet</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/9744297/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Fiske J et al. — The emotional effects of tooth loss in edentulous people</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA — Replacing missing teeth</a></li>
+              </ul>
+            </section>
+
             {/* Author Info */}
             <GlassCard className="mt-12 p-8">
               <div className="flex items-start gap-6">
@@ -282,7 +326,7 @@ export default function ToothLossEmotionalTollPost() {
                     <Link href="/for-patients/consultation">Schedule Consultation</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline">
-                    <Link href="/for-patients/testimonials">Read Patient Stories</Link>
+                    <Link href="/for-patients">Read Patient Stories</Link>
                   </Button>
                 </div>
               </GlassCard>

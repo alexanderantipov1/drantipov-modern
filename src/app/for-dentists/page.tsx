@@ -3,11 +3,20 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Users, GraduationCap, Handshake, Phone, Mail, Award } from "lucide-react"
 import { Metadata } from "next"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "For Dentists - Referrals & Education | Dr. Antipov",
   description:
     "Partner with Dr. Antipov for complex oral surgery referrals. Collaborative care, seamless communication, and continuing education opportunities for dentists.",
+  alternates: {
+    canonical: "/for-dentists",
+    languages: {
+      "en": "/for-dentists",
+      "x-default": "/for-dentists",
+    },
+  },
   keywords: [
     "dental referrals",
     "oral surgeon referral",
@@ -16,6 +25,24 @@ export const metadata: Metadata = {
     "dentist collaboration",
     "surgical referral partner",
   ],
+  openGraph: {
+    title: "For Dentists — Referrals & Education",
+    description: "Refer patients, partner programs, and continuing education courses from Dr. Antipov's surgical practice.",
+    images: [
+      {
+        url: "/images/procedures/dental-implants@2x-06d1b2ea.jpg",
+        width: 1200,
+        height: 630,
+        alt: "For Dentists — Referrals & Education",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "For Dentists — Referrals & Education",
+    description: "Refer patients, partner programs, and continuing education courses from Dr. Antipov's surgical practice.",
+    images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
+  }
 }
 
 const services = [
@@ -76,28 +103,7 @@ const whyRefer = [
 export default function ForDentistsPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Partner with Dr. Antipov
-            </h1>
-            <p className="text-lg md:text-xl text-neutral-600 leading-relaxed">
-              Your trusted surgical partner for complex oral surgery and implant cases. Providing seamless
-              referral coordination and continuing education for dental professionals.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" asChild>
-                <Link href="/for-dentists/referral-partners">Refer a Patient</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/for-dentists/education/courses">Browse CE Courses</Link>
-              </Button>
-            </div>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-dentists"]!} />
 
       {/* Services We Provide */}
       <Section background="default" padding="xl">
@@ -237,11 +243,11 @@ export default function ForDentistsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:9167909693"
+                href="tel:9167832110"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 transition-colors"
               >
                 <Phone className="h-5 w-5" />
-                (916) 790-9693
+                (916) 783-2110
               </a>
               <a
                 href="mailto:referrals@drantipov.com"

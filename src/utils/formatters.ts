@@ -1,6 +1,6 @@
 /**
  * Format a phone number for display
- * @example formatPhoneNumber("9167909693") => "(916) 790-9693"
+ * @example formatPhoneNumber("9167832110") => "(916) 783-2110"
  */
 export function formatPhoneNumber(phone: string): string {
   const cleaned = phone.replace(/\D/g, '')

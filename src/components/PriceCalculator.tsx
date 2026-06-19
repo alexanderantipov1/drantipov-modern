@@ -788,8 +788,8 @@ export default function PriceCalculator() {
                     </button>
                   </ConsultationModal>
                   <div className="flex items-center justify-center gap-4">
-                    <a href="tel:9167909693" className="text-primary font-semibold text-sm hover:underline">
-                      Or call (916) 790-9693
+                    <a href="tel:9167832110" className="text-primary font-semibold text-sm hover:underline">
+                      Or call (916) 783-2110
                     </a>
                     <span className="text-muted">|</span>
                     <button onClick={reset} className="text-muted text-sm hover:text-dark transition-colors">

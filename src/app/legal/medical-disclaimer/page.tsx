@@ -1,12 +1,15 @@
 import { Section, Container, GlassCard } from "@/components/sections"
 import { siteConfig } from "@/constants/siteConfig"
 import { AlertTriangle } from "lucide-react"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata = {
   title: "Medical Disclaimer | Dr. Antipov",
   description:
     "Medical disclaimer for Dr. Alexander Antipov's website. Important information about the content provided on this website.",
-  robots: "noindex, nofollow",
+  robots: "index, follow",
+  alternates: { canonical: "/legal/medical-disclaimer" }
 }
 
 export default function MedicalDisclaimerPage() {
@@ -14,22 +17,7 @@ export default function MedicalDisclaimerPage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-4 max-w-3xl mx-auto">
-            <div className="flex justify-center mb-4">
-              <div className="p-4 rounded-full bg-amber-100">
-                <AlertTriangle className="h-12 w-12 text-amber-600" />
-              </div>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-neutral-900">
-              Medical Disclaimer
-            </h1>
-            <p className="text-lg text-neutral-600">Last Updated: {lastUpdated}</p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/legal/medical-disclaimer"]!} />
 
       {/* Main Content */}
       <Section background="default" padding="xl">

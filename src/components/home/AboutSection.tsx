@@ -12,7 +12,7 @@ export function AboutSection() {
   const credentials = [
     "Board Certified by the American Board of Oral & Maxillofacial Surgery",
     "Fellowship-trained in Complex Implant Reconstruction",
-    "15+ years of surgical excellence",
+    "25+ years of surgical excellence",
     "Preferred referral partner for 100+ Northern California dentists",
   ]
 
@@ -37,7 +37,7 @@ export function AboutSection() {
             </div>
 
             <p className="text-lg text-neutral-700 leading-relaxed">
-              With over 15 years of experience and advanced fellowship training in complex implant reconstruction,
+              With over 25 years of experience and advanced fellowship training in complex implant reconstruction,
               Dr. Antipov combines surgical precision with compassionate care to deliver exceptional outcomes.
             </p>
 
@@ -59,7 +59,7 @@ export function AboutSection() {
 
             <div className="pt-4">
               <Button asChild size="lg">
-                <Link href="/about">Learn More About Dr. Antipov</Link>
+                <Link href="/our-team">Learn More About Dr. Antipov</Link>
               </Button>
             </div>
           </motion.div>

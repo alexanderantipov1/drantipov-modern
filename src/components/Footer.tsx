@@ -3,64 +3,64 @@
 import Image from "next/image";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 
-const footerLinks = [
+const footerLinks: { title: string; links: { label: string; href: string }[] }[] = [
   {
     title: "Dental Implant Services",
     links: [
-      "All-on-4 Dental Implants",
-      "All-on-6 Dental Implants",
-      "Zygomatic Implants",
-      "Single Tooth Implants",
-      "Implant-Supported Bridge",
-      "Snap-On Dentures",
-      "Same-Day Teeth",
-      "Full Mouth Reconstruction",
+      { label: "All-on-4 Dental Implants", href: "/expertise/full-arch-implants" },
+      { label: "All-on-6 Dental Implants", href: "/expertise/full-arch-implants#faq" },
+      { label: "Zygomatic Implants", href: "/for-patients/insights/zygomatic-implants" },
+      { label: "Single Tooth Implants", href: "/expertise/single-tooth" },
+      { label: "Implant-Supported Bridge", href: "/expertise/single-tooth#faq" },
+      { label: "Snap-On Dentures", href: "/expertise/full-arch-implants" },
+      { label: "Same-Day Teeth", href: "/for-patients/insights/same-day-implants" },
+      { label: "Full Mouth Reconstruction", href: "/expertise/full-arch-implants" },
     ],
   },
   {
     title: "Surgical Services",
     links: [
-      "Corrective Jaw Surgery",
-      "Orthognathic Surgery",
-      "Bone Grafting",
-      "Organic Bone Grafting",
-      "Sinus Lift Surgery",
-      "Wisdom Teeth Removal",
-      "TMJ Treatment",
-      "Sleep Apnea Surgery",
+      { label: "Corrective Jaw Surgery", href: "/expertise/jaw-surgery" },
+      { label: "Orthognathic Surgery", href: "/expertise/jaw-surgery" },
+      { label: "Bone Grafting", href: "/expertise/bone-grafting" },
+      { label: "Organic Bone Grafting", href: "/expertise/bone-grafting#organic-materials" },
+      { label: "Sinus Lift Surgery", href: "/expertise/bone-grafting#sinus-lift" },
+      { label: "Wisdom Teeth Removal", href: "/expertise/wisdom-teeth" },
+      { label: "TMJ Treatment", href: "/expertise/tmj" },
+      { label: "Sleep Apnea Surgery", href: "/expertise/sleep-apnea" },
     ],
   },
   {
     title: "Facial Cosmetics",
     links: [
-      "Rhinoplasty",
-      "Face Lift Surgery",
-      "Eyelid Surgery",
-      "Double Eyelid Surgery",
-      "Facial Feminization",
-      "Mole Removal",
-      "Juvederm Fillers",
-      "Lip Augmentation",
+      { label: "Rhinoplasty", href: "/surgical-cases/facial-cosmetic-surgery" },
+      { label: "Face Lift Surgery", href: "/surgical-cases/facial-cosmetic-surgery" },
+      { label: "Eyelid Surgery", href: "/surgical-cases/facial-cosmetic-surgery" },
+      { label: "Double Eyelid Surgery", href: "/surgical-cases/facial-cosmetic-surgery" },
+      { label: "Facial Feminization", href: "/surgical-cases/facial-cosmetic-surgery" },
+      { label: "Mole Removal", href: "/expertise/mole-removal" },
+      { label: "Juvederm Fillers", href: "/surgical-cases/facial-cosmetic-surgery" },
+      { label: "Lip Augmentation", href: "/surgical-cases/facial-cosmetic-surgery" },
     ],
   },
   {
     title: "Patient Info",
     links: [
-      "Free Consultation",
-      "Financing Options",
-      "Patient Forms",
-      "Insurance Info",
-      "Virtual Consultation",
-      "Meet Dr. Antipov",
-      "Office Tour",
-      "Referring Doctors",
+      { label: "Free Consultation", href: "/for-patients/consultation" },
+      { label: "Financing Options", href: "/insurance" },
+      { label: "Patient Forms", href: "/#resources" },
+      { label: "Insurance Info", href: "/insurance" },
+      { label: "Schedule Online", href: "/for-patients/consultation" },
+      { label: "Meet Dr. Antipov", href: "/our-team" },
+      { label: "Office Tour", href: "/#office-tour" },
+      { label: "Referring Doctors", href: "/for-dentists" },
     ],
   },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-white/60">
+    <footer className="bg-navy text-white/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-10">
           {/* Brand */}
@@ -77,10 +77,10 @@ export default function Footer() {
             </p>
             <div className="mt-6 flex items-center gap-2">
               <a
-                href="tel:9167909693"
+                href="tel:9167832110"
                 className="px-4 py-2 bg-white/10 rounded-lg text-sm text-white/80 hover:bg-primary hover:text-white transition-all duration-300"
               >
-                (916) 790-9693
+                (916) 783-2110
               </a>
               <ConsultationModal>
                 <button
@@ -112,12 +112,12 @@ export default function Footer() {
               </h4>
               <ul className="space-y-2.5">
                 {section.links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <a
-                      href="#services"
+                      href={link.href}
                       className="text-xs hover:text-primary transition-colors duration-300"
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}
@@ -139,11 +139,11 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-wrap items-center justify-between gap-4 text-xs">
           <p>&copy; {new Date().getFullYear()} Alexander V. Antipov, DDS, Inc. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-primary transition-colors">HIPAA Notice</a>
-            <a href="#" className="hover:text-primary transition-colors">Accessibility</a>
-            <a href="#" className="hover:text-primary transition-colors">Sitemap</a>
+            <a href="/legal/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
+            <a href="/legal/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</a>
+            <a href="/legal/hipaa-notice" className="hover:text-primary transition-colors">HIPAA Notice</a>
+            <a href="/legal/medical-disclaimer" className="hover:text-primary transition-colors">Medical Disclaimer</a>
+            <a href="/sitemap.xml" className="hover:text-primary transition-colors">Sitemap</a>
           </div>
         </div>
       </div>

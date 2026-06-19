@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 
 interface CaseData {
@@ -86,29 +87,50 @@ function CaseGallery({ caseData, categoryLabel }: { caseData: CaseData; category
 
   return (
     <>
-      <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-500">
-        <div className="grid gap-0.5" style={{ gridTemplateColumns: `repeat(${count}, 1fr)` }}>
-          {caseData.images.map((src, i) => (
-            <button
-              key={i}
-              onClick={() => setLightbox(i)}
-              className="relative group overflow-hidden cursor-pointer"
-            >
-              <Image
-                src={src}
-                alt={`${caseData.label} — Photo ${i + 1}`}
-                width={400}
-                height={500}
-                className="w-full h-auto block group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-dark/70 to-transparent pt-6 pb-2 px-2">
-                <span className="text-white text-[10px] sm:text-xs font-semibold">
-                  {i === 0 ? "Before" : i === count - 1 ? "After" : `Step ${i + 1}`}
-                </span>
-              </div>
-            </button>
-          ))}
-        </div>
+      <div className="bg-white/85 backdrop-blur-xl border border-white/60 rounded-3xl overflow-hidden shadow-md hover:shadow-[0_25px_70px_-15px_rgba(14,62,94,0.3)] hover:-translate-y-1 transition-all duration-500">
+        {count >= 2 ? (
+          <div className="relative">
+            <BeforeAfterSlider
+              beforeSrc={caseData.images[0]!}
+              afterSrc={caseData.images[count - 1]!}
+              beforeAlt="Before"
+              afterAlt="After"
+              className="aspect-[4/3]"
+            />
+            {count > 2 && (
+              <button
+                onClick={() => setLightbox(0)}
+                aria-label={`Open full gallery (${count} photos)`}
+                className="absolute top-3 left-1/2 -translate-x-1/2 z-10 bg-white/95 hover:bg-white text-dark text-xs font-bold px-3 py-1.5 rounded-full shadow-md transition"
+              >
+                📷 View all {count} steps
+              </button>
+            )}
+          </div>
+        ) : (
+          <div className="grid gap-0.5" style={{ gridTemplateColumns: `repeat(${count}, 1fr)` }}>
+            {caseData.images.map((src, i) => (
+              <button
+                key={i}
+                onClick={() => setLightbox(i)}
+                className="relative group overflow-hidden cursor-pointer"
+              >
+                <Image
+                  src={src}
+                  alt={`${caseData.label} — Photo ${i + 1}`}
+                  width={400}
+                  height={500}
+                  className="w-full h-auto block group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-dark/70 to-transparent pt-6 pb-2 px-2">
+                  <span className="text-white text-[10px] sm:text-xs font-semibold">
+                    {i === 0 ? "Before" : i === count - 1 ? "After" : `Step ${i + 1}`}
+                  </span>
+                </div>
+              </button>
+            ))}
+          </div>
+        )}
         <div className="px-5 py-3">
           <div className="flex items-center justify-between">
             <div>
@@ -193,7 +215,9 @@ function CaseGallery({ caseData, categoryLabel }: { caseData: CaseData; category
                       i === lightbox ? "border-primary scale-110" : "border-transparent opacity-60 hover:opacity-100"
                     }`}
                   >
-                    <Image src={src} alt="" fill className="object-cover" />
+                    <Image src={src} alt="" fill className="object-cover"
+          sizes="100vw"
+        />
                   </button>
                 ))}
               </div>
@@ -213,7 +237,7 @@ export default function BeforeAfter() {
   const visibleCases = showAll ? activeCat.cases : activeCat.cases.slice(0, 6);
 
   return (
-    <section id="before-after" className="py-24 lg:py-32 bg-light">
+    <section id="before-after" className="py-16 lg:py-20 bg-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -225,7 +249,7 @@ export default function BeforeAfter() {
           <span className="text-primary font-semibold text-sm tracking-widest uppercase">
             Documented Patient Outcomes
           </span>
-          <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-dark tracking-tight">
+          <h2 className="font-serif mt-4 text-4xl sm:text-5xl font-bold text-dark tracking-tight">
             Before &amp; After
             <br />
             <span className="gradient-text">Case Gallery</span>
@@ -258,7 +282,7 @@ export default function BeforeAfter() {
         </div>
 
         {/* Cases */}
-        <div className="space-y-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {visibleCases.map((c, i) => (
             <motion.div
               key={c.id}

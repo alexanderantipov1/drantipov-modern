@@ -4,11 +4,20 @@ import { AlertTriangle, CheckCircle, Phone, Clock, Thermometer, Pill } from "luc
 import { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Post-Operative Care Instructions | Recovery Guide | Dr. Antipov",
   description:
     "Essential post-operative care instructions after oral surgery with Dr. Antipov. Learn how to manage pain, swelling, bleeding, and ensure proper healing.",
+  alternates: {
+    canonical: "/for-patients/post-op",
+    languages: {
+      "en": "/for-patients/post-op",
+      "x-default": "/for-patients/post-op",
+    },
+  },
   keywords: [
     "post-operative care",
     "oral surgery recovery",
@@ -17,6 +26,24 @@ export const metadata: Metadata = {
     "jaw surgery recovery",
     "surgical healing",
   ],
+  openGraph: {
+    title: "Post-Op Care Instructions",
+    description: "Recovery care, pain management, swelling, diet, and proper healing after oral surgery.",
+    images: [
+      {
+        url: "/images/dental-implants/dental-implants@2x-0aad592f.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Post-Op Care Instructions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Post-Op Care Instructions",
+    description: "Recovery care, pain management, swelling, diet, and proper healing after oral surgery.",
+    images: ["/images/dental-implants/dental-implants@2x-0aad592f.jpg"],
+  }
 }
 
 const immediatePostOp = [
@@ -147,22 +174,7 @@ const whenToCall = [
 export default function PostOpPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <Badge variant="secondary" className="mb-2">
-              Patient Resources
-            </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Post-Operative Care Instructions
-            </h1>
-            <p className="text-lg md:text-xl text-neutral-600 leading-relaxed">
-              Following these instructions carefully will promote proper healing, minimize discomfort, and help you recover quickly from your oral surgery.
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-patients/post-op"]!} />
 
       {/* Emergency Contact */}
       <Section background="default" padding="md">
@@ -173,7 +185,7 @@ export default function PostOpPage() {
               <div>
                 <h3 className="text-lg font-semibold text-neutral-900 mb-2">24/7 Emergency Contact</h3>
                 <p className="text-neutral-700 leading-relaxed mb-2">
-                  For post-operative emergencies outside office hours, call: <a href="tel:9167909693" className="text-red-600 hover:underline font-bold">(916) 790-9693</a>
+                  For post-operative emergencies outside office hours, call: <a href="tel:9167832110" className="text-red-600 hover:underline font-bold">(916) 783-2110</a>
                 </p>
                 <p className="text-sm text-neutral-600">
                   For life-threatening emergencies, call 911 or go to the nearest emergency room.
@@ -393,14 +405,14 @@ export default function PostOpPage() {
             </div>
             <div className="text-center mt-8">
               <a
-                href="tel:9167909693"
+                href="tel:9167832110"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 transition-colors text-lg"
               >
                 <Phone className="h-5 w-5" />
-                Call Office: (916) 790-9693
+                Call Office: (916) 783-2110
               </a>
               <p className="text-sm text-neutral-500 mt-4">
-                After hours emergency: <a href="tel:9167909693" className="text-red-600 font-semibold hover:underline">(916) 790-9693</a>
+                After hours emergency: <a href="tel:9167832110" className="text-red-600 font-semibold hover:underline">(916) 783-2110</a>
               </p>
             </div>
           </GlassCard>

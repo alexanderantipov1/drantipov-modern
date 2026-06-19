@@ -74,7 +74,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold text-white">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about" className="hover:text-primary-400 transition-colors">
+                <Link href="/our-team" className="hover:text-primary-400 transition-colors">
                   About Dr. Antipov
                 </Link>
               </li>

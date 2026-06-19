@@ -1,12 +1,16 @@
 import { Section, Container, GlassCard } from "@/components/sections"
 import {
   ExpertisePageHero,
-  BenefitsList,
-  ProcessTimeline,
+  HeroStats,
+  AnimatedCounter,
+  DoctorQuote,
+  IconBenefits,
+  VerticalProcessTimeline,
 } from "@/components/expertise"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Phone, Award, Clock, Moon } from "lucide-react"
+import { Phone, Award, Clock, Moon, Wind, ShieldCheck, Sparkles, TrendingUp, Hospital, Calendar, Stethoscope, HeartHandshake } from "lucide-react"
+import FloatingArticleCTA from "@/components/FloatingArticleCTA"
 import {
   Accordion,
   AccordionContent,
@@ -16,23 +20,73 @@ import {
 import {
   getMedicalProcedureSchema,
   getBreadcrumbSchema,
+  getFAQSchema,
   structuredDataScript,
 } from "@/lib/structured-data"
 import { siteConfig } from "@/constants/siteConfig"
+import DualCTA from "@/components/DualCTA"
 
 export const metadata = {
-  title: "Sleep Apnea Surgery | Surgical Solutions for OSA | Dr. Antipov",
-  description:
-    "Surgical treatment for obstructive sleep apnea when CPAP fails. Dr. Antipov offers advanced procedures including jaw advancement surgery to permanently resolve sleep apnea.",
+  title: { absolute: "Sleep Apnea Surgery (MMA) — CPAP Alternative" },
+  description: "Maxillomandibular advancement surgery for OSA. A permanent CPAP alternative by board-certified oral surgeon Dr. Antipov, Roseville CA.",
+  alternates: {
+    canonical: "/expertise/sleep-apnea",
+    languages: {
+      "en": "/expertise/sleep-apnea",
+      "x-default": "/expertise/sleep-apnea",
+    },
+  },
+  openGraph: {
+    title: "Sleep Apnea Surgery — MMA",
+    description: "Maxillomandibular advancement for obstructive sleep apnea — long-term surgical solution for CPAP-intolerant patients.",
+    images: [
+      {
+        url: "/images/sleep-apnea-mma-surgery.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sleep Apnea Surgery — MMA",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sleep Apnea Surgery — MMA",
+    description: "Maxillomandibular advancement for obstructive sleep apnea — long-term surgical solution for CPAP-intolerant patients.",
+    images: ["/images/sleep-apnea-mma-surgery.jpg"],
+  }
 }
 
-const benefits = [
-  "Permanent solution for obstructive sleep apnea",
-  "Eliminates or reduces dependence on CPAP machine",
-  "Improves oxygen levels and quality of sleep",
-  "Reduces risk of heart disease, stroke, and diabetes",
-  "Increases daytime energy and mental clarity",
-  "May improve facial aesthetics as a secondary benefit",
+const iconBenefits = [
+  {
+    icon: <ShieldCheck className="h-5 w-5" />,
+    title: "Permanent OSA solution",
+    description: "One surgery vs. nightly CPAP for life",
+  },
+  {
+    icon: <Wind className="h-5 w-5" />,
+    title: "Freedom from CPAP",
+    description: "Sleep without masks, hoses, or air pressure",
+  },
+  {
+    icon: <HeartHandshake className="h-5 w-5" />,
+    title: "Better oxygen, deeper sleep",
+    description: "Restful REM cycles and morning clarity",
+  },
+  {
+    icon: <Stethoscope className="h-5 w-5" />,
+    title: "Lowers cardiovascular risk",
+    description: "Reduces heart disease, stroke, and diabetes risk",
+  },
+  {
+    icon: <TrendingUp className="h-5 w-5" />,
+    title: "More daytime energy",
+    description: "End daytime sleepiness and brain fog",
+  },
+  {
+    icon: <Sparkles className="h-5 w-5" />,
+    title: "Improved facial profile",
+    description: "Side benefit of repositioning the jaws forward",
+  },
 ]
 
 const processSteps = [
@@ -141,6 +195,7 @@ export default function SleepApneaPage() {
         "Initial swelling subsides in 2-3 weeks. Soft diet for 6-8 weeks. Follow-up sleep study at 3-6 months confirms resolution of sleep apnea. Regular monitoring with sleep physician.",
       bodyLocation: "Jaw, Airway",
     }),
+    getFAQSchema(faqs),
     getBreadcrumbSchema([
       { name: "Home", url: siteConfig.url },
       { name: "Expertise", url: `${siteConfig.url}/expertise` },
@@ -160,8 +215,33 @@ export default function SleepApneaPage() {
       <ExpertisePageHero
         badge="Airway Surgery"
         title="Sleep Apnea Surgical Solutions"
-        subtitle="Permanent surgical treatment for obstructive sleep apnea"
+        subtitle="Maxillomandibular advancement (MMA) is a surgical procedure that moves the upper and lower jaws forward to enlarge the airway — the most effective long-term surgical treatment for obstructive sleep apnea in CPAP-intolerant patients."
+        image="/images/sleep-apnea-mma-surgery.jpg"
       />
+
+      {/* Animated stat cards overlapping hero bottom */}
+      <HeroStats stats={[
+          {
+            icon: <TrendingUp className="h-5 w-5" />,
+            value: <><AnimatedCounter to={90} suffix="%+" /></>,
+            label: "AHI reduction (MMA)",
+          },
+          {
+            icon: <Wind className="h-5 w-5" />,
+            value: "1",
+            label: "Surgery, permanent fix",
+          },
+          {
+            icon: <Hospital className="h-5 w-5" />,
+            value: "No CPAP",
+            label: "Required after recovery",
+          },
+          {
+            icon: <Clock className="h-5 w-5" />,
+            value: <><AnimatedCounter to={4} />–6 wk</>,
+            label: "Recovery to full sleep",
+          },
+        ]} />
 
       {/* What It Is Section */}
       <Section background="default" padding="xl">
@@ -205,6 +285,13 @@ export default function SleepApneaPage() {
         </Container>
       </Section>
 
+      {/* Doctor Quote — personal touch */}
+      <DoctorQuote
+        quote="After years of CPAP intolerance, patients often tell me the first night of natural sleep after MMA surgery is what changes their life. Surgery is not first-line, but for the right patient it is transformative."
+        author="Dr. Alexander Antipov, DDS"
+        role="Board-Certified Oral & Maxillofacial Surgeon"
+      />
+
       {/* Benefits Section */}
       <Section background="gradient" padding="xl">
         <Container size="lg">
@@ -217,7 +304,7 @@ export default function SleepApneaPage() {
                 Addressing a serious health condition while improving quality of life
               </p>
 
-              <BenefitsList benefits={benefits} />
+              <IconBenefits items={iconBenefits} columns={2} />
             </div>
 
             <div className="space-y-6">
@@ -289,7 +376,7 @@ export default function SleepApneaPage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <ProcessTimeline steps={processSteps} />
+            <VerticalProcessTimeline steps={processSteps} />
           </div>
         </Container>
       </Section>
@@ -322,33 +409,17 @@ export default function SleepApneaPage() {
         </Container>
       </Section>
 
-      {/* CTA Section */}
-      <Section background="gradient" padding="xl">
-        <Container size="lg">
-          <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
-              Ready to Breathe Easy Again?
-            </h2>
-            <p className="text-xl text-neutral-600">
-              Schedule a consultation to evaluate surgical options for your sleep apnea
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg">
-                <Link href="/contact">Schedule Consultation</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <a href="tel:9167909693">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call (916) 790-9693
-                </a>
-              </Button>
-            </div>
-            <p className="text-sm text-neutral-500">
-              Bring your sleep study results and CPAP compliance records to your consultation
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <DualCTA variant="surgical"
+        heading="Ready to Address Sleep Apnea Surgically?"
+        subheading="MMA (maxillomandibular advancement) and other surgical sleep apnea options are performed at Galleria."
+      />
+
+      {/* Floating sticky CTA — appears after 25% scroll */}
+      <FloatingArticleCTA
+        href="/contact"
+        label="Book free consultation"
+        showAfterPct={25}
+      />
     </>
   )
 }

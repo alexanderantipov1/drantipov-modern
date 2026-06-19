@@ -104,7 +104,7 @@ export function ContactForm() {
           id="phone"
           type="tel"
           {...register("phone")}
-          placeholder="(916) 790-9693"
+          placeholder="(916) 783-2110"
           className={errors.phone ? "border-red-500" : ""}
         />
         {errors.phone && (

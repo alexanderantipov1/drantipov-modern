@@ -18,7 +18,7 @@ export function RecaptchaScript() {
   return (
     <Script
       id="recaptcha-v3"
-      src="https://www.google.com/recaptcha/api.js?render=6LfAv8grAAAAAFkd5EJ1HC4fbmTfdq3yce7rgPtg"
+      src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? "6LfAv8grAAAAAFkd5EJ1HC4fbmTfdq3yce7rgPtg"}`}
       strategy="afterInteractive"
     />
   )

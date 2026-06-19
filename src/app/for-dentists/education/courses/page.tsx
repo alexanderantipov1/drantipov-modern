@@ -3,11 +3,38 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Award, Clock, Users, BookOpen, Video, CheckCircle, ExternalLink } from "lucide-react"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata = {
-  title: "Dental Implant Education & Courses | Fusion Dental Academy | Dr. Antipov",
+  title: "Dental Implant Education & Courses | Dr. Antipov",
   description:
     "Master advanced implant techniques with hands-on courses from Dr. Antipov. Full-arch restoration, bone grafting, and complex implantology training. CE credits available.",
+  alternates: {
+    canonical: "/for-dentists/education/courses",
+    languages: {
+      "en": "/for-dentists/education/courses",
+      "x-default": "/for-dentists/education/courses",
+    },
+  },
+  openGraph: {
+    title: "Continuing Education Courses",
+    description: "Hands-on surgical training and continuing education courses for general dentists.",
+    images: [
+      {
+        url: "/images/procedures/dental-implants@2x-06d1b2ea.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Continuing Education Courses",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Continuing Education Courses",
+    description: "Hands-on surgical training and continuing education courses for general dentists.",
+    images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
+  }
 }
 
 const courses = [
@@ -122,7 +149,7 @@ const benefits = [
   {
     icon: Award,
     title: "Expert Instruction",
-    description: "Learn directly from Dr. Antipov with 15+ years of implant surgery experience",
+    description: "Learn directly from Dr. Antipov with 25+ years of implant surgery experience",
   },
   {
     icon: BookOpen,
@@ -139,31 +166,14 @@ const benefits = [
 export default function EducationCoursesPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <Badge className="text-base px-4 py-2 bg-accent-100 text-accent-700 hover:bg-accent-200">
-              Fusion Dental Academy
-            </Badge>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Master Advanced Implant Techniques
-            </h1>
-
-            <p className="text-xl lg:text-2xl text-neutral-600">
-              Hands-on training courses to elevate your implant practice with confidence
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-dentists/education/courses"]!} />
 
       {/* Why Choose Section */}
       <Section background="default" padding="xl">
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
-              Why Fusion Dental Academy?
+              Why Continuing Education with Dr. Antipov?
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
               Real-world training from a practicing surgeon who places implants every day
@@ -271,18 +281,18 @@ export default function EducationCoursesPage() {
                     Learn from a Master Clinician
                   </h2>
                   <p className="text-neutral-700 leading-relaxed">
-                    Dr. Alexander Antipov brings over 15 years of clinical experience in complex implantology and
+                    Dr. Alexander Antipov brings over 25 years of clinical experience in complex implantology and
                     full-arch rehabilitation. His fellowship training at Columbia/Harlem Hospital and residency at
                     Albert Einstein College of Medicine provided him with advanced skills in surgical techniques and
                     treatment planning.
                   </p>
                   <p className="text-neutral-700 leading-relaxed">
-                    As founder of Fusion Dental Academy, Dr. Antipov is passionate about elevating the standard of
+                    Dr. Antipov is passionate about elevating the standard of
                     implant dentistry through education. His teaching style emphasizes practical, immediately
                     applicable techniques backed by evidence-based protocols.
                   </p>
                   <Button asChild>
-                    <Link href="/about">Learn More About Dr. Antipov</Link>
+                    <Link href="/our-team">Learn More About Dr. Antipov</Link>
                   </Button>
                 </div>
               </div>

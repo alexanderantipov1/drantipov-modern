@@ -1,12 +1,30 @@
 import { Section, Container, GlassCard } from "@/components/sections"
 import {
   ExpertisePageHero,
-  BenefitsList,
-  ProcessTimeline,
+  HeroStats,
+  AnimatedCounter,
+  DoctorQuote,
+  IconBenefits,
+  VerticalProcessTimeline,
 } from "@/components/expertise"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Phone, Award, Clock, Activity } from "lucide-react"
+import {
+  Phone,
+  Award,
+  Clock,
+  Activity,
+  Smile,
+  Wind,
+  HeartPulse,
+  ShieldCheck,
+  Sparkles,
+  TrendingUp,
+  Hospital,
+  Calendar,
+  Stethoscope,
+} from "lucide-react"
+import FloatingArticleCTA from "@/components/FloatingArticleCTA"
 import {
   Accordion,
   AccordionContent,
@@ -16,23 +34,73 @@ import {
 import {
   getMedicalProcedureSchema,
   getBreadcrumbSchema,
+  getFAQSchema,
   structuredDataScript,
 } from "@/lib/structured-data"
 import { siteConfig } from "@/constants/siteConfig"
+import DualCTA from "@/components/DualCTA"
 
 export const metadata = {
-  title: "Corrective Jaw Surgery | Orthognathic Surgery | Dr. Antipov",
-  description:
-    "Expert orthognathic surgery to correct bite problems, jaw misalignment, and facial asymmetry. Dr. Antipov specializes in corrective jaw surgery for functional and aesthetic improvements.",
+  title: { absolute: "Corrective Jaw Surgery (Orthognathic) | Dr. Antipov" },
+  description: "Expert orthognathic surgery for bite problems, jaw alignment, and facial asymmetry. 25+ years of surgical experience in Roseville, CA.",
+  alternates: {
+    canonical: "/expertise/jaw-surgery",
+    languages: {
+      "en": "/expertise/jaw-surgery",
+      "x-default": "/expertise/jaw-surgery",
+    },
+  },
+  openGraph: {
+    title: "Corrective Jaw Surgery (Orthognathic)",
+    description: "Orthognathic surgery — Le Fort, BSSO, genioplasty — for bite, asymmetry, and breathing correction.",
+    images: [
+      {
+        url: "/images/procedures/corrective-jaw-surgery@2x-0c58ba67.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Corrective Jaw Surgery (Orthognathic)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Corrective Jaw Surgery (Orthognathic)",
+    description: "Orthognathic surgery — Le Fort, BSSO, genioplasty — for bite, asymmetry, and breathing correction.",
+    images: ["/images/procedures/corrective-jaw-surgery@2x-0c58ba67.jpg"],
+  }
 }
 
-const benefits = [
-  "Corrects bite problems and improves chewing function",
-  "Relieves TMJ pain, headaches, and jaw discomfort",
-  "Improves breathing and may eliminate sleep apnea",
-  "Enhances facial symmetry and aesthetics",
-  "Prevents long-term dental problems from misaligned jaws",
-  "Boosts confidence with improved facial appearance",
+const iconBenefits = [
+  {
+    icon: <Smile className="h-5 w-5" />,
+    title: "Corrected bite & chewing function",
+    description: "Eat comfortably without strain on jaw joints",
+  },
+  {
+    icon: <HeartPulse className="h-5 w-5" />,
+    title: "Relief from TMJ pain & headaches",
+    description: "Address the skeletal root cause, not just symptoms",
+  },
+  {
+    icon: <Wind className="h-5 w-5" />,
+    title: "Better breathing & sleep apnea relief",
+    description: "Opens the airway by repositioning the lower jaw",
+  },
+  {
+    icon: <Sparkles className="h-5 w-5" />,
+    title: "Enhanced facial symmetry & profile",
+    description: "Natural aesthetic improvement as a side effect",
+  },
+  {
+    icon: <ShieldCheck className="h-5 w-5" />,
+    title: "Long-term dental health protection",
+    description: "Prevents excess wear and unstable restorations",
+  },
+  {
+    icon: <TrendingUp className="h-5 w-5" />,
+    title: "Boosted confidence and quality of life",
+    description: "Many patients call it life-changing",
+  },
 ]
 
 const processSteps = [
@@ -148,6 +216,7 @@ export default function JawSurgeryPage() {
         "Initial swelling subsides in 2-3 weeks. Soft diet for 6-8 weeks. Most patients return to work in 2-3 weeks. Post-surgical orthodontics (6-12 months) to fine-tune bite.",
       bodyLocation: "Jaw",
     }),
+    getFAQSchema(faqs),
     getBreadcrumbSchema([
       { name: "Home", url: siteConfig.url },
       { name: "Expertise", url: `${siteConfig.url}/expertise` },
@@ -167,7 +236,34 @@ export default function JawSurgeryPage() {
       <ExpertisePageHero
         badge="Orthognathic Surgery"
         title="Corrective Jaw Surgery"
-        subtitle="Transform function and appearance by repositioning misaligned jaws"
+        subtitle="Corrective jaw surgery (orthognathic surgery) repositions the upper jaw, lower jaw, or both to correct skeletal malocclusion, facial asymmetry, and breathing problems caused by bite or jaw misalignment."
+        image="/images/procedures/corrective-jaw-surgery@2x-0c58ba67.jpg"
+      />
+
+      {/* Animated stat cards overlapping hero bottom */}
+      <HeroStats
+        stats={[
+          {
+            icon: <Clock className="h-5 w-5" />,
+            value: <><AnimatedCounter to={2} />–4 hrs</>,
+            label: "Surgery time",
+          },
+          {
+            icon: <Calendar className="h-5 w-5" />,
+            value: <><AnimatedCounter to={18} /> mo</>,
+            label: "Avg. orthodontic prep",
+          },
+          {
+            icon: <Hospital className="h-5 w-5" />,
+            value: "1 night",
+            label: "Hospital stay",
+          },
+          {
+            icon: <TrendingUp className="h-5 w-5" />,
+            value: <><AnimatedCounter to={98} suffix="%" /></>,
+            label: "Patient satisfaction",
+          },
+        ]}
       />
 
       {/* What It Is Section */}
@@ -206,49 +302,52 @@ export default function JawSurgeryPage() {
         </Container>
       </Section>
 
+      {/* Doctor Quote — personal touch */}
+      <DoctorQuote
+        quote="Modern orthognathic surgery is not just about fixing a bite — it transforms how patients breathe, eat, sleep, and feel about their own face. That is why precision matters at every step."
+        author="Dr. Alexander Antipov, DDS"
+        role="Board-Certified Oral & Maxillofacial Surgeon"
+      />
+
       {/* Benefits Section */}
       <Section background="gradient" padding="xl">
         <Container size="lg">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="space-y-6">
-              <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
-                Comprehensive Improvements
-              </h2>
-              <p className="text-xl text-neutral-600">
-                Addressing function, health, and aesthetics simultaneously
-              </p>
+          <div className="text-center space-y-4 mb-12">
+            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+              Comprehensive Improvements
+            </h2>
+            <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
+              Addressing function, health, and aesthetics simultaneously
+            </p>
+          </div>
 
-              <BenefitsList benefits={benefits} />
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start max-w-7xl mx-auto">
+            <div className="lg:col-span-2">
+              <IconBenefits items={iconBenefits} columns={2} />
             </div>
 
-            <div className="space-y-6">
-              <GlassCard variant="hover">
-                <div className="space-y-4">
-                  <Award className="h-12 w-12 text-primary-600" />
-                  <h3 className="text-2xl font-serif font-bold text-neutral-900">
-                    Elite Surgical Training
-                  </h3>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Dr. Antipov's 4-year residency at one of the nation's top programs included extensive experience in
-                    orthognathic surgery, facial trauma, and reconstructive procedures. He brings this advanced
-                    expertise to every case.
-                  </p>
-                </div>
-              </GlassCard>
+            <div className="space-y-6 lg:sticky lg:top-24">
+              <div className="rounded-3xl bg-gradient-to-br from-navy via-navy-dark to-navy text-white p-7 shadow-xl">
+                <Award className="h-10 w-10 text-primary-light mb-4" />
+                <h3 className="text-xl font-serif font-bold mb-3">
+                  Elite Surgical Training
+                </h3>
+                <p className="text-white/85 text-sm leading-relaxed">
+                  Dr. Antipov&rsquo;s 4-year residency at Montefiore Medical Center / Albert Einstein included extensive
+                  experience in orthognathic surgery, facial trauma, and reconstructive procedures.
+                </p>
+              </div>
 
-              <GlassCard variant="hover">
-                <div className="space-y-4">
-                  <Activity className="h-12 w-12 text-primary-600" />
-                  <h3 className="text-2xl font-serif font-bold text-neutral-900">
-                    3D Surgical Planning
-                  </h3>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Using state-of-the-art 3D planning software, we simulate your surgery virtually and show you
-                    predicted results before any surgery occurs. This technology ensures precision and helps set
-                    realistic expectations.
-                  </p>
-                </div>
-              </GlassCard>
+              <div className="rounded-3xl bg-white border-2 border-primary/15 p-7 shadow-md">
+                <Activity className="h-10 w-10 text-primary-600 mb-4" />
+                <h3 className="text-xl font-serif font-bold text-neutral-900 mb-3">
+                  3D Surgical Planning
+                </h3>
+                <p className="text-neutral-600 text-sm leading-relaxed">
+                  We simulate your surgery virtually using advanced 3D software, so you see your predicted result
+                  before any incision is made.
+                </p>
+              </div>
             </div>
           </div>
         </Container>
@@ -291,7 +390,7 @@ export default function JawSurgeryPage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <ProcessTimeline steps={processSteps} />
+            <VerticalProcessTimeline steps={processSteps} />
           </div>
         </Container>
       </Section>
@@ -324,30 +423,41 @@ export default function JawSurgeryPage() {
         </Container>
       </Section>
 
-      {/* CTA Section */}
-      <Section background="gradient" padding="xl">
+            {/* Related cluster */}
+      <Section background="accent" padding="xl">
         <Container size="lg">
-          <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
-              Is Jaw Surgery Right for You?
-            </h2>
-            <p className="text-xl text-neutral-600">
-              Schedule a consultation to evaluate your bite and jaw alignment
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg">
-                <Link href="/contact">Schedule Consultation</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <a href="tel:9167909693">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call (916) 790-9693
-                </a>
-              </Button>
-            </div>
+          <h2 className="font-serif text-3xl font-bold text-neutral-900 text-center mb-12">Plan your treatment</h2>
+          <div className="grid gap-6 md:grid-cols-3">
+            <a href="/jaw-surgery-recovery-timeline" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Recovery</p>
+              <h3 className="font-bold text-neutral-900 leading-snug">Week-by-week recovery timeline</h3>
+              <p className="text-sm text-neutral-600 mt-2 leading-6">What to expect from day 1 through 12 months.</p>
+            </a>
+            <a href="/surgical-cases/corrective-jaw-surgery" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Cases</p>
+              <h3 className="font-bold text-neutral-900 leading-snug">Jaw surgery case gallery</h3>
+              <p className="text-sm text-neutral-600 mt-2 leading-6">Real before-and-after transformations.</p>
+            </a>
+            <a href="/for-patients/travel" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Logistics</p>
+              <h3 className="font-bold text-neutral-900 leading-snug">Traveling for surgery</h3>
+              <p className="text-sm text-neutral-600 mt-2 leading-6">For out-of-state and international patients.</p>
+            </a>
           </div>
         </Container>
       </Section>
+
+      <DualCTA variant="surgical"
+        heading="Is Jaw Surgery Right for You?"
+        subheading="Dr. Antipov performs orthognathic surgery at Galleria. Schedule a consultation to evaluate your bite and jaw alignment."
+      />
+
+      {/* Floating sticky CTA — appears after 25% scroll */}
+      <FloatingArticleCTA
+        href="/contact"
+        label="Book free consultation"
+        showAfterPct={25}
+      />
     </>
   )
 }

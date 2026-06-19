@@ -296,10 +296,10 @@ export default function FullArchShowcase() {
                   </button>
                 </ConsultationModal>
                 <a
-                  href="tel:9167909693"
+                  href="tel:9167832110"
                   className="px-6 py-3 bg-white/10 text-white rounded-xl font-semibold text-sm hover:bg-white/20 transition-all border border-white/10"
                 >
-                  (916) 790-9693
+                  (916) 783-2110
                 </a>
               </div>
             </div>

@@ -151,6 +151,7 @@ export default function Results() {
                   alt={`Dental implant patient results — same-day teeth, full arch restoration — Dr. Antipov, Roseville CA — Photo ${i + 1}`}
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
+                  sizes="(min-width: 1280px) 426px, 33vw"
                 />
               </div>
             ))}

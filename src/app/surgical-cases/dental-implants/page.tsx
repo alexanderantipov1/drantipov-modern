@@ -1,10 +1,13 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { Section, Container } from "@/components/sections"
-import { CaseHero, CaseGrid } from "@/components/cases"
+import { CaseGrid } from "@/components/cases"
 import { Button } from "@/components/ui/button"
 import { dentalImplantsCases } from "@/constants/cases"
 import { ArrowLeft, CheckCircle } from "lucide-react"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
+import DualCTA from "@/components/DualCTA"
 
 export const metadata: Metadata = {
   title: "Dental Implant Cases - All-on-4 and Immediate Implants | Dr. Antipov",
@@ -26,16 +29,7 @@ export const metadata: Metadata = {
 export default function DentalImplantsPage() {
   return (
     <>
-      <CaseHero
-        title="Dental Implant Cases"
-        description="All-on-4 and immediate implant solutions for complete smile restoration. These cases showcase our expertise in full-arch rehabilitation with same-day teeth, providing patients with immediate functional and aesthetic results."
-        stats={[
-          { label: "Total Cases", value: `${dentalImplantsCases.length}` },
-          { label: "All-on-4 Solutions", value: "10+" },
-          { label: "Immediate Implants", value: "15+" },
-          { label: "Same-Day Teeth", value: "95%" },
-        ]}
-      />
+      <PageHero {...heroContent["/surgical-cases/dental-implants"]!} />
 
       {/* Back Navigation */}
       <Section background="default" padding="sm">
@@ -128,27 +122,10 @@ export default function DentalImplantsPage() {
         </Container>
       </Section>
 
-      {/* CTA Section */}
-      <Section background="gradient" padding="xl">
-        <Container size="lg">
-          <div className="max-w-3xl mx-auto text-center space-y-8 bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-glass">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
-              Ready to Restore Your Smile?
-            </h2>
-            <p className="text-xl text-neutral-600">
-              Discover if All-on-4 dental implants are right for you. Schedule a consultation to discuss your options and receive a personalized treatment plan
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg">
-                <Link href="/for-patients/consultation">Schedule Consultation</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href="/expertise/full-arch-implants">Learn About Full-Arch Implants</Link>
-              </Button>
-            </div>
-          </div>
-        </Container>
-      </Section>
+      <DualCTA variant="implants"
+        heading="Ready to Restore Your Smile?"
+        subheading="Schedule a complimentary implant consultation with a 3D CT scan."
+      />
     </>
   )
 }

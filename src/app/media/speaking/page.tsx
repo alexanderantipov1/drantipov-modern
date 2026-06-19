@@ -10,6 +10,8 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { Metadata } from "next";
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Speaking Engagements & Lectures | Dr. Alexander Antipov",
@@ -147,7 +149,7 @@ const pastEngagements = [
   {
     id: 5,
     title: "Full-Arch Rehabilitation: From Planning to Prosthetics",
-    event: "Fusion Dental Implant Symposium",
+    event: "Implant Symposium",
     location: "Roseville, CA",
     date: "October 12, 2024",
     type: "Course Director",
@@ -210,24 +212,7 @@ const stats = [
 export default function SpeakingPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <Badge variant="secondary" className="mb-2">
-              Professional Speaking
-            </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Speaking Engagements & Educational Lectures
-            </h1>
-            <p className="text-lg md:text-xl text-neutral-600 leading-relaxed">
-              Dr. Antipov is a sought-after international speaker, delivering
-              keynote presentations, workshops, and educational courses on
-              advanced oral surgery techniques and digital implant workflows.
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/media/speaking"]!} />
 
       {/* Stats Section */}
       <Section background="default" padding="md">
@@ -495,10 +480,10 @@ export default function SpeakingPage() {
             <p className="text-sm text-neutral-500 mt-6">
               For speaking inquiries, please contact our office at{" "}
               <a
-                href="mailto:info@drantipov.com"
+                href="mailto:info@galleriaoms.com"
                 className="text-primary-600 hover:underline"
               >
-                info@drantipov.com
+                info@galleriaoms.com
               </a>
             </p>
           </GlassCard>

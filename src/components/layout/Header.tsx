@@ -77,7 +77,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden xl:flex items-center space-x-1 flex-1 justify-center">
+          <nav className="hidden xl:flex items-center space-x-1">
             {navigationLinks.map((link) => {
               const hasSubmenu = 'submenu' in link && link.submenu && link.submenu.length > 0
               const isActive = pathname === link.href || (hasSubmenu && link.submenu?.some(sub => pathname === sub.href))
@@ -93,7 +93,7 @@ export function Header() {
                     <Link
                       href={link.href}
                       className={cn(
-                        "text-sm font-medium transition-all duration-200 px-4 py-2 rounded-full flex items-center gap-1 whitespace-nowrap",
+                        "text-sm font-medium transition-all duration-200 px-4 py-2 rounded-full flex items-center gap-1",
                         isActive
                           ? "bg-primary-100 text-primary-700"
                           : "text-neutral-700 hover:bg-neutral-100 hover:text-primary-600"
@@ -136,7 +136,7 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    "text-sm font-medium transition-all duration-200 px-4 py-2 rounded-full whitespace-nowrap",
+                    "text-sm font-medium transition-all duration-200 px-4 py-2 rounded-full",
                     pathname === link.href
                       ? "bg-primary-100 text-primary-700"
                       : "text-neutral-700 hover:bg-neutral-100 hover:text-primary-600"
@@ -149,7 +149,7 @@ export function Header() {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden xl:flex items-center space-x-2 whitespace-nowrap">
+          <div className="hidden xl:flex items-center space-x-2">
             <a
               href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`}
               className="text-sm font-medium text-neutral-700 hover:text-primary-600 transition-colors flex items-center space-x-2 px-3 py-2 rounded-full hover:bg-neutral-100"

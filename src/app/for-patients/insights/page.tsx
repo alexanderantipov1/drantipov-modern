@@ -5,11 +5,20 @@ import Link from "next/link"
 import { BookOpen, Calendar, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Patient Insights & Education | Dr. Antipov Oral Surgery",
   description:
     "Stay informed with expert insights on dental implants, oral surgery, and oral health from Dr. Alexander Antipov. Educational articles to help you make informed decisions.",
+  alternates: {
+    canonical: "/for-patients/insights",
+    languages: {
+      "en": "/for-patients/insights",
+      "x-default": "/for-patients/insights",
+    },
+  },
   keywords: [
     "dental implants",
     "oral surgery education",
@@ -18,12 +27,46 @@ export const metadata: Metadata = {
     "oral health insights",
     "dental implant care",
   ],
+  openGraph: {
+    title: "Patient Education — Insights & Articles",
+    description: "Expert insights on dental implants, oral surgery, recovery, and oral health from Dr. Antipov.",
+    images: [
+      {
+        url: "/images/procedures/dental-implants@2x-06d1b2ea.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Patient Education — Insights & Articles",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Patient Education — Insights & Articles",
+    description: "Expert insights on dental implants, oral surgery, recovery, and oral health from Dr. Antipov.",
+    images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
+  }
 }
 
 const blogPosts = [
   {
+    slug: "zygomatic-implants",
+    title: "Zygomatic Implants: When You Need Them and How They Work",
+    excerpt: "If you have been told that conventional dental implants are not possible because there is not enough bone in your upper jaw, zygomatic implants may be the solution. Learn how the procedure works, who qualifies, what the timeline looks like, and how cost compares to staged bone grafting.",
+    date: "April 28, 2026",
+    image: "/images/blog/2026-04-28/zygomatic-implants.jpg",
+    category: "Dental Implants",
+  },
+  {
+    slug: "same-day-implants",
+    title: "Same-Day Dental Implants (Immediate Load) — Myth or Reality?",
+    excerpt: "“Same-day implants” and “teeth in a day” are advertising lines every patient sees. Here is what you actually get the day of surgery, why the final prosthesis comes 4–6 months later, who qualifies for immediate loading, and what an honest surgeon will tell you about the risks.",
+    date: "April 28, 2026",
+    image: "/images/blog/2026-04-28/same-day-implants.jpg",
+    category: "Dental Implants",
+  },
+  {
     slug: "implants-vs-dentures",
-    title: "Say Goodbye to Dentures: Discover the Cutting-Edge Dental Implants of 2024",
+    title: "Say Goodbye to Dentures: Discover the Cutting-Edge Dental Implants of 2026",
     excerpt: "Dental implants have come a long way since their introduction in the 1960s. Explore the latest innovations in dental implant technology including 3D printing, nanotechnology, smart implants, and more.",
     date: "August 13, 2024",
     image: "/images/blog/2024-08-13/implants-vs-dentures-78639392.jpg",
@@ -66,26 +109,7 @@ const blogPosts = [
 export default function InsightsPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
-            <Badge className="text-base px-4 py-2 bg-primary-100 text-primary-700 hover:bg-primary-200">
-              <BookOpen className="h-4 w-4 inline mr-2" />
-              Patient Education
-            </Badge>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Insights & Education
-            </h1>
-
-            <p className="text-xl lg:text-2xl text-neutral-600">
-              Expert insights on dental implants, oral surgery, and oral health to help you make informed decisions
-              about your care
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-patients/insights"]!} />
 
       {/* Blog Posts Grid */}
       <Section background="default" padding="xl">

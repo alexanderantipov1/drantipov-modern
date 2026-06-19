@@ -269,7 +269,7 @@ export function ConsultationForm() {
           <div className="space-y-1">
             <p className="font-semibold text-red-900">Oops! Something went wrong.</p>
             <p className="text-sm text-red-700">
-              Please try again or call us directly at (916) 790-9693.
+              Please try again or call us directly at (916) 783-2110.
             </p>
           </div>
         </div>

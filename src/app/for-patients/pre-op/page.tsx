@@ -4,11 +4,20 @@ import { AlertTriangle, CheckCircle, XCircle, Phone, Calendar } from "lucide-rea
 import { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Pre-Operative Instructions | Preparing for Surgery | Dr. Antipov",
   description:
     "Essential pre-operative instructions for oral surgery with Dr. Antipov. Learn what to do before your procedure, what to bring, and how to prepare for a successful surgery.",
+  alternates: {
+    canonical: "/for-patients/pre-op",
+    languages: {
+      "en": "/for-patients/pre-op",
+      "x-default": "/for-patients/pre-op",
+    },
+  },
   keywords: [
     "pre-operative instructions",
     "oral surgery preparation",
@@ -17,6 +26,24 @@ export const metadata: Metadata = {
     "jaw surgery prep",
     "surgical preparation",
   ],
+  openGraph: {
+    title: "Pre-Op Instructions",
+    description: "Pre-operative preparation, fasting, medications, and what to expect before your surgery.",
+    images: [
+      {
+        url: "/images/invitations/information-fdeb739a.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Pre-Op Instructions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pre-Op Instructions",
+    description: "Pre-operative preparation, fasting, medications, and what to expect before your surgery.",
+    images: ["/images/invitations/information-fdeb739a.jpg"],
+  }
 }
 
 const beforeSurgeryChecklist = [
@@ -99,22 +126,7 @@ const dayOfSurgery = [
 export default function PreOpPage() {
   return (
     <>
-      {/* Hero Section */}
-      <Section background="gradient" padding="xl" className="pt-32">
-        <Container size="lg">
-          <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <Badge variant="secondary" className="mb-2">
-              Patient Resources
-            </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
-              Pre-Operative Instructions
-            </h1>
-            <p className="text-lg md:text-xl text-neutral-600 leading-relaxed">
-              Preparing properly for your surgery ensures the best possible outcome and smooth recovery. Please read these instructions carefully and contact us with any questions.
-            </p>
-          </div>
-        </Container>
-      </Section>
+      <PageHero {...heroContent["/for-patients/pre-op"]!} />
 
       {/* Important Notice */}
       <Section background="default" padding="md">
@@ -125,7 +137,7 @@ export default function PreOpPage() {
               <div>
                 <h3 className="text-lg font-semibold text-neutral-900 mb-2">Important Reminder</h3>
                 <p className="text-neutral-700 leading-relaxed">
-                  If you develop a cold, flu, fever, or any illness within 3 days of your surgery, please call our office immediately at <a href="tel:9167909693" className="text-primary-600 hover:underline font-semibold">(916) 790-9693</a>. We may need to reschedule your procedure for your safety.
+                  If you develop a cold, flu, fever, or any illness within 3 days of your surgery, please call our office immediately at <a href="tel:9167832110" className="text-primary-600 hover:underline font-semibold">(916) 783-2110</a>. We may need to reschedule your procedure for your safety.
                 </p>
               </div>
             </div>
@@ -286,7 +298,7 @@ export default function PreOpPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:9167909693"
+                href="tel:9167832110"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 transition-colors"
               >
                 <Phone className="h-5 w-5" />

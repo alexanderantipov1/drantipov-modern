@@ -3,3 +3,8 @@ export { ServiceCard } from "./ServiceCard"
 export { ExpertisePageHero } from "./ExpertisePageHero"
 export { BenefitsList } from "./BenefitsList"
 export { ProcessTimeline } from "./ProcessTimeline"
+
+export { HeroStats, AnimatedCounter } from "./HeroStats"
+export { DoctorQuote } from "./DoctorQuote"
+export { IconBenefits } from "./IconBenefits"
+export { VerticalProcessTimeline } from "./VerticalProcessTimeline"

@@ -81,7 +81,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="py-24 lg:py-32 relative overflow-hidden"
+      className="py-16 lg:py-20 relative overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-dark" />
@@ -99,7 +99,7 @@ export default function Testimonials() {
           <span className="text-primary font-semibold text-sm tracking-widest uppercase">
             Real Patient Reviews &amp; Testimonials
           </span>
-          <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-white tracking-tight">
+          <h2 className="font-serif mt-4 text-4xl sm:text-5xl font-bold text-white tracking-tight">
             Trusted by Thousands of
             <br />
             <span className="gradient-text">Patients Across Northern California</span>

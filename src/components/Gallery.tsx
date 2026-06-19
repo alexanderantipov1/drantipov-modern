@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -22,10 +23,10 @@ const procedureImages = [
 
 // Template placeholder images excluded (slider04-06, image-background01-03 are generic stock/watermarked assets)
 
-const testimonialPreviews = [
-  { src: "/images/testimonials/video-preview-1@2x-61d7adf2.jpg", label: "Patient Testimonial 1" },
-  { src: "/images/testimonials/video-preview-2@2x-65448b6e.jpg", label: "Patient Testimonial 2" },
-  { src: "/images/testimonials/video-preview-3@2x-adae89ec.jpg", label: "Patient Testimonial 3" },
+const testimonialVideos = [
+  { label: "Robert — All-on-4 Patient Story", videoId: "oH9rF2-DUQo" },
+  { label: "Jennifer — Bone Grafting & Implants", videoId: "_BFvqbGp7wU" },
+  { label: "David — Full-Arch Restoration", videoId: "mrMUren132I" },
 ];
 
 // Template placeholders excluded (pattern-background is stock collage, meet-the-doctor already used in About)
@@ -34,6 +35,50 @@ const additionalImages = [
   "/images/other-procedures/video-preview-1@2x-eb855a82.jpg",
   "/images/online-consultation/online-consult@2x-6555264c.jpg",
 ];
+
+function YouTubeLite({ videoId, label }: { videoId: string; label: string }) {
+  const [playing, setPlaying] = useState(false);
+
+  // Try maxres first, fall back to hqdefault if it 404s
+  const thumbnail = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+
+  if (playing) {
+    return (
+      <iframe
+        className="absolute inset-0 w-full h-full"
+        src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&controls=1&showinfo=0`}
+        title={label}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    );
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={() => setPlaying(true)}
+      className="group absolute inset-0 cursor-pointer"
+      aria-label={`Play video: ${label}`}
+    >
+      <Image
+        src={thumbnail}
+        alt=""
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, 50vw"
+      />
+      <div className="absolute inset-0 bg-dark/10 group-hover:bg-dark/20 transition-colors" />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="w-14 h-14 rounded-full bg-white/95 backdrop-blur-sm shadow-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+          <svg className="w-5 h-5 text-primary ml-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+          </svg>
+        </div>
+      </div>
+    </button>
+  );
+}
 
 export default function Gallery() {
   return (
@@ -79,18 +124,17 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* Video testimonials */}
-        <h3 className="text-lg font-bold text-dark mb-4">Video Testimonials</h3>
+        {/* Patient story videos */}
+        <h3 className="text-lg font-bold text-dark mb-4">Patient Story Highlights</h3>
+        <p className="text-sm text-muted mb-6">Real video testimonials from our patients.</p>
         <div className="grid md:grid-cols-3 gap-4 mb-12">
-          {testimonialPreviews.map((t, i) => (
-            <div key={i} className="relative rounded-2xl overflow-hidden">
-              <Image src={t.src} alt={t.label} width={600} height={350} className="w-full h-auto" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                  <svg className="w-6 h-6 text-primary ml-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                  </svg>
-                </div>
+          {testimonialVideos.map((t) => (
+            <div key={t.videoId} className="rounded-2xl overflow-hidden bg-dark shadow-md">
+              <div className="relative aspect-video">
+                <YouTubeLite videoId={t.videoId} label={t.label} />
+              </div>
+              <div className="px-4 py-3 bg-white">
+                <p className="text-dark font-semibold text-sm">{t.label}</p>
               </div>
             </div>
           ))}

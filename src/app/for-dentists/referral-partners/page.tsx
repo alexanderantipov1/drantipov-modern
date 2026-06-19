@@ -1,14 +1,40 @@
 import { Section, Container, GlassCard } from "@/components/sections"
-import { ReferralHero } from "@/components/for-dentists"
 import { BenefitsList, ProcessTimeline } from "@/components/expertise"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Phone, Award, Users, Clock, FileText, MessageSquare, CheckCircle } from "lucide-react"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 
 export const metadata = {
-  title: "Dental Referral Partners | Trusted Oral Surgery Referrals | Dr. Antipov",
+  title: "Referral Partners — Trusted Oral Surgery",
   description:
     "Partner with Dr. Antipov for seamless oral surgery referrals. Comprehensive communication, exceptional patient care, and collaborative treatment planning. Serving Northern California dentists.",
+  alternates: {
+    canonical: "/for-dentists/referral-partners",
+    languages: {
+      "en": "/for-dentists/referral-partners",
+      "x-default": "/for-dentists/referral-partners",
+    },
+  },
+  openGraph: {
+    title: "Referral Partners — Trusted Specialists",
+    description: "Our network of trusted dental specialists for collaborative patient care.",
+    images: [
+      {
+        url: "/images/procedures/dental-implants@2x-06d1b2ea.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Referral Partners — Trusted Specialists",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Referral Partners — Trusted Specialists",
+    description: "Our network of trusted dental specialists for collaborative patient care.",
+    images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
+  }
 }
 
 const benefits = [
@@ -87,7 +113,7 @@ const services = [
 export default function ReferralPartnersPage() {
   return (
     <>
-      <ReferralHero />
+      <PageHero {...heroContent["/for-dentists/referral-partners"]!} />
 
       {/* Why Choose Dr. Antipov Section */}
       <Section background="default" padding="xl">
@@ -253,14 +279,14 @@ export default function ReferralPartnersPage() {
                 <Link href="/contact">Submit Referral</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href="tel:9167909693">
+                <a href="tel:9167832110">
                   <Phone className="mr-2 h-5 w-5" />
                   Call Referral Line
                 </a>
               </Button>
             </div>
             <div className="pt-4 space-y-2 text-sm text-neutral-600">
-              <p>📞 Direct referral line: (916) 790-9693</p>
+              <p>📞 Direct referral line: (916) 783-2110</p>
               <p>📧 Email referrals: referrals@drantipov.com</p>
               <p>⏰ Same-day emergency appointments available</p>
             </div>

@@ -8,9 +8,16 @@ import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
-  title: "Dental Implant Complications: Understanding Risks and Management | Dr. Antipov",
+  title: "Dental Implant Complications — Risks & Management",
   description:
     "Learn about potential dental implant complications including infection, implant failure, and nerve damage. Understand risks and prevention strategies.",
+  alternates: {
+    canonical: "/for-patients/insights/dental-implant-complications",
+    languages: {
+      "en": "/for-patients/insights/dental-implant-complications",
+      "x-default": "/for-patients/insights/dental-implant-complications",
+    },
+  },
   keywords: [
     "dental implant complications",
     "implant failure",
@@ -19,6 +26,24 @@ export const metadata: Metadata = {
     "dental implant safety",
     "implant success rate",
   ],
+  openGraph: {
+    title: "Dental Implant Complications",
+    description: "Understanding dental implant risks — infection, failure, nerve damage — and how to prevent them.",
+    images: [
+      {
+        url: "/images/blog/2023-04-14/dental-implant-complications-48eec3cd.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Dental Implant Complications",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dental Implant Complications",
+    description: "Understanding dental implant risks — infection, failure, nerve damage — and how to prevent them.",
+    images: ["/images/blog/2023-04-14/dental-implant-complications-48eec3cd.jpg"],
+  }
 }
 
 export default function DentalImplantComplicationsPost() {
@@ -67,7 +92,13 @@ export default function DentalImplantComplicationsPost() {
               Dental Implant Complications: Understanding Risks and How to Manage Them
             </h1>
 
-            {/* Featured Image */}
+            
+
+            {/* E-E-A-T: Medically reviewed byline */}
+            <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
+              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+            </p>
+{/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
               <Image
                 src="/images/blog/2023-04-14/dental-implant-complications-48eec3cd.jpg"
@@ -75,6 +106,7 @@ export default function DentalImplantComplicationsPost() {
                 fill
                 className="object-cover"
                 priority
+                sizes="100vw"
               />
             </div>
 
@@ -347,6 +379,18 @@ export default function DentalImplantComplicationsPost() {
                 for decades to come.
               </p>
             </div>
+
+            {/* Sources / Authoritative References */}
+            <section className="mt-12 pt-8 border-t border-neutral-200">
+              <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
+              <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
+              <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/30030610/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Renvert S, Polyzois I — Treatment of pathologic peri-implant pockets</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS Position Paper — Dental Implants</a></li>
+                <li><a href="https://www.cochrane.org/CD003815/ORAL_interventions-for-replacing-missing-teeth-different-types-of-dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Cochrane Oral Health — Interventions for replacing missing teeth</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/18724864/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Heitz-Mayfield LJ — Peri-implant diseases: diagnosis and risk indicators</a></li>
+              </ul>
+            </section>
 
             {/* Author Info */}
             <GlassCard className="mt-12 p-8">

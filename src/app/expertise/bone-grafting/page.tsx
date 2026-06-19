@@ -1,12 +1,16 @@
 import { Section, Container, GlassCard } from "@/components/sections"
 import {
   ExpertisePageHero,
-  BenefitsList,
-  ProcessTimeline,
+  HeroStats,
+  AnimatedCounter,
+  DoctorQuote,
+  IconBenefits,
+  VerticalProcessTimeline,
 } from "@/components/expertise"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Phone, Award, Clock, Layers } from "lucide-react"
+import { Phone, Award, Clock, Layers, Bone, ShieldCheck, Sparkles, TrendingUp, Hospital, Calendar, Stethoscope, HeartHandshake } from "lucide-react"
+import FloatingArticleCTA from "@/components/FloatingArticleCTA"
 import {
   Accordion,
   AccordionContent,
@@ -16,23 +20,73 @@ import {
 import {
   getMedicalProcedureSchema,
   getBreadcrumbSchema,
+  getFAQSchema,
   structuredDataScript,
 } from "@/lib/structured-data"
 import { siteConfig } from "@/constants/siteConfig"
+import DualCTA from "@/components/DualCTA"
 
 export const metadata = {
-  title: "Bone Grafting & Augmentation | Implant Foundation | Dr. Antipov",
-  description:
-    "Advanced bone grafting techniques to restore bone volume for successful dental implants. Dr. Antipov specializes in ridge augmentation, sinus lifts, and socket preservation.",
+  title: { absolute: "Bone Grafting & Augmentation | Dr. Antipov" },
+  description: "Sinus lift, ridge preservation, and bone grafting to prepare your jaw for dental implants. Board-certified oral surgeon, Roseville CA.",
+  alternates: {
+    canonical: "/expertise/bone-grafting",
+    languages: {
+      "en": "/expertise/bone-grafting",
+      "x-default": "/expertise/bone-grafting",
+    },
+  },
+  openGraph: {
+    title: "Bone Grafting & Augmentation",
+    description: "Advanced bone grafting techniques rebuild jaw volume for stable implants — sinus lift, ridge augmentation.",
+    images: [
+      {
+        url: "/images/procedures/dental-implants@2x-06d1b2ea.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bone Grafting & Augmentation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bone Grafting & Augmentation",
+    description: "Advanced bone grafting techniques rebuild jaw volume for stable implants — sinus lift, ridge augmentation.",
+    images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
+  }
 }
 
-const benefits = [
-  "Enables dental implant placement where it wasn't previously possible",
-  "Prevents further bone loss and maintains facial structure",
-  "Creates a solid, stable foundation for long-lasting implants",
-  "Improves aesthetic outcomes by supporting natural facial contours",
-  "High success rate with advanced grafting materials and techniques",
-  "Can restore bone loss from periodontal disease or trauma",
+const iconBenefits = [
+  {
+    icon: <Bone className="h-5 w-5" />,
+    title: "Enables implant placement",
+    description: "Rebuilds bone where implants were previously impossible",
+  },
+  {
+    icon: <ShieldCheck className="h-5 w-5" />,
+    title: "Prevents further bone loss",
+    description: "Stops the cascade of shrinkage after tooth loss",
+  },
+  {
+    icon: <HeartHandshake className="h-5 w-5" />,
+    title: "Stable, long-lasting foundation",
+    description: "Solid base for implants that lasts decades",
+  },
+  {
+    icon: <Sparkles className="h-5 w-5" />,
+    title: "Preserves facial contours",
+    description: "Supports natural cheek and lip shape",
+  },
+  {
+    icon: <TrendingUp className="h-5 w-5" />,
+    title: "High success with modern materials",
+    description: "Allograft, xenograft, and synthetic options",
+  },
+  {
+    icon: <Stethoscope className="h-5 w-5" />,
+    title: "Reverses bone damage",
+    description: "Restores volume lost to periodontal disease or trauma",
+  },
 ]
 
 const processSteps = [
@@ -136,6 +190,7 @@ export default function BoneGraftingPage() {
         "Healing period of 3-6 months for osseointegration. Verification scan to confirm adequate bone volume before implant placement.",
       bodyLocation: "Jaw",
     }),
+    getFAQSchema(faqs),
     getBreadcrumbSchema([
       { name: "Home", url: siteConfig.url },
       { name: "Expertise", url: `${siteConfig.url}/expertise` },
@@ -144,6 +199,59 @@ export default function BoneGraftingPage() {
         url: `${siteConfig.url}/expertise/bone-grafting`,
       },
     ]),
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: "Bone Graft Materials",
+      description: "Organic and synthetic bone graft materials used by Dr. Antipov for ridge augmentation, sinus lift, and socket preservation in Roseville, CA.",
+      url: `${siteConfig.url}/expertise/bone-grafting#organic-materials`,
+      numberOfItems: 4,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          item: {
+            "@type": "MedicalEntity",
+            name: "Autogenous Bone Graft",
+            alternateName: "Autograft",
+            description: "Bone harvested from the patient's own body (chin, ramus, or hip). The gold standard for bone grafting due to its viable cells and growth factors.",
+            url: `${siteConfig.url}/expertise/bone-grafting#organic-materials`,
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          item: {
+            "@type": "MedicalEntity",
+            name: "Allograft",
+            description: "Processed bone from human tissue banks — sterilized and demineralized. The most common choice for routine bone grafting, with no secondary surgical site.",
+            url: `${siteConfig.url}/expertise/bone-grafting#organic-materials`,
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          item: {
+            "@type": "MedicalEntity",
+            name: "Xenograft",
+            alternateName: "Bovine Bone Graft (Bio-Oss)",
+            description: "Processed bovine bone with slow resorption — excellent for sinus lift and ridge preservation cases requiring long-term volume stability.",
+            url: `${siteConfig.url}/expertise/bone-grafting#organic-materials`,
+          },
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          item: {
+            "@type": "MedicalEntity",
+            name: "Synthetic Bone Graft (Alloplast)",
+            alternateName: "Bioactive Ceramic",
+            description: "Lab-made bioactive ceramics including hydroxyapatite, tricalcium phosphate, and bioactive glass. No donor risk, resorbable as new bone forms.",
+            url: `${siteConfig.url}/expertise/bone-grafting#organic-materials`,
+          },
+        },
+      ],
+    },
   ]
 
   return (
@@ -155,8 +263,33 @@ export default function BoneGraftingPage() {
       <ExpertisePageHero
         badge="Foundation for Success"
         title="Bone Grafting & Augmentation"
-        subtitle="Advanced techniques to restore bone volume for successful dental implants"
+        subtitle="Dental bone grafting is a surgical procedure that adds bone material to a jaw with insufficient volume, rebuilding the foundation required for stable, long-lasting dental implants."
+        image="/images/hero/04-bone-graft-healing.jpg"
       />
+
+      {/* Animated stat cards overlapping hero bottom */}
+      <HeroStats stats={[
+          {
+            icon: <Clock className="h-5 w-5" />,
+            value: <><AnimatedCounter to={4} />–6 mo</>,
+            label: "Healing & integration",
+          },
+          {
+            icon: <ShieldCheck className="h-5 w-5" />,
+            value: <><AnimatedCounter to={95} suffix="%+" /></>,
+            label: "Graft acceptance rate",
+          },
+          {
+            icon: <Hospital className="h-5 w-5" />,
+            value: "In-office",
+            label: "Outpatient procedure",
+          },
+          {
+            icon: <TrendingUp className="h-5 w-5" />,
+            value: <><AnimatedCounter to={2} />–3 wk</>,
+            label: "Initial recovery",
+          },
+        ]} />
 
       {/* What It Is Section */}
       <Section background="default" padding="xl">
@@ -195,6 +328,13 @@ export default function BoneGraftingPage() {
         </Container>
       </Section>
 
+      {/* Doctor Quote — personal touch */}
+      <DoctorQuote
+        quote="Bone grafting is the quiet hero of modern implant dentistry. Without a solid foundation, even the most advanced implant cannot last. We build the base so the smile holds for decades."
+        author="Dr. Alexander Antipov, DDS"
+        role="Board-Certified Oral & Maxillofacial Surgeon"
+      />
+
       {/* Benefits Section */}
       <Section background="gradient" padding="xl">
         <Container size="lg">
@@ -207,7 +347,7 @@ export default function BoneGraftingPage() {
                 The essential first step for many dental implant patients
               </p>
 
-              <BenefitsList benefits={benefits} />
+              <IconBenefits items={iconBenefits} columns={2} />
             </div>
 
             <div className="space-y-6">
@@ -243,7 +383,7 @@ export default function BoneGraftingPage() {
       </Section>
 
       {/* Types of Bone Grafting */}
-      <Section background="default" padding="xl">
+      <Section id="sinus-lift" background="default" padding="xl" className="scroll-mt-24">
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
@@ -265,6 +405,75 @@ export default function BoneGraftingPage() {
         </Container>
       </Section>
 
+      {/* Graft Materials — Organic & Synthetic */}
+      <Section id="organic-materials" background="default" padding="xl" className="scroll-mt-24 bg-light">
+        <Container size="lg">
+          <div className="text-center space-y-4 mb-12">
+            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+              Bone Graft Materials
+            </h2>
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+              Organic and synthetic options — Dr. Antipov selects the best material for your specific case
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <GlassCard variant="hover">
+              <div className="flex items-baseline gap-3 mb-3">
+                <h3 className="text-xl font-semibold text-neutral-900">Autogenous Bone</h3>
+                <span className="text-xs uppercase tracking-wider text-primary-600 font-semibold">Gold standard · Organic</span>
+              </div>
+              <p className="text-neutral-700 leading-relaxed">
+                Bone harvested from your own body (chin, ramus, or hip). Highest success rate because it contains
+                living cells and growth factors. Requires a secondary surgical site but offers the most predictable
+                integration.
+              </p>
+            </GlassCard>
+
+            <GlassCard variant="hover">
+              <div className="flex items-baseline gap-3 mb-3">
+                <h3 className="text-xl font-semibold text-neutral-900">Allograft</h3>
+                <span className="text-xs uppercase tracking-wider text-primary-600 font-semibold">Human donor · Organic</span>
+              </div>
+              <p className="text-neutral-700 leading-relaxed">
+                Processed bone from human tissue banks, sterilized and demineralized. Avoids a second surgical site,
+                with excellent biocompatibility and a strong evidence base. The most common choice for routine
+                grafting.
+              </p>
+            </GlassCard>
+
+            <GlassCard variant="hover">
+              <div className="flex items-baseline gap-3 mb-3">
+                <h3 className="text-xl font-semibold text-neutral-900">Xenograft</h3>
+                <span className="text-xs uppercase tracking-wider text-primary-600 font-semibold">Bovine · Organic</span>
+              </div>
+              <p className="text-neutral-700 leading-relaxed">
+                Processed bovine bone (most commonly Bio-Oss). Excellent for ridge preservation and sinus lift
+                cases — slow resorption rate gives the graft long-term volume stability.
+              </p>
+            </GlassCard>
+
+            <GlassCard variant="hover">
+              <div className="flex items-baseline gap-3 mb-3">
+                <h3 className="text-xl font-semibold text-neutral-900">Synthetic (Alloplast)</h3>
+                <span className="text-xs uppercase tracking-wider text-primary-600 font-semibold">Lab-made</span>
+              </div>
+              <p className="text-neutral-700 leading-relaxed">
+                Bioactive ceramics (hydroxyapatite, tricalcium phosphate, bioactive glass). No donor risk,
+                consistent quality, and resorbable as new bone forms. Suitable for patients who prefer non-organic
+                options.
+              </p>
+            </GlassCard>
+          </div>
+
+          <p className="mt-10 text-center text-neutral-600 max-w-3xl mx-auto">
+            Dr. Antipov determines the optimal graft material after your CBCT scan, taking into account graft
+            volume, location, healing time, and your personal preferences. All materials used are FDA-cleared and
+            backed by peer-reviewed clinical data.
+          </p>
+        </Container>
+      </Section>
+
       {/* The Process Section */}
       <Section background="gradient" padding="xl">
         <Container size="lg">
@@ -279,7 +488,7 @@ export default function BoneGraftingPage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <ProcessTimeline steps={processSteps} />
+            <VerticalProcessTimeline steps={processSteps} />
           </div>
         </Container>
       </Section>
@@ -312,30 +521,17 @@ export default function BoneGraftingPage() {
         </Container>
       </Section>
 
-      {/* CTA Section */}
-      <Section background="gradient" padding="xl">
-        <Container size="lg">
-          <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
-              Let's Evaluate Your Bone Health
-            </h2>
-            <p className="text-xl text-neutral-600">
-              Schedule a consultation with 3D imaging to determine if bone grafting is right for you
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg">
-                <Link href="/contact">Schedule Consultation</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <a href="tel:9167909693">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call (916) 790-9693
-                </a>
-              </Button>
-            </div>
-          </div>
-        </Container>
-      </Section>
+      <DualCTA variant="implants"
+        heading="Bone Grafting for Implant Success"
+        subheading="Bone grafting and sinus lifts to rebuild the foundation for future implants."
+      />
+
+      {/* Floating sticky CTA — appears after 25% scroll */}
+      <FloatingArticleCTA
+        href="/contact"
+        label="Book free consultation"
+        showAfterPct={25}
+      />
     </>
   )
 }

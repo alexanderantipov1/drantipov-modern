@@ -23,7 +23,7 @@ const referralBenefits = [
 
 export default function ReferringDoctors() {
   return (
-    <section id="referring-doctors" className="py-24 lg:py-32 bg-white">
+    <section id="referring-doctors" className="py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
@@ -59,7 +59,7 @@ export default function ReferringDoctors() {
                 Download Referral Form
               </a>
               <a
-                href="tel:9167909693"
+                href="tel:9167832110"
                 className="inline-flex items-center gap-2 px-6 py-3 border-2 border-dark/10 text-dark rounded-2xl font-semibold hover:border-primary hover:text-primary transition-all duration-300"
               >
                 Call to Discuss a Case

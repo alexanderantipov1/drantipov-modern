@@ -1,14 +1,24 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { Section, Container } from "@/components/sections"
-import { CaseHero, CaseGrid } from "@/components/cases"
+import { CaseGrid } from "@/components/cases"
+import PageHero from "@/components/PageHero"
+import heroContent from "@/lib/heroContent"
 import { Button } from "@/components/ui/button"
 import { caseCategories, allCases } from "@/constants/cases"
 import { ArrowRight, Stethoscope, Award, Users } from "lucide-react"
+import DualCTA from "@/components/DualCTA"
 
 export const metadata: Metadata = {
-  title: "Surgical Cases - Real Patient Transformations | Dr. Alexander Antipov",
-  description: "Explore Dr. Antipov's surgical case portfolio featuring corrective jaw surgery, dental implants, and facial cosmetic procedures. See real before-and-after results from Northern California's premier oral surgeon.",
+  title: "Surgical Cases — Real Patient Transformations",
+  description: "Browse real surgical cases from Dr. Antipov — jaw surgery, dental implants, and facial cosmetic procedures with before-and-after results.",
+  alternates: {
+    canonical: "/surgical-cases",
+    languages: {
+      "en": "/surgical-cases",
+      "x-default": "/surgical-cases",
+    },
+  },
   openGraph: {
     title: "Surgical Cases - Real Patient Transformations | Dr. Alexander Antipov",
     description: "Explore Dr. Antipov's surgical case portfolio featuring corrective jaw surgery, dental implants, and facial cosmetic procedures.",
@@ -21,16 +31,7 @@ export default function SurgicalCasesPage() {
 
   return (
     <>
-      <CaseHero
-        title="Surgical Cases"
-        description="Transforming lives through precision surgery. Explore our comprehensive portfolio of successful surgical outcomes across corrective jaw surgery, dental implants, and facial cosmetic procedures."
-        stats={[
-          { label: "Total Cases", value: `${allCases.length}+` },
-          { label: "Jaw Surgery", value: `${caseCategories[0].count}` },
-          { label: "Dental Implants", value: `${caseCategories[1].count}` },
-          { label: "Cosmetic Surgery", value: `${caseCategories[2].count}` },
-        ]}
-      />
+      <PageHero {...heroContent["/surgical-cases"]!} />
 
       {/* Case Categories */}
       <Section background="default" padding="xl">
@@ -49,7 +50,7 @@ export default function SurgicalCasesPage() {
               <Link
                 key={category.id}
                 href={`/surgical-cases/${category.id}`}
-                className="group bg-white rounded-2xl p-8 shadow-glass hover:shadow-glass-lg transition-all duration-300 hover:-translate-y-1"
+                className="group bg-white/75 backdrop-blur-xl border border-white/40 rounded-3xl p-8 shadow-md hover:shadow-[0_20px_60px_-15px_rgba(14,62,94,0.25)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:bg-white/85"
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className="w-12 h-12 rounded-xl bg-primary-50 flex items-center justify-center group-hover:bg-primary-100 transition-colors">
@@ -108,27 +109,10 @@ export default function SurgicalCasesPage() {
         </Container>
       </Section>
 
-      {/* CTA Section */}
-      <Section background="default" padding="xl">
-        <Container size="lg">
-          <div className="max-w-3xl mx-auto text-center space-y-8 bg-gradient-to-br from-primary-50 to-accent-50 rounded-3xl p-12">
-            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
-              Ready to Begin Your Transformation?
-            </h2>
-            <p className="text-xl text-neutral-600">
-              Schedule a consultation with Dr. Antipov to discuss your surgical options and create a personalized treatment plan
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg">
-                <Link href="/for-patients/consultation">Schedule Consultation</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href="/contact">Contact Us</Link>
-              </Button>
-            </div>
-          </div>
-        </Container>
-      </Section>
+      <DualCTA variant="dual"
+        heading="See How We Can Help"
+        subheading="Browse 21 real surgical cases by Dr. Antipov and Dr. Kahwach — then choose the right path for your treatment."
+      />
     </>
   )
 }

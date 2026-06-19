@@ -7,21 +7,21 @@ const locations = [
   {
     name: "Roseville, CA",
     address: "911 Reserve Dr, Suite 150\nRoseville, CA 95678",
-    phone: "(916) 790-9693",
+    phone: "(916) 783-2110",
     image: "/images/locations/roseville-c84b8e17.jpg",
     primary: true,
   },
   {
     name: "San Francisco, CA",
     address: "San Francisco Bay Area",
-    phone: "(916) 790-9693",
+    phone: "(916) 783-2110",
     image: "/images/locations/san-francisco-0625308b.jpg",
     primary: false,
   },
   {
     name: "Virtual Consultation",
     address: "Available worldwide\nvia secure video call",
-    phone: "(916) 790-9693",
+    phone: "(916) 783-2110",
     image: "/images/locations/virtual-consultation-e7315116.jpg",
     primary: false,
   },
@@ -29,7 +29,7 @@ const locations = [
 
 export default function Locations() {
   return (
-    <section id="locations" className="py-24 lg:py-32 bg-light">
+    <section id="locations" className="py-16 lg:py-20 bg-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,9 @@ export default function Locations() {
               className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-500"
             >
               <div className="relative h-48 overflow-hidden">
-                <Image src={loc.image} alt={loc.name} fill className="object-cover" />
+                <Image src={loc.image} alt={loc.name} fill className="object-cover"
+          sizes="100vw"
+        />
                 {loc.primary && (
                   <div className="absolute top-3 left-3 px-3 py-1 bg-primary text-white text-xs font-semibold rounded-full">
                     Main Office
@@ -80,15 +82,6 @@ export default function Locations() {
           ))}
         </div>
 
-        {/* Additional location image */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="mt-8 rounded-3xl overflow-hidden"
-        >
-          <Image src="/images/locations/locations-8be94cf8.jpg" alt="Dr. Antipov oral surgery offices — Roseville, Sacramento, and San Francisco Bay Area" width={1400} height={400} className="w-full h-48 object-cover rounded-3xl" />
-        </motion.div>
       </div>
     </section>
   );

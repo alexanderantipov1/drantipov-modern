@@ -52,8 +52,8 @@ export default function Contact() {
                 <div>
                   <h4 className="font-bold text-dark">Call Us</h4>
                   <p className="text-muted mt-1">
-                    <a href="tel:9167909693" className="hover:text-primary transition-colors">
-                      (916) 790-9693
+                    <a href="tel:9167832110" className="hover:text-primary transition-colors">
+                      (916) 783-2110
                     </a>
                   </p>
                 </div>
@@ -66,7 +66,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-dark">Email Us</h4>
-                  <p className="text-muted mt-1">info@drantipov.com</p>
+                  <p className="text-muted mt-1">info@galleriaoms.com</p>
                 </div>
               </div>
             </div>

@@ -1,7 +1,3 @@
-"use client";
-
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 
 const faqs = [
@@ -100,65 +96,42 @@ const faqs = [
   },
 ];
 
-function FAQItem({ q, a }: { q: string; a: string }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="border-b border-dark/5 last:border-0">
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-start justify-between gap-4 py-5 text-left group"
-      >
-        <h3 className="text-sm sm:text-base font-semibold text-dark group-hover:text-primary transition-colors pr-4">
-          {q}
-        </h3>
-        <svg
-          className={`w-5 h-5 text-muted shrink-0 mt-0.5 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="overflow-hidden"
-          >
-            <p className="pb-5 text-muted text-sm leading-relaxed pr-8">
-              {a}
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
+// All Q&A flattened for FAQPage JSON-LD (SSR-friendly, crawlable by AI engines)
+function buildFaqSchema() {
+  const mainEntity = faqs.flatMap((cat) =>
+    cat.questions.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
   );
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity,
+  };
 }
 
 export default function FAQ() {
-  const [activeCategory, setActiveCategory] = useState("Dental Implants");
-
-  const activeFaq = faqs.find((f) => f.category === activeCategory)!;
+  const faqSchema = buildFaqSchema();
 
   return (
-    <section id="faq" className="py-24 lg:py-32 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center max-w-2xl mx-auto mb-12"
-        >
+    <section id="faq" className="py-16 lg:py-20 bg-white">
+      {/* FAQPage JSON-LD for Google AI Overview, Perplexity, ChatGPT Search */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-primary font-semibold text-sm tracking-widest uppercase">
             Frequently Asked Questions
           </span>
-          <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-dark tracking-tight">
+          <h2 className="font-serif mt-4 text-4xl sm:text-5xl font-bold text-dark tracking-tight">
             Answers to Your
             <br />
             <span className="gradient-text">Most Common Questions</span>
@@ -166,47 +139,47 @@ export default function FAQ() {
           <p className="mt-4 text-muted text-lg">
             Find answers about dental implants, All-on-4, zygomatic implants, jaw surgery, bone grafting, facial cosmetic procedures, costs, financing, and more.
           </p>
-        </motion.div>
-
-        {/* Category tabs */}
-        <div className="flex justify-center mb-10">
-          <div className="inline-flex bg-light rounded-2xl p-1.5 flex-wrap gap-1 justify-center">
-            {faqs.map((cat) => (
-              <button
-                key={cat.category}
-                onClick={() => setActiveCategory(cat.category)}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 ${
-                  activeCategory === cat.category
-                    ? "bg-primary text-white shadow-md"
-                    : "text-muted hover:text-dark"
-                }`}
-              >
-                {cat.category}
-              </button>
-            ))}
-          </div>
         </div>
 
-        {/* Questions */}
-        <motion.div
-          key={activeCategory}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
-          className="bg-light rounded-3xl p-6 sm:p-8"
-        >
-          {activeFaq.questions.map((item) => (
-            <FAQItem key={item.q} q={item.q} a={item.a} />
+        {/* All categories rendered server-side; first question of each is open for visibility */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 lg:[&>:last-child:nth-child(odd)]:col-span-2 lg:[&>:last-child:nth-child(odd)]:max-w-3xl lg:[&>:last-child:nth-child(odd)]:mx-auto">
+          {faqs.map((cat) => (
+            <div
+              key={cat.category}
+              id={`faq-${cat.category.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+              className="bg-light rounded-3xl p-6 sm:p-8"
+            >
+              <h3 className="text-2xl font-bold text-dark mb-6">{cat.category}</h3>
+              <div>
+                {cat.questions.map((item, idx) => (
+                  <details
+                    key={item.q}
+                    open={idx === 0}
+                    className="group border-b border-dark/5 last:border-0 py-5"
+                  >
+                    <summary className="flex items-start justify-between gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                      <h4 className="text-sm sm:text-base font-semibold text-dark group-hover:text-primary transition-colors pr-4">
+                        {item.q}
+                      </h4>
+                      <svg
+                        className="w-5 h-5 text-muted shrink-0 mt-0.5 transition-transform duration-300 group-open:rotate-180"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </summary>
+                    <p className="pt-3 text-muted text-sm leading-relaxed pr-8">{item.a}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
           ))}
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-          className="mt-10 text-center"
-        >
+        <div className="mt-10 text-center">
           <p className="text-muted text-sm mb-4">
             Still have questions? We&apos;re happy to help.
           </p>
@@ -220,7 +193,7 @@ export default function FAQ() {
               </svg>
             </button>
           </ConsultationModal>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

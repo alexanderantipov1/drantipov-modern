@@ -301,8 +301,14 @@ export default function ZirconiaArchesPost() {
 
             <GlassCard className="mt-12 p-8">
               <div className="flex items-start gap-6">
-                <div className="w-20 h-20 rounded-full bg-primary-100 flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl font-serif font-bold text-primary-700">DA</span>
+                <div className="relative w-20 h-20 rounded-full overflow-hidden bg-primary-100 flex-shrink-0">
+                  <Image
+                    src="/images/doctor-hand3-cutout.png"
+                    alt="Dr. Alexander V. Antipov, DDS"
+                    fill
+                    className="object-cover object-top"
+                    sizes="80px"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2">Dr. Alexander V. Antipov</h3>

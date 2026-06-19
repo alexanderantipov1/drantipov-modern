@@ -154,7 +154,7 @@ export default function About() {
               <div className="grid grid-cols-3 gap-3">
                 <div className="col-span-2 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md">
                   <Image
-                    src="/images/about/neodent-award-doctor-v2.jpeg"
+                    src="/images/about/neodent-award-doctor-v3.jpeg"
                     alt="Dr. Alexander Antipov receiving the 2026 Neodent Elite Practitioner Award"
                     fill
                     className="object-cover"

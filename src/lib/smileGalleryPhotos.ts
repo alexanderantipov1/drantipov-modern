@@ -39,5 +39,9 @@ export const behindTheScenesPhotos: SmilePhoto[] = [
   { src: "/images/gallery-behind-scenes/surgery-14.jpeg", alt: "Coordinated surgical team during an implant procedure", caption: "In Surgery" },
   { src: "/images/gallery-behind-scenes/surgery-15.jpeg", alt: "Dr. Antipov and assistants during a dental implant surgery", caption: "In Surgery" },
   { src: "/images/gallery-behind-scenes/surgery-16.jpeg", alt: "Wide view of the surgical operatory during a procedure", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-17.jpeg", alt: "Dr. Antipov and assistant preparing a patient in the surgical suite", caption: "In Surgery" },
+  { src: "/images/gallery-behind-scenes/surgery-18.jpeg", alt: "Surgical team preparing for a full-arch procedure in the operatory", caption: "In Surgery" },
   { src: "/images/gallery-behind-scenes/with-patients-01.jpeg", alt: "Happy patients with Dr. Antipov after treatment", caption: "Happy Patients" },
+  { src: "/images/gallery-behind-scenes/with-patients-02.jpeg", alt: "Dr. Antipov with a smiling patient after dental implant treatment", caption: "Happy Patients" },
+  { src: "/images/gallery-behind-scenes/with-patients-03.jpeg", alt: "Dr. Antipov with a happy full-arch implant patient", caption: "Happy Patients" },
 ];

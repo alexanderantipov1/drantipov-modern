@@ -49,6 +49,46 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "full-mouth-dental-implants-cost-process",
+    title: "Full Mouth Dental Implants in Roseville & Sacramento: Cost, Process, and What to Expect",
+    excerpt: "A complete guide to full mouth dental implants in the Sacramento region — All-on-4, the step-by-step process, honest cost ranges, candidacy, and what separates a lasting result from a failure.",
+    date: "June 19, 2026",
+    image: "/images/blog/2026-06-19/full-mouth-dental-implants.png",
+    category: "Dental Implants",
+  },
+  {
+    slug: "all-on-4-vs-all-on-6",
+    title: "All-on-4 vs All-on-6: Which Is Better?",
+    excerpt: "Implant count, bone density needs, cost, recovery time, and stability compared — so you can understand which full-arch approach actually fits your anatomy and goals.",
+    date: "June 19, 2026",
+    image: "/images/blog/2026-06-19/all-on-4-vs-all-on-6.png",
+    category: "Dental Implants",
+  },
+  {
+    slug: "all-on-x-dental-implants-cost",
+    title: "All-on-X Dental Implants Cost Explained: 4, 6, or 8 Implants?",
+    excerpt: "What All-on-X really means, how cost changes between 4, 6, and 8 implants per arch, what belongs in an honest quote, and how to decide what your case actually needs.",
+    date: "June 19, 2026",
+    image: "/images/blog/2026-06-19/all-on-x-cost.png",
+    category: "Dental Implants",
+  },
+  {
+    slug: "zirconia-arches",
+    title: "What Are Zirconia Arches? Benefits, Cost & Lifespan",
+    excerpt: "Zirconia arches are the gold standard for full-arch dental implants. How they're made, why they last 15–20+ years, what they cost, and how they compare to acrylic and PFM.",
+    date: "June 19, 2026",
+    image: "/images/blog/2026-06-19/zirconia-arches.png",
+    category: "Dental Implants",
+  },
+  {
+    slug: "hybrid-dentures-vs-fixed-implant-bridges",
+    title: "Hybrid Dentures vs Fixed Implant Bridges",
+    excerpt: "Choosing a full-arch restoration? Compare implant-retained hybrid dentures and fixed implant bridges by feel, cost, maintenance, and longevity to find the right fit.",
+    date: "June 19, 2026",
+    image: "/images/blog/2026-06-19/hybrid-vs-fixed.png",
+    category: "Dental Implants",
+  },
+  {
     slug: "zygomatic-implants",
     title: "Zygomatic Implants: When You Need Them and How They Work",
     excerpt: "If you have been told that conventional dental implants are not possible because there is not enough bone in your upper jaw, zygomatic implants may be the solution. Learn how the procedure works, who qualifies, what the timeline looks like, and how cost compares to staged bone grafting.",

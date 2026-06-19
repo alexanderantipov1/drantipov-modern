@@ -12,6 +12,7 @@ const stats = [
 ];
 
 const antipovCredentials = [
+  "2026 Neodent Elite Practitioner Award (Straumann Group)",
   "Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS)",
   "Member, American Association of Oral & Maxillofacial Surgeons (AAOMS)",
   "Member, California Association of Oral & Maxillofacial Surgeons (CALAOMS)",
@@ -138,6 +139,54 @@ export default function About() {
             </div>
           </motion.div>
         </div>
+
+        {/* Recognition — Neodent Elite Practitioner Award */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-20"
+        >
+          <div className="rounded-3xl bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/15 p-6 sm:p-10">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              {/* Award photos */}
+              <div className="grid grid-cols-3 gap-3">
+                <div className="col-span-2 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md">
+                  <Image
+                    src="/images/about/neodent-award-doctor.jpeg"
+                    alt="Dr. Alexander Antipov receiving the 2026 Neodent Elite Practitioner Award"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 60vw, 30vw"
+                  />
+                </div>
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md">
+                  <Image
+                    src="/images/about/neodent-award-plaque.jpeg"
+                    alt="2026 Neodent Elite Practitioner Award plaque presented to Dr. Alexander Antipov"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 30vw, 15vw"
+                  />
+                </div>
+              </div>
+
+              {/* Text */}
+              <div>
+                <span className="text-primary font-semibold text-sm tracking-widest uppercase">
+                  Recognition
+                </span>
+                <h3 className="font-serif mt-3 text-3xl sm:text-4xl font-bold text-dark tracking-tight leading-tight">
+                  2026 Neodent <span className="gradient-text">Elite Practitioner</span>
+                </h3>
+                <p className="mt-4 text-muted text-lg leading-relaxed">
+                  Dr. Antipov has been recognized by <strong>Neodent</strong> — a <strong>Straumann Group</strong> brand — as a <strong>2026 Elite Practitioner</strong>. This distinction honors leading implant surgeons for clinical excellence, advanced surgical skill, and consistently outstanding patient outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Divider */}
         <div className="my-20 border-t border-dark/10" />

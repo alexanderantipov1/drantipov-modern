@@ -23,6 +23,15 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "navy",
     breadcrumbs: [{ name: "Results" }],
   },
+  "/smile-gallery": {
+    image: "/images/smile-gallery/patient-01.jpeg",
+    eyebrow: "Real Patient Results",
+    title: "Smile Gallery",
+    subtitle:
+      "Real patients, real transformations. Browse completed full-arch dental implant cases restored by Dr. Antipov in Roseville.",
+    overlay: "navy",
+    breadcrumbs: [{ name: "Smile Gallery" }],
+  },
   "/locations": {
     image: "/images/locations/locations@2x-dc292d32.jpg",
     eyebrow: "Find Us",

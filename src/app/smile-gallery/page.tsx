@@ -1,0 +1,70 @@
+import type { Metadata } from "next";
+import PageHero from "@/components/PageHero";
+import heroContent from "@/lib/heroContent";
+import SmileGallery from "@/components/SmileGallery";
+import { smileGalleryPhotos } from "@/lib/smileGalleryPhotos";
+import CTA from "@/components/CTA";
+import { structuredDataScript } from "@/lib/structured-data";
+
+export const metadata: Metadata = {
+  title: { absolute: "Smile Gallery — Real Patient Results | Dr. Antipov" },
+  description:
+    "Browse real patient smile transformations after full-arch dental implant restoration with Dr. Alexander Antipov in Roseville, CA.",
+  alternates: {
+    canonical: "/smile-gallery",
+    languages: {
+      en: "/smile-gallery",
+      "x-default": "/smile-gallery",
+    },
+  },
+  openGraph: {
+    title: "Smile Gallery — Real Patient Results",
+    description:
+      "Real patient smile transformations after full-arch dental implant restoration in Roseville, CA.",
+    images: [
+      {
+        url: smileGalleryPhotos[0].src,
+        width: 1200,
+        height: 630,
+        alt: "Patient smile result",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Smile Gallery — Real Patient Results",
+    description:
+      "Real patient smile transformations after full-arch dental implant restoration in Roseville, CA.",
+    images: [smileGalleryPhotos[0].src],
+  },
+};
+
+const SITE_URL = "https://www.drantipov.com";
+
+export default function SmileGalleryPage() {
+  const imageGallerySchema = {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    name: "Patient Smile Gallery",
+    description:
+      "Real patient smile transformations after full-arch dental implant restoration with Dr. Alexander Antipov in Roseville, CA.",
+    url: `${SITE_URL}/smile-gallery`,
+    image: smileGalleryPhotos.map((p) => ({
+      "@type": "ImageObject",
+      contentUrl: `${SITE_URL}${p.src}`,
+      caption: p.caption ?? p.alt,
+    })),
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={structuredDataScript([imageGallerySchema])}
+      />
+      <PageHero {...heroContent["/smile-gallery"]!} />
+      <SmileGallery photos={smileGalleryPhotos} />
+      <CTA />
+    </>
+  );
+}

@@ -513,7 +513,7 @@ export default function JsonLd() {
     name: "Dr. André-David Kahwach, DDS, MD",
     jobTitle: "Oral & Maxillofacial Surgeon",
     url: "https://www.drantipov.com/our-team",
-    image: "https://www.drantipov.com/images/dr-kahwach-v3.jpg",
+    image: "https://www.drantipov.com/images/dr-kahwach-v4.jpg",
     alumniOf: [
       { "@type": "EducationalOrganization", name: "University of California, San Francisco, School of Dentistry", sameAs: "https://dentistry.ucsf.edu" },
       { "@type": "EducationalOrganization", name: "Loma Linda University School of Medicine", sameAs: "https://medicine.llu.edu" },

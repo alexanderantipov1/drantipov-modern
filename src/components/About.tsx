@@ -154,7 +154,7 @@ export default function About() {
               <div className="grid grid-cols-3 gap-3">
                 <div className="col-span-2 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md">
                   <Image
-                    src="/images/about/neodent-award-doctor.jpeg"
+                    src="/images/about/neodent-award-doctor-v2.jpeg"
                     alt="Dr. Alexander Antipov receiving the 2026 Neodent Elite Practitioner Award"
                     fill
                     className="object-cover"
@@ -242,7 +242,7 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
               <Image
-                src="/images/dr-kahwach-v3.jpg"
+                src="/images/dr-kahwach-v4.jpg"
                 alt="Dr. André-David Kahwach, DDS, MD — Oral and maxillofacial surgeon specializing in dental implants, facial trauma, orthognathic surgery, and cosmetic procedures"
                 fill
                 className="object-cover"

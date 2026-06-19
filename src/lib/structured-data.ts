@@ -71,7 +71,7 @@ export function getOrganizationSchema() {
         name: "Dr. André-David Kahwach, DDS, MD",
         jobTitle: "Oral & Maxillofacial Surgeon",
         url: `${siteConfig.url}/our-team`,
-        image: `${siteConfig.url}/images/dr-kahwach-v3.jpg`,
+        image: `${siteConfig.url}/images/dr-kahwach-v4.jpg`,
       },
     ],
     hasMap: "https://maps.google.com/?q=911+Reserve+Dr+Suite+150+Roseville+CA+95678",
@@ -296,7 +296,7 @@ export function getKahwachPhysicianSchema() {
       name: "United States",
     },
     url: `${siteConfig.url}/our-team`,
-    image: `${siteConfig.url}/images/dr-kahwach-v3.jpg`,
+    image: `${siteConfig.url}/images/dr-kahwach-v4.jpg`,
     alumniOf: [
       {
         "@type": "EducationalOrganization",

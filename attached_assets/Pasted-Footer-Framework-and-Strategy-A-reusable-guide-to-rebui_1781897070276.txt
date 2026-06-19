@@ -1,0 +1,327 @@
+Footer Framework and Strategy
+A reusable guide to rebuilding the Fusion Dental Implants footer on another website. It contains two things:
+
+The framework - the actual code and how it is structured.
+The strategy - why each section and link is in the footer, so you can apply the same thinking to a different site.
+This is built for a Next.js (App Router) site using React, TypeScript, and Tailwind CSS. If your other site uses the same stack, you can paste the code almost as-is. If it uses a different stack, follow the structure and the reasoning, and swap the syntax.
+
+Part 1: The Framework (How It Is Built)
+The core idea: split the footer into two files
+The footer is intentionally split into two pieces:
+
+A server component that fetches the translated text and the current language, then passes them down.
+A presentational component that renders the visible footer using that data.
+Why split it this way:
+
+Translations are resolved on the server, so the browser does not do extra work to figure out language. This keeps the footer fast.
+The visible footer stays lightweight and easy to edit.
+It avoids a common multi-language "hydration mismatch" bug, where the server and browser render different text and React complains.
+If your other site is single-language, you can skip the server file entirely and hard-code the labels in the presentational component.
+
+Key design decisions (the framework rules)
+Link lists are plain data, separated from layout. Every footer section is defined as a simple array of { href, label } near the top of the file. Adding or removing a link is a one-line change. The rendering code never changes.
+
+Accordions use native HTML, not JavaScript. Each collapsible section is a native <details>/<summary> element. This means the footer expands and collapses even before any JavaScript loads, it is accessible by default, and it adds zero JavaScript weight. The only "interactive" styling is a chevron that rotates via CSS when the section is open.
+
+Every link is language-aware. Links pass through a single helper (localizeHref) that decides whether to add a language prefix (like /es/). Pages that exist in every language get the prefix; pages that only exist in one language are left unprefixed so visitors are not sent to a missing translated page.
+
+The brand block is always visible; the rest collapses. The top block (name, description, phone, email, address, social, main call-to-action) is always shown. The seven link sections are collapsed by default so the footer stays compact, especially on mobile.
+
+The year is automatic. The copyright year is generated at render time, so it never needs manual updating.
+
+File 1: The server component (translations)
+// FooterWithI18n.tsx
+import { getI18n, getCurrentLocale } from "@/locales/server";
+import { Footer } from "./Footer";
+// Only the keys the footer actually needs - keep this list small.
+const FOOTER_KEYS = [
+  "navigation.footer.about",
+  "navigation.footer.aboutDescription",
+  "navigation.footer.aboutUs",
+  "navigation.footer.allRightsReserved",
+  "navigation.footer.blog",
+  "navigation.footer.company",
+  "navigation.footer.contact",
+  "navigation.footer.forDentists",
+  "navigation.footer.hipaaNotice",
+  "navigation.footer.privacyPolicy",
+  "navigation.footer.services",
+  "navigation.footer.termsOfService",
+  "navigation.footer.yourJourney",
+  "navigation.header.scrollToTop",
+] as const;
+export async function FooterWithI18n() {
+  const t = await getI18n();
+  const currentLocale = await getCurrentLocale();
+  const translations: Record<string, string> = {};
+  for (const key of FOOTER_KEYS) {
+    translations[key] = t(key as never);
+  }
+  return <Footer translations={translations} currentLocale={currentLocale} />;
+}
+
+File 2: The presentational component (the visible footer)
+// Footer.tsx
+import React from "react";
+import Link from "next/link";
+import { Phone, Mail, MapPin, ChevronDown } from "lucide-react";
+import { localizeHref } from "@/lib/i18n/englishOnly";
+type FooterProps = {
+  translations: Record<string, string>;
+  currentLocale: string;
+};
+type LinkItem = { href: string; label: string };
+// ---- Edit these lists to change what appears in the footer ----
+const SERVICE_LINKS: LinkItem[] = [
+  { href: "/services/dental-implants", label: "Dental Implants Overview" },
+  { href: "/services/dental-implants/simple-implants", label: "Simple Implants" },
+  { href: "/services/dental-implants/fusion-single", label: "Single Tooth Implant" },
+  { href: "/services/dental-implants/fusion-multiple", label: "Multiple Tooth Implants" },
+  { href: "/services/dental-implants/full-arch", label: "Full-Arch Dental Implants" },
+  { href: "/services/dental-implants/complex-revision-cases", label: "Complex / Revision Cases" },
+  { href: "/services/dental-implants/fusion-snap", label: "Snap-In Dentures" },
+  { href: "/services/dental-implants/fusion-denture", label: "Implant-Supported Dentures" },
+  { href: "/all-on-4-dental-implants", label: "All-on-4 Dental Implants" },
+  { href: "/all-on-6-dental-implants", label: "All-on-6 Dental Implants" },
+  { href: "/full-mouth-dental-implants", label: "Full Mouth Implants" },
+  { href: "/same-day-dental-implants", label: "Same-Day Implants" },
+  { href: "/services/lifetime-warranty", label: "Lifetime Warranty" },
+];
+const CITY_LINKS: LinkItem[] = [
+  { href: "/dental-implants-roseville", label: "Roseville" },
+  { href: "/dental-implants-sacramento", label: "Sacramento" },
+  { href: "/dental-implants-folsom", label: "Folsom" },
+  { href: "/dental-implants-elk-grove", label: "Elk Grove" },
+  { href: "/dental-implants-el-dorado-hills", label: "El Dorado Hills" },
+  { href: "/dental-implants-rocklin", label: "Rocklin" },
+  { href: "/dental-implants-granite-bay", label: "Granite Bay" },
+  { href: "/dental-implants-rancho-cordova", label: "Rancho Cordova" },
+  { href: "/dental-implants-redding", label: "Redding" },
+  { href: "/locations/sacramento-region", label: "Sacramento Region" },
+  { href: "/locations/placer-county", label: "Placer County" },
+  { href: "/locations/el-dorado-county", label: "El Dorado County" },
+  { href: "/locations/bay-area", label: "Bay Area" },
+  { href: "/locations/northern-california", label: "View All Locations" },
+];
+const GENERAL_DENTISTRY_LINKS: LinkItem[] = [
+  { href: "/general-dentistry", label: "General Dentistry Overview" },
+  { href: "/general-dentistry/services", label: "All Services" },
+  { href: "/general-dentistry/services/general-dentistry", label: "General Dentistry" },
+  { href: "/general-dentistry/services/veneers", label: "Veneers" },
+  { href: "/general-dentistry/services/wisdom-teeth-removal", label: "Wisdom Teeth Removal" },
+  { href: "/general-dentistry/services/emergency-dentistry", label: "Emergency Dentistry" },
+  { href: "/general-dentistry/services/pediatric-dentistry", label: "Pediatric Dentistry" },
+  { href: "/general-dentistry/services/orthodontics", label: "Orthodontics" },
+  { href: "/general-dentistry/costs", label: "Costs" },
+  { href: "/general-dentistry/patient-journey", label: "Patient Journey" },
+  { href: "/general-dentistry/before-after", label: "Before & After" },
+  { href: "/general-dentistry/about", label: "About" },
+  { href: "/general-dentistry/insurance", label: "Insurance" },
+];
+const COSTS_FINANCING_LINKS: LinkItem[] = [
+  { href: "/costs-financing", label: "Costs & Financing Overview" },
+  { href: "/costs-financing/calculator", label: "Cost Calculator" },
+  { href: "/costs-financing/financing", label: "Financing Options" },
+  { href: "/costs-financing/dental-implants", label: "Dental Implant Costs" },
+  { href: "/costs-financing/dental-implants/full-arch-implants", label: "Full-Arch Implant Cost" },
+  { href: "/costs-financing/dental-implants/final-teeth-options", label: "Final Teeth Options" },
+  { href: "/costs-financing/dental-implants/single-tooth-implant", label: "Single Tooth Implant Cost" },
+  { href: "/costs-financing/dental-implants/multiple-implants", label: "Multiple Implants Cost" },
+  { href: "/costs-financing/dentures", label: "Denture Costs" },
+  { href: "/costs-financing/dentures/snap-on-dentures", label: "Snap-On Dentures Cost" },
+  { href: "/costs-financing/dentures/traditional-dentures", label: "Traditional Dentures Cost" },
+];
+const RESOURCE_LINKS: LinkItem[] = [
+  { href: "/blog", label: "Blog" },
+  { href: "/gallery", label: "Photo Gallery" },
+  { href: "/media", label: "Media & Press" },
+  { href: "/surgical-cases", label: "Surgical Cases" },
+  { href: "/dental-implants-vs-dentures", label: "Implants vs. Dentures" },
+  { href: "/dental-implants-vs-bridges", label: "Implants vs. Bridges" },
+  { href: "/all-on-4-vs-all-on-6", label: "All-on-4 vs. All-on-6" },
+  { href: "/zirconia-vs-titanium-implants", label: "Zirconia vs. Titanium" },
+  { href: "/dental-implants-for-seniors", label: "Implants for Seniors" },
+];
+const COMPANY_LINKS: LinkItem[] = [
+  { href: "/about-us", label: "About Us" },
+  { href: "/your-journey", label: "Your Journey" },
+  { href: "/providers", label: "Our Providers" },
+  { href: "/for-dentists", label: "For Dentists" },
+  { href: "/for-dentists/referral-partners", label: "Referral Partners" },
+  { href: "/contact", label: "Contact Us" },
+  { href: "/find-a-center", label: "Find a Center" },
+];
+const LEGAL_LINKS: LinkItem[] = [
+  { href: "/legal/privacy-policy", label: "Privacy Policy" },
+  { href: "/legal/terms-of-service", label: "Terms of Service" },
+  { href: "/legal/hipaa-notice", label: "HIPAA Notice" },
+];
+// Social icons are inline SVG paths. Replace hrefs and paths with your own.
+const SOCIAL_LINKS = [
+  { href: "https://www.facebook.com/yourpage", label: "Facebook", path: "M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" },
+  { href: "https://www.instagram.com/yourpage", label: "Instagram", path: "M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63z" },
+  { href: "https://www.youtube.com/@yourchannel", label: "YouTube", path: "M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" },
+  { href: "https://www.linkedin.com/company/yourcompany", label: "LinkedIn", path: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" },
+];
+// ---- Reusable collapsible section ----
+function AccordionSection({
+  title,
+  links,
+  localizedHref,
+  defaultOpen = false,
+}: {
+  title: string;
+  links: LinkItem[];
+  localizedHref: (href: string) => string;
+  defaultOpen?: boolean;
+}) {
+  return (
+    <details className="group border-b border-white/10" {...(defaultOpen ? { open: true } : {})}>
+      <summary className="flex items-center justify-between py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+        <h3 className="text-base font-bold text-white">{title}</h3>
+        <ChevronDown className="h-5 w-5 text-blue-200 transition-transform duration-200 group-open:rotate-180" />
+      </summary>
+      <ul className="pb-4 space-y-2 text-sm text-blue-100">
+        {links.map((link) => (
+          <li key={link.href}>
+            <Link href={localizedHref(link.href)} className="hover:text-white transition-colors">
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </details>
+  );
+}
+// ---- The footer itself ----
+export function Footer({ translations, currentLocale }: FooterProps) {
+  const currentYear = new Date().getFullYear();
+  const t = (key: string): string => translations[key] ?? key;
+  const localizedHref = (href: string): string => localizeHref(href, currentLocale);
+  return (
+    <footer className="bg-[#1e3a5f] text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-12">
+        {/* Always-visible brand block */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-6 border-b border-white/10">
+          <div className="space-y-4">
+            <h2 className="text-xl font-bold text-white">Fusion Dental Implants</h2>
+            <p className="text-sm leading-relaxed text-blue-100 max-w-md">
+              {t("navigation.footer.aboutDescription")}
+            </p>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 pt-1">
+              <a href="tel:+19162929998" className="flex items-center gap-2 text-sm text-blue-100 hover:text-white transition-colors">
+                <Phone className="h-4 w-4" /> (916) 292-9998
+              </a>
+              <a href="mailto:info@fusiondentalimplants.com" className="flex items-center gap-2 text-sm text-blue-100 hover:text-white transition-colors break-words">
+                <Mail className="h-4 w-4 shrink-0" /> info@fusiondentalimplants.com
+              </a>
+            </div>
+            <div className="flex items-start gap-2 text-sm text-blue-100">
+              <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
+              <span>911 Reserve Dr, Ste 150b, Roseville, CA 95678</span>
+            </div>
+          </div>
+          <div className="space-y-3 md:text-right">
+            <p className="text-xs uppercase tracking-wider text-blue-300">{t("navigation.footer.about")}</p>
+            <div className="flex md:justify-end space-x-4">
+              {SOCIAL_LINKS.map((social) => (
+                <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer"
+                   className="text-blue-200 hover:text-white transition-colors" aria-label={social.label}>
+                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fillRule="evenodd" clipRule="evenodd" d={social.path} />
+                  </svg>
+                </a>
+              ))}
+            </div>
+            <Link href={localizedHref("/contact")}
+                  className="inline-flex items-center justify-center px-5 py-2.5 mt-2 rounded-full bg-[#f97316] hover:bg-[#ea6a0e] text-white text-sm font-semibold transition-colors">
+              Schedule Free Consultation
+            </Link>
+          </div>
+        </div>
+        {/* Collapsible sections */}
+        <nav aria-label="Footer navigation" className="mt-2">
+          <AccordionSection title={t("navigation.footer.services")} links={SERVICE_LINKS} localizedHref={localizedHref} />
+          <AccordionSection title="General Dentistry" links={GENERAL_DENTISTRY_LINKS} localizedHref={localizedHref} />
+          <AccordionSection title="Cities We Serve" links={CITY_LINKS} localizedHref={localizedHref} />
+          <AccordionSection title="Costs & Financing" links={COSTS_FINANCING_LINKS} localizedHref={localizedHref} />
+          <AccordionSection title="Resources & Education" links={RESOURCE_LINKS} localizedHref={localizedHref} />
+          <AccordionSection title={t("navigation.footer.company")} links={COMPANY_LINKS} localizedHref={localizedHref} />
+          <AccordionSection title="Legal" links={LEGAL_LINKS} localizedHref={localizedHref} />
+        </nav>
+      </div>
+      {/* Bottom bar */}
+      <div className="border-t border-white/10 bg-[#162d4a]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-center md:justify-between gap-x-4 gap-y-1 text-xs text-blue-200">
+          <span>© {currentYear} Fusion Dental Implants. {t("navigation.footer.allRightsReserved")}.</span>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            <Link href={localizedHref("/legal/privacy-policy")} className="hover:text-white">{t("navigation.footer.privacyPolicy")}</Link>
+            <Link href={localizedHref("/legal/terms-of-service")} className="hover:text-white">{t("navigation.footer.termsOfService")}</Link>
+            <Link href={localizedHref("/legal/hipaa-notice")} className="hover:text-white">{t("navigation.footer.hipaaNotice")}</Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+If your other site is single-language
+Delete the server file and the translation plumbing. In Footer.tsx, remove the translations and currentLocale props, replace every t("...") call with the plain text, and replace localizedHref(href) with just href. Everything else stays the same.
+
+Part 2: The Strategy (Why Each Item Is in the Footer)
+A footer is not a junk drawer. It is doing three jobs at once: helping people find things, helping search engines understand and crawl the whole site, and giving one more chance to convert a visitor into a booking. Each section below is chosen for one or more of those jobs.
+
+The guiding principles
+The footer is the site's safety net for navigation. When a visitor scrolls to the bottom, they did not find what they wanted in the main content. The footer should answer "where do I go next?" without making them hunt.
+
+The footer spreads internal links for SEO. Search engines follow links to discover and rank pages. Because the footer appears on every page, links placed here pass "link equity" sitewide and help important pages get crawled and ranked. This is why money pages, location pages, and key comparisons all appear here.
+
+The footer is a final conversion point. Phone, email, address, and a bright "book now" button are always visible so a ready-to-act visitor never has to scroll back up.
+
+Group by how the visitor thinks, not by how the company is organized. People search by service ("All-on-4"), by place ("dentist near Roseville"), by money ("how much does it cost"), and by trust ("are these people legit"). The sections map to those mindsets.
+
+Show a little, hide the rest. The footer holds a lot of links for SEO, but showing them all would overwhelm. Collapsing them keeps it clean while keeping every link in the page's HTML for search engines.
+
+Why each section exists
+Brand block (name, description, phone, email, address, social, main button)
+
+Establishes who you are and that you are a real, contactable business. The physical address and phone are also local-SEO signals (they should match your Google Business Profile exactly).
+The social icons build trust and give an exit to active, proof-filled profiles.
+The orange "Schedule Free Consultation" button is the single most important action on the site, repeated at the bottom of every page.
+Services
+
+These are the money pages, the actual treatments people pay for. They get top billing because they are both the most valuable to the business and the most likely to rank and convert.
+Notice it goes from broad ("Dental Implants Overview") to specific ("All-on-4", "Full Mouth", "Same-Day"). This mirrors how a patient narrows down their research, and it gives search engines a clear topic structure.
+Cities We Serve
+
+This is pure local SEO. Each city link targets people searching "dental implants + [their town]." A dedicated page per city can rank for that town's searches, and the footer makes sure all of them are linked from every page.
+It ends with a "View All Locations" link so the footer does not have to list every single place.
+General Dentistry
+
+Captures visitors who came for implants but also need (or have family who need) routine care. It widens the net and signals to search engines that the practice covers a full range of services, not just one.
+Costs & Financing
+
+Cost is the number one question and the number one objection in implant dentistry. Surfacing pricing, a calculator, and financing options directly answers the visitor's biggest worry and builds trust through transparency. It also captures high-intent searches like "dental implant cost" and "implant financing."
+Resources & Education
+
+Blog, galleries, and comparison guides ("Implants vs. Dentures", "All-on-4 vs. All-on-6") serve people who are still researching and not ready to buy. This content earns search traffic, answers questions, and nurtures undecided visitors toward a decision.
+Before-and-after galleries and case content also act as social proof.
+Company
+
+About, providers, and contact build trust. In healthcare especially, people want to know who is treating them and what their credentials are. "For Dentists" and "Referral Partners" serve a separate audience: other professionals who send referrals.
+Legal
+
+Privacy Policy, Terms, and (for a medical site) HIPAA Notice. These are required for compliance and credibility. They live in their own small section and are repeated in the bottom bar so they are always one click away.
+Bottom bar (copyright + legal links)
+
+The minimum every footer needs: who owns the site, the year, and quick legal links. Kept visually separate and quiet so it does not compete with the navigation above.
+How to adapt this to a different business
+Keep the framework and the job each section does; swap the content to fit your site:
+
+Services -> your core products or services, ordered broad to specific.
+Cities We Serve -> keep only if you serve specific geographic areas. If you are online-only, replace with a "Use Cases" or "Industries" section.
+Costs & Financing -> whatever your biggest customer objection is (pricing, shipping, returns, security). Address it head-on here.
+Resources & Education -> your blog, guides, help center, or docs.
+Company -> about, team, careers, contact.
+Legal -> privacy and terms at minimum; add industry-specific notices as needed.
+The rule to carry over: every link in the footer should earn its place by doing at least one of the three jobs (help navigation, help SEO, or help conversion). If a link does none of those, leave it out.

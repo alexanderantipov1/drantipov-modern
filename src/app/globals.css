@@ -173,3 +173,78 @@ body {
     transform: translateY(0);
   }
 }
+
+/* Hero entrance animations — pure CSS so the above-the-fold hero paints and
+   animates without waiting on JS hydration (no framer-motion on the critical path). */
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes hero-scroll-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.hero-fade-up {
+  opacity: 0;
+  animation: hero-fade-up 0.6s ease-out forwards;
+}
+
+.hero-fade {
+  opacity: 0;
+  animation: hero-fade 0.6s ease-out forwards;
+}
+
+.hero-zoom-in {
+  opacity: 0;
+  animation: hero-zoom-in 0.8s ease-out forwards;
+}
+
+.hero-scroll-bounce {
+  animation: hero-scroll-bounce 1.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-fade-up,
+  .hero-fade,
+  .hero-zoom-in {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+  .hero-scroll-bounce {
+    animation: none;
+  }
+}

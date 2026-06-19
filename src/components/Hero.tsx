@@ -1,12 +1,25 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 import { getVideoSchema, structuredDataScript } from "@/lib/structured-data";
 import { siteConfig } from "@/constants/siteConfig";
 
 export default function Hero() {
+  // The background video is desktop-only. Rendering it conditionally (rather than
+  // hiding with CSS) guarantees the 3-4 MB video is never requested on mobile,
+  // where the lightweight poster image is used instead.
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const update = () => setIsDesktop(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* VideoObject schema for hero.mp4 — eligible for video rich snippet in Google */}
@@ -25,20 +38,22 @@ export default function Hero() {
       />
       {/* Background: looping video (desktop) + poster image (mobile) + navy overlay */}
       <div className="absolute inset-0">
-        {/* Desktop: full-arch surgical workflow video, muted + looped */}
-        <video
-          className="absolute inset-0 w-full h-full object-cover hidden lg:block"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="none"
-          poster="/videos/hero-poster.jpg"
-          aria-hidden="true"
-        >
-          <source src="/videos/hero.webm" type="video/webm" />
-          <source src="/videos/hero.mp4" type="video/mp4" />
-        </video>
+        {/* Desktop only: full-arch surgical workflow video, muted + looped */}
+        {isDesktop && (
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+            poster="/videos/hero-poster.jpg"
+            aria-hidden="true"
+          >
+            <source src="/videos/hero.webm" type="video/webm" />
+            <source src="/videos/hero.mp4" type="video/mp4" />
+          </video>
+        )}
         {/* Mobile: doctor portrait (face above the fold, higher trust signal) */}
         <Image
           src="/images/doctor-hand3-mobile.jpg"
@@ -66,21 +81,14 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left: Text Content */}
           <div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-sm mb-8"
-            >
+            <div className="hero-fade-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-sm mb-8">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               Board-Certified Oral &amp; Maxillofacial Surgeon &mdash; Roseville, CA
-            </motion.div>
+            </div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight"
+            <h1
+              className="hero-fade-up font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight"
+              style={{ animationDelay: "0.1s" }}
             >
               Same-Day
               <br />
@@ -89,35 +97,29 @@ export default function Hero() {
               Jaw Surgery &amp;
               <br />
               Facial Cosmetics
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-6 text-lg text-white/80 max-w-xl leading-relaxed"
+            <p
+              className="hero-fade-up mt-6 text-lg text-white/80 max-w-xl leading-relaxed"
+              style={{ animationDelay: "0.2s" }}
             >
               Dr. Alexander Antipov delivers life-changing results with <strong className="text-white">All-on-4 and All-on-6 full arch dental implants</strong>, <strong className="text-white">orthognathic jaw surgery</strong>, <strong className="text-white">facial cosmetic surgery</strong>, and <strong className="text-white">organic bone grafting</strong> — backed by 25+ years of board-certified expertise.
-            </motion.p>
+            </p>
 
             {/* Signature */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="mt-6 flex items-center gap-3"
+            <div
+              className="hero-fade mt-6 flex items-center gap-3"
+              style={{ animationDelay: "0.6s" }}
             >
               <span className="h-px w-12 bg-primary/60" />
               <span className="font-signature text-3xl text-primary tracking-wide">
                 Dr. Antipov
               </span>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-10 flex flex-wrap gap-4"
+            <div
+              className="hero-fade-up mt-10 flex flex-wrap gap-4"
+              style={{ animationDelay: "0.3s" }}
             >
               <ConsultationModal>
                 <button
@@ -133,14 +135,12 @@ export default function Hero() {
               >
                 Call (916) 783-2110
               </a>
-            </motion.div>
+            </div>
 
             {/* Trust badges */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4 text-white/60 text-sm"
+            <div
+              className="hero-fade mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4 text-white/60 text-sm"
+              style={{ animationDelay: "0.5s" }}
             >
               {[
                 "10,000+ Smiles Restored",
@@ -157,15 +157,13 @@ export default function Hero() {
                   <span className="leading-tight">{badge}</span>
                 </div>
               ))}
-            </motion.div>
+            </div>
           </div>
 
           {/* Right: Dr. Antipov Portrait — mirrors Russian site layout, bg color matches site */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.92 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="hidden lg:block lg:absolute lg:right-0 lg:bottom-0 lg:w-[660px] lg:translate-y-[5%] lg:z-10"
+          <div
+            className="hero-zoom-in hidden lg:block lg:absolute lg:right-0 lg:bottom-0 lg:w-[660px] lg:translate-y-[5%] lg:z-10"
+            style={{ animationDelay: "0.3s" }}
           >
             <div className="relative">
               {/*
@@ -204,25 +202,19 @@ export default function Hero() {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      <div
+        className="hero-fade absolute bottom-8 left-1/2 -translate-x-1/2"
+        style={{ animationDelay: "1s" }}
       >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-1.5"
-        >
+        <div className="hero-scroll-bounce w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-1.5">
           <div className="w-1.5 h-3 rounded-full bg-white/60" />
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>
   );
 }

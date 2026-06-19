@@ -76,7 +76,8 @@ const nextConfig = {
       { source: '/about-us', destination: '/about', permanent: true },
       { source: '/services', destination: '/expertise', permanent: true },
       { source: '/before-after', destination: '/surgical-cases', permanent: true },
-      { source: '/testimonials', destination: '/for-patients/testimonials', permanent: true },
+      { source: '/testimonials', destination: '/for-patients', permanent: true },
+      { source: '/for-patients/testimonials', destination: '/for-patients', permanent: true },
       { source: '/faq', destination: '/for-patients/faqs', permanent: true },
       { source: '/resources', destination: '/for-patients', permanent: true },
       // Legacy URLs with inbound backlinks — preserve link equity (301)

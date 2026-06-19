@@ -53,7 +53,7 @@ const RESOURCE_LINKS: LinkItem[] = [
   { href: "/for-patients/insights", label: "Blog — News, Research & Education" },
   { href: "/surgical-cases", label: "Surgical Case Gallery" },
   { href: "/results", label: "Before & After Results" },
-  { href: "/for-patients/testimonials", label: "Patient Testimonials" },
+  { href: "/for-patients", label: "Patient Testimonials" },
   { href: "/for-patients/insights/implants-vs-dentures", label: "Implants vs. Dentures" },
   { href: "/for-patients/insights/dental-implant-aftercare", label: "Dental Implant Aftercare" },
   { href: "/for-patients/insights/dental-implant-complications", label: "Implant Complications" },

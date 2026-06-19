@@ -9,11 +9,11 @@ export const siteConfig = {
     calendly: process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/dr-antipov",
   },
   contact: {
-    email: "info@galleriaoms.com",
-    phone: "(916) 783-2110",
+    email: "info@drantipov.com",
+    phone: "(916) 790-9693",
     address: {
       street: "911 Reserve Dr",
-      suite: "Suite 150",
+      suite: "Ste 150",
       city: "Roseville",
       state: "CA",
       zip: "95678",
@@ -35,6 +35,10 @@ export const navigationLinks = [
   {
     title: "Home",
     href: "/",
+  },
+  {
+    title: "About Dr. Antipov",
+    href: "/about",
   },
   {
     title: "Expertise",
@@ -70,13 +74,17 @@ export const navigationLinks = [
     title: "For Patients",
     href: "/for-patients",
     submenu: [
-      { title: "Testimonials", href: "/for-patients" },
+      { title: "Testimonials", href: "/for-patients/testimonials" },
       { title: "Schedule Consultation", href: "/for-patients/consultation" },
       { title: "Pre-Op Instructions", href: "/for-patients/pre-op" },
       { title: "Post-Op Care", href: "/for-patients/post-op" },
       { title: "FAQs", href: "/for-patients/faqs" },
       { title: "Insights", href: "/for-patients/insights" },
     ],
+  },
+  {
+    title: "Doctor's Corner",
+    href: "/doctors-corner",
   },
 ] as const
 

@@ -2,8 +2,6 @@ import { Section, Container, GlassCard } from "@/components/sections"
 import { Badge } from "@/components/ui/badge"
 import { Play, Clock, Calendar, Eye } from "lucide-react"
 import { Metadata } from "next"
-import PageHero from "@/components/PageHero"
-import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
   title: "Educational Videos & Lectures | Dr. Alexander Antipov",
@@ -198,34 +196,25 @@ const conferenceTalks = [
 ]
 
 export default function VideosPage() {
-  const itemListSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Dr. Antipov Educational Videos",
-    itemListElement: [...featuredVideos, ...recentVideos].map((v, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      item: {
-        "@type": "VideoObject",
-        name: v.title,
-        description: v.description,
-        thumbnailUrl: v.thumbnail,
-        uploadDate: v.date,
-        duration: `PT${v.duration.replace(":", "M")}S`,
-        contentUrl: v.videoUrl,
-        embedUrl: v.videoUrl.replace("watch?v=", "embed/"),
-        publisher: {
-          "@type": "Organization",
-          name: "Dr. Alexander Antipov, DDS",
-        },
-      },
-    })),
-  };
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
-      <PageHero {...heroContent["/media/videos"]!} />
+      {/* Hero Section */}
+      <Section background="gradient" padding="xl" className="pt-32">
+        <Container size="lg">
+          <div className="text-center space-y-6 max-w-3xl mx-auto">
+            <Badge variant="secondary" className="mb-2">
+              Educational Content
+            </Badge>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900">
+              Educational Videos & Lectures
+            </h1>
+            <p className="text-lg md:text-xl text-neutral-600 leading-relaxed">
+              Explore surgical demonstrations, patient education videos, and conference presentations from
+              Dr. Antipov's extensive library of educational content.
+            </p>
+          </div>
+        </Container>
+      </Section>
 
       {/* Categories */}
       <Section background="default" padding="md">

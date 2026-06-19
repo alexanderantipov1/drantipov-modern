@@ -9,29 +9,12 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: "/",
     display: "standalone",
     background_color: "#FFFFFF",
-    theme_color: "#0e3e5e",
-    orientation: "portrait",
-    scope: "/",
-    lang: "en",
-    categories: ["health", "medical"],
+    theme_color: "#1ABB9C",
     icons: [
       {
         src: "/images/logo-b97aa5c8.png",
         sizes: "192x192",
         type: "image/png",
-        purpose: "any",
-      },
-      {
-        src: "/images/logo-b97aa5c8.png",
-        sizes: "512x512",
-        type: "image/png",
-        purpose: "any",
-      },
-      {
-        src: "/images/logo-b97aa5c8.png",
-        sizes: "512x512",
-        type: "image/png",
-        purpose: "maskable",
       },
     ],
   };

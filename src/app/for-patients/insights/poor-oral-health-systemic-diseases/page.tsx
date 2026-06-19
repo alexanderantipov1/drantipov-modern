@@ -8,16 +8,9 @@ import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
-  title: "Oral Health & Systemic Disease — The Link",
+  title: "How Poor Oral Health Can Lead to Cancer and Systemic Diseases | Dr. Antipov",
   description:
     "Discover the hidden connection between oral health and systemic diseases including cancer, cardiovascular disease, and diabetes. Learn prevention strategies.",
-  alternates: {
-    canonical: "/for-patients/insights/poor-oral-health-systemic-diseases",
-    languages: {
-      "en": "/for-patients/insights/poor-oral-health-systemic-diseases",
-      "x-default": "/for-patients/insights/poor-oral-health-systemic-diseases",
-    },
-  },
   keywords: [
     "oral health systemic disease",
     "oral bacteria cancer",
@@ -26,24 +19,6 @@ export const metadata: Metadata = {
     "preventive dental care",
     "oral systemic connection",
   ],
-  openGraph: {
-    title: "Oral Health & Systemic Disease",
-    description: "The link between oral bacteria and systemic diseases — cancer, cardiovascular disease, diabetes.",
-    images: [
-      {
-        url: "/images/blog/2024-08-08/poor-oral-health-733c21c2.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Oral Health & Systemic Disease",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Oral Health & Systemic Disease",
-    description: "The link between oral bacteria and systemic diseases — cancer, cardiovascular disease, diabetes.",
-    images: ["/images/blog/2024-08-08/poor-oral-health-733c21c2.jpg"],
-  }
 }
 
 export default function PoorOralHealthSystemicDiseasesPost() {
@@ -92,13 +67,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
               The Hidden Link: How Poor Oral Health Can Lead to Cancer and Systemic Diseases
             </h1>
 
-            
-
-            {/* E-E-A-T: Medically reviewed byline */}
-            <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
-            </p>
-{/* Featured Image */}
+            {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
               <Image
                 src="/images/blog/2024-08-08/poor-oral-health-733c21c2.jpg"
@@ -106,7 +75,6 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 fill
                 className="object-cover"
                 priority
-                sizes="100vw"
               />
             </div>
 
@@ -298,18 +266,6 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 tomorrow.
               </p>
             </div>
-
-            {/* Sources / Authoritative References */}
-            <section className="mt-12 pt-8 border-t border-neutral-200">
-              <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
-              <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
-              <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.cdc.gov/oral-health/about/index.html" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">CDC — Oral Health and Chronic Disease</a></li>
-                <li><a href="https://www.nidcr.nih.gov/research/data-statistics/dental-caries" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH NIDCR — Oral & Systemic Health Connection</a></li>
-                <li><a href="https://www.ahajournals.org/doi/10.1161/CIR.0b013e31825719f3" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Periodontal disease and cardiovascular disease — AHA statement</a></li>
-                <li><a href="https://www.mouthhealthy.org/life-stages/adults-over-60/oral-health-and-overall-health" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy — Oral Health and Overall Health</a></li>
-              </ul>
-            </section>
 
             {/* Author Info */}
             <GlassCard className="mt-12 p-8">

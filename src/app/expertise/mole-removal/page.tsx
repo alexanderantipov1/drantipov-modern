@@ -1,16 +1,12 @@
 import { Section, Container, GlassCard } from "@/components/sections"
 import {
   ExpertisePageHero,
-  HeroStats,
-  AnimatedCounter,
-  DoctorQuote,
-  IconBenefits,
-  VerticalProcessTimeline,
+  BenefitsList,
+  ProcessTimeline,
 } from "@/components/expertise"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Phone, Award, Clock, Sparkles, Radio, ShieldCheck, TrendingUp, Hospital, Calendar, HeartHandshake } from "lucide-react"
-import FloatingArticleCTA from "@/components/FloatingArticleCTA"
+import { Phone, Award, Clock, Sparkles, Radio } from "lucide-react"
 import {
   Accordion,
   AccordionContent,
@@ -20,73 +16,24 @@ import {
 import {
   getMedicalProcedureSchema,
   getBreadcrumbSchema,
-  getFAQSchema,
   structuredDataScript,
 } from "@/lib/structured-data"
 import { siteConfig } from "@/constants/siteConfig"
-import DualCTA from "@/components/DualCTA"
 
 export const metadata = {
-  title: { absolute: "Scarless Mole Removal — Radio Wave Surgery" },
-  description: "Radio-wave mole removal with virtually no scarring. Performed in-office by oral & maxillofacial surgeon Dr. Antipov, Roseville CA.",
-  alternates: {
-    canonical: "/expertise/mole-removal",
-    languages: {
-      "en": "/expertise/mole-removal",
-      "x-default": "/expertise/mole-removal",
-    },
-  },
-  openGraph: {
-    title: "Scarless Mole Removal",
-    description: "Radio-wave electrosurgery for bloodless, scar-free mole removal — single visit, minimal downtime.",
-    images: [
-      {
-        url: "/images/procedures/facial-cosmetic-surgery@2x-d3793d23.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Scarless Mole Removal",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Scarless Mole Removal",
-    description: "Radio-wave electrosurgery for bloodless, scar-free mole removal — single visit, minimal downtime.",
-    images: ["/images/procedures/facial-cosmetic-surgery@2x-d3793d23.jpg"],
-  }
+  title: "Scarless Mole Removal from Nose | Radio Wave Surgery | Dr. Antipov",
+  description:
+    "Advanced radio wave surgery for bloodless, scar-free mole removal from the nose. Dr. Antipov uses Ellman® technology for minimally invasive facial cosmetic procedures.",
 }
 
-const iconBenefits = [
-  {
-    icon: <Sparkles className="h-5 w-5" />,
-    title: "Completely scarless results",
-    description: "Radio-wave precision leaves no visible mark",
-  },
-  {
-    icon: <Radio className="h-5 w-5" />,
-    title: "Bloodless and clean",
-    description: "Cauterizes as it cuts — no traditional scalpel",
-  },
-  {
-    icon: <Clock className="h-5 w-5" />,
-    title: "Minimal invasiveness",
-    description: "Recovery measured in days, not weeks",
-  },
-  {
-    icon: <ShieldCheck className="h-5 w-5" />,
-    title: "Removes deep-rooted moles",
-    description: "Including moles embedded in nasal cartilage",
-  },
-  {
-    icon: <HeartHandshake className="h-5 w-5" />,
-    title: "Restores natural symmetry",
-    description: "Especially for cosmetically sensitive areas",
-  },
-  {
-    icon: <TrendingUp className="h-5 w-5" />,
-    title: "Quick return to daily life",
-    description: "Most patients resume normal activity the same day",
-  },
+const benefits = [
+  "Completely scarless results with advanced radio wave technology",
+  "Bloodless procedure for cleaner, more precise removal",
+  "Minimal invasiveness reduces recovery time significantly",
+  "Removes deep-rooted moles including those embedded in cartilage",
+  "Restores natural nasal symmetry and appearance",
+  "Quick 2-week rehabilitation period",
+  "No visible surgical marks or traditional scarring",
 ]
 
 const processSteps = [
@@ -200,7 +147,6 @@ export default function MoleRemovalPage() {
         "Minimal wound care with 2-week healing period. Follow-up appointments to monitor healing and assess final aesthetic results.",
       bodyLocation: "Nose/Face",
     }),
-    getFAQSchema(faqs),
     getBreadcrumbSchema([
       { name: "Home", url: siteConfig.url },
       { name: "Expertise", url: `${siteConfig.url}/expertise` },
@@ -220,33 +166,8 @@ export default function MoleRemovalPage() {
       <ExpertisePageHero
         badge="Advanced Facial Cosmetic Surgery"
         title="Scarless Mole Removal from the Nose"
-        subtitle="Scarless mole removal uses radio-wave surgery (high-frequency electrosurgery) to remove benign facial and body moles in a single visit — minimal bleeding, faster healing, and a smoother cosmetic outcome than traditional excision."
-        image="/images/facial-cosmetic-surgery/mole-removal@2x-9fa33150.jpg"
+        subtitle="Radio wave surgery for bloodless, scar-free removal with natural results"
       />
-
-      {/* Animated stat cards overlapping hero bottom */}
-      <HeroStats stats={[
-          {
-            icon: <Clock className="h-5 w-5" />,
-            value: "<30 min",
-            label: "In-office procedure",
-          },
-          {
-            icon: <Sparkles className="h-5 w-5" />,
-            value: "0",
-            label: "Stitches or scars",
-          },
-          {
-            icon: <ShieldCheck className="h-5 w-5" />,
-            value: "Bloodless",
-            label: "Radio-wave technique",
-          },
-          {
-            icon: <Calendar className="h-5 w-5" />,
-            value: <><AnimatedCounter to={2} /> wk</>,
-            label: "To full healing",
-          },
-        ]} />
 
       {/* What It Is Section */}
       <Section background="default" padding="xl">
@@ -287,13 +208,6 @@ export default function MoleRemovalPage() {
         </Container>
       </Section>
 
-      {/* Doctor Quote — personal touch */}
-      <DoctorQuote
-        quote="When patients have lived with a noticeable mole on the nose for years, the relief on their face after a scarless removal is unforgettable. Radio-wave technology made this possible."
-        author="Dr. Alexander Antipov, DDS"
-        role="Board-Certified Oral & Maxillofacial Surgeon"
-      />
-
       {/* Benefits Section */}
       <Section background="gradient" padding="xl">
         <Container size="lg">
@@ -306,7 +220,7 @@ export default function MoleRemovalPage() {
                 The most advanced, minimally invasive approach to facial mole removal
               </p>
 
-              <IconBenefits items={iconBenefits} columns={2} />
+              <BenefitsList benefits={benefits} />
             </div>
 
             <div className="space-y-6">
@@ -380,7 +294,7 @@ export default function MoleRemovalPage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <VerticalProcessTimeline steps={processSteps} />
+            <ProcessTimeline steps={processSteps} />
           </div>
         </Container>
       </Section>
@@ -440,18 +354,57 @@ export default function MoleRemovalPage() {
       </Section>
 
       {/* FAQ Section */}
-            <DualCTA variant="surgical"
-        heading="Considering Scarless Mole Removal?"
-        subheading="Facial cosmetic procedures including mole removal are performed at Galleria Oral & Facial Surgery."
-      />
+      <Section background="gradient" padding="xl">
+        <Container size="lg">
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="text-center space-y-4">
+              <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+                Frequently Asked Questions
+              </h2>
+            </div>
 
-      {/* Floating sticky CTA — appears after 25% scroll */}
-      <FloatingArticleCTA
-        href="/contact"
-        label="Book free consultation"
-        showAfterPct={25}
-      />
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border-none">
+                  <GlassCard className="overflow-hidden">
+                    <AccordionTrigger className="text-left text-lg font-semibold text-neutral-900 hover:no-underline px-6 py-4">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="px-6 pb-4 text-neutral-700 leading-relaxed">
+                      {faq.answer}
+                    </AccordionContent>
+                  </GlassCard>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </Container>
+      </Section>
 
+      {/* CTA Section */}
+      <Section background="default" padding="xl">
+        <Container size="lg">
+          <div className="max-w-3xl mx-auto text-center space-y-8">
+            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+              Ready for Scarless Mole Removal?
+            </h2>
+            <p className="text-xl text-neutral-600">
+              Schedule a consultation to discuss how radio wave surgery can safely and effectively remove your facial mole
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg">
+                <Link href="/contact">Schedule Consultation</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <a href="tel:9167909693">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call (916) 790-9693
+                </a>
+              </Button>
+            </div>
+          </div>
+        </Container>
+      </Section>
     </>
   )
 }

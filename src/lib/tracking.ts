@@ -30,15 +30,7 @@ interface MarketingParams {
   utm_adgroup?: string
   utm_creative?: string
   gclid?: string
-  gbraid?: string
-  wbraid?: string
   fbclid?: string
-  msclkid?: string
-  ttclid?: string
-  campaign_id?: string
-  adset_id?: string
-  ad_id?: string
-  creative?: string
   [key: string]: string | undefined
 }
 
@@ -175,9 +167,7 @@ export class Tracker {
     const paramKeys = [
       "utm_source", "utm_medium", "utm_campaign", "utm_term",
       "utm_content", "utm_id", "utm_location", "utm_adgroup",
-      "utm_creative", "gclid", "gbraid", "wbraid", "fbclid",
-      "msclkid", "ttclid", "campaign_id", "adset_id", "ad_id",
-      "creative",
+      "utm_creative", "gclid", "fbclid",
     ]
 
     paramKeys.forEach((key) => {
@@ -278,3 +268,4 @@ export class Tracker {
     return this.cookieManager.getJSONCookie<SessionData>(COOKIE_NAMES.session)
   }
 }
+

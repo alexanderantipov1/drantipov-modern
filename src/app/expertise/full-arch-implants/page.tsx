@@ -1,16 +1,12 @@
 import { Section, Container, GlassCard } from "@/components/sections"
 import {
   ExpertisePageHero,
-  HeroStats,
-  AnimatedCounter,
-  DoctorQuote,
-  IconBenefits,
-  VerticalProcessTimeline,
+  BenefitsList,
+  ProcessTimeline,
 } from "@/components/expertise"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Phone, Award, Users, Clock, Heart, Smile, Bone, HeartHandshake, ShieldCheck, Sparkles, TrendingUp, Hospital, Calendar, Stethoscope, DollarSign } from "lucide-react"
-import FloatingArticleCTA from "@/components/FloatingArticleCTA"
+import { Phone, Award, Users, Clock, Heart } from "lucide-react"
 import {
   Accordion,
   AccordionContent,
@@ -24,69 +20,20 @@ import {
   structuredDataScript,
 } from "@/lib/structured-data"
 import { siteConfig } from "@/constants/siteConfig"
-import DualCTA from "@/components/DualCTA"
 
 export const metadata = {
-  title: { absolute: "Full-Arch Dental Implants — Same-Day Teeth | Roseville" },
-  description: "All-on-X full-arch dental implants with same-day fixed teeth. Board-certified surgeon in Roseville, CA. Free CT scan & consultation.",
-  alternates: {
-    canonical: "/expertise/full-arch-implants",
-    languages: {
-      "en": "/expertise/full-arch-implants",
-      "x-default": "/expertise/full-arch-implants",
-    },
-  },
-  openGraph: {
-    title: "Full-Arch Dental Implants — All-on-X",
-    description: "Same-day full-arch dental implants by Dr. Antipov. 4–6 implants, immediate-load protocol, Roseville CA.",
-    images: [
-      {
-        url: "/images/fullarch/08-final-result.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Full-Arch Dental Implants — All-on-X",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Full-Arch Dental Implants — All-on-X",
-    description: "Same-day full-arch dental implants by Dr. Antipov. 4–6 implants, immediate-load protocol, Roseville CA.",
-    images: ["/images/fullarch/08-final-result.jpeg"],
-  }
+  title: "Full-Arch Implant Solutions | All-on-X Same-Day Teeth | Dr. Antipov",
+  description:
+    "Transform your smile in one day with full-arch dental implant solutions. Dr. Antipov specializes in All-on-4, All-on-6, and advanced full mouth reconstruction. Serving Northern California.",
 }
 
-const iconBenefits = [
-  {
-    icon: <Smile className="h-5 w-5" />,
-    title: "Permanent, natural-feeling smile",
-    description: "Fixed teeth that look, feel, and function like your own",
-  },
-  {
-    icon: <Clock className="h-5 w-5" />,
-    title: "Same-day teeth option",
-    description: "Walk in with failing teeth, leave with a new smile",
-  },
-  {
-    icon: <HeartHandshake className="h-5 w-5" />,
-    title: "Restored chewing & speech",
-    description: "Eat steak, laugh freely, speak with full confidence",
-  },
-  {
-    icon: <ShieldCheck className="h-5 w-5" />,
-    title: "Prevents bone loss",
-    description: "Implants stimulate the jaw and preserve facial structure",
-  },
-  {
-    icon: <Sparkles className="h-5 w-5" />,
-    title: "No adhesives or slippage",
-    description: "Forget glue, soaking, or embarrassing moments",
-  },
-  {
-    icon: <DollarSign className="h-5 w-5" />,
-    title: "Cost-effective long-term",
-    description: "More predictable than replacing each tooth individually",
-  },
+const benefits = [
+  "Permanent, non-removable solution that looks and feels natural",
+  "Same-day teeth option available - walk in with failing teeth, leave with a new smile",
+  "Improved chewing function and speech compared to dentures",
+  "Prevents bone loss and maintains facial structure",
+  "No more adhesives, soaking, or embarrassing slippage",
+  "Cost-effective alternative to replacing individual teeth",
 ]
 
 const processSteps = [
@@ -183,33 +130,8 @@ export default function FullArchImplantsPage() {
       <ExpertisePageHero
         badge="Advanced Implant Solutions"
         title="Full-Arch Implant Solutions"
-        subtitle="Full-arch dental implants (All-on-4 / All-on-X) replace an entire upper or lower row of teeth using 4–6 titanium implants anchored in the jawbone — often with same-day fixed teeth."
-        image="/images/procedures/dental-implants@2x-06d1b2ea.jpg"
+        subtitle="Transform your entire smile with same-day teeth using the All-on-X protocol"
       />
-
-      {/* Animated stat cards overlapping hero bottom */}
-      <HeroStats stats={[
-          {
-            icon: <Clock className="h-5 w-5" />,
-            value: <>1 day</>,
-            label: "From extractions to fixed teeth",
-          },
-          {
-            icon: <Smile className="h-5 w-5" />,
-            value: <><AnimatedCounter to={4} />–6</>,
-            label: "Implants per arch",
-          },
-          {
-            icon: <ShieldCheck className="h-5 w-5" />,
-            value: <><AnimatedCounter to={95} suffix="%+" /></>,
-            label: "Long-term success rate",
-          },
-          {
-            icon: <TrendingUp className="h-5 w-5" />,
-            value: <><AnimatedCounter to={25} suffix="+ yrs" /></>,
-            label: "Typical implant lifespan",
-          },
-        ]} />
 
       {/* What It Is Section */}
       <Section background="default" padding="xl">
@@ -246,13 +168,6 @@ export default function FullArchImplantsPage() {
         </Container>
       </Section>
 
-      {/* Doctor Quote — personal touch */}
-      <DoctorQuote
-        quote="For a patient who has lived with failing teeth or ill-fitting dentures, walking out with a brand-new smile in a single day is one of the most rewarding things I do as a surgeon."
-        author="Dr. Alexander Antipov, DDS"
-        role="Board-Certified Oral & Maxillofacial Surgeon"
-      />
-
       {/* Benefits Section */}
       <Section background="gradient" padding="xl">
         <Container size="lg">
@@ -265,7 +180,7 @@ export default function FullArchImplantsPage() {
                 Experience the freedom and confidence that comes with a permanently restored smile
               </p>
 
-              <IconBenefits items={iconBenefits} columns={2} />
+              <BenefitsList benefits={benefits} />
             </div>
 
             <div className="space-y-6">
@@ -315,7 +230,7 @@ export default function FullArchImplantsPage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <VerticalProcessTimeline steps={processSteps} />
+            <ProcessTimeline steps={processSteps} />
           </div>
         </Container>
       </Section>
@@ -391,7 +306,7 @@ export default function FullArchImplantsPage() {
       </Section>
 
       {/* FAQ Section */}
-      <Section id="faq" background="default" padding="xl" className="scroll-mt-24">
+      <Section background="default" padding="xl">
         <Container size="lg">
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="text-center space-y-4">
@@ -421,46 +336,33 @@ export default function FullArchImplantsPage() {
         </Container>
       </Section>
 
-            {/* Related cluster */}
-      <Section background="accent" padding="xl">
+      {/* CTA Section */}
+      <Section background="gradient" padding="xl">
         <Container size="lg">
-          <h2 className="font-serif text-3xl font-bold text-neutral-900 text-center mb-12">Continue exploring</h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <a href="/all-on-4-cost" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Pricing</p>
-              <h3 className="font-bold text-neutral-900 leading-snug">All-on-4 cost breakdown</h3>
-              <p className="text-sm text-neutral-600 mt-2 leading-6">Itemized pricing, financing options, what affects your quote.</p>
-            </a>
-            <a href="/all-on-4-clearchoice-alternative" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Comparison</p>
-              <h3 className="font-bold text-neutral-900 leading-snug">Independent surgeon vs corporate chains</h3>
-              <p className="text-sm text-neutral-600 mt-2 leading-6">What to compare before choosing your All-on-4 provider.</p>
-            </a>
-            <a href="/surgical-cases/dental-implants" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Real cases</p>
-              <h3 className="font-bold text-neutral-900 leading-snug">Implant case gallery</h3>
-              <p className="text-sm text-neutral-600 mt-2 leading-6">Before-and-after transformations with clinical details.</p>
-            </a>
-            <a href="/for-patients/travel" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-              <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Logistics</p>
-              <h3 className="font-bold text-neutral-900 leading-snug">Traveling for surgery</h3>
-              <p className="text-sm text-neutral-600 mt-2 leading-6">Airports, hotels, recovery timeline for out-of-state patients.</p>
-            </a>
+          <div className="max-w-3xl mx-auto text-center space-y-8">
+            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+              Ready to Transform Your Smile?
+            </h2>
+            <p className="text-xl text-neutral-600">
+              Schedule a consultation to learn if full-arch dental implants are right for you
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg">
+                <Link href="/contact">Schedule Consultation</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <a href="tel:9167909693">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call (916) 790-9693
+                </a>
+              </Button>
+            </div>
+            <p className="text-sm text-neutral-500">
+              New patients welcome • Financing options available • Free consultations for referring dentists
+            </p>
           </div>
         </Container>
       </Section>
-
-      <DualCTA variant="implants"
-        heading="Restore Your Full Smile"
-        subheading="Full-arch reconstruction (All-on-4 / All-on-X) — schedule a complimentary implant consultation with a 3D CT scan."
-      />
-
-      {/* Floating sticky CTA — appears after 25% scroll */}
-      <FloatingArticleCTA
-        href="/contact"
-        label="Book free consultation"
-        showAfterPct={25}
-      />
     </>
   )
 }

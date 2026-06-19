@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PLGWHH74");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Dental Implant Consultation - Fusion Dental Implants</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <!-- HTTP/2 Server Push hints (if supported by server) -->
+    <link rel="preload" href="dist/styles.min.css" as="style" />
+    <link rel="preload" href="dist/script.min.js" as="script" />
+    <!-- Resource Hints for Performance -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="//maps.googleapis.com" />
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://maps.googleapis.com" />
+    <link rel="preconnect" href="https://js.sentry-cdn.com" />
+
+    <!-- Sentry Error Monitoring - Load early to catch all errors -->
+    <script
+      src="https://js.sentry-cdn.com/9d180428f6628a59fd642755794770bf.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Critical CSS - Inline for above-the-fold content -->
+    <style>
+      /* Critical CSS for initial render */
+      body {
+        font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: white;
+        min-height: 100vh;
+      }
+      .form-container {
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        margin: 50px auto;
+        max-width: 600px;
+        position: relative;
+        overflow: hidden;
+      }
+      .form-screen {
+        display: none;
+      }
+      .form-screen.active {
+        display: block;
+      }
+      .form-title {
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 28px;
+      }
+      .progress {
+        height: 8px;
+        border-radius: 4px;
+        background-color: #e9ecef;
+        margin-bottom: 30px;
+      }
+      .progress-bar {
+        background: linear-gradient(90deg, #0b3550, #1a5a7a);
+        border-radius: 4px;
+      }
+    </style>
+
+    <!-- Non-critical CSS - Load asynchronously -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
+    /></noscript>
+
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    /></noscript>
+
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    /></noscript>
+
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.css"
+    /></noscript>
+
+    <!-- External CSS -->
+    <link
+      rel="preload"
+      href="dist/styles.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="dist/styles.min.css" /></noscript>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PLGWHH74"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header with Logo -->
+    <header class="site-header">
+      <div class="header-container">
+        <a href="https://fusiondentalimplants.com" class="header-logo-link">
+          <img
+            src="fusion_dental_implants_logo.webp"
+            alt="Fusion Dental Implants"
+            class="header-logo"
+          />
+        </a>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="form-container">
+        <!-- Progress Bar with Step Counter -->
+        <div class="progress-wrapper">
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 25%"
+              id="progressBar"
+            ></div>
+          </div>
+          <div class="step-counter" id="stepCounter">Step 1 of 5</div>
+        </div>
+
+        <form id="multiStepForm">
+          <!-- Screen 0: Dental Situation Questions -->
+          <div
+            class="form-screen active"
+            id="screen0"
+            role="tabpanel"
+            aria-labelledby="screen0-title"
+          >
+            <h2 class="form-title" id="screen0-title">Assessment Questions</h2>
+
+            <fieldset class="form-group">
+              <legend class="form-label">
+                Tell us about your current smile.
+              </legend>
+              <p class="select-all-text">Select all that apply</p>
+              <div
+                class="checkbox-group"
+                role="group"
+                aria-labelledby="currentSituation-legend"
+              >
+                <div
+                  class="checkbox-option"
+                  tabindex="0"
+                  role="checkbox"
+                  aria-checked="false"
+                  aria-labelledby="missingTeeth-label"
+                >
+                  <input
+                    type="checkbox"
+                    name="currentSituation"
+                    value="missingTeeth"
+                    id="missingTeeth"
+                    aria-describedby="currentSituationError"
+                  />
+                  <label for="missingTeeth" id="missingTeeth-label"
+                    >I have missing teeth</label
+                  >
+                </div>
+                <div
+                  class="checkbox-option"
+                  tabindex="0"
+                  role="checkbox"
+                  aria-checked="false"
+                  aria-labelledby="damagedTeeth-label"
+                >
+                  <input
+                    type="checkbox"
+                    name="currentSituation"
+                    value="damagedTeeth"
+                    id="damagedTeeth"
+                    aria-describedby="currentSituationError"
+                  />
+                  <label for="damagedTeeth" id="damagedTeeth-label"
+                    >My teeth are cracked, loose of failing</label
+                  >
+                </div>
+                <div
+                  class="checkbox-option"
+                  tabindex="0"
+                  role="checkbox"
+                  aria-checked="false"
+                  aria-labelledby="gumDisease-label"
+                >
+                  <input
+                    type="checkbox"
+                    name="currentSituation"
+                    value="gumDisease"
+                    id="gumDisease"
+                    aria-describedby="currentSituationError"
+                  />
+                  <label for="gumDisease" id="gumDisease-label"
+                    >I have gum or infection problems</label
+                  >
+                </div>
+                <div
+                  class="checkbox-option"
+                  tabindex="0"
+                  role="checkbox"
+                  aria-checked="false"
+                  aria-labelledby="noneApply-label"
+                >
+                  <input
+                    type="checkbox"
+                    name="currentSituation"
+                    value="noneApply"
+                    id="noneApply"
+                    aria-describedby="currentSituationError"
+                  />
+                  <label for="noneApply" id="noneApply-label"
+                    >None of the above</label
+                  >
+                </div>
+              </div>
+              <div
+                class="error-message"
+                id="currentSituationError"
+                role="alert"
+                aria-live="polite"
+              >
+                Please select at least one option
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+              <legend class="form-label">
+                What solutions do you currently use?
+              </legend>
+              <p class="select-all-text">Select all that apply</p>
+              <div
+                class="checkbox-group"
+                role="group"
+                aria-labelledby="currentTreatments-legend"
+              >
+                <div
+                  class="checkbox-option"
+                  tabindex="0"
+                  role="checkbox"
+                  aria-checked="false"
+                  aria-labelledby="dentures-label"
+                >
+                  <input
+                    type="checkbox"
+                    name="currentTreatments"
+                    value="dentures"
+                    id="dentures"
+                    aria-describedby="currentTreatmentsError"
+                  />
+                  <label for="dentures" id="dentures-label"
+                    >Dentures or Partials</label
+                  >
+                </div>
+                <div
+                  class="checkbox-option"
+                  tabindex="0"
+                  role="checkbox"
+                  aria-checked="false"
+                  aria-labelledby="bridgesCrowns-label"
+                >
+                  <input
+                    type="checkbox"
+                    name="currentTreatments"
+                    value="bridgesCrowns"
+                    id="bridgesCrowns"
+                    aria-describedby="currentTreatmentsError"
+                  />
+                  <label for="bridgesCrowns" id="bridgesCrowns-label"
+                    >Bridges or crowns</label
+                  >
+                </div>
+                <div
+                  class="checkbox-option"
+                  tabindex="0"
+                  role="checkbox"
+                  aria-checked="false"
+                  aria-labelledby="implants-label"
+                >
+                  <input
+                    type="checkbox"
+                    name="currentTreatments"
+                    value="implants"
+                    id="implants"
+                    aria-describedby="currentTreatmentsError"
+                  />
+                  <label for="implants" id="implants-label"
+                    >Dental Implants already in place</label
+                  >
+                </div>
+                <div
+                  class="checkbox-option"
+                  tabindex="0"
+                  role="checkbox"
+                  aria-checked="false"
+                  aria-labelledby="none-label"
+                >
+                  <input
+                    type="checkbox"
+                    name="currentTreatments"
+                    value="none"
+                    id="none"
+                    aria-describedby="currentTreatmentsError"
+                  />
+                  <label for="none" id="none-label">None of the above</label>
+                </div>
+              </div>
+              <div
+                class="error-message"
+                id="currentTreatmentsError"
+                role="alert"
+                aria-live="polite"
+              >
+                Please select at least one option
+              </div>
+            </fieldset>
+
+            <div class="text-end">
+              <button type="button" class="btn btn-primary" data-action="next">
+                Next <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Screen 1: Personal Information -->
+          <div
+            class="form-screen"
+            id="screen1"
+            role="tabpanel"
+            aria-labelledby="screen1-title"
+          >
+            <h2 class="form-title" id="screen1-title">Personal Information</h2>
+
+            <div class="form-group floating-label-group">
+              <input
+                type="text"
+                class="form-control floating-input"
+                id="firstName"
+                name="firstName"
+                autocomplete="given-name"
+                required
+                aria-describedby="firstNameError"
+                maxlength="100"
+              />
+              <label class="floating-label" for="firstName">First Name *</label>
+              <div
+                class="error-message"
+                id="firstNameError"
+                role="alert"
+                aria-live="polite"
+              >
+                First name is required
+              </div>
+            </div>
+
+            <div class="form-group floating-label-group">
+              <input
+                type="text"
+                class="form-control floating-input"
+                id="lastName"
+                name="lastName"
+                autocomplete="family-name"
+                required
+                aria-describedby="lastNameError"
+                maxlength="100"
+              />
+              <label class="floating-label" for="lastName">Last Name *</label>
+              <div
+                class="error-message"
+                id="lastNameError"
+                role="alert"
+                aria-live="polite"
+              >
+                Last name is required
+              </div>
+            </div>
+
+            <div class="form-group floating-label-group">
+              <input
+                type="text"
+                class="form-control floating-input"
+                id="dob"
+                name="dob"
+                autocomplete="bday"
+                required
+                aria-describedby="dobError"
+                placeholder="MM/DD/YYYY"
+                maxlength="100"
+              />
+              <label class="floating-label" for="dob">Date of Birth *</label>
+              <div
+                class="error-message"
+                id="dobError"
+                role="alert"
+                aria-live="polite"
+              >
+                Please enter a valid date in MM/DD/YYYY format
+              </div>
+            </div>
+
+            <div class="form-group floating-label-group">
+              <input
+                type="email"
+                class="form-control floating-input"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-describedby="emailError"
+                maxlength="100"
+              />
+              <label class="floating-label" for="email">Email *</label>
+              <div
+                class="error-message"
+                id="emailError"
+                role="alert"
+                aria-live="polite"
+              >
+                Valid email is required
+              </div>
+            </div>
+
+            <div class="form-group floating-label-group">
+              <input
+                type="tel"
+                class="form-control floating-input"
+                id="phone"
+                name="phone"
+                autocomplete="tel"
+                required
+                aria-describedby="phoneError"
+                maxlength="100"
+              />
+              <label class="floating-label" for="phone">Phone *</label>
+              <div
+                class="error-message"
+                id="phoneError"
+                role="alert"
+                aria-live="polite"
+              >
+                Please enter a valid US phone number
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-action="prev"
+              >
+                <i class="fas fa-arrow-left"></i> Previous
+              </button>
+              <button type="button" class="btn btn-primary" data-action="next">
+                Next <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Screen 2: Address Information -->
+          <div
+            class="form-screen"
+            id="screen2"
+            role="tabpanel"
+            aria-labelledby="screen2-title"
+          >
+            <h2 class="form-title" id="screen2-title">Address Information</h2>
+
+            <div class="form-group floating-label-group">
+              <input
+                type="text"
+                class="form-control floating-input"
+                id="street"
+                name="street"
+                required
+                aria-describedby="streetError"
+                autocomplete="street-address"
+                maxlength="150"
+              />
+              <label class="floating-label" for="street"
+                >Street Address *</label
+              >
+              <div
+                class="error-message"
+                id="streetError"
+                role="alert"
+                aria-live="polite"
+              >
+                Street address is required
+              </div>
+            </div>
+
+            <div class="form-group floating-label-group">
+              <input
+                type="text"
+                class="form-control floating-input"
+                id="aptSuite"
+                name="aptSuite"
+                autocomplete="address-line2"
+                maxlength="100"
+              />
+              <label class="floating-label" for="aptSuite">Unit / Suite</label>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group floating-label-group">
+                  <input
+                    type="text"
+                    class="form-control floating-input"
+                    id="city"
+                    name="city"
+                    required
+                    aria-describedby="cityError"
+                    autocomplete="address-level2"
+                    maxlength="100"
+                  />
+                  <label class="floating-label" for="city">City *</label>
+                  <div
+                    class="error-message"
+                    id="cityError"
+                    role="alert"
+                    aria-live="polite"
+                  >
+                    City is required
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group floating-label-group">
+                  <select
+                    class="form-control floating-input"
+                    id="state"
+                    name="state"
+                    required
+                    aria-describedby="stateError"
+                    autocomplete="address-level1"
+                  >
+                    <option value="">Select State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                  </select>
+                  <label class="floating-label" for="state">State *</label>
+                  <div
+                    class="error-message"
+                    id="stateError"
+                    role="alert"
+                    aria-live="polite"
+                  >
+                    State is required
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group floating-label-group">
+                  <input
+                    type="text"
+                    class="form-control floating-input"
+                    id="zipCode"
+                    name="zipCode"
+                    required
+                    aria-describedby="zipCodeError"
+                    autocomplete="postal-code"
+                    maxlength="20"
+                  />
+                  <label class="floating-label" for="zipCode">ZIP Code *</label>
+                  <div
+                    class="error-message"
+                    id="zipCodeError"
+                    role="alert"
+                    aria-live="polite"
+                  >
+                    ZIP code is required
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-action="prev"
+              >
+                <i class="fas fa-arrow-left"></i> Previous
+              </button>
+              <button type="button" class="btn btn-primary" data-action="next">
+                Next <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Screen 3: Payment Plan Question -->
+          <div
+            class="form-screen"
+            id="screen3"
+            role="tabpanel"
+            aria-labelledby="screen3-title"
+          >
+            <h2 class="form-title" id="screen3-title">Payment Options</h2>
+
+            <fieldset class="form-group">
+              <legend class="form-label">
+                Would you like to explore affordable payment options?
+              </legend>
+              <div
+                class="radio-group"
+                role="radiogroup"
+                aria-labelledby="paymentPlan-legend"
+              >
+                <div
+                  class="radio-option"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labelledby="paymentNo-label"
+                >
+                  <input
+                    type="radio"
+                    name="paymentPlan"
+                    value="no"
+                    id="paymentNo"
+                    required
+                    aria-describedby="paymentPlanError"
+                  />
+                  <label for="paymentNo" id="paymentNo-label"
+                    >I am able to pay for the treatment upfront</label
+                  >
+                </div>
+                <div
+                  class="radio-option"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labelledby="paymentYes-label"
+                >
+                  <input
+                    type="radio"
+                    name="paymentPlan"
+                    value="yes"
+                    id="paymentYes"
+                    required
+                    aria-describedby="paymentPlanError"
+                  />
+                  <label for="paymentYes" id="paymentYes-label"
+                    >Yes, I would like to explore flexible payment
+                    options</label
+                  >
+                </div>
+              </div>
+              <div
+                class="error-message"
+                id="paymentPlanError"
+                role="alert"
+                aria-live="polite"
+              >
+                Please select a payment option
+              </div>
+            </fieldset>
+
+            <!-- FICO Score Question - Only shown when "Yes" is selected -->
+            <fieldset
+              class="form-group"
+              id="ficoScoreGroup"
+              style="display: none"
+            >
+              <legend class="form-label">
+                What is your approximate FICO score? *
+              </legend>
+              <div
+                class="radio-group"
+                role="radiogroup"
+                aria-labelledby="ficoScore-legend"
+              >
+                <div
+                  class="radio-option"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labelledby="fico740-label"
+                >
+                  <input
+                    type="radio"
+                    name="ficoScore"
+                    value="740+"
+                    id="fico740"
+                    aria-describedby="ficoScoreError"
+                  />
+                  <label for="fico740" id="fico740-label">740+</label>
+                </div>
+                <div
+                  class="radio-option"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labelledby="fico700-label"
+                >
+                  <input
+                    type="radio"
+                    name="ficoScore"
+                    value="700-739"
+                    id="fico700"
+                    aria-describedby="ficoScoreError"
+                  />
+                  <label for="fico700" id="fico700-label">700–739</label>
+                </div>
+                <div
+                  class="radio-option"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labelledby="fico660-label"
+                >
+                  <input
+                    type="radio"
+                    name="ficoScore"
+                    value="660-699"
+                    id="fico660"
+                    aria-describedby="ficoScoreError"
+                  />
+                  <label for="fico660" id="fico660-label">660–699</label>
+                </div>
+                <div
+                  class="radio-option"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labelledby="ficoBelow-label"
+                >
+                  <input
+                    type="radio"
+                    name="ficoScore"
+                    value="Below 660"
+                    id="ficoBelow"
+                    aria-describedby="ficoScoreError"
+                  />
+                  <label for="ficoBelow" id="ficoBelow-label">Below 660</label>
+                </div>
+              </div>
+              <div
+                class="error-message"
+                id="ficoScoreError"
+                role="alert"
+                aria-live="polite"
+              >
+                Please select your FICO score range
+              </div>
+            </fieldset>
+
+            <div class="d-flex justify-content-between">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-action="prev"
+              >
+                <i class="fas fa-arrow-left"></i> Previous
+              </button>
+              <button type="button" class="btn btn-primary" data-action="next">
+                Next <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Screen 4: Consultation Readiness -->
+          <div
+            class="form-screen"
+            id="screen4"
+            role="tabpanel"
+            aria-labelledby="screen4-title"
+          >
+            <h2 class="form-title" id="screen4-title">
+              Schedule Your Free Consultation
+            </h2>
+
+            <fieldset class="form-group">
+              <legend class="form-label">
+                Are you ready to book free consultation appointment now?
+              </legend>
+              <div
+                class="radio-group"
+                role="radiogroup"
+                aria-labelledby="consultationReadiness-legend"
+              >
+                <div
+                  class="radio-option"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labelledby="consultationYes-label"
+                >
+                  <input
+                    type="radio"
+                    name="consultationReadiness"
+                    value="yes"
+                    id="consultationYes"
+                    aria-describedby="consultationReadinessError"
+                  />
+                  <label for="consultationYes" id="consultationYes-label"
+                    >Yes, I am ready</label
+                  >
+                </div>
+                <div
+                  class="radio-option"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labelledby="consultationNo-label"
+                >
+                  <input
+                    type="radio"
+                    name="consultationReadiness"
+                    value="no"
+                    id="consultationNo"
+                    aria-describedby="consultationReadinessError"
+                  />
+                  <label for="consultationNo" id="consultationNo-label"
+                    >I would like more information first</label
+                  >
+                </div>
+              </div>
+              <div
+                class="error-message"
+                id="consultationReadinessError"
+                role="alert"
+                aria-live="polite"
+              >
+                Please select an option
+              </div>
+            </fieldset>
+
+            <div class="d-flex justify-content-between">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-action="prev"
+              >
+                <i class="fas fa-arrow-left"></i> Previous
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-action="next"
+                id="consultationNextBtn"
+              >
+                Next <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Screen 5: Final Thank You (for No response) -->
+          <div
+            class="form-screen"
+            id="screen5"
+            role="tabpanel"
+            aria-labelledby="screen5-title"
+          >
+            <h2 class="form-title" id="screen5-title">We'll Be In Touch</h2>
+
+            <div class="confirmation-section">
+              <div class="thank-you-content">
+                <p>
+                  Thank you for your interest in Fusion Dental Implants!<br /><br />
+                  An appointment coordinator will contact you within 1 hour to
+                  discuss your options and provide personalized information
+                  about our services.
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="confirmation-section">
+              <h4><i class="fas fa-phone"></i> Questions?</h4>
+              <div class="contact-content">
+                <p>
+                  Call us at
+                  <a href="tel:+19162929998" class="contact-link"
+                    >(916) 292-9998</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="text-center mt-4">
+              <a
+                href="https://fusiondentalimplants.com"
+                class="btn btn-primary"
+              >
+                Done
+              </a>
+            </div>
+          </div>
+
+          <!-- Screen 6: Appointment Scheduling -->
+          <div
+            class="form-screen"
+            id="screen6"
+            role="tabpanel"
+            aria-labelledby="screen6-title"
+          >
+            <h2 class="form-title" id="screen6-title">
+              Schedule Your Appointment
+            </h2>
+
+            <!-- Location Selection -->
+            <fieldset class="form-group">
+              <legend class="form-label">Select Location *</legend>
+              <div
+                class="radio-group"
+                role="radiogroup"
+                aria-labelledby="assignedCenter-legend"
+              >
+                <div
+                  class="radio-option"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labelledby="locationRoseville-label"
+                >
+                  <input
+                    type="radio"
+                    name="assignedCenter"
+                    value="Roseville"
+                    id="locationRoseville"
+                    required
+                    aria-describedby="assignedCenterError"
+                  />
+                  <label for="locationRoseville" id="locationRoseville-label"
+                    >Roseville</label
+                  >
+                </div>
+                <div
+                  class="radio-option"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labelledby="locationElDoradoHills-label"
+                >
+                  <input
+                    type="radio"
+                    name="assignedCenter"
+                    value="El Dorado Hills"
+                    id="locationElDoradoHills"
+                    required
+                    aria-describedby="assignedCenterError"
+                  />
+                  <label
+                    for="locationElDoradoHills"
+                    id="locationElDoradoHills-label"
+                    >El Dorado Hills</label
+                  >
+                </div>
+              </div>
+              <div
+                class="error-message"
+                id="assignedCenterError"
+                role="alert"
+                aria-live="polite"
+              >
+                Please select a location
+              </div>
+            </fieldset>
+
+            <!-- Date Selection -->
+            <div class="form-group">
+              <label for="appointmentDate" class="form-label"
+                >Select Date *</label
+              >
+              <div class="date-picker-container">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="appointmentDate"
+                  name="appointmentDate"
+                  required
+                  aria-describedby="appointmentDateError appointmentDateHelp"
+                  readonly
+                  placeholder="Tap to select date"
+                />
+              </div>
+              <div
+                class="error-message"
+                id="appointmentDateError"
+                role="alert"
+                aria-live="polite"
+              >
+                Please select a date
+              </div>
+            </div>
+
+            <!-- Time Selection -->
+            <div class="form-group">
+              <p class="form-label" id="timeSlotsLabel">Select Time *</p>
+              <div
+                class="time-slots-container"
+                id="timeSlotsContainer"
+                role="radiogroup"
+                aria-labelledby="timeSlotsLabel"
+                aria-describedby="appointmentTimeError"
+              >
+                <div class="time-slots-placeholder">
+                  <i class="fas fa-clock"></i>
+                  <p>Please select a date first</p>
+                </div>
+              </div>
+              <div
+                class="error-message"
+                id="appointmentTimeError"
+                role="alert"
+                aria-live="polite"
+              >
+                Please select a time slot
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-action="prev"
+              >
+                <i class="fas fa-arrow-left"></i> Previous
+              </button>
+              <button type="submit" class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+
+          <!-- Screen 7: Booking Confirmation -->
+          <div
+            class="form-screen"
+            id="screen7"
+            role="tabpanel"
+            aria-labelledby="screen7-title"
+          >
+            <h2 class="form-title" id="screen7-title">Booking Confirmed!</h2>
+
+            <!-- Appointment Details -->
+            <div class="confirmation-section">
+              <h4>
+                <i class="fas fa-calendar-check"></i> Your Appointment Details
+              </h4>
+              <div class="appointment-details">
+                <div class="detail-item">
+                  <span class="detail-label">Location:</span>
+                  <span class="detail-value" id="confirmationLocation"></span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Date:</span>
+                  <span class="detail-value" id="confirmationDate"></span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Time:</span>
+                  <span class="detail-value" id="confirmationTime"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- What to Expect -->
+            <div class="confirmation-section">
+              <h4><i class="fas fa-info-circle"></i> What to Expect</h4>
+              <div class="expectation-content">
+                <p>
+                  We're excited to meet you! Here's what you can expect during
+                  your appointment:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Booking Confirmation:</strong> One of our
+                    appointment coordinators will reach out shortly to confirm
+                    your appointment
+                  </li>
+                  <li>
+                    <strong>Arrival:</strong> Please arrive 15 minutes early to
+                    complete any remaining paperwork
+                  </li>
+                  <li>
+                    <strong>Consultation:</strong> We'll review your dental
+                    history and discuss your treatment goals
+                  </li>
+                  <li>
+                    <strong>Examination:</strong> A comprehensive oral
+                    examination will be performed
+                  </li>
+                  <li>
+                    <strong>Treatment Plan:</strong> We'll create a personalized
+                    treatment plan tailored to your needs
+                  </li>
+                  <li>
+                    <strong>Next Steps:</strong> We'll schedule any follow-up
+                    appointments if needed
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- FAQ Link -->
+            <!-- <div class="confirmation-section">
+                        <h4><i class="fas fa-question-circle"></i> Questions?</h4>
+                        <div class="faq-content">
+                            <p>Have questions about your appointment or our services? Check out our frequently asked questions:</p>
+                            <a href="#" class="faq-link" data-action="open-faq">
+                                <i class="fas fa-external-link-alt"></i> View FAQ
+                            </a>
+                        </div>
+                    </div> -->
+
+            <div class="text-center mt-4">
+              <a
+                href="https://fusiondentalimplants.com"
+                class="btn btn-primary"
+              >
+                Done
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-reviews">
+          <div
+            class="elfsight-app-7b4b494a-0b3f-4226-8137-0e8b222fa19c"
+            data-elfsight-app-lazy
+          ></div>
+        </div>
+        <p class="footer-copyright">
+          &copy; <span id="currentYear"></span> Fusion Dental Implants. All
+          rights reserved.
+        </p>
+        <p class="footer-disclaimer">
+          By proceeding you agree to our
+          <a
+            href="https://fusiondentalimplants.com/terms-conditions/"
+            class="footer-link"
+            >Terms and Conditions</a
+          >
+          and confirm you have read and understand our
+          <a
+            href="https://fusiondentalimplants.com/privacy-policy/"
+            class="footer-link"
+            >Privacy Policy</a
+          >, and you consent to receive emails, texts and calls from Nuvia
+          regarding your inquiry (even if you are on a Do Not Call Registry).
+          Message and data rates may apply. You may opt out at any time by
+          replying STOP.
+        </p>
+        <p class="footer-recaptcha">
+          This site is protected by reCAPTCHA and the Google
+          <a href="https://policies.google.com/privacy" class="footer-link"
+            >Privacy Policy</a
+          >
+          and
+          <a href="https://policies.google.com/terms" class="footer-link"
+            >Terms of Service</a
+          >
+          apply.
+        </p>
+      </div>
+    </footer>
+
+    <script src="dist/script.min.js" defer></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?render=6LfAv8grAAAAAFkd5EJ1HC4fbmTfdq3yce7rgPtg"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.js"
+      defer
+    ></script>
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+  </body>
+</html>

@@ -3,6 +3,8 @@
 @theme inline {
   --color-background: #ffffff;
   --color-foreground: #1a2332;
+
+  /* Marketing site (doctors-corner) palette */
   --color-primary: #1ABB9C;
   --color-primary-dark: #17A78B;
   --color-primary-light: #6ECDB2;
@@ -11,37 +13,73 @@
   --color-muted: #73879C;
   --color-light: #F7F9FA;
   --color-dark: #283645;
-  --color-navy: #0e3e5e;
-  --color-navy-dark: #0a2e47;
-  --color-navy-light: #1a5478;
-  --color-cream: #F5EFE6;
-  --color-gold: #C9A352;
-  --color-bone: #F5EFE6;
-  --font-sans: var(--font-geist-sans);
-  --font-serif: var(--font-merriweather), Georgia, serif;
-  --font-signature: var(--font-dancing-script), "Brush Script MT", cursive;
-  --font-signature-cyrillic: var(--font-caveat), "Brush Script MT", cursive;
+
+  /* Educational site primary scale (dark blue / navy) */
+  --color-primary-50: #e8f0f5;
+  --color-primary-100: #d1e1eb;
+  --color-primary-200: #a3c3d7;
+  --color-primary-300: #75a5c3;
+  --color-primary-400: #4787af;
+  --color-primary-500: #0e3e5e;
+  --color-primary-600: #0b324b;
+  --color-primary-700: #082538;
+  --color-primary-800: #061926;
+  --color-primary-900: #030c13;
+
+  /* Educational site neutral scale */
+  --color-neutral-50: #f5f5f5;
+  --color-neutral-100: #e5e5e5;
+  --color-neutral-200: #cccccc;
+  --color-neutral-300: #b2b2b2;
+  --color-neutral-400: #999999;
+  --color-neutral-500: #444346;
+  --color-neutral-600: #333333;
+  --color-neutral-700: #1a1a1a;
+  --color-neutral-800: #0d0d0d;
+  --color-neutral-900: #000000;
+
+  /* Educational site accent scale */
+  --color-accent-50: #f3f3f3;
+  --color-accent-100: #e7e7e8;
+  --color-accent-200: #cfcfd1;
+  --color-accent-300: #b7b7ba;
+  --color-accent-400: #9f9fa3;
+  --color-accent-500: #444346;
+  --color-accent-600: #363538;
+  --color-accent-700: #28282a;
+  --color-accent-800: #1a1a1c;
+  --color-accent-900: #0d0d0e;
+
+  /* Fonts */
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-serif: var(--font-serif), Georgia, serif;
+  --font-signature: var(--font-signature), cursive;
+
+  /* Borders & shadows from educational site */
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --shadow-glass: 0 8px 32px 0 rgba(14, 62, 94, 0.15);
+  --shadow-glass-lg: 0 12px 48px 0 rgba(14, 62, 94, 0.20);
+  --spacing-18: 4.5rem;
+  --spacing-112: 28rem;
+  --spacing-128: 32rem;
 }
 
-/* Smooth scroll ONLY on desktop (precise pointers like mouse).
-   Mobile gets instant scroll ALWAYS — critical because:
-   1. With smooth scroll on, Next.js Link's scrollTo(0,0) animates from
-      current scroll (far down homepage) to 0 — on a shorter destination
-      page that target gets clamped to its bottom → user lands at bottom.
-   2. Browser back-forward scroll restoration also breaks with smooth scroll
-      → user lands at top of source page instead of where they clicked.
-   `@media (hover: hover) and (pointer: fine)` matches mouse devices only;
-   touchscreens get instant scroll → native behavior works correctly. */
-@media (hover: hover) and (pointer: fine) {
-  html {
-    scroll-behavior: smooth;
-  }
+/* Radix accordion animations (used by educational site) */
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
 }
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+.animate-accordion-down { animation: accordion-down 0.2s ease-out; }
+.animate-accordion-up { animation: accordion-up 0.2s ease-out; }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {

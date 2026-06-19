@@ -141,7 +141,7 @@ const cardVariants = {
 
 export default function Services() {
   return (
-    <section id="services" className="py-16 lg:py-20 bg-light">
+    <section id="services" className="py-24 lg:py-32 bg-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -153,7 +153,7 @@ export default function Services() {
           <span className="text-primary font-semibold text-sm tracking-widest uppercase">
             Comprehensive Oral &amp; Maxillofacial Surgery Services
           </span>
-          <h2 className="font-serif mt-4 text-4xl sm:text-5xl font-bold text-dark tracking-tight">
+          <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-dark tracking-tight">
             Advanced Surgical
             <br />
             <span className="gradient-text">Specialties &amp; Procedures</span>
@@ -174,7 +174,7 @@ export default function Services() {
             <motion.div
               key={service.title}
               variants={cardVariants}
-              className="group relative bg-white/85 backdrop-blur-xl border border-white/60 rounded-3xl overflow-hidden shadow-md hover:shadow-[0_25px_70px_-15px_rgba(14,62,94,0.3)] hover:-translate-y-1 hover:border-primary/30 transition-all duration-500"
+              className="group relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500"
             >
               <div className="relative h-56 overflow-hidden">
                 <Image
@@ -182,7 +182,6 @@ export default function Services() {
                   alt={`${service.title} — ${service.subtitle} — Dr. Alexander Antipov, Oral Surgeon, Roseville CA`}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  sizes="100vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/20 to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5">

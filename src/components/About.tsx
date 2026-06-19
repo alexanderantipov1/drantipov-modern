@@ -12,18 +12,14 @@ const stats = [
 ];
 
 const antipovCredentials = [
-  "Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS)",
+  "Diplomate, American Board of Oral & Maxillofacial Surgery",
+  "Fellowship-Trained in Complex Implant Reconstruction",
   "Member, American Association of Oral & Maxillofacial Surgeons (AAOMS)",
-  "Member, California Association of Oral & Maxillofacial Surgeons (CALAOMS)",
-  "Member, Sacramento District Dental Society (SDDS)",
   "Member, American Dental Association (ADA)",
-  "Member, California Dental Association (CDA)",
-  "California Dental License #50724",
-  "General Anesthesia Permit #GA 1446 — In-Office IV Sedation",
-  "Elective Facial Cosmetic Surgery Permit",
-  "Continuing Education Registered Provider #00948675",
-  "Hospital Privileges — Sutter Roseville, Sutter General, Mercy General, Mercy San Juan",
-  "Founder & Director, Smile Again Foundation (2025)",
+  "Member, Academy of Osseointegration",
+  "Preferred Referral Partner for 100+ Northern California Dentists",
+  "Advanced Training in 3D Computer-Guided Surgery",
+  "Certified in IV Sedation & General Anesthesia",
 ];
 
 const kahwachCredentials = [
@@ -37,7 +33,7 @@ const kahwachCredentials = [
 
 export default function About() {
   return (
-    <section id="about" className="pt-8 pb-16 lg:pt-10 lg:pb-20 bg-light overflow-hidden">
+    <section id="about" className="py-24 lg:py-32 bg-light overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
         <motion.div
@@ -50,7 +46,7 @@ export default function About() {
           <span className="text-primary font-semibold text-sm tracking-widest uppercase">
             Meet Your Oral &amp; Maxillofacial Surgeons
           </span>
-          <h2 className="font-serif mt-4 text-4xl sm:text-5xl font-bold text-dark tracking-tight leading-tight">
+          <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-dark tracking-tight leading-tight">
             Two Experts. <span className="gradient-text">One Mission.</span>
           </h2>
           <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
@@ -70,11 +66,10 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
               <Image
-                src="/images/drantipov-about-v7.jpg"
+                src="/images/drantipov@2x-b80a5ccf.jpg"
                 alt="Dr. Alexander Antipov, DDS — Board-certified oral and maxillofacial surgeon specializing in dental implants, jaw surgery, and facial cosmetics in Roseville, CA"
                 fill
                 className="object-cover"
-                sizes="100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
             </div>
@@ -193,11 +188,10 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
               <Image
-                src="/images/dr-kahwach-v3.jpg"
+                src="/images/dr-kahwach.jpg"
                 alt="Dr. André-David Kahwach, DDS, MD — Oral and maxillofacial surgeon specializing in dental implants, facial trauma, orthognathic surgery, and cosmetic procedures"
                 fill
                 className="object-cover"
-                sizes="100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark/40 to-transparent" />
             </div>
@@ -266,12 +260,6 @@ export default function About() {
                 Book a Free Consultation
               </button>
             </ConsultationModal>
-            <a
-              href="/our-team"
-              className="px-8 py-3.5 border-2 border-dark/10 text-dark rounded-2xl font-semibold hover:border-primary hover:text-primary transition-all duration-300"
-            >
-              Meet Our Surgeons
-            </a>
             <a
               href="#before-after"
               className="px-8 py-3.5 border-2 border-dark/10 text-dark rounded-2xl font-semibold hover:border-primary hover:text-primary transition-all duration-300"

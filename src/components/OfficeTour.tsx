@@ -14,9 +14,6 @@ const officeImages = [
   { src: "/images/office-tour/7/gallery@2x-e3edc33f.jpg", preview: "/images/office-tour/7/gallery@2x-e3edc33f.jpg", label: "CT Imaging" },
   { src: "/images/office-tour/8/gallery@2x-e877a601.jpg", preview: "/images/office-tour/8/gallery@2x-e877a601.jpg", label: "Equipment Room" },
   { src: "/images/office-tour/9/gallery@2x-40a5d0af.jpg", preview: "/images/office-tour/9/gallery@2x-40a5d0af.jpg", label: "Sterilization" },
-  { src: "/images/office-tour/10/gallery@2x-instrument-prep.jpg", preview: "/images/office-tour/10/gallery@2x-instrument-prep.jpg", label: "Surgical Instrument Prep" },
-  { src: "/images/office-tour/11/gallery@2x-digital-workflow.jpg", preview: "/images/office-tour/11/gallery@2x-digital-workflow.jpg", label: "Digital Smile Design" },
-  { src: "/images/office-tour/12/gallery@2x-surgical-planning.jpg", preview: "/images/office-tour/12/gallery@2x-surgical-planning.jpg", label: "Surgical Planning Station" },
 ];
 
 const landingOffice: string[] = [];
@@ -26,7 +23,7 @@ export default function OfficeTour() {
   const allImages = [...officeImages.map(o => o.src), ...landingOffice];
 
   return (
-    <section id="office-tour" className="py-16 lg:py-20 bg-white">
+    <section id="office-tour" className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -56,9 +53,7 @@ export default function OfficeTour() {
               onClick={() => setLightbox(i)}
               className="group relative aspect-[4/3] rounded-2xl overflow-hidden"
             >
-              <Image src={img.src} alt={`${img.label} — Dr. Antipov\'s oral & maxillofacial surgery office in Roseville, CA`} fill className="object-cover group-hover:scale-105 transition-transform duration-500"
-          sizes="100vw"
-        />
+              <Image src={img.src} alt={img.label} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-3 left-3 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">{img.label}</div>
             </motion.button>
@@ -73,9 +68,7 @@ export default function OfficeTour() {
               onClick={() => setLightbox(officeImages.length + i)}
               className="group relative aspect-[4/3] rounded-2xl overflow-hidden"
             >
-              <Image src={src} alt={`Office ${i + 10}`} fill className="object-cover group-hover:scale-105 transition-transform duration-500"
-          sizes="100vw"
-        />
+              <Image src={src} alt={`Office ${i + 10}`} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
             </motion.button>
           ))}
         </div>
@@ -94,7 +87,7 @@ export default function OfficeTour() {
               <button onClick={() => setLightbox(null)} className="absolute -top-12 right-0 text-white/70 hover:text-white">
                 <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
               </button>
-              <Image src={allImages[lightbox] ?? ""} alt={`${officeImages[lightbox]?.label ?? "Office"} — Dr. Antipov\'s Roseville oral surgery facility`} width={1400} height={900} className="w-full h-auto rounded-2xl" />
+              <Image src={allImages[lightbox] ?? ""} alt="Office" width={1400} height={900} className="w-full h-auto rounded-2xl" />
               <div className="mt-4 flex justify-between">
                 <button onClick={() => setLightbox(Math.max(0, lightbox - 1))} disabled={lightbox === 0} className="px-4 py-2 bg-white/10 rounded-xl text-white text-sm disabled:opacity-30">&larr; Prev</button>
                 <span className="text-white text-sm">{lightbox + 1} / {allImages.length}</span>

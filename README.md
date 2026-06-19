@@ -1,171 +1,343 @@
-# drantipov.com — English site
+# Dr. Alexander Antipov - Personal Brand & Educational Hub
 
-Next.js 16 (App Router) website for **Dr. Alexander V. Antipov, DDS** — board-certified oral and maxillofacial surgeon in Roseville, California.
+A modern, high-performance website for Dr. Alexander Antipov, board-certified oral and maxillofacial surgeon. Built with Next.js 14, TypeScript, and featuring a glassmorphism design system.
 
-This package is the **production-ready English version** of the site.
-Russian and Spanish localizations have been stripped from this build.
+## 🚀 Tech Stack
 
----
+- **Framework**: Next.js 14.2.33 (App Router)
+- **Language**: TypeScript 5.9+ (strict mode)
+- **Styling**: Tailwind CSS 3.4+ with custom design system
+- **UI Components**: Shadcn UI + Radix UI primitives
+- **Animations**: Framer Motion 12+
+- **Forms**: React Hook Form + Zod validation
+- **Email**: Resend (configured, pending API key)
+- **Icons**: Lucide React
+- **Package Manager**: Yarn
 
-## Stack
-
-- **Framework**: Next.js 16 (App Router, Server Components)
-- **Language**: TypeScript (strict mode)
-- **Styling**: Tailwind CSS v4 + custom design tokens
-- **UI**: shadcn/ui + Radix UI primitives
-- **Animations**: Framer Motion
-- **Forms**: React Hook Form + Zod
-- **Email**: Resend
-- **Analytics**: GA4 + Microsoft Clarity (env-driven, optional)
-- **Package manager**: npm (or yarn, lockfiles for both included)
-
-Node version required: **20.x or 22.x** (Next.js 16 minimum is Node 20).
-
----
-
-## Quick start (local dev)
-
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Configure environment variables
-cp .env.example .env.local
-# Edit .env.local — at minimum set NEXT_PUBLIC_SITE_URL
-
-# 3. Start the dev server
-npm run dev
-# Site is now running at http://localhost:3000
-```
-
----
-
-## Production build & deploy
-
-### Recommended: Vercel
-
-1. Push this repository to GitHub.
-2. In Vercel: **New Project → Import from GitHub → select repo**.
-3. Add all environment variables from `.env.example` in Vercel project settings → Environment Variables.
-4. Vercel will auto-detect Next.js and deploy. No further configuration needed.
-
-### Generic Node hosting (Docker, fly.io, Railway, custom VPS, etc.)
-
-```bash
-# Build a production bundle
-npm run build
-
-# Start the production server (default port 3000)
-npm run start
-```
-
-Set environment variables on your hosting platform before starting.
-
-### Static hosting (Netlify, Cloudflare Pages, etc.)
-
-This is a hybrid app (server components + dynamic routes). It is **not a static export**. Use Vercel, Netlify with Next.js runtime, or Node hosting. Plain static export will not work.
-
----
-
-## Environment variables
-
-All variables documented in `.env.example`. The minimum required for the site to render is:
-
-| Variable | Required | Purpose |
-|---|---|---|
-| `NEXT_PUBLIC_SITE_URL` | yes | Used in sitemap, canonical, OG tags |
-| `CONTACT_EMAIL` | yes (for forms) | Where contact form submissions are sent |
-| `RESEND_API_KEY` | yes (for forms) | Transactional email delivery |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | no | Google Analytics 4 |
-| `NEXT_PUBLIC_CLARITY_ID` | no | Microsoft Clarity heatmaps |
-| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | no | Google Search Console |
-| `NEXT_PUBLIC_BING_VERIFICATION` | no | Bing Webmaster Tools |
-| `NEXT_PUBLIC_YANDEX_VERIFICATION` | no | Yandex.Webmaster |
-
-Without analytics or verification IDs, the site still works — those features are simply disabled.
-
----
-
-## Available npm scripts
-
-```bash
-npm run dev      # Start dev server on :3000 with hot reload
-npm run build    # Build production bundle
-npm run start    # Run production server (after build)
-npm run lint     # Run ESLint
-```
-
----
-
-## Project structure
+## 📁 Project Structure
 
 ```
 src/
-├── app/                       # Next.js App Router (routes & layouts)
-│   ├── page.tsx               # Homepage
-│   ├── layout.tsx             # Root layout (metadata, fonts, GA, Clarity)
-│   ├── sitemap.ts             # Dynamic sitemap.xml
-│   ├── robots.ts              # Dynamic robots.txt
-│   ├── manifest.ts            # PWA manifest
-│   ├── about/                  # About Dr. Antipov
-│   ├── our-team/              # Team page
-│   ├── expertise/             # Service pages (full-arch, single-tooth, etc.)
-│   ├── for-patients/          # Patient resources + insights articles
-│   ├── for-dentists/          # Referral resources
-│   ├── surgical-cases/        # Before/after case gallery
-│   ├── locations/             # 46+ city landing pages
-│   ├── insurance/             # Insurance hub + carriers
-│   ├── legal/                 # Privacy, Terms, HIPAA, Disclaimer
-│   ├── all-on-4-cost/         # Conversion landing pages
-│   ├── all-on-4-clearchoice-alternative/
-│   ├── jaw-surgery-recovery-timeline/
-│   ├── smile-again-foundation/
-│   ├── full-arch-dental-implants/ # Ads landing (campaigns)
-│   ├── media/                 # Media speaking & videos
-│   └── contact/
-├── components/                # React components
-│   ├── ui/                    # shadcn/ui primitives
-│   ├── sections/              # Section, Container, GlassCard
-│   ├── expertise/             # ExpertisePageHero, ServiceCard
-│   ├── forms/                 # Consultation forms
-│   └── analytics/             # GoogleAnalytics
-├── constants/                 # siteConfig, cities, cases
-├── data/                      # Static content (fullArchLanding etc.)
-├── lib/                       # Helpers (structured-data, utils)
-└── types/
-
-public/
-├── images/                    # All site images
-├── llms.txt                   # AI search optimization
-└── ...
+├── app/                          # Next.js App Router pages
+│   ├── page.tsx                  # Homepage
+│   ├── about/page.tsx            # About Dr. Antipov
+│   ├── contact/page.tsx          # Contact page
+│   ├── expertise/                # Surgical expertise pages
+│   │   ├── page.tsx              # Expertise landing
+│   │   ├── full-arch-implants/   # All-on-X procedures
+│   │   ├── single-tooth/         # Single tooth implants
+│   │   ├── bone-grafting/        # Bone grafting procedures
+│   │   ├── jaw-surgery/          # Orthognathic surgery
+│   │   └── sleep-apnea/          # Sleep apnea surgery
+│   ├── for-dentists/             # Referral partners & education
+│   │   ├── page.tsx              # For dentists landing
+│   │   ├── referral-partners/
+│   │   └── education/courses/
+│   ├── for-patients/             # Patient resources
+│   │   ├── page.tsx              # Patient resources landing
+│   │   ├── testimonials/
+│   │   ├── consultation/
+│   │   ├── pre-op/               # Pre-operative instructions
+│   │   ├── post-op/              # Post-operative care
+│   │   └── faqs/                 # Frequently Asked Questions
+│   ├── legal/                    # Legal pages
+│   │   ├── privacy-policy/
+│   │   ├── terms-of-service/
+│   │   ├── medical-disclaimer/
+│   │   └── hipaa-notice/
+│   ├── media/                    # Media & speaking
+│   │   ├── videos/
+│   │   └── speaking/
+│   └── api/                      # API routes
+│       ├── contact/route.ts
+│       └── consultation/route.ts
+├── components/
+│   ├── forms/                    # Form components (Client)
+│   ├── home/                     # Homepage sections
+│   ├── about/                    # About page components
+│   ├── expertise/                # Expertise page components
+│   ├── for-dentists/             # Dentist-specific components
+│   ├── layout/                   # Layout components (Header, Footer)
+│   ├── sections/                 # Reusable sections (GlassCard, Section, Container)
+│   └── ui/                       # UI primitives (Shadcn)
+├── lib/
+│   ├── animations.ts             # Framer Motion variants
+│   ├── structured-data.ts        # Schema.org JSON-LD generators
+│   └── validations/              # Zod schemas
+│       ├── contact.ts
+│       └── consultation.ts
+└── constants/
+    ├── siteConfig.ts             # Site-wide configuration
+    └── services.ts               # Service offerings data
 ```
 
+## 🎨 Design System
+
+### Glassmorphism Theme
+- **Primary Color**: Sky Blue (`#0ea5e9`) - Professional medical blue
+- **Accent Color**: Amber (`#f59e0b`) - Warm, approachable
+- **Neutral**: Modern grays for text and backgrounds
+- **Effects**: Backdrop blur, semi-transparent cards, subtle shadows
+
+### Typography
+- **Headings**: Merriweather (serif) - Classic, professional
+- **Body**: Inter (sans-serif) - Clean, readable
+
+### Components
+All components follow a consistent glassmorphism aesthetic:
+- `GlassCard` - Semi-transparent cards with backdrop blur
+- `Section` - Responsive sections with background variants (default, gradient, accent)
+- `Container` - Responsive containers with size variants (sm, md, lg, xl)
+
+## ✅ Completed Features
+
+### Core Pages (24 Total)
+- ✅ Homepage with hero, services, and CTAs
+- ✅ About page with biography, credentials, philosophy
+- ✅ Contact page with form and office information
+- ✅ Expertise landing page
+- ✅ 5 detailed expertise pages (1200-1500 words each)
+- ✅ For Dentists landing page + 2 sub-pages (referrals, education)
+- ✅ For Patients landing page + 5 sub-pages (testimonials, consultation, pre-op, post-op, faqs)
+- ✅ 4 comprehensive legal pages (HIPAA-compliant)
+- ✅ 2 media pages (videos, speaking engagements)
+
+### Technical Features
+- ✅ **Server Components First**: All `page.tsx` files are Server Components
+- ✅ **Client Components**: Only for interactivity (forms, animations)
+- ✅ **SEO Optimized**:
+  - Meta tags on every page
+  - XML sitemap (auto-generated)
+  - Robots.txt configuration
+  - Schema.org structured data (Organization, Physician, MedicalProcedure, FAQs)
+  - Breadcrumbs for navigation
+- ✅ **Forms**: React Hook Form + Zod validation with honeypot spam prevention
+- ✅ **API Routes**: Contact and consultation endpoints ready for email integration
+- ✅ **Responsive Design**: Mobile-first, fully responsive
+- ✅ **Animations**: 60fps scroll-triggered animations with Framer Motion
+- ✅ **Type Safety**: Full TypeScript coverage with strict mode
+
+### HIPAA Compliance
+- ✅ No PHI collection on website
+- ✅ Clear disclaimers on all forms
+- ✅ Security notices
+- ✅ Comprehensive HIPAA Notice of Privacy Practices
+
+## 🚧 Pending Integration
+
+### Email Service (Resend)
+1. Sign up at [resend.com](https://resend.com)
+2. Verify domain (drantipov.com)
+3. Add API key to `.env.local`:
+   ```bash
+   RESEND_API_KEY=re_xxxxxxxxxxxxx
+   ```
+4. Uncomment email sending code in:
+   - `src/app/api/contact/route.ts`
+   - `src/app/api/consultation/route.ts`
+
+### Analytics Integration
+1. **Google Analytics 4**
+   - Create GA4 property
+   - Add measurement ID to `.env.local`: `NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX`
+
+2. **Google Tag Manager**
+   - Create GTM container
+   - Add container ID to `.env.local`: `NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX`
+
+3. **Hotjar** (optional)
+   - Create Hotjar site
+   - Add site ID to `.env.local`: `NEXT_PUBLIC_HOTJAR_ID=XXXXXXX`
+
+4. **Facebook Pixel** (optional)
+   - Create Facebook Pixel
+   - Add pixel ID to `.env.local`: `NEXT_PUBLIC_FB_PIXEL_ID=XXXXXXXXXXXXXXX`
+
+### Images
+Replace placeholder gradients with real images:
+- Dr. Antipov professional headshot
+- Office photos
+- Treatment before/after photos (with patient consent)
+- Video thumbnails
+- Partner/certification logos
+
+Recommended image specifications:
+- **Profile photos**: 800x800px, JPG/WebP
+- **Office photos**: 1920x1080px, JPG/WebP
+- **Before/After**: 1200x900px, JPG/WebP
+- **Logos**: SVG preferred, or PNG with transparency
+
+## 🛠️ Development
+
+### Installation
+```bash
+yarn install
+```
+
+### Development Server
+```bash
+yarn dev
+```
+Open [http://localhost:3000](http://localhost:3000)
+
+### Build for Production
+```bash
+yarn build
+```
+
+This will:
+1. Build the Next.js application
+2. Auto-generate sitemap.xml and robots.txt (via postbuild script)
+
+### Start Production Server
+```bash
+yarn start
+```
+
+## 📝 Environment Variables
+
+Create a `.env.local` file:
+
+```bash
+# Resend API for email notifications
+RESEND_API_KEY=your_resend_api_key_here
+
+# Email addresses
+CONTACT_EMAIL=info@drantipov.com
+ADMIN_EMAIL=admin@drantipov.com
+
+# Site configuration
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+SITE_URL=https://drantipov.com
+
+# Calendly (for appointment scheduling)
+NEXT_PUBLIC_CALENDLY_URL=https://calendly.com/dr-antipov
+
+# Analytics (when ready to integrate)
+# NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+# NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
+# NEXT_PUBLIC_HOTJAR_ID=XXXXXXX
+# NEXT_PUBLIC_FB_PIXEL_ID=XXXXXXXXXXXXXXX
+```
+
+## 🔒 Security & Compliance
+
+### HIPAA Compliance
+- **No PHI Collection**: Website does not collect Protected Health Information
+- **Forms**: Only collect basic contact information for consultation requests
+- **Disclaimers**: Clear notices on all forms warning against submitting medical records
+- **Legal Pages**: Comprehensive HIPAA Notice, Privacy Policy, Medical Disclaimer
+
+### Security Measures
+- **SSL/TLS**: Required for production (configure at hosting level)
+- **Input Validation**: All forms validated with Zod schemas
+- **Honeypot Fields**: Spam prevention on forms
+- **API Routes**: Rate limiting recommended for production
+- **Environment Variables**: Sensitive data never committed to repository
+
+## 📊 SEO Optimization
+
+### Implemented
+- ✅ Meta tags (title, description, keywords) on all pages
+- ✅ Open Graph tags for social sharing
+- ✅ XML Sitemap (auto-generated on build)
+- ✅ Robots.txt configuration
+- ✅ Semantic HTML structure
+- ✅ Schema.org structured data:
+  - Organization (MedicalBusiness)
+  - Physician
+  - MedicalProcedure
+  - FAQPage
+  - BreadcrumbList
+  - Video (prepared for videos page)
+  - Event (prepared for speaking page)
+
+### Sitemap Configuration
+Sitemap priorities and update frequencies:
+- Homepage: 1.0 (daily)
+- Main pages (about, contact, expertise): 0.9 (weekly)
+- Expertise pages: 0.8 (monthly)
+- For Dentists pages: 0.8 (monthly)
+- Patient resources: 0.7 (weekly)
+- Media pages: 0.6 (monthly)
+- Legal pages: 0.3 (yearly, noindex)
+
+### Recommendations
+1. Submit sitemap to Google Search Console
+2. Configure Google Search Console for domain verification
+3. Monitor search performance and coverage
+4. Set up email alerts for critical errors
+5. Regularly update content on high-priority pages
+
+## 🎯 Performance Targets
+
+### Core Web Vitals
+- **LCP (Largest Contentful Paint)**: < 2.5s
+- **FID (First Input Delay)**: < 100ms
+- **CLS (Cumulative Layout Shift)**: < 0.1
+
+### Lighthouse Score Target
+- Performance: 95+
+- Accessibility: 100
+- Best Practices: 100
+- SEO: 100
+
+## 📚 Key Documentation
+
+### Architecture Rules
+See `.claude/rules/` for comprehensive development guidelines:
+- `server-client-component-checklist.md` - **CRITICAL**: Server vs Client Component patterns
+- `page-structure.md` - Next.js App Router page structure
+- `ui-components.md` - Glassmorphism design system
+- `form-handling.md` - React Hook Form + Zod patterns
+- `security.md` - HIPAA-compliant security practices
+
+### Project Requirements
+- `dr-antipov-prd.md` - Complete Product Requirements Document
+- `MASTER_TASK_LIST.md` - Comprehensive task tracking and implementation log
+
+## 🚀 Deployment
+
+### Recommended Hosting
+- **Vercel** (Recommended for Next.js)
+- **Netlify**
+- **AWS Amplify**
+- **Custom VPS** with Node.js support
+
+### Deployment Checklist
+- [ ] Update `.env` variables for production
+- [ ] Configure custom domain (drantipov.com)
+- [ ] Set up SSL certificate
+- [ ] Configure DNS records
+- [ ] Test all forms in production
+- [ ] Verify email delivery (Resend)
+- [ ] Submit sitemap to Google Search Console
+- [ ] Configure analytics
+- [ ] Test all 19 pages for 200 OK responses
+- [ ] Run Lighthouse audit
+- [ ] Test on mobile devices
+
+### Build Command
+```bash
+yarn build
+```
+
+### Start Command
+```bash
+yarn start
+```
+
+## 🤝 Contributing
+
+This is a private project for Dr. Alexander Antipov. For inquiries, contact the development team.
+
+## 📄 License
+
+Proprietary - All rights reserved © 2025 Dr. Alexander Antipov
+
 ---
 
-## SEO / GEO
+**Built with ❤️ using Next.js 14, TypeScript, and Tailwind CSS**
 
-This codebase has been pre-optimized:
-
-- **Sitemap** auto-generated at `/sitemap.xml`
-- **robots.txt** at `/robots.txt` whitelists AI crawlers (GPTBot, ClaudeBot, PerplexityBot, etc.)
-- **Schema.org JSON-LD** present on all key pages (Dentist + LocalBusiness + Physician + MedicalProcedure + FAQPage + Article)
-- **hreflang** configured for `en-US` and `x-default` (Russian/Spanish removed in this build)
-- **Security headers** (HSTS, X-Frame-Options, Referrer-Policy, Permissions-Policy) in `next.config.mjs`
-- **`llms.txt`** at `/llms.txt` for AI-search citation context
-
-After first deploy, add the site in **Google Search Console** and submit `https://drantipov.com/sitemap.xml`.
-
----
-
-## Notes
-
-- Russian (`/ru/*`) and Spanish (`/es/*`) routes have been removed from this build. The codebase only renders English content.
-- If you need to re-add a localization later, restore the `src/app/ru/*` or `src/app/es/*` folders from your previous archive.
-- All images are stored in `public/images/`. Image optimization is handled automatically by Next.js Image component.
-- `next-sitemap` package has been removed — sitemap and robots are now generated by Next.js App Router (`src/app/sitemap.ts` and `src/app/robots.ts`).
-
----
-
-## Contact
-
-Questions about this codebase? Reach out to the development team that delivered this build.
+Last Updated: October 12, 2025
+# dr-antipov-edu

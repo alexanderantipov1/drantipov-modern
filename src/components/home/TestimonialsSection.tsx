@@ -141,7 +141,7 @@ export function TestimonialsSection() {
           transition={{ delay: 0.5 }}
         >
           <Button asChild variant="outline" size="lg">
-            <Link href="/for-patients">Read More Patient Stories</Link>
+            <Link href="/for-patients/testimonials">Read More Patient Stories</Link>
           </Button>
         </motion.div>
       </Container>

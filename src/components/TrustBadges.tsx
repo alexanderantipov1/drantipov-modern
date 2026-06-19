@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const badges = [
   { label: "ABOMS Board Certified", icon: "shield" },
   { label: "AAOMS Member", icon: "badge" },
-  { label: "CALAOMS Member", icon: "badge" },
   { label: "ADA Member", icon: "badge" },
+  { label: "Academy of Osseointegration", icon: "badge" },
   { label: "3D CT Guided Surgery", icon: "tech" },
   { label: "IV Sedation Certified", icon: "heart" },
   { label: "Free Consultation", icon: "check" },

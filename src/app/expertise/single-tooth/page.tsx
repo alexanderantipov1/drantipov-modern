@@ -1,16 +1,12 @@
 import { Section, Container, GlassCard } from "@/components/sections"
 import {
   ExpertisePageHero,
-  HeroStats,
-  AnimatedCounter,
-  DoctorQuote,
-  IconBenefits,
-  VerticalProcessTimeline,
+  BenefitsList,
+  ProcessTimeline,
 } from "@/components/expertise"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Phone, Award, Clock, Heart, Smile, Sparkles, ShieldCheck, TrendingUp, Hospital, Calendar, Stethoscope, HeartHandshake } from "lucide-react"
-import FloatingArticleCTA from "@/components/FloatingArticleCTA"
+import { Phone, Award, Clock, Heart } from "lucide-react"
 import {
   Accordion,
   AccordionContent,
@@ -24,69 +20,20 @@ import {
   structuredDataScript,
 } from "@/lib/structured-data"
 import { siteConfig } from "@/constants/siteConfig"
-import DualCTA from "@/components/DualCTA"
 
 export const metadata = {
-  title: { absolute: "Single Tooth Implants — Natural Replacement" },
-  description: "Replace one missing tooth with a permanent dental implant. Natural appearance, full function, lifetime durability. Roseville, CA.",
-  alternates: {
-    canonical: "/expertise/single-tooth",
-    languages: {
-      "en": "/expertise/single-tooth",
-      "x-default": "/expertise/single-tooth",
-    },
-  },
-  openGraph: {
-    title: "Single Tooth & Bridge Implants",
-    description: "Permanent single-tooth dental implants and implant-supported bridges by board-certified oral surgeon.",
-    images: [
-      {
-        url: "/images/dental-implants/dental-implants@2x-0aad592f.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Single Tooth & Bridge Implants",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Single Tooth & Bridge Implants",
-    description: "Permanent single-tooth dental implants and implant-supported bridges by board-certified oral surgeon.",
-    images: ["/images/dental-implants/dental-implants@2x-0aad592f.jpg"],
-  }
+  title: "Single Tooth Implants & Bridge Replacement | Natural Results | Dr. Antipov",
+  description:
+    "Replace missing teeth with natural-looking dental implants. Dr. Antipov specializes in single tooth implants and implant-supported bridges with precision placement and aesthetic excellence.",
 }
 
-const iconBenefits = [
-  {
-    icon: <Smile className="h-5 w-5" />,
-    title: "Looks and feels natural",
-    description: "Indistinguishable from a real tooth, even up close",
-  },
-  {
-    icon: <ShieldCheck className="h-5 w-5" />,
-    title: "Preserves adjacent teeth",
-    description: "Unlike a bridge, no healthy neighbors are reshaped",
-  },
-  {
-    icon: <HeartHandshake className="h-5 w-5" />,
-    title: "Prevents bone resorption",
-    description: "Stimulates jaw bone the way a natural root would",
-  },
-  {
-    icon: <Sparkles className="h-5 w-5" />,
-    title: "No clicking or slipping",
-    description: "Brushed and flossed exactly like a real tooth",
-  },
-  {
-    icon: <TrendingUp className="h-5 w-5" />,
-    title: "25+ year lifespan",
-    description: "With proper care, often a lifetime solution",
-  },
-  {
-    icon: <Clock className="h-5 w-5" />,
-    title: "Restored chewing & confidence",
-    description: "Bite into anything without hesitation",
-  },
+const benefits = [
+  "Looks, feels, and functions exactly like a natural tooth",
+  "Preserves adjacent healthy teeth (unlike traditional bridges)",
+  "Prevents bone loss at the extraction site",
+  "No slipping, clicking, or need for adhesives",
+  "Can last 25+ years with proper care",
+  "Restores full chewing function and confidence",
 ]
 
 const processSteps = [
@@ -191,33 +138,8 @@ export default function SingleToothPage() {
       <ExpertisePageHero
         badge="Precision Implantology"
         title="Single Tooth & Bridge Replacement"
-        subtitle="A single-tooth dental implant is a titanium screw placed into the jawbone that replaces one missing tooth from root to crown — a permanent restoration that looks, feels, and functions like a natural tooth."
-        image="/images/hero/09-final-crown.jpeg"
+        subtitle="Natural-looking permanent solutions for missing teeth"
       />
-
-      {/* Animated stat cards overlapping hero bottom */}
-      <HeroStats stats={[
-          {
-            icon: <Clock className="h-5 w-5" />,
-            value: <><AnimatedCounter to={3} />–6 mo</>,
-            label: "Total treatment time",
-          },
-          {
-            icon: <Smile className="h-5 w-5" />,
-            value: "1",
-            label: "Visit for placement",
-          },
-          {
-            icon: <ShieldCheck className="h-5 w-5" />,
-            value: <><AnimatedCounter to={95} suffix="%+" /></>,
-            label: "Long-term success rate",
-          },
-          {
-            icon: <TrendingUp className="h-5 w-5" />,
-            value: <><AnimatedCounter to={25} suffix="+ yrs" /></>,
-            label: "Lifespan with care",
-          },
-        ]} />
 
       {/* What It Is Section */}
       <Section background="default" padding="xl">
@@ -255,13 +177,6 @@ export default function SingleToothPage() {
         </Container>
       </Section>
 
-      {/* Doctor Quote — personal touch */}
-      <DoctorQuote
-        quote="A single tooth implant is the closest we have come to truly replacing a natural tooth. It does not borrow strength from neighbors and it preserves the bone exactly where it is needed."
-        author="Dr. Alexander Antipov, DDS"
-        role="Board-Certified Oral & Maxillofacial Surgeon"
-      />
-
       {/* Benefits Section */}
       <Section background="gradient" padding="xl">
         <Container size="lg">
@@ -274,7 +189,7 @@ export default function SingleToothPage() {
                 The most advanced and predictable solution for missing teeth
               </p>
 
-              <IconBenefits items={iconBenefits} columns={2} />
+              <BenefitsList benefits={benefits} />
             </div>
 
             <div className="space-y-6">
@@ -323,7 +238,7 @@ export default function SingleToothPage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <VerticalProcessTimeline steps={processSteps} />
+            <ProcessTimeline steps={processSteps} />
           </div>
         </Container>
       </Section>
@@ -398,7 +313,7 @@ export default function SingleToothPage() {
       </Section>
 
       {/* FAQ Section */}
-      <Section id="faq" background="default" padding="xl" className="scroll-mt-24">
+      <Section background="default" padding="xl">
         <Container size="lg">
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="text-center space-y-4">
@@ -425,17 +340,30 @@ export default function SingleToothPage() {
         </Container>
       </Section>
 
-      <DualCTA variant="implants"
-        heading="Single-Tooth Implant Consultation"
-        subheading="Replace a single missing tooth with a permanent implant. Free 3D CT scan and personalized treatment plan."
-      />
-
-      {/* Floating sticky CTA — appears after 25% scroll */}
-      <FloatingArticleCTA
-        href="/contact"
-        label="Book free consultation"
-        showAfterPct={25}
-      />
+      {/* CTA Section */}
+      <Section background="gradient" padding="xl">
+        <Container size="lg">
+          <div className="max-w-3xl mx-auto text-center space-y-8">
+            <h2 className="text-4xl lg:text-5xl font-serif font-bold text-neutral-900">
+              Restore Your Smile with Confidence
+            </h2>
+            <p className="text-xl text-neutral-600">
+              Schedule a consultation to learn if dental implants are right for you
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg">
+                <Link href="/contact">Schedule Consultation</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <a href="tel:9167909693">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call (916) 790-9693
+                </a>
+              </Button>
+            </div>
+          </div>
+        </Container>
+      </Section>
     </>
   )
 }

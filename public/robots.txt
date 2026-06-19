@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Host
+Host: https://drantipov.com
+
+# Sitemaps
+Sitemap: https://drantipov.com/sitemap.xml

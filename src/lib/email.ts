@@ -235,14 +235,14 @@ export async function sendConsultationConfirmation(
                   <p><strong>In the meantime, feel free to reach out:</strong></p>
                   <p>
                     📞 Phone: <a href="tel:${
-                      process.env.CONTACT_PHONE || "(916) 783-2110"
-                    }">${process.env.CONTACT_PHONE || "(916) 783-2110"}</a><br>
+                      process.env.CONTACT_PHONE || "(916) 790-9693"
+                    }">${process.env.CONTACT_PHONE || "(916) 790-9693"}</a><br>
                     📧 Email: <a href="mailto:${
-                      process.env.CONTACT_EMAIL || "info@galleriaoms.com"
+                      process.env.CONTACT_EMAIL || "info@drantipov.com"
                     }">${
-        process.env.CONTACT_EMAIL || "info@galleriaoms.com"
+        process.env.CONTACT_EMAIL || "info@drantipov.com"
       }</a><br>
-                    🏥 Office: 911 Reserve Dr Suite 150, Roseville, CA 95678
+                    🏥 Office: 911 Reserve Dr Ste 150, Roseville, CA 95678
                   </p>
                 </div>
               </div>

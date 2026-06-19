@@ -8,16 +8,9 @@ import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
-  title: "Dental Implant Aftercare — Recovery Tips",
+  title: "Dental Implant Aftercare: Tips for a Successful Recovery | Dr. Antipov",
   description:
     "Essential guide to dental implant aftercare. Learn post-operative care tips, oral hygiene practices, diet recommendations, and recovery expectations.",
-  alternates: {
-    canonical: "/for-patients/insights/dental-implant-aftercare",
-    languages: {
-      "en": "/for-patients/insights/dental-implant-aftercare",
-      "x-default": "/for-patients/insights/dental-implant-aftercare",
-    },
-  },
   keywords: [
     "dental implant aftercare",
     "dental implant recovery",
@@ -26,24 +19,6 @@ export const metadata: Metadata = {
     "implant care tips",
     "dental implant success",
   ],
-  openGraph: {
-    title: "Dental Implant Aftercare",
-    description: "Post-operative care, hygiene practices, diet recommendations, and recovery timeline for dental implants.",
-    images: [
-      {
-        url: "/images/blog/2023-04-13/dental-implant-aftercare-3ae5a0d1.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Dental Implant Aftercare",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Dental Implant Aftercare",
-    description: "Post-operative care, hygiene practices, diet recommendations, and recovery timeline for dental implants.",
-    images: ["/images/blog/2023-04-13/dental-implant-aftercare-3ae5a0d1.jpg"],
-  }
 }
 
 export default function DentalImplantAftercarePost() {
@@ -92,13 +67,7 @@ export default function DentalImplantAftercarePost() {
               Dental Implant Aftercare: Tips for a Successful Recovery
             </h1>
 
-            
-
-            {/* E-E-A-T: Medically reviewed byline */}
-            <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
-            </p>
-{/* Featured Image */}
+            {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
               <Image
                 src="/images/blog/2023-04-13/dental-implant-aftercare-3ae5a0d1.jpg"
@@ -106,7 +75,6 @@ export default function DentalImplantAftercarePost() {
                 fill
                 className="object-cover"
                 priority
-                sizes="100vw"
               />
             </div>
 
@@ -421,9 +389,9 @@ export default function DentalImplantAftercarePost() {
                 <p className="text-neutral-700 leading-relaxed mb-4">
                   <strong>Galleria Oral & Maxillofacial Surgery</strong>
                   <br />
-                  911 Reserve Dr Suite 150, Roseville, CA 95678
+                  911 Reserve Dr Ste 150, Roseville, CA 95678
                   <br />
-                  Phone: <a href="tel:916-783-2110" className="text-primary-600 hover:underline">916-783-2110</a>
+                  Phone: <a href="tel:916-790-9693" className="text-primary-600 hover:underline">916-790-9693</a>
                 </p>
                 <p className="text-neutral-700 leading-relaxed">
                   Our team is here to support you throughout your recovery. Don't hesitate to reach out with questions
@@ -431,17 +399,6 @@ export default function DentalImplantAftercarePost() {
                 </p>
               </GlassCard>
             </div>
-
-            {/* Sources / Authoritative References */}
-            <section className="mt-12 pt-8 border-t border-neutral-200">
-              <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
-              <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
-              <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — After Implant Placement instructions</a></li>
-                <li><a href="https://www.cochrane.org/CD012677/ORAL_interventions-replacing-missing-teeth-treatment-peri-implantitis" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Cochrane Oral Health — Maintaining implants</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy — Implant Care</a></li>
-              </ul>
-            </section>
 
             {/* Author Info */}
             <GlassCard className="mt-12 p-8">

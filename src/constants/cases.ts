@@ -53,7 +53,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
       "Genioplasty",
       "Total maxillomandibular advancement",
     ],
-    surgeon: "Dr. Alexander V. Antipov",
+    surgeon: "Dr. Andrey Senyuk",
   },
   {
     id: "oms000051",
@@ -73,14 +73,13 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
       "Osteotomy of the maxilla at Le Fort I level",
       "Genioplasty lengthening and advancement",
     ],
-    surgeon: "Dr. André-David Kahwach",
+    surgeon: "Dr. Andrey Senyuk",
   },
   {
     id: "oms000050",
     title: "Class II Occlusion Anomaly Corrective Jaw Surgery",
     category: "corrective-jaw-surgery",
     imagePath: "/images/cases/corrective-jaw-surgery/oms000050/1/preview-90866192.jpg",
-    description: "Asymmetric Class II skeletal deformity with functional and aesthetic compromise. Three-jaw surgery — Le Fort I osteotomy, BSSO, and genioplasty — performed in a single anesthesia session. Patient regained full chewing function and improved facial harmony with no relapse at 18-month follow-up.",
     diagnosis: [
       "Asymmetric deformity of maxilla and mandible",
       "Class II skeletal malocclusion",
@@ -90,7 +89,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
       "Osteotomy of the upper jaw at the level of Le Fort I",
       "Genioplasty lengthening and advancement",
     ],
-    surgeon: "Dr. Alexander V. Antipov",
+    surgeon: "Dr. Andrey Senyuk",
   },
   {
     id: "oms000049",
@@ -106,7 +105,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
       "Osteotomy of the upper jaw at Le Fort I level",
       "Genioplasty lengthening and advancement",
     ],
-    surgeon: "Dr. Alexander V. Antipov",
+    surgeon: "Dr. Andrey Senyuk",
     date: "September 11, 2019",
   },
   {
@@ -114,7 +113,6 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
     title: "Face Lengthening and Advancement - Aesthetic Jaw Surgery",
     category: "corrective-jaw-surgery",
     imagePath: "/images/cases/corrective-jaw-surgery/oms000048/1/preview-cc4983da.jpg",
-    description: "Short face syndrome with Class I occlusion and reduced lower facial height. Surgical plan: 3-piece Le Fort I osteotomy for maxillary lengthening, bilateral sagittal split osteotomy (BSSO) for mandibular advancement, and genioplasty for chin lengthening. Result: restored facial proportions, improved airway, balanced smile.",
     diagnosis: [
       "Maxillary hypoplasia",
       "Mandible deficiency",
@@ -130,7 +128,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
       "Mandibular bilateral sagittal split osteotomy advancement",
       "Genioplasty lengthening and advancement",
     ],
-    surgeon: "Dr. André-David Kahwach",
+    surgeon: "Dr. Andrey Senyuk",
   },
   {
     id: "oms000047",
@@ -150,7 +148,6 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
       "Genioplasty lengthening and setback",
     ],
     date: "August 19, 2017",
-    surgeon: "Dr. Alexander V. Antipov"
   },
   {
     id: "oms000046",
@@ -172,7 +169,6 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
       "Rhinoplasty with nasal base reduction",
       "Fat transfer from inner thigh for cheek augmentation",
     ],
-    surgeon: "Dr. Alexander V. Antipov"
   },
   {
     id: "oms000045",
@@ -192,7 +188,6 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
       "Bone grafting to maxilla",
     ],
     date: "March 31, 2017",
-    surgeon: "Dr. Alexander V. Antipov"
   },
 ]
 
@@ -202,6 +197,7 @@ export const dentalImplantsCases: SurgicalCase[] = [
     title: "Immediate Implants and Teeth All-On-4 on Upper Jaw",
     category: "dental-implants",
     imagePath: "/images/cases/dental-implants/di000010/1/preview-0d23c849.jpg",
+    description: "All-on-4 Teeth-In-A-Day Surgical Solution with temporary dentures placed same day",
     procedures: [
       "All-on-4 dental implants on upper jaw",
       "Bone graft with immediate implants",
@@ -230,6 +226,7 @@ export const dentalImplantsCases: SurgicalCase[] = [
     title: "Immediate Implants on Mandible and Teeth All-On-4",
     category: "dental-implants",
     imagePath: "/images/cases/dental-implants/di000008/1/preview-b109556b.jpg",
+    description: "Patient with no teeth who could not wear dentures. 4 dental implants placed in anterior lower jaw region.",
     procedures: [
       "All-on-4 dental implants on mandible",
       "4 implants in anterior lower jaw",
@@ -271,6 +268,7 @@ export const dentalImplantsCases: SurgicalCase[] = [
     title: "Immediate Implants and Teeth All-On-4",
     category: "dental-implants",
     imagePath: "/images/cases/dental-implants/di000005/1/preview-bdd6eeb8.jpg",
+    description: "Patient with no teeth who could not wear dentures. 4 implants placed in anterior jaw regions with dense bone.",
     procedures: [
       "All-on-4 dental implants",
       "Sinus lift for both jaws",
@@ -301,8 +299,9 @@ export const facialCosmeticSurgeryCases: SurgicalCase[] = [
     title: "Asian Eyelids Correction",
     category: "facial-cosmetic-surgery",
     imagePath: "/images/cases/facial-cosmetic-surgery/fcs000006/1/preview-3892af01.jpg",
+    description: "Plastic surgery to correct 'asian eyelids' effect",
     procedures: ["Asian eyelid correction surgery"],
-    surgeon: "Dr. André-David Kahwach",
+    surgeon: "Dr. Ksenya Gyleva",
     date: "2015",
   },
   {
@@ -316,26 +315,25 @@ export const facialCosmeticSurgeryCases: SurgicalCase[] = [
       "Upper and lower blepharoplasty",
       "Skin pinch excision",
     ],
-    surgeon: "Dr. Alexander V. Antipov"
   },
   {
     id: "fcs000004",
     title: "Juvederm Lips Fillers",
     category: "facial-cosmetic-surgery",
     imagePath: "/images/cases/facial-cosmetic-surgery/fcs000004/1/preview-f355b860.jpg",
+    description: "Dermal fillers using Juvederm for lip volume enhancement with immediate results",
     procedures: [
       "Dermal fillers using Juvederm",
       "Upper and lower lips injection",
       "Contouring and volume injections with blunt canula",
     ],
-    surgeon: "Dr. Alexander V. Antipov"
   },
   {
     id: "fcs000003",
     title: "Dermal Fillers Juvederm",
     category: "facial-cosmetic-surgery",
     imagePath: "/images/cases/facial-cosmetic-surgery/fcs000003/1/preview-72a841fb.jpg",
-    description: "Combined facial rejuvenation procedure addressing upper and lower eyelid hooding, periorbital aging, and overall facial volume loss. Quad blepharoplasty with conservative fat repositioning. Recovery: visible swelling 5-7 days, full recovery 2-3 weeks. Natural rejuvenated appearance.",
+    description: "Lower face rejuvenation using Juvederm dermal filler for deep marionette lines and nasolabial folds",
     procedures: [
       "Juvederm dermal fillers",
       "Nasolabial folds treatment",
@@ -351,10 +349,9 @@ export const facialCosmeticSurgeryCases: SurgicalCase[] = [
     title: "Neck Scarless Mole Removal",
     category: "facial-cosmetic-surgery",
     imagePath: "/images/cases/facial-cosmetic-surgery/fcs000002/1/preview-9ec3a32a.jpg",
-    description: "Patient sought removal of a benign nasal mole that had become bothersome. Radio-wave surgical technique (Ellman®) — bloodless, minimal tissue damage, no sutures required. Healed without visible scar in 2 weeks. Cosmetic result excellent.",
+    description: "Mole removal with radiowave surgery technique - scarless, bloodless, and painless",
     procedures: ["Radio wave surgery (Ellman technique)", "Scarless mole removal"],
     date: "October 7, 2014",
-    surgeon: "Dr. Alexander V. Antipov"
   },
   {
     id: "fcs000001",
@@ -366,7 +363,6 @@ export const facialCosmeticSurgeryCases: SurgicalCase[] = [
       "Radio wave surgery (Ellman technique)",
       "Scarless, bloodless nose mole removal",
     ],
-    surgeon: "Dr. Alexander V. Antipov"
   },
 ]
 
@@ -380,21 +376,21 @@ export const caseCategories = [
   {
     id: "corrective-jaw-surgery",
     title: "Corrective Jaw Surgery",
-    description: "Orthognathic surgery — Le Fort I, BSSO, genioplasty — for malocclusion and facial asymmetry correction.",
+    description: "Advanced orthognathic surgical procedures to correct jaw deformities, improve function, and enhance facial aesthetics",
     count: correctiveJawSurgeryCases.length,
     icon: "jaw",
   },
   {
     id: "dental-implants",
     title: "Dental Implants",
-    description: "All-on-4 and immediate implant solutions for complete smile restoration with same-day results.",
+    description: "All-on-4 and immediate implant solutions for complete smile restoration with same-day results",
     count: dentalImplantsCases.length,
     icon: "tooth",
   },
   {
     id: "facial-cosmetic-surgery",
     title: "Facial Cosmetic Surgery",
-    description: "Scarless mole removal, blepharoplasty, dermal fillers, and facial rejuvenation procedures.",
+    description: "Aesthetic procedures including scarless mole removal, dermal fillers, and facial rejuvenation",
     count: facialCosmeticSurgeryCases.length,
     icon: "sparkles",
   },

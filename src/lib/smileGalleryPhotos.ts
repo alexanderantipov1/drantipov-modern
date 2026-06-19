@@ -17,6 +17,10 @@ export const smileGalleryPhotos: SmilePhoto[] = [
   { src: "/images/smile-gallery/patient-14.jpeg", alt: "Female patient smiling after dental implant treatment", caption: "Implant Restoration" },
   { src: "/images/smile-gallery/patient-15.jpeg", alt: "Female patient smiling after full-arch restoration", caption: "Full-Arch Restoration" },
   { src: "/images/smile-gallery/patient-16.jpeg", alt: "Close-up of completed implant-supported smile", caption: "Zirconia Smile Detail" },
+  { src: "/images/smile-gallery/patient-17.jpeg", alt: "Close-up of a patient's full-arch implant smile", caption: "Full-Arch Restoration" },
+  { src: "/images/smile-gallery/patient-18.jpeg", alt: "Close-up of a patient's restored smile after dental implants", caption: "Implant Restoration" },
+  { src: "/images/smile-gallery/patient-19.jpeg", alt: "Female patient smiling after full-arch dental implant treatment", caption: "Full-Arch Restoration" },
+  { src: "/images/smile-gallery/patient-20.jpeg", alt: "Male patient smiling after dental implant treatment", caption: "Implant Restoration" },
 ];
 
 export const behindTheScenesPhotos: SmilePhoto[] = [

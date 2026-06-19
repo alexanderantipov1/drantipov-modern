@@ -104,7 +104,7 @@ const SECTIONS: { title: string; links: LinkItem[] }[] = [
   { title: "Legal", links: LEGAL_LINKS },
 ];
 
-// Collapsible on mobile (toggled), always-open columns on desktop.
+// Collapsible accordion section (one open at a time) on all screen sizes.
 function FooterSection({
   title,
   links,
@@ -117,9 +117,8 @@ function FooterSection({
   onToggle: () => void;
 }) {
   return (
-    <div className="border-b border-white/10 lg:border-0">
-      {/* Mobile: collapsible toggle */}
-      <h4 className="lg:hidden">
+    <div className="border-b border-white/10">
+      <h4>
         <button
           type="button"
           onClick={onToggle}
@@ -134,12 +133,8 @@ function FooterSection({
           />
         </button>
       </h4>
-      {/* Desktop: static heading (sections are always expanded) */}
-      <h4 className="hidden lg:block mb-4 text-sm font-semibold text-white">
-        {title}
-      </h4>
       <ul
-        className={`space-y-2.5 pb-4 lg:pb-0 lg:block ${isOpen ? "block" : "hidden"}`}
+        className={`space-y-2.5 pb-4 ${isOpen ? "block" : "hidden"}`}
       >
         {links.map((link) => (
           <li key={link.href}>
@@ -218,10 +213,7 @@ export default function Footer() {
         </div>
 
         {/* Collapsible link sections */}
-        <nav
-          aria-label="Footer navigation"
-          className="mt-2 lg:mt-10 lg:grid lg:grid-cols-4 lg:gap-x-8 lg:gap-y-10"
-        >
+        <nav aria-label="Footer navigation" className="mt-2">
           {SECTIONS.map((section) => (
             <FooterSection
               key={section.title}

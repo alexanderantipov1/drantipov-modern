@@ -2,7 +2,7 @@ import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
-import { BookOpen, Calendar, ArrowRight } from "lucide-react"
+import { BookOpen, Calendar, ArrowRight, Clock, User } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 import PageHero from "@/components/PageHero"
@@ -55,6 +55,8 @@ const blogPosts = [
     date: "June 19, 2026",
     image: "/images/blog/2026-06-19/full-mouth-dental-implants.png",
     category: "Dental Implants",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
   },
   {
     slug: "all-on-4-vs-all-on-6",
@@ -63,6 +65,8 @@ const blogPosts = [
     date: "June 19, 2026",
     image: "/images/blog/2026-06-19/all-on-4-vs-all-on-6.png",
     category: "Dental Implants",
+    readTime: "7 min read",
+    author: "Dr. Alexander V. Antipov",
   },
   {
     slug: "all-on-x-dental-implants-cost",
@@ -71,6 +75,8 @@ const blogPosts = [
     date: "June 19, 2026",
     image: "/images/blog/2026-06-19/all-on-x-cost.png",
     category: "Dental Implants",
+    readTime: "8 min read",
+    author: "Dr. Alexander V. Antipov",
   },
   {
     slug: "zirconia-arches",
@@ -79,6 +85,8 @@ const blogPosts = [
     date: "June 19, 2026",
     image: "/images/blog/2026-06-19/zirconia-arches.png",
     category: "Dental Implants",
+    readTime: "8 min read",
+    author: "Dr. Alexander V. Antipov",
   },
   {
     slug: "hybrid-dentures-vs-fixed-implant-bridges",
@@ -87,6 +95,8 @@ const blogPosts = [
     date: "June 19, 2026",
     image: "/images/blog/2026-06-19/hybrid-vs-fixed.png",
     category: "Dental Implants",
+    readTime: "7 min read",
+    author: "Dr. Alexander V. Antipov",
   },
   {
     slug: "zygomatic-implants",
@@ -95,6 +105,8 @@ const blogPosts = [
     date: "April 28, 2026",
     image: "/images/blog/2026-04-28/zygomatic-implants.jpg",
     category: "Dental Implants",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
   },
   {
     slug: "same-day-implants",
@@ -103,6 +115,8 @@ const blogPosts = [
     date: "April 28, 2026",
     image: "/images/blog/2026-04-28/same-day-implants.jpg",
     category: "Dental Implants",
+    readTime: "8 min read",
+    author: "Dr. Alexander V. Antipov",
   },
   {
     slug: "implants-vs-dentures",
@@ -111,6 +125,8 @@ const blogPosts = [
     date: "August 13, 2024",
     image: "/images/blog/2024-08-13/implants-vs-dentures-78639392.jpg",
     category: "Dental Implants",
+    readTime: "8 min read",
+    author: "Dr. Alexander V. Antipov",
   },
   {
     slug: "tooth-lost-emotional-toll",
@@ -119,6 +135,8 @@ const blogPosts = [
     date: "August 9, 2024",
     image: "/images/blog/2024-08-09/tooth-lost-emotional-toll-fcc97e30.jpg",
     category: "Patient Care",
+    readTime: "7 min read",
+    author: "Dr. Alexander V. Antipov",
   },
   {
     slug: "poor-oral-health-systemic-diseases",
@@ -127,6 +145,8 @@ const blogPosts = [
     date: "August 8, 2024",
     image: "/images/blog/2024-08-08/poor-oral-health-733c21c2.jpg",
     category: "Oral Health",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
   },
   {
     slug: "dental-implant-complications",
@@ -135,6 +155,8 @@ const blogPosts = [
     date: "April 14, 2023",
     image: "/images/blog/2023-04-14/dental-implant-complications-48eec3cd.jpg",
     category: "Dental Implants",
+    readTime: "10 min read",
+    author: "Dr. Alexander V. Antipov",
   },
   {
     slug: "dental-implant-aftercare",
@@ -143,6 +165,8 @@ const blogPosts = [
     date: "April 13, 2023",
     image: "/images/blog/2023-04-13/dental-implant-aftercare-3ae5a0d1.jpg",
     category: "Patient Care",
+    readTime: "8 min read",
+    author: "Dr. Alexander V. Antipov",
   },
 ]
 
@@ -179,6 +203,14 @@ export default function InsightsPage() {
                         <div className="flex items-center gap-2">
                           <Calendar className="h-4 w-4" />
                           <time>{post.date}</time>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Clock className="h-4 w-4" />
+                          <span>{post.readTime}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <User className="h-4 w-4" />
+                          <span>{post.author}</span>
                         </div>
                       </div>
 

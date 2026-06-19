@@ -163,8 +163,8 @@ export default function About() {
                 </div>
                 <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md">
                   <Image
-                    src="/images/about/neodent-award-plaque.jpeg"
-                    alt="2026 Neodent Elite Practitioner Award plaque presented to Dr. Alexander Antipov"
+                    src="/images/about/neodent-award-product.jpeg"
+                    alt="2026 Neodent Elite Practitioner Award gift set presented to Dr. Alexander Antipov — engraved plaque, branded tumbler, and surgical cap"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 30vw, 15vw"

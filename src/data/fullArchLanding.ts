@@ -306,11 +306,7 @@ export function getFullArchLandingStructuredData(content: FullArchLandingContent
         "Medical history review, 3D CT imaging, photographs, bite evaluation, treatment planning, sedation planning, and restorative coordination.",
       followup:
         "Post-operative checks, healing review, x-rays, implant integration monitoring, and final restorative phase.",
-      provider: {
-        "@type": "Physician",
-        name: "Dr. Alexander Antipov",
-        medicalSpecialty: "Oral and Maxillofacial Surgery",
-      },
+      provider: { "@id": `${siteConfig.url}/#physician` },
     },
     {
       "@context": "https://schema.org",

@@ -323,68 +323,10 @@ export default function JsonLd() {
           "Best oral surgeon in Northern California. My All-on-4 procedure was completed in one day and the results are amazing. I can eat, talk, and smile with complete confidence now.",
       },
     ],
-    founder: {
-      "@type": "Person",
-      name: "Dr. Alexander V. Antipov, DDS",
-      givenName: "Alexander",
-      familyName: "Antipov",
-      jobTitle: "Oral & Maxillofacial Surgeon",
-      description:
-        "Board-certified Diplomate of the American Board of Oral and Maxillofacial Surgery, in private practice in Roseville, California since 2008. Educated at Moscow State Medical Stomatology University (1995–2000), Loma Linda University School of Dentistry (DDS, 2001–2003), and Albert Einstein College of Medicine Department of Dentistry (Oral & Maxillofacial Surgery Residency, 2007–2008). Founder of Smile Again Foundation (2025).",
-      alumniOf: [
-        { "@type": "EducationalOrganization", name: "Albert Einstein College of Medicine, Yeshiva University, Department of Dentistry", sameAs: "https://www.einsteinmed.edu" },
-        { "@type": "EducationalOrganization", name: "Loma Linda University School of Dentistry", sameAs: "https://dentistry.llu.edu" },
-        { "@type": "EducationalOrganization", name: "Moscow State Medical Stomatology University", sameAs: "https://www.msmsu.ru" },
-      ],
-      memberOf: [
-        { "@type": "Organization", name: "American Board of Oral and Maxillofacial Surgery", alternateName: "ABOMS", sameAs: "https://www.aboms.org" },
-        { "@type": "Organization", name: "American Association of Oral and Maxillofacial Surgeons", alternateName: "AAOMS", sameAs: "https://www.aaoms.org" },
-        { "@type": "Organization", name: "California Association of Oral and Maxillofacial Surgeons", alternateName: "CALAOMS", sameAs: "https://www.calaoms.org" },
-        { "@type": "Organization", name: "Sacramento District Dental Society", alternateName: "SDDS" },
-        { "@type": "Organization", name: "American Dental Association", alternateName: "ADA", sameAs: "https://www.ada.org" },
-        { "@type": "Organization", name: "California Dental Association", alternateName: "CDA", sameAs: "https://www.cda.org" },
-      ],
-      hasCredential: [
-        { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "Diplomate, American Board of Oral and Maxillofacial Surgery (ABOMS)" },
-        { "@type": "EducationalOccupationalCredential", credentialCategory: "license", name: "California Dental License", identifier: "50724" },
-        { "@type": "EducationalOccupationalCredential", credentialCategory: "license", name: "DEA Certificate", identifier: "FA 0689717" },
-        { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "General Anesthesia Permit (in-office IV sedation)", identifier: "GA 1446" },
-        { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "Elective Facial Cosmetic Surgery Permit" },
-        { "@type": "EducationalOccupationalCredential", credentialCategory: "registration", name: "Continuing Education Registered Provider", identifier: "00948675" },
-      ],
-      affiliation: [
-        { "@type": "MedicalOrganization", name: "Sutter Roseville Medical Center", sameAs: "https://www.sutterhealth.org/srmc" },
-        { "@type": "MedicalOrganization", name: "Sutter General Hospital", sameAs: "https://www.sutterhealth.org" },
-        { "@type": "MedicalOrganization", name: "Mercy General Hospital", sameAs: "https://www.dignityhealth.org/sacramento/locations/mercygeneral" },
-        { "@type": "MedicalOrganization", name: "Mercy San Juan Medical Center", sameAs: "https://www.dignityhealth.org/sacramento/locations/mercysanjuan" },
-      ],
-    },
+    founder: { "@id": "https://www.drantipov.com/#physician" },
     employee: [
-      {
-        "@type": "Person",
-        "@id": "https://www.drantipov.com/#physician",
-        name: "Dr. Alexander V. Antipov, DDS",
-        jobTitle: "Founder · Oral & Maxillofacial Surgeon",
-        url: "https://www.drantipov.com/our-team",
-        image: "https://www.drantipov.com/images/drantipov@2x-b80a5ccf.jpg",
-      },
-      {
-        "@type": "Person",
-        "@id": "https://www.drantipov.com/#physician-kahwach",
-        name: "Dr. André-David Kahwach, DDS, MD",
-        jobTitle: "Oral & Maxillofacial Surgeon",
-        url: "https://www.drantipov.com/our-team",
-        image: "https://www.drantipov.com/images/dr-kahwach-v3.jpg",
-        alumniOf: [
-          { "@type": "EducationalOrganization", name: "University of California, San Francisco, School of Dentistry", sameAs: "https://dentistry.ucsf.edu" },
-          { "@type": "EducationalOrganization", name: "Loma Linda University School of Medicine", sameAs: "https://medicine.llu.edu" },
-        ],
-        worksFor: {
-          "@type": "MedicalOrganization",
-          name: "Galleria Oral & Facial Surgery",
-          url: "https://www.galleriaoms.com",
-        },
-      },
+      { "@id": "https://www.drantipov.com/#physician" },
+      { "@id": "https://www.drantipov.com/#physician-kahwach" },
     ],
     sameAs: [
       "https://www.facebook.com/drantipov",
@@ -522,11 +464,80 @@ export default function JsonLd() {
     },
   };
 
+  const physicianAntipov = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.drantipov.com/#physician",
+    name: "Dr. Alexander V. Antipov, DDS",
+    givenName: "Alexander",
+    familyName: "Antipov",
+    jobTitle: "Founder · Oral & Maxillofacial Surgeon",
+    description:
+      "Board-certified Diplomate of the American Board of Oral and Maxillofacial Surgery, in private practice in Roseville, California since 2008. Educated at Moscow State Medical Stomatology University (1995–2000), Loma Linda University School of Dentistry (DDS, 2001–2003), and Albert Einstein College of Medicine Department of Dentistry (Oral & Maxillofacial Surgery Residency, 2007–2008). Founder of Smile Again Foundation (2025).",
+    url: "https://www.drantipov.com/our-team",
+    image: "https://www.drantipov.com/images/drantipov@2x-b80a5ccf.jpg",
+    worksFor: { "@id": "https://www.drantipov.com/#organization" },
+    alumniOf: [
+      { "@type": "EducationalOrganization", name: "Albert Einstein College of Medicine, Yeshiva University, Department of Dentistry", sameAs: "https://www.einsteinmed.edu" },
+      { "@type": "EducationalOrganization", name: "Loma Linda University School of Dentistry", sameAs: "https://dentistry.llu.edu" },
+      { "@type": "EducationalOrganization", name: "Moscow State Medical Stomatology University", sameAs: "https://www.msmsu.ru" },
+    ],
+    memberOf: [
+      { "@type": "Organization", name: "American Board of Oral and Maxillofacial Surgery", alternateName: "ABOMS", sameAs: "https://www.aboms.org" },
+      { "@type": "Organization", name: "American Association of Oral and Maxillofacial Surgeons", alternateName: "AAOMS", sameAs: "https://www.aaoms.org" },
+      { "@type": "Organization", name: "California Association of Oral and Maxillofacial Surgeons", alternateName: "CALAOMS", sameAs: "https://www.calaoms.org" },
+      { "@type": "Organization", name: "Sacramento District Dental Society", alternateName: "SDDS" },
+      { "@type": "Organization", name: "American Dental Association", alternateName: "ADA", sameAs: "https://www.ada.org" },
+      { "@type": "Organization", name: "California Dental Association", alternateName: "CDA", sameAs: "https://www.cda.org" },
+    ],
+    hasCredential: [
+      { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "Diplomate, American Board of Oral and Maxillofacial Surgery (ABOMS)" },
+      { "@type": "EducationalOccupationalCredential", credentialCategory: "license", name: "California Dental License", identifier: "50724" },
+      { "@type": "EducationalOccupationalCredential", credentialCategory: "license", name: "DEA Certificate", identifier: "FA 0689717" },
+      { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "General Anesthesia Permit (in-office IV sedation)", identifier: "GA 1446" },
+      { "@type": "EducationalOccupationalCredential", credentialCategory: "certification", name: "Elective Facial Cosmetic Surgery Permit" },
+      { "@type": "EducationalOccupationalCredential", credentialCategory: "registration", name: "Continuing Education Registered Provider", identifier: "00948675" },
+    ],
+    affiliation: [
+      { "@type": "MedicalOrganization", name: "Sutter Roseville Medical Center", sameAs: "https://www.sutterhealth.org/srmc" },
+      { "@type": "MedicalOrganization", name: "Sutter General Hospital", sameAs: "https://www.sutterhealth.org" },
+      { "@type": "MedicalOrganization", name: "Mercy General Hospital", sameAs: "https://www.dignityhealth.org/sacramento/locations/mercygeneral" },
+      { "@type": "MedicalOrganization", name: "Mercy San Juan Medical Center", sameAs: "https://www.dignityhealth.org/sacramento/locations/mercysanjuan" },
+    ],
+  };
+
+  const physicianKahwach = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.drantipov.com/#physician-kahwach",
+    name: "Dr. André-David Kahwach, DDS, MD",
+    jobTitle: "Oral & Maxillofacial Surgeon",
+    url: "https://www.drantipov.com/our-team",
+    image: "https://www.drantipov.com/images/dr-kahwach-v3.jpg",
+    alumniOf: [
+      { "@type": "EducationalOrganization", name: "University of California, San Francisco, School of Dentistry", sameAs: "https://dentistry.ucsf.edu" },
+      { "@type": "EducationalOrganization", name: "Loma Linda University School of Medicine", sameAs: "https://medicine.llu.edu" },
+    ],
+    worksFor: {
+      "@type": "MedicalOrganization",
+      name: "Galleria Oral & Facial Surgery",
+      url: "https://www.galleriaoms.com",
+    },
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianAntipov) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianKahwach) }}
       />
       <script
         type="application/ld+json"

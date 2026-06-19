@@ -717,8 +717,8 @@ export function getAntipovPersonSchema() {
       { "@type": "EducationalOrganization", name: "Moscow State Medical Stomatology University", sameAs: "https://www.msmsu.ru" },
     ],
     worksFor: [
-      { "@type": "MedicalBusiness", name: "Galleria Oral & Facial Surgery", url: "https://www.galleriaoms.com" },
-      { "@type": "MedicalBusiness", name: "Fusion Dental Implants", url: "https://www.fusiondentalimplants.com" },
+      { "@type": "MedicalOrganization", name: "Galleria Oral & Facial Surgery", url: "https://www.galleriaoms.com" },
+      { "@type": "MedicalOrganization", name: "Fusion Dental Implants", url: "https://www.fusiondentalimplants.com" },
     ],
     founder: [
       {

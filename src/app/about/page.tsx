@@ -70,10 +70,7 @@ export default function AboutUsPage() {
             description:
               "Board-certified oral and maxillofacial surgeon practicing in Roseville, California. Diplomate of the American Board of Oral and Maxillofacial Surgery (ABOMS), with 25+ years of surgical experience.",
             inLanguage: "en",
-            mainEntity: {
-              "@type": "Physician",
-              "@id": `${siteConfig.url}/#physician`,
-            },
+            mainEntity: { "@id": `${siteConfig.url}/#physician` },
           },
           getBreadcrumbSchema([
             { name: "Home", url: siteConfig.url },

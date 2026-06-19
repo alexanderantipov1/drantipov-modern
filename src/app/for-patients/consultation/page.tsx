@@ -97,11 +97,7 @@ export default function ConsultationPage() {
             name: "Schedule a Free Consultation",
             url: `${siteConfig.url}/for-patients/consultation`,
             description: "Schedule a free in-person consultation at Galleria Oral & Facial Surgery in Roseville, CA — new patients welcome.",
-            mainEntity: {
-              "@type": "Physician",
-              name: "Dr. Alexander V. Antipov, DDS",
-              url: `${siteConfig.url}/our-team`,
-            },
+            mainEntity: { "@id": `${siteConfig.url}/#physician` },
           },
         ])}
       />

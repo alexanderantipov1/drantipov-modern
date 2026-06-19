@@ -31,11 +31,7 @@ const orgSchema = {
   "@id": `${siteConfig.url}/smile-again-foundation#org`,
   name: "Smile Again Foundation",
   url: `${siteConfig.url}/smile-again-foundation`,
-  founder: {
-    "@type": "Physician",
-    "@id": `${siteConfig.url}/#physician`,
-    name: "Dr. Alexander V. Antipov, DDS",
-  },
+  founder: { "@id": `${siteConfig.url}/#physician` },
   foundingDate: "2025",
   description: "Nonprofit dedicated to expanding access to restorative dental care and mission-driven patient support.",
 };

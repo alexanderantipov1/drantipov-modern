@@ -66,6 +66,20 @@ export default async function StateHubPage({
       description: `Oral & maxillofacial surgery practice serving patients across ${stateName}, led by Dr. Alexander V. Antipov (ABOMS Diplomate).`,
       url: `${siteConfig.url}/locations/${state}`,
       telephone: siteConfig.contact.phone,
+      email: siteConfig.contact.email,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: `${siteConfig.contact.address.street}, ${siteConfig.contact.address.suite}`,
+        addressLocality: siteConfig.contact.address.city,
+        addressRegion: siteConfig.contact.address.state,
+        postalCode: siteConfig.contact.address.zip,
+        addressCountry: "US",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 38.7521,
+        longitude: -121.2880,
+      },
       parentOrganization: { "@id": `${siteConfig.url}/#organization` },
       areaServed: stateCities.map((c) => ({
         "@type": "City",

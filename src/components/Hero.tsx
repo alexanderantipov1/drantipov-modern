@@ -90,20 +90,18 @@ export default function Hero() {
               className="hero-fade-up font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight"
               style={{ animationDelay: "0.1s" }}
             >
-              One of the World&rsquo;s
+              Place Your
               <br />
-              Leading
+              New Smile in
               <br />
-              <span className="gradient-text">Dental Implant</span>
-              <br />
-              Surgeons
+              the <span className="gradient-text">Best Hands</span>
             </h1>
 
             <p
               className="hero-fade-up mt-6 text-lg text-white/80 max-w-xl leading-relaxed"
               style={{ animationDelay: "0.2s" }}
             >
-              Dr. Alexander Antipov performs <strong className="text-white">more full-arch implant cases than nearly any surgeon in the field</strong> — and is widely regarded as one of the best at what he does. From <strong className="text-white">All-on-4 and All-on-6 full arch restoration</strong> to <strong className="text-white">orthognathic jaw surgery</strong> and <strong className="text-white">facial cosmetics</strong>, backed by 25+ years of board-certified expertise.
+              Dr. Alexander Antipov is <strong className="text-white">one of the world&rsquo;s leading dental implant surgeons</strong>, performing <strong className="text-white">more full-arch cases than nearly any surgeon in the field</strong>. From <strong className="text-white">All-on-4 and All-on-6 full arch restoration</strong> to <strong className="text-white">orthognathic jaw surgery</strong> and <strong className="text-white">facial cosmetics</strong> — backed by 25+ years of board-certified expertise.
             </p>
 
             {/* Signature */}

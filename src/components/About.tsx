@@ -154,7 +154,7 @@ export default function About() {
               {/* Award plaque */}
               <div className="relative bg-white min-h-[320px] lg:min-h-[520px]">
                 <Image
-                  src="/images/about/neodent-award-plaque-v2.jpeg"
+                  src="/images/about/neodent-award-plaque-v3.jpeg"
                   alt="2026 Neodent Elite Practitioner Award plaque engraved for Dr. Alexander Antipov"
                   fill
                   className="object-cover object-center"

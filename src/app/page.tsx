@@ -3,6 +3,7 @@ import ReviewBanner from "@/components/ReviewBanner";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import PracticePhilosophy from "@/components/PracticePhilosophy";
+import WallOfSmiles from "@/components/WallOfSmiles";
 import BeforeAfter from "@/components/BeforeAfter";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
@@ -80,6 +81,7 @@ export default function Home() {
         <Hero />
         <ReviewBanner rating="4.9" />
         <About />
+        <WallOfSmiles />
         <PracticePhilosophy />
         <Services />
         <BeforeAfter />

@@ -236,6 +236,25 @@ body {
   animation: hero-scroll-bounce 1.5s ease-in-out infinite;
 }
 
+/* Wall of Smiles continuous marquee */
+@keyframes smile-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.smile-marquee-track {
+  animation: smile-marquee 70s linear infinite;
+  will-change: transform;
+}
+
+.smile-marquee:hover .smile-marquee-track {
+  animation-play-state: paused;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-fade-up,
   .hero-fade,
@@ -245,6 +264,9 @@ body {
     animation: none;
   }
   .hero-scroll-bounce {
+    animation: none;
+  }
+  .smile-marquee-track {
     animation: none;
   }
 }

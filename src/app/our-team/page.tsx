@@ -17,6 +17,7 @@ import {
 import PageHero from "@/components/PageHero"
 import DualCTA from "@/components/DualCTA"
 import PracticePhilosophy from "@/components/PracticePhilosophy"
+import WallOfSmiles from "@/components/WallOfSmiles"
 import { StatPill } from "@/components/our-team/StatPill"
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter"
 import { Timeline } from "@/components/our-team/Timeline"
@@ -271,6 +272,11 @@ export default function OurTeamPage() {
           </div>
         </div>
       </section>
+
+      {/* ============================================================ */}
+      {/* Wall of Smiles                                               */}
+      {/* ============================================================ */}
+      <WallOfSmiles />
 
       {/* ============================================================ */}
       {/* Practice Philosophy                                          */}

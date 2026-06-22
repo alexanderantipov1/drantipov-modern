@@ -10,7 +10,7 @@ const services = [
     subtitle: "All-on-4, All-on-6, Zygomatic & Teeth-in-a-Day",
     description:
       "Receive a complete set of permanent teeth in a single visit with our All-on-4 and All-on-6 immediate-load implant protocols. Dr. Antipov uses 3D cone beam CT imaging and computer-guided surgical templates for precise, predictable placement — even for patients who have been told they don't have enough bone. For severe upper jaw bone loss, we offer zygomatic implants anchored to the cheekbone, eliminating the need for extensive bone grafting. Every full arch case includes same-day temporary teeth so you never leave without a smile.",
-    image: "/images/gallery-behind-scenes/surgery-05.jpeg",
+    image: "/images/procedures/full-arch-prosthesis.png",
     features: [
       "All-on-4 Implants",
       "All-on-6 Implants",

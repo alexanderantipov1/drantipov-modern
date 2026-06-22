@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 
 const stats = [
@@ -148,41 +149,62 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="mt-20"
         >
-          <div className="rounded-3xl bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/15 p-6 sm:p-10">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              {/* Award photos */}
-              <div className="grid grid-cols-3 gap-3">
-                <div className="col-span-2 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md">
-                  <Image
-                    src="/images/about/neodent-award-doctor-v7.png"
-                    alt="Dr. Alexander Antipov, DDS — recipient of the 2026 Neodent Elite Practitioner Award"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 60vw, 30vw"
-                  />
-                </div>
-                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-md">
-                  <Image
-                    src="/images/about/neodent-award-product-v2.jpeg"
-                    alt="2026 Neodent Elite Practitioner Award gift set presented to Dr. Alexander Antipov — engraved plaque, branded tumbler, and surgical cap"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 30vw, 15vw"
-                  />
-                </div>
+          <div className="rounded-3xl bg-white border border-dark/10 shadow-sm overflow-hidden">
+            <div className="grid lg:grid-cols-2 items-stretch">
+              {/* Award plaque */}
+              <div className="relative bg-[#f3f1ef] min-h-[320px] lg:min-h-[520px]">
+                <Image
+                  src="/images/about/neodent-award-plaque.jpeg"
+                  alt="2026 Neodent Elite Practitioner Award plaque engraved for Dr. Alexander Antipov"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
               </div>
 
               {/* Text */}
-              <div>
-                <span className="text-primary font-semibold text-sm tracking-widest uppercase">
-                  Recognition
+              <div className="p-8 sm:p-12 lg:p-14 flex flex-col justify-center">
+                <span className="text-[#A0218E] font-bold text-xs sm:text-sm tracking-[0.2em] uppercase">
+                  Industry Recognition
                 </span>
-                <h3 className="font-serif mt-3 text-3xl sm:text-4xl font-bold text-dark tracking-tight leading-tight">
-                  2026 Neodent <span className="gradient-text">Elite Practitioner</span>
+                <h3 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight leading-[1.05]">
+                  <span className="text-dark">2026 Neodent</span>
+                  <br />
+                  <span className="text-[#7A2E6B]">Elite Practitioner</span>
                 </h3>
-                <p className="mt-4 text-muted text-lg leading-relaxed">
-                  Dr. Antipov has been recognized by <strong>Neodent</strong> — a <strong>Straumann Group</strong> brand — as a <strong>2026 Elite Practitioner</strong>. This distinction honors leading implant surgeons for clinical excellence, advanced surgical skill, and consistently outstanding patient outcomes.
+                <div className="mt-6 h-px w-16 bg-[#A0218E]" />
+                <p className="mt-6 text-muted text-base sm:text-lg leading-relaxed max-w-md">
+                  Recognized by Neodent, a Straumann Group brand, for clinical excellence, advanced implant expertise, and outstanding patient outcomes.
                 </p>
+
+                {/* Neodent logo */}
+                <div className="mt-8 flex items-center gap-3">
+                  <span
+                    className="relative inline-block w-8 h-8 overflow-hidden rounded-full bg-gradient-to-br from-[#C0228E] to-[#7A2E6B]"
+                    aria-hidden="true"
+                  >
+                    <span className="absolute left-[2px] top-1/2 h-6 w-6 -translate-y-1/2 rounded-full bg-white" />
+                    <span className="absolute left-[7px] top-1/2 h-3.5 w-3.5 -translate-y-1/2 rounded-full bg-gradient-to-br from-[#C0228E] to-[#7A2E6B]" />
+                  </span>
+                  <span className="leading-none">
+                    <span className="block text-xl font-extrabold tracking-tight text-dark">
+                      NEODENT<span className="align-super text-[0.5em]">®</span>
+                    </span>
+                    <span className="block text-[0.65rem] tracking-wide text-muted mt-0.5">
+                      A Straumann Group Brand
+                    </span>
+                  </span>
+                </div>
+
+                <Link
+                  href="/full-arch-dental-implants"
+                  className="mt-8 inline-flex items-center justify-center gap-2 self-start rounded-md bg-[#5E2750] px-6 py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#4a1e3f]"
+                >
+                  Learn About Our Implant Expertise
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
             </div>
           </div>

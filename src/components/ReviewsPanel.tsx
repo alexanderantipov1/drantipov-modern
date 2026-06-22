@@ -69,7 +69,7 @@ export default function ReviewsPanel({ trigger, triggerClassName = "", rating = 
       />
 
       {/* Left slide-out drawer */}
-      <aside
+      <div
         role="dialog"
         aria-modal="true"
         aria-label="Patient reviews"
@@ -145,7 +145,7 @@ export default function ReviewsPanel({ trigger, triggerClassName = "", rating = 
             </button>
           )}
         </div>
-      </aside>
+      </div>
     </>
   );
 }

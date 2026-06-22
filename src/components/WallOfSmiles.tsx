@@ -11,7 +11,9 @@ const EXCLUDED_SMILES = [
 ];
 
 const smiles = smileGalleryPhotos.filter(
-  (photo) => !EXCLUDED_SMILES.includes(photo.src),
+  (photo) =>
+    !EXCLUDED_SMILES.includes(photo.src) &&
+    !photo.alt.toLowerCase().startsWith("close-up"),
 );
 
 export default function WallOfSmiles() {

@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 
 const stats = [
@@ -190,16 +189,6 @@ export default function About() {
                     className="h-12 w-auto"
                   />
                 </div>
-
-                <Link
-                  href="/full-arch-dental-implants"
-                  className="mt-8 inline-flex items-center justify-center gap-2 self-start rounded-md bg-[#5E2750] px-6 py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-[0.12em] text-white transition-colors hover:bg-[#4a1e3f]"
-                >
-                  Learn About Our Implant Expertise
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
               </div>
             </div>
           </div>

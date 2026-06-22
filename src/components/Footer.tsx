@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone, MapPin, ChevronDown } from "lucide-react";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
+import { regions, CITY_PAGE_SLUGS, totalCities } from "@/constants/serviceAreas";
 
 type LinkItem = { href: string; label: string };
 
@@ -37,16 +38,6 @@ const SURGICAL_LINKS: LinkItem[] = [
   { href: "/expertise/mole-removal", label: "Mole Removal" },
   { href: "/expertise/oral-pathology", label: "Oral Pathology" },
   { href: "/expertise", label: "All Procedures" },
-];
-
-// Cities We Serve: pure local SEO. Ends with a catch-all "View All Locations".
-const LOCATION_LINKS: LinkItem[] = [
-  { href: "/locations/ca/sacramento", label: "Sacramento" },
-  { href: "/locations/ca/folsom", label: "Folsom" },
-  { href: "/locations/ca/rocklin", label: "Rocklin" },
-  { href: "/locations/ca/granite-bay", label: "Granite Bay" },
-  { href: "/locations/ca/lincoln", label: "Lincoln" },
-  { href: "/locations", label: "View All Locations" },
 ];
 
 const RESOURCE_LINKS: LinkItem[] = [
@@ -97,12 +88,13 @@ const LEGAL_LINKS: LinkItem[] = [
 const SECTIONS: { title: string; links: LinkItem[] }[] = [
   { title: "Dental Implant Services", links: IMPLANT_LINKS },
   { title: "Surgical & Facial Services", links: SURGICAL_LINKS },
-  { title: "Cities We Serve", links: LOCATION_LINKS },
   { title: "Patient Resources", links: RESOURCE_LINKS },
   { title: "For Patients", links: PATIENT_LINKS },
   { title: "Company", links: COMPANY_LINKS },
   { title: "Legal", links: LEGAL_LINKS },
 ];
+
+const CITIES_SECTION_TITLE = `Cities We Serve (${totalCities}+)`;
 
 // Collapsible accordion section (one open at a time) on all screen sizes.
 function FooterSection({
@@ -147,6 +139,95 @@ function FooterSection({
           </li>
         ))}
       </ul>
+    </div>
+  );
+}
+
+// Nested collapsible city directory — each region expands to its city links.
+function FooterCitiesSection({
+  isOpen,
+  onToggle,
+}: {
+  isOpen: boolean;
+  onToggle: () => void;
+}) {
+  const [openRegion, setOpenRegion] = useState<string | null>(null);
+
+  return (
+    <div className="border-b border-white/10">
+      <h4>
+        <button
+          type="button"
+          onClick={onToggle}
+          aria-expanded={isOpen}
+          className="flex w-full items-center justify-between py-4 text-sm font-semibold text-white"
+        >
+          {CITIES_SECTION_TITLE}
+          <ChevronDown
+            className={`h-5 w-5 text-primary transition-transform duration-200 ${
+              isOpen ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+      </h4>
+      <div className={`pb-4 ${isOpen ? "block" : "hidden"}`}>
+        {regions.map((region) => {
+          const regionOpen = openRegion === region.id;
+          return (
+            <div key={region.id} className="border-t border-white/5">
+              <button
+                type="button"
+                onClick={() =>
+                  setOpenRegion((prev) => (prev === region.id ? null : region.id))
+                }
+                aria-expanded={regionOpen}
+                className="flex w-full items-center justify-between py-2.5 text-xs font-medium text-white/80 hover:text-white transition-colors"
+              >
+                <span>{region.label}</span>
+                <span className="flex items-center gap-2">
+                  <span className="text-[10px] text-white/30">
+                    {region.cities.length}
+                  </span>
+                  <ChevronDown
+                    className={`h-4 w-4 text-primary transition-transform duration-200 ${
+                      regionOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </span>
+              </button>
+              <ul
+                className={`grid grid-cols-2 gap-x-4 gap-y-1.5 pb-3 ${
+                  regionOpen ? "grid" : "hidden"
+                }`}
+              >
+                {region.cities.map((city) => {
+                  const slug = CITY_PAGE_SLUGS[city.name];
+                  return (
+                    <li key={city.name}>
+                      {slug ? (
+                        <Link
+                          href={`/locations/ca/${slug}`}
+                          className="text-xs text-white/60 hover:text-primary transition-colors duration-300"
+                        >
+                          {city.name}
+                        </Link>
+                      ) : (
+                        <span className="text-xs text-white/40">{city.name}</span>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          );
+        })}
+        <Link
+          href="/locations"
+          className="mt-3 inline-block text-xs font-semibold text-primary hover:underline"
+        >
+          View All Locations →
+        </Link>
+      </div>
     </div>
   );
 }
@@ -227,6 +308,14 @@ export default function Footer() {
               }
             />
           ))}
+          <FooterCitiesSection
+            isOpen={openSection === CITIES_SECTION_TITLE}
+            onToggle={() =>
+              setOpenSection((prev) =>
+                prev === CITIES_SECTION_TITLE ? null : CITIES_SECTION_TITLE
+              )
+            }
+          />
         </nav>
 
         {/* SEO text */}

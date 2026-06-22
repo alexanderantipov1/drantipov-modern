@@ -10,7 +10,7 @@ const services = [
     subtitle: "All-on-4, All-on-6, Zygomatic & Teeth-in-a-Day",
     description:
       "Receive a complete set of permanent teeth in a single visit with our All-on-4 and All-on-6 immediate-load implant protocols. Dr. Antipov uses 3D cone beam CT imaging and computer-guided surgical templates for precise, predictable placement — even for patients who have been told they don't have enough bone. For severe upper jaw bone loss, we offer zygomatic implants anchored to the cheekbone, eliminating the need for extensive bone grafting. Every full arch case includes same-day temporary teeth so you never leave without a smile.",
-    image: "/images/procedures/dental-implants-26292ad9.jpg",
+    image: "/images/gallery-behind-scenes/surgery-05.jpeg",
     features: [
       "All-on-4 Implants",
       "All-on-6 Implants",
@@ -29,7 +29,7 @@ const services = [
     subtitle: "Orthognathic Surgery, Le Fort, BSSO & Genioplasty",
     description:
       "Computer-planned orthognathic surgery to correct jaw misalignment, restore bite function, and achieve facial harmony. Dr. Antipov treats underbites (Class III malocclusion), overbites (Class II malocclusion), open bites, crossbites, facial asymmetry, and obstructive sleep apnea. Procedures include Le Fort I osteotomy (single-piece and 3-piece), bilateral sagittal split osteotomy (BSSO), genioplasty (chin repositioning), maxillomandibular advancement, and double jaw surgery. Every case uses 3D virtual surgical planning for millimeter-precise results.",
-    image: "/images/procedures/corrective-jaw-surgery-406b79a4.jpg",
+    image: "/images/gallery-behind-scenes/surgery-13.jpeg",
     features: [
       "Orthognathic Surgery",
       "Le Fort I Osteotomy",
@@ -48,7 +48,7 @@ const services = [
     subtitle: "Rhinoplasty, Face Lift, Eyelid Surgery, Fillers & Mole Removal",
     description:
       "Refine your natural features with expert facial cosmetic procedures performed by a board-certified oral and maxillofacial surgeon who understands facial anatomy at the deepest level. Services include rhinoplasty (nose reshaping), rhytidectomy (face lift), upper and lower blepharoplasty (eyelid surgery), Asian double eyelid surgery, facial feminization surgery, scarless mole removal using radio wave technique, Juvederm dermal fillers, lip augmentation, and autologous fat transfer for facial volume restoration.",
-    image: "/images/procedures/facial-cosmetic-surgery-e97fd634.jpg",
+    image: "/images/smile-gallery/patient-01.jpeg",
     features: [
       "Rhinoplasty",
       "Face Lift Surgery",
@@ -67,7 +67,7 @@ const services = [
     subtitle: "Organic, Holistic & Autogenous Bone Regeneration",
     description:
       "Advanced bone regeneration using organic and holistic bone grafting materials to rebuild jawbone lost to tooth extraction, periodontal disease, or trauma. Dr. Antipov performs sinus lift surgery (sinus augmentation), ridge augmentation, socket preservation, block bone grafts, and guided bone regeneration (GBR). We offer autogenous (your own bone), allograft, xenograft, and synthetic bone graft options — including minimally processed, naturally derived materials for patients who prefer a holistic approach to dental implant preparation.",
-    image: "/images/procedures/extractions-1896b4c1.jpg",
+    image: "/images/gallery-behind-scenes/surgery-01.jpeg",
     features: [
       "Organic Bone Graft",
       "Holistic Bone Grafting",
@@ -86,7 +86,7 @@ const services = [
     subtitle: "Wisdom Teeth, Extractions, TMJ & IV Sedation",
     description:
       "Comprehensive oral surgery including impacted wisdom teeth extraction, complex tooth removal, surgical exposure of impacted teeth for orthodontics, TMJ disorder treatment (temporomandibular joint surgery), cyst and tumor removal, and pre-prosthetic surgery. All procedures are performed under comfortable IV sedation or general anesthesia at our fully equipped Roseville surgical center. Dr. Antipov is fellowship-trained to handle even the most complex cases with precision and care.",
-    image: "/images/landing-pages/dental-implants/art/slider02-ff45c735.jpg",
+    image: "/images/gallery-behind-scenes/surgery-09.jpeg",
     features: [
       "Wisdom Teeth Removal",
       "Impacted Teeth",
@@ -105,7 +105,7 @@ const services = [
     subtitle: "Individual Implants, Bridges & Implant-Supported Dentures",
     description:
       "Whether you are missing one tooth or several, dental implants provide the most natural and durable replacement available. Dr. Antipov places single tooth implants with immediate temporary crowns, implant-supported bridges to replace multiple adjacent teeth, and snap-on dentures (overdentures) for patients who want a removable implant-retained option. Each implant is precisely placed using 3D CT guidance and medical-grade titanium for permanent osseointegration with your jawbone.",
-    image: "/images/landing-pages/dental-implants/art/smiling-woman-7bc2b588.jpg",
+    image: "/images/gallery-behind-scenes/lab-03.jpeg",
     features: [
       "Single Tooth Implant",
       "Implant Bridge",

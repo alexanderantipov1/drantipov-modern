@@ -157,7 +157,7 @@ export default function About() {
                   src="/images/about/neodent-award-plaque-v3.jpeg"
                   alt="2026 Neodent Elite Practitioner Award plaque engraved for Dr. Alexander Antipov"
                   fill
-                  className="object-cover object-center"
+                  className="object-contain object-center"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 {/* Soft white fade into the card (bottom on mobile, right on desktop) */}

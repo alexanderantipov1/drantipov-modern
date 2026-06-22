@@ -1,7 +1,5 @@
 import type { ReactNode } from "react";
-
-const DEFAULT_REVIEWS_URL =
-  "https://www.google.com/search?q=Dr+Alexander+Antipov+DDS+Roseville+reviews";
+import ReviewsPanel from "@/components/ReviewsPanel";
 
 interface ReviewBannerProps {
   rating?: string;
@@ -82,8 +80,6 @@ export default function ReviewBanner({
   trustedLabel = "TRUSTED ON",
   className = "",
 }: ReviewBannerProps) {
-  const reviewsUrl = process.env.NEXT_PUBLIC_GOOGLE_REVIEWS_URL ?? DEFAULT_REVIEWS_URL;
-
   const captionContent = caption ?? (
     <>
       Average rating from{" "}
@@ -118,14 +114,11 @@ export default function ReviewBanner({
                   <Star />
                 </span>
               </div>
-              <a
-                href={reviewsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-1 block text-xs text-white/65 transition hover:text-white sm:text-sm"
-              >
-                {captionContent}
-              </a>
+              <ReviewsPanel
+                rating={rating}
+                trigger={captionContent}
+                triggerClassName="mt-1 block cursor-pointer text-left text-xs text-white/65 transition hover:text-white sm:text-sm"
+              />
             </div>
           </div>
 

@@ -6,8 +6,10 @@ import { Pause, Play } from "lucide-react";
 import { smileGalleryPhotos } from "@/lib/smileGalleryPhotos";
 
 const EXCLUDED_SMILES = [
+  "/images/smile-gallery/patient-03.jpeg",
   "/images/smile-gallery/patient-19.jpeg",
   "/images/smile-gallery/patient-20.jpeg",
+  "/images/smile-gallery/patient-25.jpeg",
 ];
 
 const smiles = smileGalleryPhotos.filter(

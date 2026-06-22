@@ -5,7 +5,7 @@ Disallow: /api/
 Disallow: /admin/
 
 # Host
-Host: https://drantipov.com
+Host: https://www.drantipov.com
 
 # Sitemaps
-Sitemap: https://drantipov.com/sitemap.xml
+Sitemap: https://www.drantipov.com/sitemap.xml

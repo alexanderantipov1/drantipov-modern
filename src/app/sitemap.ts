@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/constants/siteConfig";
 import { allCases, caseCategories } from "@/constants/cases";
 import { cities, stateSlugs, getStateName } from "@/constants/cities";
+import { insightPosts } from "@/constants/insights";
 
 const siteUrl = siteConfig.url;
 
@@ -231,16 +232,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.75,
     },
-    ...[
-      "zygomatic-implants",
-      "same-day-implants",
-      "dental-implant-aftercare",
-      "dental-implant-complications",
-      "implants-vs-dentures",
-      "poor-oral-health-systemic-diseases",
-      "tooth-lost-emotional-toll",
-    ].map((slug) => ({
-      url: `${siteUrl}/for-patients/insights/${slug}`,
+    ...insightPosts.map((post) => ({
+      url: `${siteUrl}/for-patients/insights/${post.slug}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.72,

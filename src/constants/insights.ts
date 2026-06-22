@@ -18,6 +18,28 @@ export interface InsightPost {
 
 export const insightPosts: InsightPost[] = [
   {
+    slug: "how-to-fix-an-overbite-treatment-options-and-cost",
+    title: "How to Fix an Overbite: Treatment Options, Surgery & Cost",
+    excerpt:
+      "How do you fix an overbite? Every option — clear aligners, braces, and corrective jaw surgery — for adults and children, with realistic timelines and cost.",
+    date: "June 22, 2026",
+    image: "/images/blog/2026-06-22/how-to-fix-an-overbite.png",
+    category: "Jaw Surgery",
+    readTime: "11 min read",
+    author: "Dr. Alexander V. Antipov",
+  },
+  {
+    slug: "can-you-fix-an-overbite-naturally",
+    title: "Can You Fix an Overbite Naturally? What Really Works",
+    excerpt:
+      "Can you fix an overbite naturally? What works, the myths to avoid, and why an established overbite — especially in adults — is corrected with aligners, braces, or surgery.",
+    date: "June 22, 2026",
+    image: "/images/blog/2026-06-22/fix-overbite-naturally.png",
+    category: "Jaw Surgery",
+    readTime: "8 min read",
+    author: "Dr. Alexander V. Antipov",
+  },
+  {
     slug: "dental-implant-procedure-complete-guide",
     title: "Dental Implant Procedure: Complete Step-by-Step Guide",
     excerpt:

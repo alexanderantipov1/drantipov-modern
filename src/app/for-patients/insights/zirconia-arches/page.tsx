@@ -23,6 +23,8 @@ export const metadata: Metadata = {
     "full arch zirconia",
     "zirconia vs acrylic",
     "All-on-4 zirconia",
+    "zirconia all on 4",
+    "zirconia all-on-4 implants",
     "full mouth dental implants",
   ],
   openGraph: {

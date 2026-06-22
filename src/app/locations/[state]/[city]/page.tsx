@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { MapPin, Clock, Phone, Navigation, Shield, Award } from "lucide-react";
+import { MapPin, Clock, Phone, Navigation, Shield, Award, DollarSign } from "lucide-react";
 import {
   cities,
   getCityByStateAndSlug,
@@ -79,6 +79,11 @@ function getCityFAQs(city: ReturnType<typeof getCityByStateAndSlug>) {
     {
       question: `How far is Dr. Antipov's office from ${city.city}?`,
       answer: `Our Roseville office is approximately ${city.distanceMi} miles from ${city.city} — about ${city.driveTime} by car. ${city.routes[0]}.`,
+    },
+    {
+      question: `How much do dental implants cost for ${city.city} patients?`,
+      answer:
+        "A single dental implant (implant, abutment, and crown) typically runs $4,000–$6,000. Full-arch restoration such as All-on-4 generally ranges from $25,000–$35,000 per arch. Your exact cost depends on bone volume, the number of implants, and whether grafting is needed — we provide a clear written estimate at your free 3D CT consultation, and offer financing through CareCredit and Cherry.",
     },
     {
       question: `Do you accept dental insurance for patients from ${city.city}?`,
@@ -303,8 +308,60 @@ export default async function CityPage({
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Cost */}
       <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto text-center mb-12">
+            <span className="text-primary font-semibold text-xs tracking-widest uppercase">
+              Transparent pricing
+            </span>
+            <h2 className="mt-4 font-serif text-3xl lg:text-4xl font-bold text-neutral-900">
+              Dental implant cost in {city.city}
+            </h2>
+            <p className="mt-4 text-neutral-600">
+              Affordable, transparent implant pricing for {city.city} patients — with financing through
+              CareCredit and Cherry and a written estimate at your free 3D CT consultation.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-5">
+            <div className="bg-bone rounded-2xl p-6 border border-neutral-200">
+              <DollarSign className="h-6 w-6 text-primary mb-3" />
+              <h3 className="font-bold text-lg text-neutral-900">Single dental implant</h3>
+              <p className="mt-1 text-2xl font-bold text-primary">$4,000&ndash;$6,000</p>
+              <p className="mt-2 text-sm text-neutral-600 leading-relaxed">
+                Implant, abutment, and custom crown to replace one missing tooth.
+              </p>
+            </div>
+            <div className="bg-bone rounded-2xl p-6 border border-neutral-200">
+              <DollarSign className="h-6 w-6 text-primary mb-3" />
+              <h3 className="font-bold text-lg text-neutral-900">Full-arch (All-on-4)</h3>
+              <p className="mt-1 text-2xl font-bold text-primary">$25,000&ndash;$35,000</p>
+              <p className="mt-2 text-sm text-neutral-600 leading-relaxed">
+                A complete fixed set of teeth on as few as four implants, per arch.
+              </p>
+            </div>
+            <div className="bg-bone rounded-2xl p-6 border border-neutral-200">
+              <DollarSign className="h-6 w-6 text-primary mb-3" />
+              <h3 className="font-bold text-lg text-neutral-900">Financing</h3>
+              <p className="mt-1 text-2xl font-bold text-primary">$0 down options</p>
+              <p className="mt-2 text-sm text-neutral-600 leading-relaxed">
+                Monthly plans through CareCredit &amp; Cherry, plus PPO insurance coordination.
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-8 text-center text-sm text-neutral-600">
+            Final cost depends on bone volume, the number of implants, and whether grafting is needed.{" "}
+            <Link href="/all-on-4-cost" className="text-primary font-semibold underline">
+              See the full All-on-4 cost breakdown →
+            </Link>
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-bone">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl lg:text-4xl font-bold text-neutral-900 text-center mb-10">
             Frequently asked questions — {city.city} patients

@@ -90,11 +90,11 @@ export default function Hero() {
               className="hero-fade-up font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight"
               style={{ animationDelay: "0.1s" }}
             >
-              Place Your
+              Trust Your Smile
               <br />
-              New Smile in
+              to the <span className="gradient-text">Best Hands</span>
               <br />
-              the <span className="gradient-text">Best Hands</span>
+              in the Field
             </h1>
 
             <p

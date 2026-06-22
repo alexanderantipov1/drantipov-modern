@@ -152,14 +152,17 @@ export default function About() {
           <div className="rounded-3xl bg-white border border-dark/10 shadow-sm overflow-hidden">
             <div className="grid lg:grid-cols-2 items-stretch">
               {/* Award plaque */}
-              <div className="relative bg-[#f3f1ef] min-h-[320px] lg:min-h-[520px]">
+              <div className="relative bg-white min-h-[320px] lg:min-h-[520px]">
                 <Image
-                  src="/images/about/neodent-award-plaque.jpeg"
+                  src="/images/about/neodent-award-plaque-v2.jpeg"
                   alt="2026 Neodent Elite Practitioner Award plaque engraved for Dr. Alexander Antipov"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
+                {/* Soft white fade into the card (bottom on mobile, right on desktop) */}
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-b from-transparent to-white lg:hidden" />
+                <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/3 bg-gradient-to-r from-transparent to-white lg:block" />
               </div>
 
               {/* Text */}

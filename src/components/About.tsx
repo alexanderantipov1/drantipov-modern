@@ -176,7 +176,7 @@ export default function About() {
                 </h3>
                 <div className="mt-6 h-px w-16 bg-[#A0218E]" />
                 <p className="mt-6 text-muted text-base sm:text-lg leading-relaxed max-w-md">
-                  Recognized by Neodent, a Straumann Group brand, for clinical excellence, advanced implant expertise, and outstanding patient outcomes.
+                  Awarded by Neodent, a Straumann Group brand, in recognition of Dr. Antipov single-handedly placing more Neodent implants than any other surgeon in the United States.
                 </p>
 
                 {/* Neodent logo */}

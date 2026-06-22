@@ -1,0 +1,45 @@
+Here are the full specs for the review banner (the slim navy "740+ patients" band that sits right under the hero). You can rebuild it anywhere with these details.
+
+What it is
+A dark, rounded bar with three things on the left (a stack of review-platform circles, a big rating number, five gold stars, and a small caption) and a "TRUSTED ON" badge group on the right. On the live site it sits inside a full-width navy strip below the hero, and the caption is a button that opens a slide-out panel of reviews.
+
+Layout structure
+Outer row: left group and right group, spaced apart (justify-between), wraps on small screens.
+Left group:
+Overlapping circle stack (Google, Facebook, Yelp), each circle slightly overlapping the next (negative spacing, about -8px).
+Rating number, then five stars, on one line.
+Caption line below it ("Average rating from 740+ patients").
+Right group: a vertical divider, the label "TRUSTED ON", then three small mono icons. This group is hidden on mobile, shown from medium screens up.
+Colors
+Banner background (standalone card version): dark navy #0a1929 at 80% opacity with a subtle backdrop blur.
+Under-hero strip background: solid #0a1929.
+Border: white at 15% opacity (rgba(255,255,255,0.15)).
+Stars: fill and stroke #F5A623 (gold). The slider/pill version uses #F59E0B.
+Rating number text: white.
+Caption text: white at 65% opacity; the highlighted "740+ patients" part is solid white, underlined.
+"TRUSTED ON" label: white at 45% opacity.
+Right-side mono icons: white at 55% opacity.
+Platform circles: Google circle is white, Facebook circle #1877F2, Yelp circle #FF1A1A with a white bold "Y". Each circle has a 2px ring in the banner background color so they read as separate.
+Sizing and spacing
+Card padding: about 12px to 14px vertical, 16px to 20px horizontal. Rounded corners about 16px (rounded-2xl).
+Under-hero strip: about 20px vertical padding, inside your normal page container.
+Platform circles: 32px on mobile, 36px from small screens up.
+Rating number: about 18px to 20px, bold.
+Stars: about 14px to 16px.
+Caption: about 12px to 14px.
+"TRUSTED ON" label: 12px, semibold, wide letter spacing (about 0.18em).
+Content and data
+Default rating: 4.7 for the standalone banner; the under-hero version passes 4.9.
+Default caption: "Average rating from 740+ patients."
+Star count: always 5 filled stars (it is a visual trust mark, not a half-star meter).
+Platforms shown: Google, Facebook, Yelp.
+Props (so it stays reusable)
+rating (string), default "4.7".
+caption (text or element), default the "740+ patients" line.
+trustedLabel (string), default "TRUSTED ON".
+className for layout overrides.
+Behavior
+The caption can be a plain line or a button. On the live site it is a button that opens a left-side slide-out sheet listing reviews (name, platform icon, time, star row, review text) with a "Load More" button that reveals 4 more at a time.
+Accessibility: the star row has an aria-label like "4.9 out of 5 stars"; icons are marked aria-hidden.
+Responsive: the whole bar wraps on small screens, and the right-side "TRUSTED ON" group is hidden below the medium breakpoint to keep it clean.
+If you want, I can export this as a single self-contained component file (no dependencies on this project's UI kit) so you can drop it straight into the other site. Tell me whether that site uses Tailwind or plain CSS and I will match it.

@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import TrustBadges from "@/components/TrustBadges";
+import ReviewBanner from "@/components/ReviewBanner";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import PracticePhilosophy from "@/components/PracticePhilosophy";
@@ -78,7 +78,7 @@ export default function Home() {
       </a>
       <div id="main-content">
         <Hero />
-        <TrustBadges />
+        <ReviewBanner rating="4.9" />
         <About />
         <PracticePhilosophy />
         <Services />

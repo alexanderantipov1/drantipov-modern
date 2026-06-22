@@ -5,7 +5,14 @@ import Image from "next/image";
 import { Pause, Play } from "lucide-react";
 import { smileGalleryPhotos } from "@/lib/smileGalleryPhotos";
 
-const smiles = smileGalleryPhotos;
+const EXCLUDED_SMILES = [
+  "/images/smile-gallery/patient-19.jpeg",
+  "/images/smile-gallery/patient-20.jpeg",
+];
+
+const smiles = smileGalleryPhotos.filter(
+  (photo) => !EXCLUDED_SMILES.includes(photo.src),
+);
 
 export default function WallOfSmiles() {
   const [paused, setPaused] = useState(false);

@@ -105,7 +105,7 @@ const services = [
     subtitle: "Individual Implants, Bridges & Implant-Supported Dentures",
     description:
       "Whether you are missing one tooth or several, dental implants provide the most natural and durable replacement available. Dr. Antipov places single tooth implants with immediate temporary crowns, implant-supported bridges to replace multiple adjacent teeth, and snap-on dentures (overdentures) for patients who want a removable implant-retained option. Each implant is precisely placed using 3D CT guidance and medical-grade titanium for permanent osseointegration with your jawbone.",
-    image: "/images/gallery-behind-scenes/lab-03.jpeg",
+    image: "/images/procedures/single-tooth-implant.png",
     features: [
       "Single Tooth Implant",
       "Implant Bridge",

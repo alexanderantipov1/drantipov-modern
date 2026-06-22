@@ -178,22 +178,14 @@ export default function About() {
                 </p>
 
                 {/* Neodent logo */}
-                <div className="mt-8 flex items-center gap-3">
-                  <span
-                    className="relative inline-block w-8 h-8 overflow-hidden rounded-full bg-gradient-to-br from-[#C0228E] to-[#7A2E6B]"
-                    aria-hidden="true"
-                  >
-                    <span className="absolute left-[2px] top-1/2 h-6 w-6 -translate-y-1/2 rounded-full bg-white" />
-                    <span className="absolute left-[7px] top-1/2 h-3.5 w-3.5 -translate-y-1/2 rounded-full bg-gradient-to-br from-[#C0228E] to-[#7A2E6B]" />
-                  </span>
-                  <span className="leading-none">
-                    <span className="block text-xl font-extrabold tracking-tight text-dark">
-                      NEODENT<span className="align-super text-[0.5em]">®</span>
-                    </span>
-                    <span className="block text-[0.65rem] tracking-wide text-muted mt-0.5">
-                      A Straumann Group Brand
-                    </span>
-                  </span>
+                <div className="mt-8">
+                  <Image
+                    src="/images/about/neodent-logo.png"
+                    alt="Neodent — A Straumann Group Brand"
+                    width={414}
+                    height={122}
+                    className="h-12 w-auto"
+                  />
                 </div>
 
                 <Link

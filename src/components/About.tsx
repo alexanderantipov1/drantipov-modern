@@ -146,7 +146,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-20"
+          className="mt-20 w-screen relative left-1/2 -ml-[50vw] px-4 sm:px-6 lg:px-8"
         >
           <div className="rounded-3xl bg-white border border-dark/10 shadow-sm overflow-hidden">
             <div className="grid lg:grid-cols-2 items-stretch">
@@ -156,7 +156,7 @@ export default function About() {
                   src="/images/about/neodent-award-plaque-v4.jpeg"
                   alt="2026 Neodent Elite Practitioner Award plaque engraved for Dr. Alexander Antipov"
                   fill
-                  className="object-contain object-center"
+                  className="object-cover object-center"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 {/* Soft white fade into the card (bottom on mobile, right on desktop) */}

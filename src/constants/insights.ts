@@ -5,6 +5,8 @@
  * <RelatedArticles /> cross-linking section rendered at the bottom of each
  * article. Keep the order intentional — it drives the hub listing.
  */
+import { revisionArticles } from "@/constants/revisionArticles"
+
 export interface InsightPost {
   slug: string
   title: string
@@ -16,7 +18,7 @@ export interface InsightPost {
   author: string
 }
 
-export const insightPosts: InsightPost[] = [
+const baseInsightPosts: InsightPost[] = [
   {
     slug: "how-to-fix-an-overbite-treatment-options-and-cost",
     title: "How to Fix an Overbite: Treatment Options, Surgery & Cost",
@@ -282,6 +284,24 @@ export const insightPosts: InsightPost[] = [
     author: "Dr. Alexander V. Antipov",
   },
 ]
+
+/**
+ * The "Implant Revision & Complex Cases" cluster is authored as structured data
+ * in revisionArticles.ts and projected here so it lists in the hub and feeds the
+ * <RelatedArticles /> cross-linker without duplicating its metadata.
+ */
+const revisionInsightPosts: InsightPost[] = revisionArticles.map((a) => ({
+  slug: a.slug,
+  title: a.title,
+  excerpt: a.excerpt,
+  date: a.date,
+  image: a.image,
+  category: a.category,
+  readTime: a.readTime,
+  author: a.author,
+}))
+
+export const insightPosts: InsightPost[] = [...baseInsightPosts, ...revisionInsightPosts]
 
 /**
  * Returns up to `count` sibling articles for cross-linking, chosen cyclically

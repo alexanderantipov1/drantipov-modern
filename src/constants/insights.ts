@@ -6,6 +6,7 @@
  * article. Keep the order intentional — it drives the hub listing.
  */
 import { revisionArticles } from "@/constants/revisionArticles"
+import { guideArticles } from "@/constants/guideArticles"
 
 export interface InsightPost {
   slug: string
@@ -301,7 +302,27 @@ const revisionInsightPosts: InsightPost[] = revisionArticles.map((a) => ({
   author: a.author,
 }))
 
-export const insightPosts: InsightPost[] = [...baseInsightPosts, ...revisionInsightPosts]
+/**
+ * The candidacy / materials / cost / recovery cluster (guideArticles.ts) is
+ * authored as structured data and projected here so it lists in the hub and
+ * feeds the <RelatedArticles /> cross-linker without duplicating its metadata.
+ */
+const guideInsightPosts: InsightPost[] = guideArticles.map((a) => ({
+  slug: a.slug,
+  title: a.title,
+  excerpt: a.excerpt,
+  date: a.date,
+  image: a.image,
+  category: a.category,
+  readTime: a.readTime,
+  author: a.author,
+}))
+
+export const insightPosts: InsightPost[] = [
+  ...baseInsightPosts,
+  ...revisionInsightPosts,
+  ...guideInsightPosts,
+]
 
 /**
  * Returns up to `count` sibling articles for cross-linking, chosen cyclically

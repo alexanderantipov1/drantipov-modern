@@ -56,7 +56,7 @@ export default function Hero() {
         )}
         {/* Mobile: doctor portrait (face above the fold, higher trust signal) */}
         <Image
-          src="/images/doctor-hand3-mobile.jpg"
+          src="/images/dr-antipov-scrubs-our-team.jpg"
           alt="Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
           fill
           className="object-cover object-top lg:hidden"
@@ -170,10 +170,10 @@ export default function Hero() {
                 him visually without a card frame.
               */}
               <Image
-                src="/images/doctor-hand3-cutout.png"
+                src="/images/drantipov-hero-cutout-v4.png"
                 alt="Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
-                width={854}
-                height={1239}
+                width={1080}
+                height={1623}
                 quality={92}
                 sizes="(min-width: 1024px) 50vw, 0vw"
                 className="w-full h-auto drop-shadow-2xl"

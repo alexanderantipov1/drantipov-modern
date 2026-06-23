@@ -70,8 +70,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent" />
       </div>
 
-      {/* Decorative elements */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
+      {/* Decorative element (left side only — kept clear behind the doctor) */}
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
 
       {/* Subtle fade to white at very bottom — softens edge between video and white About */}

@@ -319,9 +319,9 @@ const guideInsightPosts: InsightPost[] = guideArticles.map((a) => ({
 }))
 
 export const insightPosts: InsightPost[] = [
-  ...baseInsightPosts,
-  ...revisionInsightPosts,
   ...guideInsightPosts,
+  ...revisionInsightPosts,
+  ...baseInsightPosts,
 ]
 
 /**

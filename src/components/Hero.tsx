@@ -169,10 +169,10 @@ export default function Hero() {
                 him visually without a card frame.
               */}
               <Image
-                src="/images/drantipov-hero-cutout-v4.png"
+                src="/images/drantipov-hero-cutout-clean.png"
                 alt="Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
-                width={1080}
-                height={1623}
+                width={2679}
+                height={3755}
                 quality={92}
                 sizes="(min-width: 1024px) 50vw, 0vw"
                 className="w-full h-auto drop-shadow-2xl"

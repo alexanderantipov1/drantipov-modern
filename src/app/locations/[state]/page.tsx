@@ -31,7 +31,7 @@ export async function generateMetadata({
   if (!stateName || stateCities.length === 0) return {};
 
   const title = `Oral Surgeon serving ${stateName} — Dr. Alexander V. Antipov`;
-  const description = `Board-certified oral & maxillofacial surgeon serving ${stateCities.length}+ ${stateName} communities from Roseville: dental implants, jaw surgery, sleep apnea (MMA), and facial cosmetic surgery. Free 3D CT consultation.`;
+  const description = `Board-certified oral & maxillofacial surgeon serving ${stateCities.length}+ ${stateName} communities from Roseville: dental implants, jaw surgery, sleep apnea (MMA), and facial cosmetic surgery. Free dental implant consultation.`;
 
   return buildMetadata({
     path: `/locations/${state}`,
@@ -198,9 +198,9 @@ export default async function StateHubPage({
       </section>
 
       <DualCTA
-        variant="dual"
+        variant="implants"
         heading={`Serving patients across ${stateName}`}
-        subheading="Free 3D CT consultation, two practices, one trusted surgical team based in Roseville."
+        subheading="Free dental implant consultation with 3D CT scan, two practices, one trusted surgical team based in Roseville. Restrictions apply."
       />
     </>
   );

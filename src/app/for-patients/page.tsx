@@ -49,7 +49,7 @@ const resources = [
   {
     icon: Calendar,
     title: "Schedule Consultation",
-    description: "Book your complimentary consultation with Dr. Antipov to discuss your treatment options.",
+    description: "Book your complimentary dental implant consultation with Dr. Antipov to discuss your treatment options.",
     href: "/for-patients/consultation",
     cta: "Book Now",
   },

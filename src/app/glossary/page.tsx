@@ -208,14 +208,14 @@ export default function GlossaryPage() {
             Term you don't see here?
           </h2>
           <p className="mt-5 text-lg leading-8 text-white/80">
-            Bring your question to a free consultation. Dr. Antipov or our coordinator will explain exactly what your diagnosis means and what treatment options exist for your case.
+            Bring your question to a free dental implant consultation. Dr. Antipov or our coordinator will explain exactly what your diagnosis means and what treatment options exist for your case.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
               className="rounded-2xl bg-primary-600 px-7 py-4 text-base font-bold text-white transition hover:-translate-y-0.5 hover:bg-primary-700"
             >
-              Schedule a free consultation
+              Schedule a free dental implant consultation
             </Link>
             <Link
               href="/expertise"

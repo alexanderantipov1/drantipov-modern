@@ -54,7 +54,7 @@ const RESOURCE_LINKS: LinkItem[] = [
 ];
 
 const PATIENT_LINKS: LinkItem[] = [
-  { href: "/for-patients/consultation", label: "Free Consultation" },
+  { href: "/for-patients/consultation", label: "Free Implant Consultation" },
   { href: "/for-patients", label: "Patient Information" },
   { href: "/for-patients/pre-op", label: "Before Your Surgery" },
   { href: "/for-patients/post-op", label: "After Your Surgery" },
@@ -274,7 +274,7 @@ export default function Footer() {
               </a>
               <ConsultationModal>
                 <button className="px-4 py-2 bg-primary rounded-lg text-sm text-white font-medium hover:bg-primary-dark transition-all duration-300 cursor-pointer">
-                  Free Consultation
+                  Free Implant Consultation
                 </button>
               </ConsultationModal>
             </div>

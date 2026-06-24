@@ -6,7 +6,7 @@ const faqs = [
     questions: [
       {
         q: "How much do All-on-4 dental implants cost?",
-        a: "The cost of All-on-4 dental implants varies based on your specific needs, whether bone grafting is required, and the prosthetic materials chosen (premium zirconia vs. PMMA acrylic). Dr. Antipov offers free consultations with a complimentary 3D CT scan so you receive an accurate, personalized cost estimate. We offer flexible financing starting at $99/month through multiple lending partners. Contact us for a no-obligation quote.",
+        a: "The cost of All-on-4 dental implants varies based on your specific needs, whether bone grafting is required, and the prosthetic materials chosen (premium zirconia vs. PMMA acrylic). Dr. Antipov offers a free dental implant consultation with a complimentary 3D CT scan so you receive an accurate, personalized cost estimate. We offer flexible financing starting at $99/month through multiple lending partners. Contact us for a no-obligation quote.",
       },
       {
         q: "What is the difference between All-on-4 and All-on-6 dental implants?",
@@ -56,7 +56,7 @@ const faqs = [
       },
       {
         q: "Do I need bone grafting before dental implants?",
-        a: "Not always. Many patients have sufficient bone for immediate implant placement. However, if you've experienced bone loss from tooth extraction, periodontal disease, or prolonged denture wear, bone grafting may be needed to create adequate bone volume. Dr. Antipov evaluates bone density and volume with a 3D CT scan during your free consultation. In some cases, zygomatic implants or tilted All-on-4 implants can avoid the need for grafting altogether.",
+        a: "Not always. Many patients have sufficient bone for immediate implant placement. However, if you've experienced bone loss from tooth extraction, periodontal disease, or prolonged denture wear, bone grafting may be needed to create adequate bone volume. Dr. Antipov evaluates bone density and volume with a 3D CT scan during your free dental implant consultation. In some cases, zygomatic implants or tilted All-on-4 implants can avoid the need for grafting altogether.",
       },
     ],
   },
@@ -77,8 +77,8 @@ const faqs = [
     category: "General",
     questions: [
       {
-        q: "Does Dr. Antipov offer free consultations?",
-        a: "Yes. Every new patient receives a complimentary consultation that includes a 3D cone beam CT scan, thorough examination, personalized treatment plan, and discussion of all financial options — entirely free with no obligation. Virtual video consultations are also available for out-of-town patients.",
+        q: "Does Dr. Antipov offer free dental implant consultations?",
+        a: "Yes. Patients considering dental implants receive a complimentary dental implant consultation that includes a 3D cone beam CT scan, thorough examination, personalized treatment plan, and discussion of all financial options — at no cost with no obligation. Restrictions apply. Virtual video consultations are also available for out-of-town patients.",
       },
       {
         q: "What areas does Dr. Antipov serve?",
@@ -86,7 +86,7 @@ const faqs = [
       },
       {
         q: "What financing options are available?",
-        a: "We offer flexible financing through multiple lending partners with options starting at $99/month. We accept CareCredit, most PPO dental insurance plans, HSA and FSA accounts, and offer interest-free payment options. Our team will review all financial options during your free consultation to find a plan that fits your budget.",
+        a: "We offer flexible financing through multiple lending partners with options starting at $99/month. We accept CareCredit, most PPO dental insurance plans, HSA and FSA accounts, and offer interest-free payment options. Our team will review all financial options during your free dental implant consultation to find a plan that fits your budget.",
       },
       {
         q: "Is IV sedation safe?",
@@ -187,7 +187,7 @@ export default function FAQ() {
             <button
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-white rounded-2xl font-semibold hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 cursor-pointer"
             >
-              Ask Dr. Antipov — Free Consultation
+              Ask Dr. Antipov — Free Dental Implant Consultation
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

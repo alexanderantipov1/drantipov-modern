@@ -455,7 +455,7 @@ export default function JawSurgeryPage() {
       {/* Floating sticky CTA — appears after 25% scroll */}
       <FloatingArticleCTA
         href="/contact"
-        label="Book free consultation"
+        label="Book a Consultation"
         showAfterPct={25}
       />
     </>

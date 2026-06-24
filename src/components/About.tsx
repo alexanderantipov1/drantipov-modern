@@ -318,7 +318,7 @@ export default function About() {
               <button
                 className="px-8 py-3.5 bg-primary text-white rounded-2xl font-semibold hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 cursor-pointer"
               >
-                Book a Free Consultation
+                Book a Free Dental Implant Consultation
               </button>
             </ConsultationModal>
             <a

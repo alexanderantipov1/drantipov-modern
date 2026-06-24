@@ -9,7 +9,7 @@ const badges = [
   { label: "ADA Member", icon: "badge" },
   { label: "3D CT Guided Surgery", icon: "tech" },
   { label: "IV Sedation Certified", icon: "heart" },
-  { label: "Free Consultation", icon: "check" },
+  { label: "Free Implant Consultation", icon: "check" },
   { label: "Financing Available", icon: "dollar" },
 ];
 

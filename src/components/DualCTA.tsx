@@ -23,14 +23,17 @@ export default function DualCTA({
       ? "Ready to Discuss Your Surgery?"
       : variant === "implants"
       ? "Ready to Restore Your Smile?"
-      : "Schedule Your Complimentary Consultation";
+      : "Schedule Your Consultation";
 
   const defaultSub =
     variant === "surgical"
-      ? "Dr. Antipov performs full-scope oral and maxillofacial surgery. Schedule a free 3D CT consultation."
+      ? "Dr. Antipov performs full-scope oral and maxillofacial surgery. Schedule a consultation to discuss your procedure."
       : variant === "implants"
       ? "Whether you're considering single-tooth implants or full-arch restoration, start with a free dental implant consultation and 3D CT scan."
-      : "Meet Dr. Antipov and discuss your treatment options. Every consultation includes a complimentary 3D CT scan and personalized treatment plan.";
+      : "Meet Dr. Antipov and discuss your treatment options, including advanced 3D imaging and a personalized treatment plan.";
+
+  const buttonLabel =
+    variant === "implants" ? "Free Dental Implant Consultation" : "Book a Consultation";
 
   return (
     <section className="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-br from-navy via-navy-dark to-navy">
@@ -57,7 +60,7 @@ export default function DualCTA({
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                Book Free Consultation
+                {buttonLabel}
               </button>
             </ConsultationModal>
             <a

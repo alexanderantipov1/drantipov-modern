@@ -68,7 +68,7 @@ export default function Process() {
             <span className="gradient-text">Permanent Smile</span>
           </h2>
           <p className="mt-4 text-muted text-lg">
-            A clear, four-step path to the smile you deserve — starting with a complimentary consultation and 3D CT scan at our Roseville office. Whether you need dental implants, jaw surgery, or facial cosmetic procedures, every step is guided by Dr. Antipov&apos;s board-certified expertise and advanced technology.
+            A clear, four-step path to the smile you deserve — starting with a consultation and 3D CT scan at our Roseville office. Whether you need dental implants, jaw surgery, or facial cosmetic procedures, every step is guided by Dr. Antipov&apos;s board-certified expertise and advanced technology.
           </p>
         </motion.div>
 

@@ -169,7 +169,7 @@ export default function Navbar() {
               <button
                 className="ml-2 px-6 py-2.5 bg-primary text-white rounded-full text-sm font-semibold hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 pulse-glow cursor-pointer"
               >
-                Free Consultation
+                Free Implant Consultation
               </button>
             </ConsultationModal>
             
@@ -252,7 +252,7 @@ export default function Navbar() {
                   onClick={() => setMobileOpen(false)}
                   className="mt-2 py-4 bg-primary text-white rounded-2xl text-center font-semibold text-lg cursor-pointer"
                 >
-                  Free Consultation
+                  Free Implant Consultation
                 </button>
               </ConsultationModal>
               <a

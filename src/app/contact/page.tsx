@@ -8,8 +8,8 @@ import heroContent from "@/lib/heroContent"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: { absolute: "Contact Us — Free Consultation | Dr. Antipov" },
-  description: "Schedule a free oral surgery consultation with 3D CT scan. Roseville, CA. Call (916) 783-2110 or message us online today.",
+  title: { absolute: "Contact Us — Free Dental Implant Consultation | Dr. Antipov" },
+  description: "Schedule a free dental implant consultation with 3D CT scan. Roseville, CA. Call (916) 783-2110 or message us online today.",
   alternates: {
     canonical: "/contact",
     languages: {
@@ -18,15 +18,15 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Contact Dr. Antipov | Schedule Free Consultation — Roseville, CA",
-    description: "Contact Dr. Alexander Antipov's oral surgery practice in Roseville, CA. Call (916) 783-2110, email info@galleriaoms.com, or use the form. Free consultations with complimentary 3D CT scan.",
+    title: "Contact Dr. Antipov | Free Dental Implant Consultation — Roseville, CA",
+    description: "Contact Dr. Alexander Antipov's oral surgery practice in Roseville, CA. Call (916) 783-2110, email info@galleriaoms.com, or use the form. Free dental implant consultation with complimentary 3D CT scan; restrictions apply.",
     url: "/contact",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Dr. Antipov | Schedule Free Consultation — Roseville, CA",
-    description: "Contact Dr. Alexander Antipov's oral surgery practice in Roseville, CA. Call (916) 783-2110, email info@galleriaoms.com, or use the form. Free consultations with complimentary 3D CT scan.",
+    title: "Contact Dr. Antipov | Free Dental Implant Consultation — Roseville, CA",
+    description: "Contact Dr. Alexander Antipov's oral surgery practice in Roseville, CA. Call (916) 783-2110, email info@galleriaoms.com, or use the form. Free dental implant consultation with complimentary 3D CT scan; restrictions apply.",
   },
 }
 

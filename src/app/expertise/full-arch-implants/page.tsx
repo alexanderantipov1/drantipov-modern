@@ -28,7 +28,7 @@ import DualCTA from "@/components/DualCTA"
 
 export const metadata = {
   title: { absolute: "Full-Arch Dental Implants — Same-Day Teeth | Roseville" },
-  description: "All-on-X full-arch dental implants with same-day fixed teeth. Board-certified surgeon in Roseville, CA. Free CT scan & consultation.",
+  description: "All-on-X full-arch dental implants with same-day fixed teeth. Board-certified surgeon in Roseville, CA. Free dental implant consultation & CT scan.",
   alternates: {
     canonical: "/expertise/full-arch-implants",
     languages: {
@@ -458,7 +458,7 @@ export default function FullArchImplantsPage() {
       {/* Floating sticky CTA — appears after 25% scroll */}
       <FloatingArticleCTA
         href="/contact"
-        label="Book free consultation"
+        label="Free Dental Implant Consultation"
         showAfterPct={25}
       />
     </>

@@ -433,7 +433,7 @@ export default function SingleToothPage() {
       {/* Floating sticky CTA — appears after 25% scroll */}
       <FloatingArticleCTA
         href="/contact"
-        label="Book free consultation"
+        label="Free Dental Implant Consultation"
         showAfterPct={25}
       />
     </>

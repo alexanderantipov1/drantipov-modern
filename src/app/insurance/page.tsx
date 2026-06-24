@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     absolute: "Insurance & Financing | Dr. Antipov, Roseville CA",
   },
   description:
-    "We accept most major PPO plans (Delta Dental, Cigna, Aetna, MetLife and more). We partner with CareCredit and Cherry for monthly payment plans, and we offer transparent pricing and free consultations.",
+    "We accept most major PPO plans (Delta Dental, Cigna, Aetna, MetLife and more). We partner with CareCredit and Cherry for monthly payment plans, and we offer transparent pricing and a free dental implant consultation.",
   alternates: {
     canonical: `${SITE_URL}/insurance`,
     languages: {
@@ -102,7 +102,7 @@ const financingOptions = [
 
 const valueProps = [
   {
-    title: "Free consultations",
+    title: "Free dental implant consultation",
     body:
       "Your first visit — including a 3D CBCT scan when clinically indicated and a full treatment plan — is on us. You leave with a written estimate BEFORE making any decisions.",
   },
@@ -132,12 +132,12 @@ const faqs = [
   {
     question: "I don’t have dental insurance. What are my options?",
     answer:
-      "Many of our patients pay out-of-pocket, and we have a clear path for them. Transparent pricing, free consultations, and partnerships with CareCredit and Cherry for flexible monthly plans (some at 0% promotional APR). HSA and FSA accounts are also accepted for most procedures.",
+      "Many of our patients pay out-of-pocket, and we have a clear path for them. Transparent pricing, a free dental implant consultation, and partnerships with CareCredit and Cherry for flexible monthly plans (some at 0% promotional APR). HSA and FSA accounts are also accepted for most procedures.",
   },
   {
     question: "How much will my treatment cost?",
     answer:
-      "It depends on the procedure, your anatomy, and your insurance coverage. After your free consultation, you receive an itemized written estimate — including the expected insurance benefit and your out-of-pocket portion. No surprise bills, ever.",
+      "It depends on the procedure, your anatomy, and your insurance coverage. After your free dental implant consultation, you receive an itemized written estimate — including the expected insurance benefit and your out-of-pocket portion. No surprise bills, ever.",
   },
   {
     question: "Does insurance cover full-arch (All-on-4) implants?",
@@ -419,7 +419,7 @@ export default function InsurancePage() {
       <DualCTA
         variant="dual"
         heading="Ready to talk about your insurance?"
-        subheading="Call or message us — we will verify your coverage within one business day. Free consultations available."
+        subheading="Call or message us — we will verify your coverage within one business day. Free dental implant consultation available; restrictions apply."
       />
     </>
   );

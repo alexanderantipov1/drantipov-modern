@@ -16,7 +16,7 @@ export default function DualCTA({
   variant = "dual",
   heading,
   subheading,
-  footnote = "Free 3D CT Scan · No Obligation · Flexible Financing · Roseville, CA",
+  footnote = "Free 3D CT Scan · No Obligation · Flexible Financing · Roseville, CA · Restrictions apply",
 }: DualCTAProps) {
   const defaultHeading =
     variant === "surgical"
@@ -29,7 +29,7 @@ export default function DualCTA({
     variant === "surgical"
       ? "Dr. Antipov performs full-scope oral and maxillofacial surgery. Schedule a free 3D CT consultation."
       : variant === "implants"
-      ? "Whether you're considering single-tooth implants or full-arch restoration, start with a free consultation and 3D CT scan."
+      ? "Whether you're considering single-tooth implants or full-arch restoration, start with a free dental implant consultation and 3D CT scan."
       : "Meet Dr. Antipov and discuss your treatment options. Every consultation includes a complimentary 3D CT scan and personalized treatment plan.";
 
   return (

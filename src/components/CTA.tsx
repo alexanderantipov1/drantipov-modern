@@ -26,7 +26,7 @@ export default function CTA() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
-            Schedule Your Free Consultation
+            Schedule Your Free Dental Implant Consultation
           </h2>
           <p className="mt-6 text-xl text-white/90 max-w-2xl mx-auto">
             Meet Dr. Antipov and discuss your treatment options. Every consultation includes a complimentary 3D CT scan and personalized treatment plan — no obligation, no high-pressure sales.
@@ -41,7 +41,7 @@ export default function CTA() {
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                Book Free Consultation
+                Book Free Dental Implant Consultation
               </button>
             </ConsultationModal>
             <a
@@ -56,7 +56,7 @@ export default function CTA() {
           </div>
 
           <p className="mt-8 text-white/60 text-sm">
-            Free 3D CT Scan &bull; No Obligation &bull; Flexible Financing &bull; Roseville, CA
+            Free 3D CT Scan &bull; No Obligation &bull; Flexible Financing &bull; Roseville, CA &bull; Restrictions apply
           </p>
         </motion.div>
       </div>

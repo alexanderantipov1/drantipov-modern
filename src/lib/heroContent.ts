@@ -139,9 +139,9 @@ const heroContent: Record<string, HeroContent> = {
   "/for-patients/consultation": {
     image: "/images/invitations/schedule-a16fad8c.jpg",
     eyebrow: "Get Started Today",
-    title: "Schedule Your Free Consultation",
+    title: "Schedule Your Free Dental Implant Consultation",
     subtitle:
-      "Includes a complimentary 3D CT scan, detailed treatment plan, and review of financing options — all at no cost.",
+      "Includes a complimentary 3D CT scan, detailed treatment plan, and review of financing options. Free dental implant consultation — restrictions apply.",
     overlay: "gradient",
     breadcrumbs: [{ name: "For Patients", href: "/for-patients" }, { name: "Consultation" }],
   },

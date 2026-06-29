@@ -51,10 +51,10 @@ interface ConsentState {
 }
 
 const DEFAULT_CONSENT: ConsentState = {
-  ad_storage: "denied",
-  analytics_storage: "denied",
+  ad_storage: "granted",
+  analytics_storage: "granted",
   functionality_storage: "granted",
-  personalization_storage: "denied",
+  personalization_storage: "granted",
   security_storage: "granted",
 }
 

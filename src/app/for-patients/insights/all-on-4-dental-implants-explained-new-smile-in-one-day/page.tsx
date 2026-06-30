@@ -10,7 +10,7 @@ import DualCTA from "@/components/DualCTA"
 // Paste the YouTube video ID here (the part after "v=" or "youtu.be/").
 // Example: for https://www.youtube.com/watch?v=oH9rF2-DUQo the ID is "oH9rF2-DUQo".
 // While this is empty the video section is hidden; set it to show the embed.
-const YOUTUBE_ID = ""
+const YOUTUBE_ID = "y-mAGcATgKg"
 
 export const metadata: Metadata = {
   title: "All-on-4® Dental Implants Explained: A New Smile in One Day",
@@ -302,6 +302,15 @@ export default function AllOn4ExplainedPost() {
                     Candidacy depends on bone density and volume, oral health, implant stability at
                     placement, medical history, and bite forces. A 3D CT scan and exam determine whether
                     immediate loading is appropriate for your case.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">What is the difference between immediate extraction, immediate placement, and immediate loading?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Immediate extraction removes failing teeth during implant surgery. Immediate placement
+                    sets implants into the jaw right after extraction when conditions allow. Immediate loading
+                    attaches a fixed temporary bridge to those implants the same day, so you leave with teeth
+                    rather than removable dentures.
                   </p>
                 </div>
                 <div>

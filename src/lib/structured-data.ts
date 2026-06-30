@@ -762,8 +762,13 @@ export function getAntipovPersonSchema() {
 export function structuredDataScript(data: object | object[]) {
   const jsonLd = Array.isArray(data) ? data : [data]
 
+  const json = JSON.stringify(jsonLd.length === 1 ? jsonLd[0] : jsonLd)
+  // Escape characters that could break out of the <script> context (defense-in-depth).
   return {
-    __html: JSON.stringify(jsonLd.length === 1 ? jsonLd[0] : jsonLd),
+    __html: json
+      .replace(/</g, "\\u003c")
+      .replace(/>/g, "\\u003e")
+      .replace(/&/g, "\\u0026"),
   }
 }
 

@@ -122,7 +122,7 @@ export default function Hero() {
                 <button
                   className="group relative px-8 py-4 bg-primary text-white rounded-2xl font-semibold text-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-0.5 cursor-pointer"
                 >
-                  <span className="relative z-10">Schedule Free Dental Implant Consultation</span>
+                  <span className="relative z-10">Schedule Free Consultation</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-primary-dark to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </button>
               </ConsultationModal>
@@ -134,13 +134,6 @@ export default function Hero() {
               </a>
             </div>
 
-            <p
-              className="hero-fade mt-3 text-white/45 text-xs"
-              style={{ animationDelay: "0.35s" }}
-            >
-              *Free dental implant consultation. Restrictions apply.
-            </p>
-
             {/* Trust badges */}
             <div
               className="hero-fade mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4 text-white/60 text-sm"
@@ -148,7 +141,7 @@ export default function Hero() {
             >
               {[
                 "10,000+ Smiles Restored",
-                "Free Implant Consultation & CT Scan",
+                "Free CT Scan & Consultation",
                 "Same-Day Teeth Available",
                 "Flexible Financing from $99/mo",
                 "Board-Certified Surgeon",

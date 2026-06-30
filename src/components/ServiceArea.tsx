@@ -163,7 +163,7 @@ export default function ServiceArea() {
               Our <strong>organic and holistic bone grafting</strong> program sets us apart from other implant centers. We use biocompatible, minimally processed human donor tissue combined with advanced platelet-rich growth factors to naturally regenerate bone in the jaw. This approach is ideal for patients who prefer <strong>natural bone graft materials</strong> over synthetic alternatives, or for those with <strong>severe bone loss</strong> who have been told they are not candidates for dental implants elsewhere.
             </p>
             <p>
-              Patients travel to our Roseville office from <strong>Sacramento, San Francisco, Oakland, San Jose, Reno, Stockton, Modesto, Fresno, Redding, Chico, Napa, Santa Rosa</strong>, and over 150 other cities across California and Nevada. We offer a <strong>free dental implant consultation</strong> that includes a complimentary cone beam CT scan, a personalized treatment plan, and a review of your financing options — at no cost or obligation. Restrictions apply.
+              Patients travel to our Roseville office from <strong>Sacramento, San Francisco, Oakland, San Jose, Reno, Stockton, Modesto, Fresno, Redding, Chico, Napa, Santa Rosa</strong>, and over 150 other cities across California and Nevada. We offer <strong>free consultations</strong> that include a complimentary cone beam CT scan, a personalized treatment plan, and a review of your financing options — all at no cost or obligation.
             </p>
             <p>
               Whether you need <strong>full arch dental implants</strong>, <strong>All-on-4 or All-on-6 implant-supported teeth</strong>, <strong>immediate load same-day implants</strong>, <strong>holistic bone grafting</strong>, <strong>corrective jaw surgery</strong>, or <strong>wisdom teeth removal</strong>, Dr. Antipov and his team deliver life-changing results with the precision and care that only a board-certified oral surgeon can provide. <strong>Dental implant financing</strong> is available through multiple lending partners, making treatment accessible regardless of budget.
@@ -176,7 +176,7 @@ export default function ServiceArea() {
               <button
                 className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white rounded-2xl font-bold text-lg hover:bg-primary-dark transition-all duration-300 hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-0.5 cursor-pointer"
               >
-                Schedule Your Free Dental Implant Consultation
+                Schedule Your Free Consultation
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>

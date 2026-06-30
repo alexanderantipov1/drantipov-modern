@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "01",
-    title: "Free Dental Implant Consultation & 3D CT Scan",
+    title: "Free Consultation & 3D CT Scan",
     description:
-      "Your journey starts with a complimentary consultation at our Roseville office. Dr. Antipov performs a thorough examination with a free 3D cone beam CT scan, discusses your goals, develops a personalized treatment plan for dental implants, jaw surgery, or cosmetic procedures, and reviews all financial options. Your dental implant consultation and 3D CT scan are free — restrictions apply.",
+      "Your journey starts with a complimentary consultation at our Roseville office. Dr. Antipov performs a thorough examination with a free 3D cone beam CT scan, discusses your goals, develops a personalized treatment plan for dental implants, jaw surgery, or cosmetic procedures, and reviews all financial options — at no cost to you.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -64,11 +64,11 @@ export default function Process() {
             Your Treatment Journey
           </span>
           <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-dark tracking-tight">
-            From Free Dental Implant Consultation to<br />
+            From Free Consultation to<br />
             <span className="gradient-text">Permanent Smile</span>
           </h2>
           <p className="mt-4 text-muted text-lg">
-            A clear, four-step path to the smile you deserve — starting with a consultation and 3D CT scan at our Roseville office. Whether you need dental implants, jaw surgery, or facial cosmetic procedures, every step is guided by Dr. Antipov&apos;s board-certified expertise and advanced technology.
+            A clear, four-step path to the smile you deserve — starting with a complimentary consultation and 3D CT scan at our Roseville office. Whether you need dental implants, jaw surgery, or facial cosmetic procedures, every step is guided by Dr. Antipov&apos;s board-certified expertise and advanced technology.
           </p>
         </motion.div>
 

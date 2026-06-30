@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { checkRateLimit } from "@/lib/rate-limit"
+import { verifyRecaptcha } from "@/lib/recaptcha";
 import { isEmailConfigured, sendContactNotification } from "@/lib/email";
 
 export const runtime = "nodejs";
@@ -24,6 +25,7 @@ interface LeadPayload {
   first_landing_page?: string;
   current_page?: string;
   website?: string;
+  recaptchaToken?: string;
   started_at?: string;
   time_on_page?: string;
   form_variant?: string;
@@ -168,7 +170,7 @@ async function postToResend(
 }
 
 export async function POST(request: NextRequest) {
-  const rl = checkRateLimit(request, { prefix: "lead", max: 10, windowMs: 60_000 });
+  const rl = await checkRateLimit(request, { prefix: "lead", max: 10, windowMs: 60_000 });
   if (rl) return rl;
 
   let data: LeadPayload;
@@ -187,6 +189,15 @@ export async function POST(request: NextRequest) {
   const startedAt = Number(data.started_at);
   if (Number.isFinite(startedAt) && Date.now() - startedAt < MIN_FILL_MS) {
     return NextResponse.json({ ok: true });
+  }
+
+  // Server-side reCAPTCHA verification
+  const recaptchaResult = await verifyRecaptcha(data?.recaptchaToken);
+  if (!recaptchaResult.valid) {
+    return NextResponse.json(
+      { ok: false, error: "recaptcha_failed" },
+      { status: 403 }
+    );
   }
 
   const geoCity = request.headers.get("x-vercel-ip-city") ?? "";

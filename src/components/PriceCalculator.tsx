@@ -390,7 +390,7 @@ export default function PriceCalculator() {
             Treatment <span className="gradient-text">Cost Estimator</span>
           </h2>
           <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
-            Get a personalized price estimate in 60 seconds. All-inclusive pricing with no hidden fees. 0% APR financing available up to 84 months. <strong className="text-dark">Price-match guarantee</strong> — your final cost is confirmed at your free dental implant consultation with a complimentary 3D CT scan.
+            Get a personalized price estimate in 60 seconds. All-inclusive pricing with no hidden fees. 0% APR financing available up to 84 months. <strong className="text-dark">Price-match guarantee</strong> — your final cost is confirmed at your free consultation with a complimentary 3D CT scan.
           </p>
         </motion.div>
 
@@ -443,7 +443,7 @@ export default function PriceCalculator() {
                 transition={{ duration: 0.3 }}
               >
                 <h3 className="text-xl font-bold text-dark mb-2">What treatment are you considering?</h3>
-                <p className="text-muted text-sm mb-6">Select the procedure you&apos;re interested in. Not sure? Choose the closest match — we&apos;ll refine at your free dental implant consultation.</p>
+                <p className="text-muted text-sm mb-6">Select the procedure you&apos;re interested in. Not sure? Choose the closest match — we&apos;ll refine at your free consultation.</p>
 
                 {/* Category Filter */}
                 <div className="flex flex-wrap gap-2 mb-6">
@@ -632,7 +632,7 @@ export default function PriceCalculator() {
                 </div>
 
                 <p className="text-xs text-muted mt-4 text-center">
-                  All add-on pricing is approximate. Exact costs confirmed at your free dental implant consultation.
+                  All add-on pricing is approximate. Exact costs confirmed at your free consultation.
                 </p>
               </motion.div>
             )}
@@ -784,7 +784,7 @@ export default function PriceCalculator() {
                       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
                       </svg>
-                      Book Free Dental Implant Consultation — Confirm Your Price
+                      Book Free Consultation — Confirm Your Price
                     </button>
                   </ConsultationModal>
                   <div className="flex items-center justify-center gap-4">

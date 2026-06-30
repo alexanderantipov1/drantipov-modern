@@ -20,10 +20,10 @@ export default function Contact() {
             <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-dark tracking-tight">
               Book Your
               <br />
-              <span className="gradient-text">Free Dental Implant Consultation</span>
+              <span className="gradient-text">Free Consultation</span>
             </h2>
             <p className="mt-6 text-muted text-lg leading-relaxed">
-              Ready to explore dental implants, jaw surgery, or cosmetic procedures? Contact our Roseville office to schedule a complimentary consultation with Dr. Antipov — including a free CT scan and personalized treatment plan. Free dental implant consultation; restrictions apply.
+              Ready to explore dental implants, jaw surgery, or cosmetic procedures? Contact our Roseville office to schedule a complimentary consultation with Dr. Antipov — including a free CT scan and personalized treatment plan.
             </p>
 
             <div className="mt-10 space-y-6">

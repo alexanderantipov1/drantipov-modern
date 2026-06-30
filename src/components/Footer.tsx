@@ -3,16 +3,15 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Phone, MapPin, ChevronDown } from "lucide-react";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 import { regions, CITY_PAGE_SLUGS, totalCities } from "@/constants/serviceAreas";
 
 type LinkItem = { href: string; label: string };
 
-// ---- Edit these lists to change what appears in the footer ----
-
-// Services: the money pages, ordered broad → specific.
-const IMPLANT_LINKS: LinkItem[] = [
+// ─── EN footer links ───
+const IMPLANT_LINKS_EN: LinkItem[] = [
   { href: "/expertise/full-arch-implants", label: "All-on-4 Full-Arch Implants" },
   { href: "/all-on-4-cost", label: "All-on-4 Implant Cost" },
   { href: "/all-on-4-clearchoice-alternative", label: "All-on-4 vs. ClearChoice" },
@@ -25,8 +24,7 @@ const IMPLANT_LINKS: LinkItem[] = [
   { href: "/for-patients/insights/same-day-implants", label: "Same-Day Teeth" },
   { href: "/surgical-cases/dental-implants", label: "Implant Case Gallery" },
 ];
-
-const SURGICAL_LINKS: LinkItem[] = [
+const SURGICAL_LINKS_EN: LinkItem[] = [
   { href: "/expertise/jaw-surgery", label: "Corrective Jaw Surgery" },
   { href: "/jaw-surgery-recovery-timeline", label: "Jaw Surgery Recovery Timeline" },
   { href: "/expertise/wisdom-teeth", label: "Wisdom Teeth Removal" },
@@ -39,8 +37,7 @@ const SURGICAL_LINKS: LinkItem[] = [
   { href: "/expertise/oral-pathology", label: "Oral Pathology" },
   { href: "/expertise", label: "All Procedures" },
 ];
-
-const RESOURCE_LINKS: LinkItem[] = [
+const RESOURCE_LINKS_EN: LinkItem[] = [
   { href: "/for-patients/insights", label: "Blog — News, Research & Education" },
   { href: "/surgical-cases", label: "Surgical Case Gallery" },
   { href: "/results", label: "Before & After Results" },
@@ -52,9 +49,8 @@ const RESOURCE_LINKS: LinkItem[] = [
   { href: "/media/videos", label: "Videos" },
   { href: "/glossary", label: "Glossary" },
 ];
-
-const PATIENT_LINKS: LinkItem[] = [
-  { href: "/for-patients/consultation", label: "Free Implant Consultation" },
+const PATIENT_LINKS_EN: LinkItem[] = [
+  { href: "/for-patients/consultation", label: "Free Consultation" },
   { href: "/for-patients", label: "Patient Information" },
   { href: "/for-patients/pre-op", label: "Before Your Surgery" },
   { href: "/for-patients/post-op", label: "After Your Surgery" },
@@ -64,8 +60,7 @@ const PATIENT_LINKS: LinkItem[] = [
   { href: "/insurance/anthem-blue-cross", label: "Anthem Blue Cross" },
   { href: "/insurance/delta-dental", label: "Delta Dental" },
 ];
-
-const COMPANY_LINKS: LinkItem[] = [
+const COMPANY_LINKS_EN: LinkItem[] = [
   { href: "/about", label: "About Dr. Antipov" },
   { href: "/our-team", label: "Meet the Team" },
   { href: "/for-dentists", label: "For Dentists" },
@@ -76,8 +71,7 @@ const COMPANY_LINKS: LinkItem[] = [
   { href: "/smile-again-foundation", label: "Smile Again Foundation" },
   { href: "/contact", label: "Contact Us" },
 ];
-
-const LEGAL_LINKS: LinkItem[] = [
+const LEGAL_LINKS_EN: LinkItem[] = [
   { href: "/legal/privacy-policy", label: "Privacy Policy" },
   { href: "/legal/terms-of-service", label: "Terms of Service" },
   { href: "/legal/hipaa-notice", label: "HIPAA Notice" },
@@ -85,28 +79,79 @@ const LEGAL_LINKS: LinkItem[] = [
   { href: "/sitemap.xml", label: "Sitemap" },
 ];
 
-const SECTIONS: { title: string; links: LinkItem[] }[] = [
-  { title: "Dental Implant Services", links: IMPLANT_LINKS },
-  { title: "Surgical & Facial Services", links: SURGICAL_LINKS },
-  { title: "Patient Resources", links: RESOURCE_LINKS },
-  { title: "For Patients", links: PATIENT_LINKS },
-  { title: "Company", links: COMPANY_LINKS },
-  { title: "Legal", links: LEGAL_LINKS },
+// ─── RU footer links ───
+const IMPLANT_LINKS_RU: LinkItem[] = [
+  { href: "/ru/expertise/full-arch-implants", label: "All-on-4 — полная челюсть" },
+  { href: "/ru/all-on-4-cost", label: "Сколько стоит All-on-4" },
+  { href: "/ru/all-on-4-clearchoice-alternative", label: "All-on-4 или ClearChoice" },
+  { href: "/ru/full-arch-dental-implants", label: "Имплантация полного зубного ряда" },
+  { href: "/ru/expertise/zygomatic-implants", label: "Скуловые импланты (zygomatic)" },
+  { href: "/ru/expertise/single-tooth", label: "Имплантация одного зуба" },
+  { href: "/ru/expertise/snap-on-dentures", label: "Snap-On протезы" },
+  { href: "/ru/expertise/implant-rescue", label: "Спасение и ревизия имплантов" },
+  { href: "/ru/expertise/bone-grafting", label: "Костная пластика и синус-лифтинг" },
+  { href: "/ru/for-patients/insights/same-day-implants", label: "Зубы за один день" },
+  { href: "/ru/surgical-cases/dental-implants", label: "Галерея кейсов имплантации" },
+];
+const SURGICAL_LINKS_RU: LinkItem[] = [
+  { href: "/ru/expertise/jaw-surgery", label: "Корректирующая хирургия челюстей" },
+  { href: "/ru/jaw-surgery-recovery-timeline", label: "Восстановление после операции челюстей" },
+  { href: "/ru/expertise/wisdom-teeth", label: "Удаление зубов мудрости" },
+  { href: "/ru/expertise/tooth-extractions", label: "Удаление зубов" },
+  { href: "/ru/expertise/tmj", label: "Лечение ВНЧС" },
+  { href: "/ru/expertise/sleep-apnea", label: "Хирургия апноэ сна" },
+  { href: "/ru/expertise/sedation-anesthesia", label: "Седация и анестезия" },
+  { href: "/ru/expertise/facial-cosmetic", label: "Эстетическая хирургия лица" },
+  { href: "/ru/expertise/mole-removal", label: "Удаление родинок" },
+  { href: "/ru/expertise/oral-pathology", label: "Патология полости рта" },
+  { href: "/ru/expertise", label: "Все процедуры" },
+];
+const RESOURCE_LINKS_RU: LinkItem[] = [
+  { href: "/ru/for-patients/insights", label: "Блог — статьи и обучение" },
+  { href: "/ru/surgical-cases", label: "Галерея хирургических кейсов" },
+  { href: "/ru/results", label: "Результаты «до и после»" },
+  { href: "/ru/for-patients", label: "Отзывы пациентов" },
+  { href: "/ru/for-patients/insights/implants-vs-dentures", label: "Импланты vs съёмные протезы" },
+  { href: "/ru/for-patients/insights/dental-implant-aftercare", label: "Уход после имплантации" },
+  { href: "/ru/for-patients/insights/dental-implant-complications", label: "Осложнения после имплантации" },
+  { href: "/ru/for-patients/faqs", label: "Частые вопросы" },
+  { href: "/ru/media/videos", label: "Видео" },
+  { href: "/ru/glossary", label: "Словарь терминов" },
+];
+const PATIENT_LINKS_RU: LinkItem[] = [
+  { href: "/ru/for-patients/consultation", label: "Бесплатная консультация" },
+  { href: "/ru/for-patients", label: "Пациентам — общая информация" },
+  { href: "/ru/for-patients/pre-op", label: "Подготовка к операции" },
+  { href: "/ru/for-patients/post-op", label: "После операции" },
+  { href: "/ru/for-patients/travel", label: "Пациентам из других городов" },
+  { href: "/ru/insurance", label: "Страховки и рассрочка" },
+  { href: "/ru/insurance/aetna", label: "Aetna" },
+  { href: "/ru/insurance/anthem-blue-cross", label: "Anthem Blue Cross" },
+  { href: "/ru/insurance/delta-dental", label: "Delta Dental" },
+];
+const COMPANY_LINKS_RU: LinkItem[] = [
+  { href: "/ru/about", label: "О докторе Антипове" },
+  { href: "/ru/our-team", label: "Наша команда" },
+  { href: "/ru/for-dentists", label: "Для стоматологов" },
+  { href: "/ru/for-dentists/refer-patients", label: "Направить пациента" },
+  { href: "/ru/for-dentists/referral-partners", label: "Партнёрская программа" },
+  { href: "/ru/for-dentists/education/courses", label: "CE-курсы" },
+  { href: "/ru/media/speaking", label: "Выступления и медиа" },
+  { href: "/ru/smile-again-foundation", label: "Smile Again Foundation" },
+  { href: "/ru/contact", label: "Связаться с нами" },
+];
+const LEGAL_LINKS_RU: LinkItem[] = [
+  { href: "/ru/legal/privacy-policy", label: "Политика конфиденциальности" },
+  { href: "/ru/legal/terms-of-service", label: "Условия использования" },
+  { href: "/ru/legal/hipaa-notice", label: "Уведомление HIPAA" },
+  { href: "/ru/legal/medical-disclaimer", label: "Медицинский дисклеймер" },
+  { href: "/sitemap.xml", label: "Карта сайта" },
 ];
 
-const CITIES_SECTION_TITLE = `Cities We Serve (${totalCities}+)`;
-
-// Collapsible accordion section (one open at a time) on all screen sizes.
 function FooterSection({
-  title,
-  links,
-  isOpen,
-  onToggle,
+  title, links, isOpen, onToggle,
 }: {
-  title: string;
-  links: LinkItem[];
-  isOpen: boolean;
-  onToggle: () => void;
+  title: string; links: LinkItem[]; isOpen: boolean; onToggle: () => void;
 }) {
   return (
     <div className="border-b border-white/10">
@@ -118,22 +163,13 @@ function FooterSection({
           className="flex w-full items-center justify-between py-4 text-sm font-semibold text-white"
         >
           {title}
-          <ChevronDown
-            className={`h-5 w-5 text-primary transition-transform duration-200 ${
-              isOpen ? "rotate-180" : ""
-            }`}
-          />
+          <ChevronDown className={`h-5 w-5 text-primary transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
         </button>
       </h4>
-      <ul
-        className={`space-y-2.5 pb-4 ${isOpen ? "block" : "hidden"}`}
-      >
+      <ul className={`space-y-2.5 pb-4 ${isOpen ? "block" : "hidden"}`}>
         {links.map((link) => (
           <li key={link.href}>
-            <Link
-              href={link.href}
-              className="text-xs text-white/60 hover:text-primary transition-colors duration-300"
-            >
+            <Link href={link.href} className="text-xs text-white/60 hover:text-primary transition-colors duration-300">
               {link.label}
             </Link>
           </li>
@@ -143,15 +179,15 @@ function FooterSection({
   );
 }
 
-// Nested collapsible city directory — each region expands to its city links.
 function FooterCitiesSection({
-  isOpen,
-  onToggle,
+  isOpen, onToggle, isRu,
 }: {
-  isOpen: boolean;
-  onToggle: () => void;
+  isOpen: boolean; onToggle: () => void; isRu: boolean;
 }) {
   const [openRegion, setOpenRegion] = useState<string | null>(null);
+  const title = isRu ? `Города, откуда едут к нам (${totalCities}+)` : `Cities We Serve (${totalCities}+)`;
+  const viewAllLabel = isRu ? "Все локации →" : "View All Locations →";
+  const viewAllHref = isRu ? "/ru/locations" : "/locations";
 
   return (
     <div className="border-b border-white/10">
@@ -162,12 +198,8 @@ function FooterCitiesSection({
           aria-expanded={isOpen}
           className="flex w-full items-center justify-between py-4 text-sm font-semibold text-white"
         >
-          {CITIES_SECTION_TITLE}
-          <ChevronDown
-            className={`h-5 w-5 text-primary transition-transform duration-200 ${
-              isOpen ? "rotate-180" : ""
-            }`}
-          />
+          {title}
+          <ChevronDown className={`h-5 w-5 text-primary transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
         </button>
       </h4>
       <div className={`pb-4 ${isOpen ? "block" : "hidden"}`}>
@@ -177,36 +209,24 @@ function FooterCitiesSection({
             <div key={region.id} className="border-t border-white/5">
               <button
                 type="button"
-                onClick={() =>
-                  setOpenRegion((prev) => (prev === region.id ? null : region.id))
-                }
+                onClick={() => setOpenRegion((prev) => (prev === region.id ? null : region.id))}
                 aria-expanded={regionOpen}
                 className="flex w-full items-center justify-between py-2.5 text-xs font-medium text-white/80 hover:text-white transition-colors"
               >
                 <span>{region.label}</span>
                 <span className="flex items-center gap-2">
-                  <span className="text-[10px] text-white/30">
-                    {region.cities.length}
-                  </span>
-                  <ChevronDown
-                    className={`h-4 w-4 text-primary transition-transform duration-200 ${
-                      regionOpen ? "rotate-180" : ""
-                    }`}
-                  />
+                  <span className="text-[10px] text-white/30">{region.cities.length}</span>
+                  <ChevronDown className={`h-4 w-4 text-primary transition-transform duration-200 ${regionOpen ? "rotate-180" : ""}`} />
                 </span>
               </button>
-              <ul
-                className={`grid grid-cols-2 gap-x-4 gap-y-1.5 pb-3 ${
-                  regionOpen ? "grid" : "hidden"
-                }`}
-              >
+              <ul className={`grid grid-cols-2 gap-x-4 gap-y-1.5 pb-3 ${regionOpen ? "grid" : "hidden"}`}>
                 {region.cities.map((city) => {
                   const slug = CITY_PAGE_SLUGS[city.name];
                   return (
                     <li key={city.name}>
                       {slug ? (
                         <Link
-                          href={`/locations/ca/${slug}`}
+                          href={isRu ? `/ru/locations/ca/${slug}` : `/locations/ca/${slug}`}
                           className="text-xs text-white/60 hover:text-primary transition-colors duration-300"
                         >
                           {city.name}
@@ -221,11 +241,8 @@ function FooterCitiesSection({
             </div>
           );
         })}
-        <Link
-          href="/locations"
-          className="mt-3 inline-block text-xs font-semibold text-primary hover:underline"
-        >
-          View All Locations →
+        <Link href={viewAllHref} className="mt-3 inline-block text-xs font-semibold text-primary hover:underline">
+          {viewAllLabel}
         </Link>
       </div>
     </div>
@@ -234,6 +251,36 @@ function FooterCitiesSection({
 
 export default function Footer() {
   const [openSection, setOpenSection] = useState<string | null>(null);
+  const pathname = usePathname();
+  const isRu = pathname?.startsWith("/ru") ?? false;
+
+  const sections = isRu
+    ? [
+        { title: "Имплантация", links: IMPLANT_LINKS_RU },
+        { title: "Хирургия и эстетика", links: SURGICAL_LINKS_RU },
+        { title: "Полезное для пациентов", links: RESOURCE_LINKS_RU },
+        { title: "Пациентам", links: PATIENT_LINKS_RU },
+        { title: "Клиника", links: COMPANY_LINKS_RU },
+        { title: "Юридическое", links: LEGAL_LINKS_RU },
+      ]
+    : [
+        { title: "Dental Implant Services", links: IMPLANT_LINKS_EN },
+        { title: "Surgical & Facial Services", links: SURGICAL_LINKS_EN },
+        { title: "Patient Resources", links: RESOURCE_LINKS_EN },
+        { title: "For Patients", links: PATIENT_LINKS_EN },
+        { title: "Company", links: COMPANY_LINKS_EN },
+        { title: "Legal", links: LEGAL_LINKS_EN },
+      ];
+
+  const citiesTitle = isRu ? `Города, откуда едут к нам (${totalCities}+)` : `Cities We Serve (${totalCities}+)`;
+
+  const brandText = isRu
+    ? "Сертифицированный челюстно-лицевой хирург. Импланты в день операции (All-on-4, All-on-6, скуловые), полная реконструкция, корректирующая хирургия челюстей, органическая костная пластика, эстетика лица, удаление зубов мудрости. Принимаем пациентов из Roseville, Сакраменто, Сан-Франциско, Рино и всей Северной Калифорнии."
+    : "Board-certified oral & maxillofacial surgeon specializing in same-day dental implants (All-on-4, All-on-6, zygomatic), full arch restoration, corrective jaw surgery, organic bone grafting, facial cosmetic surgery, and wisdom teeth removal. Serving Roseville, Sacramento, San Francisco, Reno, and all of Northern California.";
+
+  const seoText = isRu
+    ? "Доктор Александр Антипов, DDS — сертифицированный челюстно-лицевой хирург. Делает имплантацию, All-on-4 и All-on-6, скуловые импланты, корректирующую хирургию челюстей (ортогнатику), эстетическую хирургию лица, ринопластику, подтяжку лица, блефаропластику, органическую костную пластику, синус-лифтинг, удаление зубов мудрости и лечение ВНЧС в Roseville, Калифорния. Принимаем пациентов из Сакраменто, Folsom, Rocklin, El Dorado Hills, Lincoln, Auburn, Granite Bay, Elk Grove, Сан-Франциско, Окленда, Сан-Хосе, Walnut Creek, Напы, Санта-Розы, Рино, Truckee, South Lake Tahoe, Chico, Реддинга, Стоктона, Модесто, Фресно и со всей Северной Калифорнии и Невады."
+    : "Dr. Alexander Antipov, DDS is a board-certified oral and maxillofacial surgeon providing dental implants, All-on-4 full arch implants, All-on-6 implants, zygomatic implants, corrective jaw surgery (orthognathic surgery), facial cosmetic surgery, rhinoplasty, face lift surgery, eyelid surgery, organic bone grafting, sinus lifts, wisdom teeth removal, and TMJ treatment in Roseville, CA. Serving patients from Sacramento, Folsom, Rocklin, El Dorado Hills, Lincoln, Auburn, Granite Bay, Elk Grove, San Francisco, Oakland, San Jose, Walnut Creek, Napa, Santa Rosa, Reno, Truckee, South Lake Tahoe, Chico, Redding, Stockton, Modesto, Fresno, and all of Northern California and Northern Nevada.";
 
   return (
     <footer className="bg-navy text-white/60">
@@ -243,17 +290,12 @@ export default function Footer() {
           <div>
             <Image
               src="/images/logo-d10cd66c.svg"
-              alt="Dr. Alexander Antipov, DDS — Oral and Maxillofacial Surgery — Roseville, CA"
+              alt={isRu ? "Доктор Александр Антипов, DDS — челюстно-лицевая хирургия — Roseville, CA" : "Dr. Alexander Antipov, DDS — Oral and Maxillofacial Surgery — Roseville, CA"}
               width={180}
               height={60}
               className="h-10 w-auto brightness-200 invert"
             />
-            <p className="mt-4 max-w-md text-sm leading-relaxed">
-              Board-certified oral &amp; maxillofacial surgeon specializing in same-day dental implants
-              (All-on-4, All-on-6, zygomatic), full arch restoration, corrective jaw surgery, organic bone
-              grafting, facial cosmetic surgery, and wisdom teeth removal. Serving Roseville, Sacramento,
-              San Francisco, Reno, and all of Northern California.
-            </p>
+            <p className="mt-4 max-w-md text-sm leading-relaxed">{brandText}</p>
             <a
               href="https://maps.google.com/?q=911+Reserve+Dr+Ste+150,+Roseville,+CA+95678"
               target="_blank"
@@ -274,11 +316,10 @@ export default function Footer() {
               </a>
               <ConsultationModal>
                 <button className="px-4 py-2 bg-primary rounded-lg text-sm text-white font-medium hover:bg-primary-dark transition-all duration-300 cursor-pointer">
-                  Free Implant Consultation
+                  {isRu ? "Бесплатная консультация" : "Free Consultation"}
                 </button>
               </ConsultationModal>
             </div>
-            {/* Social */}
             <div className="mt-6 flex gap-3 lg:justify-end">
               <a href="https://www.facebook.com/drantipov" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors" aria-label="Facebook">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -294,48 +335,47 @@ export default function Footer() {
         </div>
 
         {/* Collapsible link sections */}
-        <nav aria-label="Footer navigation" className="mt-2">
-          {SECTIONS.map((section) => (
+        <nav aria-label={isRu ? "Навигация по подвалу" : "Footer navigation"} className="mt-2">
+          {sections.map((section) => (
             <FooterSection
               key={section.title}
               title={section.title}
               links={section.links}
               isOpen={openSection === section.title}
-              onToggle={() =>
-                setOpenSection((prev) =>
-                  prev === section.title ? null : section.title
-                )
-              }
+              onToggle={() => setOpenSection((prev) => (prev === section.title ? null : section.title))}
             />
           ))}
           <FooterCitiesSection
-            isOpen={openSection === CITIES_SECTION_TITLE}
-            onToggle={() =>
-              setOpenSection((prev) =>
-                prev === CITIES_SECTION_TITLE ? null : CITIES_SECTION_TITLE
-              )
-            }
+            isOpen={openSection === citiesTitle}
+            onToggle={() => setOpenSection((prev) => (prev === citiesTitle ? null : citiesTitle))}
+            isRu={isRu}
           />
         </nav>
 
         {/* SEO text */}
         <div className="mt-12 pt-8 border-t border-white/10">
-          <p className="text-[11px] text-white/30 leading-relaxed max-w-4xl">
-            Dr. Alexander Antipov, DDS is a board-certified oral and maxillofacial surgeon providing dental implants, All-on-4 full arch implants, All-on-6 implants, zygomatic implants, corrective jaw surgery (orthognathic surgery), facial cosmetic surgery, rhinoplasty, face lift surgery, eyelid surgery, organic bone grafting, sinus lifts, wisdom teeth removal, and TMJ treatment in Roseville, CA. Serving patients from Sacramento, Folsom, Rocklin, El Dorado Hills, Lincoln, Auburn, Granite Bay, Elk Grove, San Francisco, Oakland, San Jose, Walnut Creek, Napa, Santa Rosa, Reno, Truckee, South Lake Tahoe, Chico, Redding, Stockton, Modesto, Fresno, and all of Northern California and Northern Nevada.
-          </p>
+          <p className="text-[11px] text-white/30 leading-relaxed max-w-4xl">{seoText}</p>
         </div>
       </div>
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-wrap items-center justify-between gap-4 text-xs">
-          <p>&copy; {new Date().getFullYear()} Alexander V. Antipov, DDS, Inc. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Alexander V. Antipov, DDS, Inc. {isRu ? "Все права защищены." : "All rights reserved."}</p>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
-            <Link href="/legal/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-            <Link href="/legal/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
-            <Link href="/legal/hipaa-notice" className="hover:text-primary transition-colors">HIPAA Notice</Link>
-            <Link href="/legal/medical-disclaimer" className="hover:text-primary transition-colors">Medical Disclaimer</Link>
-            <a href="/sitemap.xml" className="hover:text-primary transition-colors">Sitemap</a>
+            {LEGAL_LINKS_EN.slice(0, 4).map((_, i) => {
+              const list = isRu ? LEGAL_LINKS_RU : LEGAL_LINKS_EN;
+              const l = list[i];
+              if (!l) return null;
+              return (
+                <Link key={l.href} href={l.href} className="hover:text-primary transition-colors">
+                  {l.label}
+                </Link>
+              );
+            })}
+            <a href="/sitemap.xml" className="hover:text-primary transition-colors">
+              {isRu ? "Карта сайта" : "Sitemap"}
+            </a>
           </div>
         </div>
       </div>

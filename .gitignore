@@ -50,3 +50,15 @@ generated-icon.png
 
 # custom
 /RULE_INCONSISTENCIES.md
+# documentation / internal working docs — not part of the deployed site
+CLAUDE.md
+DEPLOY_NOTES.md
+SEO_AUDIT_RU.md
+SECURITY_AUDIT_RU.md
+MASTER_TASK_LIST.md
+SETUP_SUMMARY.md
+ANALYTICS_SETUP.md
+EMAIL_SETUP.md
+DEPLOYMENT.md
+dr-antipov-prd.md
+README.md

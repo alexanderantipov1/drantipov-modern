@@ -23,7 +23,7 @@ const faqs = [
   { question: "Why are corporate dental implant chains so expensive?", answer: "Corporate chains typically charge $35,000-$60,000+ per arch. Their pricing reflects overhead for sales teams, national marketing, multiple locations, and frequent staff turnover. Independent oral surgeons often charge 30-50% less because they don't carry that overhead structure." },
   { question: "Will I see the same surgeon for every visit?", answer: "At Dr. Antipov's practice, you see Dr. Antipov for every surgical step — consultation, surgery, follow-ups. At corporate chains, you may see different surgeons or be transferred between locations during your treatment journey." },
   { question: "What credentials should an All-on-4 surgeon have?", answer: "Look for: Diplomate of the American Board of Oral and Maxillofacial Surgery (ABOMS), state-issued General Anesthesia Permit for in-office sedation, hospital privileges for medical emergencies, and 5+ years of experience specifically with full-arch protocols." },
-  { question: "Can I get an exact price before committing?", answer: "Yes. Dr. Antipov provides a complete written treatment plan with itemized pricing after your free dental implant consultation with 3D CT. There are no high-pressure sales tactics, no separate financial advisors, and no 'today-only' discounts." },
+  { question: "Can I get an exact price before committing?", answer: "Yes. Dr. Antipov provides a complete written treatment plan with itemized pricing after your free consultation with 3D CT. There are no high-pressure sales tactics, no separate financial advisors, and no 'today-only' discounts." },
   { question: "What if I need bone grafting?", answer: "Independent surgeons handle bone grafting in-house if needed. Many chains either refer out (extra cost and coordination) or upsell elaborate grafting plans. Dr. Antipov is fellowship-trained in advanced bone reconstruction and often achieves implant placement without grafting using angled or zygomatic implants." },
 ];
 
@@ -134,7 +134,7 @@ export default function AllOn4AlternativesPage() {
               The difference isn&apos;t in clinical quality. It&apos;s in business structure. A surgeon-owned practice eliminates layers of corporate overhead.
             </p>
             <p>
-              We&apos;re happy to provide a complete itemized quote at your free dental implant consultation. <Link href="/insurance" className="text-primary-600 hover:underline font-semibold">Financing options</Link> are available starting at <strong>$99/month</strong> through CareCredit and Lending Club.
+              We&apos;re happy to provide a complete itemized quote at your free consultation. <Link href="/insurance" className="text-primary-600 hover:underline font-semibold">Financing options</Link> are available starting at <strong>$99/month</strong> through CareCredit and Lending Club.
             </p>
           </div>
         </div>
@@ -181,7 +181,7 @@ export default function AllOn4AlternativesPage() {
         </div>
       </section>
 
-      <DualCTA variant="implants" />
+      <DualCTA />
     </>
   );
 }

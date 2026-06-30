@@ -88,17 +88,60 @@ export function getClientIp(req: Request): string {
  *   const limited = await checkRateLimit(req, { prefix: "contact", max: 10, windowMs: 60_000 });
  *   if (limited) return limited;
  */
-export function checkRateLimit(
+/**
+ * Distributed fixed-window check via Upstash Redis REST API. Returns null when
+ * Upstash isn't configured (caller falls back to the in-memory limiter) or on
+ * any error (fail-open). Activated by setting UPSTASH_REDIS_REST_URL and
+ * UPSTASH_REDIS_REST_TOKEN in the environment.
+ */
+async function upstashCheck(
+  key: string,
+  max: number,
+  windowMs: number
+): Promise<RateLimitResult | null> {
+  const url = process.env.UPSTASH_REDIS_REST_URL;
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN;
+  if (!url || !token) return null;
+  try {
+    const windowSec = Math.max(1, Math.ceil(windowMs / 1000));
+    const res = await fetch(`${url}/pipeline`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify([
+        ["INCR", key],
+        ["EXPIRE", key, String(windowSec), "NX"],
+        ["PTTL", key],
+      ]),
+      signal: AbortSignal.timeout(2000),
+    });
+    if (!res.ok) return null;
+    const data = (await res.json()) as Array<{ result?: number }>;
+    const count = Number(data?.[0]?.result ?? 0);
+    const pttl = Number(data?.[2]?.result ?? windowMs);
+    const resetAt = Date.now() + (pttl > 0 ? pttl : windowMs);
+    if (count > max) return { success: false, remaining: 0, resetAt };
+    return { success: true, remaining: Math.max(0, max - count), resetAt };
+  } catch {
+    return null; // fail-open to in-memory limiter
+  }
+}
+
+export async function checkRateLimit(
   req: Request,
   opts: { prefix: string; max: number; windowMs: number }
-): Response | null {
+): Promise<Response | null> {
   const ip = getClientIp(req);
-  const result = rateLimit({
-    identifier: ip,
-    max: opts.max,
-    windowMs: opts.windowMs,
-    prefix: opts.prefix,
-  });
+  const result =
+    (await upstashCheck(`${opts.prefix}:${ip}`, opts.max, opts.windowMs)) ??
+    rateLimit({
+      identifier: ip,
+      max: opts.max,
+      windowMs: opts.windowMs,
+      prefix: opts.prefix,
+    });
 
   if (!result.success) {
     const retryAfter = Math.ceil((result.resetAt - Date.now()) / 1000);

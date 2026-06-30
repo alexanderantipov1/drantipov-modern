@@ -60,7 +60,7 @@ interface ChatRequest {
 }
 
 export async function POST(request: NextRequest) {
-  const rl = checkRateLimit(request, { prefix: "chat", max: 30, windowMs: 3_600_000 });
+  const rl = await checkRateLimit(request, { prefix: "chat", max: 30, windowMs: 3_600_000 });
   if (rl) return rl;
 
   const apiKey = process.env.ANTHROPIC_API_KEY;

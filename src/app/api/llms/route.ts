@@ -193,7 +193,7 @@ export async function GET() {
     contactCta: {
       phone: siteConfig.contact.phone,
       consultation: `${base}/for-patients/consultation`,
-      note: "Complimentary dental implant consultation available to new patients. Restrictions apply.",
+      note: "Complimentary 3D CT consultation available to new patients.",
     },
   };
 

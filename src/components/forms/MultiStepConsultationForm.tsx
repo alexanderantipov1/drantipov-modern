@@ -415,7 +415,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal" }: MultiS
         isInline ? "" : "-mx-6 -mt-2 px-6 pt-5"
       )}>
         <div className="flex items-center justify-between mb-1">
-          <h3 className="text-dark text-lg font-bold">Free Dental Implant Consultation Assessment</h3>
+          <h3 className="text-dark text-lg font-bold">Free Consultation Assessment</h3>
           <div className="flex items-center gap-1 bg-primary/5 rounded-lg px-2.5 py-1.5">
             <Star className="w-3 h-3 text-primary fill-primary" />
             <span className="text-dark text-xs font-bold">4.9</span>
@@ -574,7 +574,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal" }: MultiS
           <div className="space-y-4">
             <div>
               <h3 className="text-sm font-bold text-dark mb-1">Ready to Schedule?</h3>
-              <p className="text-xs text-muted mb-4">Would you like to book a free dental implant consultation now?</p>
+              <p className="text-xs text-muted mb-4">Would you like to book a free consultation now?</p>
               <div className="space-y-2">
                 <RadioCard field="consultationReadiness" value="yes" label="Yes, I'm ready to book" description="Choose a date, time, and location" />
                 <RadioCard field="consultationReadiness" value="no" label="Not yet — contact me with more info" description="A coordinator will reach out within 1 hour" />
@@ -662,7 +662,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal" }: MultiS
       </div>
       {currentStep === 4 && (
         <p className="text-center text-muted/50 text-[10px] mt-3">
-          Free dental implant consultation · Restrictions apply · No obligation · Includes complimentary CT scan
+          100% free consultation · No obligation · Includes complimentary CT scan
         </p>
       )}
     </div>

@@ -219,7 +219,7 @@ export default function Services() {
                 <button
                   className="mt-5 inline-flex items-center gap-2 text-primary font-semibold text-sm group/link cursor-pointer"
                 >
-                  Schedule Free Dental Implant Consultation
+                  Schedule Free Consultation
                   <svg
                     className="w-4 h-4 transition-transform group-hover/link:translate-x-1"
                     fill="none"

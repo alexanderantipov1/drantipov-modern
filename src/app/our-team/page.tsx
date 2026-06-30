@@ -688,7 +688,7 @@ export default function OurTeamPage() {
       <DualCTA
         variant="dual"
         heading="Two Surgeons. Two Practices. One Team."
-        subheading="Schedule a free dental implant consultation with a complimentary 3D CT scan and personalized treatment plan."
+        subheading="Schedule a free consultation with a complimentary 3D CT scan and personalized treatment plan."
       />
     </>
   )

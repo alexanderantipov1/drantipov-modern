@@ -292,7 +292,7 @@ export default function FullArchShowcase() {
                   <button
                     className="px-6 py-3 bg-primary text-white rounded-xl font-semibold text-sm hover:bg-primary-dark transition-all duration-300 pulse-glow cursor-pointer"
                   >
-                    Book Free Dental Implant Consultation
+                    Book Free Consultation
                   </button>
                 </ConsultationModal>
                 <a

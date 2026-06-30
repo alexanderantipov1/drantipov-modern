@@ -1,9 +1,13 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight } from "lucide-react"
 import { getRelatedInsights } from "@/constants/insights"
+import { getRelatedInsightsRu } from "@/constants/ruInsights"
 
 interface RelatedArticlesProps {
   /** Slug of the current article, excluded from the related list. */
@@ -13,18 +17,24 @@ interface RelatedArticlesProps {
 }
 
 export function RelatedArticles({ currentSlug, count = 3 }: RelatedArticlesProps) {
-  const related = getRelatedInsights(currentSlug, count)
+  const pathname = usePathname()
+  const isRu = pathname?.startsWith("/ru") ?? false
+  const related = isRu ? getRelatedInsightsRu(currentSlug, count) : getRelatedInsights(currentSlug, count)
   if (related.length === 0) return null
+
+  const base = isRu ? "/ru/for-patients/insights" : "/for-patients/insights"
 
   return (
     <Section background="gradient" padding="xl">
       <Container size="xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-3">
-            Related Articles
+            {isRu ? "Похожие статьи" : "Related Articles"}
           </h2>
           <p className="text-lg text-neutral-600">
-            Keep learning with more insights from Dr. Antipov
+            {isRu
+              ? "Узнайте больше из материалов доктора Антипова"
+              : "Keep learning with more insights from Dr. Antipov"}
           </p>
         </div>
 
@@ -34,7 +44,7 @@ export function RelatedArticles({ currentSlug, count = 3 }: RelatedArticlesProps
               key={post.slug}
               className="overflow-hidden group hover:shadow-xl transition-all duration-300"
             >
-              <Link href={`/for-patients/insights/${post.slug}`} className="block">
+              <Link href={`${base}/${post.slug}`} className="block">
                 <div className="relative h-48 bg-neutral-200 overflow-hidden">
                   <Image
                     src={post.image}
@@ -53,7 +63,7 @@ export function RelatedArticles({ currentSlug, count = 3 }: RelatedArticlesProps
                   </h3>
                   <p className="text-sm text-neutral-600 line-clamp-2">{post.excerpt}</p>
                   <div className="flex items-center text-primary-600 text-sm font-medium pt-2 group-hover:gap-2 transition-all">
-                    Read More
+                    {isRu ? "Читать" : "Read More"}
                     <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>

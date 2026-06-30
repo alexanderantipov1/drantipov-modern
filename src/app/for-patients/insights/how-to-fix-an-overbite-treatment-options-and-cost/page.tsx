@@ -179,7 +179,7 @@ export default function HowToFixAnOverbitePost() {
                   <li>&bull; Skeletal overbites (a jaw-position problem) are corrected with orthodontics plus jaw surgery.</li>
                   <li>&bull; Children can be treated with growth-guiding appliances; adults move teeth or have surgery.</li>
                   <li>&bull; Aligners/braces typically take 6–24 months and cost $3,000–$8,000.</li>
-                  <li>&bull; A 3D CT consultation is the fastest way to learn which category you are in.</li>
+                  <li>&bull; A free 3D CT consultation is the fastest way to learn which category you are in.</li>
                 </ul>
               </GlassCard>
 
@@ -353,11 +353,11 @@ export default function HowToFixAnOverbitePost() {
                   Not sure which type of overbite you have?
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-6 max-w-2xl mx-auto">
-                  A 3D CT consultation with Dr. Antipov shows exactly whether your overbite is
+                  A complimentary 3D CT consultation with Dr. Antipov shows exactly whether your overbite is
                   dental or skeletal — and the simplest path to correct it.
                 </p>
                 <Button asChild size="lg">
-                  <Link href="/contact">Book a Consultation</Link>
+                  <Link href="/contact">Book a Free Consultation</Link>
                 </Button>
               </GlassCard>
             </div>

@@ -10,7 +10,7 @@ export default function JsonLd() {
       "Antipov Oral & Maxillofacial Surgery",
     ],
     description:
-      "Board-certified oral and maxillofacial surgeon providing same-day dental implants (All-on-4, All-on-6, zygomatic implants), full arch dental implant restoration, corrective jaw surgery (orthognathic surgery), organic and holistic bone grafting, facial cosmetic surgery (rhinoplasty, face lift, eyelid surgery), and wisdom teeth removal in Roseville, CA. Serving Sacramento, San Francisco, Reno, and all of Northern California. Free dental implant consultation with complimentary 3D CT scan.",
+      "Board-certified oral and maxillofacial surgeon providing same-day dental implants (All-on-4, All-on-6, zygomatic implants), full arch dental implant restoration, corrective jaw surgery (orthognathic surgery), organic and holistic bone grafting, facial cosmetic surgery (rhinoplasty, face lift, eyelid surgery), and wisdom teeth removal in Roseville, CA. Serving Sacramento, San Francisco, Reno, and all of Northern California. Free consultations with complimentary 3D CT scan.",
     url: "https://www.drantipov.com",
     telephone: "+1-916-783-2110",
     email: "info@galleriaoms.com",
@@ -344,7 +344,7 @@ export default function JsonLd() {
         name: "How much do All-on-4 dental implants cost in Roseville, CA?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The cost of All-on-4 dental implants varies based on your specific needs, the materials chosen (zirconia vs. PMMA acrylic), and whether bone grafting is required. Dr. Antipov offers a free dental implant consultation with a complimentary 3D CT scan to provide an accurate treatment plan and cost estimate. Flexible financing options are available starting at $99/month through multiple lending partners including CareCredit.",
+          text: "The cost of All-on-4 dental implants varies based on your specific needs, the materials chosen (zirconia vs. PMMA acrylic), and whether bone grafting is required. Dr. Antipov offers free consultations with a complimentary 3D CT scan to provide an accurate treatment plan and cost estimate. Flexible financing options are available starting at $99/month through multiple lending partners including CareCredit.",
         },
       },
       {
@@ -389,10 +389,10 @@ export default function JsonLd() {
       },
       {
         "@type": "Question",
-        name: "Does Dr. Antipov offer free dental implant consultations?",
+        name: "Does Dr. Antipov offer free consultations?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Patients considering dental implants receive a complimentary dental implant consultation that includes a 3D Cone Beam CT scan, a thorough examination, a personalized treatment plan, and a discussion of financial options — at no cost and no obligation. Restrictions apply. Virtual consultations are also available for patients who live out of the area.",
+          text: "Yes. Every new patient receives a complimentary consultation that includes a 3D Cone Beam CT scan, a thorough examination, a personalized treatment plan, and a discussion of financial options — all at no cost and no obligation. Virtual consultations are also available for patients who live out of the area.",
         },
       },
       {

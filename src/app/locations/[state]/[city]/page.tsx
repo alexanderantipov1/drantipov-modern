@@ -64,7 +64,7 @@ export async function generateMetadata({
   if (!city) return {};
 
   const title = `Oral Surgeon serving ${city.city}, ${city.state} — Dr. Alexander V. Antipov`;
-  const description = `Board-certified oral & maxillofacial surgeon for patients in ${city.city}. Just ${city.driveTime} from our Roseville office. Dental implants, jaw surgery, sleep apnea (MMA), facial cosmetic surgery. Free dental implant consultation.`;
+  const description = `Board-certified oral & maxillofacial surgeon for patients in ${city.city}. Just ${city.driveTime} from our Roseville office. Dental implants, jaw surgery, sleep apnea (MMA), facial cosmetic surgery. Free 3D CT consultation.`;
 
   return buildMetadata({
     path: `/locations/${state}/${city.slug}`,
@@ -83,7 +83,7 @@ function getCityFAQs(city: ReturnType<typeof getCityByStateAndSlug>) {
     {
       question: `How much do dental implants cost for ${city.city} patients?`,
       answer:
-        "A single dental implant (implant, abutment, and crown) typically runs $4,000–$6,000. Full-arch restoration such as All-on-4 generally ranges from $25,000–$35,000 per arch. Your exact cost depends on bone volume, the number of implants, and whether grafting is needed — we provide a clear written estimate at your free dental implant consultation, and offer financing through CareCredit and Cherry.",
+        "A single dental implant (implant, abutment, and crown) typically runs $4,000–$6,000. Full-arch restoration such as All-on-4 generally ranges from $25,000–$35,000 per arch. Your exact cost depends on bone volume, the number of implants, and whether grafting is needed — we provide a clear written estimate at your free 3D CT consultation, and offer financing through CareCredit and Cherry.",
     },
     {
       question: `Do you accept dental insurance for patients from ${city.city}?`,
@@ -101,8 +101,8 @@ function getCityFAQs(city: ReturnType<typeof getCityByStateAndSlug>) {
         "Dr. Antipov is a Diplomate of the American Board of Oral and Maxillofacial Surgery (ABOMS), with 25+ years of experience and hospital privileges at Sutter Roseville, Sutter General, Mercy General, and Mercy San Juan. He has personally performed every surgery since opening his Roseville practice in 2008.",
     },
     {
-      question: `Can I get a free dental implant consultation if I live in ${city.city}?`,
-      answer: `Yes — a complimentary dental implant consultation with 3D CT scan is available to new patients considering implants, including those traveling from ${city.city}. The scan takes about 10 minutes and provides a complete view of your jaw, sinuses, and bone density for accurate treatment planning. Restrictions apply.`,
+      question: `Can I get a free 3D CT consultation if I live in ${city.city}?`,
+      answer: `Yes — complimentary 3D CT scans and consultations are available to all new patients, including those traveling from ${city.city}. The scan takes about 10 minutes and provides a complete view of your jaw, sinuses, and bone density for accurate treatment planning.`,
     },
   ];
 }
@@ -320,7 +320,7 @@ export default async function CityPage({
             </h2>
             <p className="mt-4 text-neutral-600">
               Affordable, transparent implant pricing for {city.city} patients — with financing through
-              CareCredit and Cherry and a written estimate at your free dental implant consultation.
+              CareCredit and Cherry and a written estimate at your free 3D CT consultation.
             </p>
           </div>
 
@@ -386,9 +386,9 @@ export default async function CityPage({
       </section>
 
       <DualCTA
-        variant="implants"
+        variant="dual"
         heading={`Ready to schedule from ${city.city}?`}
-        subheading={`Most ${city.city} patients reach us in about ${city.driveTime}. Free dental implant consultation with 3D CT scan, two practices, one trusted surgical team. Restrictions apply.`}
+        subheading={`Most ${city.city} patients reach us in about ${city.driveTime}. Free 3D CT consultation, two practices, one trusted surgical team.`}
       />
     </>
   );

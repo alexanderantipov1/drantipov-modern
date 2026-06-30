@@ -27,14 +27,27 @@ const navLinks = [
   { label: "Contact", href: "/contact" },
 ];
 
+const navLinksRu = [
+  { label: "О нас", href: "/ru" },
+  { label: "Команда", href: "/ru/our-team" },
+  { label: "Результаты", href: "/ru/results" },
+  { label: "До и после", href: "/ru/surgical-cases" },
+  { label: "Пациентам", href: "/ru/for-patients" },
+  { label: "Страховки", href: "/ru/insurance" },
+  { label: "FAQ", href: "/ru/for-patients/faqs" },
+  { label: "Контакты", href: "/ru/contact" },
+];
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
   const pathname = usePathname();
 
+  const isRu = pathname?.startsWith("/ru") ?? false;
+
   const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (pathname === "/") {
+    if (pathname === "/" || pathname === "/ru") {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -45,6 +58,9 @@ export default function Navbar() {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Language-aware nav links
+  const currentNavLinks = isRu ? navLinksRu : navLinks;
 
   return (
     <>
@@ -60,7 +76,7 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          <Link href="/" onClick={handleLogoClick} className="flex items-center gap-3 group" aria-label="Dr. Antipov — Home">
+          <Link href={isRu ? "/ru" : "/"} onClick={handleLogoClick} className="flex items-center gap-3 group" aria-label={isRu ? "Доктор Антипов — Главная" : "Dr. Antipov — Home"}>
             <Image
               src="/images/logo-d10cd66c.svg"
               alt="Dr. Alexander Antipov, DDS — Oral and Maxillofacial Surgeon"
@@ -75,21 +91,21 @@ export default function Navbar() {
             className="hidden lg:flex items-center gap-1"
             onMouseLeave={() => setMegaOpen(false)}
           >
-            {/* About — first */}
+            {/* About / О нас — first */}
             <a
-              href="/about"
+              href={currentNavLinks[0]?.href ?? "/about"}
               className="px-3 py-2 rounded-full text-sm font-medium transition-all duration-300 text-dark hover:text-primary hover:bg-primary/10"
             >
-              About
+              {currentNavLinks[0]?.label ?? "About"}
             </a>
 
             {/* Services mega-menu trigger */}
             <div className="relative" onMouseEnter={() => setMegaOpen(true)}>
               <Link
-                href="/expertise"
+                href={isRu ? "/ru/expertise" : "/expertise"}
                 className="flex items-center gap-1 px-3 py-2 rounded-full text-sm font-medium transition-all duration-300 text-dark hover:text-primary hover:bg-primary/10"
               >
-                Services
+                {isRu ? "Услуги" : "Services"}
                 <svg
                   className={`h-3 w-3 transition-transform ${megaOpen ? "rotate-180" : ""}`}
                   fill="none"
@@ -115,7 +131,7 @@ export default function Navbar() {
                       {expertiseItems.map((e) => (
                         <Link
                           key={e.slug}
-                          href={`/expertise/${e.slug}`}
+                          href={isRu ? `/ru/expertise/${e.slug}` : `/expertise/${e.slug}`}
                           onClick={() => setMegaOpen(false)}
                           className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-light"
                         >
@@ -141,13 +157,13 @@ export default function Navbar() {
                       ))}
                     </div>
                     <div className="mt-4 border-t border-dark/5 pt-4 flex justify-between items-center text-xs">
-                      <span className="text-muted">25+ years of experience · 10,000+ surgeries</span>
+                      <span className="text-muted">{isRu ? "25+ лет опыта · 10 000+ операций" : "25+ years of experience · 10,000+ surgeries"}</span>
                       <Link
-                        href="/expertise"
+                        href={isRu ? "/ru/expertise" : "/expertise"}
                         onClick={() => setMegaOpen(false)}
                         className="font-bold text-primary hover:text-primary-dark"
                       >
-                        View all services →
+                        {isRu ? "Все услуги →" : "View all services →"}
                       </Link>
                     </div>
                   </motion.div>
@@ -156,7 +172,7 @@ export default function Navbar() {
             </div>
 
             {/* Remaining nav links */}
-            {navLinks.slice(1).map((link) => (
+            {currentNavLinks.slice(1).map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -169,9 +185,17 @@ export default function Navbar() {
               <button
                 className="ml-2 px-6 py-2.5 bg-primary text-white rounded-full text-sm font-semibold hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 pulse-glow cursor-pointer"
               >
-                Free Implant Consultation
+                {isRu ? "Бесплатная консультация" : "Free Consultation"}
               </button>
             </ConsultationModal>
+            {/* Language switcher EN ⇄ RU */}
+            <a
+              href={isRu ? "/" : "/ru"}
+              aria-label={isRu ? "Switch to English" : "Переключиться на русский"}
+              className="ml-2 px-3 py-2 rounded-full text-sm font-bold tracking-wide border border-dark/15 text-dark hover:bg-dark hover:text-white transition-colors duration-300"
+            >
+              {isRu ? "EN" : "RU"}
+            </a>
             
           </div>
 
@@ -234,7 +258,7 @@ export default function Navbar() {
               >
                 Services
               </motion.a>
-              {navLinks.slice(1).map((link, i) => (
+              {currentNavLinks.slice(1).map((link, i) => (
                 <motion.a
                   key={link.href}
                   href={link.href}
@@ -252,15 +276,24 @@ export default function Navbar() {
                   onClick={() => setMobileOpen(false)}
                   className="mt-2 py-4 bg-primary text-white rounded-2xl text-center font-semibold text-lg cursor-pointer"
                 >
-                  Free Implant Consultation
+                  {isRu ? "Бесплатная консультация" : "Free Consultation"}
                 </button>
               </ConsultationModal>
+              {/* Language switcher EN ⇄ RU on mobile */}
+              <a
+                href={isRu ? "/" : "/ru"}
+                onClick={() => setMobileOpen(false)}
+                aria-label={isRu ? "Switch to English" : "Переключиться на русский"}
+                className="mt-2 py-4 border border-dark/15 text-dark rounded-2xl text-center font-bold text-lg tracking-wide hover:bg-dark hover:text-white transition-colors"
+              >
+                {isRu ? "Switch to English (EN)" : "Переключить на русский (RU)"}
+              </a>
               <a
                 href="tel:9167832110"
                 onClick={() => setMobileOpen(false)}
                 className="mt-2 py-4 bg-navy text-white rounded-2xl text-center font-semibold text-lg"
               >
-                Call (916) 783-2110
+                {isRu ? "Позвонить: (916) 783-2110" : "Call (916) 783-2110"}
               </a>
               
             </div>

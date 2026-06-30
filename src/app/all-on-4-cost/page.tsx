@@ -232,7 +232,7 @@ export default function AllOn4CostPage() {
           </ul>
           <p className="text-lg leading-8 text-neutral-700 mb-6">
             When you compare quotes, ask for an itemized breakdown and confirm what is and is not included.
-            A free dental implant consultation and CT scan at our Roseville office gives you a firm written quote with no
+            A free consultation and CT scan at our Roseville office gives you a firm written quote with no
             surprises later.
           </p>
         </div>
@@ -278,7 +278,7 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
-      <DualCTA variant="implants" />
+      <DualCTA />
     </>
   );
 }

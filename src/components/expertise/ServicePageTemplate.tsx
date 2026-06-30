@@ -9,25 +9,57 @@ import {
   structuredDataScript,
 } from "@/lib/structured-data";
 import { siteConfig } from "@/constants/siteConfig";
-import { buildMetadata } from "@/lib/seo";
 import DualCTA from "@/components/DualCTA";
 import type { ServicePageData } from "@/constants/servicePages";
 
-export function buildServiceMetadata(data: ServicePageData): Metadata {
-  return buildMetadata({
-    path: `/expertise/${data.slug}`,
-    absoluteTitle: data.metaTitle,
+export function buildServiceMetadata(
+  data: ServicePageData,
+  locale: "en" | "ru" = "en",
+): Metadata {
+  const isRu = locale === "ru";
+  const enPath = `/expertise/${data.slug}`;
+  const ruPath = `/ru/expertise/${data.slug}`;
+  const canonical = isRu ? ruPath : enPath;
+  const image = data.ogImage ?? siteConfig.ogImage;
+  return {
+    title: { absolute: data.metaTitle },
     description: data.metaDescription,
-    ogImage: data.ogImage,
-  });
+    alternates: {
+      canonical,
+      languages: { en: enPath, ru: ruPath, "x-default": enPath },
+    },
+    openGraph: {
+      title: data.metaTitle,
+      description: data.metaDescription,
+      url: `${siteConfig.url}${canonical}`,
+      type: "website",
+      locale: isRu ? "ru_RU" : "en_US",
+      siteName: "Dr. Alexander Antipov, DDS — Oral & Maxillofacial Surgery",
+      images: [{ url: image }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: data.metaTitle,
+      description: data.metaDescription,
+      images: [image],
+    },
+  };
 }
 
-export default function ServicePageTemplate({ data }: { data: ServicePageData }) {
-  const url = `${siteConfig.url}/expertise/${data.slug}`;
+export default function ServicePageTemplate({
+  data,
+  locale = "en",
+}: {
+  data: ServicePageData;
+  locale?: "en" | "ru";
+}) {
+  const isRu = locale === "ru";
+  const prefix = isRu ? "/ru" : "";
+  const url = `${siteConfig.url}${prefix}/expertise/${data.slug}`;
 
   const breadcrumb = getBreadcrumbSchema([
-    { name: "Home", url: siteConfig.url },
-    { name: "Expertise", url: `${siteConfig.url}/expertise` },
+    { name: isRu ? "Главная" : "Home", url: `${siteConfig.url}${prefix}` },
+    { name: isRu ? "Услуги" : "Expertise", url: `${siteConfig.url}${prefix}/expertise` },
     { name: data.breadcrumbName, url },
   ]);
   const procedure = getMedicalProcedureSchema({

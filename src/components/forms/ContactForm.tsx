@@ -1,5 +1,7 @@
 "use client"
 
+import { getRecaptchaToken } from "@/lib/recaptcha-client"
+
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -27,12 +29,13 @@ export function ContactForm() {
     setIsSubmitting(true)
 
     try {
+      const recaptchaToken = await getRecaptchaToken("contact")
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, recaptchaToken }),
       })
 
       if (!response.ok) {

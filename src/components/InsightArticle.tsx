@@ -22,7 +22,10 @@ function renderSegments(para: Para, keyPrefix: string) {
   })
 }
 
-export function InsightArticle({ article }: { article: RevisionArticle }) {
+export function InsightArticle({ article, locale = "en" }: { article: RevisionArticle; locale?: "en" | "ru" }) {
+  const isRu = locale === "ru"
+  const insightsHref = isRu ? "/ru/for-patients/insights" : "/for-patients/insights"
+  const contactHref = isRu ? "/ru/contact" : "/contact"
   const canonical = `/for-patients/insights/${article.slug}`
   const url = SITE + canonical
 
@@ -63,9 +66,9 @@ export function InsightArticle({ article }: { article: RevisionArticle }) {
       <Section background="default" padding="sm" className="pt-24">
         <Container size="lg">
           <Button asChild variant="ghost" size="sm">
-            <Link href="/for-patients/insights">
+            <Link href={insightsHref}>
               <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to Insights
+              {isRu ? "К списку статей" : "Back to Insights"}
             </Link>
           </Button>
         </Container>
@@ -92,10 +95,11 @@ export function InsightArticle({ article }: { article: RevisionArticle }) {
             </h1>
 
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by{" "}
+              {isRu ? "Медицинская проверка: " : "Medically reviewed by "}
               <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> —
-              Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp;
-              Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              {isRu
+                ? " сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS) · лицензия штата Калифорния №50724"
+                : " Board-Certified Oral & Maxillofacial Surgeon · Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS) · California Dental License #50724"}
             </p>
 
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -116,7 +120,7 @@ export function InsightArticle({ article }: { article: RevisionArticle }) {
 
               {/* TL;DR */}
               <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
+                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">{isRu ? "Коротко" : "TL;DR"}</p>
                 <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
                   {article.tldr.map((item, i) => (
                     <li key={`tldr-${i}`}>&bull; {item}</li>
@@ -171,7 +175,7 @@ export function InsightArticle({ article }: { article: RevisionArticle }) {
               ))}
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
-                Frequently Asked Questions
+                {isRu ? "Частые вопросы" : "Frequently Asked Questions"}
               </h2>
               <div className="space-y-6 my-8">
                 {article.faqs.map((faq) => (
@@ -186,7 +190,7 @@ export function InsightArticle({ article }: { article: RevisionArticle }) {
                 <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-3">{article.cta.heading}</h2>
                 <p className="text-neutral-700 leading-relaxed mb-6 max-w-2xl mx-auto">{article.cta.body}</p>
                 <Button asChild size="lg">
-                  <Link href="/contact">Book a Free Dental Implant Consultation</Link>
+                  <Link href={contactHref}>{isRu ? "Записаться на бесплатную консультацию" : "Book a Free Consultation"}</Link>
                 </Button>
               </GlassCard>
             </div>

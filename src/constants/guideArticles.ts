@@ -121,7 +121,7 @@ export const guideArticles: RevisionArticle[] = [
     ],
     cta: {
       heading: "Been told there is not enough bone?",
-      body: "Dr. Antipov plans complex bone-loss cases from a detailed 3D scan and explains every realistic option. Book a free dental implant consultation at our Roseville practice. Restrictions apply.",
+      body: "Dr. Antipov plans complex bone-loss cases from a detailed 3D scan and explains every realistic option. Book a free consultation at our Roseville practice.",
     },
   },
   {
@@ -222,7 +222,7 @@ export const guideArticles: RevisionArticle[] = [
     ],
     cta: {
       heading: "Managing diabetes and considering implants?",
-      body: "Dr. Antipov plans implant treatment around your health and coordinates with your physician for safe healing. Book a free dental implant consultation in Roseville. Restrictions apply.",
+      body: "Dr. Antipov plans implant treatment around your health and coordinates with your physician for safe healing. Book a free consultation in Roseville.",
     },
   },
   {
@@ -315,7 +315,7 @@ export const guideArticles: RevisionArticle[] = [
     ],
     cta: {
       heading: "A smoker considering implants?",
-      body: "Dr. Antipov gives an honest assessment of your risk and a plan to improve your odds. Book a free dental implant consultation at our Roseville practice. Restrictions apply.",
+      body: "Dr. Antipov gives an honest assessment of your risk and a plan to improve your odds. Book a free consultation at our Roseville practice.",
     },
   },
   {
@@ -412,7 +412,7 @@ export const guideArticles: RevisionArticle[] = [
     ],
     cta: {
       heading: "Wondering if you are too old for implants?",
-      body: "Dr. Antipov evaluates health and bone, not just age, and plans comfortable treatment for older patients. Book a free dental implant consultation in Roseville. Restrictions apply.",
+      body: "Dr. Antipov evaluates health and bone, not just age, and plans comfortable treatment for older patients. Book a free consultation in Roseville.",
     },
   },
   {
@@ -508,7 +508,7 @@ export const guideArticles: RevisionArticle[] = [
     ],
     cta: {
       heading: "Have osteoporosis or an autoimmune condition?",
-      body: "Dr. Antipov plans implants around your health and coordinates with your physician for safe healing. Book a free dental implant consultation in Roseville. Restrictions apply.",
+      body: "Dr. Antipov plans implants around your health and coordinates with your physician for safe healing. Book a free consultation in Roseville.",
     },
   },
   {
@@ -615,7 +615,7 @@ export const guideArticles: RevisionArticle[] = [
     ],
     cta: {
       heading: "Wondering if you are a candidate?",
-      body: "Dr. Antipov confirms candidacy with a 3D scan and honest health review, then builds a plan around your needs. Book a free dental implant consultation in Roseville. Restrictions apply.",
+      body: "Dr. Antipov confirms candidacy with a 3D scan and honest health review, then builds a plan around your needs. Book a free consultation in Roseville.",
     },
   },
   {
@@ -714,7 +714,7 @@ export const guideArticles: RevisionArticle[] = [
     ],
     cta: {
       heading: "Not sure which implant material fits?",
-      body: "Dr. Antipov recommends the right material for your anatomy and goals — never a one-size-fits-all answer. Book a free dental implant consultation in Roseville. Restrictions apply.",
+      body: "Dr. Antipov recommends the right material for your anatomy and goals — never a one-size-fits-all answer. Book a free consultation in Roseville.",
     },
   },
   {
@@ -916,7 +916,7 @@ export const guideArticles: RevisionArticle[] = [
     ],
     cta: {
       heading: "Want a clear, all-in implant quote?",
-      body: "Dr. Antipov gives transparent pricing with no hidden line items, plus financing options. Book a free dental implant consultation at our Roseville practice. Restrictions apply.",
+      body: "Dr. Antipov gives transparent pricing with no hidden line items, plus financing options. Book a free consultation at our Roseville practice.",
     },
   },
   {
@@ -1015,7 +1015,7 @@ export const guideArticles: RevisionArticle[] = [
     ],
     cta: {
       heading: "Curious whether implants are worth it for you?",
-      body: "Dr. Antipov explains your options and costs honestly, with financing to fit your budget. Book a free dental implant consultation at our Roseville practice. Restrictions apply.",
+      body: "Dr. Antipov explains your options and costs honestly, with financing to fit your budget. Book a free consultation at our Roseville practice.",
     },
   },
   {

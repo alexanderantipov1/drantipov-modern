@@ -266,11 +266,11 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
                   Get a clear answer about your overbite
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-6 max-w-2xl mx-auto">
-                  A 3D CT consultation with Dr. Antipov shows whether your overbite is dental or
+                  A complimentary 3D CT consultation with Dr. Antipov shows whether your overbite is dental or
                   skeletal — and the simplest, safest way to correct it.
                 </p>
                 <Button asChild size="lg">
-                  <Link href="/contact">Book a Consultation</Link>
+                  <Link href="/contact">Book a Free Consultation</Link>
                 </Button>
               </GlassCard>
             </div>

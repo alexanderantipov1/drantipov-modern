@@ -23,7 +23,7 @@ const ALLOWED_FIELDS = new Set([
 ])
 
 export async function POST(request: NextRequest) {
-  const rl = checkRateLimit(request, { prefix: "submit-consultation", max: 10, windowMs: 60_000 });
+  const rl = await checkRateLimit(request, { prefix: "submit-consultation", max: 10, windowMs: 60_000 });
   if (rl) return rl;
 
   try {

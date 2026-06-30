@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 
 export type DualCTAVariant = "surgical" | "implants" | "dual";
@@ -16,24 +17,38 @@ export default function DualCTA({
   variant = "dual",
   heading,
   subheading,
-  footnote = "Free 3D CT Scan · No Obligation · Flexible Financing · Roseville, CA · Restrictions apply",
+  footnote,
 }: DualCTAProps) {
-  const defaultHeading =
-    variant === "surgical"
-      ? "Ready to Discuss Your Surgery?"
-      : variant === "implants"
-      ? "Ready to Restore Your Smile?"
-      : "Schedule Your Consultation";
+  const pathname = usePathname();
+  const isRu = pathname?.startsWith("/ru") ?? false;
 
-  const defaultSub =
-    variant === "surgical"
-      ? "Dr. Antipov performs full-scope oral and maxillofacial surgery. Schedule a consultation to discuss your procedure."
-      : variant === "implants"
-      ? "Whether you're considering single-tooth implants or full-arch restoration, start with a free dental implant consultation and 3D CT scan."
-      : "Meet Dr. Antipov and discuss your treatment options, including advanced 3D imaging and a personalized treatment plan.";
+  const defaultFootnote = isRu
+    ? "Бесплатное 3D КТ · Без обязательств · Гибкая оплата · Roseville, CA"
+    : "Free 3D CT Scan · No Obligation · Flexible Financing · Roseville, CA";
 
-  const buttonLabel =
-    variant === "implants" ? "Free Dental Implant Consultation" : "Book a Consultation";
+  const defaultHeading = isRu
+    ? variant === "surgical"
+      ? "Готовы обсудить операцию?"
+      : variant === "implants"
+      ? "Готовы вернуть свою улыбку?"
+      : "Запишитесь на бесплатную консультацию"
+    : variant === "surgical"
+    ? "Ready to Discuss Your Surgery?"
+    : variant === "implants"
+    ? "Ready to Restore Your Smile?"
+    : "Schedule Your Complimentary Consultation";
+
+  const defaultSub = isRu
+    ? variant === "surgical"
+      ? "Доктор Антипов выполняет полный спектр оральной и челюстно-лицевой хирургии. Запишитесь на бесплатную консультацию с 3D КТ."
+      : variant === "implants"
+      ? "Думаете об имплантации одного зуба или восстановлении всей челюсти — начните с бесплатной консультации и 3D КТ."
+      : "Познакомьтесь с доктором Антиповым и обсудите варианты лечения. Каждая консультация включает бесплатное 3D КТ и индивидуальный план."
+    : variant === "surgical"
+    ? "Dr. Antipov performs full-scope oral and maxillofacial surgery. Schedule a free 3D CT consultation."
+    : variant === "implants"
+    ? "Whether you're considering single-tooth implants or full-arch restoration, start with a free consultation and 3D CT scan."
+    : "Meet Dr. Antipov and discuss your treatment options. Every consultation includes a complimentary 3D CT scan and personalized treatment plan.";
 
   return (
     <section className="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-br from-navy via-navy-dark to-navy">
@@ -60,7 +75,7 @@ export default function DualCTA({
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                {buttonLabel}
+                {isRu ? "Бесплатная консультация" : "Book Free Consultation"}
               </button>
             </ConsultationModal>
             <a
@@ -69,12 +84,12 @@ export default function DualCTA({
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              Call (916) 783-2110
-            </a>
+                </svg>
+                {isRu ? "Позвонить (916) 783-2110" : "Call (916) 783-2110"}
+              </a>
           </div>
 
-          <p className="mt-8 text-sm text-white/60">{footnote}</p>
+          <p className="mt-8 text-sm text-white/60">{footnote ?? defaultFootnote}</p>
         </motion.div>
       </div>
     </section>

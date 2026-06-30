@@ -33,8 +33,9 @@ const isDev = process.env.NODE_ENV === 'development'
 // Content Security Policy — permissive enough for current third parties but no inline-everything
 const csp = [
   "default-src 'self'",
-  // Scripts: self + GTM/GA/Clarity + reCAPTCHA + Calendly + Resend tracking
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://*.clarity.ms https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://assets.calendly.com https://static.hsforms.net https://js.hsforms.net",
+  // Scripts: self + GTM/GA/Clarity + reCAPTCHA + Calendly + Resend tracking.
+  // 'unsafe-eval' is only allowed in dev (Next/Turbopack HMR needs it); production drops it.
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com https://*.clarity.ms https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://assets.calendly.com https://static.hsforms.net https://js.hsforms.net`,
   // Styles: self + inline (next/image, framer-motion) + Google Fonts
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   // Fonts: self + Google Fonts

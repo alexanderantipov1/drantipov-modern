@@ -529,7 +529,7 @@ export default function BoneGraftingPage() {
       {/* Floating sticky CTA — appears after 25% scroll */}
       <FloatingArticleCTA
         href="/contact"
-        label="Free Dental Implant Consultation"
+        label="Book free consultation"
         showAfterPct={25}
       />
     </>

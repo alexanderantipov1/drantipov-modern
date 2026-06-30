@@ -43,6 +43,17 @@ const baseInsightPosts: InsightPost[] = [
     author: "Dr. Alexander V. Antipov",
   },
   {
+    slug: "all-on-4-dental-implants-explained-new-smile-in-one-day",
+    title: "All-on-4® Dental Implants Explained: A New Smile in One Day",
+    excerpt:
+      "How All-on-4® and full-arch dental implants restore a complete smile with same-day fixed teeth — candidacy, immediate loading, the procedure step by step, and realistic long-term results.",
+    date: "June 29, 2026",
+    image: "/images/blog/2026-04-28/same-day-implants.jpg",
+    category: "Dental Implants",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
+  },
+  {
     slug: "dental-implant-procedure-complete-guide",
     title: "Dental Implant Procedure: Complete Step-by-Step Guide",
     excerpt:

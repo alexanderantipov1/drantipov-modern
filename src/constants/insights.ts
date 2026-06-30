@@ -43,6 +43,17 @@ const baseInsightPosts: InsightPost[] = [
     author: "Dr. Alexander V. Antipov",
   },
   {
+    slug: "surgical-wisdom-tooth-removal-tooth-sectioning-explained",
+    title: "Surgical Wisdom Tooth Removal Explained: Why Surgeons Section Impacted Teeth",
+    excerpt:
+      "Why oral surgeons divide impacted wisdom teeth into sections — what impaction is, the step-by-step tooth-sectioning procedure, recovery, and when surgical extraction is recommended.",
+    date: "June 29, 2026",
+    image: "/images/other-procedures/wisdom-teeth-removal-9108ccc6.jpg",
+    category: "Oral Surgery",
+    readTime: "7 min read",
+    author: "Dr. Alexander V. Antipov",
+  },
+  {
     slug: "all-on-4-dental-implants-explained-new-smile-in-one-day",
     title: "All-on-4® Dental Implants Explained: A New Smile in One Day",
     excerpt:

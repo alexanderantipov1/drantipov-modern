@@ -69,7 +69,7 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div
-            className="hidden lg:flex items-center gap-1"
+            className="hidden lg:flex flex-1 items-center justify-between gap-2 mx-10"
             onMouseLeave={() => setMegaOpen(false)}
           >
             {/* About — first */}
@@ -162,15 +162,16 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <ConsultationModal>
-              <button
-                className="ml-2 px-6 py-2.5 bg-primary text-white rounded-full text-sm font-semibold hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 pulse-glow cursor-pointer"
-              >
-                Free Implant Consultation
-              </button>
-            </ConsultationModal>
-            
           </div>
+
+          {/* Desktop CTA */}
+          <ConsultationModal>
+            <button
+              className="hidden lg:block shrink-0 px-6 py-2.5 bg-primary text-white rounded-full text-sm font-semibold hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 pulse-glow cursor-pointer"
+            >
+              Free Implant Consultation
+            </button>
+          </ConsultationModal>
 
           {/* Mobile toggle */}
           <button

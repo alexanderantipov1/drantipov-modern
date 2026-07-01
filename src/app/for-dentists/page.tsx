@@ -238,21 +238,21 @@ export default function ForDentistsPage() {
                 Doctor's Corner
               </h2>
               <p className="text-neutral-700 mb-6 leading-relaxed">
-                A professional resource hub with clinical articles, case reports, treatment-planning
-                protocols, research summaries, and downloadable resources for colleagues.
+                Surgical courses and training for doctors — from a free orthognathic surgery e-book
+                to hands-on full-arch intensives with CE credits.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-2 text-sm text-neutral-700">
                   <span className="text-primary-600 mt-0.5">✓</span>
-                  <span>Clinical articles & surgical technique write-ups</span>
+                  <span>Free e-book: Orthognathic Surgery, Second Edition</span>
                 </li>
                 <li className="flex items-start gap-2 text-sm text-neutral-700">
                   <span className="text-primary-600 mt-0.5">✓</span>
-                  <span>Case studies, protocols, and research summaries</span>
+                  <span>Full-arch, zygomatic, and bone grafting courses</span>
                 </li>
                 <li className="flex items-start gap-2 text-sm text-neutral-700">
                   <span className="text-primary-600 mt-0.5">✓</span>
-                  <span>Downloadable resources, forms, and recorded lectures</span>
+                  <span>Online learning plus in-person training with up to 20 CE units</span>
                 </li>
               </ul>
               <Button asChild variant="outline" className="w-full">

@@ -212,10 +212,10 @@ const heroContent: Record<string, HeroContent> = {
   },
   "/for-dentists/doctors-corner": {
     image: "/images/blog/2015-06-22/surgery-team-411cef8b.jpg",
-    eyebrow: "For Dental Professionals",
+    eyebrow: "Surgical Education for Doctors",
     title: "Doctor's Corner",
     subtitle:
-      "Clinical articles, case reports, treatment-planning protocols, research summaries, and downloadable resources \u2014 curated for referring doctors and surgical colleagues.",
+      "Master full-arch implants, zygomatic implants, and orthognathic surgery with courses taught by Dr. Antipov \u2014 from a free e-book to hands-on training with up to 20 CE units.",
     overlay: "gradient",
     breadcrumbs: [{ name: "For Dentists", href: "/for-dentists" }, { name: "Doctor's Corner" }],
   },

@@ -11,6 +11,7 @@ import {
   PlayCircle,
   Phone,
   Mail,
+  ExternalLink,
 } from "lucide-react"
 import { Metadata } from "next"
 import PageHero from "@/components/PageHero"
@@ -173,6 +174,62 @@ export default function DoctorsCornerPage() {
               </a>
             ))}
           </div>
+        </Container>
+      </Section>
+
+      {/* Featured Free Resource */}
+      <Section background="gradient" padding="lg">
+        <Container size="lg">
+          <GlassCard variant="premium" className="p-8 md:p-12">
+            <div className="flex flex-col md:flex-row md:items-center gap-8">
+              <div className="flex-1">
+                <Badge className="bg-primary-600 text-white hover:bg-primary-600 mb-4">
+                  Featured · Free Course
+                </Badge>
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-neutral-900 mb-3">
+                  Orthognathic Surgery: Second Edition
+                </h2>
+                <p className="text-neutral-700 leading-relaxed mb-4">
+                  A free e-book by Dr. Antipov offering a comprehensive guide to corrective jaw and
+                  facial surgery. Part one presents case studies personally undertaken by Dr. Antipov —
+                  from bite and airway corrections to complex procedures involving the mandible,
+                  maxilla, and nasal structures. Part two is a step-by-step manual covering the entire
+                  process, from surgical planning to post-operative care.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start gap-2 text-sm text-neutral-700">
+                    <span className="text-primary-600 mt-0.5">✓</span>
+                    <span>Real case studies across bite, airway, and facial-aesthetic corrections</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-neutral-700">
+                    <span className="text-primary-600 mt-0.5">✓</span>
+                    <span>Step-by-step guidance from treatment planning through recovery</span>
+                  </li>
+                  <li className="flex items-start gap-2 text-sm text-neutral-700">
+                    <span className="text-primary-600 mt-0.5">✓</span>
+                    <span>Blends surgical, dental, and cosmetic perspectives — free to enroll</span>
+                  </li>
+                </ul>
+                <Button asChild size="lg">
+                  <a
+                    href="https://www.fusiondentalacademy.com/courses/orthognathic-surgery-second-edition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2"
+                  >
+                    Enroll Free
+                    <span className="sr-only"> (opens in a new tab)</span>
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                </Button>
+              </div>
+              <div className="hidden md:flex shrink-0 items-center justify-center">
+                <span className="flex h-40 w-40 items-center justify-center rounded-3xl bg-primary-100 text-primary-600">
+                  <BookOpen className="h-20 w-20" />
+                </span>
+              </div>
+            </div>
+          </GlassCard>
         </Container>
       </Section>
 

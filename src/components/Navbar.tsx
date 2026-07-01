@@ -21,6 +21,7 @@ const navLinks = [
   { label: "Results", href: "/results" },
   { label: "Before & After", href: "/surgical-cases" },
   { label: "For Patients", href: "/for-patients" },
+  { label: "Doctor's Corner", href: "/for-dentists/doctors-corner" },
   { label: "Insurance", href: "/insurance" },
 ];
 

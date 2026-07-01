@@ -18,7 +18,6 @@ const expertiseItems = [
 
 const navLinks = [
   { label: "About", href: "/about" },
-  { label: "Our Team", href: "/our-team" },
   { label: "Results", href: "/results" },
   { label: "Before & After", href: "/surgical-cases" },
   { label: "For Patients", href: "/for-patients" },

@@ -43,6 +43,17 @@ const baseInsightPosts: InsightPost[] = [
     author: "Dr. Alexander V. Antipov",
   },
   {
+    slug: "single-tooth-implant-roseville",
+    title: "Single Tooth Implant in Roseville: A Complete Patient Guide",
+    excerpt:
+      "How a single tooth implant replaces one missing tooth without altering the neighbors, why it preserves the jawbone, and what to expect on cost, insurance, timeline, and recovery in Roseville, CA.",
+    date: "July 1, 2026",
+    image: "/images/procedures/single-tooth-implant.png",
+    category: "Dental Implants",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
+  },
+  {
     slug: "surgical-wisdom-tooth-removal-tooth-sectioning-explained",
     title: "Surgical Wisdom Tooth Removal Explained: Why Surgeons Section Impacted Teeth",
     excerpt:

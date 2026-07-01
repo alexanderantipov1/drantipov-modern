@@ -1,7 +1,7 @@
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Users, GraduationCap, Handshake, Phone, Mail, Award } from "lucide-react"
+import { Users, GraduationCap, Handshake, Phone, Mail, Award, BookOpen } from "lucide-react"
 import { Metadata } from "next"
 import PageHero from "@/components/PageHero"
 import heroContent from "@/lib/heroContent"
@@ -157,8 +157,8 @@ export default function ForDentistsPage() {
 
       {/* Quick Links */}
       <Section background="default" padding="xl">
-        <Container size="lg">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <Container size="xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Referral Partners Card */}
             <GlassCard className="p-8 md:p-12">
               <div className="inline-flex p-4 rounded-full bg-primary-100 mb-6">
@@ -226,6 +226,37 @@ export default function ForDentistsPage() {
               </ul>
               <Button asChild variant="outline" className="w-full">
                 <Link href="/for-dentists/education/courses">Browse CE Courses</Link>
+              </Button>
+            </GlassCard>
+
+            {/* Doctor's Corner Card */}
+            <GlassCard className="p-8 md:p-12">
+              <div className="inline-flex p-4 rounded-full bg-primary-100 mb-6">
+                <BookOpen className="h-10 w-10 text-primary-600" />
+              </div>
+              <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
+                Doctor's Corner
+              </h2>
+              <p className="text-neutral-700 mb-6 leading-relaxed">
+                A professional resource hub with clinical articles, case reports, treatment-planning
+                protocols, research summaries, and downloadable resources for colleagues.
+              </p>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-start gap-2 text-sm text-neutral-700">
+                  <span className="text-primary-600 mt-0.5">✓</span>
+                  <span>Clinical articles & surgical technique write-ups</span>
+                </li>
+                <li className="flex items-start gap-2 text-sm text-neutral-700">
+                  <span className="text-primary-600 mt-0.5">✓</span>
+                  <span>Case studies, protocols, and research summaries</span>
+                </li>
+                <li className="flex items-start gap-2 text-sm text-neutral-700">
+                  <span className="text-primary-600 mt-0.5">✓</span>
+                  <span>Downloadable resources, forms, and recorded lectures</span>
+                </li>
+              </ul>
+              <Button asChild variant="outline" className="w-full">
+                <Link href="/for-dentists/doctors-corner">Visit Doctor's Corner</Link>
               </Button>
             </GlassCard>
           </div>

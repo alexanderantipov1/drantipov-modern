@@ -210,6 +210,15 @@ const heroContent: Record<string, HeroContent> = {
     overlay: "navy",
     breadcrumbs: [{ name: "For Dentists", href: "/for-dentists" }, { name: "Continuing Education" }],
   },
+  "/for-dentists/doctors-corner": {
+    image: "/images/blog/2015-06-22/surgery-team-411cef8b.jpg",
+    eyebrow: "For Dental Professionals",
+    title: "Doctor's Corner",
+    subtitle:
+      "Clinical articles, case reports, treatment-planning protocols, research summaries, and downloadable resources \u2014 curated for referring doctors and surgical colleagues.",
+    overlay: "gradient",
+    breadcrumbs: [{ name: "For Dentists", href: "/for-dentists" }, { name: "Doctor's Corner" }],
+  },
 
   // ===== Media =====
   "/media/videos": {

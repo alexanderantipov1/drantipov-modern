@@ -55,6 +55,7 @@ export const navigationLinks = [
       { title: "Refer Patients", href: "/for-dentists/refer-patients" },
       { title: "Referral Partners", href: "/for-dentists/referral-partners" },
       { title: "Education & Courses", href: "/for-dentists/education/courses" },
+      { title: "Doctor's Corner", href: "/for-dentists/doctors-corner" },
     ],
   },
   {

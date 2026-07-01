@@ -23,8 +23,6 @@ const navLinks = [
   { label: "Before & After", href: "/surgical-cases" },
   { label: "For Patients", href: "/for-patients" },
   { label: "Insurance", href: "/insurance" },
-  { label: "FAQ", href: "/for-patients/faqs" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {

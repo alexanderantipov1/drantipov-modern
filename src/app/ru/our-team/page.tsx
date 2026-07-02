@@ -593,7 +593,7 @@ export default function RussianOurTeamPage() {
                 <div className="lg:col-span-2 lg:order-2">
                   <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl">
                     <Image
-                      src="/images/dr-kahwach-v3.jpg"
+                      src="/images/dr-kahwach-v4.jpg"
                       alt="Доктор Андре-Давид Кахвач, DDS, MD — челюстно-лицевой хирург"
                       width={600}
                       height={800}

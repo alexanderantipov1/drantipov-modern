@@ -252,7 +252,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "refer-patients",
       "referral-partners",
       "education/courses",
-      "doctors-corner",
     ].map((slug) => ({
       url: `${siteUrl}/for-dentists/${slug}`,
       lastModified: now,

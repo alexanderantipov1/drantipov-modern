@@ -1,7 +1,7 @@
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Users, GraduationCap, Handshake, Phone, Mail, Award, BookOpen } from "lucide-react"
+import { Users, GraduationCap, Handshake, Phone, Mail, Award } from "lucide-react"
 import { Metadata } from "next"
 import PageHero from "@/components/PageHero"
 import heroContent from "@/lib/heroContent"
@@ -229,36 +229,6 @@ export default function ForDentistsPage() {
               </Button>
             </GlassCard>
 
-            {/* Doctor's Corner Card */}
-            <GlassCard className="p-8 md:p-12">
-              <div className="inline-flex p-4 rounded-full bg-primary-100 mb-6">
-                <BookOpen className="h-10 w-10 text-primary-600" />
-              </div>
-              <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
-                Doctor's Corner
-              </h2>
-              <p className="text-neutral-700 mb-6 leading-relaxed">
-                Surgical courses and training for doctors — from a free orthognathic surgery e-book
-                to hands-on full-arch intensives with CE credits.
-              </p>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-start gap-2 text-sm text-neutral-700">
-                  <span className="text-primary-600 mt-0.5">✓</span>
-                  <span>Free e-book: Orthognathic Surgery, Second Edition</span>
-                </li>
-                <li className="flex items-start gap-2 text-sm text-neutral-700">
-                  <span className="text-primary-600 mt-0.5">✓</span>
-                  <span>Full-arch, zygomatic, and bone grafting courses</span>
-                </li>
-                <li className="flex items-start gap-2 text-sm text-neutral-700">
-                  <span className="text-primary-600 mt-0.5">✓</span>
-                  <span>Online learning plus in-person training with up to 20 CE units</span>
-                </li>
-              </ul>
-              <Button asChild variant="outline" className="w-full">
-                <Link href="/for-dentists/doctors-corner">Visit Doctor's Corner</Link>
-              </Button>
-            </GlassCard>
           </div>
         </Container>
       </Section>

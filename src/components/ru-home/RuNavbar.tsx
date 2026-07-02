@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { officePhone, officePhoneHref, officeEmail, officeAddress } from "@/data/russianImplantFunnel";
+import LanguageToggle from "@/components/LanguageToggle";
 
 const expertiseItems = [
   { slug: "full-arch-implants", title: "Имплантация полной дуги", desc: "All-on-4, All-on-6, zygomatic" },
@@ -145,12 +146,7 @@ export default function RuNavbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
-            href="/"
-            className="hidden rounded-full border border-dark/15 px-3 py-1.5 text-xs font-semibold text-muted hover:border-primary/40 hover:text-dark sm:inline"
-          >
-            EN
-          </a>
+          <LanguageToggle className="shrink-0" />
           <a
             href={officePhoneHref}
             className="hidden rounded-full bg-primary px-4 py-2 text-sm font-bold text-white transition hover:bg-primary-dark sm:inline-flex sm:px-5"
@@ -267,12 +263,6 @@ export default function RuNavbar() {
                   className="block w-full rounded-2xl bg-primary px-5 py-3 text-center text-base font-bold text-white transition hover:bg-primary-dark"
                 >
                   Позвонить {officePhone}
-                </a>
-                <a
-                  href="/"
-                  className="block w-full rounded-2xl border border-dark/15 px-5 py-3 text-center text-sm font-semibold text-muted transition hover:border-primary/40 hover:text-dark"
-                >
-                  English version
                 </a>
               </div>
             </motion.aside>

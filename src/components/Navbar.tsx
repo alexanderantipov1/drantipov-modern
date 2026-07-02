@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
+import LanguageToggle from "@/components/LanguageToggle";
 
 const expertiseItems = [
   { slug: "full-arch-implants", title: "Full-Arch Implants", desc: "All-on-4, All-on-6, Zygomatic" },
@@ -168,14 +169,8 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Language toggle → Russian site */}
-          <a
-            href="/ru"
-            aria-label="Перейти на русскую версию сайта / Switch to Russian"
-            className="hidden lg:inline-flex shrink-0 items-center rounded-full border border-dark/15 px-3 py-1.5 text-xs font-semibold text-muted transition hover:border-primary/40 hover:text-dark"
-          >
-            RU
-          </a>
+          {/* Language switcher */}
+          <LanguageToggle className="shrink-0" />
 
           {/* Desktop CTA */}
           <ConsultationModal>
@@ -272,13 +267,6 @@ export default function Navbar() {
                 className="mt-2 py-4 bg-navy text-white rounded-2xl text-center font-semibold text-lg"
               >
                 Call (916) 783-2110
-              </a>
-              <a
-                href="/ru"
-                onClick={() => setMobileOpen(false)}
-                className="mt-2 py-3 px-4 rounded-xl text-center font-medium text-dark border border-dark/15 hover:bg-primary/10 hover:text-primary transition-colors"
-              >
-                Русская версия
               </a>
 
             </div>

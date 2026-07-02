@@ -156,7 +156,6 @@ export default function ExpertisePage() {
       name: "Услуги и процедуры челюстно-лицевой хирургии",
       description: "Полный перечень процедур челюстно-лицевой хирургии, которые выполняет доктор Антипов в Розвилле, штат Калифорния — импланты на полную челюсть, костная пластика, челюстная хирургия, лечение апноэ сна, одиночные импланты, удаление родинок, ВНЧС и зубы мудрости.",
       url: `${siteConfig.url}/ru/expertise`,
-      inLanguage: "ru",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Импланты на полную челюсть (All-on-4 / All-on-6)", url: `${siteConfig.url}/ru/expertise/full-arch-implants` },
         { "@type": "ListItem", position: 2, name: "Имплантация одного зуба и мостовидные конструкции", url: `${siteConfig.url}/ru/expertise/single-tooth` },

@@ -75,15 +75,14 @@ export default function RuSurgicalCasesPage() {
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      inLanguage: "ru",
       name: "Клинические случаи доктора Антипова",
       description:
         "Разделы клинических случаев доктора Александра Антипова в Roseville, CA: ортогнатическая хирургия, имплантация зубов, эстетическая хирургия лица.",
       url: `${siteUrl}/ru/surgical-cases`,
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Ортогнатическая хирургия" },
-        { "@type": "ListItem", position: 2, name: "Имплантация зубов" },
-        { "@type": "ListItem", position: 3, name: "Эстетическая хирургия лица" },
+        { "@type": "ListItem", position: 1, name: "Ортогнатическая хирургия", url: `${siteUrl}/ru/surgical-cases/corrective-jaw-surgery` },
+        { "@type": "ListItem", position: 2, name: "Имплантация зубов", url: `${siteUrl}/ru/surgical-cases/dental-implants` },
+        { "@type": "ListItem", position: 3, name: "Эстетическая хирургия лица", url: `${siteUrl}/ru/surgical-cases/facial-cosmetic-surgery` },
       ],
     },
   ];

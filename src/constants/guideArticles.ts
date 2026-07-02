@@ -14,6 +14,168 @@ const IMG = "/images/blog/2026-06-22"
 
 export const guideArticles: RevisionArticle[] = [
   {
+    slug: "dental-implant-price-match-guarantee",
+    title: "Dental Implant Price-Match Guarantee: Board-Certified Care at a Fair Price",
+    metaTitle: "Dental Implant Price-Match Guarantee | Roseville, CA",
+    metaDescription:
+      "Dr. Antipov's price-match guarantee lets Northern California patients get board-certified oral surgery without overpaying. Learn how like-for-like quote matching works.",
+    excerpt:
+      "You should not have to choose between the surgeon you trust and the price you can afford. Here is how Dr. Antipov's price-match guarantee lets you get board-certified implant surgery at a fair, transparent price.",
+    date: "July 2, 2026",
+    datePublished: "2026-07-02",
+    image: "/images/blog/2026-07-02/price-match-guarantee.png",
+    heroAlt:
+      "Board-certified oral surgeon reviewing a written dental implant treatment plan beside a 3D CBCT scan",
+    category: "Cost & Financing",
+    readTime: "8 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "dental implant price match guarantee",
+      "dental implant cost roseville",
+      "affordable dental implants sacramento",
+      "board certified oral surgeon roseville",
+      "all-inclusive dental implant pricing",
+    ],
+    intro:
+      "Choosing between the surgeon you trust and the price you can afford should not keep you up at night. Implant quotes across Northern California can differ by thousands of dollars, and it is fair to wonder whether a lower number means shortcuts on surgical skill or materials. Dr. Antipov's price-match guarantee is built to remove that trade-off: you get the precision of a board-certified oral and maxillofacial surgeon at a price matched to comparable local care, confirmed in writing at your free consultation.",
+    tldr: [
+      "The price-match guarantee matches a verified, written like-for-like quote from a comparable local clinic.",
+      "Your final cost is confirmed at a free consultation that includes a complimentary 3D CT scan.",
+      "Pricing is all-inclusive — the implant, abutment, crown, and imaging are accounted for, with no hidden fees.",
+      "Matching applies to comparable specialist-level care, not stripped-down 'budget' plans that skip necessary steps.",
+      "0% APR financing up to 84 months, most PPO insurance, and HSA/FSA payments make the final number manageable.",
+    ],
+    sections: [
+      {
+        heading: "What a Dental Implant Price-Match Guarantee Really Means",
+        paras: [
+          "A price-match guarantee is a straightforward commitment: bring in a verified, written treatment plan from a comparable local clinic, and Dr. Antipov's team will match it for equivalent care. The point is simple — you should not have to give up the safety of a board-certified specialist just because a general dental office quoted a lower number.",
+          "This is different from how 'discount' or 'budget' dental centers reach a low price. Those savings often come from generic implant parts, less chair time, or leaving essential steps out of the quote. The price-match guarantee works the other way around: the price comes down to meet a fair local rate while the surgical standards stay exactly where they should be.",
+        ],
+      },
+      {
+        heading: "The \"Like-for-Like\" Requirement",
+        paras: [
+          "For a match to be fair to you, the two plans have to describe the same care. That means the competing quote should reflect comparable technology and materials, not a cheaper substitute. Specifically, a like-for-like comparison looks at:",
+        ],
+        list: [
+          "3D CBCT imaging for surgical planning — non-negotiable for safe, precise placement",
+          "Equivalent implant systems (a single-tooth implant is not the same as an All-on-4 arch)",
+          "The complete restoration — implant, abutment, and final crown, not just the post",
+          "Any necessary groundwork such as extractions, bone grafting, or a sinus lift",
+          [
+            "A comparable, licensed local provider. For more on why comparable quotes can still differ, see ",
+            { text: "why dental implants are so expensive", href: "/for-patients/insights/why-are-dental-implants-so-expensive" },
+            ".",
+          ],
+        ],
+      },
+      {
+        heading: "How the Price-Match Works at Our Roseville Office",
+        paras: [
+          "The process is designed to be transparent from the first visit. Here is what to expect:",
+        ],
+        list: [
+          "Book a free consultation, which includes a complimentary 3D CT scan and a clinical exam with Dr. Antipov.",
+          "Bring your written treatment plan from the other clinic — it should itemize the surgical and restorative fees and name the provider.",
+          "Our team reviews both plans side by side to confirm they cover comparable procedures and materials.",
+          "You receive an all-inclusive, price-matched quote in writing, with financing and insurance options reviewed at the same visit.",
+        ],
+      },
+      {
+        heading: "Validating the Competing Quote",
+        paras: [
+          "To keep the comparison honest, a matched quote should come from a comparable, licensed clinic in the region we serve — the greater Sacramento area, including Placer and Sacramento counties — and be recent, since material costs and technology standards change over time. Most importantly, we look at the total cost of the restoration, not just the implant placement fee, so the abutment, crown, and imaging are all accounted for.",
+          [
+            "If a competing quote leaves out a step your case actually needs — bone grafting or 3D imaging, for example — Dr. Antipov will explain why it matters rather than quietly matching an incomplete plan. To understand when grafting is genuinely required, see our guide to ",
+            { text: "dental implants with severe bone loss", href: "/for-patients/insights/dental-implants-with-severe-bone-loss-options" },
+            ".",
+          ],
+        ],
+      },
+      {
+        heading: "Price vs. Value: Why a Board-Certified Oral Surgeon Matters",
+        paras: [
+          "Sticker shock is a normal reaction to a specialist's first quote, and it is fair to ask why one clinic charges more than another for what looks like the same procedure. The gap usually reflects real differences in surgical training, material quality, and long-term reliability — which is exactly why the price-match exists, so you do not have to trade the safety of a specialist for a lower number at a general office.",
+          "The distinction between a general dentist and an oral and maxillofacial surgeon is substantial. A specialist completes years of hospital-based surgical residency beyond dental school and is trained to manage low bone density, place implants precisely, and handle complications if they arise. Dr. Antipov brings more than 25 years of experience and over 10,000 patients treated to every case. Choosing the cheapest option can cost more later, because revision surgery to correct a failed implant is often harder and more expensive than doing it well the first time.",
+        ],
+      },
+      {
+        heading: "Materials and Technology We Will Not Discount",
+        paras: [
+          [
+            "The price can flex; the standard of care does not. Every implant uses medical-grade titanium or premium zirconia for long-term biocompatibility, and planning is done from a 3D CBCT scan so nerves and sinus cavities are mapped before surgery. If you are weighing implant materials, our comparison of ",
+            { text: "titanium vs. zirconia implants", href: "/for-patients/insights/titanium-vs-zirconia-dental-implants" },
+            " explains the trade-offs in plain language.",
+          ],
+        ],
+      },
+      {
+        heading: "What Goes Into Implant Costs in the Sacramento Region",
+        paras: [
+          "Our pricing is all-inclusive, so the quote you see reflects the complete solution. The ranges below give a realistic picture of what different treatments involve — your exact cost is confirmed after your exam and 3D scan.",
+        ],
+        table: {
+          headers: ["Treatment", "Typical range", "What it includes"],
+          rows: [
+            ["Single tooth implant", "$2,100 – $5,500", "Implant, abutment, and zirconia crown"],
+            ["Multiple teeth (2–5)", "$4,200 – $12,000", "Implant-supported bridge, no removable denture"],
+            ["All-on-4 (per arch)", "$21,000 – $28,000", "Full fixed arch on 4 implants, immediate teeth"],
+            ["All-on-6 (per arch)", "$25,000 – $35,000", "Full fixed arch on 6 implants for added stability"],
+            ["Zygomatic implants (per arch)", "$28,000 – $40,000", "Anchored in the cheekbone, often no grafting"],
+          ],
+        },
+      },
+      {
+        heading: "Financing, Insurance, and Making It Affordable",
+        paras: [
+          "A fair price is only useful if the payments work for your life. Alongside the price-match, qualified patients can use 0% APR financing for up to 84 months to spread the cost. Most PPO dental insurance is accepted, with typical coverage of $1,000 to $3,000 per year toward implants, and HSA and FSA funds can be applied as well.",
+          [
+            "For a deeper look at full-arch investment and the step-by-step process, our guide to the ",
+            { text: "full mouth dental implants cost and process", href: "/for-patients/insights/full-mouth-dental-implants-cost-process" },
+            " walks through what to expect from consultation to final teeth.",
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need a written treatment plan to get a price match?",
+        answer:
+          "Yes. Bring a formal, written plan that itemizes the surgical and restorative fees and names the provider. A physical or digital copy lets our team do an accurate like-for-like comparison of procedures and materials.",
+      },
+      {
+        question: "Can I combine the price-match with dental insurance?",
+        answer:
+          "Yes. The price-match applies to the total treatment cost before insurance. Once the rate is matched, our team helps you maximize your PPO benefits and apply HSA or FSA funds to lower your out-of-pocket cost further.",
+      },
+      {
+        question: "Which clinics' quotes will you match?",
+        answer:
+          "We match verified quotes from comparable, licensed clinics in our local service area, including Placer and Sacramento counties. Costs vary by region, so focusing on local competitors keeps the comparison fair for board-certified surgical care.",
+      },
+      {
+        question: "What if the other quote leaves out bone grafting or imaging?",
+        answer:
+          "If a competing quote skips a step your case genuinely needs, Dr. Antipov will explain why it matters for a safe, lasting result. We match comparable care rather than an incomplete plan that could set up a future failure.",
+      },
+      {
+        question: "How long is a price-matched quote valid?",
+        answer:
+          "Your price-matched quote is documented in writing at your consultation, and the exact terms are confirmed at that visit. Because material costs and clinical needs can change over time, we will refresh your records if some time has passed so your plan stays accurate.",
+      },
+      {
+        question: "Is the consultation really free?",
+        answer:
+          "Yes. Your implant consultation is free and includes a complimentary 3D CT scan and a personalized treatment plan, where your final price-matched cost is confirmed. Restrictions apply.",
+      },
+    ],
+    cta: {
+      heading: "Get a fair price without compromising your surgeon",
+      body: "Bring your written quote to a free consultation with Dr. Antipov in Roseville — complete with a complimentary 3D CT scan — and we will confirm your all-inclusive, price-matched cost in writing.",
+    },
+  },
+  {
     slug: "dental-implants-with-severe-bone-loss-options",
     title: "Can You Get Dental Implants With Severe Bone Loss?",
     metaTitle: "Dental Implants With Severe Bone Loss: Your Options",

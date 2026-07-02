@@ -1,0 +1,5 @@
+Page URL,Structured data,Field,Issue description,Discovered
+https://www.drantipov.com/ru/expertise,Carousel,inLanguage,The property inLanguage is not recognized by Schema.org vocabulary.,02 Jul 2026 (20:36 UTC)
+https://www.drantipov.com/ru/surgical-cases,Carousel,inLanguage,The property inLanguage is not recognized by Schema.org vocabulary.,02 Jul 2026 (20:36 UTC)
+https://www.drantipov.com/ru/surgical-cases,Carousel,item or url,A value for the item or url field is required for a nested ListItem.,02 Jul 2026 (20:36 UTC)
+https://www.drantipov.com/ru/surgical-cases/facial-cosmetic-surgery,Carousel,item or url,A value for the item or url field is required for a nested ListItem.,02 Jul 2026 (20:36 UTC)

@@ -168,6 +168,15 @@ export default function Navbar() {
             ))}
           </div>
 
+          {/* Language toggle → Russian site */}
+          <a
+            href="/ru"
+            aria-label="Перейти на русскую версию сайта / Switch to Russian"
+            className="hidden lg:inline-flex shrink-0 items-center rounded-full border border-dark/15 px-3 py-1.5 text-xs font-semibold text-muted transition hover:border-primary/40 hover:text-dark"
+          >
+            RU
+          </a>
+
           {/* Desktop CTA */}
           <ConsultationModal>
             <button
@@ -264,7 +273,14 @@ export default function Navbar() {
               >
                 Call (916) 783-2110
               </a>
-              
+              <a
+                href="/ru"
+                onClick={() => setMobileOpen(false)}
+                className="mt-2 py-3 px-4 rounded-xl text-center font-medium text-dark border border-dark/15 hover:bg-primary/10 hover:text-primary transition-colors"
+              >
+                Русская версия
+              </a>
+
             </div>
           </motion.div>
         )}

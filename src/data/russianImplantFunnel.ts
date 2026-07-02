@@ -1,4 +1,4 @@
-export const siteUrl = "https://drantipov.com";
+export const siteUrl = "https://www.drantipov.com";
 export const officePhone = "(916) 783-2110";
 export const officePhoneHref = "tel:9167832110";
 export const officeEmail = "info@galleriaoms.com";

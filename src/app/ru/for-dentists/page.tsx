@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Стоматологам — направления и сотрудничество",
     description: "Партнёрство со стоматологическими практиками. Прозрачная коммуникация, направления, образование. Доктор Антипов, Roseville CA.",
-    url: "https://drantipov.com/ru/for-dentists",
+    url: "https://www.drantipov.com/ru/for-dentists",
     locale: "ru_RU",
     type: "website",
     images: [

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Запись на консультацию — Доктор Антипов",
     description: "Бесплатная консультация: имплантация, ортогнатическая хирургия, All-on-4. Новые пациенты приветствуются.",
-    url: "https://drantipov.com/ru/for-patients/consultation",
+    url: "https://www.drantipov.com/ru/for-patients/consultation",
     locale: "ru_RU",
     type: "website",
     images: [

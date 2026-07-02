@@ -44,6 +44,9 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Russian (/ru) routes render their own RuNavbar via the /ru layout.
+  if (pathname === "/ru" || pathname?.startsWith("/ru/")) return null;
+
   return (
     <>
       <motion.nav

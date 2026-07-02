@@ -7,6 +7,7 @@ import { RecaptchaScript } from "@/components/RecaptchaScript";
 import { ConsentGatedTracking } from "@/components/analytics/ConsentGatedTracking";
 import { SiteNavbar, SiteFooter } from "@/components/SiteChrome";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
+import HtmlLangSetter from "@/components/HtmlLangSetter";
 import "./globals.css";
 
 const geist = Geist({
@@ -121,6 +122,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} ${merriweather.variable} ${dancingScript.variable} ${caveat.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        <HtmlLangSetter />
         <ConsentGatedTracking />
         <RecaptchaScript />
         <TrackingProvider>

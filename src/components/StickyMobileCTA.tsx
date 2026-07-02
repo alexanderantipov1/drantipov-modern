@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { Phone, Calendar } from "lucide-react";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 import { siteConfig } from "@/constants/siteConfig";
@@ -11,6 +12,7 @@ import { siteConfig } from "@/constants/siteConfig";
  */
 export default function StickyMobileCTA() {
   const [visible, setVisible] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const threshold = () => Math.max(window.innerHeight * 0.6, 400);
@@ -20,6 +22,8 @@ export default function StickyMobileCTA() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Russian (/ru) routes provide their own concierge bar; hide this English CTA.
+  if (pathname === "/ru" || pathname?.startsWith("/ru/")) return null;
 
   const telHref = `tel:${siteConfig.contact.phone.replace(/[^\d+]/g, "")}`;
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Phone, MapPin, ChevronDown } from "lucide-react";
@@ -234,6 +235,10 @@ function FooterCitiesSection({
 
 export default function Footer() {
   const [openSection, setOpenSection] = useState<string | null>(null);
+  const pathname = usePathname();
+
+  // Russian (/ru) routes render their own RuFooter via the /ru layout.
+  if (pathname === "/ru" || pathname?.startsWith("/ru/")) return null;
 
   return (
     <footer className="bg-navy text-white/60">

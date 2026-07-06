@@ -194,7 +194,8 @@ export default function SingleToothImplantRosevillePost() {
                 replacing every 10 to 15 years as the anchor teeth wear or decay, while a well-maintained
                 implant is designed to last for decades. Day to day, an implant is simpler to care for too
                 &mdash; you brush and floss it like a natural tooth, with no special threaders to clean
-                underneath.
+                underneath. For the full breakdown of the biological and 20-year cost trade-offs, see our
+                guide to <Link href="/for-patients/insights/single-tooth-implant-vs-dental-bridge-real-cost" className="text-primary-700 hover:underline">single tooth implant vs. dental bridge: the real cost</Link>.
               </p>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">

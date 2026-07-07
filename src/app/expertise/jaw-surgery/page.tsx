@@ -443,6 +443,21 @@ export default function JawSurgeryPage() {
               <h3 className="font-bold text-neutral-900 leading-snug">Traveling for surgery</h3>
               <p className="text-sm text-neutral-600 mt-2 leading-6">For out-of-state and international patients.</p>
             </a>
+            <a href="/for-patients/insights/how-to-fix-an-overbite-treatment-options-and-cost" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Guide</p>
+              <h3 className="font-bold text-neutral-900 leading-snug">How to fix an overbite</h3>
+              <p className="text-sm text-neutral-600 mt-2 leading-6">Every option — aligners, braces, and surgery — with costs.</p>
+            </a>
+            <a href="/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Guide</p>
+              <h3 className="font-bold text-neutral-900 leading-snug">Severe overbite: when surgery is needed</h3>
+              <p className="text-sm text-neutral-600 mt-2 leading-6">When an overbite crosses from orthodontic to surgical.</p>
+            </a>
+            <a href="/for-patients/insights/can-you-fix-an-overbite-naturally" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Guide</p>
+              <h3 className="font-bold text-neutral-900 leading-snug">Can you fix an overbite naturally?</h3>
+              <p className="text-sm text-neutral-600 mt-2 leading-6">What works, what's a myth, and when surgery is needed.</p>
+            </a>
           </div>
         </Container>
       </Section>

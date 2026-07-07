@@ -57,7 +57,7 @@ export const cities: CityPage[] = [
       "Highway 65 North from Roseville Road",
     ],
     demographic:
-      "Sacramento — California's capital and a major regional medical hub. Many of our patients commute from downtown, Midtown, Land Park, Pocket-Greenhaven, and Natomas.",
+      "Sacramento — California's capital and a major regional medical hub. Many of our patients commute from downtown, Midtown, Land Park, Pocket-Greenhaven, and Natomas looking for affordable dental implants in Sacramento without the corporate-chain markup: specialist tooth implants, full-arch restoration, and transparent pricing 20 minutes up I-80.",
     servicesEmphasis: ["jaw-surgery", "full-arch", "implants", "cosmetic"],
   },
   {
@@ -83,8 +83,8 @@ export const cities: CityPage[] = [
       "Iron Point Road to Highway 50",
     ],
     demographic:
-      "Folsom is home to many tech and engineering professionals from Intel and the surrounding business parks. Our patients here typically prioritize precision diagnostics, 3D CT planning, and minimally invasive techniques.",
-    servicesEmphasis: ["implants", "cosmetic", "implants", "jaw-surgery"],
+      "Folsom is home to many tech and engineering professionals from Intel and the surrounding business parks. Our patients here typically prioritize precision diagnostics, 3D CT planning, and minimally invasive techniques — coming to us for dental implants, wisdom teeth removal, and the full range of oral surgery Folsom residents would otherwise travel for.",
+    servicesEmphasis: ["implants", "cosmetic", "full-arch", "jaw-surgery"],
   },
   {
     slug: "rocklin",
@@ -187,7 +187,7 @@ export const cities: CityPage[] = [
       "Elk Grove Boulevard to Highway 99 North",
     ],
     demographic:
-      "Elk Grove is one of the fastest-growing communities in the Sacramento region, and a steady source of patients seeking dental implants, full-arch restoration, and wisdom-tooth surgery from a board-certified oral surgeon.",
+      "Elk Grove — including the Elk Grove Village and Laguna areas — is one of the fastest-growing communities in the Sacramento region, and a steady source of patients seeking dental implants, implant restorations, full-arch restoration, and wisdom-tooth surgery from a board-certified oral surgeon. Patients searching for a dental implant center near Elk Grove find board-certified specialist care a short drive up I-80.",
     servicesEmphasis: ["implants", "full-arch", "bone-grafting", "jaw-surgery"],
   },
   {
@@ -396,6 +396,84 @@ export const cities: CityPage[] = [
     ],
     demographic:
       "Oroville and the greater Butte County area send patients south for full-arch implant reconstruction, dental implants, and corrective surgery from a board-certified specialist.",
+    servicesEmphasis: ["full-arch", "implants", "bone-grafting", "jaw-surgery"],
+  },
+  {
+    slug: "roseville",
+    city: "Roseville",
+    state: "CA",
+    stateName: "California",
+    region: "Placer County",
+    driveTime: "5 min",
+    distanceMi: 2,
+    lat: 38.7521,
+    lng: -121.288,
+    landmarks: [
+      "Westfield Galleria at Roseville",
+      "Sutter Roseville Medical Center",
+      "Kaiser Permanente Roseville",
+      "Fountains at Roseville",
+      "Maidu Regional Park",
+    ],
+    routes: [
+      "Douglas Boulevard to Reserve Drive — minutes from anywhere in Roseville",
+      "I-80, exit Douglas Boulevard East",
+      "Highway 65, exit Galleria Boulevard to Reserve Drive",
+    ],
+    demographic:
+      "Roseville is home — our office sits on Reserve Drive near the Westfield Galleria. Patients searching for dental implants in Roseville, an implant dentist near Roseville, or full-arch (All-on-4) restoration get board-certified oral surgery care right in their own city, along with emergency oral surgery, wisdom teeth removal, and full mouth rehabilitation.",
+    servicesEmphasis: ["implants", "full-arch", "jaw-surgery", "bone-grafting"],
+  },
+  {
+    slug: "orinda",
+    city: "Orinda",
+    state: "CA",
+    stateName: "California",
+    region: "East Bay (Contra Costa)",
+    driveTime: "1 hr 25 min",
+    distanceMi: 95,
+    lat: 37.8771,
+    lng: -122.1802,
+    landmarks: [
+      "Orinda Theatre",
+      "Orinda Village",
+      "BART Orinda Station",
+      "Briones Regional Park",
+      "Moraga Country Club",
+    ],
+    routes: [
+      "Highway 24 East → I-680 North → I-80 East to Roseville (about 1 hr 25 min)",
+      "I-80 East through Sacramento to Douglas Boulevard",
+      "Highway 24 → I-80 East via Fairfield and Vacaville",
+    ],
+    demographic:
+      "Orinda and Lamorinda-area patients travel to Roseville for specialist procedures that are hard to find locally — same-day dental implants, All-on-4 and All-on-6 full-arch restoration, and zygomatic implants for severe bone loss — often finding the drive worthwhile for board-certified surgical care at competitive Sacramento-area pricing.",
+    servicesEmphasis: ["full-arch", "implants", "bone-grafting", "jaw-surgery"],
+  },
+  {
+    slug: "placerville",
+    city: "Placerville",
+    state: "CA",
+    stateName: "California",
+    region: "El Dorado County",
+    driveTime: "40 min",
+    distanceMi: 38,
+    lat: 38.7296,
+    lng: -120.7985,
+    landmarks: [
+      "Historic Main Street Placerville",
+      "Marshall Medical Center",
+      "Apple Hill",
+      "El Dorado County Fairgrounds",
+      "Gold Bug Park & Mine",
+    ],
+    routes: [
+      "Highway 50 West → El Dorado Hills Boulevard → Highway 50 to I-80 North (about 40 minutes)",
+      "Highway 50 West to Folsom, then Folsom-Auburn Road north",
+      "Green Valley Road west toward El Dorado Hills and Folsom",
+    ],
+    demographic:
+      "Placerville and the El Dorado County foothills send patients down Highway 50 for full-arch restoration, dental implants, and complex oral surgery — specialist care that the foothill communities typically have to travel for.",
     servicesEmphasis: ["full-arch", "implants", "bone-grafting", "jaw-surgery"],
   },
 ];

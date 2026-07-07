@@ -446,6 +446,16 @@ export default function FullArchImplantsPage() {
               <h3 className="font-bold text-neutral-900 leading-snug">Traveling for surgery</h3>
               <p className="text-sm text-neutral-600 mt-2 leading-6">Airports, hotels, recovery timeline for out-of-state patients.</p>
             </a>
+            <a href="/for-patients/insights/zirconia-arches" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Materials</p>
+              <h3 className="font-bold text-neutral-900 leading-snug">Zirconia arches explained</h3>
+              <p className="text-sm text-neutral-600 mt-2 leading-6">Why monolithic zirconia is the standard for final bridges.</p>
+            </a>
+            <a href="/for-patients/insights/best-full-arch-dental-implant-clinics-california-how-to-compare" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Guide</p>
+              <h3 className="font-bold text-neutral-900 leading-snug">How to compare full-arch clinics</h3>
+              <p className="text-sm text-neutral-600 mt-2 leading-6">The 7 criteria that separate California providers.</p>
+            </a>
           </div>
         </Container>
       </Section>

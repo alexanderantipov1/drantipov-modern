@@ -195,7 +195,9 @@ export default function SingleToothImplantRosevillePost() {
                 implant is designed to last for decades. Day to day, an implant is simpler to care for too
                 &mdash; you brush and floss it like a natural tooth, with no special threaders to clean
                 underneath. For the full breakdown of the biological and 20-year cost trade-offs, see our
-                guide to <Link href="/for-patients/insights/single-tooth-implant-vs-dental-bridge-real-cost" className="text-primary-700 hover:underline">single tooth implant vs. dental bridge: the real cost</Link>.
+                guide to <Link href="/for-patients/insights/single-tooth-implant-vs-dental-bridge-real-cost" className="text-primary-700 hover:underline">single tooth implant vs. dental bridge: the real cost</Link>. And
+                if the tooth you lost is a front tooth, our guide to <Link href="/for-patients/insights/missing-front-tooth-replacement-options" className="text-primary-700 hover:underline">missing front tooth replacement options</Link> covers
+                temporary fixes and the special demands of the &ldquo;smile zone.&rdquo;
               </p>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">

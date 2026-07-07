@@ -14,6 +14,152 @@ const IMG = "/images/blog/2026-06-22"
 
 export const guideArticles: RevisionArticle[] = [
   {
+    slug: "missing-front-tooth-replacement-options",
+    title: "Missing Front Tooth Replacement: 5 Best Permanent & Temporary Options",
+    metaTitle: "Missing Front Tooth Replacement: 5 Best Options | Roseville, CA",
+    metaDescription:
+      "Lost a front tooth? Compare the 5 best replacement options — from same-day flippers and Essix retainers to permanent dental implants — with expert guidance from board-certified oral surgeon Dr. Antipov in Roseville, CA.",
+    excerpt:
+      "A missing front tooth is an emergency for your confidence, not just your smile. Here are the five best temporary and permanent ways to replace it — and why the visible \"smile zone\" demands a surgical specialist's precision.",
+    date: "July 7, 2026",
+    datePublished: "2026-07-07",
+    image: "/images/blog/2026-07-07/missing-front-tooth-replacement.png",
+    heroAlt:
+      "Illustration of a single front tooth dental implant with titanium post and ceramic crown restoring a natural smile",
+    category: "Treatment Options",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "missing front tooth replacement",
+      "front tooth implant roseville",
+      "temporary front tooth options",
+      "dental flipper vs implant",
+      "smile zone implant",
+    ],
+    intro:
+      "Losing a front tooth changes how you move through the world. You cover your mouth when you laugh, hesitate before biting into food, and manage how others see you — all while trying to make sense of the options in front of you. A missing front tooth replacement is about more than aesthetics; it is about restoring your ability to speak, eat, and smile without hesitation. This guide walks through what to do in the first hour after losing a tooth, the temporary fixes that carry you through the healing period, and why a dental implant is the permanent gold standard — especially in the demanding, highly visible \"smile zone,\" where every millimeter of bone and gum matters.",
+    tldr: [
+      "If a tooth is knocked out, handle it only by the crown, keep it moist in cold milk, and see a specialist within 60 minutes for the best chance of saving it.",
+      "Temporary options like dental flippers and Essix retainers restore your smile for photos and conversation, but they are cosmetic placeholders — not for biting.",
+      "A dental implant is the only replacement that preserves the jawbone under the gap, preventing the bone loss and gum collapse that follow an extraction.",
+      "The front of the jaw has remarkably thin bone, so front-tooth implants demand a surgeon's precision to avoid gum recession and \"black triangles.\"",
+      "Same-day protocols can place a temporary crown on an implant immediately after extraction, so you never leave the office with a visible gap.",
+    ],
+    sections: [
+      {
+        heading: "Immediate Steps: What to Do the Moment You Lose a Front Tooth",
+        paras: [
+          "Losing a front tooth is an immediate crisis that triggers both physical pain and social anxiety — and what you do in the first few minutes can determine whether the natural tooth can be saved. First, find the tooth. Pick it up by the crown (the biting surface) and avoid touching the root. If it is dirty, rinse it briefly with cool water; do not use soap or scrub it. The delicate ligament fibers on the root are what allow successful reattachment, and rough handling destroys them.",
+          "Preservation is the next priority. If you cannot gently seat the tooth back into its socket, submerge it in a small container of cold milk, which keeps the root cells alive longer than water or saliva. Re-implantation succeeds most often within a 60-minute window, so act with urgency without panicking. An emergency assessment by an oral and maxillofacial surgeon — who manages facial trauma routinely — gives you the best chance of a good outcome in the visible smile zone.",
+          [
+            "If the root is intact and the trauma was clean, a root canal may stabilize the tooth. But if the root is fractured or the supporting bone is compromised, extraction followed by a ",
+            { text: "single tooth implant", href: "/for-patients/insights/single-tooth-implant-roseville" },
+            " is usually the most predictable path. Choosing a permanent solution early also prevents the bone loss that follows an extraction, protecting your facial structure and your smile's future.",
+          ],
+        ],
+      },
+      {
+        heading: "Temporary Replacement Options: Bridging the Gap Quickly",
+        paras: [
+          "A permanent missing front tooth replacement does not always happen overnight, and maintaining your confidence in the meantime matters. The most common short-term choice is a dental flipper — a lightweight, removable partial denture. A popular alternative is the Essix retainer, a clear plastic tray that holds a prosthetic tooth in place. Stay-plates offer a slightly more robust removable option that covers the palate while providing a visible tooth.",
+          "It is tempting to reach for low-cost DIY \"tooth bead\" kits sold online, but these are clinically discouraged for front-tooth sites. They lack structural integrity and trap bacteria against the gums, which can cause inflammation or infection in the very tissue you need healthy for a future implant. A professionally made temporary protects your long-term result.",
+        ],
+      },
+      {
+        heading: "The Dental Flipper: Pros and Cons",
+        paras: [
+          "Flippers are excellent placeholders during healing — good for photos, conversation, and moving through your day without self-consciousness. But they are strictly cosmetic. You should not bite into an apple or a sandwich with a flipper; the acrylic is fragile. They also require diligent daily cleaning to prevent plaque buildup that can harm the neighboring teeth supporting the device. Think of a flipper as a cosmetic bridge that carries you until your surgical site is ready for a permanent tooth.",
+        ],
+      },
+      {
+        heading: "Immediate Temporaries: Teeth-in-a-Day for a Front Tooth",
+        paras: [
+          [
+            "In select cases, you do not have to wait months for a visible tooth. Some patients qualify for same-day protocols in which a temporary crown is attached to an implant placed immediately after the extraction. This technique preserves the \"emergence profile\" — the natural way the gum curves around a tooth — and prevents the tissue from collapsing, so the final ceramic crown looks indistinguishable from a natural tooth. To see how this works in practice, read our guide to ",
+            { text: "same-day dental implants", href: "/for-patients/insights/same-day-implants" },
+            ".",
+          ],
+        ],
+      },
+      {
+        heading: "Permanent Solutions: Dental Implants vs. Fixed Bridges",
+        paras: [
+          "Moving from a placeholder to a permanent replacement is the milestone that protects your oral health for decades. The decision usually comes down to a dental implant, a fixed bridge, or a removable partial denture — and each carries different consequences for your jawbone and the longevity of your smile.",
+          "The factor most people overlook is the \"domino effect\" of bone loss. Once a tooth root is gone, the jawbone beneath the gap no longer receives stimulation and gradually shrinks away. That resorption can change your facial profile and destabilize neighboring teeth. A bridge may last 5 to 10 years before needing maintenance or replacement; a properly integrated implant is designed as a lifetime investment.",
+          [
+            "A single tooth implant stands alone, using a medical-grade titanium or zirconia post as a synthetic root that keeps the jawbone strong — without grinding down the healthy enamel of neighboring teeth, as a bridge requires. For the full financial and biological comparison, see our breakdown of the ",
+            { text: "real cost of an implant vs. a dental bridge", href: "/for-patients/insights/single-tooth-implant-vs-dental-bridge-real-cost" },
+            ".",
+          ],
+          "A fixed bridge can still make sense when speed is the priority — it can often be completed within about two weeks — or when the adjacent teeth already need crowns. But because a bridge is one connected piece, cleaning underneath it is harder, which often leads to decay in the anchor teeth over time.",
+        ],
+      },
+      {
+        heading: "The Challenge of the \"Smile Zone\": Esthetics and Bone Health",
+        paras: [
+          "Replacing a front tooth is a specialized surgical art. Unlike the thick, dense bone near the molars, the bone supporting your front teeth is remarkably thin — and every millimeter of tissue matters. Handled without precision, the gums can recede or collapse, creating \"black triangles\": dark gaps between the prosthetic and the natural teeth that trap food and look artificial.",
+          [
+            "This is why front-tooth implants belong in the hands of a surgical specialist. As a board-certified oral and maxillofacial surgeon, Dr. Antipov plans every front-tooth case with 3D cone-beam imaging to protect the thin facial bone, position the implant precisely, and preserve the natural gum contour. When bone volume is already compromised, grafting can rebuild the foundation first — see our guide to ",
+            { text: "bone grafting for dental implants", href: "/for-patients/insights/bone-grafting-for-dental-implants-explained" },
+            ".",
+          ],
+        ],
+      },
+      {
+        heading: "Expert Front Tooth Restoration with Dr. Antipov in Roseville",
+        paras: [
+          [
+            "Restoring a visible gap is about reclaiming your confidence and protecting your long-term oral health. Temporary options provide immediate social relief, but a permanent implant is the only replacement that preserves the jawbone and delivers a natural result in the smile zone. At his Roseville practice, Dr. Antipov personally performs every surgical step — from emergency assessment through implant placement and final restoration — using guided 3D planning and custom-shaded ceramic crowns matched to your natural enamel. Patients visit from Roseville, Sacramento, and across Northern California; learn what to expect at your first visit on our ",
+            { text: "consultation page", href: "/for-patients/consultation" },
+            ".",
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How long does it take to replace a missing front tooth with an implant?",
+        answer:
+          "A full restoration typically spans three to six months, though same-day temporary crowns are common. The waiting period allows osseointegration — the process where the jawbone fuses with the implant surface — to create a foundation strong enough to support a permanent crown for decades.",
+      },
+      {
+        question: "Can I get a temporary front tooth the same day as my extraction?",
+        answer:
+          "Yes. Whether it is a removable dental flipper or a temporary crown attached to a same-day implant, the goal is that you never leave the office with a visible gap. The temporary maintains your appearance and speech while the surgical site heals underneath.",
+      },
+      {
+        question: "Is a dental implant more painful than a bridge for a front tooth?",
+        answer:
+          "Patients generally report that implant placement is no more uncomfortable than a bridge procedure. Modern local anesthesia and sedation options eliminate pain during surgery, and unlike a bridge, an implant does not require grinding down the healthy neighboring teeth — which can cause lingering sensitivity of its own.",
+      },
+      {
+        question: "What is the cheapest way to replace a missing front tooth?",
+        answer:
+          "The most budget-friendly short-term option is a dental flipper, a removable acrylic prosthetic. It fills the gap for a low cost but is strictly cosmetic — it cannot handle real biting forces and does not prevent bone loss, so it is best treated as a stepping stone toward a permanent solution.",
+      },
+      {
+        question: "Will people be able to tell that my front tooth is an implant?",
+        answer:
+          "A well-executed front-tooth implant is designed to be indistinguishable from a natural tooth. High-quality ceramic crowns are custom-shaded to match the translucency and color of your surrounding enamel, and careful surgical technique preserves the natural gum contour around the crown.",
+      },
+      {
+        question: "What happens if I don't replace my missing front tooth?",
+        answer:
+          "Leaving the gap leads to progressive bone loss and shifting of the remaining teeth. Without a root to stimulate it, the jawbone resorbs, which can eventually create a sunken facial appearance. Replacing the tooth — ideally with an implant — preserves your dental alignment and facial structure.",
+      },
+      {
+        question: "How do I clean a replacement front tooth?",
+        answer:
+          "An implant is cared for exactly like a natural tooth: brush twice daily and floss normally around the crown. A dental bridge, by contrast, requires special floss threaders to clean trapped debris underneath the prosthetic, making the implant the easier option to maintain long term.",
+      },
+    ],
+    cta: {
+      heading: "Take the First Step Toward Your New Smile",
+      body:
+        "If you have lost a front tooth — or know one is failing — Dr. Antipov offers expert surgical evaluation and permanent, natural-looking restoration at his Roseville office. Schedule a consultation to get a 3D scan, a clear diagnosis, and a personalized plan for restoring your smile.",
+    },
+  },
+  {
     slug: "single-tooth-implant-vs-dental-bridge-real-cost",
     title: "Single Tooth Implant vs. Dental Bridge: Calculating the Real Cost",
     metaTitle: "Single Tooth Implant vs. Dental Bridge: The Real Cost",

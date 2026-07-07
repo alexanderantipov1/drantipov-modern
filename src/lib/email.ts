@@ -242,7 +242,7 @@ export async function sendConsultationConfirmation(
                     }">${
         process.env.CONTACT_EMAIL || "info@galleriaoms.com"
       }</a><br>
-                    🏥 Office: 911 Reserve Dr Suite 150, Roseville, CA 95678
+                    🏥 Office: 911 Reserve Dr Suite 100, Roseville, CA 95678
                   </p>
                 </div>
               </div>

@@ -13,7 +13,7 @@ import { siteConfig } from "@/constants/siteConfig";
 const SITE_URL = siteConfig.url;
 const OFFICE_PHONE = "(916) 783-2110";
 const OFFICE_PHONE_HREF = "tel:+19167832110";
-const OFFICE_ADDRESS = "911 Reserve Dr, Suite 150, Roseville, CA 95678";
+const OFFICE_ADDRESS = "911 Reserve Dr, Suite 100, Roseville, CA 95678";
 
 export const metadata: Metadata = {
   title: {

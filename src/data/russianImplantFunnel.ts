@@ -2,7 +2,7 @@ export const siteUrl = "https://www.drantipov.com";
 export const officePhone = "(916) 783-2110";
 export const officePhoneHref = "tel:9167832110";
 export const officeEmail = "info@galleriaoms.com";
-export const officeAddress = "911 Reserve Dr, Suite 150, Roseville, CA 95678";
+export const officeAddress = "911 Reserve Dr, Suite 100, Roseville, CA 95678";
 
 export interface RussianFAQ {
   question: string;
@@ -702,7 +702,7 @@ export function getRussianFunnelStructuredData(page: RussianCityPage, path: stri
         "Dental implant consultations for All-on-4, All-on-6, zygomatic implants and bone grafting with Dr. Alexander Antipov in Roseville, California.",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "911 Reserve Dr, Suite 150",
+        streetAddress: "911 Reserve Dr, Suite 100",
         addressLocality: "Roseville",
         addressRegion: "CA",
         postalCode: "95678",

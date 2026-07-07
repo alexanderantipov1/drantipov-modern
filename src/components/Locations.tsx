@@ -6,7 +6,7 @@ import Image from "next/image";
 const locations = [
   {
     name: "Roseville, CA",
-    address: "911 Reserve Dr, Suite 150\nRoseville, CA 95678",
+    address: "911 Reserve Dr, Suite 100\nRoseville, CA 95678",
     phone: "(916) 783-2110",
     image: "/images/locations/roseville-c84b8e17.jpg",
     primary: true,

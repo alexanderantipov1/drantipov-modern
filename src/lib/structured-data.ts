@@ -74,7 +74,7 @@ export function getOrganizationSchema() {
         image: `${siteConfig.url}/images/dr-kahwach-v4.jpg`,
       },
     ],
-    hasMap: "https://maps.google.com/?q=911+Reserve+Dr+Suite+150+Roseville+CA+95678",
+    hasMap: "https://maps.google.com/?q=911+Reserve+Dr+Suite+100+Roseville+CA+95678",
   }
 }
 

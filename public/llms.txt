@@ -55,7 +55,7 @@ Machine-readable JSON feed for agents: https://www.drantipov.com/api/llms (organ
 
 ### Galleria Oral & Facial Surgery
 - Role: Surgical practice — oral & maxillofacial surgery
-- Address: 911 Reserve Drive, Suite 150, Roseville, CA 95678
+- Address: 911 Reserve Drive, Suite 100, Roseville, CA 95678
 - Phone: (916) 783-2110
 - Fax: (916) 783-2111
 - Email: info@galleriaoms.com

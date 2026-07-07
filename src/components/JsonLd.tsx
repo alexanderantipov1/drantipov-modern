@@ -21,7 +21,7 @@ export default function JsonLd() {
     paymentAccepted: "Cash, Credit Card, Financing, CareCredit, HSA, FSA, Insurance",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "911 Reserve Dr, Suite 150",
+      streetAddress: "911 Reserve Dr, Suite 100",
       addressLocality: "Roseville",
       addressRegion: "CA",
       postalCode: "95678",

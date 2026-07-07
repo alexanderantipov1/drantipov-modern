@@ -37,7 +37,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-bold text-dark">Visit Us</h4>
                   <p className="text-muted mt-1">
-                    911 Reserve Dr, Suite 150
+                    911 Reserve Dr, Suite 100
                     <br />
                     Roseville, CA 95678
                   </p>

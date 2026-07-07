@@ -260,13 +260,13 @@ export default function Footer() {
               San Francisco, Reno, and all of Northern California.
             </p>
             <a
-              href="https://maps.google.com/?q=911+Reserve+Dr+Ste+150,+Roseville,+CA+95678"
+              href="https://maps.google.com/?q=911+Reserve+Dr+Ste+100,+Roseville,+CA+95678"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-flex items-start gap-2 text-sm text-white/70 hover:text-primary transition-colors"
             >
               <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
-              <span>911 Reserve Dr, Ste 150, Roseville, CA 95678</span>
+              <span>911 Reserve Dr, Ste 100, Roseville, CA 95678</span>
             </a>
           </div>
           <div className="lg:text-right">

@@ -425,7 +425,7 @@ export default function DentalImplantAftercarePost() {
                 <p className="text-neutral-700 leading-relaxed mb-4">
                   <strong>Galleria Oral &amp; Maxillofacial Surgery</strong>
                   <br />
-                  911 Reserve Dr Suite 150, Roseville, CA 95678
+                  911 Reserve Dr Suite 100, Roseville, CA 95678
                   <br />
                   Телефон: <a href="tel:916-783-2110" className="text-primary-600 hover:underline">916-783-2110</a>
                 </p>

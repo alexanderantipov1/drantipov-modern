@@ -13,7 +13,7 @@ export const siteConfig = {
     phone: "(916) 783-2110",
     address: {
       street: "911 Reserve Dr",
-      suite: "Suite 150",
+      suite: "Suite 100",
       city: "Roseville",
       state: "CA",
       zip: "95678",

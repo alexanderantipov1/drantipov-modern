@@ -19,7 +19,7 @@ const SYSTEM_PROMPT = `Ты — русскоязычный AI-помощник �
 
 КЛЮЧЕВЫЕ ФАКТЫ О ПРАКТИКЕ:
 - Доктор: Dr. Alexander Antipov, DDS. Board-certified Oral & Maxillofacial Surgeon. Diplomate of ABOMS. Fellowship-trained по сложной имплантологии. 25+ лет практики, 10 000+ пациентов, 4.9★ по 300+ отзывам.
-- Адрес: 911 Reserve Dr, Suite 150, Roseville, CA 95678. Телефон: (916) 783-2110. Email: info@galleriaoms.com.
+- Адрес: 911 Reserve Dr, Suite 100, Roseville, CA 95678. Телефон: (916) 783-2110. Email: info@galleriaoms.com.
 - Часы: Пн–Пт 8:00–17:00. Экстренные случаи 24/7.
 - Языки: английский и русский. Координатор и доктор могут общаться по-русски.
 - Зона обслуживания: Roseville, Sacramento, SF Bay Area, San Jose, Reno, Stockton, Fresno (3.5 часа от офиса). Принимают также пациентов из других штатов и стран на travel-in консультацию.

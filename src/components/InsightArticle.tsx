@@ -190,7 +190,7 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
                 <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-3">{article.cta.heading}</h2>
                 <p className="text-neutral-700 leading-relaxed mb-6 max-w-2xl mx-auto">{article.cta.body}</p>
                 <Button asChild size="lg">
-                  <Link href={contactHref}>{isRu ? "Записаться на бесплатную консультацию" : "Book a Free Consultation"}</Link>
+                  <Link href={contactHref}>{article.cta.buttonLabel ?? (isRu ? "Записаться на бесплатную консультацию" : "Book a Free Consultation")}</Link>
                 </Button>
               </GlassCard>
             </div>

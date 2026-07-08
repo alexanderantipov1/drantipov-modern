@@ -42,7 +42,7 @@ export interface RevisionArticle {
   tldr: string[]
   sections: ArticleSection[]
   faqs: ArticleFAQ[]
-  cta: { heading: string; body: string }
+  cta: { heading: string; body: string; buttonLabel?: string }
 }
 
 const SITE = "https://www.drantipov.com"

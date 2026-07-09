@@ -51,7 +51,7 @@ export default function ZygomaticImplantsPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/zygomatic-implants#article","headline":"Zygomatic Implants: When You Need Them and How They Work","description":"Comprehensive guide to zygomatic implants for severe upper-jaw bone loss \\u2014 indications, procedure, recovery, candidacy, and cost.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/zygomatic-implants","datePublished":"2026-04-28","dateModified":"2026-04-28","image":["https://www.drantipov.com/images/blog/2026-04-28/zygomatic-implants.jpg"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/zygomatic-implants"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between zygomatic implants and conventional implants?","acceptedAnswer":{"@type":"Answer","text":"Conventional dental implants are placed in the 8\\u201313 mm-tall alveolar ridge of the jaw. Zygomatic implants are long (30\\u201355 mm) implants anchored in the zygoma \\u2014 the cheekbone. They are used when the upper jaw is simply not there: too thin, or too resorbed. The cheekbone is much denser and does not atrophy, so it provides reliable support even in the most complex cases."}},{"@type":"Question","name":"Can I get temporary teeth the same day?","acceptedAnswer":{"@type":"Answer","text":"Yes, in most cases. Zygomatic implants are designed for immediate loading \\u2014 high primary stability allows a temporary prosthesis to be secured right away. The final restoration is fabricated after 4\\u20136 months of healing."}},{"@type":"Question","name":"Does it hurt? What anesthesia is used?","acceptedAnswer":{"@type":"Answer","text":"Surgery is performed under IV sedation or general anesthesia. You will have no memory of the procedure. Post-operative discomfort is typically moderate and well controlled with standard pain medication for 3\\u20135 days."}},{"@type":"Question","name":"Who is not a candidate for zygomatic implants?","acceptedAnswer":{"@type":"Answer","text":"Active sinusitis, severe systemic conditions, uncontrolled diabetes, and active high-dose bisphosphonate therapy are all contraindications. Smoking significantly increases the risk of failure. The full list of contraindications is discussed at consultation after a CT scan."}},{"@type":"Question","name":"How much does it cost?","acceptedAnswer":{"@type":"Answer","text":"Zygomatic implants are more expensive than conventional implants, but in most cases the total cost is lower \\u2014 and the timeline is much shorter \\u2014 than staged bone grafting + sinus lift + conventional implants. Exact pricing is determined after a CT scan, with most full-arch zygomatic cases falling in the \$35,000\\u2013\$60,000 range. Financing from \$99/month is available."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.drantipov.com"},{"@type":"ListItem","position":2,"name":"For Patients","item":"https://www.drantipov.com/for-patients"},{"@type":"ListItem","position":3,"name":"Insights","item":"https://www.drantipov.com/for-patients/insights"},{"@type":"ListItem","position":4,"name":"Zygomatic Implants: When You Need Them and How They Work","item":"https://www.drantipov.com/for-patients/insights/zygomatic-implants"}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/zygomatic-implants#article","headline":"Zygomatic Implants: When You Need Them and How They Work","description":"Comprehensive guide to zygomatic implants for severe upper-jaw bone loss \\u2014 indications, procedure, recovery, candidacy, and cost.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/zygomatic-implants","datePublished":"2026-04-28","dateModified":"2026-04-28","image":["https://www.drantipov.com/images/blog/2026-04-28/zygomatic-implants.jpg"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/zygomatic-implants"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between zygomatic implants and conventional implants?","acceptedAnswer":{"@type":"Answer","text":"Conventional dental implants are placed in the 8\\u201313 mm-tall alveolar ridge of the jaw. Zygomatic implants are long (30\\u201355 mm) implants anchored in the zygoma \\u2014 the cheekbone. They are used when the upper jaw is simply not there: too thin, or too resorbed. The cheekbone is much denser and does not atrophy, so it provides reliable support even in the most complex cases."}},{"@type":"Question","name":"Can I get temporary teeth the same day?","acceptedAnswer":{"@type":"Answer","text":"Yes, in most cases. Zygomatic implants are designed for immediate loading \\u2014 high primary stability allows a temporary prosthesis to be secured right away. The final restoration is fabricated after 4\\u20136 months of healing."}},{"@type":"Question","name":"Does it hurt? What anesthesia is used?","acceptedAnswer":{"@type":"Answer","text":"Surgery is performed under IV sedation or general anesthesia. You will have no memory of the procedure. Post-operative discomfort is typically moderate and well controlled with standard pain medication for 3\\u20135 days."}},{"@type":"Question","name":"Who is not a candidate for zygomatic implants?","acceptedAnswer":{"@type":"Answer","text":"Active sinusitis, severe systemic conditions, uncontrolled diabetes, and active high-dose bisphosphonate therapy are all contraindications. Smoking significantly increases the risk of failure. The full list of contraindications is discussed at consultation after a CT scan."}},{"@type":"Question","name":"How much does it cost?","acceptedAnswer":{"@type":"Answer","text":"Zygomatic implants are more expensive than conventional implants, but in most cases the total cost is lower \\u2014 and the timeline is much shorter \\u2014 than staged bone grafting + sinus lift + conventional implants. Exact pricing is determined after a CT scan, with most full-arch zygomatic cases falling in the \$35,000\\u2013\$60,000 range. Financing from \$99/month is available."}},{"@type":"Question","name":"What is recovery like after zygomatic implant surgery?","acceptedAnswer":{"@type":"Answer","text":"Most patients experience moderate swelling and discomfort for the first several days, managed with standard pain medication. A soft-food diet, good oral hygiene, and follow-up visits support healing, with the final restoration placed after about 4-6 months of integration."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.drantipov.com"},{"@type":"ListItem","position":2,"name":"For Patients","item":"https://www.drantipov.com/for-patients"},{"@type":"ListItem","position":3,"name":"Insights","item":"https://www.drantipov.com/for-patients/insights"},{"@type":"ListItem","position":4,"name":"Zygomatic Implants: When You Need Them and How They Work","item":"https://www.drantipov.com/for-patients/insights/zygomatic-implants"}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -110,10 +110,15 @@ export default function ZygomaticImplantsPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                If you have been told that conventional dental implants are not possible because there is
-                not enough bone in your upper jaw, zygomatic implants may be the solution. This is not a
-                &ldquo;better alternative&rdquo; &mdash; it is a distinct approach for complex cases where standard
-                protocols and bone grafting fall short.
+                Zygomatic implants are long implants anchored in the cheekbone (zygoma) that make fixed teeth
+                possible when there is not enough bone in the upper jaw for conventional implants. At the
+                practice of Dr. Alexander Antipov, a board-certified oral &amp; maxillofacial surgeon in
+                Roseville, CA, they are used as a distinct approach for complex cases where standard protocols
+                and bone grafting fall short &mdash; not simply a &ldquo;better alternative.&rdquo;
+              </p>
+              <p className="text-neutral-500 italic mb-8">
+                This article is for general education and is not a substitute for a personalized evaluation by
+                a qualified oral surgeon.
               </p>
 
               {/* TL;DR */}
@@ -145,6 +150,40 @@ export default function ZygomaticImplantsPost() {
                 zygomatic implants combined with several conventional implants in the front of the jaw
                 provide the foundation for a complete fixed prosthesis.
               </p>
+
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="border-b border-neutral-200 py-3 px-4">Feature</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">Conventional Implant</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">Zygomatic Implant</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>Length</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">8&ndash;13&nbsp;mm</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">30&ndash;55&nbsp;mm</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>Anchor site</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Alveolar ridge of the jaw</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Zygomatic bone (cheekbone)</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>Affected by upper-jaw atrophy</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Yes &mdash; needs adequate ridge bone</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">No &mdash; cheekbone does not atrophy</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>Typical use</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Routine implant cases</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Severe upper-jaw bone loss</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 When Zygomatic Implants Are the Right Choice
@@ -291,6 +330,17 @@ export default function ZygomaticImplantsPost() {
                     sinus lift + conventional implants. Exact pricing is determined after a CT scan, with
                     most full-arch zygomatic cases falling in the $35,000&ndash;$60,000 range. Financing from
                     $99/month is available.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">
+                    What is recovery like after zygomatic implant surgery?
+                  </h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Most patients experience moderate swelling and discomfort for the first several days,
+                    managed with standard pain medication. A soft-food diet, good oral hygiene, and follow-up
+                    visits support healing, with the final restoration placed after about 4&ndash;6 months of
+                    integration.
                   </p>
                 </div>
               </div>

@@ -109,9 +109,16 @@ export default function BoneGraftingForDentalImplantsPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Dental implants provide an effective solution for replacing missing teeth, but successful
-                placement depends heavily on the jawbone&rsquo;s density and quality. This is where bone
-                grafting becomes essential &mdash; offering the support needed for optimal implant integration.
+                Bone grafting rebuilds jawbone volume so a dental implant has a stable foundation, and it is
+                often recommended when bone has deteriorated after tooth loss, trauma, or periodontal disease,
+                explains Dr. Alexander Antipov, a board-certified oral &amp; maxillofacial surgeon in
+                Roseville, CA. Dental implants provide an effective solution for replacing missing teeth, but
+                successful placement depends heavily on the jawbone&rsquo;s density and quality &mdash; which is
+                where grafting offers the support needed for optimal implant integration.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon for a
+                personalized recommendation.
               </p>
 
               {/* TL;DR */}
@@ -161,6 +168,40 @@ export default function BoneGraftingForDentalImplantsPost() {
                   for availability and reduced risk of disease transmission.
                 </li>
               </ul>
+
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="border-b border-neutral-200 py-3 px-4">Graft Type</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">Source</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">Notable Point</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Autograft</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Patient&rsquo;s own body (e.g., hip or chin)</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Often offers strong integration since the body recognizes its own bone.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Allograft</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Donor bone, processed for safety</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Commonly used for convenience and effectiveness.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Xenograft</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Another species (often bovine), treated</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Treated to ensure it is safe for human use.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Synthetic</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Man-made materials that mimic bone</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Chosen for availability and reduced risk of disease transmission.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Why Is Bone Grafting Necessary for Dental Implants?

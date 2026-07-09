@@ -14,6 +14,19 @@ function renderSegments(para: Para, keyPrefix: string) {
   if (typeof para === "string") return para
   return para.map((seg, i) => {
     if (typeof seg === "string") return <span key={`${keyPrefix}-${i}`}>{seg}</span>
+    if (seg.href.startsWith("http")) {
+      return (
+        <a
+          key={`${keyPrefix}-${i}`}
+          href={seg.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary-600 underline"
+        >
+          {seg.text}
+        </a>
+      )
+    }
     return (
       <Link key={`${keyPrefix}-${i}`} href={seg.href} className="text-primary-600 underline">
         {seg.text}
@@ -96,7 +109,10 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
 
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
               {isRu ? "Медицинская проверка: " : "Medically reviewed by "}
-              <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> —
+              <Link href={isRu ? "/ru/about" : "/about"} className="not-italic font-bold text-neutral-900 underline decoration-primary-300 hover:decoration-primary-600">
+                Dr. Alexander V. Antipov, DDS
+              </Link>{" "}
+              —
               {isRu
                 ? " сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS) · лицензия штата Калифорния №50724"
                 : " Board-Certified Oral & Maxillofacial Surgeon · Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS) · California Dental License #50724"}
@@ -117,6 +133,10 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
                 {renderSegments(article.intro, "intro")}
               </p>
+
+              {article.disclaimer && (
+                <p className="italic text-neutral-600 text-base leading-relaxed mb-8">{article.disclaimer}</p>
+              )}
 
               {/* TL;DR */}
               <GlassCard className="my-10 p-6">

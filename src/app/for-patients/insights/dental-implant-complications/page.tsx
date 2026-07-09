@@ -6,7 +6,40 @@ import { RelatedArticles } from "@/components/RelatedArticles"
 import { Calendar, ArrowLeft, Clock, ShieldAlert } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
-import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
+import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/structured-data"
+
+const faqs = [
+  {
+    question: "How common are dental implant complications?",
+    answer:
+      "Dental implants have an excellent success rate of over 95%. Like any surgical procedure they carry some risk, but most complications are preventable or manageable with proper planning, an experienced surgeon, and diligent aftercare.",
+  },
+  {
+    question: "What are the signs of an infected dental implant?",
+    answer:
+      "Warning signs of infection include persistent pain or swelling, fever or chills, pus or unusual discharge, and red or inflamed gums. Maintaining excellent oral hygiene, following post-operative instructions, and taking prescribed antibiotics as directed help prevent infection.",
+  },
+  {
+    question: "Can a failed dental implant be replaced?",
+    answer:
+      "Yes. While implant failure is rare, a failed implant can typically be removed and replaced after the site heals, often with bone grafting to improve the chance of success the second time.",
+  },
+  {
+    question: "How can I reduce the risk of dental implant complications?",
+    answer:
+      "Choose an experienced, board-certified surgeon, follow pre-operative instructions, maintain excellent oral hygiene, avoid smoking, attend all follow-up appointments, and communicate openly about any unusual symptoms. These steps address the factors most within your control.",
+  },
+  {
+    question: "Are there implant options for people with metal allergies?",
+    answer:
+      "Yes. Allergic reactions to titanium are extremely rare, but for patients with metal sensitivities, alternative materials such as zirconia implants are available.",
+  },
+  {
+    question: "What should I do if I notice a problem after implant surgery?",
+    answer:
+      "Report any unusual symptoms to your dental team immediately. Early intervention can prevent minor issues from becoming major problems, and regular monitoring allows any complication to be detected and treated promptly.",
+  },
+]
 
 export const metadata: Metadata = {
   title: "Dental Implant Complications — Risks & Management",
@@ -52,12 +85,12 @@ export default function DentalImplantComplicationsPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={structuredDataScript(getBreadcrumbSchema([
+        dangerouslySetInnerHTML={structuredDataScript([getBreadcrumbSchema([
           { name: "Home", url: "https://www.drantipov.com" },
           { name: "For Patients", url: "https://www.drantipov.com/for-patients" },
           { name: "Insights", url: "https://www.drantipov.com/for-patients/insights" },
           { name: "Dental Implant Complications: Understanding Risks and How to Manage Them", url: "https://www.drantipov.com/for-patients/insights/dental-implant-complications" },
-        ]))}
+        ]), getFAQSchema(faqs)])}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -113,6 +146,18 @@ export default function DentalImplantComplicationsPost() {
 
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
+              <p className="text-xl text-neutral-700 leading-relaxed mb-8">
+                Dental implants have an excellent success rate of over 95%, but like any surgical procedure
+                they carry some risks &mdash; including infection, implant failure, and nerve or sinus
+                complications, explains Dr. Alexander V. Antipov, DDS, a board-certified oral &amp;
+                maxillofacial surgeon in Roseville, CA. Understanding these potential complications helps you
+                make informed decisions, recognize warning signs early, and take the steps that keep risk low.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon for a
+                personalized recommendation.
+              </p>
+
               <GlassCard className="p-6 mb-8 bg-blue-50 border-blue-200">
                 <div className="flex items-start gap-4">
                   <ShieldAlert className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
@@ -130,6 +175,55 @@ export default function DentalImplantComplicationsPost() {
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 9 Possible Dental Implant Complications
               </h2>
+
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="border-b border-neutral-200 py-3 px-4">Complication</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">Prevention / Management</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Infection</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Excellent oral hygiene, following post-op instructions, and prescribed antibiotics.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Implant failure</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Can be removed and replaced after healing, often with bone grafting.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Nerve damage</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Advanced 3D imaging and careful surgical planning minimize the risk.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Sinus complications</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Sinus lift procedures and CT-guided planning ensure safe placement.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Gum recession</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Soft tissue grafting can restore gum coverage and improve aesthetics.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Bite alignment issues</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Careful planning, proper crown fabrication, and follow-up adjustments.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Allergic reactions</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Alternative materials such as zirconia implants for metal sensitivities.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Systemic health complications</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Discuss all conditions and medications; many can be managed for treatment.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Psychological considerations</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Open communication with your dental team and support throughout care.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
               <div className="space-y-8 my-8">
                 <GlassCard className="p-6">
@@ -379,6 +473,18 @@ export default function DentalImplantComplicationsPost() {
                 planning, and diligent aftercare, most patients enjoy successful outcomes and improved quality of life
                 for decades to come.
               </p>
+
+              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+                Frequently Asked Questions
+              </h2>
+              <div className="space-y-6 my-8">
+                {faqs.map((faq) => (
+                  <div key={faq.question}>
+                    <h3 className="text-xl font-semibold text-neutral-900 mb-3">{faq.question}</h3>
+                    <p className="text-neutral-700 leading-relaxed">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
             </div>
 
             {/* Sources / Authoritative References */}

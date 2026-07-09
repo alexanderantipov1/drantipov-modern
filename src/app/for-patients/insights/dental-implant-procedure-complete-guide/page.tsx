@@ -108,10 +108,15 @@ export default function DentalImplantProcedureGuidePost() {
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
                 A dental implant procedure replaces a missing tooth with a titanium or zirconia post that
-                fuses with your jawbone, then supports a permanent crown, bridge, or full arch of teeth.
-                It&rsquo;s the modern standard for tooth replacement &mdash; designed to look, feel, and
-                function like your natural tooth. Most patients find the procedure far less involved than
-                they expected. Here&rsquo;s exactly what happens, step by step.
+                fuses with your jawbone, then supports a permanent crown, bridge, or full arch of teeth,
+                explains Dr. Alexander Antipov, a board-certified oral &amp; maxillofacial surgeon in
+                Roseville, CA. It&rsquo;s the modern standard for tooth replacement &mdash; designed to look,
+                feel, and function like your natural tooth. Most patients find the procedure far less involved
+                than they expected. Here&rsquo;s exactly what happens, step by step.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon for a
+                personalized recommendation.
               </p>
 
               {/* TL;DR */}

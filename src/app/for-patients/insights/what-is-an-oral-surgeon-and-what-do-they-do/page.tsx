@@ -108,8 +108,14 @@ export default function WhatIsAnOralSurgeonPost() {
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
                 An oral and maxillofacial surgeon (OMS or OMFS) is a dental specialist trained in surgical
-                procedures of the mouth, jaw, face, and neck. Oral surgeons combine dental and surgical
-                expertise to treat conditions that go beyond what general dentists handle.
+                procedures of the mouth, jaw, face, and neck &mdash; treating conditions that go beyond what
+                general dentists handle. Dr. Alexander Antipov is a board-certified oral &amp; maxillofacial
+                surgeon in Roseville, CA, and this guide explains what oral surgeons do, how they are trained,
+                and when to see one.
+              </p>
+              <p className="text-neutral-500 italic mb-8">
+                This article is for general education and is not a substitute for a personalized evaluation by
+                a qualified oral surgeon.
               </p>
 
               {/* TL;DR */}
@@ -143,11 +149,30 @@ export default function WhatIsAnOralSurgeonPost() {
               <p className="text-neutral-700 leading-relaxed mb-6">
                 The path is one of the longest in healthcare:
               </p>
-              <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
-                <li>&mdash; <strong>4 years undergraduate</strong> &mdash; typically pre-med or biology.</li>
-                <li>&mdash; <strong>4 years dental school</strong> &mdash; DDS or DMD degree.</li>
-                <li>&mdash; <strong>4&ndash;6 years hospital-based residency</strong> in oral and maxillofacial surgery &mdash; often combined with a medical degree (MD).</li>
-              </ul>
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="border-b border-neutral-200 py-3 px-4">Stage</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>4 years undergraduate</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Typically pre-med or biology.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>4 years dental school</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">DDS or DMD degree.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>4&ndash;6 years hospital-based residency</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">In oral and maxillofacial surgery &mdash; often combined with a medical degree (MD).</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 <strong>Total training: 12&ndash;14 years after high school</strong>, often longer than most medical
                 specialties. Residency training includes:

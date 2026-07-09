@@ -103,12 +103,17 @@ export default function HybridVsFixedPost() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                When all the teeth in an arch are missing &mdash; or about to be removed &mdash;
-                implant-supported solutions outperform traditional dentures across the board. The two leading
-                options are <strong>hybrid dentures</strong> (implant-retained overdentures) and
-                <strong> fixed implant bridges</strong> (the All-on-4 / All-on-X family). Both rely on
-                implants and both restore chewing, speech, and confidence &mdash; but they differ in ways that
-                matter to your daily life.
+                When all the teeth in an arch are missing &mdash; or about to be removed &mdash; the two
+                leading implant options are <strong>hybrid dentures</strong> (implant-retained overdentures)
+                and <strong> fixed implant bridges</strong> (the All-on-4 / All-on-X family), explains Dr.
+                Alexander Antipov, a board-certified oral &amp; maxillofacial surgeon in Roseville, CA. Both
+                rely on implants and outperform traditional dentures across the board &mdash; but they differ
+                in ways that matter to your daily life: a fixed bridge feels closest to natural teeth, while a
+                removable hybrid costs less upfront.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon for a
+                recommendation tailored to your case.
               </p>
 
               <GlassCard className="my-10 p-6">
@@ -244,6 +249,22 @@ export default function HybridVsFixedPost() {
                   <p className="text-neutral-700 leading-relaxed">
                     Often, yes. A hybrid can sometimes be upgraded to a fixed bridge as additional implants are
                     placed &mdash; so your initial choice is the best fit for now, not a permanent commitment.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">Which option feels more natural?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    A fixed implant bridge feels closest to natural teeth because it stays in place permanently
+                    and is removed only by your dentist. A hybrid denture is stable and secure, but it is
+                    removable by the patient and replaces lost gum tissue as well as teeth.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">Which option is easier to maintain?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    A hybrid denture is taken out for daily cleaning, which some patients find simpler. A fixed
+                    bridge is cleaned in place with a water flosser and interdental brushes and is professionally
+                    maintained by your dentist.
                   </p>
                 </div>
               </div>

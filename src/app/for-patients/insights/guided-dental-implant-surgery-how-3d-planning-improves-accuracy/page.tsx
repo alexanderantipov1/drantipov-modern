@@ -107,10 +107,15 @@ export default function GuidedDentalImplantSurgeryPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Modern implant dentistry has changed dramatically in the last decade, and guided dental
-                implant surgery is one of the biggest upgrades. Instead of relying only on freehand
-                placement, guided surgery uses 3D imaging and digital planning to map the safest, most
-                precise implant position before your procedure even starts.
+                Guided dental implant surgery uses 3D imaging and a custom surgical guide to place implants in
+                a precise, pre-planned position, explains Dr. Alexander Antipov, a board-certified oral &amp;
+                maxillofacial surgeon in Roseville, CA. Instead of relying only on freehand placement, this
+                approach maps the safest, most accurate implant position before your procedure even starts,
+                one of the biggest upgrades in modern implant dentistry over the last decade.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon for a
+                recommendation tailored to your case.
               </p>
 
               {/* TL;DR */}
@@ -146,11 +151,21 @@ export default function GuidedDentalImplantSurgeryPost() {
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Guided planning typically combines:
               </p>
-              <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
-                <li>&mdash; <strong>CBCT scans (3D X-ray imaging):</strong> Shows bone volume, density patterns, nerve pathways, and sinus anatomy.</li>
-                <li>&mdash; <strong>Intraoral scans or digital impressions:</strong> Captures the exact shape of your teeth and gums.</li>
-                <li>&mdash; <strong>Virtual planning software:</strong> Aligns the scan data so implant placement is based on bone anatomy and the final tooth design.</li>
-              </ul>
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="border-b-2 border-neutral-200">
+                      <th className="py-3 pr-4 font-semibold text-neutral-900">Planning input</th>
+                      <th className="py-3 font-semibold text-neutral-900">What it captures</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-neutral-700">
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">CBCT scan (3D X-ray)</td><td className="py-3">Bone volume, density patterns, nerve pathways, and sinus anatomy</td></tr>
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">Intraoral scans / digital impressions</td><td className="py-3">The exact shape of your teeth and gums</td></tr>
+                    <tr><td className="py-3 pr-4">Virtual planning software</td><td className="py-3">Aligns scan data so placement follows bone anatomy and final tooth design</td></tr>
+                  </tbody>
+                </table>
+              </div>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 This matters because implant success is not just about &ldquo;putting a post in bone.&rdquo;
                 It&rsquo;s about placing implants where they can support the final teeth comfortably, look

@@ -108,9 +108,14 @@ export default function SinusLiftPost() {
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
                 A sinus lift for dental implants is a surgical procedure that enhances bone volume in the
-                upper jaw, enabling successful implant placement. When there is not enough bone height near
-                the molars and premolars, a sinus lift creates a stronger foundation &mdash; improving
-                predictability and long-term results.
+                upper jaw, enabling successful implant placement when there is not enough bone height near the
+                molars and premolars. At the practice of Dr. Alexander Antipov, a board-certified oral &amp;
+                maxillofacial surgeon in Roseville, CA, a sinus lift is used to create a stronger foundation
+                that improves the predictability and long-term results of upper-jaw implants.
+              </p>
+              <p className="text-neutral-500 italic mb-8">
+                This article is for general education and is not a substitute for a personalized evaluation by
+                a qualified oral surgeon.
               </p>
 
               {/* TL;DR */}
@@ -135,6 +140,39 @@ export default function SinusLiftPost() {
                 membrane is gently elevated and bone graft material is placed beneath it to build adequate
                 bone height for implant support.
               </p>
+
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="border-b border-neutral-200 py-3 px-4">Aspect</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">What to Expect</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>What it does</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Increases bone volume in the upper jaw near the maxillary sinuses.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>When it is recommended</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">When there is not enough bone height to support an implant safely.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>How it works</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">The sinus membrane is gently elevated and bone graft material is placed beneath it.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>Procedure time</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Usually 1&ndash;2 hours, often with local anesthesia.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>Healing</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Several months as the graft integrates before implants are placed.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 How Is a Sinus Lift Performed?

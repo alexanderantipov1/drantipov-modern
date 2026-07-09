@@ -107,10 +107,16 @@ export default function SedationOptionsDentalImplantSurgeryPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Sedation improves patient comfort, but it does not replace surgical precision. Choosing the
-                correct sedation method depends on your medical history, anxiety level, and the complexity
-                of the procedure. Understanding your options helps you walk into surgery confident and
-                relaxed.
+                Dental implant surgery can be performed under local anesthesia, oral sedation, IV sedation, or
+                general anesthesia &mdash; and the right choice depends on your anxiety level, medical history,
+                and the complexity of the procedure, explains Dr. Alexander Antipov, a board-certified oral
+                &amp; maxillofacial surgeon in Roseville, CA. Sedation improves patient comfort, but it does
+                not replace surgical precision, so understanding your options helps you walk into surgery
+                confident and relaxed.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon for a
+                recommendation tailored to your case.
               </p>
 
               {/* TL;DR */}
@@ -140,6 +146,23 @@ export default function SedationOptionsDentalImplantSurgeryPost() {
               <p className="text-neutral-700 leading-relaxed mb-6">
                 It is appropriate for simple procedures and patients with low anxiety.
               </p>
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="border-b-2 border-neutral-200">
+                      <th className="py-3 pr-4 font-semibold text-neutral-900">Option</th>
+                      <th className="py-3 pr-4 font-semibold text-neutral-900">Consciousness</th>
+                      <th className="py-3 font-semibold text-neutral-900">Best for</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-neutral-700">
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">Local anesthesia</td><td className="py-3 pr-4">Fully conscious</td><td className="py-3">Simple cases, low anxiety</td></tr>
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">Oral sedation</td><td className="py-3 pr-4">Relaxed, awake</td><td className="py-3">Mild anxiety (variable effect)</td></tr>
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">IV sedation</td><td className="py-3 pr-4">Reduced awareness, adjustable</td><td className="py-3">Moderate anxiety, longer procedures</td></tr>
+                    <tr><td className="py-3 pr-4">General anesthesia</td><td className="py-3 pr-4">Fully unconscious</td><td className="py-3">Extensive surgery, severe anxiety, medical necessity</td></tr>
+                  </tbody>
+                </table>
+              </div>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Oral Sedation
@@ -275,6 +298,17 @@ export default function SedationOptionsDentalImplantSurgeryPost() {
                     The right choice depends on your anxiety level, the complexity of the procedure, your
                     medical history, and personal preference. At your consultation we review all of these
                     factors and recommend the safest, most comfortable approach for your situation.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">
+                    Is IV sedation safe for implant surgery?
+                  </h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Yes, when performed correctly. IV sedation delivers medication directly into the
+                    bloodstream for rapid onset and adjustable depth, and it requires advanced monitoring and
+                    trained personnel to keep the procedure safe.
                   </p>
                 </div>
               </div>

@@ -6,7 +6,7 @@ import { RelatedArticles } from "@/components/RelatedArticles"
 import { Calendar, ArrowLeft, Clock, Heart } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
-import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
+import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
   title: "The Hidden Emotional Toll of Tooth Loss",
@@ -52,12 +52,22 @@ export default function ToothLossEmotionalTollPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={structuredDataScript(getBreadcrumbSchema([
-          { name: "Home", url: "https://www.drantipov.com" },
-          { name: "For Patients", url: "https://www.drantipov.com/for-patients" },
-          { name: "Insights", url: "https://www.drantipov.com/for-patients/insights" },
-          { name: "The Hidden Emotional Toll of Tooth Loss: Understanding Patient Struggles", url: "https://www.drantipov.com/for-patients/insights/tooth-lost-emotional-toll" },
-        ]))}
+        dangerouslySetInnerHTML={structuredDataScript([
+          getBreadcrumbSchema([
+            { name: "Home", url: "https://www.drantipov.com" },
+            { name: "For Patients", url: "https://www.drantipov.com/for-patients" },
+            { name: "Insights", url: "https://www.drantipov.com/for-patients/insights" },
+            { name: "The Hidden Emotional Toll of Tooth Loss: Understanding Patient Struggles", url: "https://www.drantipov.com/for-patients/insights/tooth-lost-emotional-toll" },
+          ]),
+          getFAQSchema([
+            { question: "What are the emotional stages of tooth loss?", answer: "Research from the University of Sheffield describes four emotional stages: initial shock and grief, emotional turmoil and self-consciousness, hope through prosthetic solutions, and adaptation with disclosure management. Understanding these stages helps patients and providers respond with more compassion." },
+            { question: "Can tooth loss affect mental health?", answer: "Yes. Tooth loss can lower self-esteem, increase social anxiety, and lead to withdrawal from activities, which may contribute to depression and loneliness. Many patients report feeling older and less confident in professional and social settings." },
+            { question: "Why is tooth loss so emotionally distressing?", answer: "Unlike many health conditions that can be hidden, missing teeth are often immediately noticeable during conversation and smiling. This visible nature, combined with effects on speech and diet, makes tooth loss particularly distressing." },
+            { question: "How can I cope with the emotional impact of tooth loss?", answer: "Helpful strategies include seeking support from friends, family, or a mental health professional, joining support groups, practicing self-care and self-compassion, and exploring treatment options such as dental implants that can restore both function and confidence." },
+            { question: "Can dental implants improve confidence after tooth loss?", answer: "Dental implants offer more than functional restoration. By providing a permanent, natural-looking solution, they can significantly improve self-esteem, reduce social anxiety, and restore quality of life, with many patients reporting they feel like themselves again." },
+            { question: "Does tooth loss affect speech and eating?", answer: "Yes. Beyond the emotional impact, tooth loss can make it harder to speak clearly and can limit the diet, which can further diminish quality of life and self-confidence." },
+          ]),
+        ])}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -114,6 +124,17 @@ export default function ToothLossEmotionalTollPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
+                Tooth loss can profoundly affect a person&rsquo;s emotional well-being, self-esteem, and
+                quality of life &mdash; not just their ability to chew and speak. At the practice of Dr.
+                Alexander Antipov, a board-certified oral &amp; maxillofacial surgeon in Roseville, CA, we see
+                how addressing both the functional and emotional sides of tooth loss helps patients regain
+                confidence along with their smile.
+              </p>
+              <p className="text-neutral-500 italic mb-8">
+                This article is for general education and is not a substitute for personalized medical or
+                mental-health advice from a qualified professional.
+              </p>
+              <p className="text-neutral-700 leading-relaxed mb-8">
                 Losing a tooth is more than just a physical change. It can profoundly affect a person's emotional
                 well-being, self-esteem, and quality of life. Understanding these emotional impacts is crucial for both
                 patients and healthcare providers.
@@ -127,45 +148,33 @@ export default function ToothLossEmotionalTollPost() {
                 patients experience when dealing with tooth loss and denture use:
               </p>
 
-              <div className="space-y-8 my-8">
-                <GlassCard className="p-6">
-                  <h3 className="text-2xl font-semibold text-neutral-900 mb-3">Stage 1: Initial Shock and Grief</h3>
-                  <p className="text-neutral-700 leading-relaxed">
-                    The realization of tooth loss often triggers feelings similar to grief. Patients may experience
-                    denial, sadness, and a sense of loss that extends beyond the physical tooth itself.
-                  </p>
-                </GlassCard>
-
-                <GlassCard className="p-6">
-                  <h3 className="text-2xl font-semibold text-neutral-900 mb-3">
-                    Stage 2: Emotional Turmoil and Self-Consciousness
-                  </h3>
-                  <p className="text-neutral-700 leading-relaxed">
-                    As patients adapt to dentures or live with missing teeth, many become acutely self-conscious about
-                    their appearance. This stage is characterized by anxiety about social interactions and fear of
-                    judgment.
-                  </p>
-                </GlassCard>
-
-                <GlassCard className="p-6">
-                  <h3 className="text-2xl font-semibold text-neutral-900 mb-3">
-                    Stage 3: Hope Through Prosthetic Solutions
-                  </h3>
-                  <p className="text-neutral-700 leading-relaxed">
-                    When patients explore treatment options like dental implants or improved dentures, hope begins to
-                    emerge. This stage marks a turning point toward emotional recovery.
-                  </p>
-                </GlassCard>
-
-                <GlassCard className="p-6">
-                  <h3 className="text-2xl font-semibold text-neutral-900 mb-3">
-                    Stage 4: Adaptation and Disclosure Management
-                  </h3>
-                  <p className="text-neutral-700 leading-relaxed">
-                    Patients learn to manage their condition, deciding when and how to disclose their tooth loss to
-                    others. Successful treatment often leads to renewed confidence and improved quality of life.
-                  </p>
-                </GlassCard>
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="border-b border-neutral-200 py-3 px-4">Stage</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">What Patients Experience</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>1. Initial Shock and Grief</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">The realization of tooth loss often triggers feelings similar to grief, including denial, sadness, and a sense of loss that extends beyond the physical tooth itself.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>2. Emotional Turmoil and Self-Consciousness</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">As patients adapt to dentures or live with missing teeth, many become acutely self-conscious about their appearance, with anxiety about social interactions and fear of judgment.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>3. Hope Through Prosthetic Solutions</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">When patients explore treatment options like dental implants or improved dentures, hope begins to emerge &mdash; a turning point toward emotional recovery.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>4. Adaptation and Disclosure Management</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Patients learn to manage their condition, deciding when and how to disclose their tooth loss. Successful treatment often leads to renewed confidence and improved quality of life.</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
@@ -282,6 +291,61 @@ export default function ToothLossEmotionalTollPost() {
                 compassionate, holistic approach that addresses both the functional and emotional aspects of tooth loss.
                 Our goal is to help you regain not just your smile, but your confidence and quality of life.
               </p>
+
+              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+                Frequently Asked Questions
+              </h2>
+              <div className="space-y-6 my-8">
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">What are the emotional stages of tooth loss?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Research from the University of Sheffield describes four emotional stages: initial shock and
+                    grief, emotional turmoil and self-consciousness, hope through prosthetic solutions, and
+                    adaptation with disclosure management. Understanding these stages helps patients and
+                    providers respond with more compassion.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">Can tooth loss affect mental health?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Yes. Tooth loss can lower self-esteem, increase social anxiety, and lead to withdrawal from
+                    activities, which may contribute to depression and loneliness. Many patients report feeling
+                    older and less confident in professional and social settings.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">Why is tooth loss so emotionally distressing?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Unlike many health conditions that can be hidden, missing teeth are often immediately
+                    noticeable during conversation and smiling. This visible nature, combined with effects on
+                    speech and diet, makes tooth loss particularly distressing.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">How can I cope with the emotional impact of tooth loss?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Helpful strategies include seeking support from friends, family, or a mental health
+                    professional, joining support groups, practicing self-care and self-compassion, and
+                    exploring treatment options such as dental implants that can restore both function and
+                    confidence.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">Can dental implants improve confidence after tooth loss?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Dental implants offer more than functional restoration. By providing a permanent,
+                    natural-looking solution, they can significantly improve self-esteem, reduce social anxiety,
+                    and restore quality of life, with many patients reporting they feel like themselves again.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">Does tooth loss affect speech and eating?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Yes. Beyond the emotional impact, tooth loss can make it harder to speak clearly and can
+                    limit the diet, which can further diminish quality of life and self-confidence.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Sources / Authoritative References */}

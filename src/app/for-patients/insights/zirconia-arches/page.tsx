@@ -52,7 +52,7 @@ export default function ZirconiaArchesPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/zirconia-arches#article","headline":"What Are Zirconia Arches? Benefits, Cost & Lifespan","description":"Zirconia arches are the gold standard for full-arch dental implants. How they are made, why they last decades, what they cost, and how they compare to acrylic.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/zirconia-arches","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zirconia-arches.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/zirconia-arches"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is zirconia stronger than titanium?","acceptedAnswer":{"@type":"Answer","text":"Zirconia is harder and more resistant to wear and corrosion, while titanium is more flexible. They serve different roles: titanium implants anchor in the bone, and the zirconia arch is the visible set of teeth."}},{"@type":"Question","name":"Can zirconia arches break?","acceptedAnswer":{"@type":"Answer","text":"Medical-grade zirconia is extremely resistant to fracture. Catastrophic breaks are rare and usually involve trauma or significant misuse, such as chewing ice or opening packages with your teeth."}},{"@type":"Question","name":"Will my zirconia arch turn yellow?","acceptedAnswer":{"@type":"Answer","text":"No. Zirconia is highly stain-resistant. Surface staining from coffee or wine wipes off easily and the underlying material does not discolor."}},{"@type":"Question","name":"How long do zirconia arches last?","acceptedAnswer":{"@type":"Answer","text":"Properly placed zirconia arches routinely last 15 to 20+ years, and many patients never need a replacement."}},{"@type":"Question","name":"Is zirconia safe?","acceptedAnswer":{"@type":"Answer","text":"Yes. Zirconia is biocompatible and inert, widely used in medical implants, with no known allergies."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/zirconia-arches#article","headline":"What Are Zirconia Arches? Benefits, Cost & Lifespan","description":"Zirconia arches are the gold standard for full-arch dental implants. How they are made, why they last decades, what they cost, and how they compare to acrylic.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/zirconia-arches","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zirconia-arches.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/zirconia-arches"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is zirconia stronger than titanium?","acceptedAnswer":{"@type":"Answer","text":"Zirconia is harder and more resistant to wear and corrosion, while titanium is more flexible. They serve different roles: titanium implants anchor in the bone, and the zirconia arch is the visible set of teeth."}},{"@type":"Question","name":"Can zirconia arches break?","acceptedAnswer":{"@type":"Answer","text":"Medical-grade zirconia is extremely resistant to fracture. Catastrophic breaks are rare and usually involve trauma or significant misuse, such as chewing ice or opening packages with your teeth."}},{"@type":"Question","name":"Will my zirconia arch turn yellow?","acceptedAnswer":{"@type":"Answer","text":"No. Zirconia is highly stain-resistant. Surface staining from coffee or wine wipes off easily and the underlying material does not discolor."}},{"@type":"Question","name":"How long do zirconia arches last?","acceptedAnswer":{"@type":"Answer","text":"Properly placed zirconia arches routinely last 15 to 20+ years, and many patients never need a replacement."}},{"@type":"Question","name":"Are zirconia arches removable?","acceptedAnswer":{"@type":"Answer","text":"No. A zirconia arch is a fixed prosthesis that is secured to your implants and stays in place; only your dental provider removes it for maintenance. It is not taken in and out like a conventional denture."}},{"@type":"Question","name":"Is zirconia safe?","acceptedAnswer":{"@type":"Answer","text":"Yes. Zirconia is biocompatible and inert, widely used in medical implants, with no known allergies."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -105,11 +105,16 @@ export default function ZirconiaArchesPost() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                If you have looked into All-on-4 or full-mouth dental implants, the final teeth are most often
-                a <strong>zirconia arch</strong>. It is a complete upper or lower set of teeth milled from a
-                single block of medical-grade ceramic and secured to your implants &mdash; and it has become
-                the gold standard for full-arch prosthetics, replacing the acrylic-and-titanium hybrids common
-                a decade ago.
+                A zirconia arch is a complete upper or lower set of teeth milled from a single block of
+                medical-grade ceramic and secured to your dental implants &mdash; the material most often used
+                for the final teeth in All-on-4 or full-mouth implant cases. At the practice of Dr. Alexander
+                Antipov, a board-certified oral &amp; maxillofacial surgeon in Roseville, CA, zirconia arches
+                are used because they have become the gold standard for full-arch prosthetics, replacing the
+                acrylic-and-titanium hybrids common a decade ago.
+              </p>
+              <p className="text-neutral-500 italic mb-8">
+                This article is for general education and is not a substitute for a personalized evaluation by
+                a qualified oral surgeon.
               </p>
 
               <GlassCard className="my-10 p-6">
@@ -279,6 +284,21 @@ export default function ZirconiaArchesPost() {
                   <p className="text-neutral-700 leading-relaxed">
                     No. Zirconia is highly stain-resistant. Surface staining wipes off easily and the
                     underlying material does not discolor &mdash; though that also means it cannot be whitened.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">How long do zirconia arches last?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Properly placed zirconia arches routinely last 15 to 20+ years, and many patients never
+                    need a replacement.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">Are zirconia arches removable?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    No. A zirconia arch is a fixed prosthesis that is secured to your implants and stays in
+                    place; only your dental provider removes it for maintenance. It is not taken in and out
+                    like a conventional denture.
                   </p>
                 </div>
                 <div>

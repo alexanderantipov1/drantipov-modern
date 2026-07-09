@@ -50,7 +50,7 @@ export default function AllOnXCostPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/all-on-x-dental-implants-cost#article","headline":"All-on-X Dental Implants Cost Explained: 4, 6, or 8 Implants?","description":"What All-on-X means, how cost differs between 4, 6, and 8 implants per arch, what should be included in a quote, and how to decide what your case actually needs.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/all-on-x-dental-implants-cost","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/all-on-x-cost.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/all-on-x-dental-implants-cost"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is All-on-4 strong enough for normal eating?","acceptedAnswer":{"@type":"Answer","text":"Yes. All-on-4 supports roughly 95% of natural bite force, and most patients eat what they want, including hard and chewy foods."}},{"@type":"Question","name":"Why would anyone choose All-on-6 over All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Better load distribution on longer arches, extra support for heavy biters, eliminating the distal cantilever, and redundancy if an implant ever fails. For the right case the added cost is worthwhile."}},{"@type":"Question","name":"Is the cost the same for the top and bottom arches?","acceptedAnswer":{"@type":"Answer","text":"The upper arch is often slightly higher because the bone is typically softer and closer to the sinus, sometimes requiring a sinus lift or zygomatic implants."}},{"@type":"Question","name":"What if I can only afford one arch now?","acceptedAnswer":{"@type":"Answer","text":"Many patients treat the more pressing arch first and stage the second over time. Financing can also spread the cost into manageable monthly payments."}},{"@type":"Question","name":"Are all All-on-4 treatments the same?","acceptedAnswer":{"@type":"Answer","text":"No. Practices vary widely in implant brand, surgical technique, prosthetic material, and lab quality. The name is the same but durability and outcomes differ significantly."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/all-on-x-dental-implants-cost#article","headline":"All-on-X Dental Implants Cost Explained: 4, 6, or 8 Implants?","description":"What All-on-X means, how cost differs between 4, 6, and 8 implants per arch, what should be included in a quote, and how to decide what your case actually needs.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/all-on-x-dental-implants-cost","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/all-on-x-cost.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/all-on-x-dental-implants-cost"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is All-on-4 strong enough for normal eating?","acceptedAnswer":{"@type":"Answer","text":"Yes. All-on-4 supports roughly 95% of natural bite force, and most patients eat what they want, including hard and chewy foods."}},{"@type":"Question","name":"Why choose All-on-6 over All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Better load distribution on longer arches, extra support for heavy biters, eliminating the distal cantilever, and redundancy if an implant ever fails. For the right case the added cost is worthwhile."}},{"@type":"Question","name":"Is the cost the same for top and bottom?","acceptedAnswer":{"@type":"Answer","text":"The upper arch is often slightly higher because the bone is typically softer and closer to the sinus, sometimes requiring a sinus lift or zygomatic implants."}},{"@type":"Question","name":"What if I can only afford one arch now?","acceptedAnswer":{"@type":"Answer","text":"Many patients treat the more pressing arch first and stage the second over time. Financing can also spread the cost into manageable monthly payments."}},{"@type":"Question","name":"What should a real All-on-X quote include?","acceptedAnswer":{"@type":"Answer","text":"A complete quote accounts for 3D imaging, any needed extractions, sedation, the temporary teeth, and the final prosthesis — not just the implants themselves. Comparing quotes that leave out these steps can make one option look cheaper than it really is."}},{"@type":"Question","name":"How is the right number of implants decided?","acceptedAnswer":{"@type":"Answer","text":"The number is determined by 3D imaging and your bite — not by price alone. Bone volume and density, arch length, and how hard you bite all influence whether four, six, or more implants are recommended for a predictable long-term result."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -103,11 +103,17 @@ export default function AllOnXCostPost() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                &ldquo;All-on-X&rdquo; is an umbrella term for full-arch implant treatment using a specific
-                number of implants &mdash; usually four, six, or sometimes eight per arch &mdash; to support a
-                complete bridge of replacement teeth. The goal is always the same: replace an entire upper or
-                lower set of teeth with fixed, permanent teeth. The number is what changes, and so does the
-                cost. Here is how to make sense of it.
+                The cost of All-on-X full-arch implants depends mainly on how many implants your arch needs
+                &mdash; usually four, six, or sometimes eight &mdash; plus imaging, extractions, sedation, and
+                the prosthesis, explains Dr. Alexander Antipov, a board-certified oral &amp; maxillofacial
+                surgeon in Roseville, CA. &ldquo;All-on-X&rdquo; is an umbrella term for full-arch implant
+                treatment: the goal is always to replace an entire upper or lower set of teeth with fixed,
+                permanent teeth, and the number of implants is what changes &mdash; and so does the cost.
+                Here is how to make sense of it.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                Costs and terms vary by provider and plan &mdash; confirm details with your own provider
+                before making decisions.
               </p>
 
               <GlassCard className="my-10 p-6">
@@ -260,6 +266,22 @@ export default function AllOnXCostPost() {
                   <p className="text-neutral-700 leading-relaxed">
                     Many patients treat the more pressing arch first and stage the second over time. Financing
                     can also spread the cost into manageable monthly payments.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">What should a real All-on-X quote include?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    A complete quote accounts for 3D imaging, any needed extractions, sedation, the temporary
+                    teeth, and the final prosthesis &mdash; not just the implants themselves. Comparing quotes
+                    that leave out these steps can make one option look cheaper than it really is.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">How is the right number of implants decided?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    The number is determined by 3D imaging and your bite &mdash; not by price alone. Bone volume
+                    and density, arch length, and how hard you bite all influence whether four, six, or more
+                    implants are recommended for a predictable long-term result.
                   </p>
                 </div>
               </div>

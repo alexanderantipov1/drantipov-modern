@@ -110,10 +110,16 @@ export default function SameDayImplantsPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                &ldquo;Same-day implants&rdquo; and &ldquo;teeth in a day&rdquo; are advertising lines that
-                every patient researching dental implants will see. What part of this is reality, and what
-                part is marketing? Here is what you actually receive the day of surgery &mdash; and why the
+                Yes, same-day dental implants are real &mdash; you leave surgery with fixed temporary teeth
+                secured to your implants the same day, though the final prosthesis comes a few months later,
+                explains Dr. Alexander Antipov, a board-certified oral &amp; maxillofacial surgeon in Roseville,
+                CA. &ldquo;Same-day implants&rdquo; and &ldquo;teeth in a day&rdquo; are advertising lines every
+                patient will see, so here is what you actually receive the day of surgery &mdash; and why the
                 final result comes a few months later, not in six hours.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon for a
+                recommendation tailored to your case.
               </p>
 
               {/* TL;DR */}
@@ -144,6 +150,23 @@ export default function SameDayImplantsPost() {
                 through thread design and placement angle) and load distribution across multiple implants
                 tied into one rigid prosthesis.
               </p>
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="border-b-2 border-neutral-200">
+                      <th className="py-3 pr-4 font-semibold text-neutral-900">Aspect</th>
+                      <th className="py-3 pr-4 font-semibold text-neutral-900">Immediate load (same day)</th>
+                      <th className="py-3 font-semibold text-neutral-900">Delayed / two-stage</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-neutral-700">
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">When teeth are attached</td><td className="py-3 pr-4">Same day as implant placement</td><td className="py-3">After 3&ndash;6 months of healing</td></tr>
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">Requires</td><td className="py-3 pr-4">High primary stability (&ge;35&nbsp;Ncm), multiple implants</td><td className="py-3">Standard stability</td></tr>
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">Common use</td><td className="py-3 pr-4">All-on-4 / All-on-6 full-arch cases</td><td className="py-3">Single-tooth or lower-stability cases</td></tr>
+                    <tr><td className="py-3 pr-4">During healing</td><td className="py-3 pr-4">Fixed temporary in place</td><td className="py-3">Removable temporary or gap</td></tr>
+                  </tbody>
+                </table>
+              </div>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 When It Works
@@ -295,6 +318,17 @@ export default function SameDayImplantsPost() {
                     Extractions + implant placement + temporary prosthesis &mdash; typically 4&ndash;6 hours
                     depending on the case. Under IV sedation, you will have no memory of the procedure.
                     After 30&ndash;60 minutes of observation, you go home (a chaperone is required).
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">
+                    Does smoking affect same-day implants?
+                  </h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Yes. Smoking significantly worsens the prognosis for immediate loading. Quitting, or at
+                    minimum sharply reducing, for 4 weeks before and 8 weeks after surgery is strongly
+                    recommended to protect healing and implant stability.
                   </p>
                 </div>
               </div>

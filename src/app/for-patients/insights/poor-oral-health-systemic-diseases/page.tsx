@@ -6,7 +6,40 @@ import { RelatedArticles } from "@/components/RelatedArticles"
 import { Calendar, ArrowLeft, Clock, AlertTriangle } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
-import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
+import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/structured-data"
+
+const faqs = [
+  {
+    question: "Can poor oral health cause cancer?",
+    answer:
+      "Research has uncovered links between poor oral health and several cancers. The oral bacterium Fusobacterium nucleatum, commonly associated with gum disease, has been found in colorectal tumors, and people with periodontal disease have a higher risk of pancreatic cancer. Chronic oral inflammation may also increase susceptibility to head and neck cancers.",
+  },
+  {
+    question: "How does gum disease affect the heart?",
+    answer:
+      "The connection between gum disease and heart disease is well-established. Bacteria from infected gums can enter the bloodstream and contribute to atherosclerosis (hardening of the arteries), an increased risk of heart attack, a higher likelihood of stroke, and endocarditis.",
+  },
+  {
+    question: "What is the link between diabetes and oral health?",
+    answer:
+      "The relationship is bidirectional. Diabetes makes individuals more susceptible to gum disease, while severe gum disease can make it harder to control blood sugar levels, creating a dangerous cycle.",
+  },
+  {
+    question: "Can oral bacteria cause respiratory infections?",
+    answer:
+      "Yes. Bacteria from periodontal disease can be aspirated into the lungs, potentially causing respiratory infections and pneumonia and exacerbating chronic conditions like COPD.",
+  },
+  {
+    question: "Does oral health affect pregnancy?",
+    answer:
+      "It can. Pregnant women with gum disease face increased risks of premature birth, low birth weight babies, and preeclampsia.",
+  },
+  {
+    question: "How can I protect my oral and overall health?",
+    answer:
+      "Brush twice daily, floss daily, and use an antimicrobial mouthwash; schedule professional cleanings and exams at least twice a year; don't ignore warning signs like bleeding gums, persistent bad breath, or loose teeth; manage chronic conditions with your physician and dentist; and avoid tobacco, limit alcohol, and eat a balanced diet.",
+  },
+]
 
 export const metadata: Metadata = {
   title: "Oral Health & Systemic Disease — The Link",
@@ -52,12 +85,15 @@ export default function PoorOralHealthSystemicDiseasesPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={structuredDataScript(getBreadcrumbSchema([
-          { name: "Home", url: "https://www.drantipov.com" },
-          { name: "For Patients", url: "https://www.drantipov.com/for-patients" },
-          { name: "Insights", url: "https://www.drantipov.com/for-patients/insights" },
-          { name: "The Hidden Link: How Poor Oral Health Can Lead to Cancer and Systemic Diseases", url: "https://www.drantipov.com/for-patients/insights/poor-oral-health-systemic-diseases" },
-        ]))}
+        dangerouslySetInnerHTML={structuredDataScript([
+          getBreadcrumbSchema([
+            { name: "Home", url: "https://www.drantipov.com" },
+            { name: "For Patients", url: "https://www.drantipov.com/for-patients" },
+            { name: "Insights", url: "https://www.drantipov.com/for-patients/insights" },
+            { name: "The Hidden Link: How Poor Oral Health Can Lead to Cancer and Systemic Diseases", url: "https://www.drantipov.com/for-patients/insights/poor-oral-health-systemic-diseases" },
+          ]),
+          getFAQSchema(faqs),
+        ])}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -113,6 +149,18 @@ export default function PoorOralHealthSystemicDiseasesPost() {
 
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
+              <p className="text-xl text-neutral-700 leading-relaxed mb-8">
+                Poor oral health is linked to serious systemic conditions &mdash; including cardiovascular
+                disease, diabetes, respiratory infections, and several cancers &mdash; because inflammation and
+                bacteria from the gums can affect the entire body, explains Dr. Alexander Antipov, a
+                board-certified oral &amp; maxillofacial surgeon in Roseville, CA. Below is how the mouth
+                connects to overall health, and the steps that protect both.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon or your physician
+                for advice tailored to your situation.
+              </p>
+
               <GlassCard className="p-6 mb-8 bg-amber-50 border-amber-200">
                 <div className="flex items-start gap-4">
                   <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-1" />
@@ -135,6 +183,25 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 neglected, harmful bacteria can multiply and cause inflammation in the gums. This inflammation can allow
                 bacteria to enter the bloodstream, potentially affecting other parts of your body.
               </p>
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="border-b-2 border-neutral-200">
+                      <th className="py-3 pr-4 font-semibold text-neutral-900">Condition</th>
+                      <th className="py-3 font-semibold text-neutral-900">Link to oral health</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-neutral-700">
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">Colorectal cancer</td><td className="py-3">Oral bacterium F. nucleatum found in colorectal tumors</td></tr>
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">Pancreatic cancer</td><td className="py-3">Periodontal disease linked to higher risk</td></tr>
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">Head &amp; neck cancer</td><td className="py-3">Chronic oral inflammation may increase susceptibility</td></tr>
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">Cardiovascular disease</td><td className="py-3">Oral bacteria contribute to atherosclerosis, heart attack, stroke</td></tr>
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">Diabetes</td><td className="py-3">Bidirectional &mdash; gum disease worsens blood sugar control</td></tr>
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">Respiratory infections</td><td className="py-3">Aspirated oral bacteria can cause pneumonia, worsen COPD</td></tr>
+                    <tr><td className="py-3 pr-4">Pregnancy complications</td><td className="py-3">Linked to premature birth, low birth weight, preeclampsia</td></tr>
+                  </tbody>
+                </table>
+              </div>
 
               <blockquote className="border-l-4 border-primary-600 pl-6 my-8 italic text-xl text-neutral-700">
                 "Both dentists and physicians can benefit from being more familiar with the oral manifestations of
@@ -298,6 +365,18 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 serious diseases. Don't wait until problems arise; take proactive steps today to ensure a healthier
                 tomorrow.
               </p>
+
+              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+                Frequently Asked Questions
+              </h2>
+              <div className="space-y-6 my-8">
+                {faqs.map((faq) => (
+                  <div key={faq.question}>
+                    <h3 className="text-xl font-semibold text-neutral-900 mb-3">{faq.question}</h3>
+                    <p className="text-neutral-700 leading-relaxed">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
             </div>
 
             {/* Sources / Authoritative References */}

@@ -105,6 +105,17 @@ export default function SingleToothImplantRosevillePost() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
+                A single tooth implant replaces one missing tooth with a small titanium or zirconia root and
+                a custom crown, without grinding down the healthy teeth on either side. At the practice of
+                Dr. Alexander Antipov, a board-certified oral &amp; maxillofacial surgeon in Roseville, CA, it
+                is the option we recommend for most patients missing a single tooth because it restores a
+                tooth that looks, feels, and functions like your own while protecting the jawbone underneath.
+              </p>
+              <p className="text-neutral-500 italic mb-8">
+                This article is for general education and is not a substitute for a personalized evaluation by
+                a qualified oral surgeon.
+              </p>
+              <p className="text-neutral-700 leading-relaxed mb-8">
                 Losing a single tooth can feel like a small problem &mdash; until you notice yourself
                 chewing on one side, covering your mouth when you laugh, or seeing the gap widen as
                 neighboring teeth drift. There is also a change you cannot see: once a tooth is gone, the
@@ -131,11 +142,30 @@ export default function SingleToothImplantRosevillePost() {
                 recreate a natural tooth from the root up. Each part has a distinct job, and together they
                 give the restoration its long-term reliability:
               </p>
-              <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
-                <li>&mdash; <strong>The implant post:</strong> a small titanium or zirconia screw placed in the jaw that serves as the new tooth root. Bone grows against it and locks it in place over the following months.</li>
-                <li>&mdash; <strong>The abutment:</strong> the connector that sits at the gumline and holds the crown steady against the forces of everyday chewing.</li>
-                <li>&mdash; <strong>The crown:</strong> the only part you see, custom-made to match the shade, shape, and translucency of the teeth around it.</li>
-              </ul>
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="border-b border-neutral-200 py-3 px-4">Component</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">What It Does</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>The implant post</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">A small titanium or zirconia screw placed in the jaw that serves as the new tooth root. Bone grows against it and locks it in place over the following months.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>The abutment</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">The connector that sits at the gumline and holds the crown steady against the forces of everyday chewing.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>The crown</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">The only part you see, custom-made to match the shade, shape, and translucency of the teeth around it.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Because the post integrates with living bone, a well-placed implant behaves like a real
                 tooth rather than a placeholder resting on top of the gum. You can learn more about the

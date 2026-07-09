@@ -108,11 +108,18 @@ export default function FullMouthDentalImplantsPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Few procedures in modern dentistry change a person&rsquo;s daily life as completely as a
-                full-mouth implant restoration. If you are living with failing teeth, loose dentures, or the
-                quiet self-consciousness of a compromised smile, fixed implant teeth can restore how you eat,
-                speak, and feel &mdash; permanently. Here is an honest, plain-language walk through the
-                options, the process, and what the investment actually looks like in the Sacramento region.
+                Full mouth dental implants replace an entire arch of missing or failing teeth with a fixed,
+                implant-supported set of teeth, explains Dr. Alexander Antipov, a board-certified oral &amp;
+                maxillofacial surgeon in Roseville, CA. In the greater Sacramento region a single arch
+                typically runs $18,000&ndash;$30,000, and few procedures change a person&rsquo;s daily life as
+                completely. If you are living with failing teeth, loose dentures, or the quiet
+                self-consciousness of a compromised smile, fixed implant teeth can restore how you eat, speak,
+                and feel &mdash; permanently. Here is an honest, plain-language walk through the options, the
+                process, and what the investment actually looks like in the Sacramento region.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                Costs and terms vary by provider and plan &mdash; confirm details with your own provider before
+                making decisions.
               </p>
 
               {/* TL;DR */}
@@ -144,6 +151,22 @@ export default function FullMouthDentalImplantsPost() {
                 <li>&mdash; <strong>All-on-X (All-on-6 and beyond):</strong> typically five to eight implants per arch when a case benefits from extra support.</li>
                 <li>&mdash; <strong>Implant-supported overdenture:</strong> a denture that snaps onto implants for stability, for patients who prefer a removable option.</li>
               </ul>
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="border-b-2 border-neutral-200">
+                      <th className="py-3 pr-4 font-semibold text-neutral-900">Option</th>
+                      <th className="py-3 pr-4 font-semibold text-neutral-900">Best for</th>
+                      <th className="py-3 font-semibold text-neutral-900">Implants per arch</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-neutral-700">
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">All-on-4</td><td className="py-3 pr-4">Missing all/most teeth on an arch, wanting fixed teeth</td><td className="py-3">4</td></tr>
+                    <tr className="border-b border-neutral-100"><td className="py-3 pr-4">All-on-X (All-on-6+)</td><td className="py-3 pr-4">Cases that benefit from extra support</td><td className="py-3">5&ndash;8</td></tr>
+                    <tr><td className="py-3 pr-4">Implant-supported overdenture</td><td className="py-3 pr-4">Patients who prefer a removable option</td><td className="py-3">Snaps onto implants</td></tr>
+                  </tbody>
+                </table>
+              </div>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Are You a Candidate?
@@ -278,6 +301,24 @@ export default function FullMouthDentalImplantsPost() {
                   <p className="text-neutral-700 leading-relaxed">
                     In many qualifying cases, yes. A fixed temporary arch is placed the same day as surgery,
                     with the permanent prosthesis delivered after 3 to 6 months of healing.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">Am I a candidate if I have significant bone loss?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Often, yes. Significant bone loss does not automatically rule you out. Modern full-arch
+                    techniques, including All-on-4 and zygomatic approaches, are designed to work with the bone
+                    many patients already have. A 3D cone-beam CT scan determines which approach fits your
+                    anatomy.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">What makes a full-arch case succeed long term?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Three factors: planning quality (3D imaging and digital planning), surgical experience, and
+                    prosthetic craftsmanship. The implants anchor the result, but the right materials and bite
+                    mechanics are the difference between a restoration that lasts decades and one that fails
+                    early.
                   </p>
                 </div>
               </div>

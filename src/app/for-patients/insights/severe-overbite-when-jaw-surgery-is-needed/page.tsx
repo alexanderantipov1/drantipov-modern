@@ -107,9 +107,14 @@ export default function SevereOverbiteJawSurgeryPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Most overbites can be fixed with braces or aligners. Severe skeletal overbites &mdash; where
-                the jaw bones themselves are misaligned &mdash; need jaw surgery, known as orthognathic
-                surgery. Here is how to know which applies to you.
+                Most overbites can be fixed with braces or aligners, but severe skeletal overbites &mdash; where
+                the jaw bones themselves are misaligned &mdash; need jaw surgery, known as orthognathic surgery,
+                explains Dr. Alexander Antipov, a board-certified oral &amp; maxillofacial surgeon in Roseville,
+                CA. Here is how to know which applies to you.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon or orthodontist
+                for a recommendation tailored to your case.
               </p>
 
               {/* TL;DR */}

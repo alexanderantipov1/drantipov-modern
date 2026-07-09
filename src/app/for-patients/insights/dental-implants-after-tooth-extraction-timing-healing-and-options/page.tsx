@@ -107,11 +107,16 @@ export default function DentalImplantsAfterToothExtractionPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Needing a tooth extraction can feel like a major setback, but it can also be the first step
-                toward a stable, natural-looking replacement. If you&rsquo;re researching dental implants after
-                tooth extraction, the most important question is usually timing: should the implant go in the
-                same day, a few weeks later, or after full healing? The right answer depends on the extraction
-                site, bone support, gum health, and whether infection was present.
+                The timing of a dental implant after a tooth extraction depends on the extraction site, bone
+                support, gum health, and whether infection was present &mdash; the implant may be placed the
+                same day, a few weeks later, or after full healing, explains Dr. Alexander Antipov, a
+                board-certified oral &amp; maxillofacial surgeon in Roseville, CA. Needing a tooth extraction
+                can feel like a major setback, but it can also be the first step toward a stable,
+                natural-looking replacement.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon for a
+                personalized recommendation.
               </p>
 
               {/* TL;DR */}

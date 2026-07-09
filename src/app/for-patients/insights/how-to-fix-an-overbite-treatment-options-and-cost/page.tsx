@@ -165,10 +165,15 @@ export default function HowToFixAnOverbitePost() {
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
                 An overbite — when the upper front teeth overlap the lower front teeth too much — is one
-                of the most common bite problems, and almost all of them are fixable. The right approach
-                depends on one key question: is the overbite caused by the <strong>teeth</strong> or by the
-                <strong> jaw bones</strong>? Here is every option, from clear aligners to jaw surgery, with
-                realistic timelines and cost.
+                of the most common bite problems, and almost all of them are fixable, says Dr. Alexander
+                Antipov, a board-certified oral &amp; maxillofacial surgeon in Roseville, CA. The right
+                approach depends on one key question: is the overbite caused by the <strong>teeth</strong> or
+                by the <strong> jaw bones</strong>? Here is every option, from clear aligners to jaw surgery,
+                with realistic timelines and cost.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon or orthodontist
+                for a recommendation tailored to your case.
               </p>
 
               {/* TL;DR */}
@@ -199,7 +204,8 @@ export default function HowToFixAnOverbitePost() {
                 <li>
                   &mdash; <strong>Skeletal overbite.</strong> The upper and lower jaw bones are misaligned — for
                   example, the lower jaw sits too far back. Moving teeth alone cannot fix the underlying bone
-                  position, so the jaw itself is repositioned with <strong>corrective jaw surgery</strong>.
+                  position, so the jaw itself is repositioned with{" "}
+                  <a href="https://www.aaoms.org/conditions-treatments/corrective-jaw-surgery" target="_blank" rel="noopener nofollow" className="text-primary-600 underline"><strong>corrective jaw surgery</strong></a>.
                 </li>
               </ul>
               <p className="text-neutral-700 leading-relaxed mb-6">

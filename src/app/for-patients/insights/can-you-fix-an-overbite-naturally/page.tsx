@@ -71,6 +71,11 @@ const faqs = [
     answer:
       "For most people the least invasive effective option is clear aligners, which are removable and nearly invisible, followed by braces. These genuinely correct dental overbites. Surgery is reserved for severe skeletal cases where the jaw position itself must be changed.",
   },
+  {
+    question: "Are DIY \"gap bands\" or mail-order devices safe for fixing an overbite?",
+    answer:
+      "No. DIY \"gap bands\" and rubber bands can slide under the gums and cause tooth loss, and mail-order teeth-straightening without imaging and monitoring risks root damage, gum recession, and bite problems. Teeth move safely only under controlled, professionally monitored force.",
+  },
 ]
 
 const articleSchema = {
@@ -157,10 +162,16 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                &ldquo;How do I fix my overbite naturally?&rdquo; is one of the most-searched questions in
-                orthodontics — and the honest answer matters, because the wrong DIY shortcut can damage your
-                teeth. Here is what &ldquo;natural&rdquo; correction can and cannot do, the myths to avoid, and
-                the options that actually work.
+                You cannot fix an established overbite naturally &mdash; no exercise, tongue posture, or home
+                remedy reliably moves teeth or repositions the jaw, explains Dr. Alexander Antipov, a
+                board-certified oral &amp; maxillofacial surgeon in Roseville, CA. &ldquo;Natural&rdquo; habit
+                changes can help prevent an overbite in growing children, but a formed overbite is corrected
+                with aligners, braces, or jaw surgery. Here is what &ldquo;natural&rdquo; correction can and
+                cannot do, the myths to avoid, and the options that actually work.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon for a
+                personalized recommendation.
               </p>
 
               {/* TL;DR */}
@@ -185,6 +196,43 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
                 <strong> prevent or limit</strong> an overbite during childhood, not to reverse one that has
                 already formed.
               </p>
+
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="border-b border-neutral-200 py-3 px-4">Approach</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">Does it correct an overbite?</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Breaking childhood habits (thumb-sucking, tongue-thrusting)</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Helps prevent or limit an overbite in children; does not reverse a formed one</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Myofunctional therapy</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Supports development and can complement treatment; does not move teeth on its own</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">&ldquo;Mewing&rdquo; / jaw exercises</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Not supported by evidence; will not reposition teeth or jaws</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">DIY &ldquo;gap bands&rdquo; / mail-order devices</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Unsafe &mdash; can damage teeth and gums; never use</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Clear aligners or braces</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Proven correction for dental overbites</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Orthodontics + jaw surgery</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">The stable solution for severe skeletal overbites</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 What Actually Helps (and When)

@@ -57,7 +57,7 @@ export default function SurgicalWisdomToothRemovalPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/surgical-wisdom-tooth-removal-tooth-sectioning-explained#article","headline":"Surgical Wisdom Tooth Removal Explained: Why Surgeons Section Impacted Teeth","description":"How impacted wisdom teeth are removed using tooth sectioning — why the tooth is divided, the step-by-step surgical procedure, recovery, and when extraction is recommended.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/surgical-wisdom-tooth-removal-tooth-sectioning-explained","datePublished":"2026-06-29","dateModified":"2026-06-29","image":["https://www.drantipov.com/images/other-procedures/wisdom-teeth-removal-9108ccc6.jpg"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/surgical-wisdom-tooth-removal-tooth-sectioning-explained"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is an impacted wisdom tooth?","acceptedAnswer":{"@type":"Answer","text":"An impacted wisdom tooth is one that cannot fully emerge because there isn't enough room in the jaw, so it stays partially or completely trapped beneath the gums or bone. Impaction can cause pain, swelling, gum infections, decay, damage to neighboring teeth, and cysts."}},{"@type":"Question","name":"Why isn't the wisdom tooth removed in one piece?","acceptedAnswer":{"@type":"Answer","text":"Because an impacted tooth is firmly surrounded by bone and tissue, removing it whole could require taking out excess bone or applying unnecessary force. Surgeons instead use tooth sectioning — dividing the tooth into smaller pieces that come out through a smaller opening with less trauma."}},{"@type":"Question","name":"Is tooth sectioning safe?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tooth sectioning is a well-established oral surgery technique used every day worldwide. Dividing the tooth allows smaller surgical openings, less bone removal, more controlled extraction, and greater precision, making it one of the safest and least traumatic ways to remove impacted wisdom teeth."}},{"@type":"Question","name":"What is recovery like after surgical wisdom tooth removal?","acceptedAnswer":{"@type":"Answer","text":"Most patients have some swelling, mild discomfort, and limited jaw stiffness for the first few days. Pain medication, ice packs in the first 24 hours, soft foods, plenty of fluids, gentle oral hygiene, and sometimes antibiotics support healing. Following post-op instructions is key to a smooth recovery."}},{"@type":"Question","name":"When should impacted wisdom teeth be removed?","acceptedAnswer":{"@type":"Answer","text":"Not every wisdom tooth needs removal, but extraction is often recommended when impacted teeth cause pain, infection, damage to neighboring teeth, or other oral health concerns. A comprehensive exam with digital X-rays or 3D imaging determines whether surgery is the best option."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/surgical-wisdom-tooth-removal-tooth-sectioning-explained#article","headline":"Surgical Wisdom Tooth Removal Explained: Why Surgeons Section Impacted Teeth","description":"How impacted wisdom teeth are removed using tooth sectioning — why the tooth is divided, the step-by-step surgical procedure, recovery, and when extraction is recommended.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/surgical-wisdom-tooth-removal-tooth-sectioning-explained","datePublished":"2026-06-29","dateModified":"2026-06-29","image":["https://www.drantipov.com/images/other-procedures/wisdom-teeth-removal-9108ccc6.jpg"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/surgical-wisdom-tooth-removal-tooth-sectioning-explained"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is an impacted wisdom tooth?","acceptedAnswer":{"@type":"Answer","text":"An impacted wisdom tooth is one that cannot fully emerge because there isn't enough room in the jaw, so it stays partially or completely trapped beneath the gums or bone. Impaction can cause pain, swelling, gum infections, decay, damage to neighboring teeth, and cysts."}},{"@type":"Question","name":"Why isn't the wisdom tooth removed in one piece?","acceptedAnswer":{"@type":"Answer","text":"Because an impacted tooth is firmly surrounded by bone and tissue, removing it whole could require taking out excess bone or applying unnecessary force. Surgeons instead use tooth sectioning — dividing the tooth into smaller pieces that come out through a smaller opening with less trauma."}},{"@type":"Question","name":"Is tooth sectioning safe?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tooth sectioning is a well-established oral surgery technique used every day worldwide. Dividing the tooth allows smaller surgical openings, less bone removal, more controlled extraction, and greater precision, making it one of the safest and least traumatic ways to remove impacted wisdom teeth."}},{"@type":"Question","name":"What is recovery like after surgical wisdom tooth removal?","acceptedAnswer":{"@type":"Answer","text":"Most patients have some swelling, mild discomfort, and limited jaw stiffness for the first few days. Pain medication, ice packs in the first 24 hours, soft foods, plenty of fluids, gentle oral hygiene, and sometimes antibiotics support healing. Following post-op instructions is key to a smooth recovery."}},{"@type":"Question","name":"When should impacted wisdom teeth be removed?","acceptedAnswer":{"@type":"Answer","text":"Not every wisdom tooth needs removal, but extraction is often recommended when impacted teeth cause pain, infection, damage to neighboring teeth, or other oral health concerns. A comprehensive exam with digital X-rays or 3D imaging determines whether surgery is the best option."}},{"@type":"Question","name":"How is a wisdom tooth divided during sectioning?","acceptedAnswer":{"@type":"Answer","text":"A specialized surgical handpiece divides the tooth into sections, and the number of pieces depends on the tooth's position, root shape, bone density, and degree of impaction. The larger portions are elevated and removed first, followed by the remaining sections one at a time to keep the extraction controlled."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -123,13 +123,17 @@ export default function SurgicalWisdomToothRemovalPost() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Hearing that you need a wisdom tooth removed can be intimidating &mdash; especially if your
-                dentist tells you the tooth is impacted and requires surgery. Fortunately, modern surgical
-                techniques make impacted wisdom tooth removal safe, predictable, and far less traumatic than
-                many people expect. One of the most effective techniques is <strong>tooth sectioning</strong>:
-                rather than removing the entire tooth at once, the surgeon carefully divides it into smaller
-                sections that can be removed individually &mdash; minimizing pressure on the jawbone and
-                surrounding tissue while allowing greater precision.
+                Surgical wisdom tooth removal is the procedure oral surgeons use to extract impacted wisdom
+                teeth that cannot erupt on their own, often by dividing (sectioning) the tooth so each piece
+                comes out through a smaller opening. At the practice of Dr. Alexander Antipov, a
+                board-certified oral &amp; maxillofacial surgeon in Roseville, CA, this technique makes
+                impacted wisdom tooth removal safe, predictable, and far less traumatic than many people
+                expect &mdash; minimizing pressure on the jawbone and surrounding tissue while allowing
+                greater precision.
+              </p>
+              <p className="text-neutral-500 italic mb-8">
+                This article is for general education and is not a substitute for a personalized evaluation by
+                a qualified oral surgeon.
               </p>
 
               <GlassCard className="my-10 p-6">
@@ -166,6 +170,40 @@ export default function SurgicalWisdomToothRemovalPost() {
                 When these problems occur &mdash; or are likely to develop &mdash; surgical extraction is
                 often recommended.
               </p>
+
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="border-b border-neutral-200 py-3 px-4">Factor</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">Removing the Tooth Whole</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">Tooth Sectioning</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>Surgical opening</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Larger</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Smaller</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>Bone removal</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Can require taking out excess bone</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Less bone removal</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>Force on the jaw</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">May apply unnecessary force</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">More controlled extraction</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4"><strong>Trauma &amp; precision</strong></td>
+                      <td className="border-b border-neutral-200 py-3 px-4">More stress on surrounding structures</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Reduced trauma and greater precision</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Why Isn&rsquo;t the Tooth Removed in One Piece?
@@ -282,6 +320,15 @@ export default function SurgicalWisdomToothRemovalPost() {
                     teeth cause pain, infection, damage to neighboring teeth, or other oral health concerns. A
                     comprehensive exam with digital X-rays or 3D imaging determines whether surgery is the best
                     option.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">How is a wisdom tooth divided during sectioning?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    A specialized surgical handpiece divides the tooth into sections, and the number of pieces
+                    depends on the tooth&rsquo;s position, root shape, bone density, and degree of impaction.
+                    The larger portions are elevated and removed first, followed by the remaining sections one
+                    at a time to keep the extraction controlled.
                   </p>
                 </div>
               </div>

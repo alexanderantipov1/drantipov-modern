@@ -58,7 +58,7 @@ export default function AllOn4ExplainedPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day#article","headline":"All-on-4® Dental Implants Explained: A New Smile in One Day","description":"How All-on-4 and full-arch dental implants restore a complete smile with same-day fixed teeth — candidacy, immediate extraction, immediate placement, immediate loading, and realistic long-term results.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day","datePublished":"2026-06-29","dateModified":"2026-06-29","image":["https://www.drantipov.com/images/blog/2026-04-28/same-day-implants.jpg"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I really get teeth in one day with All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Many qualified patients can. When implants achieve enough stability at surgery, a fixed temporary bridge can be attached the same day — known as immediate loading, teeth in a day, or same-day implants. Healing still continues underneath, and a final restoration is delivered after the implants integrate."}},{"@type":"Question","name":"Who is a candidate for same-day dental implants?","acceptedAnswer":{"@type":"Answer","text":"Candidacy depends on bone density, bone volume, overall oral health, implant stability at placement, medical history, and bite forces. A 3D CT scan and exam determine whether immediate loading is appropriate for your case."}},{"@type":"Question","name":"What is the difference between immediate extraction, immediate placement, and immediate loading?","acceptedAnswer":{"@type":"Answer","text":"Immediate extraction removes failing teeth during implant surgery. Immediate placement sets implants into the jaw right after extraction when conditions allow. Immediate loading attaches a fixed temporary bridge to those implants the same day, so you leave with teeth rather than removable dentures."}},{"@type":"Question","name":"What is a hybrid bridge?","acceptedAnswer":{"@type":"Answer","text":"A hybrid bridge is a fixed full-arch restoration that combines a titanium framework for strength, custom replacement teeth, and gum-colored material to replace lost tissue. It stays securely attached to the implants and is only removed by your dental team during maintenance."}},{"@type":"Question","name":"Are All-on-4 dental implants permanent?","acceptedAnswer":{"@type":"Answer","text":"The implants themselves are designed to become a permanent part of the jawbone. The same-day temporary bridge is later replaced with a stronger final restoration after healing. With good home care and regular professional cleanings, full-arch implants can last for decades."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day#article","headline":"All-on-4® Dental Implants Explained: A New Smile in One Day","description":"How All-on-4 and full-arch dental implants restore a complete smile with same-day fixed teeth — candidacy, immediate extraction, immediate placement, immediate loading, and realistic long-term results.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day","datePublished":"2026-06-29","dateModified":"2026-06-29","image":["https://www.drantipov.com/images/blog/2026-04-28/same-day-implants.jpg"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I really get teeth in one day with All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Many qualified patients can. When the implants achieve enough stability at surgery, a fixed temporary bridge can be attached the same day — immediate loading. Healing continues underneath, and a final restoration is delivered after the implants integrate."}},{"@type":"Question","name":"Who is a candidate for same-day dental implants?","acceptedAnswer":{"@type":"Answer","text":"Candidacy depends on bone density and volume, oral health, implant stability at placement, medical history, and bite forces. A 3D CT scan and exam determine whether immediate loading is appropriate for your case."}},{"@type":"Question","name":"What is the difference between immediate extraction, immediate placement, and immediate loading?","acceptedAnswer":{"@type":"Answer","text":"Immediate extraction removes failing teeth during implant surgery. Immediate placement sets implants into the jaw right after extraction when conditions allow. Immediate loading attaches a fixed temporary bridge to those implants the same day, so you leave with teeth rather than removable dentures."}},{"@type":"Question","name":"What is a hybrid bridge?","acceptedAnswer":{"@type":"Answer","text":"A fixed full-arch restoration combining a titanium framework, custom replacement teeth, and gum-colored material. It stays attached to the implants and is only removed by your dental team during maintenance."}},{"@type":"Question","name":"Are All-on-4 dental implants permanent?","acceptedAnswer":{"@type":"Answer","text":"The implants are designed to become a permanent part of the jawbone. The same-day temporary bridge is later replaced with a stronger final restoration, and with good care full-arch implants can last for decades."}},{"@type":"Question","name":"Does All-on-4 restore more than just teeth?","acceptedAnswer":{"@type":"Answer","text":"Yes. A properly designed full-arch restoration rebuilds bite height and facial support that are lost after long-term tooth or denture wear, which can improve lip support and give a fuller, more youthful facial profile — not just replace missing teeth."}},{"@type":"Question","name":"How is candidacy for same-day teeth determined?","acceptedAnswer":{"@type":"Answer","text":"During your consultation, advanced 3D CT imaging and an exam let the surgical team assess bone density and volume, oral health, and expected implant stability. Careful patient selection is one of the most important steps in achieving predictable long-term success."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -124,12 +124,18 @@ export default function AllOn4ExplainedPost() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                For people living with missing teeth or uncomfortable dentures, one question comes up
-                more than any other: <em>&ldquo;Can I really get a brand-new smile in one day?&rdquo;</em>
-                The answer is yes for many patients &mdash; but not every patient is the same. Modern
-                implant dentistry makes same-day smile restoration possible for many people through
-                advanced All-on-4&reg; and full-arch dental implant techniques. Understanding how the
-                procedure works can help you decide whether it may be the right solution for you.
+                Yes &mdash; many patients can leave with a full arch of fixed teeth the same day their
+                implants are placed, a technique commonly called All-on-4&reg; or &ldquo;teeth in a
+                day,&rdquo; explains Dr. Alexander Antipov, a board-certified oral &amp; maxillofacial
+                surgeon in Roseville, CA. Not every patient is a candidate, though &mdash; success
+                depends on your bone, bite, and overall health. Modern implant dentistry makes same-day
+                smile restoration possible for many people through advanced All-on-4&reg; and full-arch
+                dental implant techniques, and understanding how the procedure works can help you decide
+                whether it may be the right solution for you.
+              </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon for a
+                personalized recommendation.
               </p>
 
               <GlassCard className="my-10 p-6">
@@ -157,6 +163,30 @@ export default function AllOn4ExplainedPost() {
                 stability. The goal stays the same: restore a complete smile with permanent,
                 non-removable teeth.
               </p>
+
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="border-b border-neutral-200 py-3 px-4">Configuration</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">Implants per Arch</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">Typical Use</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">All-on-4&reg;</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">4 implants</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">The most common full-arch design; supports a complete fixed bridge.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">All-on-5&reg; / All-on-6&reg;</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">5&ndash;6 implants</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Added support and long-term stability for some anatomy and bone quality.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Is It Really Possible to Get Teeth in One Day?
@@ -327,6 +357,22 @@ export default function AllOn4ExplainedPost() {
                     The implants are designed to become a permanent part of the jawbone. The same-day
                     temporary bridge is later replaced with a stronger final restoration, and with good care
                     full-arch implants can last for decades.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">Does All-on-4 restore more than just teeth?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    Yes. A properly designed full-arch restoration rebuilds bite height and facial support
+                    that are lost after long-term tooth or denture wear, which can improve lip support and
+                    give a fuller, more youthful facial profile &mdash; not just replace missing teeth.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-3">How is candidacy for same-day teeth determined?</h3>
+                  <p className="text-neutral-700 leading-relaxed">
+                    During your consultation, advanced 3D CT imaging and an exam let the surgical team assess
+                    bone density and volume, oral health, and expected implant stability. Careful patient
+                    selection is one of the most important steps in achieving predictable long-term success.
                   </p>
                 </div>
               </div>

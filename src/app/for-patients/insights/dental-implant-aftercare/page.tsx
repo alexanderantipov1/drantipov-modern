@@ -6,7 +6,40 @@ import { RelatedArticles } from "@/components/RelatedArticles"
 import { Calendar, ArrowLeft, Clock, Heart, Check } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
-import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
+import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/structured-data"
+
+const faqs = [
+  {
+    question: "How long does it take to recover from dental implant surgery?",
+    answer:
+      "Initial soft-tissue healing takes about one to four weeks: swelling peaks around days 2–3, subsides within the first week, and most soft-tissue healing is complete by weeks 2–4. Osseointegration (the bone bonding to the implant) typically continues for about 3–6 months before the final crown is placed.",
+  },
+  {
+    question: "What can I eat after dental implant surgery?",
+    answer:
+      "Stick to soft foods at first and avoid hard, crunchy, or sticky foods that could disturb the surgical site. As healing progresses, you can gradually return to your normal diet. Following your surgeon's diet guidance protects the implant during the early healing window.",
+  },
+  {
+    question: "How do I keep the implant area clean while it heals?",
+    answer:
+      "Follow your surgeon's oral hygiene instructions closely, clean gently around the site, and use any rinses that are prescribed. Good hygiene before and after surgery reduces infection risk and supports healing.",
+  },
+  {
+    question: "Is some swelling and discomfort normal after implant surgery?",
+    answer:
+      "Yes. Some bleeding, swelling, and discomfort are normal in the first 24 hours, and swelling often peaks around days 2–3. Ice packs, rest, and taking medication as directed help. Contact your office if symptoms worsen instead of improving.",
+  },
+  {
+    question: "When can I return to normal activities after implant surgery?",
+    answer:
+      "Many patients return to most normal activities within about a week, as swelling subsides and stitches are removed or dissolve. Your surgeon will advise when it is safe to resume more strenuous activity based on your recovery.",
+  },
+  {
+    question: "What should I avoid during dental implant recovery?",
+    answer:
+      "Avoid smoking, which significantly increases complication rates, and steer clear of hard or sticky foods and anything that could disturb the surgical site early on. Report any unusual symptoms promptly so minor issues can be addressed before they become major problems.",
+  },
+]
 
 export const metadata: Metadata = {
   title: "Dental Implant Aftercare — Recovery Tips",
@@ -52,12 +85,12 @@ export default function DentalImplantAftercarePost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={structuredDataScript(getBreadcrumbSchema([
+        dangerouslySetInnerHTML={structuredDataScript([getBreadcrumbSchema([
           { name: "Home", url: "https://www.drantipov.com" },
           { name: "For Patients", url: "https://www.drantipov.com/for-patients" },
           { name: "Insights", url: "https://www.drantipov.com/for-patients/insights" },
           { name: "Dental Implant Aftercare: Tips for a Successful Recovery", url: "https://www.drantipov.com/for-patients/insights/dental-implant-aftercare" },
-        ]))}
+        ]), getFAQSchema(faqs)])}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -127,10 +160,54 @@ export default function DentalImplantAftercarePost() {
               </GlassCard>
 
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Congratulations on taking the first step toward restoring your smile with dental implants! Now that
-                you've had your surgery, proper aftercare is essential for ensuring successful healing and long-term
-                implant success. Here's your comprehensive guide to post-operative care.
+                Caring for a dental implant after surgery means following your post-operative instructions,
+                keeping the area clean, eating soft foods at first, and attending your follow-up visits,
+                explains Dr. Alexander V. Antipov, DDS, a board-certified oral &amp; maxillofacial surgeon in
+                Roseville, CA. Now that you've had your surgery, proper aftercare is essential for ensuring
+                successful healing and long-term implant success &mdash; here's your comprehensive guide to
+                post-operative care.
               </p>
+              <p className="italic text-neutral-600 mb-8">
+                This article is for general education &mdash; consult a qualified oral surgeon for a
+                personalized recommendation.
+              </p>
+
+              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">Recovery Timeline</h2>
+              <p className="text-neutral-700 leading-relaxed mb-6">
+                Understanding what to expect during recovery helps reduce anxiety:
+              </p>
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="border-b border-neutral-200 py-3 px-4">Time Period</th>
+                      <th className="border-b border-neutral-200 py-3 px-4">What to Expect</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">First 24 hours</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Some bleeding, swelling, and discomfort are normal. Use ice packs and rest.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Days 2&ndash;3</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Swelling peaks around day 2&ndash;3. Bruising may appear. Pain should be manageable with medication.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Week 1</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Swelling subsides. Stitches removed or dissolve. You can return to most normal activities.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Weeks 2&ndash;4</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Soft tissue healing is mostly complete. Bone integration continues beneath the surface.</td>
+                    </tr>
+                    <tr>
+                      <td className="border-b border-neutral-200 py-3 px-4">Months 3&ndash;6</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Osseointegration (bone bonding) is complete. Ready for crown placement and final restoration.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 9 Essential Aftercare Tips for Successful Recovery
@@ -377,44 +454,6 @@ export default function DentalImplantAftercarePost() {
                 </GlassCard>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">Recovery Timeline</h2>
-              <p className="text-neutral-700 leading-relaxed mb-6">
-                Understanding what to expect during recovery helps reduce anxiety:
-              </p>
-
-              <div className="space-y-4 my-8">
-                <GlassCard className="p-6 bg-blue-50">
-                  <h4 className="font-semibold text-neutral-900 mb-2">First 24 Hours:</h4>
-                  <p className="text-neutral-700">
-                    Some bleeding, swelling, and discomfort are normal. Use ice packs and rest.
-                  </p>
-                </GlassCard>
-                <GlassCard className="p-6 bg-blue-50">
-                  <h4 className="font-semibold text-neutral-900 mb-2">Days 2-3:</h4>
-                  <p className="text-neutral-700">
-                    Swelling peaks around day 2-3. Bruising may appear. Pain should be manageable with medication.
-                  </p>
-                </GlassCard>
-                <GlassCard className="p-6 bg-blue-50">
-                  <h4 className="font-semibold text-neutral-900 mb-2">Week 1:</h4>
-                  <p className="text-neutral-700">
-                    Swelling subsides. Stitches removed or dissolve. You can return to most normal activities.
-                  </p>
-                </GlassCard>
-                <GlassCard className="p-6 bg-blue-50">
-                  <h4 className="font-semibold text-neutral-900 mb-2">Weeks 2-4:</h4>
-                  <p className="text-neutral-700">
-                    Soft tissue healing is mostly complete. Bone integration continues beneath the surface.
-                  </p>
-                </GlassCard>
-                <GlassCard className="p-6 bg-blue-50">
-                  <h4 className="font-semibold text-neutral-900 mb-2">Months 3-6:</h4>
-                  <p className="text-neutral-700">
-                    Osseointegration (bone bonding) is complete. Ready for crown placement and final restoration.
-                  </p>
-                </GlassCard>
-              </div>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Contact Our Office
               </h2>
@@ -431,6 +470,18 @@ export default function DentalImplantAftercarePost() {
                   or concerns at any time.
                 </p>
               </GlassCard>
+
+              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
+                Frequently Asked Questions
+              </h2>
+              <div className="space-y-6 my-8">
+                {faqs.map((faq) => (
+                  <div key={faq.question}>
+                    <h3 className="text-xl font-semibold text-neutral-900 mb-3">{faq.question}</h3>
+                    <p className="text-neutral-700 leading-relaxed">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
             </div>
 
             {/* Sources / Authoritative References */}

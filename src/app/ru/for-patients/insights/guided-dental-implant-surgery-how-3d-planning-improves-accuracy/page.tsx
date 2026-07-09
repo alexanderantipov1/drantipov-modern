@@ -115,17 +115,6 @@ export default function GuidedDentalImplantSurgeryPost() {
                 самое безопасное и точное положение импланта ещё до начала операции.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Кратко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Имплантация по шаблону использует 3D-снимки и цифровое планирование, чтобы ставить импланты точнее.</li>
-                  <li>&bull; Хирургические шаблоны уменьшают догадки, повышают безопасность рядом с нервами и пазухами и позволяют планировать от будущей ортопедической конструкции.</li>
-                  <li>&bull; У многих пациентов разрезы меньше, операция короче, а восстановление мягче.</li>
-                  <li>&bull; Планирование по шаблону особенно полезно при <Link href="/ru/expertise/full-arch-implants" className="text-primary-700 hover:text-primary-800 font-semibold">полном восстановлении ряда</Link>, где положение имплантов влияет на прикус, прочность и дизайн улыбки.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Что такое имплантация по навигационному шаблону?
               </h2>

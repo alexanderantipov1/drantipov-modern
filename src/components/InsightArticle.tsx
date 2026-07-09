@@ -138,16 +138,6 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
                 <p className="italic text-neutral-600 text-base leading-relaxed mb-8">{article.disclaimer}</p>
               )}
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">{isRu ? "Коротко" : "TL;DR"}</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  {article.tldr.map((item, i) => (
-                    <li key={`tldr-${i}`}>&bull; {item}</li>
-                  ))}
-                </ul>
-              </GlassCard>
-
               {article.sections.map((section, si) => (
                 <div key={`section-${si}`}>
                   <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">

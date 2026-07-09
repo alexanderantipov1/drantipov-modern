@@ -119,18 +119,6 @@ export default function DentalImplantsAfterToothExtractionPost() {
                 personalized recommendation.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Implants after extraction may be placed immediately, early, or after a delayed healing period.</li>
-                  <li>&bull; Soft tissue heals quickly, but bone remodeling continues for months and affects implant stability.</li>
-                  <li>&bull; Bone (socket) preservation can reduce future bone loss and improve predictability.</li>
-                  <li>&bull; The best option depends on infection status, bone volume, aesthetics, and overall health.</li>
-                  <li>&bull; A 3D exam with an experienced <Link href="/about" className="text-primary-700 hover:text-primary-800 font-semibold">oral &amp; maxillofacial surgeon</Link> guides the safest plan.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Understanding Dental Implants
               </h2>

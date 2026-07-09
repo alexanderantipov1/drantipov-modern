@@ -117,18 +117,6 @@ export default function BoneGraftingForDentalImplantsPost() {
                 для приживления импланта.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Костная пластика восстанавливает объём челюстной кости там, где она убыла после потери зуба.</li>
-                  <li>&bull; Основные типы трансплантатов: аутотрансплантат, аллотрансплантат, ксенотрансплантат и синтетические материалы.</li>
-                  <li>&bull; Трансплантат обычно заживает 3&ndash;6 месяцев до установки импланта.</li>
-                  <li>&bull; Улучшает фиксацию, эстетику и долгий срок службы импланта.</li>
-                  <li>&bull; 3D-КТ-снимок покажет, нужна ли пластика и какой подход подойдёт лучше.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Что такое костная пластика?
               </h2>

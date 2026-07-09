@@ -116,19 +116,6 @@ export default function DentalImplantProcedureGuidePost() {
                 именно происходит, шаг за шагом.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Процедура делится на шесть этапов: консультация, подготовка, установка, остеоинтеграция, абатмент, коронка.</li>
-                  <li>&bull; Классическая имплантация занимает 4&ndash;9 месяцев; протокол «за один день» даёт временный зуб за один визит.</li>
-                  <li>&bull; Дискомфорт в 1&ndash;2-й день сопоставим с удалением зуба и снимается ибупрофеном.</li>
-                  <li>&bull; Современные импланты дают 95&ndash;98% успеха через 10 лет и могут служить 20+ лет.</li>
-                  <li>&bull; Стоимость: от $4 000 за одиночный имплант до от $16 999 за полную челюсть.</li>
-                  <li>&bull; Выбор опытного <Link href="/ru/about" className="text-primary-700 hover:text-primary-800 font-semibold">челюстно-лицевого хирурга</Link> резко снижает риски.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Полный таймлайн в одном взгляде
               </h2>

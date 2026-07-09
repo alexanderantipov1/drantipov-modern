@@ -118,17 +118,6 @@ export default function GuidedDentalImplantSurgeryPost() {
                 recommendation tailored to your case.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Guided dental implant surgery uses 3D scans and digital planning to place implants more accurately.</li>
-                  <li>&bull; Surgical guides can reduce guesswork, improve safety near nerves and sinuses, and support prosthetically driven planning.</li>
-                  <li>&bull; Many patients experience smaller incisions, shorter surgery time, and a smoother recovery.</li>
-                  <li>&bull; Guided planning is especially helpful for <Link href="/expertise/full-arch-implants" className="text-primary-700 hover:text-primary-800 font-semibold">full-arch cases</Link>, where positions impact bite, strength, and smile design.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 What Is Guided Dental Implant Surgery?
               </h2>

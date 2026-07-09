@@ -115,18 +115,6 @@ export default function SinusLiftPost() {
                 предсказуемость и долговечность результата.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко о главном</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Синус-лифтинг (синус-аугментация) увеличивает объём кости в верхней челюсти рядом с верхнечелюстными пазухами.</li>
-                  <li>&bull; Его рекомендуют, когда высоты кости недостаточно, чтобы безопасно удержать имплант.</li>
-                  <li>&bull; Мембрану пазухи аккуратно приподнимают и под неё помещают костный материал.</li>
-                  <li>&bull; Процедура обычно занимает 1&ndash;2 часа и нередко проводится под местной анестезией.</li>
-                  <li>&bull; Заживление занимает несколько месяцев, пока трансплантат приживается, — затем ставят импланты.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Что такое синус-лифтинг?
               </h2>

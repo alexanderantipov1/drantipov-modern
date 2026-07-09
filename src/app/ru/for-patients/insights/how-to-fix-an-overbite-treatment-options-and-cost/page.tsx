@@ -176,18 +176,6 @@ export default function HowToFixAnOverbitePost() {
                 челюсти — с реальными сроками и стоимостью.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Большинство случаев глубокого прикуса исправляют без операции — элайнерами или брекетами.</li>
-                  <li>&bull; Скелетный глубокий прикус (проблема в положении челюсти) исправляют ортодонтией в сочетании с операцией на челюсти.</li>
-                  <li>&bull; Детей можно лечить аппаратами, направляющими рост; взрослым перемещают зубы или делают операцию.</li>
-                  <li>&bull; Элайнеры/брекеты обычно занимают 6–24 месяца и стоят $3,000–$8,000.</li>
-                  <li>&bull; Бесплатная консультация с 3D-КТ — самый быстрый способ узнать, к какой категории относится ваш случай.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Сначала: зубной или скелетный глубокий прикус
               </h2>

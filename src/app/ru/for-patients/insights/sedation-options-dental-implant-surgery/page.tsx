@@ -114,18 +114,6 @@ export default function SedationOptionsDentalImplantSurgeryPost() {
                 варианты, вы идёте на операцию спокойно и уверенно.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Местная анестезия оставляет вас в полном сознании и обезболивает операционную зону &mdash; идеальна для простых случаев.</li>
-                  <li>&bull; Седация в таблетках снижает тревогу, но всасывается по-разному и хуже поддаётся контролю.</li>
-                  <li>&bull; Внутривенная седация действует быстро, позволяет регулировать глубину и снижает осознанность при продвинутом мониторинге.</li>
-                  <li>&bull; Общий наркоз приберегают для обширных операций, сильной тревожности или медицинских показаний.</li>
-                  <li>&bull; Седация снижает осознанность, а местная анестезия убирает боль &mdash; это не одно и то же.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Местная анестезия
               </h2>

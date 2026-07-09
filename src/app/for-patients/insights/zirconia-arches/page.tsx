@@ -117,16 +117,6 @@ export default function ZirconiaArchesPost() {
                 a qualified oral surgeon.
               </p>
 
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; A zirconia arch is a full set of teeth milled from one solid ceramic block.</li>
-                  <li>&bull; It attaches to 4&ndash;6 implants and functions as permanent teeth.</li>
-                  <li>&bull; Expect 15&ndash;20+ years of life, with strong stain and wear resistance.</li>
-                  <li>&bull; Higher upfront cost than acrylic, but typically lower lifetime cost.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 What Is a Zirconia Arch?
               </h2>

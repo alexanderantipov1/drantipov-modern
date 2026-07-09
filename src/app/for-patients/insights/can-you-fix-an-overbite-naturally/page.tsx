@@ -174,18 +174,6 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
                 personalized recommendation.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; No exercise, tongue posture, or home remedy reliably fixes an established overbite.</li>
-                  <li>&bull; &ldquo;Natural&rdquo; measures (habit changes, myofunctional therapy) help <em>prevent</em> overbites, mainly in children.</li>
-                  <li>&bull; In adults, the jaw has stopped growing — natural approaches cannot change jaw position.</li>
-                  <li>&bull; DIY &ldquo;gap bands&rdquo; and mail-order devices can permanently damage teeth — avoid them.</li>
-                  <li>&bull; Proven options: clear aligners, braces, and (for skeletal cases) jaw surgery.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 What People Mean by &ldquo;Fixing an Overbite Naturally&rdquo;
               </h2>

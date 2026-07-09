@@ -118,18 +118,6 @@ export default function ZygomaticWhenImpossiblePost() {
                 сложных случаев и требует продвинутой хирургической подготовки.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Скуловые импланты фиксируются в скуловой кости, а не в верхней челюсти, когда кость слишком резорбирована.</li>
-                  <li>&bull; Скуловая кость плотная, почти не резорбируется и даёт высокую первичную стабильность.</li>
-                  <li>&bull; Они позволяют избежать масштабной костной пластики и долгого приживления трансплантата.</li>
-                  <li>&bull; Многие случаи допускают немедленную нагрузку, но конструкция и уход критически важны.</li>
-                  <li>&bull; Это не лечение первой линии — нужен опытный <Link href="/ru/about" className="text-primary-700 hover:text-primary-800 font-semibold">челюстно-лицевой хирург</Link>.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Почему традиционные импланты не держатся при выраженной убыли кости
               </h2>

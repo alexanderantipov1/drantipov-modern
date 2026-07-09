@@ -118,18 +118,6 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
                 a qualified oral surgeon.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Zygomatic implants anchor in the cheekbone and may offer a practical alternative for severe upper-jaw bone loss.</li>
-                  <li>&bull; Bone grafting rebuilds bone but often requires a longer healing timeline before implants can be placed.</li>
-                  <li>&bull; Zygomatic implants are generally faster, sometimes allowing earlier restoration.</li>
-                  <li>&bull; Grafting is versatile for mild to moderate or localized bone loss.</li>
-                  <li>&bull; The right option depends on anatomy, health history, goals, and how quickly you want to restore function.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Understanding Severe Bone Loss
               </h2>

@@ -118,18 +118,6 @@ export default function SameDayImplantsPost() {
                 результат приходит через несколько месяцев, а не за шесть часов.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; В день операции вы уходите из клиники с фиксированными временными зубами на имплантах.</li>
-                  <li>&bull; Постоянный протез ставят через 4&ndash;6 месяцев, после полной остеоинтеграции.</li>
-                  <li>&bull; Нужны достаточная плотность кости и первичная стабильность импланта (&ge;35&nbsp;Н·см).</li>
-                  <li>&bull; Чаще всего применяется для All-on-4 и All-on-6 (полная челюсть).</li>
-                  <li>&bull; Курение, тяжёлый остеопороз и неконтролируемый диабет &mdash; относительные противопоказания.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Что на самом деле значит «немедленная нагрузка»
               </h2>

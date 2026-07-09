@@ -116,16 +116,6 @@ export default function HybridVsFixedPost() {
                 recommendation tailored to your case.
               </p>
 
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Hybrid dentures snap onto 2&ndash;4 implants and are removable by the patient.</li>
-                  <li>&bull; Fixed bridges are permanent, removed only by the dentist, and feel closest to natural teeth.</li>
-                  <li>&bull; Hybrids cost less upfront; fixed bridges offer maximum stability and feel.</li>
-                  <li>&bull; A 3D scan reveals which option your jaw can support.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Hybrid Dentures Explained
               </h2>

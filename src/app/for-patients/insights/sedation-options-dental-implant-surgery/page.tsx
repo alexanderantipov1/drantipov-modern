@@ -119,18 +119,6 @@ export default function SedationOptionsDentalImplantSurgeryPost() {
                 recommendation tailored to your case.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Local anesthesia keeps you fully conscious and numbs the surgical area &mdash; ideal for simple cases.</li>
-                  <li>&bull; Oral sedation reduces anxiety but has variable absorption and limited control.</li>
-                  <li>&bull; IV sedation offers rapid onset, adjustable depth, and reduced awareness with advanced monitoring.</li>
-                  <li>&bull; General anesthesia is reserved for extensive surgery, severe anxiety, or medical necessity.</li>
-                  <li>&bull; Sedation reduces awareness; local anesthesia controls pain &mdash; they are not the same thing.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Local Anesthesia
               </h2>

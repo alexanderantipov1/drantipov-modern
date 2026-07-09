@@ -116,18 +116,6 @@ export default function DentalImplantsAfterToothExtractionPost() {
                 дёсен и от того, была ли инфекция.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Имплант после удаления можно поставить сразу, рано или после отсроченного периода заживления.</li>
-                  <li>&bull; Мягкие ткани заживают быстро, а перестройка кости идёт месяцами и влияет на стабильность импланта.</li>
-                  <li>&bull; Сохранение кости (лунки) снижает будущую её потерю и делает результат предсказуемее.</li>
-                  <li>&bull; Лучший вариант зависит от наличия инфекции, объёма кости, эстетики и общего здоровья.</li>
-                  <li>&bull; 3D-обследование у опытного <Link href="/ru/about" className="text-primary-700 hover:text-primary-800 font-semibold">челюстно-лицевого хирурга</Link> помогает выбрать самый безопасный план.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Что такое дентальные импланты
               </h2>

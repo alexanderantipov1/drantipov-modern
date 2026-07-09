@@ -112,16 +112,6 @@ export default function AllOnXCostPost() {
                 вместе с ним и стоимость. Вот как в этом разобраться.
               </p>
 
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; All-on-4 встречается чаще всего; All-on-6 добавляет опору; All-on-8 применяется редко.</li>
-                  <li>&bull; Стоимость растёт с числом имплантов из-за материалов, времени операции и планирования.</li>
-                  <li>&bull; Честная смета включает снимки, удаления, седацию, временный и финальный протез.</li>
-                  <li>&bull; Нужное число определяется по 3D-снимку и вашему прикусу &mdash; а не только по цене.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Что означает &laquo;All-on-X&raquo;
               </h2>

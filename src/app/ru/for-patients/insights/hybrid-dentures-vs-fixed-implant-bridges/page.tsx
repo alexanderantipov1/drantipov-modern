@@ -113,16 +113,6 @@ export default function HybridVsFixedPost() {
                 для повседневной жизни.
               </p>
 
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Гибридные протезы защёлкиваются на 2&ndash;4 имплантах и снимаются самим пациентом.</li>
-                  <li>&bull; Несъёмные мосты постоянны, снимаются только стоматологом и ощущаются ближе всего к собственным зубам.</li>
-                  <li>&bull; Гибридные дешевле на старте; несъёмные мосты дают максимальную стабильность и естественность ощущений.</li>
-                  <li>&bull; 3D-снимок показывает, какой вариант способна выдержать ваша челюсть.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Что такое гибридные протезы
               </h2>

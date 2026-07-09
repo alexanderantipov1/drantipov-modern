@@ -120,18 +120,6 @@ export default function ZygomaticWhenImpossiblePost() {
                 a qualified oral surgeon.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Zygomatic implants anchor in the cheekbone, not the upper jaw, when bone is too resorbed.</li>
-                  <li>&bull; The zygomatic bone is dense, resorbs minimally, and gives high primary stability.</li>
-                  <li>&bull; They can avoid massive bone grafting and prolonged graft healing.</li>
-                  <li>&bull; Many cases allow immediate loading, but design and maintenance are critical.</li>
-                  <li>&bull; They are not a first-line treatment and require an experienced <Link href="/about" className="text-primary-700 hover:text-primary-800 font-semibold">oral &amp; maxillofacial surgeon</Link>.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Why Traditional Implants Fail in Severe Bone Loss
               </h2>

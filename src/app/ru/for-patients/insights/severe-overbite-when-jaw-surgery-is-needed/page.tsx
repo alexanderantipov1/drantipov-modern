@@ -114,18 +114,6 @@ export default function SevereOverbiteJawSurgeryPost() {
                 называют ортогнатической операцией. Вот как понять, что подходит именно вам.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Кратко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Большинство глубоких прикусов исправляют одной ортодонтией &mdash; операция нужна при скелетных случаях.</li>
-                  <li>&bull; Сильный (перекрытие 9+&nbsp;мм) или мешающий функции прикус часто требует операции.</li>
-                  <li>&bull; Ортогнатическая хирургия перемещает верхнюю челюсть, нижнюю или обе и фиксирует их титановыми пластинами.</li>
-                  <li>&bull; Лечение &mdash; это согласованный план на 18&ndash;36 месяцев: брекеты, операция, затем финальная ортодонтия.</li>
-                  <li>&bull; Медицинская страховка часто покрывает 60&ndash;90%, если задокументировано нарушение функции.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Когда операция на челюсти &mdash; правильный выбор?
               </h2>

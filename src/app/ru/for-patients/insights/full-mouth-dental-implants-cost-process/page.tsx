@@ -118,18 +118,6 @@ export default function FullMouthDentalImplantsPost() {
                 регионе Сакраменто.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Импланты на всю челюсть заменяют весь зубной ряд несъёмными зубами.</li>
-                  <li>&bull; Самый частый подход — All-on-4; альтернативы — All-on-6 и протезы на имплантах.</li>
-                  <li>&bull; Одна челюсть в регионе Сакраменто обычно обходится в $18 000&ndash;$30 000.</li>
-                  <li>&bull; Многие пациенты уходят с операции в тот же день с несъёмными временными зубами.</li>
-                  <li>&bull; Долгий успех зависит от 3D-снимков, опыта хирурга и качества протеза.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Что такое импланты на всю челюсть?
               </h2>

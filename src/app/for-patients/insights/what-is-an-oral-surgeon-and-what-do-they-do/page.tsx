@@ -118,18 +118,6 @@ export default function WhatIsAnOralSurgeonPost() {
                 a qualified oral surgeon.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; An oral &amp; maxillofacial surgeon is a dental specialist with extensive surgical training.</li>
-                  <li>&bull; Training runs 12&ndash;14 years after high school, including a 4&ndash;6 year hospital residency.</li>
-                  <li>&bull; They perform implants, extractions, jaw surgery, trauma repair, and pathology work.</li>
-                  <li>&bull; They can administer IV sedation and general anesthesia in-office.</li>
-                  <li>&bull; See one for wisdom teeth, full-arch implants, jaw surgery, and complex cases.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 What Is an Oral Surgeon?
               </h2>

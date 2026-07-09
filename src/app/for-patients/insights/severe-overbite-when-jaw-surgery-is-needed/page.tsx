@@ -117,18 +117,6 @@ export default function SevereOverbiteJawSurgeryPost() {
                 for a recommendation tailored to your case.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Most overbites are corrected with orthodontics alone &mdash; surgery is for skeletal cases.</li>
-                  <li>&bull; Severe (9+&nbsp;mm overlap) or functionally impairing overbites often need surgery.</li>
-                  <li>&bull; Orthognathic surgery repositions the upper jaw, lower jaw, or both with titanium fixation.</li>
-                  <li>&bull; Treatment is a coordinated 18&ndash;36 month plan: braces, surgery, then final orthodontics.</li>
-                  <li>&bull; Medical insurance often covers 60&ndash;90% when functional impairment is documented.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 When Is Jaw Surgery the Right Answer?
               </h2>

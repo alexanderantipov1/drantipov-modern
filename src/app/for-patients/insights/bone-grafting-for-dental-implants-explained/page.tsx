@@ -121,18 +121,6 @@ export default function BoneGraftingForDentalImplantsPost() {
                 personalized recommendation.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Bone grafting rebuilds jawbone volume where bone has deteriorated after tooth loss.</li>
-                  <li>&bull; Common graft types include autografts, allografts, xenografts, and synthetic materials.</li>
-                  <li>&bull; A graft typically heals over 3&ndash;6&nbsp;months before implant placement.</li>
-                  <li>&bull; It improves anchorage, aesthetics, and long-term implant success.</li>
-                  <li>&bull; A 3D CT scan confirms whether grafting is needed and which approach fits best.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 What Is Bone Grafting?
               </h2>

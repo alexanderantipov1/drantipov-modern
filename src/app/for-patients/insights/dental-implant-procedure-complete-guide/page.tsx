@@ -119,19 +119,6 @@ export default function DentalImplantProcedureGuidePost() {
                 personalized recommendation.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; The procedure has six phases: consultation, preparation, placement, osseointegration, abutment, and crown.</li>
-                  <li>&bull; Traditional implants take 4&ndash;9 months; same-day protocols deliver a temporary tooth in one visit.</li>
-                  <li>&bull; Day 1&ndash;2 discomfort is similar to a tooth extraction and manageable with ibuprofen.</li>
-                  <li>&bull; Modern implants have 95&ndash;98% success rates at 10 years and can last 20+ years.</li>
-                  <li>&bull; Costs range from $4,000 for a single implant to full-arch options from $16,999 per arch.</li>
-                  <li>&bull; Choosing an experienced <Link href="/about" className="text-primary-700 hover:text-primary-800 font-semibold">oral &amp; maxillofacial surgeon</Link> dramatically reduces risk.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 The Full Timeline at a Glance
               </h2>

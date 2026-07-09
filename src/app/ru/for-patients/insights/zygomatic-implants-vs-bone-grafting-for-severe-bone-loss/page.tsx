@@ -116,18 +116,6 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
                 выбрать следующий шаг.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Скуловые импланты фиксируются в скуловой кости и могут стать практичной альтернативой при выраженной убыли кости верхней челюсти.</li>
-                  <li>&bull; Костная пластика восстанавливает объём кости, но часто требует более долгого заживления, прежде чем ставить импланты.</li>
-                  <li>&bull; Скуловые импланты, как правило, быстрее и иногда позволяют раньше приступить к протезированию.</li>
-                  <li>&bull; Костная пластика универсальна при лёгкой и умеренной или локальной убыли кости.</li>
-                  <li>&bull; Подходящий вариант зависит от анатомии, истории здоровья, целей и того, как быстро вы хотите вернуть функцию.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Что такое выраженная убыль кости
               </h2>

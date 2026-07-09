@@ -122,18 +122,6 @@ export default function SameDayImplantsPost() {
                 recommendation tailored to your case.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; You leave the office the day of surgery with fixed temporary teeth on your implants.</li>
-                  <li>&bull; The final prosthesis is delivered 4&ndash;6 months later, after full osseointegration.</li>
-                  <li>&bull; Candidacy requires sufficient bone density and primary implant stability (&ge;35&nbsp;Ncm).</li>
-                  <li>&bull; Most often used for All-on-4 and All-on-6 (full-arch) cases.</li>
-                  <li>&bull; Smoking, severe osteoporosis, and uncontrolled diabetes are relative contraindications.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 What Immediate Loading Actually Means
               </h2>

@@ -121,18 +121,6 @@ export default function ZygomaticImplantsPost() {
                 a qualified oral surgeon.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Zygomatic implants are long (30&ndash;55&nbsp;mm) implants anchored in the cheekbone, not the jaw.</li>
-                  <li>&bull; Indicated for severe upper-jaw atrophy where conventional implants are not feasible.</li>
-                  <li>&bull; Often eliminate the need for staged bone grafting and a year of waiting.</li>
-                  <li>&bull; Same-day temporary teeth are possible with immediate loading.</li>
-                  <li>&bull; Only experienced <Link href="/about" className="text-primary-700 hover:text-primary-800 font-semibold">oral &amp; maxillofacial surgeons</Link> perform this technique.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 What They Are and Where They&rsquo;re Placed
               </h2>

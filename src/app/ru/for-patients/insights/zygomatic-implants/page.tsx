@@ -115,18 +115,6 @@ export default function ZygomaticImplantsPost() {
                 Если вам сказали, что обычные импланты невозможны из-за нехватки кости в верхней челюсти, скуловые импланты могут стать решением. Это не «более удачная альтернатива» — это отдельный подход для сложных случаев, когда стандартные протоколы и костная пластика не работают.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Скуловые импланты — длинные (30–55 мм), крепятся не в челюсть, а в скуловую кость.</li>
-                  <li>&bull; Показаны при тяжёлой атрофии верхней челюсти, когда обычные импланты поставить нельзя.</li>
-                  <li>&bull; Часто позволяют обойтись без поэтапной костной пластики и года ожидания.</li>
-                  <li>&bull; Временные зубы в день операции — возможно по протоколу немедленной нагрузки.</li>
-                  <li>&bull; Технику выполняют только опытные <Link href="/ru/about" className="text-primary-700 hover:text-primary-800 font-semibold">челюстно-лицевые хирурги</Link>.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Что это такое и куда их ставят
               </h2>

@@ -114,18 +114,6 @@ export default function WhatIsAnOralSurgeonPost() {
                 хирургический опыт и лечат то, что выходит за рамки общей стоматологии.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Челюстно-лицевой хирург — стоматолог-специалист с серьёзной хирургической подготовкой.</li>
-                  <li>&bull; Полное обучение занимает 12&ndash;14 лет после школы, включая 4&ndash;6-летнюю резидентуру в больнице.</li>
-                  <li>&bull; Делают имплантацию, удаления, челюстную хирургию, лечение травм и патологий.</li>
-                  <li>&bull; Имеют право проводить внутривенную седацию и общую анестезию прямо в клинике.</li>
-                  <li>&bull; Обращайтесь при зубах мудрости, имплантах на полную челюсть, челюстной хирургии и сложных случаях.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Кто такой челюстно-лицевой хирург?
               </h2>

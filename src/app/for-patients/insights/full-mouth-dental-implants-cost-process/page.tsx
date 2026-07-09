@@ -122,18 +122,6 @@ export default function FullMouthDentalImplantsPost() {
                 making decisions.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Full mouth dental implants replace an entire arch with fixed, non-removable teeth.</li>
-                  <li>&bull; The most common approach is All-on-4; All-on-6 and overdentures are alternatives.</li>
-                  <li>&bull; A single arch generally runs $18,000&ndash;$30,000 in the Sacramento region.</li>
-                  <li>&bull; Many patients leave surgery the same day with a fixed temporary set of teeth.</li>
-                  <li>&bull; 3D imaging, surgical experience, and prosthetic quality drive long-term success.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 What Are Full Mouth Dental Implants?
               </h2>

@@ -165,18 +165,6 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
                 какие мифы стоит обходить и какие варианты действительно работают.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Кратко</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Ни упражнения, ни положение языка, ни домашние средства надёжно не исправляют уже сформировавшийся прикус.</li>
-                  <li>&bull; &laquo;Естественные&raquo; меры (смена привычек, миофункциональная терапия) помогают <em>предотвратить</em> прикус, в основном у детей.</li>
-                  <li>&bull; У взрослых челюсть уже не растёт &mdash; естественные подходы не могут изменить её положение.</li>
-                  <li>&bull; Самодельные &laquo;резинки от щелей&raquo; и присылаемые по почте устройства могут необратимо повредить зубы &mdash; не используйте их.</li>
-                  <li>&bull; Проверенные варианты: прозрачные элайнеры, брекеты и (при скелетных случаях) хирургия челюсти.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Что люди имеют в виду под &laquo;естественным исправлением прикуса&raquo;
               </h2>

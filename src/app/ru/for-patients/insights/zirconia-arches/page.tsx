@@ -114,16 +114,6 @@ export default function ZirconiaArchesPost() {
                 титана, популярным десятилетие назад.
               </p>
 
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко о главном</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Циркониевая дуга — полный ряд зубов, выточенный из одного цельного блока керамики.</li>
-                  <li>&bull; Она крепится на 4&ndash;6 имплантов и работает как постоянные зубы.</li>
-                  <li>&bull; Срок службы — 15&ndash;20 лет и больше, с высокой устойчивостью к пятнам и износу.</li>
-                  <li>&bull; Дороже акрила при установке, но обычно дешевле в перерасчёте на весь срок службы.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 Что такое циркониевая дуга?
               </h2>

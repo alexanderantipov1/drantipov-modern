@@ -116,16 +116,6 @@ export default function AllOnXCostPost() {
                 before making decisions.
               </p>
 
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; All-on-4 is the most common; All-on-6 adds support; All-on-8 is rare.</li>
-                  <li>&bull; Cost rises with implant count because of materials, surgical time, and planning.</li>
-                  <li>&bull; A real quote includes imaging, extractions, sedation, temporary, and final prosthesis.</li>
-                  <li>&bull; The right number is decided by 3D imaging and your bite &mdash; not by price alone.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 What &ldquo;All-on-X&rdquo; Means
               </h2>

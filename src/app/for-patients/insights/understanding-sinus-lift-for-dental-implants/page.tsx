@@ -118,18 +118,6 @@ export default function SinusLiftPost() {
                 a qualified oral surgeon.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; A sinus lift (sinus augmentation) increases bone volume in the upper jaw near the maxillary sinuses.</li>
-                  <li>&bull; It is recommended when there is not enough bone height to support an implant safely.</li>
-                  <li>&bull; The sinus membrane is gently elevated and bone graft material is placed beneath it.</li>
-                  <li>&bull; The procedure usually takes 1&ndash;2 hours and is often done with local anesthesia.</li>
-                  <li>&bull; Healing takes several months as the graft integrates before implants are placed.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 What Is a Sinus Lift?
               </h2>

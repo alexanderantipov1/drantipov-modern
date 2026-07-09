@@ -176,18 +176,6 @@ export default function HowToFixAnOverbitePost() {
                 for a recommendation tailored to your case.
               </p>
 
-              {/* TL;DR */}
-              <GlassCard className="my-10 p-6">
-                <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Most overbites are fixed without surgery — with clear aligners or braces.</li>
-                  <li>&bull; Skeletal overbites (a jaw-position problem) are corrected with orthodontics plus jaw surgery.</li>
-                  <li>&bull; Children can be treated with growth-guiding appliances; adults move teeth or have surgery.</li>
-                  <li>&bull; Aligners/braces typically take 6–24 months and cost $3,000–$8,000.</li>
-                  <li>&bull; A 3D CT consultation is the fastest way to learn which category you are in.</li>
-                </ul>
-              </GlassCard>
-
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
                 First: Dental Overbite vs. Skeletal Overbite
               </h2>

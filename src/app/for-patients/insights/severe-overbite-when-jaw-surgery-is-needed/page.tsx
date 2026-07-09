@@ -90,7 +90,7 @@ export default function SevereOverbiteJawSurgeryPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Medically reviewed by <Link href="/about" className="not-italic font-bold text-neutral-900 underline decoration-primary-300 hover:decoration-primary-600">Dr. Alexander V. Antipov, DDS</Link> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -494,8 +494,8 @@ export default function SevereOverbiteJawSurgeryPost() {
                 </h3>
                 <p className="text-neutral-700 mb-6">
                   Schedule a consultation with our oral and maxillofacial surgeons. We will evaluate your case
-                  and explain every realistic option, including non-surgical alternatives. The consultation is
-                  complimentary and a patient coordinator will follow up within 24 hours.
+                  and explain every realistic option, including non-surgical alternatives. A patient
+                  coordinator will follow up within 24 hours.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg">

@@ -146,7 +146,7 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
             </h1>
 
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Medically reviewed by <Link href="/about" className="not-italic font-bold text-neutral-900 underline decoration-primary-300 hover:decoration-primary-600">Dr. Alexander V. Antipov, DDS</Link> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -274,7 +274,10 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
               <p className="text-neutral-700 leading-relaxed mb-6">
                 By the time you are an adult, your jaw bones have finished growing. Growth guidance is no longer
                 possible, so a skeletal overbite can only be changed by repositioning the jaw surgically.
-                A dental overbite in an adult is still very treatable — but with aligners or braces, not with
+                A dental overbite in an adult is still very treatable — but with{" "}
+                <a href="https://www.mouthhealthy.org" target="_blank" rel="noopener noreferrer" className="text-primary-600 underline">
+                  aligners or braces
+                </a>, not with
                 exercises. The good news is that{" "}
                 <Link href="/for-patients/insights/how-to-fix-an-overbite-treatment-options-and-cost" className="text-primary-600 underline">
                   correcting an overbite as an adult

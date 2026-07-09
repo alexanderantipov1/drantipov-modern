@@ -335,109 +335,6 @@ export default function JsonLd() {
     ],
   };
 
-  const faqPage = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "How much do All-on-4 dental implants cost in Roseville, CA?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The cost of All-on-4 dental implants varies based on your specific needs, the materials chosen (zirconia vs. PMMA acrylic), and whether bone grafting is required. Dr. Antipov offers a free dental implant consultation with a complimentary 3D CT scan to provide an accurate treatment plan and cost estimate. Flexible financing options are available starting at $99/month through multiple lending partners including CareCredit.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can I get dental implants and teeth in one day?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. Dr. Antipov specializes in same-day dental implant procedures using the immediate-load protocol. Using the All-on-4 or All-on-6 technique, implants are placed and temporary teeth are attached in a single visit, typically within 3-4 hours under IV sedation. You walk in with missing or failing teeth and leave the same day with a full set of functional, natural-looking teeth.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the difference between All-on-4 and All-on-6 dental implants?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "All-on-4 uses four strategically placed implants to support a full arch of teeth, with the posterior implants angled to maximize bone contact and avoid the need for bone grafting. All-on-6 uses six implants per arch for additional stability, which may be recommended for patients with heavier bite forces or who want enhanced long-term security. Both options provide same-day teeth and permanent results.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What are zygomatic implants?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Zygomatic implants are specialized long implants that anchor into the cheekbone (zygoma) instead of the upper jawbone. They are designed for patients with severe upper jaw bone loss who have been told they are not candidates for traditional dental implants. Zygomatic implants eliminate the need for extensive bone grafting and can provide same-day teeth in a single procedure.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is corrective jaw surgery (orthognathic surgery)?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Corrective jaw surgery, also called orthognathic surgery, repositions the upper jaw (maxilla), lower jaw (mandible), or both to correct misalignment that cannot be fixed with braces alone. Common procedures include Le Fort I osteotomy, bilateral sagittal split osteotomy (BSSO), genioplasty, and maxillomandibular advancement. Reasons for surgery include underbite, overbite, open bite, facial asymmetry, difficulty chewing, chronic jaw pain, and obstructive sleep apnea. Dr. Antipov uses 3D computer-guided surgical planning for precise outcomes.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is organic or holistic bone grafting?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Organic and holistic bone grafting uses minimally processed, naturally derived bone graft materials to rebuild jawbone lost to tooth extraction, periodontal disease, or trauma. Options include autogenous bone (from your own body), allograft (processed human donor bone), and xenograft (naturally derived bovine or porcine bone). These materials are biocompatible and support natural bone regeneration without synthetic chemicals, making them ideal for patients who prefer a holistic approach to dental implant preparation.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Does Dr. Antipov offer free dental implant consultations?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. Patients considering dental implants receive a complimentary dental implant consultation that includes a 3D Cone Beam CT scan, a thorough examination, a personalized treatment plan, and a discussion of financial options — at no cost and no obligation. Restrictions apply. Virtual consultations are also available for patients who live out of the area.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What areas does Dr. Antipov serve?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Dr. Antipov's main office is located in Roseville, California. The practice serves patients from across Northern California and Northern Nevada including Sacramento, Folsom, Rocklin, El Dorado Hills, Lincoln, Auburn, Granite Bay, Elk Grove, the San Francisco Bay Area, Napa, Sonoma, Reno, South Lake Tahoe, Truckee, Chico, Redding, Stockton, Modesto, and Fresno. Patients regularly travel from a 3.5-hour radius for specialized procedures. Virtual consultations are available worldwide.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What types of facial cosmetic surgery does Dr. Antipov perform?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Dr. Antipov performs rhinoplasty (nose reshaping), rhytidectomy (face lift), upper and lower blepharoplasty (eyelid surgery), Asian double eyelid surgery, facial feminization surgery, scarless mole removal using radio wave technique, Juvederm dermal fillers, lip augmentation, and autologous fat transfer for facial volume restoration. As a board-certified oral and maxillofacial surgeon, he has an unmatched understanding of facial bone structure and soft tissue anatomy.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the recovery time for dental implant surgery?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Most patients return to normal activities within 2-3 days after dental implant surgery. You will have temporary teeth attached the same day, so you can eat soft foods and smile immediately. Full osseointegration (bone healing around the implants) typically takes 3-6 months, after which your permanent zirconia or porcelain prosthesis is placed. Dr. Antipov provides detailed recovery instructions and follow-up care throughout the healing process.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Does Dr. Antipov treat TMJ disorders?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. Dr. Antipov diagnoses and treats temporomandibular joint (TMJ) disorders including jaw clicking, popping, locking, chronic jaw pain, and limited jaw movement. Treatment options range from conservative approaches (splint therapy, physical therapy) to surgical interventions (arthrocentesis, arthroscopy, open joint surgery) depending on the severity and cause of the disorder.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can jaw surgery cure sleep apnea?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. Maxillomandibular advancement (MMA) surgery is one of the most effective surgical treatments for obstructive sleep apnea. By advancing both the upper and lower jaws forward, the airway is permanently enlarged, reducing or eliminating sleep apnea symptoms. Dr. Antipov uses 3D computer-guided planning for precise jaw positioning and predictable results.",
-        },
-      },
-    ],
-  };
-
   const medicalWebPage = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
@@ -538,10 +435,6 @@ export default function JsonLd() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianKahwach) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
       />
       <script
         type="application/ld+json"

@@ -2674,6 +2674,173 @@ export const guideArticles: RevisionArticle[] = [
       body: "Dr. Antipov's team is available to check your recovery and treat any concern early. Book a consultation or reach out to our Roseville practice.",
     },
   },
+  {
+    slug: "iv-sedation-dentistry-what-to-expect",
+    title: "IV Sedation Dentistry: What to Expect Before, During, and After Oral Surgery",
+    metaTitle: "IV Sedation Dentistry: What to Expect | Roseville Oral Surgeon",
+    metaDescription:
+      "IV sedation dentistry explained by a board-certified oral surgeon in Roseville, CA — how twilight sedation feels, safety monitoring, who is a candidate, how to prepare, and what recovery looks like.",
+    excerpt:
+      "IV sedation keeps you breathing on your own and able to respond, yet deeply relaxed — and most patients remember little or nothing of their procedure. Here is how the twilight state works, how safety is monitored, and how to prepare for your appointment.",
+    date: "July 13, 2026",
+    datePublished: "2026-07-13",
+    image: "/images/blog/2026-07-13/iv-sedation-dentistry.png",
+    heroAlt: "Relaxed patient under IV sedation in a modern oral surgery suite with a vital-signs monitor in the background",
+    category: "Patient Care",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "iv sedation dentistry",
+      "twilight sedation oral surgery",
+      "iv sedation dental implants",
+      "sedation dentistry roseville",
+      "is iv sedation safe for dental surgery",
+    ],
+    intro: [
+      "IV sedation dentistry places you in a deeply relaxed \u201ctwilight\u201d state — you keep breathing on your own and can respond to simple requests, yet most patients remember little or nothing of their procedure, explains Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. For patients whose anxiety has kept them from moving forward with ",
+      { text: "dental implants", href: "/for-patients/insights/dental-implant-procedure-complete-guide" },
+      " or other oral surgery, it is often the option that finally makes treatment feel possible. Because the medication is delivered directly into the bloodstream, its depth can be adjusted moment to moment — something an oral sedative pill cannot offer. This guide walks through how the twilight state actually feels, the step-by-step experience on surgery day, how your safety is monitored, who makes a good candidate, and how to prepare — so you can decide, calmly and clearly, whether IV sedation is the right comfort level for your procedure.",
+    ],
+    disclaimer:
+      "This article is for general education and is not medical advice. Sedation decisions depend on your health history and medications — discuss your options with your surgeon at an in-person consultation.",
+    tldr: [
+      "IV sedation is moderate \u201cconscious\u201d sedation: you breathe on your own and can respond, but you feel deeply relaxed and typically remember little of the procedure.",
+      "Depth is adjustable in real time because medication enters the bloodstream directly — a key advantage over oral sedative pills.",
+      "Vital signs are monitored continuously throughout the procedure, and you recover in the office until you are alert enough to leave with your driver.",
+      "You must fast beforehand and arrange a responsible adult to drive you home.",
+    ],
+    sections: [
+      {
+        heading: "IV Sedation at a Glance",
+        paras: [
+          "Patients researching sedation usually want the same handful of answers first: Will I be asleep? Will I remember it? How long until I feel normal? The table below summarizes what IV sedation actually involves before the details that follow.",
+        ],
+        table: {
+          headers: ["Question", "IV Sedation Answer"],
+          rows: [
+            ["Will I be unconscious?", "No — it is moderate \u201cconscious\u201d sedation. You breathe on your own and can respond to verbal cues, but you are deeply relaxed."],
+            ["Will I remember the procedure?", "Most patients remember little or nothing — the medications have a strong amnesic effect."],
+            ["Will it hurt?", "Local anesthetic still numbs the surgical site completely; sedation manages awareness and anxiety, not pain."],
+            ["How is it given?", "Through a small IV line, usually in the arm or the back of the hand, so depth can be adjusted in real time."],
+            ["Can I drive myself home?", "No — a responsible adult must drive you and stay with you while the medication wears off."],
+            ["Who administers it?", "In an oral surgery office, a surgeon with anesthesia training and the required state permit, supported by a trained surgical team."],
+          ],
+        },
+      },
+      {
+        heading: "What \u201cTwilight\u201d Sedation Actually Means",
+        paras: [
+          "IV sedation is technically classified as moderate conscious sedation. That phrase matters, because it separates the twilight state from the general anesthesia used in hospital operating rooms. Under general anesthesia you are fully unconscious and your airway is managed for you. Under IV sedation, you maintain your own breathing and protective reflexes and can follow a simple instruction like \u201cturn your head\u201d — you simply exist in a calm, dream-like state where the sounds and details of the procedure fade into the background.",
+          "Two things make this state so effective for oral surgery. First, the sedatives have an amnesic effect: even though you were technically conscious, most patients retain little or no memory of the appointment. A two-hour surgery is often recalled as a few pleasant minutes. For patients with dental phobia rooted in a bad past experience, not carrying a new surgical memory home is a genuinely powerful part of breaking that cycle. Second, sedation quiets the reflexes that fight dental work — a strong gag reflex, restlessness during long appointments — which lets the surgeon work with maximum precision.",
+          [
+            "One point deserves emphasis, because it is the most common misconception we correct at consultations: sedation is not pain control. Your surgical site is still numbed completely with local anesthetic. Sedation manages anxiety and awareness on top of that. If you want a full comparison of every comfort level — local anesthesia only, oral sedation, IV sedation, and general anesthesia — our guide to ",
+            { text: "sedation options for dental implant surgery", href: "/for-patients/insights/sedation-options-dental-implant-surgery" },
+            " walks through when each one fits.",
+          ],
+        ],
+      },
+      {
+        heading: "Step by Step: Your IV Sedation Appointment",
+        paras: [
+          "The process starts before surgery day. At your consultation, your medical history, current medications, and supplements are reviewed in detail to confirm that IV sedation is the safest choice for you — this is also when you should raise past experiences with anesthesia and any specific fears you want the team to know about.",
+          "On the day of surgery, you settle into the surgical chair and the IV line is placed, usually in the arm or the back of the hand. You may feel a brief pinch, and then relaxation follows quickly. Because the medication flows directly into the bloodstream, the surgeon can fine-tune the level throughout the procedure rather than committing to a fixed dose the way an oral pill requires.",
+          "When the surgery is finished, the IV is removed and you move to recovery, where you remain until you are alert enough to go home. The medication lingers for hours in subtle ways, which is why the driver requirement is absolute: a responsible adult drives you home and stays with you for the rest of the day. Most patients feel back to themselves by the following morning, though your surgeon will give you specific guidance for your case.",
+        ],
+      },
+      {
+        heading: "How Your Safety Is Monitored",
+        paras: [
+          [
+            "Throughout the procedure, your vital signs are tracked continuously — a pulse oximeter on your finger monitors blood oxygen while your blood pressure and heart rate are checked at regular intervals, and a trained team member remains with you at all times. This is a core part of the office-based anesthesia model that oral and maxillofacial surgeons train for: administering sedation safely is part of hospital-based OMS residency, and the ",
+            { text: "American Association of Oral and Maxillofacial Surgeons", href: "https://www.aaoms.org/procedures/anesthesia" },
+            " outlines how surgeons and their teams are prepared to deliver office-based anesthesia and respond to emergencies.",
+          ],
+          "In California, administering this level of sedation in an office also requires the appropriate state anesthesia permit, in addition to the training itself. At your consultation, you are entitled to ask directly: Who administers the sedation? What monitoring is used? What is the emergency protocol? A well-run surgical practice welcomes those questions.",
+        ],
+      },
+      {
+        heading: "Who Is a Good Candidate — and Who Benefits Most",
+        paras: [
+          "Most healthy adults, and most patients with well-managed chronic conditions such as controlled high blood pressure or diabetes, are candidates for IV sedation. Age by itself is rarely the deciding factor — dosing is individualized to your health profile, not your birth year. What matters is a complete and honest medical history, including every medication and supplement you take, since some common products can influence how sedatives are processed.",
+        ],
+        list: [
+          "Patients with strong dental anxiety or a past traumatic dental experience — the amnesic effect prevents the appointment from becoming another bad memory.",
+          "Patients with a sensitive gag reflex that makes ordinary dental work feel impossible.",
+          [
+            "Patients undergoing longer procedures — ",
+            { text: "full-arch (All-on-4) treatment", href: "/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day" },
+            ", multiple implants, or implants combined with extractions — where staying still and relaxed for an extended period matters.",
+          ],
+          "Patients who want more depth and control than an oral sedative pill can provide, without the systemic commitment of general anesthesia.",
+        ],
+      },
+      {
+        heading: "How to Prepare for Your Sedation Appointment",
+        paras: [
+          "Preparation is simple but non-negotiable. You will receive fasting instructions — typically no food or drink for several hours before surgery — and following them exactly is a safety requirement, not a suggestion. Wear comfortable clothing with sleeves that roll up easily for IV placement, and leave jewelry and nail polish on the IV hand at home, since they can interfere with monitoring equipment.",
+          "Arrange your responsible adult in advance: someone to drive you to the office, remain reachable during the procedure, drive you home, and stay with you afterward. Plan a quiet rest-of-day — no work decisions, no driving, no signing documents. Your surgical team will give you written instructions specific to your procedure and health history, and those always take precedence over general guidance like this article.",
+        ],
+      },
+      {
+        heading: "IV Sedation at Dr. Antipov's Roseville Practice",
+        paras: [
+          [
+            "At his Roseville office, ",
+            { text: "Dr. Alexander Antipov", href: "/about" },
+            " — a board-certified oral and maxillofacial surgeon and Diplomate of the American Board of Oral and Maxillofacial Surgery — performs implant and oral surgery procedures under IV sedation with continuous monitoring by a trained surgical team. Sedation planning is part of the consultation itself: your health history, your anxiety level, and the complexity of your procedure all factor into a recommendation made for you, not a one-size-fits-all default.",
+          ],
+          [
+            "Because sedation and surgery happen under one roof, longer treatment plans — from a single implant after an extraction to ",
+            { text: "same-day full-arch teeth", href: "/for-patients/insights/same-day-implants" },
+            " — can be completed comfortably in fewer visits. Patients travel to us from across the Sacramento region, including Rocklin, Granite Bay, Citrus Heights, and Folsom.",
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Am I asleep during IV sedation?",
+        answer:
+          "Not in the way you sleep at night, and not unconscious the way general anesthesia works. IV sedation is moderate conscious sedation: you breathe on your own, your protective reflexes stay intact, and you can respond to simple verbal cues — but you are deeply relaxed and typically remember little or nothing afterward.",
+      },
+      {
+        question: "Will I feel pain during the procedure?",
+        answer:
+          "No. Sedation and pain control are separate. Your surgical site is numbed completely with local anesthetic, exactly as it would be without sedation. The IV medication manages anxiety and awareness on top of that numbing.",
+      },
+      {
+        question: "Why don't patients remember the procedure?",
+        answer:
+          "The medications used for IV sedation have a strong amnesic effect — the brain does not encode the sights, sounds, and sensations of the appointment into lasting memory. Most patients recall the IV being placed and then waking up in recovery, even after a procedure that lasted hours.",
+      },
+      {
+        question: "How is IV sedation different from taking a sedative pill?",
+        answer:
+          "An oral sedative is absorbed unpredictably and cannot be adjusted once swallowed. IV medication enters the bloodstream directly, takes effect quickly, and can be titrated up or down throughout the procedure. IV sedation also requires continuous vital-sign monitoring and a permitted, trained provider, which oral sedation at this depth does not replace.",
+      },
+      {
+        question: "Is IV sedation safe if I'm older or have a health condition?",
+        answer:
+          "Age alone is rarely disqualifying, and most well-managed conditions such as controlled hypertension or diabetes are compatible with IV sedation. The key is a complete medical history — every condition, medication, and supplement — reviewed at your consultation so dosing and monitoring can be tailored to you.",
+      },
+      {
+        question: "Do I really need someone to drive me home?",
+        answer:
+          "Yes, without exception. Sedative medication impairs reflexes and judgment for hours after you feel alert. A responsible adult must drive you home and stay with you for the rest of the day, and you should not drive, work, or make important decisions until the next day.",
+      },
+      {
+        question: "How long before surgery do I need to stop eating and drinking?",
+        answer:
+          "You will receive exact fasting instructions from your surgical team, typically requiring several hours with no food or drink before surgery. Following them precisely is a safety requirement for sedation — if the instructions are not met, the procedure may need to be rescheduled.",
+      },
+    ],
+    cta: {
+      heading: "Nervous About Oral Surgery? Let's Talk About Your Comfort Options",
+      body:
+        "At your consultation with Dr. Antipov in Roseville, sedation planning is part of the conversation — your health history, your anxiety level, and your procedure all shape the recommendation. Ask every question you have about IV sedation; you will leave with a clear plan for a comfortable surgical visit.",
+      buttonLabel: "Book a Consultation",
+    },
+  },
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

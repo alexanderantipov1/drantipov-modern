@@ -3018,6 +3018,166 @@ export const guideArticles: RevisionArticle[] = [
         "At your consultation with Dr. Antipov in Roseville, you'll get a 3D scan, an honest candidacy assessment — including options if you've been told you lack bone — and an itemized treatment plan with financing mapped out. One visit replaces guesswork with a real plan. Restrictions apply.",
     },
   },
+  {
+    slug: "all-on-4-dental-implants-recovery-timeline",
+    title: "All-on-4 Dental Implants Recovery: A Week-by-Week Healing Timeline",
+    metaTitle: "All-on-4 Recovery Timeline: Week by Week | Roseville Surgeon",
+    metaDescription:
+      "All-on-4 dental implants recovery explained by a board-certified oral surgeon in Roseville, CA — a week-by-week timeline covering the first 24 hours, swelling, the soft-food diet, osseointegration, and warning signs worth a call.",
+    excerpt:
+      "Most All-on-4 patients are through the hardest part within the first week — but the real work of healing continues quietly for months as bone fuses to the implants. Here is the week-by-week timeline, the diet roadmap, and the warning signs that deserve a call to your surgeon.",
+    date: "July 13, 2026",
+    datePublished: "2026-07-13",
+    image: "/images/blog/2026-07-13/all-on-4-recovery.png",
+    heroAlt: "Patient resting comfortably at home with a wrapped cold compress during dental implant recovery",
+    category: "Patient Care",
+    readTime: "10 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "all-on-4 dental implants recovery",
+      "all-on-4 recovery timeline",
+      "all-on-4 recovery week by week",
+      "full arch implant recovery diet",
+      "all-on-4 aftercare roseville",
+    ],
+    intro: [
+      "All-on-4 recovery follows a predictable arc: the most noticeable healing — swelling, tenderness, and diet adjustments — happens in the first one to two weeks, while the bone quietly fuses to your implants over the following three to six months, explains Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. Because you leave surgery with a fixed temporary bridge already in place, recovery is less about \u201cwaiting for teeth\u201d and more about protecting the ones you just received. What you do in these weeks — how you manage swelling, what you eat, and which warning signs you take seriously — has a real influence on the final result. This guide lays out the timeline week by week, from the first 24 hours through the delivery of your final bridge, so you know exactly what is normal, what to expect next, and when a phone call to your surgeon is the right move.",
+    ],
+    disclaimer:
+      "This article describes typical healing patterns for general education — it is not medical advice, and it does not replace your surgeon's written post-operative instructions, which always take precedence for your specific case.",
+    tldr: [
+      "Swelling peaks around 48\u201372 hours, then declines through the first week — cold compresses and head elevation are your main tools early on.",
+      "No straws, no spitting, no smoking, and no strenuous activity in the early days: protecting the forming blood clots is job one.",
+      "The diet progresses in stages — liquids first, then soft \u201cfork-tender\u201d foods while the bone integrates — before your surgeon clears normal eating.",
+      "Fever, pus, a bad taste, or pain that worsens after day 3\u20134 instead of improving are signals to call your surgeon, not wait.",
+    ],
+    sections: [
+      {
+        heading: "The Recovery Timeline at a Glance",
+        paras: [
+          "Every patient heals at their own pace, but All-on-4 recovery follows a well-established sequence. Here is the road map most patients experience, before we walk through each stage in detail.",
+        ],
+        table: {
+          headers: ["Stage", "What's Happening", "Your Focus"],
+          rows: [
+            ["First 24 hours", "Blood clots form at the surgical sites; sedation wears off; some oozing is normal.", "Rest with head elevated, gentle gauze pressure, cold compresses, liquids only — no straws, no spitting."],
+            ["Days 2\u20133", "Swelling and bruising peak around 48\u201372 hours.", "Continue cold therapy and prescribed medication on schedule; stay on liquids and very soft foods."],
+            ["Days 4\u20137", "Swelling begins receding; discomfort steadily declines.", "Switch to warm compresses if advised; begin gentle rinses as instructed; attend your follow-up visit."],
+            ["Weeks 2\u201312", "Soft tissue settles while bone fuses to the implants (osseointegration).", "Soft \u201cfork-tender\u201d diet; meticulous hygiene around the temporary bridge; no hard, crunchy, or sticky foods."],
+            ["Months 3\u20136", "Osseointegration completes; implants reach full stability.", "Final bridge is designed and delivered; your surgeon clears you for normal eating."],
+          ],
+        },
+        list: [],
+      },
+      {
+        heading: "The First 24 Hours: Protecting the Foundation",
+        paras: [
+          "You will go home groggy from the sedation, and your only job on day one is rest. Gentle, steady pressure with gauze controls the normal oozing from the surgical sites, and a cold compress against the outside of the face — cycled roughly 20 minutes on, 20 minutes off — limits how much swelling builds. Keep your head elevated, even while sleeping, and stick to cool or lukewarm liquids.",
+          [
+            "A few ordinary habits become genuine risks on day one. Straws are off-limits — suction can disturb the blood clots your body just formed, and those clots are the scaffolding of everything that follows. The same goes for spitting, vigorous rinsing, and smoking. Physical exertion, even light housework, can raise your blood pressure enough to restart bleeding. If you had ",
+            { text: "IV sedation", href: "/for-patients/insights/iv-sedation-dentistry-what-to-expect" },
+            ", remember its effects linger subtly for hours: no driving, no important decisions, and a responsible adult with you for the rest of the day.",
+          ],
+        ],
+      },
+      {
+        heading: "Days 2\u20137: Swelling, Bruising, and Turning the Corner",
+        paras: [
+          "Swelling is not a setback — it is the visible sign of your body's healing response, and it follows a schedule. Expect it to peak around 48\u201372 hours after surgery, then decline noticeably through the rest of the week. Cold therapy does its best work in those first days; after that, many patients transition to warm compresses to help the tissues settle. Bruising on the cheeks, jawline, or even the neck can appear in shades of purple through yellow as it fades over one to two weeks — gravity pulls it downward, and that is normal.",
+          "Stay ahead of discomfort rather than chasing it: take prescribed medication on schedule instead of waiting for pain to spike. Most patients find discomfort is most noticeable as the local anesthetic wears off and then improves steadily after about the third day. Your one-week follow-up visit matters even when everything feels fine — it is where your surgeon confirms the soft tissue is healing properly around the bridge and implants.",
+          [
+            "Know the difference between normal healing and a warning sign. Fever, pus, a persistent bad taste, or pain that worsens after day 3\u20134 instead of improving are signals to call your surgeon promptly — not to wait and see. Our guide to ",
+            { text: "normal healing versus infection after implant surgery", href: "/for-patients/insights/normal-healing-vs-infection-after-dental-implant-surgery" },
+            " covers exactly how to tell them apart.",
+          ],
+        ],
+      },
+      {
+        heading: "The Recovery Diet: From Liquids to Fork-Tender",
+        paras: [
+          "What you eat during recovery is not a side note — it is one of the main variables you control. Your fixed temporary bridge looks and feels real, but the bone beneath it is still fusing to the implants, and chewing forces create micro-movements that can interfere with that process. The diet progresses in stages: liquids in the first days, then a soft-food phase that continues while osseointegration completes.",
+        ],
+        list: [
+          "First days — liquids and no-chew foods: blended smoothies (skip small seeds that can lodge in surgical sites), lukewarm pureed soups, yogurt, and protein-fortified shakes. Avoid very hot liquids early on, and never use a straw.",
+          "Soft-food phase — the \u201cfork test\u201d: if you can't easily cut it with the side of a fork, it isn't ready for your menu yet. Scrambled eggs, soft-cooked fish, mashed avocado, baked sweet potato, well-cooked pasta, and soft cheeses all work well.",
+          "Off the menu until your surgeon clears you: nuts, chips, crusty bread, tough meats, and sticky candies — anything that concentrates force on the bridge or pulls at it.",
+          "Prioritize protein and produce: tissue repair runs on protein and vitamins, so build meals around them rather than defaulting to empty soft calories.",
+        ],
+      },
+      {
+        heading: "Months 1\u20136: Osseointegration and Your Final Teeth",
+        paras: [
+          [
+            "The most important part of All-on-4 recovery is invisible. Over roughly three to six months, living bone grows onto the surface of each implant — the process called osseointegration that turns four posts into a permanent foundation. This is why the soft-food discipline continues well after you feel completely normal: feeling healed and being fully integrated are two different milestones. The ",
+            { text: "American Association of Oral and Maxillofacial Surgeons", href: "https://www.aaoms.org/procedures/dental-implant-surgery" },
+            " provides a good independent overview of how implant treatment and healing work.",
+          ],
+          [
+            "Once integration is confirmed, your temporary bridge is replaced with the final restoration — the stronger, precisely fitted set built for decades of daily use. From there, maintenance looks a lot like caring for natural teeth: brushing, cleaning under the bridge as instructed, and regular professional check-ups. For the bigger picture of how the whole treatment works from consultation to final teeth, see our complete guide to ",
+            { text: "All-on-4 dental implants", href: "/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day" },
+            ".",
+          ],
+        ],
+      },
+      {
+        heading: "Recovering Close to Home: Aftercare at Dr. Antipov's Roseville Practice",
+        paras: [
+          [
+            "Recovery goes smoothest when your surgical team is nearby and reachable. At his Roseville office, ",
+            { text: "Dr. Alexander Antipov", href: "/about" },
+            " — a board-certified oral and maxillofacial surgeon and Diplomate of the American Board of Oral and Maxillofacial Surgery — plans, performs, and follows up on every full-arch case personally. Post-operative visits, bite adjustments, and any \u201cis this normal?\u201d questions are handled by the surgeon who placed your implants, not a rotating cast of providers.",
+          ],
+          [
+            "Patients travel to us from across the Sacramento region — Rocklin, Granite Bay, Citrus Heights, Folsom, and beyond — for ",
+            { text: "same-day full-arch treatment", href: "/for-patients/insights/same-day-implants" },
+            " precisely because aftercare stays a short drive away. Your written post-operative instructions are tailored to your surgery, and they always take precedence over general guides like this one.",
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How long does All-on-4 recovery take?",
+        answer:
+          "The noticeable phase — swelling, tenderness, and diet adjustments — largely resolves within the first one to two weeks. Full recovery takes three to six months, because that is how long the bone needs to fuse to the implants (osseointegration) before the final bridge is delivered.",
+      },
+      {
+        question: "How painful is All-on-4 recovery?",
+        answer:
+          "Most patients describe manageable soreness rather than severe pain, with discomfort most noticeable as the local anesthetic wears off and improving steadily after about the third day. Taking prescribed medication on schedule — rather than waiting for pain to peak — makes a significant difference.",
+      },
+      {
+        question: "When does swelling peak, and how do I control it?",
+        answer:
+          "Swelling typically peaks around 48\u201372 hours after surgery and then declines through the first week. Cold compresses cycled about 20 minutes on and off during the first days, head elevation (including while sleeping), and rest are the main tools. Many patients switch to warm compresses after the early days, as advised by their surgeon.",
+      },
+      {
+        question: "Why can't I use a straw after surgery?",
+        answer:
+          "Suction can disturb the blood clots forming at the surgical sites, and those clots are the foundation of early healing. The same caution applies to spitting, vigorous rinsing, and smoking. Sip directly from a glass during the early recovery period.",
+      },
+      {
+        question: "How long do I have to eat soft foods?",
+        answer:
+          "Liquids and no-chew foods dominate the first days, then a soft \u201cfork-tender\u201d diet continues while the bone integrates — typically around three months, until your surgeon clears you. The rule of thumb: if you can't cut it easily with the side of a fork, it isn't ready for your menu yet.",
+      },
+      {
+        question: "What symptoms mean I should call my surgeon?",
+        answer:
+          "Fever, pus or foul-tasting discharge, and pain that worsens after day 3\u20134 instead of improving are warning signs worth a prompt call. Normal healing trends better each day; infection trends worse. When in doubt, call — a five-minute conversation beats waiting on a complication.",
+      },
+      {
+        question: "Do I have teeth during the recovery period?",
+        answer:
+          "Yes. With All-on-4, a fixed temporary bridge is attached the same day as surgery, so you never go home without teeth. That first bridge is a healing prosthesis — you protect it with the soft-food diet — and it is replaced with your stronger final restoration once the implants have fully integrated.",
+      },
+    ],
+    cta: {
+      heading: "Planning Full-Arch Treatment? Know the Whole Journey First",
+      body:
+        "At your consultation with Dr. Antipov in Roseville, you'll see the complete picture — the surgery, the same-day teeth, and a realistic recovery plan tailored to your health and schedule. You'll leave knowing exactly what the weeks after surgery look like, with your surgical team a short drive away. Restrictions apply.",
+    },
+  },
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

@@ -2841,6 +2841,183 @@ export const guideArticles: RevisionArticle[] = [
       buttonLabel: "Book a Consultation",
     },
   },
+  {
+    slug: "permanent-teeth-implants-complete-guide",
+    title: "Permanent Teeth Implants: A Complete Guide to Fixed, Non-Removable New Teeth",
+    metaTitle: "Permanent Teeth Implants Guide | Roseville Oral Surgeon",
+    metaDescription:
+      "Permanent teeth implants explained by a board-certified oral surgeon in Roseville, CA — how fixed implants differ from dentures, single-tooth vs. All-on-4 options, materials, candidacy with bone loss, and what treatment costs.",
+    excerpt:
+      "Permanent teeth implants are fixed in the jaw — they don't come out at night, don't need adhesive, and preserve the bone that removable dentures let shrink. Here is how single implants, All-on-4 full-arch teeth, and snap-in options compare, and how to plan the investment.",
+    date: "July 13, 2026",
+    datePublished: "2026-07-13",
+    image: "/images/blog/2026-07-13/permanent-teeth-implants.png",
+    heroAlt: "Smiling couple enjoying a meal together outdoors, confident with their restored smiles",
+    category: "Dental Implants",
+    readTime: "10 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "permanent teeth implants",
+      "permanent dental implants roseville",
+      "fixed teeth replacement options",
+      "permanent teeth in one day",
+      "non-removable dental implants",
+    ],
+    intro: [
+      "Permanent teeth implants are titanium or zirconia posts anchored in the jawbone that support fixed, non-removable replacement teeth — they stay in your mouth full-time, are cared for by brushing and flossing, and preserve the bone that removable dentures allow to shrink, explains Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. Whether you are replacing one tooth or an entire arch, the same principle applies: the implant takes over the job of the missing tooth root, and the tooth attached to it functions like your own. This guide covers what \u201cpermanent\u201d really means in implant dentistry, how the treatment process works from 3D planning to same-day teeth, how single implants compare with ",
+      { text: "All-on-4 full-arch systems", href: "/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day" },
+      " and snap-in overdentures, who qualifies even with bone loss, and how patients realistically plan for the cost.",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical exam. Candidacy, treatment design, and costs depend on your anatomy and health history — confirm specifics at an in-person consultation.",
+    tldr: [
+      "Permanent implants are fixed in the jaw — no nightly removal, no adhesive, and daily care is normal brushing and flossing.",
+      "Implants preserve jawbone by transmitting chewing stimulation to the bone; removable dentures do not, which is why bone shrinks under them.",
+      "One implant can replace a single tooth; four to six can support an entire fixed arch — often placed with temporary fixed teeth the same day.",
+      "Bone loss rarely disqualifies you outright — grafting, angled-implant techniques, and zygomatic implants extend candidacy to complex cases.",
+    ],
+    sections: [
+      {
+        heading: "Your Fixed-Teeth Options at a Glance",
+        paras: [
+          "\u201cPermanent teeth\u201d covers several different treatment designs, and the right one depends on how many teeth you are missing, the condition of your jawbone, and how you want your teeth to function day to day. The table below compares the three main paths patients weigh.",
+        ],
+        table: {
+          headers: ["Option", "How It Works", "Best Suited For"],
+          rows: [
+            ["Single-tooth implant", "One post replaces one root and supports a custom crown — neighboring healthy teeth are left untouched.", "One or a few missing teeth scattered in the mouth."],
+            ["Fixed full-arch (All-on-4 / All-on-6)", "Four to six strategically angled implants support a complete non-removable bridge for the whole arch.", "Most or all teeth failing in one arch; patients who want teeth that never come out."],
+            ["Implant-supported overdenture (\u201csnap-in\u201d)", "A removable denture clicks onto two or more implants — far more stable than a traditional denture, but still taken out for cleaning.", "Patients prioritizing lower cost who accept a removable appliance."],
+          ],
+        },
+        list: [],
+      },
+      {
+        heading: "What Makes an Implant \u201cPermanent\u201d",
+        paras: [
+          "Every fixed implant restoration is built from three parts working together: a biocompatible post placed in the jawbone, an abutment connector shaped to your gum line, and the final prosthetic tooth or bridge on top. What makes the result permanent is osseointegration — over roughly three to six months, living bone fuses directly to the implant surface, creating a bond that functions like a natural tooth root.",
+          [
+            "That root function is the health advantage no removable option can match. When a tooth root is lost, the jawbone beneath it stops receiving chewing stimulation and gradually resorbs — which is why long-term denture wearers often notice facial changes over the years. An implant restores that stimulation and keeps the bone active. In healthy patients, implants integrate at success rates above 95%, which is why they are widely considered the standard of care for tooth replacement; the American Dental Association's ",
+            { text: "patient guide to implants", href: "https://www.mouthhealthy.org/all-topics-a-z/implants" },
+            " is a good independent overview of how they work.",
+          ],
+          [
+            "Compared with removable dentures, fixed implant teeth restore substantially more chewing function, and most patients eat what they want, including hard and chewy foods. If you are weighing the two paths directly, our full comparison of ",
+            { text: "implants versus dentures", href: "/for-patients/insights/implants-vs-dentures" },
+            " goes deeper on stability, maintenance, and long-term cost.",
+          ],
+        ],
+      },
+      {
+        heading: "The Process: From 3D Planning to Teeth in a Day",
+        paras: [
+          "Modern implant treatment starts with imaging, not incisions. A CBCT (3D cone-beam) scan maps your bone volume, bone density, sinus anatomy, and nerve positions, and the surgical plan — implant sizes, angles, and exact positions — is built digitally before surgery day. That planning is what makes procedures shorter, more predictable, and less traumatic than the implant surgery of a generation ago.",
+          [
+            "For full-arch cases, digital planning also enables same-day fixed teeth: when implants achieve strong initial stability, a fixed temporary bridge is attached the same day, so you never go home without teeth. That first bridge is deliberately a healing prosthesis — you protect it with a soft-food diet while osseointegration completes, then receive the final restoration. Our guide to ",
+            { text: "same-day implants", href: "/for-patients/insights/same-day-implants" },
+            " explains the candidacy requirements in detail.",
+          ],
+          [
+            "Comfort is planned alongside the surgery. Longer procedures — especially full-arch cases — are commonly performed under IV sedation, so you rest in a deeply relaxed \u201ctwilight\u201d state while the surgical team works. If anxiety has been holding you back, our patient guide to ",
+            { text: "IV sedation dentistry", href: "/for-patients/insights/iv-sedation-dentistry-what-to-expect" },
+            " walks through exactly how that experience feels.",
+          ],
+        ],
+      },
+      {
+        heading: "Titanium or Zirconia? Choosing Your Implant Material",
+        paras: [
+          [
+            "Titanium remains the most widely used implant material, backed by decades of long-term data and exceptional strength. Zirconia is the metal-free ceramic alternative — attractive for patients with metal sensitivities and for thin gum tissue in the smile zone, where its white color avoids any gray shadow at the gum line. Both materials integrate with bone at high success rates in healthy patients; the choice usually comes down to your anatomy, aesthetics, and preferences. For the full head-to-head, see our comparison of ",
+            { text: "titanium versus zirconia implants", href: "/for-patients/insights/titanium-vs-zirconia-dental-implants" },
+            ".",
+          ],
+        ],
+      },
+      {
+        heading: "Can You Get Implants with Bone Loss?",
+        paras: [
+          [
+            "Bone loss is the most common reason patients are told \u201cno\u201d elsewhere — and it is rarely the end of the conversation at a surgical specialty practice. If bone volume is insufficient, ",
+            { text: "bone grafting", href: "/for-patients/insights/bone-grafting-for-dental-implants-explained" },
+            " can rebuild it before or during implant placement. In the upper jaw, a sinus lift creates room for implants near the sinus floor. All-on-4 protocols use angled posterior implants specifically to engage the strongest available bone and often avoid grafting altogether.",
+          ],
+          [
+            "Even severe upper-jaw bone loss has a surgical answer: ",
+            { text: "zygomatic implants", href: "/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible" },
+            " anchor in the dense cheekbone rather than the jaw, making fixed teeth possible for patients who were once considered untreatable. Candidacy is ultimately a 3D-scan question, not a guess — which is why a consultation with imaging is the only reliable answer to \u201ccan I get implants?\u201d",
+          ],
+        ],
+      },
+      {
+        heading: "Planning the Investment: Cost, Insurance, and Financing",
+        paras: [
+          [
+            "In the Sacramento region, a complete single implant (post, abutment, and crown) typically runs $4,000\u2013$6,000, and full-arch (All-on-4) restoration $25,000\u2013$35,000 per arch. A trustworthy quote is itemized — surgeon's fees, imaging, anesthesia, and the prosthetic lab work — so you can see exactly what you are paying for. PPO dental insurance may cover a portion of treatment up to your plan's annual maximum, and pre-tax HSA/FSA dollars and financing cover the remainder for most patients. Our ",
+            { text: "dental implant financing guide", href: "/for-patients/insights/dental-implant-financing-options" },
+            " breaks down the exact stacking strategy Roseville and Sacramento patients use.",
+          ],
+          [
+            "When comparing providers, weigh more than the sticker price: board certification, revision experience, and technology all affect the only number that matters long-term — the cost per year of teeth that last. Dr. Antipov's practice also offers a ",
+            { text: "like-for-like price-match guarantee", href: "/for-patients/insights/dental-implant-price-match-guarantee" },
+            ", so choosing a board-certified surgeon doesn't mean paying a premium for equivalent treatment.",
+          ],
+        ],
+      },
+      {
+        heading: "Permanent Teeth at Dr. Antipov's Roseville Practice",
+        paras: [
+          [
+            { text: "Dr. Alexander Antipov", href: "/about" },
+            " is a board-certified oral and maxillofacial surgeon and Diplomate of the American Board of Oral and Maxillofacial Surgery, treating patients at his Roseville office with a fully digital workflow — CBCT imaging, guided surgical planning, and same-day fixed provisional teeth for qualifying full-arch cases. From a single front tooth to a full-mouth rebuild after years of failing dental work, treatment is planned and performed by the surgeon, not handed between providers.",
+          ],
+          "Patients visit from across the Sacramento region, including Rocklin, Granite Bay, Citrus Heights, Folsom, and Sacramento itself. The first step is always the same: a consultation with 3D imaging, an honest candidacy assessment, and an itemized plan — so your decision is based on facts about your own anatomy, not averages from the internet.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Are permanent teeth implants really permanent?",
+        answer:
+          "The implant post itself is designed to last decades — often a lifetime — once it fuses with your jawbone. The visible teeth attached to it are durable but not indestructible: crowns and bridges can need replacement after many years of wear, which is a far cry from the roughly five-year replacement cycle of traditional dentures.",
+      },
+      {
+        question: "How are permanent implants different from dentures?",
+        answer:
+          "Implants are fixed in the jaw — they don't come out at night, don't need adhesive, and are cleaned by normal brushing and flossing. They also preserve jawbone by transmitting chewing stimulation to it. Removable dentures rest on the gums, restore far less chewing power, and do not stop the bone shrinkage that follows tooth loss.",
+      },
+      {
+        question: "Can I really get new teeth in one day?",
+        answer:
+          "Often, yes — for full-arch cases. When implants achieve strong initial stability at placement, a fixed temporary bridge is attached the same day, so you leave with non-removable teeth. The final permanent bridge is delivered after osseointegration completes, typically a few months later.",
+      },
+      {
+        question: "What if I've been told I don't have enough bone?",
+        answer:
+          "Bone loss rarely rules out implants at a surgical specialty practice. Options include bone grafting to rebuild volume, sinus lifts in the upper jaw, angled-implant All-on-4 protocols that use your strongest available bone, and zygomatic implants anchored in the cheekbone for severe upper-jaw loss. A 3D scan determines which path fits your anatomy.",
+      },
+      {
+        question: "Should I choose titanium or zirconia implants?",
+        answer:
+          "Both integrate with bone at high success rates in healthy patients. Titanium has the longest track record and exceptional strength; zirconia is the metal-free, white ceramic option that suits metal sensitivities and thin gum tissue in the smile zone. Your surgeon will recommend based on your anatomy, aesthetics, and health history.",
+      },
+      {
+        question: "How much do permanent teeth implants cost?",
+        answer:
+          "In the Sacramento region, a complete single implant typically runs $4,000\u2013$6,000, and full-arch (All-on-4) treatment $25,000\u2013$35,000 per arch. Most patients don't pay a lump sum — PPO insurance contributions, pre-tax HSA/FSA dollars, and financing plans turn treatment into a predictable monthly payment. An itemized quote after a 3D scan is the only real number.",
+      },
+      {
+        question: "Are snap-in dentures the same as permanent implants?",
+        answer:
+          "No. Snap-in (implant-supported) overdentures click onto implants and are much more stable than traditional dentures, but they are still removable appliances you take out for cleaning. Fixed full-arch bridges stay in permanently and offer the closest experience to natural teeth in function, maintenance, and bone preservation.",
+      },
+    ],
+    cta: {
+      heading: "Find Out What Permanent Teeth Would Look Like for You",
+      body:
+        "At your consultation with Dr. Antipov in Roseville, you'll get a 3D scan, an honest candidacy assessment — including options if you've been told you lack bone — and an itemized treatment plan with financing mapped out. One visit replaces guesswork with a real plan. Restrictions apply.",
+    },
+  },
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

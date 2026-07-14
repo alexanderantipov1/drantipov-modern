@@ -355,7 +355,7 @@ export const insightPosts: InsightPost[] = [
   ...guideInsightPosts,
   ...revisionInsightPosts,
   ...baseInsightPosts,
-]
+].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
 /**
  * Returns up to `count` sibling articles for cross-linking, chosen cyclically

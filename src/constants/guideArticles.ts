@@ -3346,6 +3346,164 @@ export const guideArticles: RevisionArticle[] = [
         "At a consultation with Dr. Antipov in Roseville, you'll get 3D imaging of your jaw, see both prosthesis types in person, and leave with a clear recommendation and transparent pricing for your specific case — not a generic sales pitch. Restrictions apply.",
     },
   },
+  {
+    slug: "teeth-in-a-day-same-day-smile-restoration",
+    title: "Teeth in a Day: How Same-Day Full-Arch Smile Restoration Works",
+    metaTitle: "Teeth in a Day: Same-Day Smile Restoration | Roseville, CA",
+    metaDescription:
+      "How does \u201cTeeth in a Day\u201d work? A board-certified oral surgeon in Roseville, CA walks through the same-day full-arch protocol — 3D planning, extractions, implant placement, and leaving with fixed teeth in one appointment.",
+    excerpt:
+      "\u201cTeeth in a Day\u201d compresses extractions, implant placement, and a fixed temporary bridge into a single surgical appointment — no months of gaps or removable flippers. Here is how the same-day full-arch protocol actually works, who qualifies, and what the day itself looks like, from a board-certified oral surgeon in Roseville.",
+    date: "July 14, 2026",
+    datePublished: "2026-07-14",
+    image: "/images/blog/2026-07-14/teeth-in-a-day-same-day-smile-restoration.png",
+    heroAlt: "Oral surgeon reviewing a 3D CBCT jaw scan beside a full-arch dental prosthesis model",
+    category: "Dental Implants",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "teeth in a day",
+      "same day dental implants roseville",
+      "same day smile restoration",
+      "teeth in a day sacramento",
+      "full arch implants one day",
+    ],
+    intro: [
+      "\u201cTeeth in a Day\u201d is a full-arch protocol in which failing teeth are removed, dental implants are placed, and a fixed temporary bridge is attached — all in a single surgical appointment, explains Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. Instead of spending months with gaps or a removable \u201cflipper\u201d while implants heal, you walk out of surgery the same day with teeth that are fixed in place. The approach works because of careful 3D planning and strategic implant positioning, not shortcuts — and understanding how the day actually unfolds is the best way to decide whether it fits your case.",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical evaluation. Whether same-day loading is safe for you depends on your bone density, bite, and health history — all of which are assessed at an in-person consultation.",
+    tldr: [],
+    sections: [
+      {
+        heading: "What Happens on Surgery Day: A Timeline",
+        paras: [
+          "The \u201cday\u201d in Teeth in a Day is a carefully choreographed sequence. Here is the typical flow for a full-arch case at a surgical practice:",
+        ],
+        table: {
+          headers: ["Stage", "What happens", "Typical timing"],
+          rows: [
+            ["Before surgery day", "3D CBCT imaging, digital smile design, and surgical planning", "1\u20133 weeks prior"],
+            ["Arrival and sedation", "IV sedation is started so you remain relaxed and comfortable", "First 30\u201360 minutes"],
+            ["Extractions", "Failing teeth are gently removed and the sites are prepared", "Morning of surgery"],
+            ["Implant placement", "Typically 4\u20136 implants per arch, angled into the densest bone", "Same visit"],
+            ["Fixed temporary bridge", "A custom temporary bridge is attached to the implants", "Before you leave"],
+            ["Healing phase", "Implants fuse with the bone while you wear the fixed temporary", "3\u20136 months"],
+            ["Final restoration", "The definitive bridge is fabricated and attached", "After healing"],
+          ],
+        },
+        list: [],
+      },
+      {
+        heading: "Why Same-Day Loading Is Possible",
+        paras: [
+          [
+            "Traditional implant treatment waits months between placing implants and attaching teeth, because implants need time to fuse with the jawbone — a process called osseointegration. Teeth in a Day does not skip that biology; it works around it mechanically. By placing implants at strategic angles into the densest available bone and connecting them immediately with a rigid bridge, the implants brace each other so no single one is overloaded while healing. The ",
+            { text: "American Association of Oral and Maxillofacial Surgeons", href: "https://www.aaoms.org/procedures/dental-implant-surgery/" },
+            " describes dental implant surgery and why surgical training matters for these cases.",
+          ],
+          [
+            "This is also why the teeth you receive on surgery day are a temporary bridge rather than the final one: it is engineered for the healing phase, and you follow a soft-food diet while the bone integrates. Our article on ",
+            { text: "same-day dental implants — myth or reality", href: "/for-patients/insights/same-day-implants" },
+            " takes an honest look at what \u201csame day\u201d does and does not mean, and our ",
+            { text: "week-by-week All-on-4 recovery guide", href: "/for-patients/insights/all-on-4-dental-implants-recovery-timeline" },
+            " walks through the healing period in detail.",
+          ],
+        ],
+      },
+      {
+        heading: "The Digital Planning Behind the Speed",
+        paras: [
+          [
+            "The single-day result is earned before surgery ever starts. A 3D CBCT scan maps your bone volume and density, sinus anatomy, and nerve positions in three dimensions, and your new smile is designed digitally against that map. This is what allows implants to be positioned with precision on the day itself — the guesswork has already been engineered out. It is also why many patients who were told elsewhere that they \u201cdon't have enough bone\u201d turn out to qualify: the scan frequently reveals usable bone a 2D X-ray misses, and angled placement techniques like ",
+            { text: "All-on-4", href: "/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day" },
+            " anchor implants in the densest part of the jaw, often avoiding grafting entirely.",
+          ],
+          [
+            "When bone loss is too advanced for immediate loading, that is not the end of the road — ",
+            { text: "bone grafting", href: "/for-patients/insights/bone-grafting-for-dental-implants-explained" },
+            " can rebuild the foundation first, with teeth following on a staged timeline. An honest surgical consultation tells you which path your anatomy supports rather than promising one day to everyone.",
+          ],
+        ],
+      },
+      {
+        heading: "Comfort: IV Sedation and the Patient Experience",
+        paras: [
+          [
+            "A full-arch surgery day sounds intense, but most patients experience it as a few calm hours. IV sedation keeps you deeply relaxed — many patients remember little of the procedure — while local anesthetic ensures the surgical sites are numb. As a board-certified oral and maxillofacial surgeon, Dr. Antipov administers ",
+            { text: "IV sedation", href: "/for-patients/insights/iv-sedation-dentistry-what-to-expect" },
+            " with hospital-based anesthesia training, which is part of why complex full-arch cases belong with a surgical specialist.",
+          ],
+          "Afterward, discomfort is typically managed with prescribed or over-the-counter medication; swelling generally peaks around 48\u201372 hours and then subsides. Most patients are back to non-strenuous work within a few days, eating soft foods with their fixed temporary bridge from day one.",
+        ],
+      },
+      {
+        heading: "What It Costs in the Sacramento Area",
+        paras: [
+          [
+            "In the Sacramento region, a fixed full-arch restoration typically runs $25,000\u2013$35,000 per arch depending on materials and complexity — and the same-day protocol is generally part of that figure rather than an add-on. Beware of advertised low prices that quietly exclude extractions, sedation, or the temporary bridge; ask any provider for an all-inclusive treatment plan in writing. Our ",
+            { text: "guide to paying for dental implants", href: "/for-patients/insights/dental-implant-financing-options" },
+            " breaks down financing strategies, and Dr. Antipov's practice offers a ",
+            { text: "price-match guarantee", href: "/for-patients/insights/dental-implant-price-match-guarantee" },
+            " so specialist surgical care doesn't cost more than a corporate implant chain.",
+          ],
+        ],
+      },
+      {
+        heading: "Why Patients Choose Dr. Antipov in Roseville",
+        paras: [
+          [
+            "Teeth in a Day is surgery, and the result tracks the training of the person holding the scalpel. ",
+            { text: "Dr. Alexander Antipov", href: "/about" },
+            " is a board-certified oral and maxillofacial surgeon and Diplomate of the American Board of Oral and Maxillofacial Surgery, with hospital-based residency training beyond dental school. He plans every case personally on 3D imaging, performs the surgery and sedation himself, and follows your healing through to the final restoration at his Roseville office.",
+          ],
+          "Patients travel from across the Sacramento area — Rocklin, Granite Bay, Citrus Heights, Folsom, Sacramento — for same-day full-arch treatment. The process starts with an honest evaluation of your anatomy and goals, not a one-size-fits-all pitch: if same-day teeth are right for you, you'll know exactly why, and if a staged plan is safer, you'll know that too.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is Teeth in a Day?",
+        answer:
+          "Teeth in a Day is a full-arch protocol in which failing teeth are extracted, dental implants are placed, and a fixed temporary bridge is attached to the implants — all in one surgical appointment. You leave the same day with teeth that are fixed in place, then receive the final bridge after the implants heal.",
+      },
+      {
+        question: "Are the teeth I get on surgery day my final teeth?",
+        answer:
+          "No — you receive a fixed temporary bridge engineered for the healing phase. After the implants fuse with your jawbone over roughly 3\u20136 months, the definitive restoration is fabricated and attached. The temporary is fixed in place the entire time; nothing is removable.",
+      },
+      {
+        question: "Is the Teeth in a Day procedure painful?",
+        answer:
+          "You should not feel pain during surgery: local anesthetic numbs the surgical sites, and IV sedation keeps you deeply relaxed — most patients remember little of the procedure. Post-operative soreness is typically managed with medication, and swelling generally peaks around 48\u201372 hours before subsiding.",
+      },
+      {
+        question: "Can I eat right after same-day implant surgery?",
+        answer:
+          "Yes — soft foods, starting the same day. Hard and crunchy foods must wait until the implants have integrated with the bone, since chewing forces need to stay controlled during healing. You'll receive specific dietary guidance for the healing months.",
+      },
+      {
+        question: "What if I've been told I don't have enough bone?",
+        answer:
+          "Get a second opinion with 3D imaging. A CBCT scan often reveals usable bone that a standard exam misses, and angled-implant techniques like All-on-4 anchor in the densest part of the jaw — frequently avoiding grafting. When grafting truly is needed, it can rebuild the foundation on a staged timeline.",
+      },
+      {
+        question: "What is the difference between Teeth in a Day and All-on-4?",
+        answer:
+          "Teeth in a Day describes the outcome — fixed teeth delivered the same day as surgery. All-on-4 is one surgical technique used to achieve it, supporting a full arch on four strategically angled implants. Some cases use more implants; the same-day principle is the same.",
+      },
+      {
+        question: "How much does Teeth in a Day cost in the Sacramento area?",
+        answer:
+          "A fixed full-arch restoration typically runs $25,000\u2013$35,000 per arch in the Sacramento region, depending on materials and complexity. Ask for all-inclusive pricing in writing — extractions, sedation, and the temporary bridge should be part of the figure. Financing can spread the cost into monthly payments, and Dr. Antipov's practice offers a price-match guarantee.",
+      },
+    ],
+    cta: {
+      heading: "Find Out if Same-Day Teeth Fit Your Case",
+      body:
+        "At a consultation with Dr. Antipov in Roseville, you'll get 3D imaging of your jaw, an honest assessment of whether same-day loading is safe for your anatomy, and transparent all-inclusive pricing — not a one-size-fits-all pitch. Restrictions apply.",
+    },
+  },
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

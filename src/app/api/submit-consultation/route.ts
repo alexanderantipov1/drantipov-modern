@@ -58,6 +58,18 @@ if (!body.firstName || !body.lastName || !body.email || !body.phone) {
     sanitizedData["business_unit"] = "Fusion Dental Implants"
     sanitizedData["landing_page"] = "Drantipov.com"
 
+    // Development/preview only: the reCAPTCHA site key is domain-locked to
+    // drantipov.com, so no token can be generated on dev/preview hosts and the
+    // upstream API would reject every submission. Accept the submission locally
+    // instead of forwarding it, so the form flow can be tested end-to-end.
+    // Production behavior is unchanged.
+    if (process.env.NODE_ENV !== "production" && !sanitizedData["recaptchaToken"]) {
+      console.warn(
+        "[submit-consultation] Dev mode: no reCAPTCHA token (domain-locked key); skipping upstream submission. Lead NOT sent to Salesforce.",
+      )
+      return NextResponse.json({ success: true, dev: true })
+    }
+
 
     const payload = JSON.stringify(sanitizedData)
 

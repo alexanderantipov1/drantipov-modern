@@ -4,17 +4,7 @@ import { useState } from "react"
 import { Loader2, CheckCircle, ArrowRight, ArrowLeft, Calendar, Clock, Phone, Star } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useTracking } from "@/components/TrackingProvider"
-
-declare global {
-  interface Window {
-    grecaptcha: {
-      ready: (callback: () => void) => void
-      execute: (siteKey: string, options: { action: string }) => Promise<string>
-    }
-  }
-}
-
-const RECAPTCHA_SITE_KEY = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? "6LfAv8grAAAAAFkd5EJ1HC4fbmTfdq3yce7rgPtg"
+import { getRecaptchaToken } from "@/lib/recaptcha-client"
 
 const US_STATES = [
   { value: "AL", label: "Alabama" }, { value: "AK", label: "Alaska" },
@@ -220,12 +210,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal" }: MultiS
   }
 
   const generateRecaptchaToken = (): Promise<string> => {
-    return new Promise((resolve) => {
-      if (typeof window.grecaptcha === "undefined") { resolve(""); return }
-      window.grecaptcha.ready(() => {
-        window.grecaptcha.execute(RECAPTCHA_SITE_KEY, { action: "form_submit" }).then(resolve).catch(() => resolve(""))
-      })
-    })
+    return getRecaptchaToken("form_submit")
   }
 
   const submitForm = async () => {

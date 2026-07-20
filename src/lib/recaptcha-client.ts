@@ -14,26 +14,75 @@ type Grecaptcha = {
   execute: (siteKey: string, options: { action: string }) => Promise<string>;
 };
 
+function readGrecaptcha(): Grecaptcha | undefined {
+  return (window as unknown as { grecaptcha?: Grecaptcha }).grecaptcha;
+}
+
+/**
+ * Loads the reCAPTCHA script on demand (if the deferred loader hasn't run yet)
+ * and waits until window.grecaptcha is available, up to timeoutMs.
+ */
+function ensureRecaptchaLoaded(timeoutMs = 4000): Promise<Grecaptcha | undefined> {
+  return new Promise((resolve) => {
+    const existing = readGrecaptcha();
+    if (existing) {
+      resolve(existing);
+      return;
+    }
+
+    if (!document.getElementById("recaptcha-v3")) {
+      const script = document.createElement("script");
+      script.id = "recaptcha-v3";
+      script.src = `https://www.google.com/recaptcha/api.js?render=${RECAPTCHA_SITE_KEY}`;
+      script.async = true;
+      document.head.appendChild(script);
+    }
+
+    const started = Date.now();
+    const poll = window.setInterval(() => {
+      const g = readGrecaptcha();
+      if (g) {
+        window.clearInterval(poll);
+        resolve(g);
+      } else if (Date.now() - started > timeoutMs) {
+        window.clearInterval(poll);
+        resolve(undefined);
+      }
+    }, 100);
+  });
+}
+
 export function getRecaptchaToken(action = "form_submit"): Promise<string> {
   return new Promise((resolve) => {
     if (typeof window === "undefined") {
       resolve("");
       return;
     }
-    const grecaptcha = (window as unknown as { grecaptcha?: Grecaptcha }).grecaptcha;
-    if (!grecaptcha) {
-      resolve("");
-      return;
-    }
-    try {
-      grecaptcha.ready(() => {
-        grecaptcha
-          .execute(RECAPTCHA_SITE_KEY, { action })
-          .then(resolve)
-          .catch(() => resolve(""));
-      });
-    } catch {
-      resolve("");
-    }
+
+    // Never let token generation hang the form submission.
+    const failSafe = window.setTimeout(() => resolve(""), 8000);
+    const finish = (token: string) => {
+      window.clearTimeout(failSafe);
+      resolve(token);
+    };
+
+    ensureRecaptchaLoaded()
+      .then((grecaptcha) => {
+        if (!grecaptcha) {
+          finish("");
+          return;
+        }
+        try {
+          grecaptcha.ready(() => {
+            grecaptcha
+              .execute(RECAPTCHA_SITE_KEY, { action })
+              .then(finish)
+              .catch(() => finish(""));
+          });
+        } catch {
+          finish("");
+        }
+      })
+      .catch(() => finish(""));
   });
 }

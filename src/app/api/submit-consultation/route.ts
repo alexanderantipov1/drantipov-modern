@@ -54,6 +54,21 @@ if (!body.firstName || !body.lastName || !body.email || !body.phone) {
       }
     }
 
+    // Upstream API rejects formatted phone numbers like "(916) 790-9693";
+    // it only accepts plain digits (e.g. "9167909693") or E.164 ("+1916...").
+    if (typeof sanitizedData["phone"] === "string") {
+      const digits = (sanitizedData["phone"] as string).replace(/\D/g, "")
+      const normalized =
+        digits.length === 11 && digits.startsWith("1") ? digits.slice(1) : digits
+      if (normalized.length !== 10) {
+        return NextResponse.json(
+          { success: false, message: "Please enter a valid 10-digit phone number." },
+          { status: 400 }
+        )
+      }
+      sanitizedData["phone"] = normalized
+    }
+
     sanitizedData["businessUnit"] = "Fusion Dental Implants"
     sanitizedData["business_unit"] = "Fusion Dental Implants"
     sanitizedData["landing_page"] = "Drantipov.com"

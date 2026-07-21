@@ -48,7 +48,46 @@ export default function RecaptchaTestPage() {
           window.clearTimeout(readyTimeout)
           log("ready fired, calling execute()")
           g.execute(SITE_KEY, { action: "form_submit" })
-            .then((token) => log(`TOKEN_OK length=${token?.length ?? 0}`))
+            .then(async (token) => {
+              log(`TOKEN_OK length=${token?.length ?? 0}`)
+              if (new URLSearchParams(window.location.search).get("run") !== "diag2026") {
+                log("skipping TEST submission (add ?run=diag2026 to run it)")
+                return
+              }
+              log("submitting TEST lead to /api/submit-consultation ...")
+              try {
+                const res = await fetch("/api/submit-consultation", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({
+                    firstName: "TEST",
+                    lastName: "DIAGNOSTIC-IGNORE",
+                    email: "diagnostic-test@drantipov.com",
+                    phone: "(916) 790-9693",
+                    dob: "1980-01-01",
+                    streetAddress: "911 Reserve Dr",
+                    city: "Roseville",
+                    state: "CA",
+                    zip: "95678",
+                    paymentOptions: "true",
+                    damagedTeeth: "false",
+                    missingTeeth: "true",
+                    gumDisease: "false",
+                    currentSmileNone: "false",
+                    currentSolutionsNone: "true",
+                    currentSolutionsImplants: "false",
+                    currentSolutionsBridgesCrowns: "false",
+                    currentSolutionsDentures: "false",
+                    recaptchaToken: token,
+                  }),
+                })
+                const text = await res.text()
+                log(`API status=${res.status}`)
+                log(`API body: ${text.slice(0, 500)}`)
+              } catch (e) {
+                log(`FAIL: submit fetch threw: ${String(e)}`)
+              }
+            })
             .catch((e) => log(`FAIL: execute rejected: ${String(e)}`))
         })
       } catch (e) {

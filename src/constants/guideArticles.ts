@@ -4312,6 +4312,165 @@ export const guideArticles: RevisionArticle[] = [
         "At a consultation with Dr. Antipov in Roseville, you'll get 3D imaging of your jaw, an honest recommendation between a snap-in overdenture and a fixed bridge for your specific anatomy, and transparent pricing backed by a price-match guarantee. Restrictions apply.",
     },
   },
+  {
+    slug: "before-and-after-all-on-4-dental-implants",
+    title: "Before and After All-on-4 Dental Implants: Real Transformations & Expectations",
+    metaTitle: "Before & After All-on-4 Dental Implants | Roseville, CA",
+    metaDescription:
+      "What do before-and-after All-on-4 results really look like? A board-certified oral surgeon in Roseville, CA explains the transformation — facial structure, chewing power, same-day teeth — and how to judge quality results.",
+    excerpt:
+      "The most striking change in All-on-4 before-and-after photos often isn't the teeth — it's the restored facial structure and the way patients carry themselves. Here is what the transformation really involves, who benefits most, and how to judge the quality of results, from a board-certified oral surgeon in Roseville.",
+    date: "July 21, 2026",
+    datePublished: "2026-07-21",
+    image: "/images/blog/2026-07-21/before-and-after-all-on-4-dental-implants.png",
+    heroAlt: "Oral surgeon reviewing before-and-after full-arch All-on-4 dental implant results with a patient on a screen",
+    category: "Dental Implants",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "before and after all on 4 dental implants",
+      "all on 4 results roseville",
+      "all on 4 transformation sacramento",
+      "full arch dental implants before after",
+      "all on 4 expectations",
+    ],
+    intro: [
+      "Before-and-after All-on-4 results show far more than new teeth: four strategically angled titanium implants support a full fixed arch, restore up to 90% of natural chewing power, and rebuild the lower-face structure that jawbone loss had collapsed, explains Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. Studying real clinical results is the most reliable way to set your expectations — and to separate what modern full-arch surgery genuinely delivers from marketing claims. This guide walks through what actually changes between the \u201cbefore\u201d and the \u201cafter,\u201d who benefits most, how the same-day protocol works, and the hallmarks that distinguish excellent results from mediocre ones.",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical evaluation. Individual results vary with bone anatomy, health history, and healing — all of which are assessed with 3D imaging at an in-person consultation.",
+    tldr: [],
+    sections: [
+      {
+        heading: "The Transformation at a Glance",
+        paras: [
+          "Here is what changes between the \u201cbefore\u201d reality of failing teeth or loose dentures and the \u201cafter\u201d of a fixed full-arch restoration:",
+        ],
+        table: {
+          headers: ["Factor", "Before: failing teeth or dentures", "After: All-on-4 fixed arch"],
+          rows: [
+            ["Jawbone", "Shrinking from missing roots — sunken, aged lower face", "Implants stimulate bone like roots, preserving facial structure"],
+            ["Stability", "Loose teeth or slipping, clicking dentures", "Fixed arch anchored to four implants — no slipping"],
+            ["Chewing power", "Roughly 20% efficiency with dentures", "Up to 90% of natural bite force"],
+            ["Diet", "Soft foods, cut-up meals", "Steak, apples, nuts — unrestricted after healing"],
+            ["Palate (upper)", "Denture plate covers it, dulling taste", "Open palate — full taste and temperature sense"],
+            ["Speech", "Clicking, slurring, whistling", "Clear — the arch does not move"],
+            ["Daily routine", "Adhesives, soaking, relines", "Brush and water-floss in place, like natural teeth"],
+          ],
+        },
+        list: [],
+      },
+      {
+        heading: "What All-on-4 Actually Restores",
+        paras: [
+          [
+            "All-on-4 is a structural restoration of the jaw, not a cosmetic patch. Four titanium implants — the back pair tilted up to 45 degrees to anchor in the densest available bone — support a full arch of fixed, non-removable teeth. Because the implants transmit chewing forces into the jaw the way natural roots do, they halt the bone resorption that causes the sunken facial look of long-term tooth loss, and they restore the lower face's natural vertical dimension. For the full clinical picture of how the technique works, see our guide to ",
+            { text: "All-on-4 dental implants explained", href: "/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day" },
+            "; the American Dental Association's ",
+            { text: "overview of dental implants", href: "https://www.mouthhealthy.org/all-topics-a-z/implants" },
+            " is a good primer on the anchors underneath.",
+          ],
+          "One expectation worth calibrating early: the teeth you receive on surgery day are a high-quality temporary set. They give you immediate function and a complete smile while the bone fuses to the implants over 3\u20136 months (osseointegration). Your final bridge — typically zirconia or a titanium-acrylic hybrid — is designed afterward, with even greater precision in color, shape, and durability than the temporary.",
+        ],
+      },
+      {
+        heading: "Who Benefits Most: Three Patient Profiles",
+        paras: [
+          [
+            "The first profile is failing dentition: chronic infections, deep decay, loose teeth, and the exhausting cycle of \u201cpatchwork\u201d dentistry. For these patients, All-on-4 is a definitive exit — active infection is cleared, failing teeth are removed, and a fixed temporary bridge is delivered in the same visit under the ",
+            { text: "teeth-in-a-day protocol", href: "/for-patients/insights/teeth-in-a-day-same-day-smile-restoration" },
+            ".",
+          ],
+          [
+            "The second is the long-term denture wearer. Years of tooth loss shrink the jawbone, so dentures that once fit begin to float — but because the posterior implants are tilted into the strongest remaining bone, most denture wearers qualify without grafting; when the foundation truly needs rebuilding, ",
+            { text: "bone grafting", href: "/for-patients/insights/bone-grafting-for-dental-implants-explained" },
+            " restores it on a staged timeline. The third profile is the complex revision patient — previous dental work or older implants that failed — where a specialist's hospital-based surgical training matters most.",
+          ],
+        ],
+      },
+      {
+        heading: "The Journey Behind the Photos: Five Steps",
+        paras: [
+          "Every genuine transformation follows the same methodical path. First, 3D CBCT digital planning maps the exact position of each implant around nerves and sinuses. Second, surgery is performed under IV sedation by a board-certified oral surgeon. Third, you leave the same visit with a fixed, functional temporary set of teeth. Fourth, over 3\u20136 months the jawbone fuses with the titanium posts. Fifth, your final prosthesis is crafted and placed — stronger, more stain-resistant, and refined for long-term fit.",
+        ],
+        list: [],
+      },
+      {
+        heading: "How to Judge Quality in Before-and-After Photos",
+        paras: [
+          [
+            "When you review results — including our own ",
+            { text: "smile gallery", href: "/smile-gallery" },
+            " — look past the whiteness of the teeth to the details that signal a high standard of care: a seamless gum-line transition between prosthetic and tissue, tooth proportions that follow natural aesthetic ratios rather than the bulky \u201cone-size\u201d denture look, and a smile midline that aligns with the facial features. These are the hallmarks that separate a custom, surgeon-planned restoration from a generic one.",
+          ],
+          [
+            "Material choice shapes the final photos too: zirconia bridges resist staining and mimic enamel's translucency, while acrylic-titanium hybrids cost less up front. Our comparison of ",
+            { text: "hybrid dentures versus fixed implant bridges", href: "/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges" },
+            " breaks down the trade-offs.",
+          ],
+        ],
+      },
+      {
+        heading: "Cost, Financing, and Why the Surgeon Matters",
+        paras: [
+          [
+            "In the Sacramento region, a fixed full-arch restoration typically runs $25,000\u2013$35,000 per arch, depending on your jaw's condition and the final bridge material. Compare that with the recurring costs of relines, adhesives, and replacement dentures — and with the health costs of a restricted diet. Our ",
+            { text: "guide to paying for dental implants", href: "/for-patients/insights/dental-implant-financing-options" },
+            " covers financing and benefit-stacking, and Dr. Antipov's practice backs its transparent, all-inclusive quotes with a ",
+            { text: "price-match guarantee", href: "/for-patients/insights/dental-implant-price-match-guarantee" },
+            ".",
+          ],
+          [
+            "Results track the surgeon's training. ",
+            { text: "Dr. Alexander Antipov", href: "/about" },
+            " is a board-certified oral and maxillofacial surgeon and Diplomate of the American Board of Oral and Maxillofacial Surgery, with hospital-based residency training beyond dental school. He plans every case personally on 3D imaging, performs the surgery with IV sedation, and follows healing through to the final bridge at his Roseville office — patients come from Rocklin, Granite Bay, Citrus Heights, Folsom, and across Sacramento for exactly these full-arch transformations.",
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Will my new All-on-4 teeth look fake?",
+        answer:
+          "No — a well-planned restoration is custom-designed to your facial features using digital mapping, with tooth size, shape, and color matched to your smile line and natural aesthetic proportions. The bulky \u201chorse teeth\u201d look comes from generic, one-size-fits-all prosthetics, not from surgeon-planned custom bridges.",
+      },
+      {
+        question: "Can I eat steak and apples after All-on-4?",
+        answer:
+          "Yes — after the 3\u20136 month healing phase, you can return to an unrestricted diet. Because the arch is anchored directly into the jawbone, All-on-4 restores up to 90% of natural chewing power, versus roughly 20% efficiency with traditional dentures. During healing you'll follow a temporary soft-food protocol to protect the integrating implants.",
+      },
+      {
+        question: "Is the All-on-4 procedure painful?",
+        answer:
+          "The surgery itself is performed under IV sedation with local anesthesia, and most patients report deep relaxation during the procedure and only mild soreness for a few days afterward, managed with a detailed recovery plan and medication.",
+      },
+      {
+        question: "What's the difference between the temporary and final bridge?",
+        answer:
+          "The temporary bridge — usually high-quality acrylic — is attached on surgery day for immediate function and appearance while the bone heals. The final bridge, crafted after osseointegration from zirconia or a titanium-acrylic hybrid, is stronger, more stain-resistant, and refined for precise long-term fit and color.",
+      },
+      {
+        question: "Am I a candidate if I have severe bone loss?",
+        answer:
+          "Usually, yes. The posterior implants are tilted up to 45 degrees to anchor in the densest parts of the jaw, which often eliminates the need for bone grafting even after years of denture wear. A 3D CBCT scan at the consultation confirms your bone volume and the plan.",
+      },
+      {
+        question: "How do I clean and maintain All-on-4 teeth?",
+        answer:
+          "Brush twice daily with a soft-bristled brush and use a water flosser to clean between the bridge and the gums. The prosthetic teeth can't get cavities, but the gum tissue underneath must stay healthy, so regular professional check-ups remain essential.",
+      },
+      {
+        question: "How much does All-on-4 cost in Roseville or Sacramento?",
+        answer:
+          "A fixed full-arch restoration typically runs $25,000\u2013$35,000 per arch in the Sacramento region, depending on your jaw's condition and the final bridge material. Dr. Antipov's practice provides transparent, all-inclusive quotes at the consultation, backed by a price-match guarantee, with flexible financing available.",
+      },
+    ],
+    cta: {
+      heading: "Ready to See What Your \u201cAfter\u201d Could Look Like?",
+      body:
+        "At a consultation with Dr. Antipov in Roseville, you'll get 3D imaging of your jaw, see real full-arch results, and leave with an honest candidacy assessment and transparent, all-inclusive pricing for your specific case. Restrictions apply.",
+    },
+  },
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

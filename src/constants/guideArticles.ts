@@ -4471,6 +4471,167 @@ export const guideArticles: RevisionArticle[] = [
         "At a consultation with Dr. Antipov in Roseville, you'll get 3D imaging of your jaw, see real full-arch results, and leave with an honest candidacy assessment and transparent, all-inclusive pricing for your specific case. Restrictions apply.",
     },
   },
+  {
+    slug: "dental-implant-surgery-complete-guide",
+    title: "Dental Implant Surgery: The Complete Guide to Restoring Your Smile in 2026",
+    metaTitle: "Dental Implant Surgery: Complete 2026 Guide | Roseville, CA",
+    metaDescription:
+      "What happens during dental implant surgery? A board-certified oral surgeon in Roseville, CA walks through eligibility, 3D-guided placement, IV sedation, the first 48 hours of recovery, and how to choose the right specialist.",
+    excerpt:
+      "Dental implant surgery is more predictable than most patients have been led to believe — long-term success rates exceed 95%. Here is the complete journey: who qualifies, what the 3D-guided procedure feels like under IV sedation, how the first 48 hours of recovery go, and what to look for in a surgeon, from a board-certified oral surgeon in Roseville.",
+    date: "July 21, 2026",
+    datePublished: "2026-07-21",
+    image: "/images/blog/2026-07-21/dental-implant-surgery-complete-guide.png",
+    heroAlt: "Board-certified oral surgeon reviewing a 3D CBCT scan while planning dental implant surgery in a modern surgical suite",
+    category: "Dental Implants",
+    readTime: "10 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "dental implant surgery",
+      "dental implant surgery roseville",
+      "implant surgery sacramento",
+      "dental implant procedure steps",
+      "what to expect dental implant surgery",
+    ],
+    intro: [
+      "Dental implant surgery replaces missing tooth roots with biocompatible titanium or zirconia posts that your jawbone fuses to — a procedure with long-term success rates exceeding 95% at ten years, explains Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. If you have been delaying treatment out of worry about discomfort, complexity, or whether your jawbone can support an implant, the modern reality is far more predictable than you may have been led to believe: 3D-guided placement, IV sedation, and staged healing have turned implant surgery into one of the most reliable procedures in medicine. This guide walks the entire journey — eligibility, preparation, the surgery itself, the first 48 hours of recovery, and how to choose a specialist worth trusting with it.",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical evaluation. Your candidacy, surgical plan, and timeline depend on your bone anatomy and health history — all of which are assessed with 3D imaging at an in-person consultation.",
+    tldr: [],
+    sections: [
+      {
+        heading: "The Journey at a Glance",
+        paras: [
+          "Here is the typical dental implant timeline from consultation to final crown — and where same-day options fit:",
+        ],
+        table: {
+          headers: ["Stage", "What happens", "Typical timing"],
+          rows: [
+            ["Consultation & 3D imaging", "CBCT scan maps bone thickness, nerves, and sinuses; candidacy and plan confirmed", "Visit 1"],
+            ["Preparatory work (if needed)", "Bone grafting or sinus lift rebuilds the foundation", "Adds 3\u20136 months when required"],
+            ["Implant placement", "3D-guided post placement under IV sedation; sub-millimeter accuracy", "About 1\u20132 hours per site"],
+            ["Osseointegration", "Jawbone grows around and fuses to the post", "3\u20136 months"],
+            ["Abutment & final restoration", "Connector and custom crown, bridge, or arch attached", "1\u20132 visits"],
+            ["Same-day alternative", "Full-arch cases can receive fixed temporary teeth on surgery day", "Single surgical visit"],
+          ],
+        },
+        list: [],
+      },
+      {
+        heading: "Why Implants Are the Standard of Care",
+        paras: [
+          [
+            "Bridges and dentures once served as the default answers to tooth loss, but both come with compromises — a bridge requires grinding down healthy neighboring teeth, and a denture rests on gums that shrink beneath it. An implant addresses the root of the problem, literally: the post triggers osseointegration, the biological process where jawbone grows around and fuses to titanium or zirconia, creating an anchor as strong as a natural root that also preserves the bone itself. The American Dental Association's ",
+            { text: "overview of dental implants", href: "https://www.mouthhealthy.org/all-topics-a-z/implants" },
+            " is a good primer, and our comparison of ",
+            { text: "titanium versus zirconia implants", href: "/for-patients/insights/titanium-vs-zirconia-dental-implants" },
+            " covers the material choice.",
+          ],
+          "Every implant restoration has three components: the post (the artificial root in the bone), the abutment (the connector at the gumline), and the restoration (the crown, bridge, or full arch you actually see). Understanding those parts makes the staged timeline intuitive — each stage exists to protect the bond forming between bone and post.",
+        ],
+      },
+      {
+        heading: "Am I a Candidate? Eligibility and Preparation",
+        paras: [
+          [
+            "Most adults are candidates. The physical requirements are adequate bone density to anchor the post and healthy gum tissue to protect the site; controlled diabetes or autoimmune conditions don't disqualify you, but they shape the plan. Smoking slows healing without automatically ruling you out — a plan to pause around surgery improves the odds. The guesswork is gone: a CBCT scan gives your surgeon a high-resolution map of bone thickness, nerve paths, and sinus position before the first incision. If you've been told you lack bone, ",
+            { text: "bone grafting", href: "/for-patients/insights/bone-grafting-for-dental-implants-explained" },
+            " or a sinus lift can rebuild the site — and for whole-arch bone loss, ",
+            { text: "All-on-4 techniques", href: "/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day" },
+            " angle the implants into the strongest existing bone, often avoiding grafting entirely.",
+          ],
+          "Preparation is simple: fast for several hours if you're having IV sedation, manage medications as directed, arrange a ride home, and stock your recovery space with soft foods and cold compresses so the first 24 hours are entirely about healing.",
+        ],
+      },
+      {
+        heading: "The Procedure: What Surgery Day Feels Like",
+        paras: [
+          [
+            "Modern implant surgery is built around comfort and predictability. With ",
+            { text: "IV sedation", href: "/for-patients/insights/iv-sedation-dentistry-what-to-expect" },
+            ", you drift into deep relaxation — most patients have little to no memory of the time in the surgical suite. Once you're comfortable, the post is placed with 3D-guided, sub-millimeter accuracy into the position where your bone offers the most support. Straightforward single-implant cases take about an hour; full-arch cases can include fixed temporary teeth the same day.",
+          ],
+          "Afterward, the osseointegration phase does the quiet work: over 3\u20136 months, bone fuses to the post. It's the least dramatic stage and the most important one — the stability of everything that follows depends on it.",
+        ],
+      },
+      {
+        heading: "The First 48 Hours and Long-Term Care",
+        paras: [
+          [
+            "Recovery starts ahead of the curve: follow the medication protocol exactly, use the ice-and-elevate technique (cold compress 20 minutes at a time on day one, head propped on pillows while resting), and stick to cool, soft foods. Most patients take one to three days off work — many return to light activity the next day. Knowing the difference between routine soreness and a problem matters, so review our guide to ",
+            { text: "normal healing versus infection after implant surgery", href: "/for-patients/insights/normal-healing-vs-infection-after-dental-implant-surgery" },
+            " and call the office if anything doesn't track.",
+          ],
+          "Implants are not \u201cset it and forget it.\u201d The long-term threat is peri-implantitis — gum disease targeting the tissue around the post. A water flosser and interproximal brushes keep the area clean where regular floss struggles, and professional cleanings remove the biofilm home care misses. That maintenance is what turns a 95% ten-year success rate into a lifetime restoration.",
+        ],
+      },
+      {
+        heading: "Choosing Your Surgeon in Roseville and Sacramento",
+        paras: [
+          [
+            "Many general practices offer implants as a side service — but implant surgery is a surgical discipline built on facial anatomy, bone biology, and complication management. ",
+            { text: "Dr. Alexander Antipov", href: "/about" },
+            " is a board-certified oral and maxillofacial surgeon and Diplomate of the American Board of Oral and Maxillofacial Surgery, with hospital-based residency training beyond dental school. He plans every case personally on 3D imaging, operates with IV sedation, and takes on the complex and revision cases other offices turn away — with patients traveling from Rocklin, Granite Bay, Citrus Heights, Folsom, El Dorado Hills, and across Sacramento.",
+          ],
+          [
+            "At your consultation, interview the surgeon: How many of this specific procedure have you done in the past year? What sedation options do you offer? Can you deliver same-day teeth? And insist on transparent pricing — our ",
+            { text: "guide to paying for dental implants", href: "/for-patients/insights/dental-implant-financing-options" },
+            " covers financing, and Dr. Antipov's practice backs its all-inclusive quotes with a ",
+            { text: "price-match guarantee", href: "/for-patients/insights/dental-implant-price-match-guarantee" },
+            " so surgical excellence doesn't cost more than a corporate implant chain.",
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the success rate of dental implant surgery?",
+        answer:
+          "Dental implants have a long-term success rate exceeding 95% at the ten-year mark, with studies showing rates above 90% even after twenty years. Those numbers come from precise surgical technique, biocompatible materials like titanium, and good maintenance — regular professional cleanings and daily hygiene protect the investment.",
+      },
+      {
+        question: "Does dental implant surgery hurt?",
+        answer:
+          "The procedure itself is performed under local anesthesia with IV sedation available, so you feel nothing during placement — most patients have little memory of the surgery at all. Afterward, expect mild soreness and swelling for a few days, managed with the ice-and-elevate technique and prescribed or over-the-counter medication.",
+      },
+      {
+        question: "Can I get implants with significant bone loss?",
+        answer:
+          "Usually, yes. Bone grafting or a sinus lift can rebuild a thinned site before placement, and All-on-4 techniques angle implants into the strongest existing bone — often avoiding grafting entirely for full-arch cases. A 3D CBCT scan at the consultation shows exactly what your jaw can support.",
+      },
+      {
+        question: "How long do I need off work after implant surgery?",
+        answer:
+          "Most patients take one to three days off. Straightforward single-implant cases often allow light activity the next day; full-arch or multi-implant cases benefit from a slightly longer rest. Scheduling surgery late in the week lets the weekend absorb most of the recovery.",
+      },
+      {
+        question: "How long does the whole implant process take?",
+        answer:
+          "A traditional timeline runs three to nine months: placement, then 3\u20136 months of osseointegration while bone fuses to the post, then the final restoration. Full-arch patients can often receive fixed temporary teeth the same day as surgery, with the final bridge following after integration.",
+      },
+      {
+        question: "What's the difference between All-on-4 and traditional implants?",
+        answer:
+          "Traditional implants use roughly one post per missing tooth, or two posts supporting a bridge. All-on-4 supports an entire arch on four strategically angled implants — often eliminating bone grafting and delivering a full smile transformation with fewer surgical sites and a same-day fixed temporary bridge.",
+      },
+      {
+        question: "What are the risks of dental implant surgery?",
+        answer:
+          "Risks are low but real: infection, swelling, and rare nerve irritation, with most issues arising in the initial healing phase and managed with proper aftercare. 3D imaging minimizes risk by mapping nerves and sinuses before surgery, and the long-term threat — peri-implantitis — is prevented with daily hygiene and professional cleanings.",
+      },
+      {
+        question: "How much does dental implant surgery cost in California without insurance?",
+        answer:
+          "Cost depends on how many teeth are being replaced and whether preparatory work like grafting is needed, so an exam comes before any honest quote. Dr. Antipov's Roseville practice provides transparent, all-inclusive pricing at the consultation, backed by a price-match guarantee, with flexible financing available.",
+      },
+    ],
+    cta: {
+      heading: "Ready to Find Out What Your Jaw Can Support?",
+      body:
+        "At a consultation with Dr. Antipov in Roseville, you'll get 3D CBCT imaging, an honest candidacy assessment — including whether grafting or a graft-free All-on-4 approach fits your anatomy — and transparent, all-inclusive pricing backed by a price-match guarantee. Restrictions apply.",
+    },
+  },
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

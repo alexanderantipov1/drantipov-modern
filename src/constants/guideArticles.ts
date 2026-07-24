@@ -4632,6 +4632,166 @@ export const guideArticles: RevisionArticle[] = [
         "At a consultation with Dr. Antipov in Roseville, you'll get 3D CBCT imaging, an honest candidacy assessment — including whether grafting or a graft-free All-on-4 approach fits your anatomy — and transparent, all-inclusive pricing backed by a price-match guarantee. Restrictions apply.",
     },
   },
+  {
+    slug: "same-day-dental-implant-process-step-by-step",
+    title: "The Same-Day Dental Implant Process: Your 2026 Step-by-Step Guide",
+    metaTitle: "Same-Day Dental Implant Process: Step-by-Step | Roseville, CA",
+    metaDescription:
+      "How does the same-day dental implant process work? A board-certified oral surgeon in Roseville, CA walks through all four stages — 3D digital planning, surgery with immediate loading, osseointegration, and the final restoration.",
+    excerpt:
+      "Same-day dental implants put a functional set of temporary teeth on your new implants within a single 24-hour window — no months of toothless waiting. Here is the four-stage process step by step: digital planning, the surgical day, the healing phase, and your permanent teeth, from a board-certified oral surgeon in Roseville.",
+    date: "July 21, 2026",
+    datePublished: "2026-07-21",
+    image: "/images/blog/2026-07-21/same-day-dental-implant-process-step-by-step.png",
+    heroAlt: "Board-certified oral surgeon explaining the four stages of the same-day dental implant process using a 3D jaw model and digital scan",
+    category: "Dental Implants",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "same day dental implant process",
+      "same day dental implants roseville",
+      "immediate load dental implants sacramento",
+      "teeth in a day process",
+      "same day implants step by step",
+    ],
+    intro: [
+      "The same-day dental implant process places your implant posts and a functional set of fixed temporary teeth within a single 24-hour window — eliminating the months of toothless waiting that traditional protocols required, explains Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. The technique behind it is immediate loading: when an implant achieves enough mechanical grip in the bone at placement (primary stability), a prosthetic tooth or full-arch bridge can be secured to it the same day, with success rates of 95\u201398% in experienced surgical hands. This guide walks the four stages step by step — digital planning, the surgical day, the healing phase, and your final permanent teeth — so you know exactly what to expect before you sit in the chair.",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical evaluation. Whether immediate loading is safe in your case depends on your bone density, oral health, and bite — all of which are assessed with 3D imaging at an in-person consultation.",
+    tldr: [],
+    sections: [
+      {
+        heading: "Same-Day vs. Traditional Timeline at a Glance",
+        paras: [
+          "The difference between the two protocols is not the destination — it is what you live with along the way:",
+        ],
+        table: {
+          headers: ["Stage", "Traditional implants", "Same-day implants (teeth-in-a-day)"],
+          rows: [
+            ["Surgery day", "Implant placed, site left to heal", "Implant placed and fixed temporary teeth attached"],
+            ["What you wear while healing", "Gap, flipper, or removable denture", "Fixed, natural-looking temporary teeth"],
+            ["Healing period", "3\u20136 months before any tooth is attached", "3\u20136 months of osseointegration — with teeth in place"],
+            ["Diet during healing", "Unrestricted at the implant site is moot — no tooth yet", "Soft-food protocol to protect the bond"],
+            ["Final restoration", "Attached after healing", "Swapped for the permanent zirconia or hybrid version"],
+            ["Total visits", "More — staged over months", "Fewer — surgery day does the heavy lifting"],
+          ],
+        },
+        list: [],
+      },
+      {
+        heading: "Step 1: Digital Planning and 3D Imaging",
+        paras: [
+          [
+            "Success is mapped before the procedure begins. A CBCT scan builds a high-resolution 3D model of your jaw — bone density, nerve paths, sinus position — and the surgery is rehearsed virtually: implant angle, depth, and size are chosen where your bone offers the most support, and the prosthetic design is matched to your smile aesthetics. This is also where candidacy is confirmed: sufficient bone volume for primary stability and a mouth free of active gum disease. The American Dental Association's ",
+            { text: "overview of dental implants", href: "https://www.mouthhealthy.org/all-topics-a-z/implants" },
+            " is a useful primer on the anchors themselves.",
+          ],
+          [
+            "Even patients with moderate to significant bone loss often qualify: 3D mapping locates the densest bone, and angled-implant techniques like ",
+            { text: "All-on-4", href: "/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day" },
+            " frequently secure a stable foundation without a separate graft. When bone genuinely needs rebuilding first, ",
+            { text: "bone grafting", href: "/for-patients/insights/bone-grafting-for-dental-implants-explained" },
+            " prepares the site on a staged timeline.",
+          ],
+        ],
+      },
+      {
+        heading: "Step 2: The Surgical Day Experience",
+        paras: [
+          [
+            "The day itself is streamlined and built around comfort. ",
+            { text: "IV sedation", href: "/for-patients/insights/iv-sedation-dentistry-what-to-expect" },
+            " puts you in a \u201ctwilight\u201d state — deeply relaxed, continuously monitored (heart rate, blood pressure, oxygen), and most patients wake with no memory of the surgical sounds or sensations. The implants are then placed following the digital map with sub-millimeter accuracy.",
+          ],
+          "Immediate loading is the defining moment. Each implant's grip is verified — modern standards call for insertion torque of roughly 35\u201345 Newton-centimeters before a same-day tooth is attached. Once stability is confirmed, your custom temporary restoration goes on. It is deliberately designed \u201cout of occlusion\u201d — fractionally shorter than your natural bite — so chewing forces can't create the micromovements that would disturb the healing bond. You leave with a stable, natural-looking smile the same day.",
+        ],
+      },
+      {
+        heading: "Step 3: Healing and Osseointegration",
+        paras: [
+          [
+            "The visible transformation happens on surgery day; the permanent one happens over the next 3\u20136 months, as bone cells grow directly onto the titanium surface and lock each implant in place. The first 72 hours bring some swelling and minor bruising — cold compresses 20 minutes at a time and keeping your head elevated manage it, and discomfort typically peaks around day two before fading. Most patients return to work within 2\u20133 days; skip strenuous exercise for a week. Red flags worth a call: pain that increases after the first week, persistent fever, or any shifting of the temporary teeth — our guide to ",
+            { text: "normal healing versus infection", href: "/for-patients/insights/normal-healing-vs-infection-after-dental-implant-surgery" },
+            " covers the difference in detail.",
+          ],
+          "Your temporary teeth are built for aesthetics and light function, not heavy chewing: avoid hard, crunchy, or sticky foods — nuts, crusty bread, ice — during integration. Follow-ups at roughly two weeks, six weeks, and three months verify the bond is maturing on schedule.",
+        ],
+      },
+      {
+        heading: "Step 4: Your Permanent Smile and Lifetime Maintenance",
+        paras: [
+          [
+            "Once your surgeon confirms the bone-implant bond is fully mature, the temporary bridge is replaced with your final restoration — typically zirconia or a titanium-acrylic hybrid, each tooth shaped and shaded to your facial features and engineered for full chewing force. From then on, any food is back on the menu. Our comparison of ",
+            { text: "hybrid dentures versus fixed implant bridges", href: "/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges" },
+            " covers the material trade-offs.",
+          ],
+          "Maintenance is simple but non-negotiable: brush twice daily, use a water flosser under the bridge, and keep professional cleanings on the calendar to prevent peri-implantitis — the gum disease that targets tissue around implants. With that routine, the restoration is designed to last a lifetime.",
+        ],
+      },
+      {
+        heading: "Why Patients Choose Dr. Antipov in Roseville",
+        paras: [
+          [
+            "Immediate loading leaves no margin for guesswork — the decision to attach teeth on surgery day rests entirely on surgical judgment and precision. ",
+            { text: "Dr. Alexander Antipov", href: "/about" },
+            " is a board-certified oral and maxillofacial surgeon and Diplomate of the American Board of Oral and Maxillofacial Surgery, with hospital-based residency training beyond dental school. He plans every case personally on 3D imaging, performs the surgery under IV sedation, and follows your integration through to the final bridge at his Roseville office. For the broader picture of same-day full-arch treatment, see our guide to ",
+            { text: "teeth-in-a-day smile restoration", href: "/for-patients/insights/teeth-in-a-day-same-day-smile-restoration" },
+            ".",
+          ],
+          [
+            "Patients come from Rocklin, Granite Bay, Citrus Heights, Folsom, El Dorado Hills, and across Sacramento. Pricing is transparent and all-inclusive, backed by a ",
+            { text: "price-match guarantee", href: "/for-patients/insights/dental-implant-price-match-guarantee" },
+            ", and our ",
+            { text: "guide to paying for dental implants", href: "/for-patients/insights/dental-implant-financing-options" },
+            " walks through financing options.",
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Will I be in pain during a same-day implant procedure?",
+        answer:
+          "No — the procedure is performed under local anesthesia with IV sedation, a \u201ctwilight sleep\u201d state in which most patients have no memory of the surgery's sounds or sensations. Afterward, discomfort typically peaks around day two and is managed with over-the-counter or prescribed medication.",
+      },
+      {
+        question: "How can teeth be attached to implants the same day?",
+        answer:
+          "Through immediate loading: when an implant achieves strong primary stability at placement — verified by insertion torque of roughly 35\u201345 Newton-centimeters — a temporary tooth or bridge can be secured immediately. The temporary is kept slightly out of the bite so chewing forces can't disturb the healing bond.",
+      },
+      {
+        question: "Can I get same-day implants with significant bone loss?",
+        answer:
+          "Often, yes. 3D mapping locates your densest bone, and angled techniques like All-on-4 anchor implants there — frequently avoiding a separate bone graft. When bone loss is severe, grafting can prepare the site first on a staged timeline. A CBCT scan at the consultation settles it.",
+      },
+      {
+        question: "How long until I can eat solid foods?",
+        answer:
+          "Plan on a soft-food diet for roughly 3\u20136 months while the implants fuse with your jawbone. Hard, crunchy, or chewy foods during this phase can cause micromovements that interfere with healing. Once your surgeon confirms the bond is mature and your permanent teeth are attached, all foods are back on the menu.",
+      },
+      {
+        question: "What is the success rate for same-day dental implants?",
+        answer:
+          "Clinical data shows success rates between 95% and 98% when performed by experienced specialists, driven by precise digital planning and good post-operative care. Smoking and untreated gum disease lower those odds, which is why a thorough screening comes before surgery.",
+      },
+      {
+        question: "Do I need a driver after the surgery?",
+        answer:
+          "Yes. Because IV sedation temporarily impairs coordination and judgment, you must have a responsible adult drive you home and stay with you for a few hours. Avoid driving, signing legal documents, or making major decisions for 24 hours after anesthesia.",
+      },
+      {
+        question: "How do I know if I'm a candidate for teeth-in-a-day?",
+        answer:
+          "Ideal candidates have good oral health, enough bone density to support immediate loading, and a commitment to the recovery guidelines. Even if you've been told no in the past, 3D imaging often reveals usable bone that traditional exams miss — a clinical evaluation with Dr. Antipov in Roseville settles your eligibility.",
+      },
+    ],
+    cta: {
+      heading: "Ready to Leave with a New Smile in One Day?",
+      body:
+        "At a consultation with Dr. Antipov in Roseville, you'll get 3D CBCT imaging, a clear answer on whether immediate loading fits your anatomy, and transparent, all-inclusive pricing backed by a price-match guarantee. Restrictions apply.",
+    },
+  },
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

@@ -5,6 +5,7 @@ import { TrackingProvider } from "@/components/TrackingProvider";
 import { CookieConsent } from "@/components/CookieConsent";
 import { RecaptchaScript } from "@/components/RecaptchaScript";
 import { ConsentGatedTracking } from "@/components/analytics/ConsentGatedTracking";
+import { GoogleTagManagerNoScript } from "@/components/analytics/GoogleTagManager";
 import { SiteNavbar, SiteFooter } from "@/components/SiteChrome";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import HtmlLangSetter from "@/components/HtmlLangSetter";
@@ -122,6 +123,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geist.variable} ${merriweather.variable} ${dancingScript.variable} ${caveat.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        <GoogleTagManagerNoScript />
         <HtmlLangSetter />
         <ConsentGatedTracking />
         <RecaptchaScript />

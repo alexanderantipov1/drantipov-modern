@@ -42,9 +42,9 @@ const csp = [
   // Images: self + youtube/vimeo/google thumbnails + GA pixel + data URIs
   "img-src 'self' data: blob: https://i.ytimg.com https://img.youtube.com https://i.vimeocdn.com https://lh3.googleusercontent.com https://www.google-analytics.com https://www.googletagmanager.com https://*.clarity.ms",
   // Connect: API endpoints
-  "connect-src 'self' https://www.google-analytics.com https://*.clarity.ms https://api.anthropic.com https://api.fusiondentalimplants.com https://webto.salesforce.com https://api.resend.com https://api.hsforms.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/",
+  "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.clarity.ms https://api.anthropic.com https://api.fusiondentalimplants.com https://webto.salesforce.com https://api.resend.com https://api.hsforms.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/",
   // Iframes: reCAPTCHA + YouTube + Vimeo + Calendly + Maps
-  "frame-src 'self' https://www.google.com/recaptcha/ https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://calendly.com https://www.google.com/maps/",
+  "frame-src 'self' https://www.googletagmanager.com https://www.google.com/recaptcha/ https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://calendly.com https://www.google.com/maps/",
   // Media: video + audio
   "media-src 'self' blob:",
   // Workers

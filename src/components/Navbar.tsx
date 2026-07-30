@@ -21,8 +21,10 @@ const navLinks = [
   { label: "About", href: "/about" },
   { label: "Results", href: "/results" },
   { label: "Before & After", href: "/surgical-cases" },
-  { label: "For Patients", href: "/for-patients" },
-  { label: "For Doctors", href: "/for-dentists/referring-doctors" },
+];
+
+const patientsItems = [
+  { label: "Patient Resources", href: "/for-patients" },
   { label: "Insurance", href: "/insurance" },
 ];
 
@@ -30,6 +32,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
+  const [patientsOpen, setPatientsOpen] = useState(false);
   const pathname = usePathname();
 
   const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -167,6 +170,61 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+
+            {/* For Patients dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setPatientsOpen(true)}
+              onMouseLeave={() => setPatientsOpen(false)}
+            >
+              <Link
+                href="/for-patients"
+                className="flex items-center gap-1 px-3 py-2 rounded-full text-sm font-medium transition-all duration-300 text-dark hover:text-primary hover:bg-primary/10"
+              >
+                For Patients
+                <svg
+                  className={`h-3 w-3 transition-transform ${patientsOpen ? "rotate-180" : ""}`}
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
+
+              <AnimatePresence>
+                {patientsOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute left-1/2 top-full -translate-x-1/2 mt-3 w-56 rounded-2xl border border-dark/10 bg-white p-2 shadow-2xl"
+                  >
+                    {patientsItems.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setPatientsOpen(false)}
+                        className="block rounded-xl px-4 py-3 text-sm font-medium text-dark transition hover:bg-light hover:text-primary"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {/* For Doctors */}
+            <a
+              href="/for-dentists/referring-doctors"
+              className="px-3 py-2 rounded-full text-sm font-medium transition-all duration-300 text-dark hover:text-primary hover:bg-primary/10"
+            >
+              For Doctors
+            </a>
           </div>
 
           {/* Language switcher */}
@@ -253,6 +311,37 @@ export default function Navbar() {
                   {link.label}
                 </motion.a>
               ))}
+              {/* For Patients + nested Insurance */}
+              <motion.a
+                href="/for-patients"
+                onClick={() => setMobileOpen(false)}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.18 }}
+                className="text-lg font-medium text-dark py-3 px-4 rounded-xl hover:bg-primary/10 hover:text-primary transition-colors"
+              >
+                For Patients
+              </motion.a>
+              <motion.a
+                href="/insurance"
+                onClick={() => setMobileOpen(false)}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.21 }}
+                className="text-base font-medium text-muted py-2.5 px-4 ml-4 rounded-xl hover:bg-primary/10 hover:text-primary transition-colors"
+              >
+                Insurance
+              </motion.a>
+              <motion.a
+                href="/for-dentists/referring-doctors"
+                onClick={() => setMobileOpen(false)}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.24 }}
+                className="text-lg font-medium text-dark py-3 px-4 rounded-xl hover:bg-primary/10 hover:text-primary transition-colors"
+              >
+                For Doctors
+              </motion.a>
               <ConsultationModal>
                 <button
                   onClick={() => setMobileOpen(false)}

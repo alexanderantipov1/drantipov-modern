@@ -50,7 +50,7 @@ function ReferralFormTab() {
           href={ONLINE_REFERRAL_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-8 py-4 bg-gold text-white rounded-full font-semibold shadow hover:opacity-90 transition-opacity"
+          className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full font-semibold shadow hover:bg-primary-dark transition-colors"
         >
           Online Referral Form
           <ExternalLink className="h-4 w-4" />

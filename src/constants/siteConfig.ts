@@ -52,6 +52,7 @@ export const navigationLinks = [
     title: "For Dentists",
     href: "/for-dentists",
     submenu: [
+      { title: "Referring Doctors", href: "/for-dentists/referring-doctors" },
       { title: "Refer Patients", href: "/for-dentists/refer-patients" },
       { title: "Referral Partners", href: "/for-dentists/referral-partners" },
       { title: "Education & Courses", href: "/for-dentists/education/courses" },

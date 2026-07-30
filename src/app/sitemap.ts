@@ -251,6 +251,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...[
       "refer-patients",
       "referral-partners",
+      "referring-doctors",
       "education/courses",
     ].map((slug) => ({
       url: `${siteUrl}/for-dentists/${slug}`,

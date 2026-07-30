@@ -5635,6 +5635,178 @@ export const guideArticles: RevisionArticle[] = [
         "Schedule a free implant consultation with Dr. Antipov in Roseville — you'll get 3D CBCT imaging, a clear answer on your candidacy without grafting, and transparent, all-inclusive pricing backed by a price-match guarantee. Restrictions apply.",
     },
   },
+  {
+    slug: "dental-implant-revision-surgery",
+    title: "Dental Implant Revision Surgery: Rescuing a Failing Implant in Roseville, CA",
+    metaTitle: "Dental Implant Revision Surgery Guide | Roseville, CA Oral Surgeon",
+    metaDescription:
+      "What is dental implant revision surgery? A board-certified oral surgeon in Roseville, CA explains why implants fail, how 3D CBCT diagnostics guide the fix, revision techniques from rescue cleaning to zygomatic implants, recovery, and costs.",
+    excerpt:
+      "A failing dental implant is fixable. Dental implant revision surgery corrects, repairs, or replaces a compromised implant — from decontaminating a salvageable post to full replacement with bone grafting or zygomatic anchorage. Here is the complete guide from a board-certified oral surgeon in Roseville.",
+    date: "July 30, 2026",
+    datePublished: "2026-07-30",
+    image: "/images/blog/2026-07-27/dental-implant-revision-surgery.png",
+    heroAlt: "Oral surgeon reviewing a 3D CBCT scan on a monitor while planning a dental implant revision surgery",
+    category: "Dental Implants",
+    readTime: "10 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "dental implant revision surgery",
+      "failed dental implant revision roseville",
+      "implant revision surgery sacramento",
+      "peri-implantitis treatment revision",
+      "replace failed dental implant",
+    ],
+    intro: [
+      "Dental implant revision surgery is the clinical process of correcting, repairing, or replacing an implant that has become compromised \u2014 and in experienced hands, it works: a failing post can often be decontaminated and saved, or removed, the site rebuilt with grafting, and a new implant placed on a stronger foundation than the first, explains Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. While implants succeed 95\u201398% of the time, roughly 5\u201310% of patients face a complication within ten years \u2014 usually peri-implantitis (infection-driven bone loss), poor original positioning, or hardware fatigue. Needing a second procedure does not mean you failed as a patient; it means the biology or the original plan needs a specialist's correction. This guide covers why implants fail, how 3D diagnostics build the surgical blueprint, the full spectrum of revision techniques, what recovery looks like, and how to choose the right surgeon for a case with a smaller margin for error.",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical evaluation. Whether a failing implant can be saved or must be replaced depends on findings from a 3D CBCT scan and an in-person examination.",
+    tldr: [],
+    sections: [
+      {
+        heading: "Why Dental Implants Fail: Early vs. Late Complications",
+        paras: [
+          "Revision planning starts with the failure timeline, because early and late failures have different causes \u2014 and different fixes:",
+        ],
+        table: {
+          headers: ["Factor", "Early-stage failure (first months)", "Late-stage failure (years later)"],
+          rows: [
+            ["Typical cause", "Bone never fused with the post (failed osseointegration)", "Peri-implantitis infection, hardware fatigue, overload"],
+            ["Common triggers", "Insufficient bone volume, infection at placement, smoking, uncontrolled diabetes", "Bacterial biofilm, teeth grinding, poor original angle creating stress points"],
+            ["Warning signs", "Looseness, persistent pain soon after surgery", "Gum recession, swelling, metallic taste, a once-solid implant loosening"],
+            ["Usual revision path", "Remove, graft the site, replace after healing", "Rescue decontamination if caught early; removal + rebuild if bone loss is advanced"],
+          ],
+        },
+        list: [],
+      },
+      {
+        heading: "The Biological and Mechanical Causes",
+        paras: [
+          [
+            "The most common biological threat is peri-implantitis \u2014 effectively the gum disease of the implant world, where bacterial biofilm triggers inflammation that steadily destroys supporting bone. The National Institute of Dental and Craniofacial Research's overview of ",
+            { text: "periodontal (gum) disease", href: "https://www.nidcr.nih.gov/health-info/gum-disease" },
+            " explains the same infection-to-bone-loss mechanism. Smokers face failure rates two to three times higher than non-smokers, and uncontrolled diabetes impairs the healing that keeps bone dense around the post. If you suspect infection is the culprit, our guide to ",
+            { text: "whether a loose dental implant can be saved", href: "/for-patients/insights/can-a-loose-dental-implant-be-saved" },
+            " walks through the salvage decision in detail.",
+          ],
+          [
+            "Mechanical failures are the other family: an implant placed at the wrong angle or depth creates uneven stress points that fatigue the hardware over time \u2014 loose or fractured screws, broken abutments, even fractured posts. And some \u201cfailures\u201d are aesthetic: a structurally sound implant with an unnatural gum contour or smile line. If only the visible restoration is damaged, a full revision may be unnecessary \u2014 see ",
+            { text: "repairing a broken implant crown or prosthesis", href: "/for-patients/insights/repairing-a-broken-implant-crown-or-prosthesis" },
+            ".",
+          ],
+        ],
+      },
+      {
+        heading: "Advanced Diagnostics: The Blueprint for a Successful Revision",
+        paras: [
+          "Performing a revision without 3D imaging is like navigating with a blurry, outdated map. Standard 2D X-rays routinely hide the infections and bone deficiencies that caused the original failure. That is why every revision case at our Roseville practice begins with a cone beam CT (CBCT) scan, which reveals the exact topography of bone loss, the position of nerves and sinus cavities, and whether the site will need grafting before a new implant can be placed.",
+          "From that scan, the entire procedure is planned digitally before you enter the operating chair \u2014 implant size, angle, and depth are selected in software, and computer-generated surgical guides transfer that plan to your jaw with precision. Guided placement minimizes trauma to surrounding tissue, which means less swelling and faster healing \u2014 particularly valuable in revision cases, where the tissue has already been through one surgery.",
+        ],
+      },
+      {
+        heading: "Revision Techniques: From Simple Fixes to Full-Arch Rescues",
+        paras: [
+          [
+            "Revision does not always mean removal. The right technique depends on what failed. If the post is fused solidly but a screw loosened or a crown chipped, a hardware swap restores function without a second healing phase. If peri-implantitis is caught early, a rescue protocol \u2014 meticulous cleaning and decontamination of the implant surface to remove the bacterial biofilm \u2014 can stop the infection and save the original implant. When the post is loose or bone loss is extensive, the failed implant is removed, the site regenerated with grafting material, and a new implant placed once the bone matures. Our guide to ",
+            { text: "replacing a failed dental implant", href: "/for-patients/insights/replacing-a-failed-dental-implant-what-to-expect" },
+            " walks through that full-replacement pathway step by step.",
+          ],
+          [
+            "Full-arch cases raise the stakes: if one or two posts supporting an ",
+            { text: "All-on-4 bridge", href: "/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day" },
+            " fail, the whole restoration is at risk. A revision specialist can often replace the failing components or add supplemental implants to reinforce the bridge \u2014 preserving your original investment. We cover those scenarios in ",
+            { text: "fixing a failed All-on-4", href: "/for-patients/insights/fixing-a-failed-all-on-4-revision-options" },
+            ".",
+          ],
+          [
+            "For severe upper-jaw bone loss where standard grafting cannot rebuild enough foundation, ",
+            { text: "zygomatic implants", href: "/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible" },
+            " anchor into the dense cheekbone, bypassing the damaged area entirely \u2014 the pathway for patients previously told their case was \u201cuntreatable.\u201d And when bone loss is the central obstacle rather than the hardware, our guide to ",
+            { text: "implant revision after bone loss", href: "/for-patients/insights/implant-revision-after-bone-loss" },
+            " covers the grafting-first sequence in depth.",
+          ],
+        ],
+      },
+      {
+        heading: "The Recovery Journey and Preventing a Second Failure",
+        paras: [
+          [
+            "The first 24\u201348 hours after revision surgery are about managing the normal inflammatory response \u2014 expect some swelling and mild soreness. Complex cases are performed under ",
+            { text: "IV sedation", href: "/for-patients/insights/iv-sedation-dentistry-what-to-expect" },
+            ", so you will need a driver home. Follow a soft-food, high-protein diet for roughly the first ten days (yogurt, lukewarm soups, protein shakes), keep physical activity light for the first week, and call the office promptly for fever above 101\u00b0F, bleeding that will not stop with pressure, or swelling that increases after day three. Most patients return to normal routines within three to five days, while the bone-bonding process (osseointegration) runs three to six months before the final restoration.",
+          ],
+          "A revision is a second chance, not just a redo \u2014 so the plan also targets whatever caused the first failure. If grinding (bruxism) contributed, a custom night guard protects the new implant. Professional cleanings with implant-safe instruments are mandatory, and the first twelve months of follow-ups are the critical window while the biological bond fully solidifies.",
+        ],
+      },
+      {
+        heading: "Choosing a Revision Specialist Serving Roseville and the Sacramento Region",
+        paras: [
+          [
+            "With a second surgery, the margin for error is smaller \u2014 the case needs a surgeon, not a generalist. ",
+            { text: "Dr. Alexander Antipov", href: "/about" },
+            " is a board-certified oral and maxillofacial surgeon and Diplomate of the American Board of Oral and Maxillofacial Surgery, with hospital-based residency training in exactly the skills revision cases demand: managing infection, advanced bone grafting, and zygomatic anchorage. His Roseville practice is heavily referral-based \u2014 local dentists send their most complex and failed-implant cases here \u2014 and no referral is required to book directly. If you are still weighing your options, start with a ",
+            { text: "second opinion on a failed dental implant", href: "/for-patients/insights/second-opinion-on-failed-dental-implants" },
+            ".",
+          ],
+          [
+            "Paying for a procedure twice is a real frustration, so pricing is transparent and all-inclusive, backed by a ",
+            { text: "price-match guarantee", href: "/for-patients/insights/dental-implant-price-match-guarantee" },
+            ", with financing plans covered in our ",
+            { text: "guide to paying for dental implants", href: "/for-patients/insights/dental-implant-financing-options" },
+            ". Patients travel from Rocklin, Granite Bay, Folsom, Elk Grove, and across the Sacramento region for revision care.",
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is dental implant revision surgery painful?",
+        answer:
+          "No \u2014 the procedure is performed under IV sedation with local anesthetic, so you feel nothing during surgery. Post-operative soreness is typically manageable with standard medication and subsides within a few days. Revision patients are often surprised that recovery discomfort is similar to, or milder than, their original placement.",
+      },
+      {
+        question: "How much does dental implant revision surgery cost in Roseville?",
+        answer:
+          "Cost depends on the complexity of hardware removal and whether the site needs bone grafting before a new implant can be placed. You receive a detailed, transparent estimate after your 3D CBCT scan \u2014 backed by a price-match guarantee and flexible financing options, so specialist-level revision care stays accessible.",
+      },
+      {
+        question: "Can a failed dental implant be replaced immediately?",
+        answer:
+          "Sometimes, but many revision cases require a staged approach: if infection caused the failure, the bacteria must be cleared and the site grafted first, with several months of bone maturation before the new post is placed. That patience is what gives the second implant the solid foundation the first one lacked.",
+      },
+      {
+        question: "What are the signs my dental implant is failing and needs revision?",
+        answer:
+          "Persistent pain around the site, visible swelling or gum recession, a metallic taste, or the feeling that the implant is slightly loose all warrant prompt evaluation. Early peri-implantitis can often be treated with a rescue decontamination protocol that saves the implant \u2014 which is why acting on early signs matters.",
+      },
+      {
+        question: "Is dental implant revision surgery covered by insurance?",
+        answer:
+          "Many dental plans partially cover the diagnostic and restorative portions, such as infection treatment or a new crown, while the surgical post itself often has limited coverage. Our team helps you navigate benefits to maximize reimbursement, and payment plans can bridge any gap.",
+      },
+      {
+        question: "How long is recovery after implant revision surgery?",
+        answer:
+          "Most patients return to normal daily routines within three to five days, following a soft-food diet for about ten days to protect the site. The internal bone-bonding process (osseointegration) takes three to six months before the final permanent restoration is attached.",
+      },
+      {
+        question: "What is the success rate of dental implant revision surgery?",
+        answer:
+          "Revision success rates are high when the case is planned on 3D imaging and performed by a board-certified specialist, though outcomes depend on remaining bone quality and your overall health. Correcting the original cause of failure \u2014 infection, positioning, or overload \u2014 is what makes the second attempt more predictable than the first.",
+      },
+      {
+        question: "Do I need a referral to see an oral surgeon for a revision?",
+        answer:
+          "No referral is needed. While many local dentists refer their most complex cases to Dr. Antipov's Roseville practice, you can book a consultation directly \u2014 whether you want a definitive revision plan or simply a specialist second opinion on an implant that does not feel right.",
+      },
+    ],
+    cta: {
+      heading: "A Failing Implant Is Fixable \u2014 Start With the Scan",
+      body:
+        "Schedule a free implant consultation with Dr. Antipov in Roseville. You'll get a 3D CBCT scan, a definitive answer on whether your implant can be saved or should be replaced, and transparent all-inclusive pricing backed by a price-match guarantee. Restrictions apply.",
+    },
+  },
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

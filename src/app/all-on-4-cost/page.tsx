@@ -87,7 +87,7 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
-      <section className="bg-light py-10 lg:py-14">
+      <section id="calculator" className="scroll-mt-24 bg-light py-10 lg:py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary">Instant estimate</p>

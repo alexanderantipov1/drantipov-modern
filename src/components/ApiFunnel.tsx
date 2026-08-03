@@ -338,7 +338,7 @@ export default function ApiFunnel({
   /* ---------------- Styled (corporate) variant ---------------- */
   if (styled) {
     return (
-      <div>
+      <div className="relative">
         {onBack && !stickyBack && (
           <button
             onClick={onBack}
@@ -349,14 +349,14 @@ export default function ApiFunnel({
         )}
 
         {/* Hero band */}
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-navy via-secondary to-primary px-6 py-8 shadow-lg sm:px-10">
-          <div className="pointer-events-none absolute -right-16 -top-16 h-52 w-52 rounded-full bg-white/10 blur-2xl" />
-          <div className="pointer-events-none absolute -bottom-20 right-10 h-44 w-44 rounded-full bg-accent/20 blur-2xl" />
+        <div className="relative overflow-hidden rounded-[2rem] bg-navy px-6 py-8 shadow-[0_18px_50px_-24px_rgba(14,62,94,.7)] sm:px-10 sm:py-9">
+          <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full border-[34px] border-primary/10" />
+          <div className="pointer-events-none absolute -bottom-28 right-16 h-64 w-64 rounded-full border-[28px] border-gold/10" />
           <div className="relative">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/70">{t.heroKicker}</p>
-            <h2 className="mt-2 font-serif text-2xl font-bold text-white sm:text-3xl">{displayName}</h2>
-            <p className="mt-2 max-w-xl text-sm leading-relaxed text-white/85">{t.heroTagline}</p>
-            <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary-light">{t.heroKicker}</p>
+            <h2 className="mt-2 max-w-2xl font-serif text-3xl font-bold tracking-tight text-white sm:text-4xl">{displayName}</h2>
+            <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/75">{t.heroTagline}</p>
+            <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-3">
               {t.trust.map((item) => (
                 <li key={item} className="flex items-center gap-1.5 text-xs font-medium text-white/90">
                   <svg className="h-4 w-4 text-primary-light" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -370,7 +370,7 @@ export default function ApiFunnel({
         </div>
 
         {/* Sticky running total */}
-        <div className="sticky top-16 z-30 -mt-4 mb-6 flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-gradient-to-r from-navy to-secondary px-6 py-4 shadow-xl sm:top-20">
+        <div className="sticky top-16 z-30 -mt-5 mb-8 flex items-center justify-between gap-4 rounded-2xl border border-white/20 bg-secondary px-5 py-4 shadow-[0_16px_35px_-18px_rgba(10,46,71,.75)] sm:top-20 sm:px-7">
           {onBack && stickyBack && (
             <button
               type="button"
@@ -392,7 +392,7 @@ export default function ApiFunnel({
             <span className="block text-[11px] font-semibold uppercase tracking-wider text-white/60">
               {t.total}
             </span>
-            <span className="font-serif text-3xl font-bold text-white">
+            <span className="font-serif text-3xl font-bold tracking-tight text-white">
               {total > 0 && (
                 <span className="mr-1 align-middle text-sm text-white">
                   {t.from}
@@ -409,33 +409,33 @@ export default function ApiFunnel({
           <span className="max-w-[42%] text-right text-xs font-medium text-white/70">{displayName}</span>
         </div>
 
-        <div className="space-y-5">
+        <div className="relative space-y-6 before:absolute before:bottom-8 before:left-[1.125rem] before:top-8 before:w-px before:bg-primary/20 sm:before:left-[1.375rem]">
           {steps.map((s, idx) => (
             <section
               key={s.id}
-              className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm ring-1 ring-black/[0.02]"
+              className="relative overflow-hidden rounded-[1.5rem] border border-neutral-200/80 bg-white shadow-[0_12px_35px_-26px_rgba(14,62,94,.8)] transition-shadow hover:shadow-[0_18px_42px_-25px_rgba(14,62,94,.45)]"
             >
-              <div className="h-1 w-full bg-gradient-to-r from-primary via-accent to-secondary" />
-              <div className="p-6">
+              <div className="h-1 w-full bg-primary" />
+              <div className="p-5 sm:p-7">
                 <div className="flex items-start gap-3">
-                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-gradient-to-br from-primary to-accent text-sm font-bold text-white shadow-sm">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border-4 border-light bg-primary text-sm font-bold text-white shadow-sm">
                     {idx + 1}
                   </span>
                   <div className="min-w-0">
-                    <p className="text-[11px] font-bold uppercase tracking-wider text-primary">
+                    <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-primary">
                       {t.step(idx + 1, steps.length)}
                     </p>
-                    <h3 className="mt-0.5 font-serif text-xl font-bold text-neutral-900">{tField(s.id, s.name, s.name, "name")}</h3>
+                    <h3 className="mt-1 font-serif text-xl font-bold leading-tight text-secondary sm:text-2xl">{tField(s.id, s.name, s.name, "name")}</h3>
                   </div>
                 </div>
                 {s.description && (
-                  <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-neutral-600">
+                  <p className="mt-4 max-w-3xl whitespace-pre-line text-sm leading-7 text-muted">
                     {tField(s.id, s.name, s.description, "description")}
                   </p>
                 )}
 
                 {SELECTABLE.has(s.component_type) ? (
-                  <div className="mt-4 space-y-3">
+                  <div className="mt-6 grid gap-3 sm:grid-cols-2">
                     {s.components
                       .filter((c) => c.is_available !== false)
                       .map((c) => {
@@ -448,17 +448,17 @@ export default function ApiFunnel({
                             type="button"
                             onClick={() => toggle(s, c)}
                             aria-pressed={on}
-                            className={`flex w-full items-start justify-between gap-4 rounded-xl border p-4 text-left transition ${
+                            className={`group flex w-full items-start justify-between gap-4 rounded-2xl border p-4 text-left transition-all duration-200 ${
                               on
-                                ? "border-primary bg-gradient-to-r from-primary/10 to-accent/5 ring-1 ring-primary"
-                                : "border-neutral-200 hover:border-primary/40 hover:bg-light"
+                                ? "border-primary bg-primary/10 shadow-[0_8px_20px_-15px_rgba(26,187,156,.9)] ring-1 ring-primary/40"
+                                : "border-neutral-200 bg-light/40 hover:-translate-y-0.5 hover:border-primary/50 hover:bg-light"
                             }`}
                           >
                             <span className="min-w-0">
                               <span className="flex flex-wrap items-center gap-2 font-semibold text-neutral-900">
                                 <span
-                                  className={`grid h-5 w-5 shrink-0 place-items-center rounded-full border text-xs transition ${
-                                    on ? "border-primary bg-gradient-to-br from-primary to-accent text-white" : "border-neutral-300"
+                                  className={`grid h-6 w-6 shrink-0 place-items-center rounded-full border text-xs transition ${
+                                    on ? "border-primary bg-primary text-white" : "border-neutral-300 bg-white"
                                   }`}
                                   aria-hidden="true"
                                 >
@@ -466,7 +466,7 @@ export default function ApiFunnel({
                                 </span>
                                 {tField(c.id, c.name, c.name, "name")}
                                 {meta?.badge && (
-                                  <span className="inline-block rounded-full bg-gradient-to-r from-primary to-accent px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white shadow-sm">
+                                    <span className="inline-block rounded-full bg-secondary px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
                                     {pick(meta.badge, locale)}
                                   </span>
                                 )}
@@ -493,7 +493,7 @@ export default function ApiFunnel({
                                   <span className="mr-1 text-sm text-neutral-700">
                                     {t.from}
                                   </span>
-                                  <span className="font-serif text-lg font-bold text-secondary">
+                                    <span className="font-serif text-lg font-bold text-secondary">
                                     {fmt(price, locale)}
                                   </span>
                                 </span>
@@ -508,7 +508,7 @@ export default function ApiFunnel({
                       })}
                   </div>
                 ) : s.component_type === "insurance" ? (
-                  <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  <div className="mt-6 grid gap-3 sm:grid-cols-2">
                     {(plans.length ? plans : INSURANCE_FALLBACK.map((n) => ({ id: n, name: n, description: "" }))).map(
                       (plan) => {
                         const on = insurance === plan.name;
@@ -518,10 +518,10 @@ export default function ApiFunnel({
                             type="button"
                             onClick={() => setInsurance(on ? "" : plan.name)}
                             aria-pressed={on}
-                            className={`rounded-xl border p-4 text-left transition ${
+                            className={`rounded-2xl border p-4 text-left transition-all ${
                               on
-                                ? "border-primary bg-gradient-to-r from-primary/10 to-accent/5 ring-1 ring-primary"
-                                : "border-neutral-200 hover:border-primary/40 hover:bg-light"
+                                ? "border-primary bg-primary/10 ring-1 ring-primary/40"
+                                : "border-neutral-200 bg-light/40 hover:border-primary/50 hover:bg-light"
                             }`}
                           >
                             <span className="block font-medium text-neutral-900">{tField(plan.id, plan.name, plan.name, "name")}</span>
@@ -622,7 +622,7 @@ export default function ApiFunnel({
 
   /* ---------------- Default (plain) variant ---------------- */
   return (
-    <div>
+    <div className="relative">
       {onBack && (
         <button
           onClick={onBack}
@@ -632,43 +632,43 @@ export default function ApiFunnel({
         </button>
       )}
 
-      <div className="sticky top-16 z-30 mb-6 flex items-center justify-between rounded-xl border border-neutral-200 bg-white/95 px-5 py-3 shadow-sm backdrop-blur sm:top-20">
+      <div className="sticky top-16 z-30 mb-8 flex items-center justify-between rounded-2xl border border-secondary/10 bg-secondary px-5 py-4 shadow-lg backdrop-blur sm:top-20">
         <div>
-          <span className="block text-xs font-semibold uppercase tracking-wider text-neutral-500">
+          <span className="block text-xs font-semibold uppercase tracking-wider text-white/60">
             {t.total}
           </span>
-          <span className="font-serif text-2xl font-bold text-neutral-900">
+          <span className="font-serif text-3xl font-bold text-white">
             {total > 0 && (
-              <span className="mr-1 align-middle text-sm text-neutral-700">
+                <span className="mr-1 align-middle text-sm text-white/80">
                 {t.from}
               </span>
             )}
             {fmt(total, locale)}
           </span>
           {monthlySelected && total > 0 && (
-            <span className="mt-0.5 block text-xs font-medium text-primary">
+              <span className="mt-0.5 block text-xs font-medium text-primary-light">
               {t.monthly(fmt(monthly, locale))}
             </span>
           )}
         </div>
-        <span className="max-w-[45%] text-right text-xs text-neutral-500">{displayName}</span>
+        <span className="max-w-[45%] text-right text-xs text-white/70">{displayName}</span>
       </div>
 
-      <div className="space-y-5">
+      <div className="space-y-6">
         {steps.map((s, idx) => (
-          <section key={s.id} className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
-            <p className="text-xs font-bold uppercase tracking-wider text-primary">
+          <section key={s.id} className="rounded-[1.5rem] border border-neutral-200/80 bg-white p-5 shadow-[0_12px_35px_-26px_rgba(14,62,94,.8)] sm:p-7">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-primary">
               {t.step(idx + 1, steps.length)}
             </p>
-            <h3 className="mt-1 font-serif text-xl font-bold text-neutral-900">{s.name}</h3>
+            <h3 className="mt-1 font-serif text-xl font-bold leading-tight text-secondary sm:text-2xl">{s.name}</h3>
             {s.description && (
-              <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-neutral-600">
+                <p className="mt-4 whitespace-pre-line text-sm leading-7 text-muted">
                 {s.description}
               </p>
             )}
 
             {SELECTABLE.has(s.component_type) ? (
-              <div className="mt-4 space-y-3">
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {s.components
                   .filter((c) => c.is_available !== false)
                   .map((c) => {
@@ -680,15 +680,15 @@ export default function ApiFunnel({
                         type="button"
                         onClick={() => toggle(s, c)}
                         aria-pressed={on}
-                        className={`flex w-full items-start justify-between gap-4 rounded-xl border p-4 text-left transition ${
-                          on ? "border-primary bg-primary/5 ring-1 ring-primary" : "border-neutral-200 hover:border-neutral-300"
+                        className={`flex w-full items-start justify-between gap-4 rounded-2xl border p-4 text-left transition-all ${
+                          on ? "border-primary bg-primary/10 ring-1 ring-primary/40" : "border-neutral-200 bg-light/40 hover:border-primary/50 hover:bg-light"
                         }`}
                       >
                         <span className="min-w-0">
                           <span className="flex items-center gap-2 font-semibold text-neutral-900">
                             <span
                               className={`grid h-5 w-5 shrink-0 place-items-center rounded-full border text-xs ${
-                                on ? "border-primary bg-primary text-white" : "border-neutral-300"
+                                on ? "border-primary bg-primary text-white" : "border-neutral-300 bg-white"
                               }`}
                               aria-hidden="true"
                             >
@@ -719,7 +719,7 @@ export default function ApiFunnel({
                   })}
               </div>
             ) : s.component_type === "insurance" ? (
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {(plans.length ? plans : INSURANCE_FALLBACK.map((n) => ({ id: n, name: n, description: "" }))).map(
                   (plan) => {
                     const on = insurance === plan.name;
@@ -729,8 +729,8 @@ export default function ApiFunnel({
                         type="button"
                         onClick={() => setInsurance(on ? "" : plan.name)}
                         aria-pressed={on}
-                        className={`rounded-xl border p-4 text-left transition ${
-                          on ? "border-primary bg-primary/5 ring-1 ring-primary" : "border-neutral-200 hover:border-neutral-300"
+                        className={`rounded-2xl border p-4 text-left transition-all ${
+                          on ? "border-primary bg-primary/10 ring-1 ring-primary/40" : "border-neutral-200 bg-light/40 hover:border-primary/50 hover:bg-light"
                         }`}
                       >
                         <span className="block font-medium text-neutral-900">{plan.name}</span>

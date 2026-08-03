@@ -172,7 +172,7 @@ export default function CalculatorPackages({
   }
 
   return (
-    <div ref={rootRef} className="grid scroll-mt-24 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <div ref={rootRef} className="grid scroll-mt-24 gap-5 sm:grid-cols-2 lg:grid-cols-4">
       {CARDS.map((c) => {
         const copy = c[locale];
         return (
@@ -180,9 +180,9 @@ export default function CalculatorPackages({
             key={c.slug}
             type="button"
             onClick={() => open(c.slug)}
-            className="group flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white text-left shadow-sm transition hover:-translate-y-1 hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            className="group flex flex-col overflow-hidden rounded-[1.5rem] border border-neutral-200/80 bg-white text-left shadow-[0_12px_30px_-24px_rgba(14,62,94,.8)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-22px_rgba(14,62,94,.7)] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
           >
-            <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-50">
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-light">
               {/*
                 Review build: `unoptimized` serves these straight from /public.
                 The Next.js image optimizer returned 400 for these four JPEGs on
@@ -194,14 +194,14 @@ export default function CalculatorPackages({
                 alt={copy.title}
                 fill
                 sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                className="object-cover transition duration-300 group-hover:scale-105"
+                className="object-cover transition duration-500 group-hover:scale-105"
                 unoptimized
               />
             </div>
-            <div className="flex flex-1 flex-col p-5">
-              <h3 className="font-serif text-lg font-bold text-neutral-900">{copy.title}</h3>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-neutral-600">{copy.text}</p>
-              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+            <div className="flex flex-1 flex-col p-5 sm:p-6">
+              <h3 className="font-serif text-xl font-bold text-secondary">{copy.title}</h3>
+              <p className="mt-2 flex-1 text-sm leading-7 text-muted">{copy.text}</p>
+              <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary">
                 {LABEL[locale]}
                 <svg className="h-4 w-4 transition group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fillRule="evenodd" d="M7.293 4.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L11.586 10 7.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />

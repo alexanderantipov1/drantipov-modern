@@ -4,6 +4,7 @@ import Link from "next/link";
 import { siteConfig } from "@/constants/siteConfig";
 import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/structured-data";
 import DualCTA from "@/components/DualCTA";
+import CalculatorPackages from "@/components/CalculatorPackages";
 
 export const metadata: Metadata = {
   title: "All-on-4 Cost in California — Honest Breakdown",
@@ -86,6 +87,22 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
+      <section className="bg-light py-10 lg:py-14">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary">Instant estimate</p>
+            <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">Estimate your cost in 2 minutes</h2>
+            <p className="mt-4 text-lg text-neutral-600">
+              Answer a few quick questions and see a personalized estimate with financing and insurance options — instantly, on screen. Our team follows up to confirm it. No commitment.
+            </p>
+            <p className="mt-3 text-base text-neutral-500">Pick the treatment closest to what you need to begin.</p>
+          </div>
+          <div className="mt-5">
+            <CalculatorPackages />
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 lg:py-28">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-3">Itemized breakdown</h2>
@@ -105,7 +122,7 @@ export default function AllOn4CostPage() {
                 {costItems.map((c, i) => (
                   <tr key={c.item} className={i % 2 === 0 ? "bg-white" : "bg-neutral-50"}>
                     <td className="p-5 font-semibold text-neutral-900 align-top">{c.item}</td>
-                    <td className="p-5 font-bold text-primary-600 align-top whitespace-nowrap">{c.range}</td>
+                    <td className="p-5 font-bold text-primary align-top whitespace-nowrap">{c.range}</td>
                     <td className="p-5 text-neutral-700 align-top text-sm leading-6">{c.note}</td>
                   </tr>
                 ))}
@@ -121,7 +138,7 @@ export default function AllOn4CostPage() {
           <ul className="grid gap-4 md:grid-cols-2">
             {factors.map((f) => (
               <li key={f} className="flex items-start gap-3 rounded-2xl bg-white p-5 shadow-sm">
-                <svg className="h-6 w-6 shrink-0 text-primary-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <svg className="h-6 w-6 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-neutral-700 leading-7">{f}</span>
@@ -136,26 +153,26 @@ export default function AllOn4CostPage() {
           <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-12">Financing makes it accessible</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="rounded-3xl bg-white p-7 shadow-sm border border-neutral-200">
-              <p className="text-3xl font-bold text-primary-600">$99</p>
+              <p className="text-3xl font-bold text-primary">$99</p>
               <p className="text-sm text-neutral-600">/month starting</p>
               <p className="mt-4 font-bold text-neutral-900">CareCredit</p>
               <p className="mt-2 text-sm text-neutral-700 leading-6">Promotional periods of 0% interest for 18-24 months on qualifying balances.</p>
             </div>
             <div className="rounded-3xl bg-white p-7 shadow-sm border border-neutral-200">
-              <p className="text-3xl font-bold text-primary-600">84 mo</p>
+              <p className="text-3xl font-bold text-primary">84 mo</p>
               <p className="text-sm text-neutral-600">extended terms</p>
               <p className="mt-4 font-bold text-neutral-900">Lending Club</p>
               <p className="mt-2 text-sm text-neutral-700 leading-6">Larger loans up to 7-year terms. Fixed rates based on credit profile.</p>
             </div>
             <div className="rounded-3xl bg-white p-7 shadow-sm border border-neutral-200">
-              <p className="text-3xl font-bold text-primary-600">5%</p>
+              <p className="text-3xl font-bold text-primary">5%</p>
               <p className="text-sm text-neutral-600">prepay discount</p>
               <p className="mt-4 font-bold text-neutral-900">Cash / check</p>
               <p className="mt-2 text-sm text-neutral-700 leading-6">5% discount on cases paid in full before treatment begins.</p>
             </div>
           </div>
           <p className="mt-8 text-center text-neutral-600 text-sm">
-            See full details on <Link href="/insurance" className="text-primary-600 hover:underline font-semibold">our insurance and financing page</Link>.
+            See full details on <Link href="/insurance" className="text-primary hover:underline font-semibold">our insurance and financing page</Link>.
           </p>
         </div>
       </section>
@@ -261,17 +278,17 @@ export default function AllOn4CostPage() {
         <h2 className="font-serif text-2xl font-bold text-neutral-900 mb-8 text-center">Keep researching your options</h2>
         <div className="grid gap-6 md:grid-cols-3">
           <Link href="/all-on-4-clearchoice-alternative" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Compare</p>
+            <p className="text-xs uppercase tracking-widest text-primary font-bold mb-2">Compare</p>
             <h3 className="font-bold text-neutral-900 leading-snug">All-on-4 vs. ClearChoice</h3>
             <p className="text-sm text-neutral-600 mt-2 leading-6">How a private oral surgeon compares to the corporate full-arch model.</p>
           </Link>
           <Link href="/expertise/full-arch-implants" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Procedure</p>
+            <p className="text-xs uppercase tracking-widest text-primary font-bold mb-2">Procedure</p>
             <h3 className="font-bold text-neutral-900 leading-snug">Full-arch implant treatment</h3>
             <p className="text-sm text-neutral-600 mt-2 leading-6">How fixed full-arch restoration works from consultation to final teeth.</p>
           </Link>
           <Link href="/expertise/zygomatic-implants" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-            <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Advanced</p>
+            <p className="text-xs uppercase tracking-widest text-primary font-bold mb-2">Advanced</p>
             <h3 className="font-bold text-neutral-900 leading-snug">Zygomatic implants</h3>
             <p className="text-sm text-neutral-600 mt-2 leading-6">A graft-free option when there isn't enough upper-jaw bone.</p>
           </Link>

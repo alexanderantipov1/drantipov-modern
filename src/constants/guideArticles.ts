@@ -6491,6 +6491,180 @@ export const guideArticles: RevisionArticle[] = [
         "Schedule a free implant consultation with Dr. Antipov in Roseville \u2014 you'll get 3D CBCT imaging, a personalized treatment plan, and one transparent, all-inclusive written quote backed by a price-match guarantee. Restrictions apply.",
     },
   },
+  {
+    slug: "same-day-teeth-roseville-ca",
+    title: "Same Day Teeth in Roseville, CA: The Complete Guide to Immediate Smile Restoration",
+    metaTitle: "Same Day Teeth in Roseville, CA: Immediate Smile Restoration Guide",
+    metaDescription:
+      "Same day teeth in Roseville, CA explained by a board-certified oral surgeon: how immediate load implants let you leave with a fixed, functional smile in one visit, who qualifies, what All-on-4 does for bone loss, realistic costs, financing, and the temporary-to-zirconia timeline.",
+    excerpt:
+      "You shouldn't have to put your life on hold for months \u2014 or endure a \u201ctoothless transition\u201d \u2014 to eat and smile again. Here is how immediate load implants deliver a fixed, functional smile in a single Roseville visit: the science, the candidacy checklist, the All-on-4 answer to bone loss, and the honest cost picture.",
+    date: "August 5, 2026",
+    datePublished: "2026-08-05",
+    image: "/images/blog/2026-08-04/same-day-teeth-roseville-ca.png",
+    heroAlt: "Oral surgeon showing a patient a 3D jaw scan with a digital implant placement plan in a modern Roseville surgical suite",
+    category: "Same-Day Implants",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "same day teeth roseville ca",
+      "same day dental implants roseville",
+      "teeth in a day roseville",
+      "immediate load dental implants",
+      "all-on-4 same day teeth for sacramento area patients",
+    ],
+    intro: [
+      "Yes \u2014 with immediate load implant protocols, failing teeth can be removed, implants placed, and a fixed, functional prosthetic attached in a single visit, says Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. \u201cSame day teeth\u201d isn't a marketing slogan \u2014 it's a sophisticated clinical protocol that spares you the traditional path of multiple surgeries and the \u201ctoothless transition\u201d many patients find unacceptable. This guide explains how the immediate load approach works, the 3D digital planning that makes it predictable, who qualifies (including patients with significant bone loss), and how to navigate the investment \u2014 so you can regain the ability to eat your favorite foods and smile without hesitation, without putting your life on hold for months.",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical evaluation. Whether same-day (immediate load) treatment is right for you depends on your bone density, medical history, and gum health \u2014 all assessed with 3D CBCT imaging at an in-person consultation.",
+    tldr: [],
+    sections: [
+      {
+        heading: "What \u201cSame Day Teeth\u201d Actually Means",
+        paras: [
+          [
+            "The protocol behind same day teeth is called immediate load: failing teeth are removed, ",
+            { text: "dental implants", href: "https://www.nidcr.nih.gov/health-info/dental-implants" },
+            " are placed, and a fixed temporary bridge is attached \u2014 all in one appointment. A common misconception is that you walk out with your final zirconia teeth that afternoon. In reality, you leave with a high-quality fixed temporary bridge that looks and feels natural but is deliberately lighter, so your jawbone can heal and fuse with the implants without the strain of heavy chewing forces. Once integration is complete, it's replaced with your permanent, handcrafted restoration \u2014 and you never endure a \u201cdenture phase\u201d of gaps or removable plates that slip.",
+          ],
+        ],
+        table: {
+          headers: ["", "Immediate load (same day)", "Traditional (delayed load)"],
+          rows: [
+            ["Timeline to fixed teeth", "Same visit \u2014 a fixed temporary bridge the day of surgery", "4\u20136 months between implant surgery and final tooth placement"],
+            ["Interim solution", "Fixed temporary bridge \u2014 nothing removable", "Often a removable denture during healing"],
+            ["How stability is achieved", "Primary stability + cross-arch splinting distributes bite forces across implants", "Implants left undisturbed to fuse before loading"],
+            ["Bone preservation", "Immediate placement helps prevent resorption of the empty socket", "Bone can shrink while the site sits unloaded"],
+            ["Best suited for", "Full arches and front teeth where implants can be splinted", "Single molars under heavy chewing force, or sites needing major grafting"],
+          ],
+        },
+        list: [],
+      },
+      {
+        heading: "The Science of Immediate Load: Digital-First, Not Exploratory",
+        paras: [
+          "Achieving same day teeth requires a shift from traditional exploratory surgery to a digital-first approach: your bone structure isn't discovered during the procedure \u2014 it's mapped entirely before you arrive. A 3D CBCT scan acts as a high-definition GPS for your jaw, showing bone density, nerve pathways, and sinus cavities in three dimensions. By identifying the densest anchoring bone in advance, the surgery can often be performed flapless \u2014 through smaller incisions that significantly reduce swelling and bruising and shorten recovery.",
+          "The physics matter as much as the imaging. In standard implant surgery, a post is left undisturbed for months while it fuses with bone. Immediate load works because precisely placed implants achieve primary stability \u2014 and because cross-arch splinting distributes your bite forces across multiple implants simultaneously, the prosthetic is secure from the moment you leave the office.",
+        ],
+      },
+      {
+        heading: "Materials: Titanium Roots, Zirconia Teeth",
+        paras: [
+          [
+            "The implant \u201croot\u201d is medical-grade titanium \u2014 a biocompatible material the body accepts and integrates. For the teeth themselves, you move from a high-quality fixed temporary to a final restoration typically made of solid zirconia, which resists the chipping and staining that plague traditional acrylic dentures. Custom shading matches the subtle gradients and translucency of natural enamel, so the result doesn't just function like real teeth \u2014 it looks indistinguishable from them. Our guide to ",
+            { text: "zirconia full-arch restorations", href: "/for-patients/insights/zirconia-arches" },
+            " covers the material science in depth.",
+          ],
+        ],
+      },
+      {
+        heading: "Are You a Candidate for Same-Day Restoration?",
+        paras: [
+          "The most critical factor is bone density: implants need a solid foundation for primary stability, and if bone is too thin or soft, it may not handle the immediate pressure of a prosthetic bridge. Medical history matters too \u2014 conditions like uncontrolled diabetes or heavy smoking restrict blood flow and slow healing. These factors don't automatically disqualify you, but they require a more tailored surgical plan. A healthy gum environment, free of active periodontal disease, is the final piece for long-term success.",
+          [
+            "Years of missing teeth or denture wear can leave patients convinced they have too much bone loss for implants. The All-on-4 technique changes that narrative: by tilting the posterior implants, the surgeon uses the denser bone available at the front of the jaw \u2014 often eliminating the need for invasive grafting entirely. Our comparison of ",
+            { text: "All-on-4 vs. All-on-6", href: "/for-patients/insights/all-on-4-vs-all-on-6" },
+            " explains how implant count is chosen, and IV sedation keeps the experience comfortable throughout.",
+          ],
+        ],
+      },
+      {
+        heading: "Immediate vs. Delayed Load: Choosing Your Path",
+        paras: [
+          "Whether your case suits immediate loading depends on where the teeth are and what forces they face:",
+        ],
+        list: [
+          "Immediate load: best for front teeth and full arches, where implants can be splinted together for strength from day one.",
+          "Delayed load: recommended for single molars facing high chewing pressure, or cases requiring significant bone regeneration first.",
+          "Bone integrity: All-on-4 offers a same-day path for patients who would otherwise wait months for traditional grafts to heal.",
+        ],
+      },
+      {
+        heading: "Navigating the Investment: Costs and Financing",
+        paras: [
+          [
+            "Transparency should be the cornerstone of any quote. An honest breakdown separates the surgical fee \u2014 placement of the titanium implants by a ",
+            { text: "board-certified oral and maxillofacial surgeon", href: "https://www.aboms.org" },
+            " \u2014 from the prosthetic fee for the handcrafted teeth, with no hidden line items for imaging, extractions, or lab work. You can build an instant on-screen estimate for full-arch treatment with our ",
+            { text: "All-on-4 cost calculator", href: "/all-on-4-cost" },
+            ", and our ",
+            { text: "full mouth dental implants cost guide", href: "/for-patients/insights/full-mouth-dental-implants-cost-2026-guide" },
+            " maps the realistic Sacramento-region ranges.",
+          ],
+          [
+            "While the initial investment exceeds bridges or dentures, the long-term math favors implants: conventional dentures typically need replacing every five to seven years as the jawbone shrinks, and bridges require grinding down healthy neighboring teeth. Implants preserve bone and facial structure and are designed to last a lifetime. Flexible ",
+            { text: "financing options", href: "/for-patients/insights/dental-implant-financing-options" },
+            " turn the cost into a predictable monthly payment, and Dr. Antipov's office backs its quotes with a ",
+            { text: "price-match guarantee", href: "/for-patients/insights/dental-implant-price-match-guarantee" },
+            " for comparable written plans from board-certified specialists in the region.",
+          ],
+        ],
+      },
+      {
+        heading: "The Patient Journey in Roseville: Three Steps",
+        paras: [
+          [
+            "Patients come to ",
+            { text: "Dr. Antipov's", href: "/about" },
+            " Roseville office from Rocklin, Lincoln, Sacramento, and across Northern California for a methodical, three-step progression designed around safety and aesthetics:",
+          ],
+        ],
+        list: [
+          "Step 1 \u2014 The digital consultation: a comprehensive 3D CBCT scan and a detailed discussion of your goals, producing a surgical plan mapped digitally before the procedure begins.",
+          "Step 2 \u2014 The procedure day: you arrive with missing or failing teeth and leave the same afternoon with a secure, functional fixed bridge, resting comfortably under IV sedation while the surgical work is done.",
+          "Step 3 \u2014 Post-operative care: detailed recovery guidance through the healing months, then the transition from your temporary bridge to the final, permanent zirconia teeth.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is the same-day teeth procedure really completed in one visit?",
+        answer:
+          "The surgical transformation is \u2014 extractions, implant placement, and attachment of a fixed, functional temporary bridge all happen in a single appointment, so you never go without teeth. The final handcrafted zirconia restoration is placed a few months later, once your jawbone has fully fused with the implants.",
+      },
+      {
+        question: "How much do same-day dental implants cost in Roseville, CA?",
+        answer:
+          "The total depends on the number of implants and the complexity of your case \u2014 in the Sacramento region, full-arch (All-on-4) restoration typically runs $25,000 to $35,000 per arch all-in. Insist on an all-inclusive written quote covering imaging, extractions, and lab work; Dr. Antipov's office provides one, backed by a price-match guarantee and flexible financing.",
+      },
+      {
+        question: "What is the recovery time for immediate load implants?",
+        answer:
+          "Most patients return to normal work and social routines within two to three days. You'll have functional fixed teeth from day one, but the jawbone needs roughly three to four months to fully fuse with the titanium implants, during which you'll follow a soft-food diet to protect the healing sites.",
+      },
+      {
+        question: "Can I get same-day teeth if I have significant bone loss?",
+        answer:
+          "Often, yes. The All-on-4 technique tilts the back implants to anchor in the denser bone at the front of the jaw, frequently eliminating the need for invasive bone grafting. A 3D CBCT scan maps your bone density before surgery to confirm whether stable anchor points exist for immediate loading.",
+      },
+      {
+        question: "Does dental insurance cover same-day implant procedures?",
+        answer:
+          "Many PPO plans provide partial coverage \u2014 typically $1,000 to $3,000 toward the total cost \u2014 though policies vary widely. Dr. Antipov's team verifies your benefits for you and works to maximize what your plan contributes; third-party financing can bridge any remaining balance.",
+      },
+      {
+        question: "What is the difference between the temporary and the permanent bridge?",
+        answer:
+          "The temporary bridge placed on surgery day is made of a lighter material that lets your jaw heal without excessive pressure \u2014 it looks natural and functions well but is designed for short-term use. Once the implants have integrated, it's replaced with a permanent bridge of solid zirconia, handcrafted for durability and shade-matched to your features.",
+      },
+      {
+        question: "Will my same-day teeth look and feel like natural teeth?",
+        answer:
+          "Yes \u2014 the bridge is fixed directly to the implants, so it doesn't slip or click like a denture, and you brush it like natural teeth. The final zirconia restoration is custom-shaded to mimic the translucency and gradients of natural enamel so it complements your facial features authentically.",
+      },
+      {
+        question: "What happens if I'm not a candidate for immediate load?",
+        answer:
+          "You'd follow a delayed-load plan: implants are placed and allowed to heal for several months before the final teeth are attached, with a comfortable temporary solution provided so you're never without a smile. The priority is always the path with the highest chance of permanent success \u2014 not the fastest one.",
+      },
+    ],
+    cta: {
+      heading: "Ready for Your Transformation?",
+      body:
+        "Schedule a free implant consultation with Dr. Antipov in Roseville \u2014 you'll get 3D CBCT imaging, a clear answer on whether same-day treatment fits your anatomy, and one transparent, all-inclusive written quote backed by a price-match guarantee. Restrictions apply.",
+    },
+  },
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

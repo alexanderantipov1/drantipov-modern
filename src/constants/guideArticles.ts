@@ -7173,6 +7173,164 @@ export const guideArticles: RevisionArticle[] = [
         "Schedule a free implant consultation with Dr. Antipov in Roseville \u2014 you'll get 3D imaging, an honest answer on the most cost-effective restoration for your case, and one transparent, all-inclusive written quote backed by a price-match guarantee. Restrictions apply.",
     },
   },
+  {
+    slug: "dental-implant-payment-plans",
+    title: "Dental Implant Payment Plans: How to Afford Your New Smile in 2026",
+    metaTitle: "Dental Implant Payment Plans 2026: Afford Your New Smile | Roseville, CA",
+    metaDescription:
+      "Dental implant payment plans explained by a board-certified oral surgeon in Roseville, CA: healthcare credit lines vs. fixed-term installment loans, the deferred-interest trap, stacking insurance with 2026 HSA/FSA limits, soft-pull pre-qualification, and what to do if financing is denied.",
+    excerpt:
+      "Delaying implants to save up cash often backfires \u2014 bone loss makes tomorrow's surgery bigger and more expensive than today's. Here is the 2026 playbook for paying monthly instead: revolving healthcare credit vs. fixed installment loans, the deferred-interest trap to avoid, how to stack insurance and pre-tax HSA/FSA dollars, and what soft-pull pre-qualification means for your credit score.",
+    date: "August 10, 2026",
+    datePublished: "2026-08-10",
+    image: "/images/blog/2026-08-04/dental-implant-payment-plans.png",
+    heroAlt: "Patient reviewing a monthly dental implant payment plan calendar on a laptop at a kitchen table",
+    category: "Cost & Financing",
+    readTime: "10 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "dental implant payment plans",
+      "dental implant monthly payments",
+      "finance dental implants 2026",
+      "dental implant payment plans roseville",
+      "carecredit vs installment loan dental implants",
+    ],
+    intro: [
+      "Dental implant payment plans in 2026 fall into two main categories \u2014 revolving healthcare credit lines like CareCredit with 6\u201324-month promotional windows, and fixed-term installment loans with terms that can extend past ten years \u2014 and the right choice depends on how quickly you can clear the balance, says Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. Delaying restoration isn't just a financial decision; it's a medical one \u2014 jawbone begins resorbing soon after a tooth is lost, and waiting years to save cash can turn a straightforward implant into a complex case requiring grafting or sinus lifts. This guide walks you through both financing categories and their fine print, how to stack insurance benefits with pre-tax HSA and FSA dollars so you finance less, what a soft credit pull means for your score, and the options that remain if you're initially denied.",
+    ],
+    disclaimer:
+      "This article is for general education and is not financial or medical advice. Lender terms, APRs, promotional windows, and contribution limits change and vary by applicant \u2014 confirm current terms directly with lenders, your insurer, and your tax advisor. Your treatment cost is determined after 3D imaging at an in-person consultation.",
+    tldr: [],
+    sections: [
+      {
+        heading: "Your Two Main Financing Paths at a Glance",
+        paras: [
+          "Payment options generally fall into two categories, and they serve different situations. Choosing between them comes down to one honest question: can you reliably clear the balance inside a promotional window, or do you need a fixed payment that never changes?",
+        ],
+        table: {
+          headers: ["", "Healthcare credit line (e.g., CareCredit)", "Fixed-term installment loan (e.g., Cherry, Proceed Finance, LendingClub)"],
+          rows: [
+            ["Structure", "Revolving credit \u2014 reusable for future care", "One loan with a set end date and a fixed monthly payment"],
+            ["Promotional terms", "\u201cNo-interest\u201d windows of 6\u201324 months", "Some true 0% APR plans; otherwise fixed rates"],
+            ["The fine print", "Deferred interest: miss the payoff deadline and a high APR (often ~30%) applies retroactively to the original amount", "With true 0% plans, interest typically applies only to the remaining balance"],
+            ["Best for", "Smaller balances, covering the gap after insurance", "Full-arch cases \u2014 long terms keep payments predictable"],
+            ["Typical terms", "Pay within the promo window", "Some lenders offer terms from 24 up to 144 months"],
+          ],
+        },
+      },
+      {
+        heading: "The True Cost of Waiting: Why Financing Is a Clinical Decision",
+        paras: [
+          [
+            "When a natural tooth root is gone, the jawbone stops receiving the stimulation it needs to maintain density \u2014 a process called resorption that can claim significant bone volume within the first year, as explained in the National Institute of Dental and Craniofacial Research's overview of ",
+            { text: "dental implants", href: "https://www.nidcr.nih.gov/health-info/dental-implants" },
+            ". Waiting years to save the full cash amount often backfires: many patients who delay end up needing bone grafting or sinus lifts that add time, complexity, and cost to what could have been a straightforward procedure. A payment plan lets you lock in today's simpler surgery instead of financing tomorrow's bigger one \u2014 our guide to ",
+            { text: "implant options with severe bone loss", href: "/for-patients/insights/dental-implants-with-severe-bone-loss-options" },
+            " shows what the corrective path involves.",
+          ],
+          "There's a psychological dimension too. Living with gaps while waiting for a bank account to grow is emotionally draining \u2014 we've seen patients from across the Sacramento area who hid their smiles for years, only to discover financing could have started their transformation much sooner. A documented payment path replaces financial uncertainty with a clear timeline, and it can enable same-day protocols where you leave the office with a functional smile.",
+        ],
+      },
+      {
+        heading: "Healthcare Credit Lines: Powerful, With a Trap to Avoid",
+        paras: [
+          "Medical credit cards like CareCredit are revolving credit lines built for health expenses, with promotional \u201cno-interest\u201d periods typically running 6 to 24 months. The catch is deferred interest: if the balance isn't paid in full by the end of the promotion, a high APR \u2014 often around 30% \u2014 can be applied retroactively to the entire original amount, not just what's left. That makes these cards excellent for smaller procedures or the gap left after insurance, and risky for large balances you can't confidently clear in time. Because the line is revolving, approved credit stays available for future maintenance without reapplying.",
+        ],
+      },
+      {
+        heading: "Fixed-Term Installment Loans for Major Procedures",
+        paras: [
+          [
+            "For extensive treatment like full-arch restoration, fixed-term installment loans usually offer the more stable structure: a set end date and a fixed monthly payment. Some lenders in this space advertise terms extending up to 144 months, with fixed APRs typically ranging from 0% to roughly 30% depending on credit profile, and a number have shifted to true 0% APR structures where interest \u2014 if any \u2014 applies only to the remaining balance rather than the original total. Some also report high approval rates, and a larger down payment may improve terms for mid-range credit scores \u2014 always confirm the current terms in your specific agreement. Our ",
+            { text: "financing options guide", href: "/for-patients/insights/dental-implant-financing-options" },
+            " ranks every strategy by total cost, and our ",
+            { text: "cost calculator", href: "/all-on-4-cost" },
+            " gives you an instant on-screen estimate to plan around.",
+          ],
+        ],
+      },
+      {
+        heading: "Strategic Stacking: Insurance + HSA/FSA + Financing",
+        paras: [
+          [
+            "Most dental insurance treats implants as a \u201cmajor\u201d procedure and caps annual benefits well below the cost of treatment \u2014 commonly contributing $1,000\u2013$3,000 toward implant care. The strategy is layering: apply your insurance benefit first, cover the down payment with pre-tax dollars, and finance only the remainder. For 2026, HSA contribution limits are $4,400 for individuals and $8,750 for families (plus a $1,000 catch-up at 55+), and the FSA limit is $3,400 \u2014 because those funds are deducted pre-tax, you're effectively getting a 20\u201330% discount on that portion of treatment. The American Dental Association's overview of ",
+            { text: "dental implants", href: "https://www.mouthhealthy.org/all-topics-a-z/implants" },
+            " is a useful primer when you call your insurer to ask what's covered.",
+          ],
+          "Watch for the \u201cmissing tooth clause\u201d \u2014 many plans won't pay for an implant if the tooth was lost before your coverage began. A pre-determination request gives you a written estimate of your insurer's contribution before surgery, and when a plan involves multiple single implants, staggering procedures across two calendar years can let you use your annual maximum twice. Before your consultation, ask your insurer four questions: Does my plan have a missing tooth clause? What's my remaining annual maximum? Are there waiting periods for major work? Does coverage include the surgical placement, the abutment, and the crown?",
+        ],
+      },
+      {
+        heading: "Qualifying: What Lenders Look At (and the Soft-Pull Advantage)",
+        paras: [
+          "Many modern lenders start pre-qualification with a soft credit pull \u2014 one that shows your eligibility and available rates without affecting your credit score \u2014 and reserve the hard pull for when you select a specific plan and sign; verify which type your lender uses before applying. Approval decisions commonly weigh your debt-to-income ratio alongside your credit score; higher scores tend to unlock the lowest APRs, while a larger down payment or a co-signer may improve terms for mid-range profiles. If you're initially denied, options remain: applying with a co-signer, lenders that specialize in lower credit scores, personal loans or credit-union financing, a 401(k) loan where you pay interest back to yourself, or a phased treatment approach that breaks care into smaller, affordable stages.",
+        ],
+      },
+      {
+        heading: "Protecting the Investment: Specialist Care and Price Transparency",
+        paras: [
+          [
+            "Even the best payment plan protects you only if the surgery succeeds. Precision placement by a ",
+            { text: "board-certified oral and maxillofacial surgeon", href: "https://www.aboms.org" },
+            " reduces the risk of implant failure \u2014 which is both physically and financially devastating to repair \u2014 and 3D-guided, same-day protocols minimize appointments and time away from work. Patients travel to ",
+            { text: "Dr. Antipov's", href: "/about" },
+            " Roseville office from Sacramento, El Dorado Hills, and across Northern California for exactly that combination. Every consultation ends with a transparent, all-inclusive written quote backed by a ",
+            { text: "price-match guarantee", href: "/for-patients/insights/dental-implant-price-match-guarantee" },
+            " for comparable specialist treatment plans \u2014 and our guide to ",
+            { text: "affordable dental implants in California", href: "/for-patients/insights/affordable-dental-implants-california" },
+            " covers the full value-vs-price picture.",
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the average monthly payment for a full set of dental implants?",
+        answer:
+          "It depends on the term length, your credit profile, and your treatment plan's total cost. For full-arch restorations, patients often choose terms between 48 and 144 months, which is designed to bring the monthly installment in line with a standard household expense like an auto payment. A written quote after 3D imaging is what turns this into a real number for your case.",
+      },
+      {
+        question: "Will applying for dental financing hurt my credit score?",
+        answer:
+          "Often not at the pre-qualification stage \u2014 many modern lenders use a soft credit pull to show your eligibility and rates, which doesn't affect your score, and reserve the hard pull for when you finalize a specific plan. Practices vary by lender, so confirm which type of pull is used before you apply.",
+      },
+      {
+        question: "Can I use my 401(k) or a personal loan for dental implants?",
+        answer:
+          "Yes. A 401(k) loan lets you borrow from your own retirement savings and pay the interest back into your own account, while personal loans from banks or local credit unions are a common alternative for patients who prefer their existing financial institution over healthcare-specific lenders. Weigh the retirement-growth tradeoff of a 401(k) loan with your financial advisor first.",
+      },
+      {
+        question: "What happens if I'm denied financing?",
+        answer:
+          "You still have paths forward: applying with a co-signer to improve approval odds and rates, lenders that specialize in lower credit scores, or a phased treatment approach that breaks care into smaller, more affordable stages over time. Bring your situation to the consultation \u2014 it's the right place to discuss which routes are available for your case.",
+      },
+      {
+        question: "Is there a penalty for paying off a dental implant loan early?",
+        answer:
+          "Many specialized healthcare lenders don't charge early-payoff penalties, and paying ahead of schedule generally saves on interest over the life of the agreement \u2014 but this varies by lender, so always confirm in your specific contract that no early-exit fees apply before signing.",
+      },
+      {
+        question: "What is the deferred-interest trap with healthcare credit cards?",
+        answer:
+          "With cards like CareCredit, if you don't pay the full balance by the end of the promotional \u201cno-interest\u201d window, a high APR \u2014 often around 30% \u2014 can be applied retroactively to the entire original amount, not just the remainder. That's why these cards suit smaller balances you can confidently clear in time, while fixed-term installment loans suit larger cases.",
+      },
+      {
+        question: "How do I use my dental insurance with a payment plan?",
+        answer:
+          "Apply your insurance benefit to reduce the balance before you finance the remainder. The office files the claim and applies your estimated benefit to the treatment plan up front, so the loan covers only your patient portion \u2014 which means lower monthly payments and less interest paid over time.",
+      },
+      {
+        question: "Can HSA or FSA funds pay for dental implants?",
+        answer:
+          "Yes \u2014 implants to restore function are generally an eligible medical expense. For 2026, HSA limits are $4,400 individual / $8,750 family (plus $1,000 catch-up at 55+), and the FSA limit is $3,400. Because these are pre-tax dollars, using them for your down payment effectively discounts that portion by 20\u201330% and shrinks the amount you finance. Confirm eligibility with your plan administrator.",
+      },
+    ],
+    cta: {
+      heading: "Turn One Big Number Into a Manageable Monthly Plan",
+      body:
+        "Schedule a free implant consultation with Dr. Antipov in Roseville \u2014 you'll get 3D imaging, one transparent, all-inclusive written quote backed by a price-match guarantee, and hands-on help comparing financing options that fit your budget. Restrictions apply.",
+    },
+  },
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

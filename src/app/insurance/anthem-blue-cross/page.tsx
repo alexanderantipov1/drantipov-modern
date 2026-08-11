@@ -6,9 +6,9 @@ import DualCTA from "@/components/DualCTA";
 import InsuranceCrossLinks from "@/components/InsuranceCrossLinks";
 
 export const metadata: Metadata = {
-  title: "Anthem Blue Cross — Dental Implants Coverage",
+  title: { absolute: "Anthem Blue Cross Dental Implant Coverage & Benefits" },
   description:
-    "How Anthem Blue Cross dental insurance applies to dental implants, oral surgery, and orthognathic procedures with Dr. Antipov. Out-of-network coverage, pre-authorization, and reimbursement help.",
+    "Understand how Anthem Blue Cross covers dental implants, oral surgery, and orthognathic procedures including pre-authorization and reimbursement guidance.",
   alternates: { canonical: "/insurance/anthem-blue-cross" },
   openGraph: {
     title: "Anthem Blue Cross Coverage",

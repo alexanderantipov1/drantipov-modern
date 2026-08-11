@@ -8,9 +8,9 @@ import heroContent from "@/lib/heroContent"
 import { courses } from "@/constants/courses"
 
 export const metadata = {
-  title: "Dental Implant Education & Courses | Dr. Antipov",
+  title: { absolute: "Dental Implant Education & Hands-On Training Courses" },
   description:
-    "Master advanced implant techniques with hands-on courses from Dr. Antipov. Full-arch restoration, bone grafting, and complex implantology training. CE credits available.",
+    "Master advanced implant techniques with hands-on surgical courses from Dr. Antipov. Full-arch restoration and complex bone grafting. Earn CE credits.",
   alternates: {
     canonical: "/for-dentists/education/courses",
     languages: {

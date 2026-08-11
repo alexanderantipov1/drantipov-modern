@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Zygomatic Implants: When Standard Implants Fail",
+  title: { absolute: "Zygomatic Dental Implants: When Standard Implants Fail Guide" },
   description:
-    "Zygomatic dental implants for severe upper-jaw bone loss. When traditional implants are not possible, how the cheekbone anchors a fixed solution, candidacy, risks, and recovery with Dr. Antipov.",
+    "Severe upper-jaw bone loss? Learn how zygomatic implants anchor directly into the cheekbone, bypass bone grafts, and restore fixed teeth with Dr. Antipov.",
   alternates: {
     canonical: "/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible",
     languages: {
@@ -26,20 +26,20 @@ export const metadata: Metadata = {
     "fixed full arch zygomatic implants",
   ],
   openGraph: {
-    title: "Zygomatic Implants: When Standard Implants Fail",
+    title: "Zygomatic Dental Implants: When Standard Implants Fail Guide",
     description: "Zygomatic dental implants anchor in the cheekbone for severe upper-jaw bone loss when traditional implants are not possible.",
     images: [
       {
         url: "/images/blog/2026-06-19/zygomatic-when-impossible.png",
         width: 1200,
         height: 630,
-        alt: "Zygomatic Implants: When Standard Implants Fail",
+        alt: "Zygomatic Dental Implants: When Standard Implants Fail Guide",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zygomatic Implants: When Standard Implants Fail",
+    title: "Zygomatic Dental Implants: When Standard Implants Fail Guide",
     description: "Zygomatic dental implants anchor in the cheekbone for severe upper-jaw bone loss when traditional implants are not possible.",
     images: ["/images/blog/2026-06-19/zygomatic-when-impossible.png"],
   }

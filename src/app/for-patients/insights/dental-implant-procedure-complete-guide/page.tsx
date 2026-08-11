@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Dental Implant Procedure: Step-by-Step Guide",
+  title: { absolute: "Dental Implant Procedure: Complete 2026 Patient Guide" },
   description:
-    "A complete step-by-step guide to the dental implant procedure — from consultation and 3D scan through implant placement, osseointegration, and the final crown, with timeline and cost.",
+    "A complete step-by-step guide to the dental implant procedure, from consultation and 3D scan through implant placement, osseointegration, timeline, and cost.",
   alternates: {
     canonical: "/for-patients/insights/dental-implant-procedure-complete-guide",
     languages: {
@@ -26,20 +26,20 @@ export const metadata: Metadata = {
     "dental implant cost",
   ],
   openGraph: {
-    title: "Dental Implant Procedure: Step-by-Step Guide",
+    title: "Dental Implant Procedure: Complete 2026 Patient Guide",
     description: "Everything that happens during a dental implant procedure — from consultation through final crown.",
     images: [
       {
         url: "/images/blog/2026-06-19/dental-implant-procedure.png",
         width: 1200,
         height: 630,
-        alt: "Dental Implant Procedure: Step-by-Step Guide",
+        alt: "Dental Implant Procedure: Complete 2026 Patient Guide",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dental Implant Procedure: Step-by-Step Guide",
+    title: "Dental Implant Procedure: Complete 2026 Patient Guide",
     description: "Everything that happens during a dental implant procedure — from consultation through final crown.",
     images: ["/images/blog/2026-06-19/dental-implant-procedure.png"],
   }

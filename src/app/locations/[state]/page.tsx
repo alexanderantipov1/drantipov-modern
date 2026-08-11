@@ -31,7 +31,7 @@ export async function generateMetadata({
   if (!stateName || stateCities.length === 0) return {};
 
   const title = `Oral Surgeon serving ${stateName} — Dr. Alexander V. Antipov`;
-  const description = `Board-certified oral & maxillofacial surgeon serving ${stateCities.length}+ ${stateName} communities from Roseville: dental implants, jaw surgery, sleep apnea (MMA), and facial cosmetic surgery. Free dental implant consultation.`;
+  const description = `Board-certified oral surgeon in Roseville serving ${stateName} patients: dental implants, jaw surgery, sleep apnea care, and free implant consultations.`;
 
   return buildMetadata({
     path: `/locations/${state}`,

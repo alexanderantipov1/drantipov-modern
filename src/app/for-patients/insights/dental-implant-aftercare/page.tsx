@@ -42,7 +42,7 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "Dental Implant Aftercare — Recovery Tips",
+  title: { absolute: "Dental Implant Aftercare and Post-Op Recovery Guide" },
   description:
     "Essential guide to dental implant aftercare. Learn post-operative care tips, oral hygiene practices, diet recommendations, and recovery expectations.",
   alternates: {

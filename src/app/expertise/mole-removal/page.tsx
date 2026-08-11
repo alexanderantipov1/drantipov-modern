@@ -219,7 +219,7 @@ export default function MoleRemovalPage() {
       />
       <ExpertisePageHero
         badge="Advanced Facial Cosmetic Surgery"
-        title="Scarless Mole Removal from the Nose"
+        title="Facial & Nasal Mole Removal in Roseville, CA"
         subtitle="Scarless mole removal uses radio-wave surgery (high-frequency electrosurgery) to remove benign facial and body moles in a single visit — minimal bleeding, faster healing, and a smoother cosmetic outcome than traditional excision."
         image="/images/facial-cosmetic-surgery/mole-removal@2x-9fa33150.jpg"
       />

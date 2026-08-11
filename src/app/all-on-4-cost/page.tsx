@@ -7,9 +7,9 @@ import DualCTA from "@/components/DualCTA";
 import CalculatorPackages from "@/components/CalculatorPackages";
 
 export const metadata: Metadata = {
-  title: "All-on-4 Cost in California — Honest Breakdown",
+  title: { absolute: "All-on-4 Cost Breakdown | Complete Dental Implant Pricing" },
   description:
-    "What All-on-4 dental implants actually cost in 2026: itemized breakdown, factors that affect pricing, financing options, insurance coverage. Northern California oral surgeon.",
+    "Understand All-on-4 cost in 2026 with an itemized breakdown, key pricing factors, financing options, and insurance info from a Northern CA oral surgeon.",
   alternates: { canonical: "/all-on-4-cost" },
   openGraph: {
     title: "All-on-4 Cost Breakdown — California",

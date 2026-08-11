@@ -411,7 +411,7 @@ export default function GuidedDentalImplantSurgeryPost() {
                 <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Дентальная имплантация</a></li>
                 <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy — Обзор дентальных имплантов</a></li>
                 <li><a href="https://pubmed.ncbi.nlm.nih.gov/29575324/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Tahmaseb A, Wu V, Wismeijer D et al. — Точность статической компьютерной имплантации: систематический обзор</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Дентальные импланты</a></li>
+                <li><a href="https://medlineplus.gov/ency/article/007645.htm" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Дентальные импланты</a></li>
               </ul>
             </section>
 

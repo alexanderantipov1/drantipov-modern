@@ -85,7 +85,15 @@ export default function RuAboutPage() {
         Перейти к основному содержимому
       </a>
       <div id="main-content">
-        <RuHero />
+        <RuHero
+          heading={
+            <>
+              О докторе <span className="gradient-text">Александре Антипове</span>
+              <br />
+              Челюстно-лицевой хирург
+            </>
+          }
+        />
         <RuReviewBanner />
         <RuAbout />
         <RuServices />

@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Guided Dental Implant Surgery: 3D Planning",
+  title: { absolute: "Guided Dental Implant Surgery: How 3D Planning Works" },
   description:
-    "Guided dental implant surgery explained with 3D CBCT scans, custom surgical guides, and precision benefits, plus what patients can expect on surgery day with Dr. Antipov.",
+    "Understand exactly how guided dental implant surgery uses 3D CBCT scans and custom surgical guides for precise placement with Roseville surgeon Dr. Antipov.",
   alternates: {
     canonical: "/for-patients/insights/guided-dental-implant-surgery-how-3d-planning-improves-accuracy",
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "full-arch implant accuracy",
   ],
   openGraph: {
-    title: "Guided Dental Implant Surgery: 3D Planning",
+    title: "Guided Dental Implant Surgery: How 3D Planning Works",
     description: "How 3D imaging, digital planning, and custom surgical guides improve dental implant accuracy.",
     images: [
       {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Guided Dental Implant Surgery: 3D Planning",
+    title: "Guided Dental Implant Surgery: How 3D Planning Works",
     description: "How 3D imaging, digital planning, and custom surgical guides improve dental implant accuracy.",
     images: ["/images/blog/2026-06-19/guided-implant-surgery.png"],
   }
@@ -422,7 +422,7 @@ export default function GuidedDentalImplantSurgeryPost() {
                 <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Dental Implant Surgery</a></li>
                 <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy — Dental Implants Overview</a></li>
                 <li><a href="https://pubmed.ncbi.nlm.nih.gov/29575324/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Tahmaseb A, Wu V, Wismeijer D et al. — Accuracy of static computer-aided implant surgery: a systematic review</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Dental Implants</a></li>
+                <li><a href="https://medlineplus.gov/ency/article/007645.htm" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Dental Implants</a></li>
               </ul>
             </section>
 

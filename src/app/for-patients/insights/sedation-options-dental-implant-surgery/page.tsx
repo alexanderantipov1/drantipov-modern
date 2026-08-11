@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Sedation Options for Dental Implant Surgery",
+  title: { absolute: "Sedation Options for Dental Implant Surgery: IV & Oral" },
   description:
-    "Compare sedation options for dental implants — local anesthesia, oral sedation, IV sedation, and general anesthesia. Choose the right comfort level with Dr. Antipov in Roseville, CA.",
+    "Compare sedation options for dental implants with Dr. Antipov in Roseville: local anesthesia, oral sedation, IV sedation, and general anesthesia choices.",
   alternates: {
     canonical: "/for-patients/insights/sedation-options-dental-implant-surgery",
     languages: {
@@ -26,20 +26,20 @@ export const metadata: Metadata = {
     "sedation dentistry Roseville",
   ],
   openGraph: {
-    title: "Sedation Options for Dental Implant Surgery",
+    title: "Sedation Options for Dental Implant Surgery: IV & Oral",
     description: "Local anesthesia, oral sedation, IV sedation, and general anesthesia — choose the right comfort level for implant surgery.",
     images: [
       {
         url: "/images/blog/2026-06-19/sedation-options.png",
         width: 1200,
         height: 630,
-        alt: "Sedation Options for Dental Implant Surgery",
+        alt: "Sedation Options for Dental Implant Surgery: IV & Oral",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sedation Options for Dental Implant Surgery",
+    title: "Sedation Options for Dental Implant Surgery: IV & Oral",
     description: "Local anesthesia, oral sedation, IV sedation, and general anesthesia — choose the right comfort level for implant surgery.",
     images: ["/images/blog/2026-06-19/sedation-options.png"],
   }
@@ -50,7 +50,7 @@ export default function SedationOptionsDentalImplantSurgeryPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/sedation-options-dental-implant-surgery#article","headline":"Sedation Options for Dental Implant Surgery Explained","description":"Compare sedation options for dental implant surgery \\u2014 local anesthesia, oral sedation, IV sedation, and general anesthesia \\u2014 and how to choose the right comfort level.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/sedation-options-dental-implant-surgery","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/sedation-options.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/sedation-options-dental-implant-surgery"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between sedation and pain control?","acceptedAnswer":{"@type":"Answer","text":"They are not the same thing. Sedation reduces awareness and anxiety, while local anesthesia controls pain by numbing the surgical area. Even under deep sedation, local anesthetic is still used so the surgical site stays completely numb. Confusing the two leads to unrealistic expectations."}},{"@type":"Question","name":"Will I be awake during implant surgery with local anesthesia?","acceptedAnswer":{"@type":"Answer","text":"Yes. With local anesthesia alone you remain fully conscious. The surgical area is numbed, you feel no pain, and there are no systemic sedation effects, which means a short recovery time. It is appropriate for simple procedures and patients with low anxiety."}},{"@type":"Question","name":"How is IV sedation different from oral sedation?","acceptedAnswer":{"@type":"Answer","text":"Oral sedation reduces anxiety but has variable absorption, unpredictable depth, and limited control once the pill is taken. IV sedation is delivered directly into the bloodstream for rapid onset, adjustable depth, and reduced procedural awareness. IV sedation requires advanced monitoring and trained personnel."}},{"@type":"Question","name":"When is general anesthesia recommended for implant surgery?","acceptedAnswer":{"@type":"Answer","text":"General anesthesia is reserved for select cases such as extensive surgery, severe anxiety, or medical necessity. It carries higher systemic risk and requires strict protocols and monitoring, so it is not used routinely for straightforward implant procedures."}},{"@type":"Question","name":"How do I choose the right sedation option?","acceptedAnswer":{"@type":"Answer","text":"The right choice depends on your anxiety level, the complexity of the procedure, your medical history, and personal preference. At your consultation we review all of these factors and recommend the safest, most comfortable approach for your situation."}},{"@type":"Question","name":"Is IV sedation safe for implant surgery?","acceptedAnswer":{"@type":"Answer","text":"Yes, when performed correctly. IV sedation delivers medication directly into the bloodstream for rapid onset and adjustable depth, and it requires advanced monitoring and trained personnel to keep the procedure safe."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/sedation-options-dental-implant-surgery#article","headline":"Sedation Options for Dental Implant Surgery: IV & Oral Explained","description":"Compare sedation options for dental implant surgery \\u2014 local anesthesia, oral sedation, IV sedation, and general anesthesia \\u2014 and how to choose the right comfort level.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/sedation-options-dental-implant-surgery","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/sedation-options.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/sedation-options-dental-implant-surgery"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between sedation and pain control?","acceptedAnswer":{"@type":"Answer","text":"They are not the same thing. Sedation reduces awareness and anxiety, while local anesthesia controls pain by numbing the surgical area. Even under deep sedation, local anesthetic is still used so the surgical site stays completely numb. Confusing the two leads to unrealistic expectations."}},{"@type":"Question","name":"Will I be awake during implant surgery with local anesthesia?","acceptedAnswer":{"@type":"Answer","text":"Yes. With local anesthesia alone you remain fully conscious. The surgical area is numbed, you feel no pain, and there are no systemic sedation effects, which means a short recovery time. It is appropriate for simple procedures and patients with low anxiety."}},{"@type":"Question","name":"How is IV sedation different from oral sedation?","acceptedAnswer":{"@type":"Answer","text":"Oral sedation reduces anxiety but has variable absorption, unpredictable depth, and limited control once the pill is taken. IV sedation is delivered directly into the bloodstream for rapid onset, adjustable depth, and reduced procedural awareness. IV sedation requires advanced monitoring and trained personnel."}},{"@type":"Question","name":"When is general anesthesia recommended for implant surgery?","acceptedAnswer":{"@type":"Answer","text":"General anesthesia is reserved for select cases such as extensive surgery, severe anxiety, or medical necessity. It carries higher systemic risk and requires strict protocols and monitoring, so it is not used routinely for straightforward implant procedures."}},{"@type":"Question","name":"How do I choose the right sedation option?","acceptedAnswer":{"@type":"Answer","text":"The right choice depends on your anxiety level, the complexity of the procedure, your medical history, and personal preference. At your consultation we review all of these factors and recommend the safest, most comfortable approach for your situation."}},{"@type":"Question","name":"Is IV sedation safe for implant surgery?","acceptedAnswer":{"@type":"Answer","text":"Yes, when performed correctly. IV sedation delivers medication directly into the bloodstream for rapid onset and adjustable depth, and it requires advanced monitoring and trained personnel to keep the procedure safe."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -85,7 +85,7 @@ export default function SedationOptionsDentalImplantSurgeryPost() {
 
             {/* Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
-              Sedation Options for Dental Implant Surgery Explained
+              Sedation Options for Dental Implant Surgery: IV & Oral Explained
             </h1>
 
             {/* E-E-A-T: Medically reviewed byline */}
@@ -310,7 +310,7 @@ export default function SedationOptionsDentalImplantSurgeryPost() {
                 <li><a href="https://www.aaoms.org/procedures/anesthesia" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Anesthesia in Oral &amp; Maxillofacial Surgery</a></li>
                 <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Dental Implant Surgery</a></li>
                 <li><a href="https://www.mouthhealthy.org/all-topics-a-z/anesthesia-and-sedation" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy — Anesthesia and Sedation</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Dental Implants</a></li>
+                <li><a href="https://medlineplus.gov/ency/article/007645.htm" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Dental Implants</a></li>
               </ul>
             </section>
 

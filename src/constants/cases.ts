@@ -40,7 +40,7 @@ export interface CaseArticle {
 export const correctiveJawSurgeryCases: SurgicalCase[] = [
   {
     id: "oms000052",
-    title: "Class II Occlusion Anomaly Corrective Jaw Surgery",
+    title: "Maxillomandibular Advancement & Genioplasty for Asymmetric Class II Malocclusion",
     category: "corrective-jaw-surgery",
     imagePath: "/images/cases/corrective-jaw-surgery/oms000052/1/preview-e1afb959.jpg",
     description: "Combined asymmetric deformity of the lower and upper jaws, a class II skeletal occlusion anomaly",
@@ -77,7 +77,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
   },
   {
     id: "oms000050",
-    title: "Class II Occlusion Anomaly Corrective Jaw Surgery",
+    title: "Three-Jaw Orthognathic Surgery for Asymmetric Class II Malocclusion",
     category: "corrective-jaw-surgery",
     imagePath: "/images/cases/corrective-jaw-surgery/oms000050/1/preview-90866192.jpg",
     description: "Asymmetric Class II skeletal deformity with functional and aesthetic compromise. Three-jaw surgery — Le Fort I osteotomy, BSSO, and genioplasty — performed in a single anesthesia session. Patient regained full chewing function and improved facial harmony with no relapse at 18-month follow-up.",
@@ -358,7 +358,7 @@ export const facialCosmeticSurgeryCases: SurgicalCase[] = [
   },
   {
     id: "fcs000001",
-    title: "Scarless Mole Removal from the Nose",
+    title: "Facial Cosmetic Surgery Case: Scarless Nasal Mole Removal Before & After",
     category: "facial-cosmetic-surgery",
     imagePath: "/images/cases/facial-cosmetic-surgery/fcs000001/1/preview-9b89c3c9.jpg",
     description: "39-year-old male with big mole on left nose wing with deep roots causing nasal asymmetry",

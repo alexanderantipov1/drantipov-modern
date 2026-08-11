@@ -13,9 +13,9 @@ const URL = "https://www.drantipov.com" + CANONICAL
 const IMAGE = "/images/blog/2026-06-22/fix-overbite-naturally.png"
 
 export const metadata: Metadata = {
-  title: "Can You Fix an Overbite Naturally? What Really Works",
+  title: { absolute: "Can You Fix an Overbite Naturally? What Works & Truth" },
   description:
-    "Can you fix an overbite naturally? An oral surgeon explains what works (and the myths), why \"natural\" correction has limits, and how overbites are actually corrected in adults.",
+    "Can you fix an overbite naturally? Discover what works, why natural methods have strict limits, and how oral surgeons actually correct overbites in adults.",
   alternates: {
     canonical: CANONICAL,
     languages: { en: CANONICAL, "x-default": CANONICAL },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "natural overbite correction",
   ],
   openGraph: {
-    title: "Can You Fix an Overbite Naturally? What Really Works",
+    title: "Can You Fix an Overbite Naturally? What Works & Truth",
     description:
       "What \"fixing an overbite naturally\" really means, the myths, and the proven ways overbites are corrected — including in adults.",
     url: URL,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Can You Fix an Overbite Naturally? What Really Works",
+    title: "Can You Fix an Overbite Naturally? What Works & Truth",
     description:
       "What \"fixing an overbite naturally\" really means, the myths, and the proven ways overbites are corrected.",
     images: [IMAGE],
@@ -82,7 +82,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalScholarlyArticle",
   "@id": `${URL}#article`,
-  headline: "Can You Fix an Overbite Naturally? What Really Works",
+  headline: "Can You Fix an Overbite Naturally? What Works & Truth",
   description:
     "What \"fixing an overbite naturally\" actually means, the common myths, and the proven ways overbites are corrected — including in adults.",
   inLanguage: "en",

@@ -7,9 +7,9 @@ import PageHero from "@/components/PageHero"
 import heroContent from "@/lib/heroContent"
 
 export const metadata = {
-  title: "Referral Partners — Trusted Oral Surgery",
+  title: { absolute: "Oral Surgery Referral Partner Program for Dentists" },
   description:
-    "Partner with Dr. Antipov for seamless oral surgery referrals. Comprehensive communication, exceptional patient care, and collaborative treatment planning. Serving Northern California dentists.",
+    "Partner with Dr. Antipov for seamless oral surgery referrals. Clear communication, exceptional patient care, and collaborative treatment for local dentists.",
   alternates: {
     canonical: "/for-dentists/referral-partners",
     languages: {

@@ -8,9 +8,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Zygomatic Implants — When You Need Them",
+  title: { absolute: "Zygomatic Implants: When You Need Them & How They Work" },
   description:
-    "Zygomatic implants for severe upper jaw bone loss. When conventional implants are not possible, how the procedure works, candidacy, timing, and cost with Dr. Antipov in Roseville, CA.",
+    "Discover zygomatic implants for severe upper jawbone loss with Dr. Antipov in Roseville, CA. Learn candidacy, the step-by-step procedure, timing, and cost.",
   alternates: {
     canonical: "/for-patients/insights/zygomatic-implants",
     languages: {
@@ -27,20 +27,20 @@ export const metadata: Metadata = {
     "full arch zygomatic implants",
   ],
   openGraph: {
-    title: "Zygomatic Implants — When You Need Them",
+    title: "Zygomatic Implants: When You Need Them & How They Work",
     description: "Long zygomatic implants for severe upper-jaw bone loss — alternative to staged bone grafting.",
     images: [
       {
         url: "/images/blog/2026-04-28/zygomatic-implants.jpg",
         width: 1200,
         height: 630,
-        alt: "Zygomatic Implants — When You Need Them",
+        alt: "Zygomatic Implants: When You Need Them & How They Work",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zygomatic Implants — When You Need Them",
+    title: "Zygomatic Implants: When You Need Them & How They Work",
     description: "Long zygomatic implants for severe upper-jaw bone loss — alternative to staged bone grafting.",
     images: ["/images/blog/2026-04-28/zygomatic-implants.jpg"],
   }

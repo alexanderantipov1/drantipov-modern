@@ -4,7 +4,7 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
   oms000052: {
     metaTitle: "Class II Jaw Surgery Case Study | Dr. Antipov, Roseville CA",
     metaDescription:
-      "An in-depth look at a Class II skeletal occlusion anomaly corrected with double jaw surgery and genioplasty by Dr. Antipov in Roseville, CA, serving Sacramento.",
+      "An in-depth look at Class II skeletal occlusion anomaly corrected with double jaw surgery and genioplasty by Dr. Antipov in Roseville, CA, near Sacramento.",
     keywords: [
       "Class II jaw surgery",
       "corrective jaw surgery Roseville",
@@ -211,7 +211,7 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
   oms000049: {
     metaTitle: "Class II Malocclusion Jaw Surgery | Dr. Antipov Roseville",
     metaDescription:
-      "Correction of a Class II malocclusion with asymmetric jaw deformity using BSSO, Le Fort I osteotomy, and genioplasty at our Roseville, CA practice near Sacramento.",
+      "Class II malocclusion and asymmetric jaw deformity correction in Roseville near Sacramento: BSSO, Le Fort I osteotomy, and genioplasty orthognathic care.",
     keywords: [
       "Class II malocclusion correction",
       "corrective jaw surgery Roseville",
@@ -280,7 +280,7 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
   oms000048: {
     metaTitle: "Short Face Jaw Surgery Case | Dr. Antipov, Roseville CA",
     metaDescription:
-      "Short face syndrome corrected with a 3-piece Le Fort I osteotomy, BSSO advancement, bone grafting, and genioplasty at our Roseville, CA practice near Sacramento.",
+      "Short face syndrome correction at our Roseville practice near Sacramento: 3-piece Le Fort I osteotomy, BSSO advancement, bone grafting, and genioplasty.",
     keywords: [
       "short face syndrome",
       "corrective jaw surgery Roseville",
@@ -349,7 +349,7 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
   oms000047: {
     metaTitle: "Maxillomandibular Advancement Case | Dr. Antipov Roseville",
     metaDescription:
-      "A Class III deficiency corrected with maxillomandibular advancement, 3-piece Le Fort I osteotomy, bone grafting, and genioplasty in Roseville, CA near Sacramento.",
+      "Class III correction in Roseville near Sacramento: maxillomandibular advancement, 3-piece Le Fort I osteotomy, bone grafting, and genioplasty procedure.",
     keywords: [
       "maxillomandibular advancement",
       "corrective jaw surgery Roseville",
@@ -418,7 +418,7 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
   oms000046: {
     metaTitle: "Complete Face Makeover Jaw Surgery | Dr. Antipov Roseville",
     metaDescription:
-      "Severe maxillary asymmetry corrected with Le Fort I, BSSO, bone grafting, rhinoplasty, and fat transfer for a complete facial makeover in Roseville, CA near Sacramento.",
+      "Correct severe maxillary asymmetry with Le Fort I, BSSO, bone grafting, rhinoplasty, and fat transfer for a complete facial makeover near Sacramento, CA.",
     keywords: [
       "corrective jaw surgery Roseville",
       "facial asymmetry correction",

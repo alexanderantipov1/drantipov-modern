@@ -5,7 +5,7 @@ import PageHero from "@/components/PageHero"
 import heroContent from "@/lib/heroContent"
 
 export const metadata = {
-  title: "HIPAA Notice of Privacy Practices | Dr. Antipov",
+  title: { absolute: "HIPAA Notice of Privacy Practices & Patient Rights" },
   description:
     "HIPAA Notice of Privacy Practices for Dr. Alexander Antipov's practice. Learn how we protect your health information.",
   robots: "index, follow",
@@ -350,12 +350,12 @@ export default function HIPAANoticePage() {
                   <p className="text-neutral-700 mb-2">
                     Website:{" "}
                     <a
-                      href="https://www.hhs.gov/ocr/privacy/hipaa/complaints/"
+                      href="https://www.hhs.gov/ocr/complaints/index.html"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary-600 hover:underline"
                     >
-                      www.hhs.gov/ocr/privacy/hipaa/complaints/
+                      www.hhs.gov/ocr/complaints/index.html
                     </a>
                   </p>
                   <p className="text-neutral-700">Phone: 1-877-696-6775</p>

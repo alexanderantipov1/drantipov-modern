@@ -8,8 +8,8 @@ import heroContent from "@/lib/heroContent"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Refer Patients — Dentist Referrals",
-  description: "Refer patients to Dr. Antipov for complex oral surgery — full-arch implants, orthognathic surgery, bone grafting, zygomatic implants. Streamlined referral process with detailed reports back.",
+  title: { absolute: "Refer Patients — Dentist Referrals" },
+  description: "Refer patients to Dr. Antipov for complex oral surgery: full-arch implants, orthognathic surgery, and zygmatics. Streamlined process with fast reports.",
   alternates: {
     canonical: "/for-dentists/refer-patients",
     languages: {

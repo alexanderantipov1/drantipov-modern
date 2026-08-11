@@ -8,7 +8,7 @@ import MicrosoftClarity from "@/components/MicrosoftClarity";
 import { siteUrl, officeAddress, officePhone, officePhoneHref, officeEmail } from "@/data/russianImplantFunnel";
 
 export const metadata: Metadata = {
-  title: "Запись на консультацию | Доктор Антипов | Северная Калифорния",
+  title: "Запись на консультацию",
   description:
     "Запишитесь на бесплатную консультацию по имплантам, ортогнатической хирургии или All-on-4. Принимаем новых пациентов. Удобное расположение в Roseville.",
   alternates: {

@@ -8,7 +8,7 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Dental Implants vs Dentures — 2026 Innovations",
+  title: { absolute: "Dental Implants vs Dentures: Complete Comparison Guide" },
   description:
     "Explore the latest innovations in dental implant technology including 3D printing, nanotechnology, smart implants, and AI-powered treatment planning.",
   alternates: {
@@ -317,7 +317,7 @@ export default function ImplantsVsDenturesPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
               <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH NIDCR — Dental Implants research overview</a></li>
+                <li><a href="https://medlineplus.gov/ency/article/007645.htm" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH NIDCR — Dental Implants research overview</a></li>
                 <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Dental Implant Surgery Procedure</a></li>
                 <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy — Dental Implants</a></li>
                 <li><a href="https://pubmed.ncbi.nlm.nih.gov/30816622/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Albrektsson T, Wennerberg A — On osseointegration in relation to implant surfaces</a></li>

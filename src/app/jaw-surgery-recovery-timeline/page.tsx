@@ -6,9 +6,9 @@ import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/s
 import DualCTA from "@/components/DualCTA";
 
 export const metadata: Metadata = {
-  title: "Jaw Surgery Recovery Timeline — Week by Week | Dr. Antipov",
+  title: { absolute: "Jaw Surgery Recovery Timeline: A Week-by-Week Guide" },
   description:
-    "Complete week-by-week recovery guide after orthognathic (corrective jaw) surgery. What to expect during the first 24 hours through 12 months of full bone consolidation.",
+    "Complete jaw surgery recovery timeline guide from the first 24 hours through 12 months. Learn what to expect during full bone consolidation & healing.",
   alternates: { canonical: "/jaw-surgery-recovery-timeline" },
   openGraph: {
     title: "Jaw Surgery Recovery — Week by Week",

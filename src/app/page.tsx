@@ -17,7 +17,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Same-Day Dental Implants & Oral Surgery — Dr. Antipov, Roseville CA",
+    absolute: "Same-Day Dental Implants & Oral Surgery Specialists",
   },
   description:
     "Board-certified oral & maxillofacial surgeon in Roseville, CA. Same-day full-arch implants, jaw surgery, sleep apnea, bone grafting. 25+ years.",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Same-Day Dental Implants & Oral Surgery — Dr. Antipov, Roseville CA",
+    title: "Same-Day Dental Implants & Oral Surgery Specialists",
     description: "Board-certified oral & maxillofacial surgeon. Same-day full-arch implants, jaw surgery, sleep apnea. 25+ years.",
     images: [
       {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Same-Day Dental Implants & Oral Surgery — Dr. Antipov, Roseville CA",
+    title: "Same-Day Dental Implants & Oral Surgery Specialists",
     description: "Board-certified oral & maxillofacial surgeon. Same-day full-arch implants, jaw surgery, sleep apnea. 25+ years.",
     images: ["/images/Antipov_white.jpg"],
   }

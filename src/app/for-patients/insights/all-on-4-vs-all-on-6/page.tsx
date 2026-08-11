@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "All-on-4 vs All-on-6: Which Is Better?",
+  title: { absolute: "All-on-4 vs All-on-6 Dental Implants: Which Is Better?" },
   description:
-    "All-on-4 vs All-on-6 explained — implant count, bone needs, cost, recovery time, and stability to help you choose the best full-arch option, from Dr. Antipov in Roseville.",
+    "Compare All-on-4 vs. All-on-6 dental implants: differences in implant count, bone requirements, costs, recovery, and stability with Dr. Antipov in Roseville",
   alternates: {
     canonical: "/for-patients/insights/all-on-4-vs-all-on-6",
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "dental implants Roseville",
   ],
   openGraph: {
-    title: "All-on-4 vs All-on-6: Which Is Better?",
+    title: "All-on-4 vs All-on-6 Dental Implants: Which Is Better?",
     description: "Implant count, bone needs, cost, recovery, and stability compared, so you can choose the right full-arch option.",
     images: [
       {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "All-on-4 vs All-on-6: Which Is Better?",
+    title: "All-on-4 vs All-on-6 Dental Implants: Which Is Better?",
     description: "Implant count, bone needs, cost, recovery, and stability compared, so you can choose the right full-arch option.",
     images: ["/images/blog/2026-06-19/all-on-4-vs-all-on-6.png"],
   }
@@ -50,7 +50,7 @@ export default function AllOn4VsAllOn6Post() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/all-on-4-vs-all-on-6#article","headline":"All-on-4 vs All-on-6: Which Is Better?","description":"All-on-4 vs All-on-6 compared by implant count, bone density needs, cost, recovery time, and stability to help patients choose the best full-arch option.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/all-on-4-vs-all-on-6","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/all-on-4-vs-all-on-6.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/all-on-4-vs-all-on-6"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the main difference between All-on-4 and All-on-6?","acceptedAnswer":{"@type":"Answer","text":"The number of implants. All-on-4 uses four per arch and All-on-6 uses six, which affects stability and how bite forces are distributed across the prosthesis."}},{"@type":"Question","name":"Is All-on-4 cheaper than All-on-6?","acceptedAnswer":{"@type":"Answer","text":"Generally yes — fewer implants and a less complex procedure usually make All-on-4 the more affordable option."}},{"@type":"Question","name":"Can I get All-on-4 with low bone density?","acceptedAnswer":{"@type":"Answer","text":"Often, yes. The angled posterior implants use available bone well. When bone is significantly reduced, All-on-6 may be recommended to spread forces across more anchors."}},{"@type":"Question","name":"Which offers better long-term success?","acceptedAnswer":{"@type":"Answer","text":"Both can succeed long term. All-on-6 can add stability for longer arches, heavy biters, or limited bone, while All-on-4 is well documented and biomechanically sufficient for most patients."}},{"@type":"Question","name":"Does All-on-6 mean a longer recovery than All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Placing two additional implants can mean a little more initial healing, while some patients adapt slightly quicker with All-on-4. For most people the difference is modest, and your surgeon will explain what to expect based on your specific plan."}},{"@type":"Question","name":"How do I decide between All-on-4 and All-on-6?","acceptedAnswer":{"@type":"Answer","text":"The decision comes down to your anatomy and goals rather than a fixed rule. A 3D exam of your bone volume and density, your bite forces, the arch being treated, and your budget together guide which approach is likely to be more predictable for you."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/all-on-4-vs-all-on-6#article","headline":"All-on-4 vs All-on-6 Dental Implants: Which Is Better?","description":"All-on-4 vs All-on-6 compared by implant count, bone density needs, cost, recovery time, and stability to help patients choose the best full-arch option.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/all-on-4-vs-all-on-6","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/all-on-4-vs-all-on-6.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/all-on-4-vs-all-on-6"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the main difference between All-on-4 and All-on-6?","acceptedAnswer":{"@type":"Answer","text":"The number of implants. All-on-4 uses four per arch and All-on-6 uses six, which affects stability and how bite forces are distributed across the prosthesis."}},{"@type":"Question","name":"Is All-on-4 cheaper than All-on-6?","acceptedAnswer":{"@type":"Answer","text":"Generally yes — fewer implants and a less complex procedure usually make All-on-4 the more affordable option."}},{"@type":"Question","name":"Can I get All-on-4 with low bone density?","acceptedAnswer":{"@type":"Answer","text":"Often, yes. The angled posterior implants use available bone well. When bone is significantly reduced, All-on-6 may be recommended to spread forces across more anchors."}},{"@type":"Question","name":"Which offers better long-term success?","acceptedAnswer":{"@type":"Answer","text":"Both can succeed long term. All-on-6 can add stability for longer arches, heavy biters, or limited bone, while All-on-4 is well documented and biomechanically sufficient for most patients."}},{"@type":"Question","name":"Does All-on-6 mean a longer recovery than All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Placing two additional implants can mean a little more initial healing, while some patients adapt slightly quicker with All-on-4. For most people the difference is modest, and your surgeon will explain what to expect based on your specific plan."}},{"@type":"Question","name":"How do I decide between All-on-4 and All-on-6?","acceptedAnswer":{"@type":"Answer","text":"The decision comes down to your anatomy and goals rather than a fixed rule. A 3D exam of your bone volume and density, your bite forces, the arch being treated, and your budget together guide which approach is likely to be more predictable for you."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -83,7 +83,7 @@ export default function AllOn4VsAllOn6Post() {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
-              All-on-4 vs All-on-6: Which Is Better?
+              All-on-4 vs All-on-6 Dental Implants: Which Is Better?
             </h1>
 
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
@@ -285,7 +285,7 @@ export default function AllOn4VsAllOn6Post() {
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
                 <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M — All-on-4 immediate-function concept with Brånemark System implants</a></li>
                 <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Dental Implant Surgery Procedure</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — National Institute of Dental and Craniofacial Research: Dental Implants</a></li>
+                <li><a href="https://medlineplus.gov/ency/article/007645.htm" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — National Institute of Dental and Craniofacial Research: Dental Implants</a></li>
               </ul>
             </section>
 

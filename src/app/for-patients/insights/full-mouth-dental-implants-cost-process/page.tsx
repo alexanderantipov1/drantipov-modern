@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Full Mouth Dental Implants in Roseville & Sacramento: Cost & Process",
+  title: { absolute: "Full Mouth Dental Implants: Complete Cost and Steps" },
   description:
-    "A complete guide to full mouth dental implants in the Sacramento region — All-on-4, the step-by-step process, cost ranges, candidacy, and what makes treatment succeed, from Dr. Antipov.",
+    "Sacramento full mouth dental implants guide by Dr. Antipov: All-on-4 process, cost ranges, candidacy criteria, and keys to long-term treatment success.",
   alternates: {
     canonical: "/for-patients/insights/full-mouth-dental-implants-cost-process",
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "dental implants cost Sacramento",
   ],
   openGraph: {
-    title: "Full Mouth Dental Implants in Roseville & Sacramento: Cost & Process",
+    title: "Full Mouth Dental Implants: Complete Cost and Steps",
     description: "All-on-4 and full-arch restoration explained — the process, candidacy, and honest cost ranges for the Sacramento region.",
     images: [
       {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Full Mouth Dental Implants in Roseville & Sacramento: Cost & Process",
+    title: "Full Mouth Dental Implants: Complete Cost and Steps",
     description: "All-on-4 and full-arch restoration explained — the process, candidacy, and honest cost ranges for the Sacramento region.",
     images: ["/images/blog/2026-06-19/full-mouth-dental-implants.png"],
   }
@@ -319,7 +319,7 @@ export default function FullMouthDentalImplantsPost() {
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
                 <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Dental Implant Surgery Procedure</a></li>
                 <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M — All-on-4 immediate-function concept with Brånemark System implants</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — National Institute of Dental and Craniofacial Research: Dental Implants</a></li>
+                <li><a href="https://medlineplus.gov/ency/article/007645.htm" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — National Institute of Dental and Craniofacial Research: Dental Implants</a></li>
               </ul>
             </section>
 

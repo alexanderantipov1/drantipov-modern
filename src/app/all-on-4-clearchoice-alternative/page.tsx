@@ -6,9 +6,9 @@ import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/s
 import DualCTA from "@/components/DualCTA";
 
 export const metadata: Metadata = {
-  title: "All-on-4: Independent Surgeon vs Corporate Chains",
+  title: { absolute: "All on 4 ClearChoice Alternative | Private Specialist" },
   description:
-    "Compare All-on-4 options in Northern California: an independent board-certified oral surgeon vs corporate dental implant chains. Pricing transparency, surgeon experience, and treatment philosophy.",
+    "Compare All-on-4 ClearChoice alternatives in Northern CA: independent board-certified oral surgeons vs corporate chains. Clear pricing and expert care.",
   alternates: { canonical: "/all-on-4-clearchoice-alternative" },
   openGraph: {
     title: "All-on-4 Alternatives in Northern California",

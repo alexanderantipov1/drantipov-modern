@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "What Is an Oral Surgeon and What Do They Do?",
+  title: { absolute: "What Is an Oral Surgeon and What Do They Do: Roles" },
   description:
-    "An oral and maxillofacial surgeon is a dental specialist with surgical training. Learn what they treat, how they are trained, the procedures they perform, and when to see one.",
+    "Learn about oral and maxillofacial surgeons: how they are trained, what conditions they treat, the procedures they perform, and when to see a specialist.",
   alternates: {
     canonical: "/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do",
     languages: {
@@ -26,20 +26,20 @@ export const metadata: Metadata = {
     "when to see an oral surgeon",
   ],
   openGraph: {
-    title: "What Is an Oral Surgeon and What Do They Do?",
+    title: "What Is an Oral Surgeon and What Do They Do: Roles",
     description: "What an oral and maxillofacial surgeon treats, how they are trained, and when to see one.",
     images: [
       {
         url: "/images/blog/2026-06-19/what-is-oral-surgeon.png",
         width: 1200,
         height: 630,
-        alt: "What Is an Oral Surgeon and What Do They Do?",
+        alt: "What Is an Oral Surgeon and What Do They Do: Roles",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "What Is an Oral Surgeon and What Do They Do?",
+    title: "What Is an Oral Surgeon and What Do They Do: Roles",
     description: "What an oral and maxillofacial surgeon treats, how they are trained, and when to see one.",
     images: ["/images/blog/2026-06-19/what-is-oral-surgeon.png"],
   }
@@ -50,7 +50,7 @@ export default function WhatIsAnOralSurgeonPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do#article","headline":"What Is an Oral Surgeon and What Do They Do?","description":"An oral and maxillofacial surgeon is a dental specialist with surgical training. Learn what they treat, how they are trained, the procedures they perform, and when to see one.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/what-is-oral-surgeon.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are oral surgeons real doctors?","acceptedAnswer":{"@type":"Answer","text":"Yes \\u2014 they hold a doctoral degree in dental surgery (DDS or DMD) and have completed 4\\u20136 years of additional surgical residency. Some also hold an MD."}},{"@type":"Question","name":"Do oral surgeons perform cosmetic surgery?","acceptedAnswer":{"@type":"Answer","text":"Some do \\u2014 particularly facial cosmetic procedures related to maxillofacial structures (chin implants, facial fracture repair, certain rhinoplasty work). Most focus on functional surgery."}},{"@type":"Question","name":"Can an oral surgeon replace my regular dentist?","acceptedAnswer":{"@type":"Answer","text":"No \\u2014 oral surgeons specialize in surgical care. You still need a general dentist for routine cleanings, fillings, and ongoing dental care."}},{"@type":"Question","name":"How much do oral surgeons cost?","acceptedAnswer":{"@type":"Answer","text":"Procedures cost more than general dentistry because of specialized training and equipment. However, complex cases done correctly the first time often cost less than fixing avoidable problems later."}},{"@type":"Question","name":"Is sedation safe with an oral surgeon?","acceptedAnswer":{"@type":"Answer","text":"Yes \\u2014 oral surgeons receive extensive anesthesia training during residency. In-office sedation by a board-certified oral surgeon has an excellent safety record."}},{"@type":"Question","name":"Does insurance cover oral surgery?","acceptedAnswer":{"@type":"Answer","text":"Many procedures are covered by medical insurance (not dental) when functional issues are present \\u2014 wisdom teeth, jaw surgery, trauma, certain extractions. Dental insurance typically covers extractions and partial implant costs."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do#article","headline":"What Is an Oral Surgeon and What Do They Do: Roles","description":"Learn about oral and maxillofacial surgeons: how they are trained, what conditions they treat, the procedures they perform, and when to see a specialist.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/what-is-oral-surgeon.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are oral surgeons real doctors?","acceptedAnswer":{"@type":"Answer","text":"Yes \\u2014 they hold a doctoral degree in dental surgery (DDS or DMD) and have completed 4\\u20136 years of additional surgical residency. Some also hold an MD."}},{"@type":"Question","name":"Do oral surgeons perform cosmetic surgery?","acceptedAnswer":{"@type":"Answer","text":"Some do \\u2014 particularly facial cosmetic procedures related to maxillofacial structures (chin implants, facial fracture repair, certain rhinoplasty work). Most focus on functional surgery."}},{"@type":"Question","name":"Can an oral surgeon replace my regular dentist?","acceptedAnswer":{"@type":"Answer","text":"No \\u2014 oral surgeons specialize in surgical care. You still need a general dentist for routine cleanings, fillings, and ongoing dental care."}},{"@type":"Question","name":"How much do oral surgeons cost?","acceptedAnswer":{"@type":"Answer","text":"Procedures cost more than general dentistry because of specialized training and equipment. However, complex cases done correctly the first time often cost less than fixing avoidable problems later."}},{"@type":"Question","name":"Is sedation safe with an oral surgeon?","acceptedAnswer":{"@type":"Answer","text":"Yes \\u2014 oral surgeons receive extensive anesthesia training during residency. In-office sedation by a board-certified oral surgeon has an excellent safety record."}},{"@type":"Question","name":"Does insurance cover oral surgery?","acceptedAnswer":{"@type":"Answer","text":"Many procedures are covered by medical insurance (not dental) when functional issues are present \\u2014 wisdom teeth, jaw surgery, trauma, certain extractions. Dental insurance typically covers extractions and partial implant costs."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -85,7 +85,7 @@ export default function WhatIsAnOralSurgeonPost() {
 
             {/* Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
-              What Is an Oral Surgeon and What Do They Do?
+              What Is an Oral Surgeon and What Do They Do: Roles
             </h1>
 
             {/* E-E-A-T: Medically reviewed byline */}

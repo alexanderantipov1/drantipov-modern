@@ -4,7 +4,7 @@ export const dentalImplantsArticles: Record<string, CaseArticle> = {
   di000010: {
     metaTitle: "All-on-4 Upper Jaw Dental Implants | Dr. Antipov, Roseville CA",
     metaDescription:
-      "Learn how All-on-4 dental implants with bone grafting and same-day temporary teeth restore the upper jaw. Dr. Antipov serves Roseville, Sacramento & Placer County.",
+      "Restore your upper jaw with All-on-4 dental implants, bone grafting, along with same-day teeth. Dr. Antipov serves Roseville, Sacramento, and Placer County.",
     keywords: [
       "All-on-4 dental implants",
       "upper jaw implants",
@@ -76,7 +76,7 @@ export const dentalImplantsArticles: Record<string, CaseArticle> = {
     ],
   },
   di000009: {
-    metaTitle: "Full-Arch All-on-4 Teeth-In-A-Day Implants | Dr. Antipov, Roseville CA",
+    metaTitle: "Full-Arch All-on-4 Teeth-In-A-Day Implants: Surgical Case | Dr. Antipov, Roseville CA",
     metaDescription:
       "All-on-4 Teeth-In-A-Day with bone grafting and immediate teeth placement restores a full smile in one visit. Serving Roseville, Sacramento & Placer County.",
     keywords: [
@@ -224,9 +224,9 @@ export const dentalImplantsArticles: Record<string, CaseArticle> = {
     ],
   },
   di000007: {
-    metaTitle: "All-on-4 Teeth-In-A-Day with Bone Grafting | Dr. Antipov, Roseville CA",
+    metaTitle: "All-on-4 Teeth-In-A-Day with Bone Grafting: 2026 Guide",
     metaDescription:
-      "After previous jaw trauma, an All-on-4 Teeth-In-A-Day solution with bone grafting restored a full smile in one visit. Serving Roseville, Sacramento & Placer County.",
+      "Restore your full smile after jaw trauma with All-on-4 Teeth-In-A-Day and bone grafting in one visit. Serving Roseville, Sacramento, and Placer County.",
     keywords: [
       "All-on-4 dental implants",
       "teeth in a day",
@@ -300,7 +300,7 @@ export const dentalImplantsArticles: Record<string, CaseArticle> = {
   di000006: {
     metaTitle: "All-on-4 Implants After Jaw Trauma | Dr. Antipov, Roseville CA",
     metaDescription:
-      "After jaw trauma, All-on-4 dental implants with bone grafting for both jaws and same-day overdentures restored full function. Serving Roseville & Sacramento, CA.",
+      "Restore full function after jaw trauma with dual-arch All-on-4 implants, bone grafting, and same-day overdentures. Serving Roseville and Sacramento, CA.",
     keywords: [
       "All-on-4 dental implants",
       "overdentures",
@@ -374,7 +374,7 @@ export const dentalImplantsArticles: Record<string, CaseArticle> = {
   di000005: {
     metaTitle: "All-on-4 Implants with Sinus Lift | Dr. Antipov, Roseville CA",
     metaDescription:
-      "All-on-4 dental implants with sinus lift for both jaws and same-day temporary teeth restore a full smile. Serving Roseville, Sacramento, and Placer County, CA.",
+      "Restore your smile with full-mouth All-on-4 implants, sinus lifts, and same-day teeth. Serving Roseville, Sacramento, and Placer County with expert care.",
     keywords: [
       "All-on-4 dental implants",
       "sinus lift",
@@ -446,7 +446,7 @@ export const dentalImplantsArticles: Record<string, CaseArticle> = {
     ],
   },
   di000001: {
-    metaTitle: "All-on-4 Same-Day Implants & Extractions | Dr. Antipov, Roseville CA",
+    metaTitle: "All-on-4 Same-Day Implants & Extractions: Case Steps",
     metaDescription:
       "All-on-4 with the Teeth-in-a-Day technique combined extractions, immediate implants, and a temporary bridge in one visit. Serving Roseville & Sacramento, CA.",
     keywords: [

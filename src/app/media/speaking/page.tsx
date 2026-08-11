@@ -14,7 +14,7 @@ import PageHero from "@/components/PageHero"
 import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
-  title: "Speaking Engagements & Lectures | Dr. Alexander Antipov",
+  title: { absolute: "Speaking Engagements & Lectures: Oral Surgery Education" },
   description:
     "Dr. Antipov is available for speaking engagements, workshops, and educational lectures on dental implants, oral surgery, and surgical techniques.",
   keywords: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Speaking Engagements & Lectures | Dr. Alexander Antipov",
+    title: "Speaking Engagements & Lectures: Oral Surgery Education",
     description:
       "Book Dr. Antipov for your next conference or educational event",
     type: "website",

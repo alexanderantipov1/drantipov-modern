@@ -63,8 +63,8 @@ export async function generateMetadata({
   const city = getCityByStateAndSlug(state, slug);
   if (!city) return {};
 
-  const title = `Oral Surgeon serving ${city.city}, ${city.state} — Dr. Alexander V. Antipov`;
-  const description = `Board-certified oral & maxillofacial surgeon for patients in ${city.city}. Just ${city.driveTime} from our Roseville office. Dental implants, jaw surgery, sleep apnea (MMA), facial cosmetic surgery. Free dental implant consultation.`;
+  const title = `Oral Surgeon serving ${city.city}, ${city.state} | Dr. Antipov`;
+  const description = `Board-certified oral surgeon serving ${city.city}, just ${city.driveTime} from our Roseville office. Dental implants, jaw surgery, sleep apnea care, and free implant consultations.`;
 
   return buildMetadata({
     path: `/locations/${state}/${city.slug}`,

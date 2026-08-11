@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Hybrid Dentures vs Fixed Implant Bridges",
+  title: { absolute: "Hybrid Dentures vs Fixed Implant Bridges: Key Differences" },
   description:
-    "Choosing a full-arch restoration? Compare hybrid implant dentures and fixed implant bridges by feel, cost, maintenance, and longevity, with Dr. Antipov in Roseville.",
+    "Choosing full-arch restoration? Compare hybrid implant dentures and fixed implant bridges by feel, cost, maintenance, and even longevity with Dr. Antipov.",
   alternates: {
     canonical: "/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges",
     languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "implant supported dentures",
   ],
   openGraph: {
-    title: "Hybrid Dentures vs Fixed Implant Bridges",
+    title: "Hybrid Dentures vs Fixed Implant Bridges: Key Differences",
     description: "Compare implant-retained dentures and fixed implant bridges by feel, cost, maintenance, and longevity.",
     images: [
       {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hybrid Dentures vs Fixed Implant Bridges",
+    title: "Hybrid Dentures vs Fixed Implant Bridges: Key Differences",
     description: "Compare implant-retained dentures and fixed implant bridges by feel, cost, maintenance, and longevity.",
     images: ["/images/blog/2026-06-19/hybrid-vs-fixed.png"],
   }
@@ -50,7 +50,7 @@ export default function HybridVsFixedPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges#article","headline":"Hybrid Dentures vs Fixed Implant Bridges","description":"Comparing hybrid implant dentures and fixed implant bridges by feel, cost, maintenance, and longevity to help patients choose the right full-arch restoration.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/hybrid-vs-fixed.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is a hybrid denture better than All-on-4?","acceptedAnswer":{"@type":"Answer","text":"They serve different priorities. A fixed All-on-4 bridge feels more natural; a removable hybrid is easier on the budget and ideal for some anatomies."}},{"@type":"Question","name":"Can I sleep in a fixed implant bridge?","acceptedAnswer":{"@type":"Answer","text":"Yes — it stays in 24/7 and is removed only by your dentist for periodic maintenance."}},{"@type":"Question","name":"How long do hybrid dentures last?","acceptedAnswer":{"@type":"Answer","text":"The implants are designed to last decades. The denture portion typically needs relines every few years and replacement every 7–10 years, with periodic attachment replacement."}},{"@type":"Question","name":"Can I switch from a hybrid to a fixed bridge later?","acceptedAnswer":{"@type":"Answer","text":"Often, yes. A hybrid can sometimes be upgraded to a fixed bridge as additional implants are placed — so your initial choice is the best fit for now, not a permanent commitment."}},{"@type":"Question","name":"Which option feels more natural?","acceptedAnswer":{"@type":"Answer","text":"A fixed implant bridge feels closest to natural teeth because it stays in place permanently and is removed only by your dentist. A hybrid denture is stable and secure, but it is removable by the patient and replaces lost gum tissue as well as teeth."}},{"@type":"Question","name":"Which option is easier to maintain?","acceptedAnswer":{"@type":"Answer","text":"A hybrid denture is taken out for daily cleaning, which some patients find simpler. A fixed bridge is cleaned in place with a water flosser and interdental brushes and is professionally maintained by your dentist."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges#article","headline":"Hybrid Dentures vs Fixed Implant Bridges: Key Differences","description":"Comparing hybrid implant dentures and fixed implant bridges by feel, cost, maintenance, and longevity to help patients choose the right full-arch restoration.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/hybrid-vs-fixed.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is a hybrid denture better than All-on-4?","acceptedAnswer":{"@type":"Answer","text":"They serve different priorities. A fixed All-on-4 bridge feels more natural; a removable hybrid is easier on the budget and ideal for some anatomies."}},{"@type":"Question","name":"Can I sleep in a fixed implant bridge?","acceptedAnswer":{"@type":"Answer","text":"Yes — it stays in 24/7 and is removed only by your dentist for periodic maintenance."}},{"@type":"Question","name":"How long do hybrid dentures last?","acceptedAnswer":{"@type":"Answer","text":"The implants are designed to last decades. The denture portion typically needs relines every few years and replacement every 7–10 years, with periodic attachment replacement."}},{"@type":"Question","name":"Can I switch from a hybrid to a fixed bridge later?","acceptedAnswer":{"@type":"Answer","text":"Often, yes. A hybrid can sometimes be upgraded to a fixed bridge as additional implants are placed — so your initial choice is the best fit for now, not a permanent commitment."}},{"@type":"Question","name":"Which option feels more natural?","acceptedAnswer":{"@type":"Answer","text":"A fixed implant bridge feels closest to natural teeth because it stays in place permanently and is removed only by your dentist. A hybrid denture is stable and secure, but it is removable by the patient and replaces lost gum tissue as well as teeth."}},{"@type":"Question","name":"Which option is easier to maintain?","acceptedAnswer":{"@type":"Answer","text":"A hybrid denture is taken out for daily cleaning, which some patients find simpler. A fixed bridge is cleaned in place with a water flosser and interdental brushes and is professionally maintained by your dentist."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -83,7 +83,7 @@ export default function HybridVsFixedPost() {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
-              Hybrid Dentures vs Fixed Implant Bridges
+              Hybrid Dentures vs Fixed Implant Bridges: Key Differences
             </h1>
 
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
@@ -265,7 +265,7 @@ export default function HybridVsFixedPost() {
               <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
                 <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Dental Implant Surgery Procedure</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — National Institute of Dental and Craniofacial Research: Dental Implants</a></li>
+                <li><a href="https://medlineplus.gov/ency/article/007645.htm" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — National Institute of Dental and Craniofacial Research: Dental Implants</a></li>
                 <li><a href="https://pubmed.ncbi.nlm.nih.gov/23211766/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Implant overdentures vs fixed prostheses — outcomes comparison (PubMed)</a></li>
               </ul>
             </section>

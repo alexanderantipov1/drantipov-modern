@@ -42,7 +42,7 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "Oral Health & Systemic Disease — The Link",
+  title: { absolute: "Poor Oral Health & Systemic Diseases: Health Risks" },
   description:
     "Discover the hidden connection between oral health and systemic diseases including cancer, cardiovascular disease, and diabetes. Learn prevention strategies.",
   alternates: {

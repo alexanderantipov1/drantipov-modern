@@ -5,9 +5,9 @@ import { siteConfig } from "@/constants/siteConfig";
 import DualCTA from "@/components/DualCTA";
 
 export const metadata: Metadata = {
-  title: "Travel Guide — Patients Coming to Roseville",
+  title: { absolute: "Travel Guide for Out-of-Town Oral Surgery Patients" },
   description:
-    "Complete travel guide for out-of-state and international patients: Sacramento airport, recommended hotels, recovery accommodations, and what to plan for multi-day treatment with Dr. Antipov.",
+    "Travel guide for out-of-state and international patients visiting Dr. Antipov: Sacramento airport, top hotels, recovery accommodations, and treatment plans.",
   alternates: { canonical: "/for-patients/travel" },
   openGraph: {
     title: "Patient Travel Guide — Roseville, California",

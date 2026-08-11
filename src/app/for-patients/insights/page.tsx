@@ -10,9 +10,9 @@ import heroContent from "@/lib/heroContent"
 import { insightPosts } from "@/constants/insights"
 
 export const metadata: Metadata = {
-  title: "Patient Insights & Education | Dr. Antipov Oral Surgery",
+  title: { absolute: "Oral Surgery Patient Insights & Educational Guides" },
   description:
-    "Stay informed with expert insights on dental implants, oral surgery, and oral health from Dr. Alexander Antipov. Educational articles to help you make informed decisions.",
+    "Find educational articles and expert insights on dental implants, oral surgery, and oral health from Dr. Alexander Antipov to make informed care decisions.",
   alternates: {
     canonical: "/for-patients/insights",
     languages: {

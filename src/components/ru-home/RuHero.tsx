@@ -3,7 +3,7 @@ import { ConsultationModal } from "@/components/forms/ConsultationModal";
 import { getVideoSchema, structuredDataScript } from "@/lib/structured-data";
 import { siteConfig } from "@/constants/siteConfig";
 
-export default function RuHero() {
+export default function RuHero({ heading }: { heading?: React.ReactNode } = {}) {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" lang="ru">
       {/* VideoObject schema for hero.mp4 */}
@@ -65,9 +65,13 @@ export default function RuHero() {
               className="hero-fade-up font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight"
               style={{ animationDelay: "0.1s" }}
             >
-              Доверьте свою улыбку
-              <br />
-              <span className="gradient-text">лучшим</span> в этом деле
+              {heading ?? (
+                <>
+                  Челюстно-лицевой <span className="gradient-text">хирург</span>
+                  <br />
+                  в Розвилле, Калифорния
+                </>
+              )}
             </h1>
 
             <p
@@ -143,9 +147,9 @@ export default function RuHero() {
               <Image
                 src="/images/drantipov-hero-cutout-clean.png"
                 alt="Доктор Александр Антипов, DDS — сертифицированный челюстно-лицевой хирург в Roseville, Калифорния"
-                width={2679}
-                height={3755}
-                quality={92}
+                width={1600}
+                height={2243}
+                quality={80}
                 priority
                 sizes="(min-width: 1024px) 50vw, 0vw"
                 className="w-full h-auto drop-shadow-2xl"

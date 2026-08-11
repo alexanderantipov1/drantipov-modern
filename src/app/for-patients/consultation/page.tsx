@@ -7,7 +7,7 @@ import heroContent from "@/lib/heroContent"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata = {
-  title: "Free Dental Implant Consultation | Dr. Antipov, Roseville CA",
+  title: { absolute: "Free Dental Implant Consultation | Full-Arch Evaluation" },
   description:
     "Schedule a consultation with Dr. Antipov for dental implants, jaw surgery, or full-arch restoration. New patients welcome. Convenient Roseville location.",
   alternates: {
@@ -18,20 +18,20 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Schedule Your Free Dental Implant Consultation",
+    title: "Schedule Your Free Dental Implant Consultation | Full-Arch Evaluation",
     description: "Free dental implant consultation + 3D CT scan with board-certified oral surgeon Dr. Antipov. Roseville, CA. Restrictions apply.",
     images: [
       {
         url: "/images/invitations/schedule-a16fad8c.jpg",
         width: 1200,
         height: 630,
-        alt: "Schedule Your Free Dental Implant Consultation",
+        alt: "Schedule Your Free Dental Implant Consultation | Full-Arch Evaluation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Schedule Your Free Dental Implant Consultation",
+    title: "Schedule Your Free Dental Implant Consultation | Full-Arch Evaluation",
     description: "Free dental implant consultation + 3D CT scan with board-certified oral surgeon Dr. Antipov. Roseville, CA. Restrictions apply.",
     images: ["/images/invitations/schedule-a16fad8c.jpg"],
   }
@@ -74,7 +74,7 @@ export default function ConsultationPage() {
           {
             "@context": "https://schema.org",
             "@type": "ReserveAction",
-            name: "Schedule Free Dental Implant Consultation with Dr. Antipov",
+            name: "Schedule Free Dental Implant Consultation | Full-Arch Evaluation with Dr. Antipov",
             description: "Book a free in-person dental implant consultation with board-certified oral & maxillofacial surgeon Dr. Alexander Antipov in Roseville, CA.",
             target: {
               "@type": "EntryPoint",
@@ -94,7 +94,7 @@ export default function ConsultationPage() {
           {
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            name: "Schedule a Free Dental Implant Consultation",
+            name: "Schedule a Free Dental Implant Consultation | Full-Arch Evaluation",
             url: `${siteConfig.url}/for-patients/consultation`,
             description: "Schedule a free in-person dental implant consultation at Galleria Oral & Facial Surgery in Roseville, CA — new patients welcome.",
             mainEntity: { "@id": `${siteConfig.url}/#physician` },

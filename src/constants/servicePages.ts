@@ -65,7 +65,7 @@ export const servicePages = {
     heroImage: "/images/procedures/extractions-1896b4c1.jpg",
     metaTitle: "Tooth Extractions | Roseville, CA",
     metaDescription:
-      "Surgical and simple tooth extractions in Roseville, CA. Impacted molars and canines, exposed-canine surgery for orthodontics, and sedation for fearful patients.",
+      "Expert tooth extractions in Roseville, CA for simple & surgical cases. Simple extractions, impacted teeth, orthodontic exposure & gentle sedation options.",
     ogImage: "/images/procedures/extractions-1896b4c1.jpg",
     breadcrumbName: "Tooth Extractions",
     procedureName: "Tooth Extraction",
@@ -510,7 +510,7 @@ export const servicePages = {
     heroImage: "/images/procedures/facial-cosmetic-surgery-e97fd634.jpg",
     metaTitle: "Botox, Fillers & Lip Augmentation | Roseville, CA",
     metaDescription:
-      "Facial cosmetic treatments in Roseville, CA — Botox, injectable fillers, and lip augmentation by a maxillofacial surgeon with expert knowledge of facial anatomy.",
+      "Explore facial cosmetic treatments in Roseville, CA: Botox, fillers & lip augmentation by a skilled maxillofacial surgeon with deep facial anatomy expertise.",
     ogImage: "/images/procedures/facial-cosmetic-surgery-e97fd634.jpg",
     breadcrumbName: "Facial Cosmetic Treatments",
     procedureName: "Facial Cosmetic Injectables",

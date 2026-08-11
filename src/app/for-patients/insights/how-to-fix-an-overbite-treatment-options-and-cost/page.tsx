@@ -13,9 +13,9 @@ const URL = "https://www.drantipov.com" + CANONICAL
 const IMAGE = "/images/blog/2026-06-22/how-to-fix-an-overbite.png"
 
 export const metadata: Metadata = {
-  title: "How to Fix an Overbite: Treatment Options, Surgery & Cost",
+  title: { absolute: "How to Fix an Overbite: Treatment Options, Surgery & Cost" },
   description:
-    "How do you fix an overbite? A board-certified oral surgeon explains every option — aligners, braces, and jaw surgery — for kids and adults, plus realistic timelines and cost.",
+    "Fix an overbite with braces, clear aligners, or corrective jaw surgery. Compare options for kids and adults, treatment timelines, and costs with Dr. Antipov.",
   alternates: {
     canonical: CANONICAL,
     languages: { en: CANONICAL, "x-default": CANONICAL },

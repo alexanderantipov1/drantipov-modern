@@ -8,7 +8,7 @@ import PageHero from "@/components/PageHero"
 import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
-  title: "Post-Operative Care Instructions | Recovery Guide | Dr. Antipov",
+  title: { absolute: "Post-Operative Care Instructions & Recovery Guidelines" },
   description:
     "Essential post-operative care instructions after oral surgery with Dr. Antipov. Learn how to manage pain, swelling, bleeding, and ensure proper healing.",
   alternates: {

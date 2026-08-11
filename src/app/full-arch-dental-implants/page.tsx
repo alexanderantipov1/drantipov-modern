@@ -7,7 +7,7 @@ import { siteConfig } from "@/constants/siteConfig";
 const content = fullArchLanding.en;
 
 export const metadata: Metadata = {
-  title: content.title,
+  title: { absolute: content.title },
   description: content.description,
   keywords: content.keywords,
   alternates: {
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     languages: {
       en: `${siteConfig.url}${content.path}`,
       ru: `${siteConfig.url}${content.alternatePath}`,
+      "x-default": `${siteConfig.url}${content.path}`,
     },
   },
   openGraph: {

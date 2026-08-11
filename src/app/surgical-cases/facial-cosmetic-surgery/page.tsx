@@ -12,7 +12,7 @@ import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data
 import { siteConfig } from "@/constants/siteConfig"
 
 export const metadata: Metadata = {
-  title: "Facial Cosmetic Surgery — Before & After | Dr. Antipov",
+  title: { absolute: "Facial Cosmetic Surgery: A Before and After Gallery" },
   description: "Rhinoplasty, eyelid surgery, facial fillers, lip augmentation, scarless mole removal — facial cosmetic surgery results by Dr. Antipov, Roseville CA.",
   alternates: {
     canonical: "/surgical-cases/facial-cosmetic-surgery",

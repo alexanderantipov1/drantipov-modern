@@ -6,7 +6,7 @@ import { ConsultationModal } from "@/components/forms/ConsultationModal";
 import { getVideoSchema, structuredDataScript } from "@/lib/structured-data";
 import { siteConfig } from "@/constants/siteConfig";
 
-export default function Hero() {
+export default function Hero({ heading }: { heading?: React.ReactNode } = {}) {
   // The background video is desktop-only. Rendering it conditionally (rather than
   // hiding with CSS) guarantees the 3-4 MB video is never requested on mobile,
   // where the lightweight poster image is used instead.
@@ -89,11 +89,13 @@ export default function Hero() {
               className="hero-fade-up font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight"
               style={{ animationDelay: "0.1s" }}
             >
-              Trust Your Smile
-              <br />
-              to the <span className="gradient-text">Best Hands</span>
-              <br />
-              in the Field
+              {heading ?? (
+                <>
+                  Board-Certified <span className="gradient-text">Oral &amp; Maxillofacial</span>
+                  <br />
+                  Surgeon in Roseville, CA
+                </>
+              )}
             </h1>
 
             <p
@@ -178,9 +180,9 @@ export default function Hero() {
               <Image
                 src="/images/drantipov-hero-cutout-clean.png"
                 alt="Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
-                width={2679}
-                height={3755}
-                quality={92}
+                width={1600}
+                height={2243}
+                quality={80}
                 sizes="(min-width: 1024px) 50vw, 0vw"
                 className="w-full h-auto drop-shadow-2xl"
               />

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     absolute: "Insurance & Financing | Dr. Antipov, Roseville CA",
   },
   description:
-    "We accept most major PPO plans (Delta Dental, Cigna, Aetna, MetLife and more). We partner with CareCredit and Cherry for monthly payment plans, and we offer transparent pricing and a free dental implant consultation.",
+    "We accept major PPO plans like Delta Dental & Cigna, partner with CareCredit and Cherry for payment plans, and offer free dental implant consultations.",
   alternates: {
     canonical: `${SITE_URL}/insurance`,
     languages: {

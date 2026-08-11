@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Understanding Sinus Lift for Dental Implants",
+  title: { absolute: "Understanding Sinus Lift for Dental Implants Guide" },
   description:
-    "A sinus lift (sinus augmentation) builds bone in the upper jaw so implants can be placed securely. Learn when it is needed, how it works, recovery, and cost with Dr. Antipov in Roseville, CA.",
+    "A sinus lift adds upper jawbone density to anchor dental implants securely. Learn the procedure, recovery, and costs with Dr. Antipov in Roseville, CA.",
   alternates: {
     canonical: "/for-patients/insights/understanding-sinus-lift-for-dental-implants",
     languages: {
@@ -26,20 +26,20 @@ export const metadata: Metadata = {
     "sinus lift Roseville",
   ],
   openGraph: {
-    title: "Understanding Sinus Lift for Dental Implants",
+    title: "Understanding Sinus Lift for Dental Implants Guide",
     description: "How a sinus lift builds upper-jaw bone for secure dental implant placement.",
     images: [
       {
         url: "/images/blog/2026-06-19/sinus-lift.png",
         width: 1200,
         height: 630,
-        alt: "Understanding Sinus Lift for Dental Implants",
+        alt: "Understanding Sinus Lift for Dental Implants Guide",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Understanding Sinus Lift for Dental Implants",
+    title: "Understanding Sinus Lift for Dental Implants Guide",
     description: "How a sinus lift builds upper-jaw bone for secure dental implant placement.",
     images: ["/images/blog/2026-06-19/sinus-lift.png"],
   }
@@ -50,7 +50,7 @@ export default function SinusLiftPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/understanding-sinus-lift-for-dental-implants#article","headline":"Understanding Sinus Lift for Dental Implants","description":"A sinus lift (sinus augmentation) increases bone volume in the upper jaw so dental implants can be placed securely \\u2014 indications, procedure, recovery, and benefits.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/understanding-sinus-lift-for-dental-implants","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/sinus-lift.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/understanding-sinus-lift-for-dental-implants"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the recovery time after a sinus lift?","acceptedAnswer":{"@type":"Answer","text":"The recovery time after a sinus lift can vary, but it generally takes several months for the bone to heal properly before dental implants can be placed. Patients typically attend follow-up visits to monitor progress."}},{"@type":"Question","name":"Is a sinus lift painful?","acceptedAnswer":{"@type":"Answer","text":"Most patients report mild discomfort after the procedure, which can usually be managed with prescribed pain medications. Local anesthesia helps minimize pain during the surgery itself."}},{"@type":"Question","name":"How long does the sinus lift procedure take?","acceptedAnswer":{"@type":"Answer","text":"The sinus lift procedure usually takes about 1\\u20132 hours, depending on the complexity of the case. Patients can often return home the same day."}},{"@type":"Question","name":"Can anyone have a sinus lift?","acceptedAnswer":{"@type":"Answer","text":"Not everyone is a candidate for a sinus lift. Factors such as overall health, smoking habits, and bone quality are considered during the evaluation process."}},{"@type":"Question","name":"What materials are used for bone grafting in a sinus lift?","acceptedAnswer":{"@type":"Answer","text":"Bone grafting materials can include autografts (the patient\\u2019s own bone), allografts (donor bone), or synthetic materials. The choice depends on the individual case and surgeon preference."}},{"@type":"Question","name":"What happens if I don\\u2019t get a sinus lift?","acceptedAnswer":{"@type":"Answer","text":"If a sinus lift is needed but not performed, it may not be possible to place dental implants successfully. This could lead to further bone loss and potential complications."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/understanding-sinus-lift-for-dental-implants#article","headline":"Understanding Sinus Lift for Dental Implants Guide","description":"A sinus lift (sinus augmentation) increases bone volume in the upper jaw so dental implants can be placed securely \\u2014 indications, procedure, recovery, and benefits.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/understanding-sinus-lift-for-dental-implants","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/sinus-lift.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/understanding-sinus-lift-for-dental-implants"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the recovery time after a sinus lift?","acceptedAnswer":{"@type":"Answer","text":"The recovery time after a sinus lift can vary, but it generally takes several months for the bone to heal properly before dental implants can be placed. Patients typically attend follow-up visits to monitor progress."}},{"@type":"Question","name":"Is a sinus lift painful?","acceptedAnswer":{"@type":"Answer","text":"Most patients report mild discomfort after the procedure, which can usually be managed with prescribed pain medications. Local anesthesia helps minimize pain during the surgery itself."}},{"@type":"Question","name":"How long does the sinus lift procedure take?","acceptedAnswer":{"@type":"Answer","text":"The sinus lift procedure usually takes about 1\\u20132 hours, depending on the complexity of the case. Patients can often return home the same day."}},{"@type":"Question","name":"Can anyone have a sinus lift?","acceptedAnswer":{"@type":"Answer","text":"Not everyone is a candidate for a sinus lift. Factors such as overall health, smoking habits, and bone quality are considered during the evaluation process."}},{"@type":"Question","name":"What materials are used for bone grafting in a sinus lift?","acceptedAnswer":{"@type":"Answer","text":"Bone grafting materials can include autografts (the patient\\u2019s own bone), allografts (donor bone), or synthetic materials. The choice depends on the individual case and surgeon preference."}},{"@type":"Question","name":"What happens if I don\\u2019t get a sinus lift?","acceptedAnswer":{"@type":"Answer","text":"If a sinus lift is needed but not performed, it may not be possible to place dental implants successfully. This could lead to further bone loss and potential complications."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -85,7 +85,7 @@ export default function SinusLiftPost() {
 
             {/* Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
-              Understanding Sinus Lift for Dental Implants
+              Understanding Sinus Lift for Dental Implants Guide
             </h1>
 
             {/* E-E-A-T: Medically reviewed byline */}

@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Bone Grafting for Dental Implants Explained",
+  title: { absolute: "Bone Grafting for Dental Implants Explained: Procedure Guide" },
   description:
-    "Bone grafting for dental implants explained: who needs it, types of grafts, the procedure, healing timeline, risks, and how it supports long-term implant success.",
+    "Learn when bone grafting is needed for dental implants, including graft types, procedure steps, healing timelines, risks, and long-term success factors.",
   alternates: {
     canonical: "/for-patients/insights/bone-grafting-for-dental-implants-explained",
     languages: {
@@ -26,20 +26,20 @@ export const metadata: Metadata = {
     "bone grafting Roseville",
   ],
   openGraph: {
-    title: "Bone Grafting for Dental Implants Explained",
+    title: "Bone Grafting for Dental Implants Explained: Procedure Guide",
     description: "Who needs a bone graft, the types of grafts, healing timeline, and how it supports implant success.",
     images: [
       {
         url: "/images/blog/2026-06-19/bone-grafting.png",
         width: 1200,
         height: 630,
-        alt: "Bone Grafting for Dental Implants Explained",
+        alt: "Bone Grafting for Dental Implants Explained: Procedure Guide",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bone Grafting for Dental Implants Explained",
+    title: "Bone Grafting for Dental Implants Explained: Procedure Guide",
     description: "Who needs a bone graft, the types of grafts, healing timeline, and how it supports implant success.",
     images: ["/images/blog/2026-06-19/bone-grafting.png"],
   }
@@ -50,7 +50,7 @@ export default function BoneGraftingForDentalImplantsPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/bone-grafting-for-dental-implants-explained#article","headline":"Bone Grafting for Dental Implants Explained","description":"Comprehensive guide to bone grafting for dental implants \\u2014 who needs it, types of grafts, the procedure, healing timeline, risks, and alternatives.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/bone-grafting-for-dental-implants-explained","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/bone-grafting.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/bone-grafting-for-dental-implants-explained"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does the bone grafting procedure take?","acceptedAnswer":{"@type":"Answer","text":"The surgical procedure typically takes about one to two hours, depending on the complexity of the case. The overall timeline for recovery may vary based on individual healing rates."}},{"@type":"Question","name":"Is bone grafting painful?","acceptedAnswer":{"@type":"Answer","text":"Most patients report mild discomfort after the procedure, which can be managed with pain medication. Your surgeon will provide specific aftercare guidelines to minimize discomfort."}},{"@type":"Question","name":"How long does it take for the bone graft to heal?","acceptedAnswer":{"@type":"Answer","text":"Healing time usually ranges from three to six months, depending on the type of graft and the individual\\u2019s health. Regular follow-ups will help track your progress."}},{"@type":"Question","name":"Can I get dental implants immediately after bone grafting?","acceptedAnswer":{"@type":"Answer","text":"In most cases, dental implants are placed after the graft has healed. However, some advanced techniques allow for simultaneous placement, which your surgeon can discuss with you."}},{"@type":"Question","name":"What happens if my bone graft fails?","acceptedAnswer":{"@type":"Answer","text":"If a bone graft fails, your surgeon will assess the situation and may recommend additional grafting or alternative treatments based on your needs."}},{"@type":"Question","name":"Will insurance cover bone grafting for dental implants?","acceptedAnswer":{"@type":"Answer","text":"Coverage for bone grafting varies by insurance plan. It is advisable to check with your insurance provider to understand your benefits and coverage options."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/bone-grafting-for-dental-implants-explained#article","headline":"Bone Grafting for Dental Implants Explained: Procedure Guide","description":"Comprehensive guide to bone grafting for dental implants \\u2014 who needs it, types of grafts, the procedure, healing timeline, risks, and alternatives.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/bone-grafting-for-dental-implants-explained","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/bone-grafting.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/bone-grafting-for-dental-implants-explained"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does the bone grafting procedure take?","acceptedAnswer":{"@type":"Answer","text":"The surgical procedure typically takes about one to two hours, depending on the complexity of the case. The overall timeline for recovery may vary based on individual healing rates."}},{"@type":"Question","name":"Is bone grafting painful?","acceptedAnswer":{"@type":"Answer","text":"Most patients report mild discomfort after the procedure, which can be managed with pain medication. Your surgeon will provide specific aftercare guidelines to minimize discomfort."}},{"@type":"Question","name":"How long does it take for the bone graft to heal?","acceptedAnswer":{"@type":"Answer","text":"Healing time usually ranges from three to six months, depending on the type of graft and the individual\\u2019s health. Regular follow-ups will help track your progress."}},{"@type":"Question","name":"Can I get dental implants immediately after bone grafting?","acceptedAnswer":{"@type":"Answer","text":"In most cases, dental implants are placed after the graft has healed. However, some advanced techniques allow for simultaneous placement, which your surgeon can discuss with you."}},{"@type":"Question","name":"What happens if my bone graft fails?","acceptedAnswer":{"@type":"Answer","text":"If a bone graft fails, your surgeon will assess the situation and may recommend additional grafting or alternative treatments based on your needs."}},{"@type":"Question","name":"Will insurance cover bone grafting for dental implants?","acceptedAnswer":{"@type":"Answer","text":"Coverage for bone grafting varies by insurance plan. It is advisable to check with your insurance provider to understand your benefits and coverage options."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -85,7 +85,7 @@ export default function BoneGraftingForDentalImplantsPost() {
 
             {/* Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
-              Bone Grafting for Dental Implants Explained
+              Bone Grafting for Dental Implants Explained: Procedure Guide
             </h1>
 
             

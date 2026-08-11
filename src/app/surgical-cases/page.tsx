@@ -10,7 +10,7 @@ import { ArrowRight, Stethoscope, Award, Users } from "lucide-react"
 import DualCTA from "@/components/DualCTA"
 
 export const metadata: Metadata = {
-  title: "Surgical Cases — Real Patient Transformations",
+  title: { absolute: "Surgical Cases: Real Patient Jaw & Implant Outcomes" },
   description: "Browse real surgical cases from Dr. Antipov — jaw surgery, dental implants, and facial cosmetic procedures with before-and-after results.",
   alternates: {
     canonical: "/surgical-cases",

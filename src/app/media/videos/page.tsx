@@ -6,7 +6,7 @@ import PageHero from "@/components/PageHero"
 import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
-  title: "Educational Videos & Lectures | Dr. Alexander Antipov",
+  title: { absolute: "Educational Videos & Lectures: Oral Surgery Guides" },
   description:
     "Watch Dr. Antipov's educational videos, surgical demonstrations, and conference presentations on dental implants, jaw surgery, and oral surgery techniques.",
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Educational Videos & Lectures | Dr. Alexander Antipov",
+    title: "Educational Videos & Lectures: Oral Surgery Guides",
     description: "Watch educational videos and surgical demonstrations from Dr. Antipov",
     type: "website",
   },

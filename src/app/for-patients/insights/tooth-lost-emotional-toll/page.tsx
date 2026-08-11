@@ -9,7 +9,7 @@ import { Metadata } from "next"
 import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
-  title: "The Hidden Emotional Toll of Tooth Loss",
+  title: { absolute: "The Hidden Emotional Toll of Tooth Loss: Facts & Care" },
   description:
     "Explore the psychological and emotional impacts of tooth loss, coping strategies, and how dental implants can restore confidence and quality of life.",
   alternates: {
@@ -57,7 +57,7 @@ export default function ToothLossEmotionalTollPost() {
             { name: "Home", url: "https://www.drantipov.com" },
             { name: "For Patients", url: "https://www.drantipov.com/for-patients" },
             { name: "Insights", url: "https://www.drantipov.com/for-patients/insights" },
-            { name: "The Hidden Emotional Toll of Tooth Loss: Understanding Patient Struggles", url: "https://www.drantipov.com/for-patients/insights/tooth-lost-emotional-toll" },
+            { name: "The Hidden Emotional Toll of Tooth Loss: Facts & Care: Understanding Patient Struggles", url: "https://www.drantipov.com/for-patients/insights/tooth-lost-emotional-toll" },
           ]),
           getFAQSchema([
             { question: "What are the emotional stages of tooth loss?", answer: "Research from the University of Sheffield describes four emotional stages: initial shock and grief, emotional turmoil and self-consciousness, hope through prosthetic solutions, and adaptation with disclosure management. Understanding these stages helps patients and providers respond with more compassion." },
@@ -100,7 +100,7 @@ export default function ToothLossEmotionalTollPost() {
 
             {/* Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
-              The Hidden Emotional Toll of Tooth Loss: Understanding Patient Struggles
+              The Hidden Emotional Toll of Tooth Loss: Facts & Care: Understanding Patient Struggles
             </h1>
 
             

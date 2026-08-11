@@ -52,7 +52,7 @@ export function buildMetadata(article: RevisionArticle): Metadata {
   const canonical = `/for-patients/insights/${article.slug}`
   const url = SITE + canonical
   return {
-    title: article.metaTitle,
+    title: { absolute: article.metaTitle },
     description: article.metaDescription,
     alternates: {
       canonical,
@@ -80,10 +80,10 @@ const IMG = "/images/blog/2026-06-22"
 export const revisionArticles: RevisionArticle[] = [
   {
     slug: "replacing-a-failed-dental-implant-what-to-expect",
-    title: "Replacing a Failed Dental Implant: What to Expect",
-    metaTitle: "Replacing a Failed Dental Implant: What to Expect",
+    title: "Replacing a Failed Dental Implant: What to Expect & Process",
+    metaTitle: "Replacing a Failed Dental Implant: What to Expect & Process",
     metaDescription:
-      "A failed dental implant can usually be replaced. Learn how removal, healing, bone repair, and re-placement work — and what makes a revision case succeed long term.",
+      "A failed dental implant can usually be replaced.  How removal, healing, bone repair, and placement work, plus what makes revision cases succeed long term.",
     excerpt:
       "A failed implant is rarely the end of the road. Here is how removal, healing, bone repair, and re-placement work — and why correcting the original cause is what makes a replacement last.",
     date: "June 22, 2026",
@@ -219,10 +219,10 @@ export const revisionArticles: RevisionArticle[] = [
   },
   {
     slug: "fixing-a-failed-all-on-4-revision-options",
-    title: "Fixing a Failed All-on-4: Revision Options",
-    metaTitle: "Fixing a Failed All-on-4: Revision Options",
+    title: "Fixing a Failed All-on-4: Revision Surgery Options",
+    metaTitle: "Fixing a Failed All-on-4: Revision Surgery Options",
     metaDescription:
-      "When a full-arch All-on-4 fails or feels wrong, it can usually be fixed. Learn the revision options — from a new prosthesis to implant replacement and grafting.",
+      "When an All-on-4 fails, revision options can fix it. Learn about new prostheses, implant replacements, and bone grafting with Roseville surgeon Dr. Antipov.",
     excerpt:
       "A full-arch result that fails, loosens, or never felt right can usually be corrected. Here are the revision options, from a new bridge to implant replacement and a complete redesign.",
     date: "June 22, 2026",
@@ -357,8 +357,8 @@ export const revisionArticles: RevisionArticle[] = [
   },
   {
     slug: "correcting-bite-problems-after-implant-work",
-    title: "Correcting Bite Problems After Implant Work",
-    metaTitle: "Correcting Bite Problems After Implant Work",
+    title: "Correcting Bite Problems After Implant Work: Fixes",
+    metaTitle: "Correcting Bite Problems After Implant Work: Fixes",
     metaDescription:
       "A bad bite after implant treatment causes pain, wear, and failures. Learn how occlusion problems are diagnosed and corrected so your implants last longer.",
     excerpt:
@@ -494,8 +494,8 @@ export const revisionArticles: RevisionArticle[] = [
   },
   {
     slug: "replacing-old-failing-bridges-with-implants",
-    title: "Replacing Old Failing Bridges With Implants",
-    metaTitle: "Replacing Old Failing Bridges With Implants",
+    title: "Replacing Old Failing Bridges With Implants: Key Steps",
+    metaTitle: "Replacing Old Failing Bridges With Implants: Key Steps",
     metaDescription:
       "Old dental bridges eventually fail. Learn how a failing bridge is replaced with implants, what the process involves, and why implants last far longer.",
     excerpt:
@@ -626,7 +626,7 @@ export const revisionArticles: RevisionArticle[] = [
     title: "Can a Loose Dental Implant Be Saved?",
     metaTitle: "Can a Loose Dental Implant Be Saved?",
     metaDescription:
-      "A loose implant is a warning sign, but it does not always mean failure. Learn what causes looseness, when an implant can be saved, and when it must be replaced.",
+      "A loose dental implant is a warning sign, but not always a failure. Learn what causes looseness, when an implant can be saved, and when replacement is needed.",
     excerpt:
       "A healthy implant should feel completely solid, so any movement is a signal. Whether it can be saved depends on which part is loose and why — here is how to tell.",
     date: "June 22, 2026",
@@ -740,8 +740,8 @@ export const revisionArticles: RevisionArticle[] = [
   },
   {
     slug: "repairing-a-broken-implant-crown-or-prosthesis",
-    title: "Repairing a Broken Implant Crown or Prosthesis",
-    metaTitle: "Repairing a Broken Implant Crown or Prosthesis",
+    title: "Repairing a Broken Implant Crown or Prosthesis Guide",
+    metaTitle: "Repairing a Broken Implant Crown or Prosthesis Guide",
     metaDescription:
       "A cracked implant crown or full-arch bridge can usually be repaired or replaced. Learn the causes, repair options, and how to prevent future breakage.",
     excerpt:
@@ -869,8 +869,8 @@ export const revisionArticles: RevisionArticle[] = [
   },
   {
     slug: "full-mouth-reconstruction-for-failed-dental-work",
-    title: "Full-Mouth Reconstruction for Failed Dental Work",
-    metaTitle: "Full-Mouth Reconstruction for Failed Dental Work",
+    title: "Full-Mouth Reconstruction for Failed Dental Work: Steps",
+    metaTitle: "Full-Mouth Reconstruction for Failed Dental Work: Steps",
     metaDescription:
       "When years of failing crowns, bridges, and teeth add up, full-mouth reconstruction rebuilds everything. Learn how complex cases are planned and restored.",
     excerpt:
@@ -997,8 +997,8 @@ export const revisionArticles: RevisionArticle[] = [
   },
   {
     slug: "implant-revision-after-bone-loss",
-    title: "Implant Revision After Bone Loss Explained",
-    metaTitle: "Implant Revision After Bone Loss Explained",
+    title: "Implant Revision After Bone Loss: Grafting Options",
+    metaTitle: "Implant Revision After Bone Loss: Grafting Options",
     metaDescription:
       "Bone loss can doom an implant, but it can be rebuilt. Learn how specialists graft, regrow, and re-place implants in sites that lost bone after failure.",
     excerpt:
@@ -1119,8 +1119,8 @@ export const revisionArticles: RevisionArticle[] = [
   },
   {
     slug: "second-opinion-on-failed-dental-implants",
-    title: "Getting a Second Opinion on Failed Implants",
-    metaTitle: "Getting a Second Opinion on Failed Implants",
+    title: "Second Opinion on Failed Implants: Revision Options",
+    metaTitle: "Second Opinion on Failed Implants: Revision Options",
     metaDescription:
       "If your dental implants failed or feel wrong, a second opinion can reveal the real cause. Learn what a revision consultation involves and what to ask.",
     excerpt:
@@ -1251,7 +1251,7 @@ export const revisionArticles: RevisionArticle[] = [
   {
     slug: "redoing-dental-implants-done-abroad-recovery-plan",
     title: "Redoing Dental Implants Done Abroad: A Plan",
-    metaTitle: "Redoing Dental Implants Done Abroad: A Recovery Plan",
+    metaTitle: "Redoing Dental Implants Done Abroad: Recovery Plan",
     metaDescription:
       "If implants done overseas have failed, a clear recovery plan can rebuild your smile. Learn the steps to assess, repair, and replace problem dental work.",
     excerpt:

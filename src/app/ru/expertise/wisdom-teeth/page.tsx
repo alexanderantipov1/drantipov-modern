@@ -4,7 +4,7 @@ import { wisdomTeethData as data } from "@/data/ruExpertiseData";
 import { siteUrl } from "@/data/russianImplantFunnel";
 
 export const metadata: Metadata = {
-  title: `${data.title} — Доктор Антипов | Roseville, California`,
+  title: data.title,
   description: data.subtitle,
   alternates: {
     canonical: `${siteUrl}/ru/expertise/wisdom-teeth`,

@@ -84,7 +84,7 @@ export const fullArchLanding: Record<FullArchLocale, FullArchLandingContent> = {
     locale: "en",
     lang: "en-US",
     path: "/full-arch-dental-implants",
-    alternatePath: "/full-arch-dental-implants",
+    alternatePath: "/ru/full-arch-dental-implants",
     title: "Full Arch Dental Implants in Roseville | Free 3D CT Consultation",
     description:
       "Surgeon-led All-on-4, All-on-6, zygomatic implants, and full-arch dental implant planning with Dr. Alexander Antipov in Roseville, CA.",

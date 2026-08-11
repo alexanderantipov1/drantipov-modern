@@ -42,7 +42,7 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "Dental Implant Complications — Risks & Management",
+  title: { absolute: "Dental Implant Complications: Risks, Prevention & Care" },
   description:
     "Learn about potential dental implant complications including infection, implant failure, and nerve damage. Understand risks and prevention strategies.",
   alternates: {

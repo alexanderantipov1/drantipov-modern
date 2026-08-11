@@ -85,7 +85,15 @@ export default function AboutUsPage() {
         Skip to main content
       </a>
       <div id="main-content">
-        <Hero />
+        <Hero
+          heading={
+            <>
+              About <span className="gradient-text">Dr. Alexander Antipov</span>
+              <br />
+              Board-Certified Oral Surgeon
+            </>
+          }
+        />
         <TrustBadges />
         <About />
         <WallOfSmiles />

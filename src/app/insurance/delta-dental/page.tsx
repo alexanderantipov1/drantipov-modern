@@ -6,9 +6,9 @@ import DualCTA from "@/components/DualCTA";
 import InsuranceCrossLinks from "@/components/InsuranceCrossLinks";
 
 export const metadata: Metadata = {
-  title: "Delta Dental — Implant & Surgery Coverage",
+  title: { absolute: "Delta Dental Implant & Oral Surgery Coverage Guide" },
   description:
-    "How Delta Dental dental insurance applies to dental implants, oral surgery, and orthognathic procedures with Dr. Antipov. Out-of-network coverage, pre-authorization, and reimbursement help.",
+    "How Delta Dental covers dental implants, oral surgery, and orthognathic procedures with Dr. Antipov, including pre-authorization and reimbursement help.",
   alternates: { canonical: "/insurance/delta-dental" },
   openGraph: {
     title: "Delta Dental Coverage",

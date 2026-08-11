@@ -10,8 +10,8 @@ import heroContent from "@/lib/heroContent"
 import DualCTA from "@/components/DualCTA"
 
 export const metadata: Metadata = {
-  title: "Dental Implant Cases - All-on-4 and Immediate Implants | Dr. Antipov",
-  description: "Explore Dr. Antipov's dental implant portfolio featuring All-on-4, immediate implants, and full-arch restoration cases. See real patient transformations with same-day teeth solutions.",
+  title: { absolute: "Dental Implant Cases: All-on-4 & Immediate Tooth Results" },
+  description: "Peruse Dr. Antipov's dental implant portfolio featuring All-on-4, immediate implants, and full arch transformations, all with same day teeth solutions.",
   alternates: {
     canonical: "/surgical-cases/dental-implants",
     languages: {

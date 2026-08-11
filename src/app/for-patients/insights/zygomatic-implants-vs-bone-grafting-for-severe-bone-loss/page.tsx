@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Zygomatic Implants vs Bone Grafting",
+  title: { absolute: "Zygomatic Implants vs Bone Grafting" },
   description:
-    "Compare zygomatic implants vs bone grafting for severe jawbone loss — timeline, recovery, cost, success rates, and who is a better candidate, with Dr. Antipov in Roseville, CA.",
+    "Compare zygomatic implants vs. bone grafting meant for severe jawbone loss: timeline, recovery, cost, and success rates with Dr. Antipov in Roseville, CA.",
   alternates: {
     canonical: "/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss",
     languages: {

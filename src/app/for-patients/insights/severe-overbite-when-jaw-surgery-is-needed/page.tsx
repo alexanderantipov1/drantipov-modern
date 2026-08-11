@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Severe Overbite: When Jaw Surgery Is Needed",
+  title: { absolute: "Severe Overbite: A Guide When Jaw Surgery Is Needed" },
   description:
-    "Most overbites are fixed with braces, but severe skeletal overbites need jaw surgery. Learn when orthognathic surgery is required, the procedure, recovery, and cost with Dr. Antipov.",
+    "Most overbites are fixed with braces, but severe skeletal overbites need jaw surgery. Learn when it's required, plus recovery and cost, with Dr. Antipov.",
   alternates: {
     canonical: "/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed",
     languages: {
@@ -26,20 +26,20 @@ export const metadata: Metadata = {
     "jaw surgery cost insurance",
   ],
   openGraph: {
-    title: "Severe Overbite: When Jaw Surgery Is Needed",
+    title: "Severe Overbite: A Guide When Jaw Surgery Is Needed",
     description: "When braces are not enough — how orthognathic surgery corrects severe skeletal overbites.",
     images: [
       {
         url: "/images/blog/2026-06-19/severe-overbite-jaw-surgery.png",
         width: 1200,
         height: 630,
-        alt: "Severe Overbite: When Jaw Surgery Is Needed",
+        alt: "Severe Overbite: A Guide When Jaw Surgery Is Needed",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Severe Overbite: When Jaw Surgery Is Needed",
+    title: "Severe Overbite: A Guide When Jaw Surgery Is Needed",
     description: "When braces are not enough — how orthognathic surgery corrects severe skeletal overbites.",
     images: ["/images/blog/2026-06-19/severe-overbite-jaw-surgery.png"],
   }
@@ -50,7 +50,7 @@ export default function SevereOverbiteJawSurgeryPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed#article","headline":"Severe Overbite: When Jaw Surgery Is Needed","description":"Most overbites are corrected with orthodontics, but severe skeletal overbites require orthognathic surgery. Learn when surgery is needed, the procedures, treatment sequence, recovery, and cost.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/severe-overbite-jaw-surgery.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How painful is jaw surgery?","acceptedAnswer":{"@type":"Answer","text":"It is discomfort, not severe pain. Most patients describe it as significant swelling and numbness rather than acute pain. Pain medication manages discomfort effectively."}},{"@type":"Question","name":"Will my face look completely different?","acceptedAnswer":{"@type":"Answer","text":"For severe skeletal cases, yes \\u2014 significantly. Most patients report the change as positive and aligning with how they always wanted to look. Subtle to moderate changes are also common."}},{"@type":"Question","name":"How long until I look normal after surgery?","acceptedAnswer":{"@type":"Answer","text":"Major swelling resolves in 2\\u20134 weeks. Substantial improvement is seen by 6\\u20138 weeks. The final result is visible at 6\\u201312 months."}},{"@type":"Question","name":"Can I eat solid food after surgery?","acceptedAnswer":{"@type":"Answer","text":"Liquid only for the first 1\\u20132 weeks, then soft foods through week 6. A full diet is typically resumed by 8\\u201312 weeks."}},{"@type":"Question","name":"Will the hardware set off airport metal detectors?","acceptedAnswer":{"@type":"Answer","text":"Modern titanium plates rarely trigger detectors. Carrying a surgical card may help if you are questioned."}},{"@type":"Question","name":"Can I have jaw surgery if I am older?","acceptedAnswer":{"@type":"Answer","text":"Yes. Adults of any age with adequate health are candidates. Bone heals well at any age."}},{"@type":"Question","name":"Will I need braces forever afterward?","acceptedAnswer":{"@type":"Answer","text":"You will need retainers for life in some form, but braces themselves are typically removed 6\\u201312 months after surgery."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed#article","headline":"Severe Overbite: A Guide When Jaw Surgery Is Needed","description":"Most overbites are corrected with orthodontics, but severe skeletal overbites require orthognathic surgery. Learn when surgery is needed, the procedures, treatment sequence, recovery, and cost.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/severe-overbite-jaw-surgery.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How painful is jaw surgery?","acceptedAnswer":{"@type":"Answer","text":"It is discomfort, not severe pain. Most patients describe it as significant swelling and numbness rather than acute pain. Pain medication manages discomfort effectively."}},{"@type":"Question","name":"Will my face look completely different?","acceptedAnswer":{"@type":"Answer","text":"For severe skeletal cases, yes \\u2014 significantly. Most patients report the change as positive and aligning with how they always wanted to look. Subtle to moderate changes are also common."}},{"@type":"Question","name":"How long until I look normal after surgery?","acceptedAnswer":{"@type":"Answer","text":"Major swelling resolves in 2\\u20134 weeks. Substantial improvement is seen by 6\\u20138 weeks. The final result is visible at 6\\u201312 months."}},{"@type":"Question","name":"Can I eat solid food after surgery?","acceptedAnswer":{"@type":"Answer","text":"Liquid only for the first 1\\u20132 weeks, then soft foods through week 6. A full diet is typically resumed by 8\\u201312 weeks."}},{"@type":"Question","name":"Will the hardware set off airport metal detectors?","acceptedAnswer":{"@type":"Answer","text":"Modern titanium plates rarely trigger detectors. Carrying a surgical card may help if you are questioned."}},{"@type":"Question","name":"Can I have jaw surgery if I am older?","acceptedAnswer":{"@type":"Answer","text":"Yes. Adults of any age with adequate health are candidates. Bone heals well at any age."}},{"@type":"Question","name":"Will I need braces forever afterward?","acceptedAnswer":{"@type":"Answer","text":"You will need retainers for life in some form, but braces themselves are typically removed 6\\u201312 months after surgery."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -85,7 +85,7 @@ export default function SevereOverbiteJawSurgeryPost() {
 
             {/* Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
-              Severe Overbite: When Jaw Surgery Is Needed
+              Severe Overbite: A Guide When Jaw Surgery Is Needed
             </h1>
 
             {/* E-E-A-T: Medically reviewed byline */}

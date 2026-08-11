@@ -6,9 +6,9 @@ import DualCTA from "@/components/DualCTA";
 import InsuranceCrossLinks from "@/components/InsuranceCrossLinks";
 
 export const metadata: Metadata = {
-  title: "Aetna Insurance & Dental Implants | Dr. Antipov | Roseville, CA",
+  title: { absolute: "Aetna Dental Implant Insurance Coverage & Financing" },
   description:
-    "How Aetna dental insurance applies to dental implants, oral surgery, and orthognathic procedures with Dr. Antipov. Out-of-network coverage, pre-authorization, and reimbursement help.",
+    "Learn how Aetna dental insurance covers implants, oral surgery, and orthognathic procedures with Dr. Antipov, including pre-authorization and reimbursement.",
   alternates: { canonical: "/insurance/aetna" },
   openGraph: {
     title: "Aetna Implant Coverage",

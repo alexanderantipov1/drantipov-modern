@@ -5,9 +5,9 @@ import { siteConfig } from "@/constants/siteConfig";
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Smile Again Foundation — Restoring Smiles, Restoring Lives | Dr. Antipov",
+  title: { absolute: "Smile Again Foundation | Reconstructive Dental Care" },
   description:
-    "Smile Again Foundation, founded by Dr. Alexander Antipov in 2025, provides pro bono restorative dental care to patients in need. Mission-driven nonprofit serving Northern California.",
+    "Learn about the Smile Again Foundation, which was founded by Dr. Antipov to provide free restorative dental care to Northern California patients in true need.",
   alternates: { canonical: "/smile-again-foundation" },
   openGraph: {
     title: "Smile Again Foundation",

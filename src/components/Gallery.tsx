@@ -106,7 +106,7 @@ export default function Gallery() {
         <div className="grid grid-cols-5 gap-2 mb-12">
           {slides.map((src, i) => (
             <motion.div key={i} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="rounded-2xl overflow-hidden">
-              <Image src={src} alt={`Featured ${i + 1}`} width={400} height={250} className="w-full h-auto" />
+              <Image src={src} alt={`Galleria Oral & Facial Surgery in Roseville — featured photo ${i + 1}`} width={400} height={250} className="w-full h-auto" />
             </motion.div>
           ))}
         </div>
@@ -144,7 +144,7 @@ export default function Gallery() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
           {additionalImages.map((src, i) => (
             <div key={i} className="rounded-2xl overflow-hidden">
-              <Image src={src} alt={`Additional ${i + 1}`} width={300} height={200} className="w-full h-auto" />
+              <Image src={src} alt={`Galleria Oral & Facial Surgery office and patient care photo ${i + 1}`} width={300} height={200} className="w-full h-auto" />
             </div>
           ))}
         </div>

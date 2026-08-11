@@ -279,7 +279,7 @@ export default function SedationOptionsDentalImplantSurgeryPost() {
                 <li><a href="https://www.aaoms.org/procedures/anesthesia" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Анестезия в челюстно-лицевой хирургии</a></li>
                 <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Установка дентальных имплантов</a></li>
                 <li><a href="https://www.mouthhealthy.org/all-topics-a-z/anesthesia-and-sedation" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy — Анестезия и седация</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Дентальные импланты</a></li>
+                <li><a href="https://medlineplus.gov/ency/article/007645.htm" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Дентальные импланты</a></li>
               </ul>
             </section>
 

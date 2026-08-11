@@ -7,7 +7,7 @@ import PageHero from "@/components/PageHero"
 import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
-  title: "For Dentists - Referrals & Education | Dr. Antipov",
+  title: { absolute: "Dental Surgery Referrals & Continuing Education Courses" },
   description:
     "Partner with Dr. Antipov for complex oral surgery referrals. Collaborative care, seamless communication, and continuing education opportunities for dentists.",
   alternates: {

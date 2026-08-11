@@ -8,7 +8,7 @@ import MicrosoftClarity from "@/components/MicrosoftClarity";
 import { siteUrl, officePhone, officePhoneHref, officeEmail } from "@/data/russianImplantFunnel";
 
 export const metadata: Metadata = {
-  title: "Стоматологам — направления и обучение | Доктор Антипов",
+  title: "Стоматологам — направления и обучение",
   description:
     "Сотрудничество со стоматологами: направления на сложные хирургические случаи, прозрачная коммуникация, обучающие материалы. Партнёрство с практикой доктора Антипова.",
   alternates: {

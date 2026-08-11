@@ -7,7 +7,7 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "What Are Zirconia Arches? Benefits, Cost & Lifespan",
+  title: { absolute: "Zirconia Arches: What They Are, Cost & Lifespan Guide" },
   description:
     "Zirconia arches are the gold standard for full-arch dental implants. How they're made, why they last decades, what they cost, and how they compare to acrylic.",
   alternates: {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "full mouth dental implants",
   ],
   openGraph: {
-    title: "What Are Zirconia Arches? Benefits, Cost & Lifespan",
+    title: "Zirconia Arches: What They Are, Cost & Lifespan Guide",
     description: "Why zirconia is the gold standard for full-arch implants — strength, aesthetics, lifespan, and cost.",
     images: [
       {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "What Are Zirconia Arches? Benefits, Cost & Lifespan",
+    title: "Zirconia Arches: What They Are, Cost & Lifespan Guide",
     description: "Why zirconia is the gold standard for full-arch implants — strength, aesthetics, lifespan, and cost.",
     images: ["/images/blog/2026-06-19/zirconia-arches.png"],
   }
@@ -52,7 +52,7 @@ export default function ZirconiaArchesPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/zirconia-arches#article","headline":"What Are Zirconia Arches? Benefits, Cost & Lifespan","description":"Zirconia arches are the gold standard for full-arch dental implants. How they are made, why they last decades, what they cost, and how they compare to acrylic.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/zirconia-arches","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zirconia-arches.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/zirconia-arches"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is zirconia stronger than titanium?","acceptedAnswer":{"@type":"Answer","text":"Zirconia is harder and more resistant to wear and corrosion, while titanium is more flexible. They serve different roles: titanium implants anchor in the bone, and the zirconia arch is the visible set of teeth."}},{"@type":"Question","name":"Can zirconia arches break?","acceptedAnswer":{"@type":"Answer","text":"Medical-grade zirconia is extremely resistant to fracture. Catastrophic breaks are rare and usually involve trauma or significant misuse, such as chewing ice or opening packages with your teeth."}},{"@type":"Question","name":"Will my zirconia arch turn yellow?","acceptedAnswer":{"@type":"Answer","text":"No. Zirconia is highly stain-resistant. Surface staining from coffee or wine wipes off easily and the underlying material does not discolor."}},{"@type":"Question","name":"How long do zirconia arches last?","acceptedAnswer":{"@type":"Answer","text":"Properly placed zirconia arches routinely last 15 to 20+ years, and many patients never need a replacement."}},{"@type":"Question","name":"Are zirconia arches removable?","acceptedAnswer":{"@type":"Answer","text":"No. A zirconia arch is a fixed prosthesis that is secured to your implants and stays in place; only your dental provider removes it for maintenance. It is not taken in and out like a conventional denture."}},{"@type":"Question","name":"Is zirconia safe?","acceptedAnswer":{"@type":"Answer","text":"Yes. Zirconia is biocompatible and inert, widely used in medical implants, with no known allergies."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/zirconia-arches#article","headline":"Zirconia Arches: What They Are, Cost & Lifespan Guide","description":"Zirconia arches are the gold standard for full-arch dental implants. How they are made, why they last decades, what they cost, and how they compare to acrylic.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/zirconia-arches","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zirconia-arches.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/zirconia-arches"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is zirconia stronger than titanium?","acceptedAnswer":{"@type":"Answer","text":"Zirconia is harder and more resistant to wear and corrosion, while titanium is more flexible. They serve different roles: titanium implants anchor in the bone, and the zirconia arch is the visible set of teeth."}},{"@type":"Question","name":"Can zirconia arches break?","acceptedAnswer":{"@type":"Answer","text":"Medical-grade zirconia is extremely resistant to fracture. Catastrophic breaks are rare and usually involve trauma or significant misuse, such as chewing ice or opening packages with your teeth."}},{"@type":"Question","name":"Will my zirconia arch turn yellow?","acceptedAnswer":{"@type":"Answer","text":"No. Zirconia is highly stain-resistant. Surface staining from coffee or wine wipes off easily and the underlying material does not discolor."}},{"@type":"Question","name":"How long do zirconia arches last?","acceptedAnswer":{"@type":"Answer","text":"Properly placed zirconia arches routinely last 15 to 20+ years, and many patients never need a replacement."}},{"@type":"Question","name":"Are zirconia arches removable?","acceptedAnswer":{"@type":"Answer","text":"No. A zirconia arch is a fixed prosthesis that is secured to your implants and stays in place; only your dental provider removes it for maintenance. It is not taken in and out like a conventional denture."}},{"@type":"Question","name":"Is zirconia safe?","acceptedAnswer":{"@type":"Answer","text":"Yes. Zirconia is biocompatible and inert, widely used in medical implants, with no known allergies."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -306,7 +306,7 @@ export default function ZirconiaArchesPost() {
               <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
                 <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Dental Implant Surgery Procedure</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — National Institute of Dental and Craniofacial Research: Dental Implants</a></li>
+                <li><a href="https://medlineplus.gov/ency/article/007645.htm" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — National Institute of Dental and Craniofacial Research: Dental Implants</a></li>
                 <li><a href="https://pubmed.ncbi.nlm.nih.gov/30638320/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Monolithic zirconia in implant-supported restorations — clinical performance review (PubMed)</a></li>
               </ul>
             </section>

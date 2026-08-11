@@ -16,9 +16,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "dental-implant-financing-options",
     title: "Dental Implant Financing in California: A Guide to Affordable Payment Plans in 2026",
-    metaTitle: "Dental Implant Financing California: 2026 Payment Plans Guide",
+    metaTitle: "Dental Implant Financing California: Payment Plan Guide",
     metaDescription:
-      "Dental implant financing California patients actually use in 2026: CareCredit, Proceed Finance, Cherry, the insurance + HSA/FSA stacking strategy, tax deductions, and a step-by-step checklist for Roseville & Sacramento residents.",
+      "Discover dental implant financing options California patients use in 2026, including CareCredit, HSA stacking, tax deductions, and local Sacramento guides.",
     excerpt:
       "California dental costs run well above the national average — but the right 2026 financing plan turns a five-figure quote into a predictable monthly payment. Here is every option California patients use, plus the stacking strategy that lowers what you borrow.",
     date: "July 7, 2026",
@@ -192,9 +192,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "zirconia-dental-implants-california",
     title: "Zirconia Dental Implants in California: The Metal-Free Guide (and How They Compare to Titanium)",
-    metaTitle: "Zirconia Dental Implants California: Metal-Free Guide (2026)",
+    metaTitle: "Zirconia Dental Implants California: Metal-Free Guide",
     metaDescription:
-      "Zirconia dental implants California patients ask about in 2026: how ceramic “metal-free” implants compare to titanium on strength, aesthetics, and biocompatibility — plus costs, candidacy, and what the procedure looks like in Roseville & Sacramento.",
+      "Zirconia dental implants in CA: Learn and compare ceramic metal-free implants to titanium on strength, aesthetics, biocompatibility, costs, and candidacy.",
     excerpt:
       "Worried about metal in your body or a gray line at the gumline? Zirconia — “ceramic steel” — is the metal-free implant alternative more Northern California patients are asking about. Here is how it compares to titanium, what it costs, and who it suits.",
     date: "July 7, 2026",
@@ -366,9 +366,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "best-full-arch-dental-implant-clinics-california-how-to-compare",
     title: "Best Full-Arch Dental Implant Clinics in California: How to Actually Compare Them",
-    metaTitle: "Best Full-Arch Dental Implant Clinics in California (2026 Guide)",
+    metaTitle: "Best Full-Arch Dental Implant Clinics in CA: How to Compare",
     metaDescription:
-      "Searching for the best full-arch dental implant clinics in California? Here are the 7 criteria that actually separate clinics — surgeon credentials, technology, pricing transparency — and the questions to ask before you commit.",
+      "The best full-arch dental implant clinics in California using 7 key criteria, including surgeon credentials and pricing. Know what to ask before you commit.",
     excerpt:
       "Every clinic's website says they're the best. Here are the seven criteria that actually separate full-arch implant providers in California — and the questions that reveal the difference in one phone call.",
     date: "July 7, 2026",
@@ -524,9 +524,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "told-no-to-dental-implants-why-specialists-say-yes",
     title: "Told No to Dental Implants? Why a Specialist Second Opinion Often Says Yes",
-    metaTitle: "Told No to Dental Implants? Get a Specialist Second Opinion",
+    metaTitle: "Told No to Dental Implants? Specialist Second Opinion",
     metaDescription:
-      "Told you don't have enough bone for dental implants? That \"no\" is often a limitation of 2D X-rays, not your jaw. Learn why oral surgeons with 3D CBCT imaging frequently find a path forward in Roseville, CA.",
+      "Told you lack bone for dental implants? That limitation is often 2D X-rays, not your jaw. Learn how 3D CBCT imaging in Roseville, CA reveals viable options.",
     excerpt:
       "\"Not enough bone\" is one of the most common — and most reversible — verdicts in dentistry. Here is why a general dentist's no is often a specialist's yes, and how 3D imaging finds bone that flat X-rays can't see.",
     date: "July 7, 2026",
@@ -671,9 +671,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "missing-front-tooth-replacement-options",
     title: "Missing Front Tooth Replacement: 5 Best Permanent & Temporary Options",
-    metaTitle: "Missing Front Tooth Replacement: 5 Best Options | Roseville, CA",
+    metaTitle: "Missing Front Tooth Replacement: Permanent & Temporary",
     metaDescription:
-      "Lost a front tooth? Compare the 5 best replacement options — from same-day flippers and Essix retainers to permanent dental implants — with expert guidance from board-certified oral surgeon Dr. Antipov in Roseville, CA.",
+      "Have you lost a front tooth? Compare 5 replacement options, from temporary flippers and Essix retainers to implants with Roseville oral surgeon Dr. Antipov.",
     excerpt:
       "A missing front tooth is an emergency for your confidence, not just your smile. Here are the five best temporary and permanent ways to replace it — and why the visible \"smile zone\" demands a surgical specialist's precision.",
     date: "July 7, 2026",
@@ -833,9 +833,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "single-tooth-implant-vs-dental-bridge-real-cost",
     title: "Single Tooth Implant vs. Dental Bridge: Calculating the Real Cost",
-    metaTitle: "Single Tooth Implant vs. Dental Bridge: The Real Cost",
+    metaTitle: "Implant vs. Dental Bridge: Calculating the Real Cost",
     metaDescription:
-      "A dental bridge can look cheaper up front, but it has a hidden biological cost. Compare a single tooth implant vs. a bridge on healthy teeth, longevity, and 20-year cost in Roseville, CA.",
+      "A dental bridge seems cheaper upfront, but needs altering healthy teeth. Compare single tooth implants vs. bridges, longevity, and 20-year cost in Roseville.",
     excerpt:
       "A bridge often looks cheaper on day one — until you count the healthy teeth it grinds down and the replacements it needs. Here is the honest implant-vs-bridge math, including the biological cost most quotes leave out.",
     date: "July 2, 2026",
@@ -981,9 +981,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "clearchoice-alternatives-northern-california",
     title: "ClearChoice Alternatives in Northern California: Finding Real Value for Full-Arch Implants",
-    metaTitle: "ClearChoice Alternatives in Northern California | Roseville, CA",
+    metaTitle: "ClearChoice Alternatives: Local Surgeon-Led Care Guide",
     metaDescription:
-      "Looking for ClearChoice alternatives in Northern California? See why a board-certified, surgeon-led practice in Roseville offers more personal care, transparent pricing, and a price-match on full-arch implants.",
+      "Looking for ClearChoice alternatives in Northern California? Choose board-certified surgeon Dr. Antipov in Roseville for personalized care & price matching.",
     excerpt:
       "The most recognizable name in implants is not always the best value for your health or your budget. Here is how a board-certified, surgeon-led practice in Roseville gives Northern California patients a more personal, transparent path to full-arch teeth.",
     date: "July 2, 2026",
@@ -1172,9 +1172,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "dental-implant-price-match-guarantee",
     title: "Dental Implant Price-Match Guarantee: Board-Certified Care at a Fair Price",
-    metaTitle: "Dental Implant Price-Match Guarantee | Roseville, CA",
+    metaTitle: "Dental Implant Price-Match Guarantee: Best Value Care",
     metaDescription:
-      "Dr. Antipov's price-match guarantee lets Northern California patients get board-certified oral surgery without overpaying. Learn how like-for-like quote matching works.",
+      "Discover how Dr. Antipov's price match guarantee lets Northern California patients get board certified oral surgery without overpaying on competitor quotes.",
     excerpt:
       "You should not have to choose between the surgeon you trust and the price you can afford. Here is how Dr. Antipov's price-match guarantee lets you get board-certified implant surgery at a fair, transparent price.",
     date: "July 2, 2026",
@@ -1343,9 +1343,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "dental-implants-with-severe-bone-loss-options",
     title: "Can You Get Dental Implants With Severe Bone Loss?",
-    metaTitle: "Dental Implants With Severe Bone Loss: Your Options",
+    metaTitle: "Dental Implants With Severe Bone Loss: Treatment Options",
     metaDescription:
-      "Severe jaw bone loss rarely rules out dental implants. Learn how bone grafting, sinus lifts, short implants, and zygomatic implants restore a foundation for a lasting result.",
+      "Severe jaw bone loss rarely rules out dental implants. Discover how bone grafting, sinus lifts, short implants, and zygomatic implants rebuild support.",
     excerpt:
       "Being told you have too little bone is not the end of the conversation. Here are the real options — from grafting to zygomatic implants — that make implants possible even after years of bone loss.",
     date: "June 23, 2026",
@@ -1487,7 +1487,7 @@ export const guideArticles: RevisionArticle[] = [
     title: "Can Diabetics Safely Get Dental Implants?",
     metaTitle: "Dental Implants for Diabetics: Safety & Success Rates",
     metaDescription:
-      "Diabetes does not rule out dental implants. Learn how well-controlled blood sugar affects healing and success rates, and the steps that make implants safe for diabetic patients.",
+      "Diabetes does not rule out dental implants. Learn how controlled blood sugar affects healing and success rates, plus the key steps to make treatment safe.",
     excerpt:
       "Diabetes alone is not a barrier to dental implants. What matters far more is how well blood sugar is controlled — here is what the evidence shows and how a safe plan is built.",
     date: "June 23, 2026",
@@ -1603,7 +1603,7 @@ export const guideArticles: RevisionArticle[] = [
     title: "Dental Implants for Smokers: Risks and What to Know",
     metaTitle: "Dental Implants for Smokers: Risks, Success & Tips",
     metaDescription:
-      "Smoking lowers dental implant success but does not make it impossible. Learn how smoking affects healing, how much quitting helps, and what improves your odds.",
+      "Smoking lowers dental implant success, but it is not impossible. Learn how smoking impacts healing, how quitting helps, and what improves your success odds.",
     excerpt:
       "Smoking is the single biggest lifestyle risk factor for implant failure — but it does not automatically disqualify you. Here is the honest picture and what actually moves the odds.",
     date: "June 23, 2026",
@@ -1717,9 +1717,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "dental-implants-for-seniors-age-limit",
     title: "Are You Too Old for Dental Implants? Age and Candidacy",
-    metaTitle: "Dental Implants for Seniors: Is There an Age Limit?",
+    metaTitle: "Dental Implants for Seniors: Is There an Age Limit? Facts",
     metaDescription:
-      "There is no upper age limit for dental implants. Learn why health matters more than age, and how patients in their 70s, 80s, and beyond get full-arch implants successfully.",
+      "There is no upper age limit for dental implants. Learn why health matters more than age and how patients in their 70s, 80s, and beyond get full-arch implants.",
     excerpt:
       "Patients often assume they are too old for implants at 70, 80, or beyond. There is no age limit — health and bone matter far more than the number on your birthday.",
     date: "June 23, 2026",
@@ -1838,9 +1838,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "dental-implants-with-osteoporosis-and-autoimmune-conditions",
     title: "Dental Implants With Osteoporosis or Autoimmune Conditions",
-    metaTitle: "Dental Implants With Osteoporosis & Autoimmune Disease",
+    metaTitle: "Dental Implants With Osteoporosis & Autoimmune Guide",
     metaDescription:
-      "Osteoporosis, autoimmune conditions, and their medications do not automatically rule out dental implants. Learn how they affect healing and how a safe plan is built.",
+      "Osteoporosis, autoimmune conditions, and their medications do not instantly rule out dental implants. See how they affect healing and safe treatment options.",
     excerpt:
       "Osteoporosis, autoimmune disease, and the medications that treat them raise important questions for implants — but rarely a flat no. Here is how each is assessed and managed.",
     date: "June 23, 2026",
@@ -1959,9 +1959,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "who-is-a-candidate-for-dental-implants",
     title: "Who Is a Candidate for Dental Implants? (And Who Is Not)",
-    metaTitle: "Who Is a Candidate for Dental Implants?",
+    metaTitle: "Who Is a Candidate for Dental Implants: Requirements",
     metaDescription:
-      "What makes a good candidate for dental implants — and what makes someone a poor candidate. Learn the health, bone, and lifestyle factors that decide implant success.",
+      "Learn what makes a good or poor candidate for dental implants, including essential health, jawbone density, and lifestyle factors that impact implant success.",
     excerpt:
       "Most adults missing teeth are candidates for implants, but a few factors genuinely affect success. Here is what makes a strong candidate — and what needs to be fixed first.",
     date: "June 23, 2026",
@@ -2090,9 +2090,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "titanium-vs-zirconia-dental-implants",
     title: "Titanium vs Zirconia Dental Implants: Which Is Better?",
-    metaTitle: "Titanium vs Zirconia Dental Implants Compared",
+    metaTitle: "Titanium vs Zirconia Dental Implants: Key Differences",
     metaDescription:
-      "Compare titanium and zirconia dental implants on strength, longevity, aesthetics, and cost. Learn which implant material fits your case and why titanium remains the standard.",
+      "Compare titanium vs zirconia dental implants on strength, longevity, aesthetics, and cost to discover why titanium remains the standard for tooth replacement.",
     excerpt:
       "Titanium has been the implant standard for decades; zirconia is the newer metal-free option. Here is an honest comparison of strength, looks, longevity, and cost.",
     date: "June 23, 2026",
@@ -2203,10 +2203,10 @@ export const guideArticles: RevisionArticle[] = [
   },
   {
     slug: "can-dental-implants-get-cavities-or-gum-disease",
-    title: "Can Dental Implants Get Cavities or Gum Disease?",
-    metaTitle: "Can Dental Implants Get Cavities or Gum Disease?",
+    title: "Can Dental Implants Get Cavities or Gum Disease? Facts",
+    metaTitle: "Can Dental Implants Get Cavities or Gum Disease? Facts",
     metaDescription:
-      "Dental implants cannot get cavities, but they can develop peri-implantitis — gum disease around an implant. Learn what causes late implant failure and how to prevent it.",
+      "Implants cannot get cavities, but they can develop peri-implantitis. Learn what causes late implant failure, key warning signs, and how to prevent it.",
     excerpt:
       "Implants cannot decay like natural teeth, but they are not maintenance-free. The real long-term threat is peri-implantitis — and it is largely preventable. Here is how.",
     date: "June 23, 2026",
@@ -2328,9 +2328,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "single-dental-implant-cost-northern-california",
     title: "Single Dental Implant Cost in Northern California",
-    metaTitle: "Single Dental Implant Cost in Northern California (2026)",
+    metaTitle: "Single Dental Implant Cost: Northern California Guide",
     metaDescription:
-      "What a single dental implant really costs out-of-pocket in Northern California — the implant, abutment, and crown — plus what adds to the price and how financing helps.",
+      "Single dental implant costs out-of-pocket in Northern CA: Discover the base prices for posts, abutments, crowns, extra procedural fees, and financing.",
     excerpt:
       "What does one dental implant actually cost in the Sacramento region? Here is an honest breakdown of the implant, abutment, and crown — and what can add to the total.",
     date: "June 23, 2026",
@@ -2443,9 +2443,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "why-are-dental-implants-so-expensive",
     title: "Why Are Dental Implants So Expensive?",
-    metaTitle: "Why Are Dental Implants So Expensive? (Explained)",
+    metaTitle: "Why Are Dental Implants So Expensive? Cost Factors",
     metaDescription:
-      "Why dental implants cost more than bridges or dentures — the surgery, materials, technology, and expertise behind the price, and why they are often the better long-term value.",
+      "Why dental implants cost more than bridges or dentures: surgery, high-end materials, expert tech, and why they deliver superior long-term value for patients.",
     excerpt:
       "Implants cost more than bridges or dentures for real reasons — surgical expertise, premium materials, and technology. Here is where the money goes, and why they often pay off.",
     date: "June 23, 2026",
@@ -2556,9 +2556,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "normal-healing-vs-infection-after-dental-implant-surgery",
     title: "Normal Healing vs Infection After Dental Implant Surgery",
-    metaTitle: "Normal Healing vs Infection After Implant Surgery",
+    metaTitle: "Normal Healing vs Infection: Dental Implant Surgery",
     metaDescription:
-      "What is normal after dental implant surgery — swelling, bruising, and mild pain — versus the warning signs of infection. Know when throbbing pain or fever means call your surgeon.",
+      "Learn what is normal after dental implant surgery versus the warning signs of infection like severe pain or fever so you know when to call your surgeon.",
     excerpt:
       "Some swelling and soreness after implant surgery is completely normal. Knowing the difference between healing and an infection tells you when to relax and when to call.",
     date: "June 23, 2026",
@@ -2681,9 +2681,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "iv-sedation-dentistry-what-to-expect",
     title: "IV Sedation Dentistry: What to Expect Before, During, and After Oral Surgery",
-    metaTitle: "IV Sedation Dentistry: What to Expect | Roseville Oral Surgeon",
+    metaTitle: "IV Sedation Dentistry: Patient Guide to Expectations",
     metaDescription:
-      "IV sedation dentistry explained by a board-certified oral surgeon in Roseville, CA — how twilight sedation feels, safety monitoring, who is a candidate, how to prepare, and what recovery looks like.",
+      "Learn how IV sedation dentistry works from a Roseville oral surgeon including twilight sedation effects, safety, candidacy, preparation, and recovery.",
     excerpt:
       "IV sedation keeps you breathing on your own and able to respond, yet deeply relaxed — and most patients remember little or nothing of their procedure. Here is how the twilight state works, how safety is monitored, and how to prepare for your appointment.",
     date: "July 13, 2026",
@@ -2848,9 +2848,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "permanent-teeth-implants-complete-guide",
     title: "Permanent Teeth Implants: A Complete Guide to Fixed, Non-Removable New Teeth",
-    metaTitle: "Permanent Teeth Implants Guide | Roseville Oral Surgeon",
+    metaTitle: "Permanent Teeth Implants Guide: 2026 Restorative Info",
     metaDescription:
-      "Permanent teeth implants explained by a board-certified oral surgeon in Roseville, CA — how fixed implants differ from dentures, single-tooth vs. All-on-4 options, materials, candidacy with bone loss, and what treatment costs.",
+      "Learn about permanent implants from a Roseville oral surgeon: fixed vs. dentures, All-on-4, materials, handling bone loss, and overall treatment costs.",
     excerpt:
       "Permanent teeth implants are fixed in the jaw — they don't come out at night, don't need adhesive, and preserve the bone that removable dentures let shrink. Here is how single implants, All-on-4 full-arch teeth, and snap-in options compare, and how to plan the investment.",
     date: "July 13, 2026",
@@ -3025,9 +3025,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "all-on-4-dental-implants-recovery-timeline",
     title: "All-on-4 Dental Implants Recovery: A Week-by-Week Healing Timeline",
-    metaTitle: "All-on-4 Recovery Timeline: Week by Week | Roseville Surgeon",
+    metaTitle: "All-on-4 Recovery Timeline: Week-by-Week Guide to Healing",
     metaDescription:
-      "All-on-4 dental implants recovery explained by a board-certified oral surgeon in Roseville, CA — a week-by-week timeline covering the first 24 hours, swelling, the soft-food diet, osseointegration, and warning signs worth a call.",
+      "All-on-4 dental implant recovery timeline by Roseville board-certified oral surgeon Dr. Antipov: 24-hour care, swelling, soft foods and healing stages.",
     excerpt:
       "Most All-on-4 patients are through the hardest part within the first week — but the real work of healing continues quietly for months as bone fuses to the implants. Here is the week-by-week timeline, the diet roadmap, and the warning signs that deserve a call to your surgeon.",
     date: "July 13, 2026",
@@ -3185,9 +3185,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "permanent-dentures-fixed-vs-removable",
     title: "Permanent Dentures: Fixed vs. Removable Implant Solutions Compared",
-    metaTitle: "Permanent Dentures: Fixed vs. Snap-In Options | Roseville, CA",
+    metaTitle: "Permanent Dentures: A Fixed vs. Snap-In Detailed Comparison",
     metaDescription:
-      "What are permanent dentures? A board-certified oral surgeon in Roseville, CA compares fixed full-arch restorations with removable snap-in dentures — stability, chewing power, bone preservation, daily care, and cost.",
+      "Learn how permanent dentures and removable snap-in restorations compare on stability, chewing power, bone preservation, daily care, and cost in Roseville, CA.",
     excerpt:
       "\u201cPermanent dentures\u201d really means implant-supported teeth — and the biggest decision is whether they stay fixed in place or snap in and out. Here is how the two approaches compare on stability, chewing power, bone health, daily care, and cost, from a board-certified oral surgeon in Roseville.",
     date: "July 13, 2026",
@@ -3353,9 +3353,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "teeth-in-a-day-same-day-smile-restoration",
     title: "Teeth in a Day: How Same-Day Full-Arch Smile Restoration Works",
-    metaTitle: "Teeth in a Day: Same-Day Smile Restoration | Roseville, CA",
+    metaTitle: "Teeth in a Day: Same-Day Dental Implant Restoration",
     metaDescription:
-      "How does \u201cTeeth in a Day\u201d work? A board-certified oral surgeon in Roseville, CA walks through the same-day full-arch protocol — 3D planning, extractions, implant placement, and leaving with fixed teeth in one appointment.",
+      "How \u201cTeeth in a Day\u201d works: board-certified Roseville surgeon Dr. Antipov explains same-day 3D planning, extractions, implants, and fixed temporary teeth.",
     excerpt:
       "\u201cTeeth in a Day\u201d compresses extractions, implant placement, and a fixed temporary bridge into a single surgical appointment — no months of gaps or removable flippers. Here is how the same-day full-arch protocol actually works, who qualifies, and what the day itself looks like, from a board-certified oral surgeon in Roseville.",
     date: "July 14, 2026",
@@ -3511,9 +3511,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "full-mouth-dental-implants-cost-2026-guide",
     title: "Full Mouth Dental Implants Cost in 2026: A Guide to Value and Financing",
-    metaTitle: "Full Mouth Dental Implants Cost 2026 | Roseville, CA",
+    metaTitle: "Full Mouth Dental Implants Cost: Pricing & Breakdown",
     metaDescription:
-      "What do full mouth dental implants cost in 2026? A board-certified oral surgeon in Roseville, CA breaks down what drives the quote — implants, materials, sedation — and how to pay for it with insurance, HSA/FSA dollars, tax deductions, and financing.",
+      "Full mouth dental implants cost guide for 2026: Roseville oral surgeon breaks down pricing factors, insurance, HSA/FSA options, tax deductions, & financing.",
     excerpt:
       "The sticker price of full mouth dental implants rarely tells the whole story. Here is what actually drives a full-arch quote in 2026 — implant count, materials, sedation, preparatory work — and the practical playbook for paying for it: insurance stacking, HSA/FSA dollars, tax deductions, and financing, from a board-certified oral surgeon in Roseville.",
     date: "July 14, 2026",
@@ -3672,9 +3672,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "denture-alternatives-that-work",
     title: "Denture Alternatives That Work: Your 2026 Guide to a Permanent Smile",
-    metaTitle: "Denture Alternatives That Work: 2026 Guide | Roseville, CA",
+    metaTitle: "Denture Alternatives That Work: Fixed & Snap-In Types",
     metaDescription:
-      "Tired of slipping dentures? A board-certified oral surgeon in Roseville, CA compares the denture alternatives that actually work in 2026 — fixed full-arch bridges, snap-in overdentures, and what each means for bone health, eating, and cost.",
+      "Tired of slipping dentures? An oral surgeon in Roseville compares denture options: fixed full-arch bridges and snap-in overdentures for bone health and cost.",
     excerpt:
       "If your dentures slip when you speak or keep certain foods off the menu, they aren't really working. Here are the modern alternatives that are — fixed full-arch bridges and snap-in implant overdentures — compared honestly on stability, bone health, daily life, and cost, from a board-certified oral surgeon in Roseville.",
     date: "July 14, 2026",
@@ -3839,9 +3839,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "specialist-for-complex-dental-implants",
     title: "Choosing a Specialist for Complex Dental Implants: What Actually Matters",
-    metaTitle: "Specialist for Complex Dental Implants | Roseville, CA",
+    metaTitle: "Specialist for Complex Dental Implants: Care Information",
     metaDescription:
-      "Severe bone loss, a failed implant, or a 'too difficult' case? Here's how to evaluate a specialist for complex dental implants — training, board certification, case volume, and technology — from a board-certified oral surgeon in Roseville, CA.",
+      "Facing severe bone loss or a failed implant? Learn how to evaluate a complex implant specialist, from board certification to tech, from a Roseville surgeon.",
     excerpt:
       "When a case involves severe bone loss, a previous implant failure, or the aesthetic zone, the surgeon matters more than anything else in the plan. Here's a practical framework for evaluating a complex-implant specialist — the training, certification, portfolio, and technology questions worth asking before you commit.",
     date: "July 14, 2026",
@@ -4000,9 +4000,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "alternatives-to-dental-bridges",
     title: "Alternatives to Dental Bridges: Every Option Compared for 2026",
-    metaTitle: "Alternatives to Dental Bridges: 2026 Options | Roseville, CA",
+    metaTitle: "Alternatives to Dental Bridges: Every Option Compared",
     metaDescription:
-      "Don't want healthy teeth ground down for a bridge? A board-certified oral surgeon in Roseville, CA compares every alternative — partial dentures, Maryland bridges, orthodontic space closure, and single-tooth implants — on bone health, longevity, and lifetime cost.",
+      "Avoid grinding down healthy teeth for a bridge: Roseville oral surgeon compares single implants, partial dentures, & alternatives on bone health & cost.",
     excerpt:
       "A traditional bridge fills the gap, but at a price: the healthy teeth on either side get ground down to serve as anchors. Here's the full menu of alternatives — removable partials, resin-bonded Maryland bridges, orthodontic space closure, and the single-tooth implant — compared honestly on bone health, longevity, and what each really costs over a lifetime.",
     date: "July 14, 2026",
@@ -4156,9 +4156,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "snap-in-dentures-complete-guide",
     title: "Snap-In Dentures: The Complete 2026 Guide to Secure, Implant-Supported Smiles",
-    metaTitle: "Snap-In Dentures: Complete 2026 Guide | Roseville, CA",
+    metaTitle: "Snap-In Dentures: A Complete 2026 Guide to Implants",
     metaDescription:
-      "How do snap-in dentures work and who qualifies? A board-certified oral surgeon in Roseville, CA explains the locator attachment system, implant counts for upper vs. lower jaws, candidacy with bone loss, costs, and long-term maintenance.",
+      "Snap-in dentures work using locator attachments on 2 to 4 dental implants. Learn candidacy, upper vs. lower jaw differences, costs, and care in Roseville.",
     excerpt:
       "Snap-in dentures lock onto dental implants with a mechanical click — no adhesive, no slipping mid-sentence. Here is how the attachment system works, how many implants each jaw needs, what to expect from surgery through maintenance, and what it costs, from a board-certified oral surgeon in Roseville.",
     date: "July 20, 2026",
@@ -4319,9 +4319,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "before-and-after-all-on-4-dental-implants",
     title: "Before and After All-on-4 Dental Implants: Real Transformations & Expectations",
-    metaTitle: "Before & After All-on-4 Dental Implants | Roseville, CA",
+    metaTitle: "Before & After All-on-4 Dental Implants: Info Guide",
     metaDescription:
-      "What do before-and-after All-on-4 results really look like? A board-certified oral surgeon in Roseville, CA explains the transformation — facial structure, chewing power, same-day teeth — and how to judge quality results.",
+      "See how All-on-4 implants transform your smile, facial structure, and chewing power. Learn how to judge quality before-and-after results in Roseville, CA.",
     excerpt:
       "The most striking change in All-on-4 before-and-after photos often isn't the teeth — it's the restored facial structure and the way patients carry themselves. Here is what the transformation really involves, who benefits most, and how to judge the quality of results, from a board-certified oral surgeon in Roseville.",
     date: "July 21, 2026",
@@ -4478,9 +4478,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "dental-implant-surgery-complete-guide",
     title: "Dental Implant Surgery: The Complete Guide to Restoring Your Smile in 2026",
-    metaTitle: "Dental Implant Surgery: Complete 2026 Guide | Roseville, CA",
+    metaTitle: "Dental Implant Surgery: A Complete Guide & Information",
     metaDescription:
-      "What happens during dental implant surgery? A board-certified oral surgeon in Roseville, CA walks through eligibility, 3D-guided placement, IV sedation, the first 48 hours of recovery, and how to choose the right specialist.",
+      "Learn what happens during dental implant surgery from a Roseville oral surgeon, covering 3D placement, IV sedation, 48-hour recovery, and specialist tips.",
     excerpt:
       "Dental implant surgery is more predictable than most patients have been led to believe — long-term success rates exceed 95%. Here is the complete journey: who qualifies, what the 3D-guided procedure feels like under IV sedation, how the first 48 hours of recovery go, and what to look for in a surgeon, from a board-certified oral surgeon in Roseville.",
     date: "July 21, 2026",
@@ -4639,9 +4639,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "same-day-dental-implant-process-step-by-step",
     title: "The Same-Day Dental Implant Process: Your 2026 Step-by-Step Guide",
-    metaTitle: "Same-Day Dental Implant Process: Step-by-Step | Roseville, CA",
+    metaTitle: "Same-Day Dental Implant Process: Steps and Healing",
     metaDescription:
-      "How does the same-day dental implant process work? A board-certified oral surgeon in Roseville, CA walks through all four stages — 3D digital planning, surgery with immediate loading, osseointegration, and the final restoration.",
+      "Discover how same-day dental implants work from a Roseville oral surgeon, covering 3D planning, surgery with immediate loading, and final restoration.",
     excerpt:
       "Same-day dental implants put a functional set of temporary teeth on your new implants within a single 24-hour window — no months of toothless waiting. Here is the four-stage process step by step: digital planning, the surgical day, the healing phase, and your permanent teeth, from a board-certified oral surgeon in Roseville.",
     date: "July 21, 2026",
@@ -4799,9 +4799,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "snap-in-dentures-el-dorado-hills",
     title: "Snap-In Dentures in El Dorado Hills: Your 2026 Buying Guide",
-    metaTitle: "Snap-In Dentures El Dorado Hills: 2026 Buying Guide | Dr. Antipov",
+    metaTitle: "Snap-In Dentures El Dorado Hills: Options and Info",
     metaDescription:
-      "Considering snap-in dentures in El Dorado Hills? A board-certified oral surgeon 25 minutes away in Roseville, CA explains how implant-retained overdentures work, snap-in vs. All-on-4, the procedure timeline, costs, and insurance for El Dorado Hills patients.",
+      "Considering snap-in dentures in El Dorado Hills? Learn how overdentures work, compare All-on-4 options, and review costs with a Roseville oral surgeon.",
     excerpt:
       "Snap-in dentures anchor to 2\u20134 dental implants for a secure, adhesive-free fit \u2014 and for El Dorado Hills residents, board-certified surgical care is a 25-minute drive away. Here is how the system works, how it compares to All-on-4, and what the process looks like from consultation to the final snap.",
     date: "July 27, 2026",
@@ -4961,9 +4961,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "how-to-fix-loose-dentures-permanently",
     title: "How to Fix Loose Dentures Permanently: The 2026 Stability Guide",
-    metaTitle: "How to Fix Loose Dentures Permanently | Roseville, CA",
+    metaTitle: "How to Fix Loose Dentures: Permanent Implant Options",
     metaDescription:
-      "How do you fix loose dentures permanently? A board-certified oral surgeon in Roseville, CA explains why relines and adhesives fail, how implants stop the bone-loss loop, and how snap-in overdentures compare to fixed All-on-4 bridges as permanent solutions.",
+      "Fix loose dentures permanently: Roseville oral surgeon explains why adhesives fail, how implants halt bone loss, and snap-in vs. All-on-4 permanent options.",
     excerpt:
       "Relines and adhesive are temporary patches for a structural problem: the jawbone under a traditional denture keeps shrinking. The only permanent fix anchors your teeth to dental implants. Here is why dentures loosen, and how snap-in and fixed All-on-4 solutions compare, from a board-certified oral surgeon in Roseville.",
     date: "July 27, 2026",
@@ -5009,7 +5009,7 @@ export const guideArticles: RevisionArticle[] = [
         paras: [
           [
             "A loosening denture is rarely a flaw in the denture — it is biology. Natural tooth roots transmit chewing pressure into the jaw, and that pressure is the signal that tells the body to maintain bone density. Remove the roots and the signal stops: the jaw ridge resorbs, the gum tissue over it changes shape, and the denture molded to last year's anatomy starts to rock and slip. The National Institute of Dental and Craniofacial Research's ",
-            { text: "overview of dental implants", href: "https://www.nidcr.nih.gov/health-info/dental-implants" },
+            { text: "overview of dental implants", href: "https://medlineplus.gov/ency/article/007645.htm" },
             " explains how implants restore that root function.",
           ],
           [
@@ -5133,9 +5133,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "dental-implant-price-match-guarantee-california",
     title: "Dental Implant Price-Match Guarantee in California: How to Get Specialist Care at a Fair Local Rate",
-    metaTitle: "Dental Implant Price Match Guarantee California | 2026 Guide",
+    metaTitle: "Dental Implant Price Match: California Price Guide",
     metaDescription:
-      "How does a dental implant price match guarantee work in California? A board-certified oral surgeon in Roseville, CA explains the like-for-like standard, why Sacramento-area rates beat coastal prices, what quotes qualify, and how to shop specialist care without overpaying.",
+      "How a dental implant price match guarantee works in California: board-certified oral surgeon in Roseville explains qualifying quotes & Sacramento rates.",
     excerpt:
       "California implant quotes for the same procedure can differ by thousands of dollars depending on zip code and provider type. A price-match guarantee lets you choose a board-certified surgeon on skill, not fee schedule. Here is how the like-for-like standard works and how to use regional pricing to your advantage.",
     date: "July 27, 2026",
@@ -5283,9 +5283,9 @@ export const guideArticles: RevisionArticle[] = [
   {
     slug: "implant-supported-dentures-monterey",
     title: "Implant-Supported Dentures for Monterey Patients: Why the Drive to Roseville Pays Off",
-    metaTitle: "Implant Supported Dentures Monterey: 2026 Guide | Dr. Antipov",
+    metaTitle: "Implant Supported Dentures Monterey: Options Guide",
     metaDescription:
-      "Searching for implant supported dentures in Monterey? A board-certified oral surgeon in Roseville, CA explains how implant dentures end loose-denture problems, why coastal pricing runs higher, and how Monterey patients get specialist care with a short trip inland.",
+      "Searching for implant dentures in Monterey? Learn how implant dentures solve loose dentures, why coastal costs run high, and how Roseville specialists help.",
     excerpt:
       "Implant-supported dentures anchor to titanium posts and end the slipping, adhesives, and bone loss of traditional plates. For Monterey patients, board-certified surgical care in Roseville is a scenic three-hour drive away — often at a meaningfully lower Sacramento-area price for identical materials.",
     date: "July 27, 2026",
@@ -5879,7 +5879,7 @@ export const guideArticles: RevisionArticle[] = [
             " is a board-certified oral and maxillofacial surgeon and Diplomate of the American Board of Oral and Maxillofacial Surgery \u2014 hospital-based surgical residency training beyond dental school. That distinction matters most in complex cases: significant bone loss, failed previous implants, or full-arch reconstruction. When integration has already failed once, the standards are even higher \u2014 our guide to ",
             { text: "dental implant revision surgery", href: "/for-patients/insights/dental-implant-revision-surgery" },
             " explains how specialists rebuild after a failed case. The National Institute of Dental and Craniofacial Research's overview of ",
-            { text: "dental implant care and risks", href: "https://www.nidcr.nih.gov/health-info/dental-implants" },
+            { text: "dental implant care and risks", href: "https://medlineplus.gov/ency/article/007645.htm" },
             " underscores the same point: outcomes depend on proper evaluation, placement, and follow-up.",
           ],
         ],
@@ -6062,7 +6062,7 @@ export const guideArticles: RevisionArticle[] = [
           ],
           [
             "The same time-value logic applies to waiting. The National Institute of Dental and Craniofacial Research's overview of ",
-            { text: "dental implant care", href: "https://www.nidcr.nih.gov/health-info/dental-implants" },
+            { text: "dental implant care", href: "https://medlineplus.gov/ency/article/007645.htm" },
             " notes that implants depend on adequate healthy bone \u2014 and bone under a missing tooth shrinks steadily without root stimulation. Delaying a $4,000 implant by a few years can turn it into a $6,000+ graft-plus-implant case.",
           ],
         ],
@@ -6223,7 +6223,7 @@ export const guideArticles: RevisionArticle[] = [
           ],
           [
             "The discipline this phase demands is simple: don't overload the implant early. Micro-movement during fusion causes soft scar tissue to form instead of bone \u2014 the root cause of loose, failing implants. The National Institute of Dental and Craniofacial Research's overview of ",
-            { text: "dental implant care", href: "https://www.nidcr.nih.gov/health-info/dental-implants" },
+            { text: "dental implant care", href: "https://medlineplus.gov/ency/article/007645.htm" },
             " emphasizes the same follow-up-driven approach to protecting the bond.",
           ],
         ],
@@ -6350,7 +6350,7 @@ export const guideArticles: RevisionArticle[] = [
         paras: [
           [
             "A dental implant is not one piece \u2014 it's a sophisticated three-part system designed to mimic a natural tooth, as the National Institute of Dental and Craniofacial Research's overview of ",
-            { text: "dental implants", href: "https://www.nidcr.nih.gov/health-info/dental-implants" },
+            { text: "dental implants", href: "https://medlineplus.gov/ency/article/007645.htm" },
             " explains. Each component plays a specific role in the longevity and aesthetics of the result, and the quality of each part directly influences the final quote:",
           ],
         ],
@@ -6525,7 +6525,7 @@ export const guideArticles: RevisionArticle[] = [
         paras: [
           [
             "The protocol behind same day teeth is called immediate load: failing teeth are removed, ",
-            { text: "dental implants", href: "https://www.nidcr.nih.gov/health-info/dental-implants" },
+            { text: "dental implants", href: "https://medlineplus.gov/ency/article/007645.htm" },
             " are placed, and a fixed temporary bridge is attached \u2014 all in one appointment. A common misconception is that you walk out with your final zirconia teeth that afternoon. In reality, you leave with a high-quality fixed temporary bridge that looks and feels natural but is deliberately lighter, so your jawbone can heal and fuse with the implants without the strain of heavy chewing forces. Once integration is complete, it's replaced with your permanent, handcrafted restoration \u2014 and you never endure a \u201cdenture phase\u201d of gaps or removable plates that slip.",
           ],
         ],
@@ -6699,7 +6699,7 @@ export const guideArticles: RevisionArticle[] = [
         paras: [
           [
             "A full mouth restoration isn't a cosmetic upgrade \u2014 it's a fundamental rebuilding of your oral health. A series of titanium posts is placed directly into the jawbone to act as artificial tooth roots, providing a permanent foundation for a custom-crafted bridge that replaces every tooth in the arch. The process relies on osseointegration \u2014 the bone physically fusing with the titanium, as the National Institute of Dental and Craniofacial Research's overview of ",
-            { text: "dental implants", href: "https://www.nidcr.nih.gov/health-info/dental-implants" },
+            { text: "dental implants", href: "https://medlineplus.gov/ency/article/007645.htm" },
             " explains \u2014 and it's that bond that stops the jawbone from shrinking away.",
           ],
           "Dentures don't address that underlying bone loss. Without roots stimulating the jaw, the bone deteriorates, leading to the sunken lower face clinicians call facial collapse. Add the slipping, clicking, relining, and adhesives, and a denture is a temporary fix that often creates more problems than it solves. Here is how the two solutions actually compare:",
@@ -6871,7 +6871,7 @@ export const guideArticles: RevisionArticle[] = [
         paras: [
           [
             "Unlike a standard denture that rests on the gums, a snap-in system is anchored to the jawbone through ",
-            { text: "dental implants", href: "https://www.nidcr.nih.gov/health-info/dental-implants" },
+            { text: "dental implants", href: "https://medlineplus.gov/ency/article/007645.htm" },
             ". The stability comes from specialized attachments \u2014 commonly called Locators \u2014 that let the plate snap firmly onto the implants so your teeth don't shift while you speak or chew. Three components work in unison:",
           ],
         ],
@@ -7066,7 +7066,7 @@ export const guideArticles: RevisionArticle[] = [
         paras: [
           [
             "Low-cost clinics often save money with generic, low-grade components that may not integrate properly with your jawbone \u2014 the science of osseointegration, explained in the National Institute of Dental and Craniofacial Research's overview of ",
-            { text: "dental implants", href: "https://www.nidcr.nih.gov/health-info/dental-implants" },
+            { text: "dental implants", href: "https://medlineplus.gov/ency/article/007645.htm" },
             ", depends on both material quality and placement precision. When an inexperienced provider performs complex surgery, the risk of nerve damage or misalignment rises \u2014 and those errors require revision surgery that is far more invasive and expensive than getting it right the first time. Our guide to ",
             { text: "dental implant revision surgery", href: "/for-patients/insights/dental-implant-revision-surgery" },
             " shows what correcting a failed case actually involves.",
@@ -7223,7 +7223,7 @@ export const guideArticles: RevisionArticle[] = [
         paras: [
           [
             "When a natural tooth root is gone, the jawbone stops receiving the stimulation it needs to maintain density \u2014 a process called resorption that can claim significant bone volume within the first year, as explained in the National Institute of Dental and Craniofacial Research's overview of ",
-            { text: "dental implants", href: "https://www.nidcr.nih.gov/health-info/dental-implants" },
+            { text: "dental implants", href: "https://medlineplus.gov/ency/article/007645.htm" },
             ". Waiting years to save the full cash amount often backfires: many patients who delay end up needing bone grafting or sinus lifts that add time, complexity, and cost to what could have been a straightforward procedure. A payment plan lets you lock in today's simpler surgery instead of financing tomorrow's bigger one \u2014 our guide to ",
             { text: "implant options with severe bone loss", href: "/for-patients/insights/dental-implants-with-severe-bone-loss-options" },
             " shows what the corrective path involves.",

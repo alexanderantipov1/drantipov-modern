@@ -68,7 +68,7 @@ export const facialCosmeticSurgeryArticles: Record<string, CaseArticle> = {
   },
 
   fcs000005: {
-    metaTitle: "Facelift & Eyelid Surgery (Blepharoplasty) | Dr. Antipov, Roseville CA",
+    metaTitle: "Facelift & Eyelid Surgery (Blepharoplasty): Surgery Case",
     metaDescription:
       "SMAS facelift, neck lift, and upper/lower eyelid surgery in Roseville, CA. Dr. Antipov at Galleria Oral & Facial Surgery serves Sacramento and Placer County.",
     keywords: [
@@ -195,7 +195,7 @@ export const facialCosmeticSurgeryArticles: Record<string, CaseArticle> = {
   },
 
   fcs000003: {
-    metaTitle: "Juvederm Dermal Fillers for Folds & Lines | Dr. Antipov, Roseville CA",
+    metaTitle: "Juvederm Dermal Fillers for Folds & Lines: Surgical Case",
     metaDescription:
       "Juvederm dermal fillers for nasolabial folds, marionette lines, and chin in Roseville, CA. Dr. Antipov at Galleria Oral & Facial Surgery serves Sacramento.",
     keywords: [

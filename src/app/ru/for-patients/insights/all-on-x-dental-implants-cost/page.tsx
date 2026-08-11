@@ -264,7 +264,7 @@ export default function AllOnXCostPost() {
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
                 <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Процедура установки дентальных имплантов</a></li>
                 <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M — концепция немедленной нагрузки All-on-4</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
+                <li><a href="https://medlineplus.gov/ency/article/007645.htm" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
               </ul>
             </section>
 

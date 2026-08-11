@@ -7,9 +7,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Dental Implants After Tooth Extraction",
+  title: { absolute: "Dental Implants After Extraction: Timing & Options" },
   description:
-    "Dental implants after tooth extraction: timing options, what healing really looks like, bone preservation, and how to choose the safest plan for a lasting result.",
+    "Explore dental implants after tooth extraction: timing options, healing timelines, bone preservation, and how to choose the safest plan for lasting results.",
   alternates: {
     canonical: "/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options",
     languages: {
@@ -26,20 +26,20 @@ export const metadata: Metadata = {
     "tooth extraction implant timing",
   ],
   openGraph: {
-    title: "Dental Implants After Tooth Extraction",
+    title: "Dental Implants After Extraction: Timing & Options",
     description: "Timing options, healing stages, and bone preservation for dental implants after tooth extraction.",
     images: [
       {
         url: "/images/blog/2026-06-19/implants-after-extraction.png",
         width: 1200,
         height: 630,
-        alt: "Dental Implants After Tooth Extraction: Timing, Healing, and Options",
+        alt: "Dental Implants After Extraction: Timing & Options: Timing, Healing, and Options",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dental Implants After Tooth Extraction",
+    title: "Dental Implants After Extraction: Timing & Options",
     description: "Timing options, healing stages, and bone preservation for dental implants after tooth extraction.",
     images: ["/images/blog/2026-06-19/implants-after-extraction.png"],
   }
@@ -50,7 +50,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options#article","headline":"Dental Implants After Tooth Extraction: Timing, Healing, and Options","description":"Comprehensive guide to dental implants after tooth extraction \\u2014 immediate, early, and delayed timing options, healing stages, bone preservation, and factors that influence success.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/implants-after-extraction.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does the entire dental implant process take after extraction?","acceptedAnswer":{"@type":"Answer","text":"It depends on timing and whether grafting is needed. Some immediate cases may shorten the overall timeline, but many still require several months for osseointegration before the final crown is placed. If the site needs healing or bone support first, the full process can take longer, and your surgeon should outline a step-by-step plan for your case."}},{"@type":"Question","name":"Are dental implants painful after a tooth extraction?","acceptedAnswer":{"@type":"Answer","text":"Most patients feel pressure during the procedure, but not sharp pain due to anesthesia. After surgery, soreness is common for a few days and is usually manageable with recommended medications and care instructions. If pain increases after initial improvement, contact your surgeon for evaluation."}},{"@type":"Question","name":"Can I eat normally after getting an implant?","acceptedAnswer":{"@type":"Answer","text":"You will usually need a softer diet for a short period after extraction and implant placement. As healing progresses, most patients return to a normal diet, but hard or sticky foods may need to be avoided until your surgeon confirms stability. Following food guidelines helps protect the implant during the healing window."}},{"@type":"Question","name":"How do I care for the extraction site and implant area?","acceptedAnswer":{"@type":"Answer","text":"Follow your surgeon's instructions closely, especially in the first week. Gentle cleaning, avoiding disturbance of the clot, and using rinses if prescribed support healing. Long-term, implants require daily brushing and interdental cleaning, plus routine professional maintenance."}},{"@type":"Question","name":"What are the risks of dental implants after tooth extraction?","acceptedAnswer":{"@type":"Answer","text":"Implants have high success rates, but risks include infection, delayed healing, nerve or sinus complications in specific locations, and implant failure to integrate. Risk level depends on bone quality, gum health, and whether infection was present at extraction. A thorough exam and imaging are the best ways to reduce surprises."}},{"@type":"Question","name":"Are dental implants covered by insurance after extraction?","acceptedAnswer":{"@type":"Answer","text":"Coverage varies by plan. Some policies contribute to the extraction but not the implant, while others may cover part of the surgical or crown portion. The best step is to request a written estimate and have the office check your benefits before treatment."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options#article","headline":"Dental Implants After Extraction: Timing & Options: Timing, Healing, and Options","description":"Comprehensive guide to dental implants after tooth extraction \\u2014 immediate, early, and delayed timing options, healing stages, bone preservation, and factors that influence success.","inLanguage":"en","url":"https://www.drantipov.com/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/implants-after-extraction.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does the entire dental implant process take after extraction?","acceptedAnswer":{"@type":"Answer","text":"It depends on timing and whether grafting is needed. Some immediate cases may shorten the overall timeline, but many still require several months for osseointegration before the final crown is placed. If the site needs healing or bone support first, the full process can take longer, and your surgeon should outline a step-by-step plan for your case."}},{"@type":"Question","name":"Are dental implants painful after a tooth extraction?","acceptedAnswer":{"@type":"Answer","text":"Most patients feel pressure during the procedure, but not sharp pain due to anesthesia. After surgery, soreness is common for a few days and is usually manageable with recommended medications and care instructions. If pain increases after initial improvement, contact your surgeon for evaluation."}},{"@type":"Question","name":"Can I eat normally after getting an implant?","acceptedAnswer":{"@type":"Answer","text":"You will usually need a softer diet for a short period after extraction and implant placement. As healing progresses, most patients return to a normal diet, but hard or sticky foods may need to be avoided until your surgeon confirms stability. Following food guidelines helps protect the implant during the healing window."}},{"@type":"Question","name":"How do I care for the extraction site and implant area?","acceptedAnswer":{"@type":"Answer","text":"Follow your surgeon's instructions closely, especially in the first week. Gentle cleaning, avoiding disturbance of the clot, and using rinses if prescribed support healing. Long-term, implants require daily brushing and interdental cleaning, plus routine professional maintenance."}},{"@type":"Question","name":"What are the risks of dental implants after tooth extraction?","acceptedAnswer":{"@type":"Answer","text":"Implants have high success rates, but risks include infection, delayed healing, nerve or sinus complications in specific locations, and implant failure to integrate. Risk level depends on bone quality, gum health, and whether infection was present at extraction. A thorough exam and imaging are the best ways to reduce surprises."}},{"@type":"Question","name":"Are dental implants covered by insurance after extraction?","acceptedAnswer":{"@type":"Answer","text":"Coverage varies by plan. Some policies contribute to the extraction but not the implant, while others may cover part of the surgical or crown portion. The best step is to request a written estimate and have the office check your benefits before treatment."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -85,7 +85,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
 
             {/* Title */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6 leading-tight">
-              Dental Implants After Tooth Extraction: Timing, Healing, and Options
+              Dental Implants After Extraction: Timing & Options: Timing, Healing, and Options
             </h1>
 
             {/* E-E-A-T: Medically reviewed byline */}

@@ -8,9 +8,9 @@ import PageHero from "@/components/PageHero"
 import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
-  title: "Pre-Operative Instructions | Preparing for Surgery | Dr. Antipov",
+  title: { absolute: "Pre-Operative Instructions | How to Prep for Surgery" },
   description:
-    "Essential pre-operative instructions for oral surgery with Dr. Antipov. Learn what to do before your procedure, what to bring, and how to prepare for a successful surgery.",
+    "Prepare for oral surgery with Dr. Antipov. Discover all the essential pre-operative steps, what items to bring, and how to get ready for a smooth procedure.",
   alternates: {
     canonical: "/for-patients/pre-op",
     languages: {

@@ -6,21 +6,12 @@ import { insightPosts } from "@/constants/insights";
 
 const siteUrl = siteConfig.url;
 
-// Static ISO dates — Google ignores `lastmod` that churns every build
-const lastModRecent = new Date("2026-06-14"); // Hero, About, expertise hub (recent updates)
-const lastModBoneGraft = new Date("2026-06-12"); // bone-grafting (new anchors)
-const lastModSeason = new Date("2026-06-01"); // procedures + insurance (seasonal refresh)
-const lastModLegacy = new Date("2026-05-01"); // legal, locations, cases
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = lastModRecent;
 
   return [
     {
       url: siteUrl,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 1,
       alternates: { languages: { en: siteUrl, "x-default": siteUrl } },
     },
 
@@ -29,16 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ============================================================
     {
       url: `${siteUrl}/expertise`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.92,
       alternates: { languages: { en: `${siteUrl}/expertise`, "x-default": `${siteUrl}/expertise` } },
     },
     ...(["full-arch-implants", "single-tooth", "bone-grafting", "jaw-surgery", "sleep-apnea", "mole-removal", "tmj", "wisdom-teeth", "tooth-extractions", "sedation-anesthesia", "zygomatic-implants", "implant-rescue", "snap-on-dentures", "facial-cosmetic", "oral-pathology"] as const).map((slug) => ({
       url: `${siteUrl}/expertise/${slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.88,
       alternates: { languages: { en: `${siteUrl}/expertise/${slug}`, "x-default": `${siteUrl}/expertise/${slug}` } },
     })),
 
@@ -47,58 +32,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ============================================================
     {
       url: `${siteUrl}/about`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.9,
       alternates: { languages: { en: `${siteUrl}/about`, "x-default": `${siteUrl}/about` } },
     },
     {
       url: `${siteUrl}/our-team`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.88,
       alternates: { languages: { en: `${siteUrl}/our-team`, "x-default": `${siteUrl}/our-team` } },
     },
     {
       url: `${siteUrl}/contact`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
       alternates: { languages: { en: `${siteUrl}/contact`, "x-default": `${siteUrl}/contact` } },
     },
     {
       url: `${siteUrl}/insurance`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.82,
       alternates: { languages: { en: `${siteUrl}/insurance`, "x-default": `${siteUrl}/insurance` } },
     },
     {
       url: `${siteUrl}/results`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.75,
       alternates: { languages: { en: `${siteUrl}/results`, "x-default": `${siteUrl}/results` } },
     },
     {
       url: `${siteUrl}/locations`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.75,
       alternates: { languages: { en: `${siteUrl}/locations`, "x-default": `${siteUrl}/locations` } },
     },
     {
       url: `${siteUrl}/glossary`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.7,
       alternates: { languages: { en: `${siteUrl}/glossary`, "x-default": `${siteUrl}/glossary` } },
     },
     {
       url: `${siteUrl}/full-arch-dental-implants`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.92,
       alternates: { languages: { en: `${siteUrl}/full-arch-dental-implants`, "x-default": `${siteUrl}/full-arch-dental-implants` } },
     },
 
@@ -107,30 +68,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ============================================================
     {
       url: `${siteUrl}/all-on-4-cost`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.88,
       alternates: { languages: { en: `${siteUrl}/all-on-4-cost`, "x-default": `${siteUrl}/all-on-4-cost` } },
     },
     {
       url: `${siteUrl}/all-on-4-clearchoice-alternative`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.86,
       alternates: { languages: { en: `${siteUrl}/all-on-4-clearchoice-alternative`, "x-default": `${siteUrl}/all-on-4-clearchoice-alternative` } },
     },
     {
       url: `${siteUrl}/jaw-surgery-recovery-timeline`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.78,
       alternates: { languages: { en: `${siteUrl}/jaw-surgery-recovery-timeline`, "x-default": `${siteUrl}/jaw-surgery-recovery-timeline` } },
     },
     {
       url: `${siteUrl}/smile-again-foundation`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.7,
       alternates: { languages: { en: `${siteUrl}/smile-again-foundation`, "x-default": `${siteUrl}/smile-again-foundation` } },
     },
 
@@ -139,9 +88,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ============================================================
     ...(["aetna", "delta-dental", "anthem-blue-cross"] as const).map((carrier) => ({
       url: `${siteUrl}/insurance/${carrier}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
       alternates: { languages: { en: `${siteUrl}/insurance/${carrier}`, "x-default": `${siteUrl}/insurance/${carrier}` } },
     })),
 
@@ -150,22 +96,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ============================================================
     {
       url: `${siteUrl}/surgical-cases`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.78,
       alternates: { languages: { en: `${siteUrl}/surgical-cases`, "x-default": `${siteUrl}/surgical-cases` } },
     },
     ...caseCategories.map((cat) => ({
       url: `${siteUrl}/surgical-cases/${cat.id}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.72,
     })),
     ...allCases.map((c) => ({
       url: `${siteUrl}/surgical-cases/${c.category}/${c.id}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
     })),
 
     // ============================================================
@@ -175,15 +112,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .filter((s) => Boolean(getStateName(s)))
       .map((s) => ({
         url: `${siteUrl}/locations/${s}`,
-        lastModified: now,
-        changeFrequency: "monthly" as const,
-        priority: 0.8,
       })),
     ...cities.map((c) => ({
       url: `${siteUrl}/locations/${c.state.toLowerCase()}/${c.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.75,
     })),
 
     // ============================================================
@@ -191,52 +122,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ============================================================
     {
       url: `${siteUrl}/for-patients`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
       alternates: { languages: { en: `${siteUrl}/for-patients`, "x-default": `${siteUrl}/for-patients` } },
     },
     {
       url: `${siteUrl}/for-patients/faqs`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.85,
     },
     {
       url: `${siteUrl}/for-patients/consultation`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
     },
     {
       url: `${siteUrl}/for-patients/pre-op`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
     },
     {
       url: `${siteUrl}/for-patients/post-op`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
     },
     {
       url: `${siteUrl}/for-patients/travel`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.75,
     },
     {
       url: `${siteUrl}/for-patients/insights`,
-      lastModified: now,
-      changeFrequency: "weekly" as const,
-      priority: 0.75,
     },
     ...insightPosts.map((post) => ({
       url: `${siteUrl}/for-patients/insights/${post.slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.72,
     })),
 
     // ============================================================
@@ -244,9 +151,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ============================================================
     {
       url: `${siteUrl}/for-dentists`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
     },
     ...[
       "refer-patients",
@@ -255,9 +159,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "education/courses",
     ].map((slug) => ({
       url: `${siteUrl}/for-dentists/${slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.65,
     })),
 
     // ============================================================
@@ -265,15 +166,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ============================================================
     {
       url: `${siteUrl}/media/speaking`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
     },
     {
       url: `${siteUrl}/media/videos`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
     },
 
     // ============================================================
@@ -286,9 +181,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "medical-disclaimer",
     ].map((slug) => ({
       url: `${siteUrl}/legal/${slug}`,
-      lastModified: now,
-      changeFrequency: "yearly" as const,
-      priority: 0.3,
     })),
 
     // ============================================================
@@ -296,9 +188,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ============================================================
     {
       url: `${siteUrl}/ru`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru`,
@@ -309,9 +198,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/about`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/about`,
@@ -322,9 +208,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/all-on-4-clearchoice-alternative`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/all-on-4-clearchoice-alternative`,
@@ -335,9 +218,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/all-on-4-cost`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/all-on-4-cost`,
@@ -348,9 +228,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/contact`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/contact`,
@@ -361,9 +238,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise`,
@@ -374,9 +248,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/bone-grafting`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/bone-grafting`,
@@ -387,9 +258,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/facial-cosmetic`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/facial-cosmetic`,
@@ -400,9 +268,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/full-arch-implants`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/full-arch-implants`,
@@ -413,9 +278,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/implant-rescue`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/implant-rescue`,
@@ -426,9 +288,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/jaw-surgery`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/jaw-surgery`,
@@ -439,9 +298,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/mole-removal`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/mole-removal`,
@@ -452,9 +308,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/oral-pathology`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/oral-pathology`,
@@ -465,9 +318,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/sedation-anesthesia`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/sedation-anesthesia`,
@@ -478,9 +328,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/single-tooth`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/single-tooth`,
@@ -491,9 +338,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/sleep-apnea`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/sleep-apnea`,
@@ -504,9 +348,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/snap-on-dentures`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/snap-on-dentures`,
@@ -517,9 +358,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/tmj`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/tmj`,
@@ -530,9 +368,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/tooth-extractions`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/tooth-extractions`,
@@ -543,9 +378,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/wisdom-teeth`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/wisdom-teeth`,
@@ -556,9 +388,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/expertise/zygomatic-implants`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/expertise/zygomatic-implants`,
@@ -569,9 +398,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-dentists`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-dentists`,
@@ -582,9 +408,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-dentists/education/courses`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-dentists/education/courses`,
@@ -595,9 +418,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-dentists/refer-patients`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-dentists/refer-patients`,
@@ -608,9 +428,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-dentists/referral-partners`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-dentists/referral-partners`,
@@ -621,9 +438,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients`,
@@ -634,9 +448,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/consultation`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/consultation`,
@@ -647,9 +458,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/faqs`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/faqs`,
@@ -660,9 +468,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights`,
@@ -673,9 +478,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/all-on-4-vs-all-on-6`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/all-on-4-vs-all-on-6`,
@@ -686,9 +488,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/all-on-x-dental-implants-cost`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/all-on-x-dental-implants-cost`,
@@ -699,9 +498,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/bone-grafting-for-dental-implants-explained`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/bone-grafting-for-dental-implants-explained`,
@@ -712,9 +508,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/can-a-loose-dental-implant-be-saved`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/can-a-loose-dental-implant-be-saved`,
@@ -725,9 +518,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/can-dental-implants-get-cavities-or-gum-disease`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/can-dental-implants-get-cavities-or-gum-disease`,
@@ -738,9 +528,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/can-you-fix-an-overbite-naturally`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/can-you-fix-an-overbite-naturally`,
@@ -751,9 +538,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/correcting-bite-problems-after-implant-work`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/correcting-bite-problems-after-implant-work`,
@@ -764,9 +548,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/dental-implant-aftercare`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/dental-implant-aftercare`,
@@ -777,9 +558,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/dental-implant-complications`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/dental-implant-complications`,
@@ -790,9 +568,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/dental-implant-procedure-complete-guide`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/dental-implant-procedure-complete-guide`,
@@ -803,9 +578,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options`,
@@ -816,9 +588,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/dental-implants-for-diabetics`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/dental-implants-for-diabetics`,
@@ -829,9 +598,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/dental-implants-for-seniors-age-limit`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/dental-implants-for-seniors-age-limit`,
@@ -842,9 +608,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/dental-implants-for-smokers`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/dental-implants-for-smokers`,
@@ -855,9 +618,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/dental-implants-with-osteoporosis-and-autoimmune-conditions`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/dental-implants-with-osteoporosis-and-autoimmune-conditions`,
@@ -868,9 +628,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/dental-implants-with-severe-bone-loss-options`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/dental-implants-with-severe-bone-loss-options`,
@@ -881,9 +638,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/fixing-a-failed-all-on-4-revision-options`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/fixing-a-failed-all-on-4-revision-options`,
@@ -894,9 +648,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/full-mouth-dental-implants-cost-process`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/full-mouth-dental-implants-cost-process`,
@@ -907,9 +658,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/full-mouth-reconstruction-for-failed-dental-work`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/full-mouth-reconstruction-for-failed-dental-work`,
@@ -920,9 +668,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/guided-dental-implant-surgery-how-3d-planning-improves-accuracy`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/guided-dental-implant-surgery-how-3d-planning-improves-accuracy`,
@@ -933,9 +678,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/how-to-fix-an-overbite-treatment-options-and-cost`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/how-to-fix-an-overbite-treatment-options-and-cost`,
@@ -946,9 +688,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges`,
@@ -959,9 +698,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/implant-revision-after-bone-loss`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/implant-revision-after-bone-loss`,
@@ -972,9 +708,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/implants-vs-dentures`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/implants-vs-dentures`,
@@ -985,9 +718,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/normal-healing-vs-infection-after-dental-implant-surgery`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/normal-healing-vs-infection-after-dental-implant-surgery`,
@@ -998,9 +728,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/poor-oral-health-systemic-diseases`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/poor-oral-health-systemic-diseases`,
@@ -1011,9 +738,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/redoing-dental-implants-done-abroad-recovery-plan`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/redoing-dental-implants-done-abroad-recovery-plan`,
@@ -1024,9 +748,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/repairing-a-broken-implant-crown-or-prosthesis`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/repairing-a-broken-implant-crown-or-prosthesis`,
@@ -1037,9 +758,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/replacing-a-failed-dental-implant-what-to-expect`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/replacing-a-failed-dental-implant-what-to-expect`,
@@ -1050,9 +768,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/replacing-old-failing-bridges-with-implants`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/replacing-old-failing-bridges-with-implants`,
@@ -1063,9 +778,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/same-day-implants`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/same-day-implants`,
@@ -1076,9 +788,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/second-opinion-on-failed-dental-implants`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/second-opinion-on-failed-dental-implants`,
@@ -1089,9 +798,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/sedation-options-dental-implant-surgery`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/sedation-options-dental-implant-surgery`,
@@ -1102,9 +808,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed`,
@@ -1115,9 +818,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/single-dental-implant-cost-northern-california`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/single-dental-implant-cost-northern-california`,
@@ -1128,9 +828,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/titanium-vs-zirconia-dental-implants`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/titanium-vs-zirconia-dental-implants`,
@@ -1141,9 +838,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/tooth-lost-emotional-toll`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/tooth-lost-emotional-toll`,
@@ -1154,9 +848,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants`,
@@ -1167,9 +858,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do`,
@@ -1180,9 +868,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/who-is-a-candidate-for-dental-implants`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/who-is-a-candidate-for-dental-implants`,
@@ -1193,9 +878,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/why-are-dental-implants-so-expensive`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/why-are-dental-implants-so-expensive`,
@@ -1206,9 +888,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/zirconia-arches`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/zirconia-arches`,
@@ -1219,9 +898,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible`,
@@ -1232,9 +908,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/zygomatic-implants`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/zygomatic-implants`,
@@ -1245,9 +918,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss`,
@@ -1258,9 +928,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/post-op`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/post-op`,
@@ -1271,9 +938,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/pre-op`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/pre-op`,
@@ -1284,9 +948,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/for-patients/travel`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/for-patients/travel`,
@@ -1297,9 +958,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/full-arch-dental-implants`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/full-arch-dental-implants`,
@@ -1310,9 +968,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/glossary`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/glossary`,
@@ -1323,9 +978,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/insurance`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/insurance`,
@@ -1336,9 +988,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/insurance/aetna`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/insurance/aetna`,
@@ -1349,9 +998,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/insurance/anthem-blue-cross`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/insurance/anthem-blue-cross`,
@@ -1362,9 +1008,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/insurance/delta-dental`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/insurance/delta-dental`,
@@ -1375,9 +1018,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/jaw-surgery-recovery-timeline`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/jaw-surgery-recovery-timeline`,
@@ -1388,9 +1028,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/legal/hipaa-notice`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/legal/hipaa-notice`,
@@ -1401,9 +1038,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/legal/medical-disclaimer`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/legal/medical-disclaimer`,
@@ -1414,9 +1048,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/legal/privacy-policy`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/legal/privacy-policy`,
@@ -1427,9 +1058,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/legal/terms-of-service`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/legal/terms-of-service`,
@@ -1440,9 +1068,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/locations`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/locations`,
@@ -1453,9 +1078,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/media/speaking`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/media/speaking`,
@@ -1466,9 +1088,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/media/videos`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/media/videos`,
@@ -1479,9 +1098,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/our-team`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/our-team`,
@@ -1492,9 +1108,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/results`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/results`,
@@ -1505,9 +1118,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/smile-again-foundation`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/smile-again-foundation`,
@@ -1518,9 +1128,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/smile-gallery`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/smile-gallery`,
@@ -1531,9 +1138,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/surgical-cases`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/surgical-cases`,
@@ -1544,9 +1148,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/surgical-cases/corrective-jaw-surgery`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/surgical-cases/corrective-jaw-surgery`,
@@ -1557,9 +1158,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/surgical-cases/dental-implants`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/surgical-cases/dental-implants`,
@@ -1570,9 +1168,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteUrl}/ru/surgical-cases/facial-cosmetic-surgery`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
       alternates: {
         languages: {
           ru: `${siteUrl}/ru/surgical-cases/facial-cosmetic-surgery`,

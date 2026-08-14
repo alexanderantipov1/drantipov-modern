@@ -7837,6 +7837,183 @@ export const guideArticles: RevisionArticle[] = [
     },
   },
 
+  {
+    slug: "board-certified-dental-implant-surgeon-california",
+    title: "Choosing a Board-Certified Dental Implant Surgeon in California: The Patient Guide",
+    metaTitle: "Board-Certified Dental Implant Surgeon in California: How to Choose",
+    metaDescription:
+      "How to verify and choose a board-certified dental implant surgeon in California: what ABOMS certification actually requires, oral surgeon vs. general dentist training, the risks of bargain implants, and the questions to ask at your consultation.",
+    excerpt:
+      "Any licensed dentist in California can legally place an implant \u2014 but legal permission and surgical specialization are very different things. Here is what ABOMS board certification actually requires, how to verify a surgeon's credentials in minutes, why bargain implants often cost more in the end, and the exact questions to ask before you commit.",
+    date: "August 13, 2026",
+    datePublished: "2026-08-13",
+    image: "/images/blog/2026-08-04/board-certified-dental-implant-surgeon-california.png",
+    heroAlt: "Framed board certification diploma on the wall of a modern surgical consultation office",
+    category: "Dental Implants",
+    readTime: "10 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "board certified dental implant surgeon california",
+      "aboms diplomate",
+      "oral surgeon vs general dentist implants",
+      "how to choose implant surgeon",
+      "verify dental surgeon credentials california",
+    ],
+    intro: [
+        "A board-certified dental implant surgeon in California is, in practice, an oral and maxillofacial surgeon who has earned Diplomate status from the American Board of Oral and Maxillofacial Surgery (ABOMS) \u2014 a voluntary credential requiring a hospital-based surgical residency plus rigorous written and oral examinations, explains Dr. Alexander Antipov, an ABOMS board-certified oral and maxillofacial surgeon practicing in Roseville, CA. The distinction matters because any licensed dentist in California may legally place implants, and weekend \u201cimplant training\u201d certificates on an office wall are easy to confuse with true board certification. This guide breaks down what certification actually requires, how surgeon training differs from general dentistry, how to verify credentials yourself in minutes, and the questions worth asking before you commit to a provider \u2014 whichever practice you ultimately choose.",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical exam or individualized advice. Credentials are one factor in choosing a provider; your specific treatment plan should always be based on an in-person consultation with 3D imaging.",
+    tldr: [],
+    sections: [
+      {
+        heading: "Credential Levels at a Glance",
+        paras: [
+          "Not all \u201cimplant dentistry\u201d credentials mean the same thing. Here is how the common ones compare:",
+        ],
+        table: {
+          headers: ["Credential", "What it requires", "What it tells you"],
+          rows: [
+            ["California dental license", "Dental school + licensing exams", "Legal permission to practice \u2014 including implants"],
+            ["Weekend implant course certificate", "Days of coursework", "Basic exposure to placement technique"],
+            ["Oral & maxillofacial surgery residency", "4\u20136 years hospital-based surgical training", "Specialist-level surgery, sedation, and complication management"],
+            ["ABOMS Diplomate (board-certified)", "Residency + written and oral board exams + ongoing recertification", "Peer-validated surgical mastery, continuously maintained"],
+          ],
+        },
+      },
+      {
+        heading: "What \u201cBoard-Certified\u201d Actually Means",
+        paras: [
+          [
+            "Every oral surgeon starts as a dentist, but the paths diverge sharply after dental school. Board certification through the ",
+            { text: "American Board of Oral and Maxillofacial Surgery", href: "https://www.aboms.org/" },
+            " is voluntary \u2014 licensure alone permits practice \u2014 and that is precisely what makes it meaningful. Candidates must first complete an accredited oral and maxillofacial surgery residency, then pass a written Qualifying Examination and a high-stakes oral Certifying Examination built around real-world complex cases, surgical judgment, and patient-safety protocols.",
+          ],
+          "Certification is also not a one-time event. Diplomates participate in continuing certification, including annual continuing education requirements and periodic reassessment, which is designed to keep certified surgeons current with evolving techniques and safety standards throughout their careers.",
+        ],
+      },
+      {
+        heading: "Oral Surgeon vs. General Dentist: The Training Gap",
+        paras: [
+          [
+            "After dental school, an oral and maxillofacial surgeon completes a four-to-six-year hospital-based residency, training alongside medical residents in internal medicine, general surgery, and anesthesiology. That background is what prepares a surgeon to manage significant bone loss, nerve proximity, sinus anatomy, medical complexities, and IV sedation \u2014 the variables that turn a \u201croutine\u201d implant into a demanding one. Our overview of ",
+            { text: "what an oral surgeon is and what they do", href: "/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do" },
+            " covers the full scope of the specialty.",
+          ],
+          "By contrast, many general practitioners learn implant placement through short continuing-education courses. Those courses have a legitimate place, and straightforward cases in healthy bone can go well in experienced general-dentist hands \u2014 but a certificate of completion is not diplomate status, and the difference tends to surface exactly when a case turns out to be less simple than expected.",
+        ],
+      },
+      {
+        heading: "How to Verify a Surgeon's Credentials in Minutes",
+        paras: [
+          "You do not have to take an office's word for it. Two free lookups tell you most of what you need to know:",
+        ],
+        list: [
+          "Search the ABOMS \u201cFind a Diplomate\u201d directory at aboms.org to confirm current board certification.",
+          "Check the Dental Board of California's online license search to confirm the state license is active and in good standing, and to see any disciplinary history.",
+          "Look for the specialty itself: \u201coral and maxillofacial surgeon\u201d indicates residency training, whereas \u201cimplant dentistry\u201d alone is a service description, not a specialty.",
+        ],
+      },
+      {
+        heading: "The Real Risks of Bargain Implants",
+        paras: [
+          [
+            "Price matters \u2014 implants are a significant investment \u2014 but the cheapest quote can carry hidden clinical costs. Implants placed without careful attention to bone density, gum tissue thickness, and angulation carry a higher risk of complications such as peri-implantitis, the inflammatory bone loss around an implant that is a leading cause of failure. Aesthetic problems surface too: thin gum tissue that is not managed properly can develop the visible gray shadow of metal near the gumline. And revision surgery \u2014 removing a failed or poorly angled implant, grafting the damaged site, and starting over \u2014 typically costs far more than doing it right once. Our guide on ",
+            { text: "when complex cases need a specialist", href: "/for-patients/insights/specialist-for-complex-dental-implants" },
+            " goes deeper on which situations demand advanced training.",
+          ],
+          [
+            "This is also why board-certified surgeons see so many revision and \u201csecond opinion\u201d cases \u2014 including patients told elsewhere that they were not implant candidates at all. Techniques like sinus lifts, advanced grafting, and zygomatic implants can often restore patients with severe bone loss, as we cover in ",
+            { text: "why specialists say yes when others said no", href: "/for-patients/insights/told-no-to-dental-implants-why-specialists-say-yes" },
+            ".",
+          ],
+        ],
+      },
+      {
+        heading: "Questions to Ask at Your Consultation",
+        paras: [
+          "A seasoned specialist welcomes an interview \u2014 it signals you are serious about the outcome. Worth asking anywhere you consult:",
+        ],
+        list: [
+          "Are you a Diplomate of the American Board of Oral and Maxillofacial Surgery?",
+          "How many cases like mine \u2014 single tooth, full arch, grafting \u2014 have you personally performed?",
+          "Who administers and monitors sedation, and what emergency protocols are in place?",
+          "Will you show me before-and-after cases similar to mine?",
+          "Is the quote all-inclusive \u2014 imaging, surgery, abutment, and final restoration \u2014 or are components billed separately?",
+          "Who handles follow-up care and any complications, and where?",
+        ],
+      },
+      {
+        heading: "Why Local Follow-Up Care Matters",
+        paras: [
+          [
+            "Implant treatment is not a single appointment \u2014 it is months of staged care with follow-up visits, adjustments, and occasional repairs to temporaries. A surgeon based in your community is accountable to it in a way distant or corporate-volume providers are not, and having your surgical team nearby matters most in the rare moments when something needs prompt attention. For patients comparing practices across the region, our guide to ",
+            { text: "comparing full-arch implant clinics in California", href: "/for-patients/insights/best-full-arch-dental-implant-clinics-california-how-to-compare" },
+            " lays out a structured checklist.",
+          ],
+          [
+            "Cost concerns are legitimate \u2014 specialist care is an investment \u2014 but financing options and insurance contributions can narrow the gap considerably; our ",
+            { text: "dental implant payment plans guide", href: "/for-patients/insights/dental-implant-payment-plans" },
+            " walks through the options. The math worth doing is long-term: preventing one revision surgery typically outweighs the difference between quotes.",
+          ],
+        ],
+      },
+      {
+        heading: "Board-Certified Care in Roseville",
+        paras: [
+          "Dr. Alexander Antipov is an ABOMS board-certified oral and maxillofacial surgeon practicing in Roseville, where patients travel in from Sacramento, El Dorado Hills, and across Northern California for implant care ranging from single teeth to complex full-arch and revision cases. Every plan starts the same way: 3D CBCT imaging, a candid assessment of what your anatomy supports, and one transparent written plan \u2014 so the decision you make is an informed one, whoever you choose.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How do I check if a dental implant surgeon is board-certified in California?",
+        answer:
+          "Use the \u201cFind a Diplomate\u201d tool on the American Board of Oral and Maxillofacial Surgery website (aboms.org) to confirm certification, and the Dental Board of California's online license search to confirm the state license is active and in good standing. The title to look for is \u201cDiplomate\u201d \u2014 it means the surgeon passed the board's written and oral examinations.",
+      },
+      {
+        question: "Can a general dentist legally perform dental implant surgery in California?",
+        answer:
+          "Yes \u2014 any licensed dentist in California may legally place implants. The distinction is between legal permission and specialization: many general dentists learn placement in short courses, while a board-certified oral surgeon has completed a four-to-six-year hospital-based surgical residency and passed peer-reviewed board exams.",
+      },
+      {
+        question: "Is an oral surgeon better than a periodontist for dental implants?",
+        answer:
+          "Both are legitimate specialists with different emphases. Periodontists focus on gum health and the supporting structures of teeth; oral surgeons complete hospital-based surgical residencies covering bone grafting, jaw reconstruction, and anesthesia. For full-arch cases, severe bone loss, or medically complex patients, the broader surgical training of an oral surgeon is often preferred.",
+      },
+      {
+        question: "What success rates do dental implants have with an experienced surgeon?",
+        answer:
+          "Published studies commonly report implant success rates above 95% over five-to-ten-year periods in healthy patients. Careful 3D planning, precise placement, managing bone and gum tissue properly, and not smoking are the biggest controllable factors \u2014 several of which depend directly on the surgeon's training and case volume.",
+      },
+      {
+        question: "What happens if a dental implant fails \u2014 can it be fixed?",
+        answer:
+          "Usually, yes. Revision treatment typically involves removing the failing implant, resolving any infection such as peri-implantitis, grafting the site to rebuild bone, and placing a new implant after healing. Revision cases are more complex than primary placements, which is why they are commonly referred to board-certified surgeons.",
+      },
+      {
+        question: "Does a board-certified specialist cost much more than a general dentist?",
+        answer:
+          "Specialist fees can be somewhat higher, reflecting advanced training and technology, but the gap is often smaller than patients expect \u2014 and preventing a single failed implant or revision surgery typically outweighs the difference. Always compare all-inclusive written quotes rather than advertised starting prices.",
+      },
+      {
+        question: "Does insurance cover implants placed by an oral surgeon?",
+        answer:
+          "Many dental plans contribute toward implant treatment \u2014 commonly in the range of $1,000\u2013$3,000 depending on the policy \u2014 and insurers generally apply the same benefits whether a general dentist or an oral surgeon performs the procedure. Having benefits verified up front clarifies your out-of-pocket cost before treatment begins.",
+      },
+      {
+        question: "What questions should I ask before choosing an implant surgeon?",
+        answer:
+          "Confirm ABOMS Diplomate status, ask how many cases like yours the surgeon has personally performed, who administers and monitors sedation, whether the quote is all-inclusive, and who handles follow-up care. A confident specialist welcomes all of these questions.",
+      },
+    ],
+    cta: {
+      heading: "Get a Board-Certified Opinion on Your Case",
+      body:
+        "Schedule a free implant consultation with Dr. Antipov, an ABOMS board-certified oral and maxillofacial surgeon in Roseville \u2014 3D CBCT imaging, a candid assessment of your anatomy, and one transparent written plan you can compare with confidence. Restrictions apply.",
+    },
+  },
+
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

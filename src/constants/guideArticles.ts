@@ -8179,6 +8179,346 @@ export const guideArticles: RevisionArticle[] = [
     },
   },
 
+  {
+    slug: "all-on-4-dental-implants-san-francisco",
+    title: "All-on-4 Dental Implants for San Francisco Patients: Full-Arch Restoration Worth the Drive",
+    metaTitle: "All-on-4 Implants for San Francisco Patients | Roseville Surgeon",
+    metaDescription:
+      "Considering All-on-4 dental implants in San Francisco? Many Bay Area patients travel to board-certified oral surgeon Dr. Antipov in Roseville for full-arch restoration \u2014 with same-day teeth for qualifying patients. How it works, realistic costs, and what the trip involves.",
+    excerpt:
+      "San Francisco has world-class healthcare \u2014 and some of the highest treatment costs in the country. A growing number of Bay Area patients are making the roughly two-hour drive to Roseville for All-on-4 full-arch restoration with a board-certified oral surgeon. Here is how the procedure works, what it realistically costs, and how to decide whether the trip makes sense for you.",
+    date: "August 13, 2026",
+    datePublished: "2026-08-13",
+    image: "/images/blog/2026-08-04/all-on-4-dental-implants-san-francisco.png",
+    heroAlt: "Patient reviewing a 3D CBCT scan showing four tilted implants supporting a full-arch bridge during an All-on-4 consultation",
+    category: "Dental Implants",
+    readTime: "10 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "all-on-4 dental implants san francisco",
+      "all-on-4 bay area",
+      "full arch dental implants san francisco",
+      "teeth in a day san francisco",
+      "all-on-4 cost bay area",
+    ],
+    intro: [
+        "If you are researching All-on-4 dental implants in San Francisco, here is a fact worth knowing before you commit: full-arch treatment is highly portable \u2014 the entire surgical phase typically happens in one or two key visits \u2014 and many Bay Area patients travel about two hours to Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA, where specialist-level full-arch care often comes at a meaningfully lower cost than in the city. This guide explains how the All-on-4 method delivers a fixed, same-day provisional set of teeth for qualifying patients, what the treatment realistically costs, and how to weigh a San Francisco provider against traveling inland for care. For a framework on comparing any full-arch provider, see our guide to ",
+        { text: "comparing full-arch implant clinics in California", href: "/for-patients/insights/best-full-arch-dental-implant-clinics-california-how-to-compare" },
+        ".",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical exam. Same-day teeth candidacy, timelines, and costs depend on your bone volume, health history, and anatomy \u2014 your specific plan is determined after 3D imaging at an in-person consultation.",
+    tldr: [],
+    sections: [
+      {
+        heading: "All-on-4 at a Glance: What Bay Area Patients Should Know",
+        paras: [
+          "Before diving into details, here is the treatment in one view:",
+        ],
+        table: {
+          headers: ["Factor", "What to expect"],
+          rows: [
+            ["What it is", "A full arch of fixed teeth supported by 4 implants (5\u20136 in some cases)"],
+            ["Same-day teeth", "Qualifying patients receive a fixed provisional bridge the day of surgery"],
+            ["Key surgical visits", "Typically 1\u20132 major visits \u2014 practical even for patients traveling in"],
+            ["Bone grafting", "Often avoided \u2014 tilted posterior implants use existing dense bone"],
+            ["Healing", "Osseointegration takes roughly 3\u20136 months before the final bridge"],
+            ["Typical cost", "$25,000\u2013$35,000 per arch complete; SF-area quotes often run higher"],
+            ["Final bridge", "High-strength zirconia or titanium-acrylic, placed after healing"],
+          ],
+        },
+      },
+      {
+        heading: "How the All-on-4 Method Works",
+        paras: [
+          [
+            "The All-on-4 concept replaces an entire arch of teeth on just four implants by using geometry intelligently: the two posterior implants are tilted \u2014 commonly around 30\u201345 degrees \u2014 to anchor into the denser bone toward the front of the jaw while avoiding the sinus cavities above and nerve canal below. That tilt is why many patients with years of bone loss can often be treated without separate grafting procedures. Once placed, the implants fuse with the jaw through osseointegration, the biological bonding process described in the National Library of Medicine's overview of ",
+            { text: "dental implants", href: "https://medlineplus.gov/ency/article/007645.htm" },
+            ".",
+          ],
+          [
+            "Four implants is the baseline, not a rule. Where bone density or bite forces call for it, five or six implants may be recommended \u2014 the \u201cAll-on-X\u201d spectrum. We compare the configurations in our ",
+            { text: "All-on-4 vs. All-on-6 guide", href: "/for-patients/insights/all-on-4-vs-all-on-6" },
+            "; the short version is that the right number is an engineering decision made from your CT scan, not a package you pick from a menu.",
+          ],
+        ],
+      },
+      {
+        heading: "Same-Day Teeth: What \u201cTeeth in a Day\u201d Really Means",
+        paras: [
+          [
+            "For qualifying patients, the surgical day compresses what used to take months: failing teeth are removed, implants are placed, and a fixed provisional bridge is attached before you leave \u2014 you are not sent home without teeth. Two honest caveats belong in any accurate description. First, the same-day bridge is a provisional; the final, high-strength bridge is made after the implants finish integrating over roughly three to six months. Second, immediate loading depends on achieving sufficient implant stability at surgery \u2014 candidacy is confirmed at the consultation and, finally, in the operating chair. Our ",
+            { text: "teeth-in-a-day guide", href: "/for-patients/insights/teeth-in-a-day-same-day-smile-restoration" },
+            " walks through the protocol step by step.",
+          ],
+          "The process is performed under local anesthesia with IV sedation available, and most patients describe pressure rather than pain, with a few days of manageable soreness afterward. A soft-food diet protects the implants during early healing \u2014 your team will give you a staged plan for progressing back to a full menu.",
+        ],
+      },
+      {
+        heading: "What All-on-4 Costs \u2014 and Why San Francisco Quotes Run High",
+        paras: [
+          [
+            "Complete full-arch treatment \u2014 imaging, extractions, implants, sedation, the provisional, and the final bridge \u2014 commonly runs $25,000\u2013$35,000 per arch, or $50,000\u2013$70,000 for both arches. San Francisco's overall cost of care is among the highest in the country, and full-arch quotes in the city frequently come in above these ranges for equivalent treatment. That gap \u2014 often thousands of dollars per arch \u2014 is the main reason Bay Area patients get a second opinion inland before committing. For a detailed cost breakdown by configuration and material, see our ",
+            { text: "All-on-X cost guide", href: "/for-patients/insights/all-on-x-dental-implants-cost" },
+            ".",
+          ],
+          [
+            "Whoever you choose, compare all-inclusive written plans: imaging, extractions, sedation, the provisional, and the final bridge are sometimes quoted separately, which makes a low headline number misleading. Many dental plans contribute toward portions of treatment \u2014 commonly $1,000\u2013$3,000 depending on the policy \u2014 and monthly financing can spread the remainder; our ",
+            { text: "payment plans guide", href: "/for-patients/insights/dental-implant-payment-plans" },
+            " covers the options.",
+          ],
+        ],
+      },
+      {
+        heading: "Is Traveling From the Bay Area for Full-Arch Treatment Practical?",
+        paras: [
+          "More practical than most patients expect. Full-arch treatment concentrates the critical work into a small number of visits: a consultation with CBCT imaging, the surgical day itself, and a handful of shorter follow-ups \u2014 some of which can be coordinated to minimize trips. Roseville sits about two hours from San Francisco via I-80, an easy drive compared to the months-long treatment relationships some dental work requires.",
+          "Patients travel to Dr. Antipov's Roseville practice from San Francisco, Oakland, San Jose, Sacramento, and across Northern California \u2014 typically for one of two reasons: the cost difference for specialist-level care, or a complex situation (significant bone loss, failed previous implants, medical complexity) where they specifically want a board-certified oral and maxillofacial surgeon rather than a general dentist performing the surgery.",
+        ],
+      },
+      {
+        heading: "Why the Surgeon Matters More Than the City",
+        paras: [
+          [
+            "All-on-4 is a surgical procedure whose outcome is largely determined in planning and placement: reading the CT scan correctly, managing soft tissue, achieving the primary stability that makes same-day teeth possible, and handling complications if they arise. Board-certified oral and maxillofacial surgeons complete four to six years of hospital-based surgical residency after dental school \u2014 training that covers exactly these scenarios, including the advanced options (grafting, tilted and, in select severe cases, zygomatic-style approaches) that keep patients with significant bone loss treatable. Our guide to ",
+            { text: "verifying board certification", href: "/for-patients/insights/board-certified-dental-implant-surgeon-california" },
+            " shows how to check any surgeon's credentials \u2014 including Dr. Antipov's \u2014 in minutes.",
+          ],
+          [
+            "If you have already been told you are not a candidate elsewhere, read ",
+            { text: "why specialists often say yes", href: "/for-patients/insights/told-no-to-dental-implants-why-specialists-say-yes" },
+            " before giving up \u2014 declined cases are frequently treatable with specialist techniques.",
+          ],
+        ],
+      },
+      {
+        heading: "Your Next Step",
+        paras: [
+          [
+            "Whether you ultimately choose a San Francisco provider or make the drive to Roseville, start with a consultation that includes 3D CBCT imaging and a complete written plan \u2014 that is the only basis on which quotes and recommendations can be fairly compared. You can read more about ",
+            { text: "full-arch implant treatment at our practice", href: "/expertise/full-arch-implants" },
+            ", including materials and the treatment timeline.",
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How much do All-on-4 dental implants cost for San Francisco patients?",
+        answer:
+          "Complete treatment commonly runs $25,000\u2013$35,000 per arch, or $50,000\u2013$70,000 for both arches, including imaging, extractions, implants, sedation, and the final bridge. Quotes within San Francisco frequently run above these ranges, which is why many Bay Area patients compare an all-inclusive written plan from an inland specialist before committing.",
+      },
+      {
+        question: "Can I really get new teeth in one day?",
+        answer:
+          "For qualifying patients, yes \u2014 failing teeth are removed, implants are placed, and a fixed provisional bridge is attached the same day, so you are never left without teeth. The final, high-strength bridge is placed after the implants finish integrating over roughly three to six months. Candidacy for same-day teeth is confirmed at your consultation.",
+      },
+      {
+        question: "How long do All-on-4 implants last?",
+        answer:
+          "The implants themselves are designed to last decades with good hygiene and regular checkups, and long-term clinical success rates are commonly cited above 95%. The bridge is subject to normal wear and may need maintenance or replacement over time \u2014 zirconia bridges are the most durable option currently available.",
+      },
+      {
+        question: "What if I have significant bone loss \u2014 am I still a candidate?",
+        answer:
+          "Often, yes. The tilted posterior implants in the All-on-4 design anchor into the denser bone at the front of the jaw, frequently avoiding the grafting that individual implants would require. In select severe cases, advanced approaches such as zygomatic-style implants may be considered. A CBCT scan shows exactly what your anatomy supports.",
+      },
+      {
+        question: "How many trips to Roseville would treatment take from the Bay Area?",
+        answer:
+          "Typically a consultation with 3D imaging, the surgical day, and a handful of shorter follow-up and bridge-fitting visits \u2014 some of which can be coordinated to reduce trips. Roseville is about two hours from San Francisco via I-80, and many Bay Area patients find the small number of key visits very manageable.",
+      },
+      {
+        question: "Is the All-on-4 procedure painful?",
+        answer:
+          "The surgery is performed under local anesthesia with IV sedation available, so most patients feel pressure rather than pain during the procedure. Afterward, soreness is typically manageable with prescribed or over-the-counter medication, and most patients return to light activity within two to three days.",
+      },
+      {
+        question: "Does insurance cover All-on-4 treatment?",
+        answer:
+          "Many dental plans contribute toward portions of treatment \u2014 commonly $1,000\u2013$3,000 depending on the policy \u2014 particularly extractions and parts of the restorative work. Our team helps coordinate benefits, and monthly financing can spread the remaining balance into manageable payments.",
+      },
+      {
+        question: "All-on-4 or All-on-6 \u2014 which is better?",
+        answer:
+          "Neither is universally better; the right number of implants is determined by your bone density, jaw anatomy, and bite forces, as read from your CT scan. Four implants is the proven baseline, and five or six may be recommended when additional support benefits the long-term result. It is an engineering decision, not an upgrade tier.",
+      },
+    ],
+    cta: {
+      heading: "Get a Bay Area Second Opinion Worth the Drive",
+      body:
+        "Schedule a free implant consultation with Dr. Antipov in Roseville \u2014 3D CBCT imaging, an honest assessment of your same-day teeth candidacy, and one transparent all-inclusive written plan you can compare against any San Francisco quote. Restrictions apply.",
+    },
+  },
+
+  {
+    slug: "full-fixed-arch-implant-cost",
+    title: "Full Fixed Arch Implant Cost: What a Complete Quote Should Include in 2026",
+    metaTitle: "Full Fixed Arch Implant Cost: 2026 Quote Breakdown Guide",
+    metaDescription:
+      "What does a full fixed arch implant really cost in 2026? Board-certified Roseville oral surgeon Dr. Antipov breaks down the line items behind a $25,000\u2013$35,000 per-arch quote, the variables that move the price, and the hidden fees to watch for.",
+    excerpt:
+      "\u201cStarting at\u201d prices and hidden surgical fees make full-arch quotes notoriously hard to compare. This guide breaks the full fixed arch implant cost down line by line \u2014 what drives the price, what an honest all-inclusive quote must contain, and how to spot the add-ons that turn a low headline number into an expensive surprise.",
+    date: "August 13, 2026",
+    datePublished: "2026-08-13",
+    image: "/images/blog/2026-08-04/full-fixed-arch-implant-cost.png",
+    heroAlt: "Itemized full-arch implant treatment plan on a desk beside a zirconia bridge model and jaw model with implant posts",
+    category: "Dental Implants",
+    readTime: "10 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "full fixed arch implant cost",
+      "fixed arch dental implants price",
+      "full arch implant quote breakdown",
+      "all-inclusive dental implant pricing",
+      "full mouth fixed implants cost 2026",
+    ],
+    intro: [
+        "A complete full fixed arch implant restoration \u2014 imaging, extractions, implants, sedation, the provisional teeth, and the final bridge \u2014 commonly runs $25,000\u2013$35,000 per arch in 2026, or $50,000\u2013$70,000 for both arches, explains Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. The catch is that many advertised prices cover only part of that list, which is why two quotes thousands of dollars apart can describe very different treatments. This guide takes the opposite approach: instead of a \u201cstarting at\u201d number, it walks through every line item a fixed full-arch quote should contain, the clinical variables that move the price up or down, and the questions that expose an incomplete quote before you commit. For the broader treatment overview \u2014 configurations, materials, and timelines \u2014 see our ",
+        { text: "All-on-X cost guide", href: "/for-patients/insights/all-on-x-dental-implants-cost" },
+        ".",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical exam. Prices are typical ranges, not quotes; your actual cost depends on your bone volume, extractions needed, materials chosen, and anatomy \u2014 determined after 3D imaging at an in-person consultation.",
+    tldr: [],
+    sections: [
+      {
+        heading: "The Line Items: What a Complete Full-Arch Quote Must Include",
+        paras: [
+          "An honest all-inclusive quote itemizes everything below. If any line is missing, ask whether it is included \u2014 or budgeted separately:",
+        ],
+        table: {
+          headers: ["Line item", "Why it matters", "If quoted separately"],
+          rows: [
+            ["3D CBCT imaging & planning", "The surgical blueprint \u2014 placement is planned here", "Several hundred dollars"],
+            ["Extractions", "Failing teeth removed the day of surgery", "Per tooth \u2014 adds up fast"],
+            ["Implant placement (4\u20136 posts)", "The surgical core of the treatment", "The largest single component"],
+            ["IV sedation / anesthesia", "Comfort through a multi-hour procedure", "Often $1,000+ if billed apart"],
+            ["Provisional (same-day) bridge", "Fixed temporary teeth during healing", "Sometimes a surprise add-on"],
+            ["Final bridge (zirconia or titanium-acrylic)", "The long-term prosthetic \u2014 material drives cost", "Can be quoted years later at a higher price"],
+            ["Follow-up visits & adjustments", "Healing checks and bite refinement", "Per-visit fees accumulate"],
+          ],
+        },
+      },
+      {
+        heading: "What a Fixed Full Arch Actually Is \u2014 and Why It Costs What It Does",
+        paras: [
+          [
+            "A fixed full-arch restoration is a non-removable prosthetic bridge anchored by four to six implants placed into the jawbone, where they fuse with the bone through osseointegration \u2014 the biological bonding process described in the National Library of Medicine's overview of ",
+            { text: "dental implants", href: "https://medlineplus.gov/ency/article/007645.htm" },
+            ". Unlike a denture resting on the gums, the implants act as artificial roots: they hold the bridge rigidly in place and transmit chewing forces into the bone, helping preserve density at each post site. \u201cAll-on-4\u201d is the best-known technique in this family; \u201cfull fixed arch\u201d is the broader category covering four-, five-, and six-implant designs \u2014 our ",
+            { text: "All-on-4 vs. All-on-6 comparison", href: "/for-patients/insights/all-on-4-vs-all-on-6" },
+            " explains how the count is chosen.",
+          ],
+          "The price reflects what the treatment combines: a multi-hour surgical procedure under sedation, precision-milled prosthetics custom-designed to your face and bite, and months of staged follow-up \u2014 performed by a team whose planning determines whether the result lasts decades or fails early. It is genuinely expensive care; the goal of this guide is to make sure you pay for all of it once, not for parts of it repeatedly.",
+        ],
+      },
+      {
+        heading: "The Variables That Move Your Price Up or Down",
+        paras: [
+          "Within the typical $25,000\u2013$35,000 per-arch range, five variables explain most of the spread:",
+        ],
+        list: [
+          "Final bridge material \u2014 monolithic zirconia costs more than titanium-acrylic hybrid designs but resists wear and staining better; this is the single biggest elective cost lever.",
+          "Number of implants \u2014 a six-implant design costs more than four; the right number is an engineering decision from your CT scan, not an upgrade tier.",
+          "Extractions and existing dental work \u2014 the number of failing teeth to remove, and whether infected tissue needs treatment, affect surgical time.",
+          "Bone volume \u2014 tilted-implant techniques avoid grafting for many patients, but severe resorption can require grafting or advanced approaches that add cost and time.",
+          "Sedation depth \u2014 IV sedation adds cost over local-only, and most patients consider it essential for a multi-hour full-arch procedure.",
+        ],
+      },
+      {
+        heading: "Fixed Arch vs. Removable Options: The Cost-Over-Time View",
+        paras: [
+          [
+            "Sticker price is where removable options win; total cost over decades is where the comparison tightens. Traditional dentures need adhesives, periodic relines as the ridge shrinks, and replacement commonly every five to seven years \u2014 recurring costs that compound for life. A fixed arch is a larger single investment, but the implant foundation is designed to last decades with good care, with maintenance limited to hygiene visits and eventual prosthetic wear items. Snap-in overdentures sit between the two on both cost and experience \u2014 our ",
+            { text: "implant-supported vs. traditional dentures comparison", href: "/for-patients/insights/implant-supported-dentures-vs-traditional-dentures" },
+            " and ",
+            { text: "fixed vs. removable guide", href: "/for-patients/insights/permanent-dentures-fixed-vs-removable" },
+            " cover the trade-offs in detail.",
+          ],
+          "There is also a cost most spreadsheets miss: bone. Dentures do not stimulate the jawbone, so resorption continues \u2014 degrading fit, changing facial structure over years, and potentially making implants harder and costlier later. Implants preserve bone at each post site, which is part of why acting earlier tends to keep both options and budgets more favorable.",
+        ],
+      },
+      {
+        heading: "Where the Hidden Fees Hide",
+        paras: [
+          "The most common trap in full-arch pricing is the incomplete quote: a headline number that covers implant placement but leaves imaging, extractions, sedation, the provisional, or \u2014 most expensively \u2014 the final bridge as separate charges. Some patients discover the advertised price bought them the surgery and temporary teeth, with the definitive bridge quoted separately after healing, when switching providers is impractical.",
+          "Three questions expose an incomplete quote quickly: Is the final bridge \u2014 in the specific material we discussed \u2014 included in this number? Are extractions, sedation, and all follow-up visits included? If grafting or additional implants turn out to be needed, how is that priced? A provider with all-inclusive pricing answers all three in writing without hesitation.",
+        ],
+      },
+      {
+        heading: "Paying for It: Insurance, Financing, and Timing",
+        paras: [
+          [
+            "Dental insurance rarely covers full-arch treatment outright, but many plans contribute toward portions of it \u2014 commonly $1,000\u2013$3,000 depending on the policy, often applied to extractions and parts of the restorative work. Third-party healthcare financing can spread the remainder into monthly payments over several years, and some patients use HSA/FSA funds or schedule treatment across two plan years to capture two annual maximums. Our ",
+            { text: "payment plans guide", href: "/for-patients/insights/dental-implant-payment-plans" },
+            " and ",
+            { text: "financing options overview", href: "/for-patients/insights/dental-implant-financing-options" },
+            " walk through the mechanics.",
+          ],
+          "California dental costs do run above the national average, which makes comparing complete written plans \u2014 not headline prices \u2014 especially important here. A lower number that excludes the final bridge is not a lower price; it is a deferred one.",
+        ],
+      },
+      {
+        heading: "Getting a Real Number for Your Case",
+        paras: [
+          [
+            "No article can tell you your cost \u2014 only a CBCT scan and an exam can, because bone volume, extractions, and material choice are all case-specific. What an article can do is arm you to evaluate the quote you receive. Dr. Antipov provides Roseville-area patients \u2014 including those traveling from Sacramento and across Northern California \u2014 a single all-inclusive written plan after imaging, itemized so it can be compared fairly against any other quote. You can read more about ",
+            { text: "full-arch implant treatment at our practice", href: "/expertise/full-arch-implants" },
+            ".",
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How much does a full fixed arch implant cost in 2026?",
+        answer:
+          "Complete treatment \u2014 imaging, extractions, implants, sedation, provisional teeth, and the final bridge \u2014 commonly runs $25,000\u2013$35,000 per arch, or $50,000\u2013$70,000 for both arches. Quotes far below that range usually exclude major components such as the final bridge, so always compare all-inclusive written plans.",
+      },
+      {
+        question: "What is the difference between All-on-4 and a full fixed arch?",
+        answer:
+          "All-on-4 is a specific technique using four implants, two of them tilted, to support a fixed bridge. \u201cFull fixed arch\u201d is the broader category covering any non-removable arch on four, five, or six implants. The right configuration is determined from your CT scan based on bone density and bite forces.",
+      },
+      {
+        question: "Why do some providers advertise much lower full-arch prices?",
+        answer:
+          "Usually because the headline number covers only part of the treatment \u2014 often implant placement and temporary teeth \u2014 with imaging, extractions, sedation, or the final bridge billed separately. Ask specifically whether the final bridge in your chosen material is included; that single line item can change the comparison by five figures.",
+      },
+      {
+        question: "Is zirconia worth the extra cost for the final bridge?",
+        answer:
+          "For many patients, yes. Monolithic zirconia resists wear, chipping, and staining better than titanium-acrylic hybrid bridges and typically needs less maintenance over its life. Hybrid designs cost less upfront and can be repaired more easily. Your surgeon can weigh the trade-offs against your bite forces and budget.",
+      },
+      {
+        question: "Can I get a fixed full arch if I have significant bone loss?",
+        answer:
+          "Often, yes. Tilted-implant techniques anchor into the denser bone at the front of the jaw and frequently avoid grafting; where grafting is needed, it rebuilds the foundation first. A CBCT scan shows what your anatomy supports \u2014 many patients told \u201cno\u201d elsewhere remain treatable with specialist techniques.",
+      },
+      {
+        question: "Does insurance cover any of the cost?",
+        answer:
+          "Full coverage is rare, but many plans contribute toward portions of treatment \u2014 commonly $1,000\u2013$3,000 depending on the policy, often toward extractions and restorative components. Coordinating benefits, HSA/FSA funds, and financing together is how most patients structure the investment.",
+      },
+      {
+        question: "How long do fixed full-arch implants last compared to dentures?",
+        answer:
+          "The implant foundation is designed to last decades with good hygiene and regular checkups, while traditional dentures commonly need relines and replacement every five to seven years. The bridge itself is subject to normal wear and may need maintenance over time, with zirconia offering the longest service life.",
+      },
+      {
+        question: "What should I bring to compare quotes fairly?",
+        answer:
+          "Ask every provider for an itemized written plan listing imaging, extractions, number of implants, sedation, the provisional, the final bridge material, and follow-up care. With identical line items side by side, real price differences \u2014 and missing components \u2014 become obvious immediately.",
+      },
+    ],
+    cta: {
+      heading: "Get One Honest, All-Inclusive Number for Your Case",
+      body:
+        "Schedule a free implant consultation with Dr. Antipov in Roseville \u2014 3D CBCT imaging and a single itemized written plan covering every component of your full-arch treatment, with no hidden line items to discover later. Restrictions apply.",
+    },
+  },
+
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

@@ -8519,6 +8519,184 @@ export const guideArticles: RevisionArticle[] = [
     },
   },
 
+  {
+    slug: "types-of-permanent-dental-implants",
+    title: "Types of Permanent Dental Implants: Which Option Fits Your Situation in 2026",
+    metaTitle: "Types of Permanent Dental Implants: 2026 Options Guide",
+    metaDescription:
+      "Single-tooth implants, implant bridges, snap-in overdentures, fixed full-arch, and zygomatic implants compared by board-certified Roseville oral surgeon Dr. Antipov \u2014 which type fits which situation, what each costs, and how candidacy is decided.",
+    excerpt:
+      "\u201cDental implant\u201d is not one treatment \u2014 it is a family of options ranging from a single-tooth restoration to a fixed full-arch on four posts to zygomatic implants for severe bone loss. This guide maps each type to the situation it solves, so you can walk into a consultation knowing which questions to ask.",
+    date: "August 13, 2026",
+    datePublished: "2026-08-13",
+    image: "/images/blog/2026-08-04/types-of-permanent-dental-implants.png",
+    heroAlt: "Dental implant restoration types displayed side by side: single-tooth implant crown, implant-supported bridge, and fixed full-arch bridge on a jaw model",
+    category: "Dental Implants",
+    readTime: "10 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "types of permanent dental implants",
+      "dental implant options",
+      "single tooth implant vs full arch",
+      "implant supported bridge",
+      "permanent tooth replacement types",
+    ],
+    intro: [
+        "The main types of permanent dental implants are single-tooth implants, implant-supported bridges for multiple missing teeth, snap-in overdentures, fixed full-arch systems like All-on-4, and \u2014 for severe bone loss \u2014 zygomatic implants, explains Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. Which one fits you depends on three things: how many teeth are missing, how much bone remains, and whether you want a restoration that stays in around the clock. This guide walks through each type, the situation it is designed to solve, and what it typically costs \u2014 so the treatment names you hear at a consultation map to decisions you already understand. For the deeper dive on any single option, each section links to our full guide on that treatment.",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical exam. The right implant type, candidacy, and costs depend on your bone volume, health history, and anatomy \u2014 determined after 3D imaging at an in-person consultation.",
+    tldr: [],
+    sections: [
+      {
+        heading: "The Implant Types at a Glance",
+        paras: [
+          "Here is the full landscape mapped to the situations each type solves:",
+        ],
+        table: {
+          headers: ["Type", "Best for", "Removable?", "Typical complete cost"],
+          rows: [
+            ["Single-tooth implant", "One missing tooth", "No \u2014 fixed", "$4,000\u2013$6,000"],
+            ["Implant-supported bridge", "Several missing teeth in a row", "No \u2014 fixed", "Less than one implant per tooth"],
+            ["Snap-in overdenture", "Full arch on a tighter budget", "Yes \u2014 nightly cleaning", "Below fixed full-arch"],
+            ["Fixed full-arch (All-on-4/X)", "Full arch, non-removable", "No \u2014 fixed", "$25,000\u2013$35,000 per arch"],
+            ["Zygomatic implants", "Severe upper-jaw bone loss", "No \u2014 fixed", "Case-specific; specialist care"],
+          ],
+        },
+      },
+      {
+        heading: "Why \u201cPermanent\u201d Matters: The Bone Underneath",
+        paras: [
+          [
+            "Every implant type shares one mechanism that separates it from dentures and tooth-supported bridges: a titanium post fuses with your jawbone through osseointegration \u2014 the biological bonding process described in the National Library of Medicine's overview of ",
+            { text: "dental implants", href: "https://medlineplus.gov/ency/article/007645.htm" },
+            ". That fusion does two jobs at once. It anchors the visible teeth rigidly, and it transmits chewing forces into the bone, helping preserve density at each post site. Without that stimulation, the jaw gradually resorbs after tooth loss \u2014 which degrades denture fit over years and contributes to the sunken facial changes of long-term tooth loss.",
+          ],
+          "\u201cPermanent\u201d refers to the implant foundation, which is designed to last decades with good hygiene and regular checkups. The visible crown or bridge is subject to normal wear and may need maintenance or replacement over its life \u2014 typically after many years, much as natural teeth need occasional dental work.",
+        ],
+      },
+      {
+        heading: "Single-Tooth Implants: One Gap, One Root",
+        paras: [
+          [
+            "For a single missing tooth, an implant with a crown is the modern standard: it fills the gap without grinding down the healthy neighboring teeth that a traditional bridge would require, and it preserves the bone at the site. Complete treatment \u2014 implant, abutment, and crown \u2014 commonly runs $4,000\u2013$6,000 in the Roseville area. Our ",
+            { text: "single-tooth implant guide", href: "/for-patients/insights/single-tooth-implant-roseville" },
+            " covers the process, and the ",
+            { text: "implant vs. bridge cost comparison", href: "/for-patients/insights/single-tooth-implant-vs-dental-bridge-real-cost" },
+            " runs the long-term numbers against the alternative.",
+          ],
+        ],
+      },
+      {
+        heading: "Implant-Supported Bridges: Several Teeth, Fewer Implants",
+        paras: [
+          [
+            "When several teeth in a row are missing, you rarely need an implant for every gap: two implants can support a bridge spanning three or four teeth. Unlike a tooth-supported bridge, the load rests on implants rather than on your remaining natural teeth \u2014 sparing them the grinding and long-term stress \u2014 and unlike a removable partial, it stays fixed in place. This is frequently the right middle ground for patients missing a section of teeth but not a full arch, including molars \u2014 see our guide to ",
+            { text: "implants for missing back teeth", href: "/for-patients/insights/dental-implants-for-missing-back-teeth" },
+            " for how chewing forces shape the plan.",
+          ],
+        ],
+      },
+      {
+        heading: "Full-Arch Options: Snap-In vs. Fixed",
+        paras: [
+          [
+            "When an entire arch is failing or gone, two implant-based paths exist. Snap-in overdentures click onto 2\u20134 implants \u2014 far more stable than a traditional denture, at a lower cost than fixed treatment, but removed nightly for cleaning. Fixed full-arch systems (the All-on-4 family) attach a non-removable bridge to 4\u20136 implants; the tilted rear implants anchor into denser bone at the front of the jaw, which lets many patients with years of bone loss avoid grafting, and qualifying patients receive a fixed provisional the day of surgery. Complete fixed treatment commonly runs $25,000\u2013$35,000 per arch. Our ",
+            { text: "fixed vs. removable comparison", href: "/for-patients/insights/permanent-dentures-fixed-vs-removable" },
+            " weighs the two paths, and the ",
+            { text: "fixed dentures on implants guide", href: "/for-patients/insights/fixed-dentures-on-implants" },
+            " covers the fixed option end to end.",
+          ],
+          "Between four and six implants, the right count is an engineering decision read from your CT scan \u2014 bone density and bite forces, not an upgrade menu. Whichever configuration is used, the final bridge is milled from high-strength zirconia or a titanium-acrylic hybrid, matched to your face and bite.",
+        ],
+      },
+      {
+        heading: "Zygomatic Implants: When the Upper Jaw Has Too Little Bone",
+        paras: [
+          [
+            "Severe upper-jaw bone loss \u2014 common after decades in dentures \u2014 can leave too little bone for standard implants even with tilting. Zygomatic implants solve this by anchoring longer posts into the cheekbone (zygoma), which does not resorb after tooth loss. This is genuinely specialist territory: the technique demands hospital-level surgical training and is one reason complex cases belong with a board-certified oral and maxillofacial surgeon. Our ",
+            { text: "zygomatic implants guide", href: "/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible" },
+            " explains candidacy, and the ",
+            { text: "severe bone loss options guide", href: "/for-patients/insights/dental-implants-with-severe-bone-loss-options" },
+            " maps the full decision tree \u2014 including when grafting is the better route.",
+          ],
+        ],
+      },
+      {
+        heading: "How to Choose: Three Questions That Decide Most Cases",
+        paras: [
+          "Across all these types, three questions narrow the field quickly. How many teeth are missing? One tooth points to a single implant; a section points to an implant bridge; a full arch points to snap-in or fixed full-arch. How much bone remains? A CBCT scan answers this definitively \u2014 and modern techniques (tilted implants, grafting, zygomatic approaches) keep far more patients treatable than most expect. And do you want teeth that stay in around the clock? That single lifestyle preference is often what separates snap-in from fixed candidates with similar anatomy.",
+          [
+            "Budget shapes the answer too, but less rigidly than patients fear: many dental plans contribute toward portions of treatment \u2014 commonly $1,000\u2013$3,000 depending on the policy \u2014 and financing can spread the remainder into monthly payments; see our ",
+            { text: "payment plans guide", href: "/for-patients/insights/dental-implant-payment-plans" },
+            ". If you have been told you are not a candidate elsewhere, read ",
+            { text: "why specialists often say yes", href: "/for-patients/insights/told-no-to-dental-implants-why-specialists-say-yes" },
+            " \u2014 declined cases are frequently treatable with the advanced techniques above.",
+          ],
+        ],
+      },
+      {
+        heading: "Matching the Type to Your Anatomy in Roseville",
+        paras: [
+          [
+            "The type names matter less than the plan behind them: a CBCT scan, an honest read of your bone and bite, and a recommendation driven by your anatomy rather than a package price. Dr. Antipov treats the full spectrum \u2014 from single-tooth implants to complex full-arch and zygomatic cases \u2014 at his Roseville practice, where patients travel in from Sacramento and across Northern California for specialist-level care. You can read more about ",
+            { text: "single-tooth", href: "/expertise/single-tooth" },
+            " and ",
+            { text: "full-arch implant treatment", href: "/expertise/full-arch-implants" },
+            " at our practice.",
+          ],
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What are the main types of permanent dental implants?",
+        answer:
+          "Five categories cover most cases: single-tooth implants for one gap, implant-supported bridges for several missing teeth in a row, snap-in overdentures and fixed full-arch systems (like All-on-4) for a whole arch, and zygomatic implants for severe upper-jaw bone loss. Which fits you depends on how many teeth are missing, your bone volume, and whether you want a non-removable restoration.",
+      },
+      {
+        question: "How long do permanent dental implants last?",
+        answer:
+          "The implant post is designed to last decades with good hygiene and regular checkups, and long-term success rates are commonly cited above 95%. The visible crown or bridge experiences normal wear and may need maintenance or replacement over its life. Implants cannot decay, but the gums around them still need daily care.",
+      },
+      {
+        question: "Can I get permanent teeth in one day?",
+        answer:
+          "For qualifying patients, yes \u2014 full-arch protocols can place implants and attach a fixed provisional bridge the same day, so you never go without teeth. The final bridge is placed after the implants integrate over roughly three to six months. Candidacy for same-day teeth is confirmed at your consultation and depends on implant stability at surgery.",
+      },
+      {
+        question: "Am I a candidate if I have significant bone loss?",
+        answer:
+          "Often, yes. Tilted-implant techniques use the denser bone at the front of the jaw, grafting can rebuild lost support, and zygomatic implants anchor into the cheekbone when the upper jaw offers too little bone. A CBCT scan shows exactly what your anatomy supports \u2014 many patients told \u201cno\u201d years ago are treatable today.",
+      },
+      {
+        question: "What is the difference between snap-in and fixed full-arch implants?",
+        answer:
+          "Snap-in overdentures click onto 2\u20134 implants and come out nightly for cleaning \u2014 a major stability upgrade over traditional dentures at a lower cost. Fixed full-arch bridges attach to 4\u20136 implants and stay in around the clock, cleaned like natural teeth. The choice weighs budget, bone volume, dexterity, and lifestyle preference.",
+      },
+      {
+        question: "How much do the different implant types cost?",
+        answer:
+          "A complete single-tooth implant commonly runs $4,000\u2013$6,000; fixed full-arch treatment $25,000\u2013$35,000 per arch, or $50,000\u2013$70,000 for both arches; snap-in systems and implant bridges fall between those anchors. Always compare all-inclusive written quotes \u2014 imaging, extractions, sedation, and the final restoration are sometimes billed separately.",
+      },
+      {
+        question: "Does insurance cover permanent dental implants?",
+        answer:
+          "Many plans contribute toward portions of treatment \u2014 commonly $1,000\u2013$3,000 per year depending on the policy \u2014 often applied to extractions and restorative components. Full coverage is rare, so most patients combine benefits with financing or HSA/FSA funds. A benefits review before treatment clarifies your actual out-of-pocket cost.",
+      },
+      {
+        question: "Is implant surgery painful?",
+        answer:
+          "The procedure is performed under local anesthesia with IV sedation available, and most patients describe pressure rather than pain. Guided placement keeps surgery minimally invasive, and post-operative soreness is typically manageable with standard medication, with most patients back to light activity within a few days.",
+      },
+    ],
+    cta: {
+      heading: "Find Out Which Implant Type Fits Your Anatomy",
+      body:
+        "Schedule a free implant consultation with Dr. Antipov in Roseville \u2014 3D CBCT imaging, an honest assessment of every option that fits your bone and budget, and one transparent written plan. Restrictions apply.",
+    },
+  },
+
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

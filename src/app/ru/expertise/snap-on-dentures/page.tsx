@@ -6,5 +6,5 @@ const data = ruServicePages["snap-on-dentures"];
 export const metadata = buildServiceMetadata(data, "ru");
 
 export default function Page() {
-  return <ServicePageTemplate data={data} locale="ru" />;
+  return <ServicePageTemplate data={data} locale="ru" calculatorSlug="snap-in-denture" />;
 }

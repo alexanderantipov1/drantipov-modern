@@ -20,10 +20,10 @@ const antipovCredentials = [
   "Member, American Dental Association (ADA)",
   "Member, California Dental Association (CDA)",
   "California Dental License #50724",
-  "General Anesthesia Permit #GA 1446 — In-Office IV Sedation",
+  "General Anesthesia Permit #GA 1446 - In-Office IV Sedation",
   "Elective Facial Cosmetic Surgery Permit",
   "Continuing Education Registered Provider #00948675",
-  "Hospital Privileges — Sutter Roseville, Sutter General, Mercy General, Mercy San Juan",
+  "Hospital Privileges - Sutter Roseville, Sutter General, Mercy General, Mercy San Juan",
   "Founder & Director, Smile Again Foundation (2025)",
 ];
 
@@ -72,7 +72,7 @@ export default function About() {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
               <Image
                 src="/images/drantipov-about-v7.jpg"
-                alt="Dr. Alexander Antipov, DDS — Board-certified oral and maxillofacial surgeon specializing in dental implants, jaw surgery, and facial cosmetics in Roseville, CA"
+                alt="Dr. Alexander Antipov, DDS - Board-certified oral and maxillofacial surgeon specializing in dental implants, jaw surgery, and facial cosmetics in Roseville, CA"
                 fill
                 className="object-cover"
                 sizes="100vw"
@@ -140,7 +140,7 @@ export default function About() {
           </motion.div>
         </div>
 
-        {/* Recognition — Neodent Elite Practitioner Award */}
+        {/* Recognition - Neodent Elite Practitioner Award */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -183,7 +183,7 @@ export default function About() {
                 <div className="mt-8">
                   <Image
                     src="/images/about/neodent-logo.png"
-                    alt="Neodent — A Straumann Group Brand"
+                    alt="Neodent - A Straumann Group Brand"
                     width={414}
                     height={122}
                     className="h-12 w-auto"
@@ -216,7 +216,7 @@ export default function About() {
               Dr. André-David Kahwach brings a unique blend of <strong>surgical excellence</strong>, <strong>artistic vision</strong>, and global perspective to oral and maxillofacial surgery. He earned his dental degree with honors from <strong>UC San Francisco</strong> before completing his OMS training at <strong>Loma Linda University</strong>, where he also obtained his medical degree and advanced training in anesthesia.
             </p>
             <p className="mt-4 text-muted leading-relaxed">
-              With a passion for the full scope of oral and maxillofacial surgery, Dr. Kahwach is deeply committed to delivering exceptional care across <strong>cosmetic procedures</strong>, <strong>dental implants</strong>, <strong>facial trauma</strong>, and <strong>orthognathic surgery</strong>. His approach combines precision with creativity — an influence shaped not only by his surgical training, but also by his background in painting and sculpture.
+              With a passion for the full scope of oral and maxillofacial surgery, Dr. Kahwach is deeply committed to delivering exceptional care across <strong>cosmetic procedures</strong>, <strong>dental implants</strong>, <strong>facial trauma</strong>, and <strong>orthognathic surgery</strong>. His approach combines precision with creativity - an influence shaped not only by his surgical training, but also by his background in painting and sculpture.
             </p>
             <p className="mt-4 text-muted leading-relaxed">
               Beyond the operating room, Dr. Kahwach has traveled extensively across Europe, Africa, the Caribbean, and the Middle East, strengthening his dedication to service through medical and dental mission work. Known for his approachable demeanor and commitment to excellence, he strives to ensure every patient feels confident, informed, and genuinely cared for.
@@ -249,7 +249,7 @@ export default function About() {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
               <Image
                 src="/images/dr-kahwach-v4.jpg"
-                alt="Dr. André-David Kahwach, DDS, MD — Oral and maxillofacial surgeon specializing in dental implants, facial trauma, orthognathic surgery, and cosmetic procedures"
+                alt="Dr. André-David Kahwach, DDS, MD - Oral and maxillofacial surgeon specializing in dental implants, facial trauma, orthognathic surgery, and cosmetic procedures"
                 fill
                 className="object-cover"
                 sizes="100vw"
@@ -272,7 +272,7 @@ export default function About() {
                 </div>
                 <div>
                   <p className="font-bold text-dark text-sm">Dual Degree</p>
-                  <p className="text-muted text-xs">DDS &amp; MD — UCSF &amp; Loma Linda</p>
+                  <p className="text-muted text-xs">DDS &amp; MD - UCSF &amp; Loma Linda</p>
                 </div>
               </div>
               <p className="text-muted text-xs leading-relaxed">

@@ -23,7 +23,7 @@ export const metadata = {
   },
   openGraph: {
     title: "TMJ / TMD Treatment",
-    description: "Diagnosis-driven TMJ treatment — conservative therapy first, surgery only when truly needed.",
+    description: "Diagnosis-driven TMJ treatment - conservative therapy first, surgery only when truly needed.",
     images: [
       {
         url: "/images/blog/2015-07-06/tmj-e4c0b47f.jpg",
@@ -36,7 +36,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "TMJ / TMD Treatment",
-    description: "Diagnosis-driven TMJ treatment — conservative therapy first, surgery only when truly needed.",
+    description: "Diagnosis-driven TMJ treatment - conservative therapy first, surgery only when truly needed.",
     images: ["/images/blog/2015-07-06/tmj-e4c0b47f.jpg"],
   }
 }
@@ -69,7 +69,7 @@ const conservativeFirst = [
 ]
 
 const surgicalOptions = [
-  { title: "Arthrocentesis", description: "Minimally invasive — needles wash inflammation out of the joint. Outpatient, ~30 minutes." },
+  { title: "Arthrocentesis", description: "Minimally invasive - needles wash inflammation out of the joint. Outpatient, ~30 minutes." },
   { title: "TMJ arthroscopy", description: "Small camera enters the joint for diagnosis and treatment. Outpatient, 1-hour procedure." },
   { title: "Open joint surgery (arthroplasty)", description: "Direct repair or reshaping of the joint structures when arthroscopy is insufficient." },
   { title: "Total joint replacement", description: "Reserved for severe degeneration, ankylosis, or failed prior surgeries. Patient-specific implant." },
@@ -96,7 +96,7 @@ export default function TMJPage() {
       <ExpertisePageHero
         badge="TMJ / TMD Treatment"
         title="Comprehensive TMJ disorder care"
-        subtitle="Diagnosis-driven treatment for jaw pain, joint dysfunction, and chronic facial pain — starting with conservative therapy and reserving surgery for cases that truly need it."
+        subtitle="Diagnosis-driven treatment for jaw pain, joint dysfunction, and chronic facial pain - starting with conservative therapy and reserving surgery for cases that truly need it."
         image="/images/blog/2015-07-06/tmj-e4c0b47f.jpg"
       />
 

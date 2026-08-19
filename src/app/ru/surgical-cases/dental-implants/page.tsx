@@ -15,9 +15,9 @@ import { siteUrl } from "@/data/russianImplantFunnel";
 
 export const metadata: Metadata = {
   title:
-    "Имплантация зубов — кейсы All-on-4 и немедленная имплантация | Доктор Антипов",
+    "Имплантация зубов - кейсы All-on-4 и немедленная имплантация | Доктор Антипов",
   description:
-    "Случаи имплантации зубов доктора Антипова: All-on-4, немедленная имплантация, восстановление всей челюсти. Новые зубы за один день — реальные результаты пациентов в Roseville, CA.",
+    "Случаи имплантации зубов доктора Антипова: All-on-4, немедленная имплантация, восстановление всей челюсти. Новые зубы за один день - реальные результаты пациентов в Roseville, CA.",
   alternates: {
     canonical: `${siteUrl}/ru/surgical-cases/dental-implants`,
     languages: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Имплантация зубов — кейсы доктора Антипова",
+    title: "Имплантация зубов - кейсы доктора Антипова",
     description:
       "All-on-4, немедленная имплантация и восстановление всей челюсти. Реальные результаты пациентов в Roseville, Калифорния.",
     url: `${siteUrl}/ru/surgical-cases/dental-implants`,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: "/images/cases/dental-implants/di000010/1/preview-0d23c849.jpg",
         width: 1200,
         height: 630,
-        alt: "Имплантация зубов — кейсы доктора Антипова",
+        alt: "Имплантация зубов - кейсы доктора Антипова",
       },
     ],
   },
@@ -48,7 +48,7 @@ const benefits = [
   {
     title: "Зубы за один день",
     description:
-      "Приходите с разрушенными зубами — уходите с полноценной рабочей улыбкой в тот же день.",
+      "Приходите с разрушенными зубами - уходите с полноценной рабочей улыбкой в тот же день.",
   },
   {
     title: "Меньше имплантов",
@@ -114,7 +114,7 @@ export default function RuDentalImplantsCasesPage() {
           <div className="absolute inset-0">
             <Image
               src="/images/dental-implants/dental-implants@2x-0aad592f.jpg"
-              alt="Имплантация зубов — доктор Антипов"
+              alt="Имплантация зубов - доктор Антипов"
               fill
               className="object-cover opacity-30"
               priority
@@ -147,7 +147,7 @@ export default function RuDentalImplantsCasesPage() {
               Кейсы имплантации
             </p>
             <h1 className="mt-4 font-serif text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-              Новая улыбка — иногда за один день
+              Новая улыбка - иногда за один день
             </h1>
             <p className="mt-6 max-w-2xl text-xl leading-relaxed text-white/85">
               От замены одного зуба до восстановления всей челюсти. Методика
@@ -164,7 +164,7 @@ export default function RuDentalImplantsCasesPage() {
                 Результаты, которые меняют жизнь
               </h2>
               <p className="text-lg text-muted">
-                Каждый случай показывает, на что способна имплантация — от одного
+                Каждый случай показывает, на что способна имплантация - от одного
                 зуба до полной челюсти. Подбираем решение под вашу ситуацию,
                 кость и сроки.
               </p>
@@ -202,11 +202,11 @@ export default function RuDentalImplantsCasesPage() {
                 Что такое методика All-on-4
               </h2>
               <p className="text-muted leading-relaxed">
-                All-on-4 — это восстановление всего зубного ряда всего на четырёх
+                All-on-4 - это восстановление всего зубного ряда всего на четырёх
                 имплантах. Задние импланты ставятся под углом 30–45 градусов: так
                 они опираются на максимум кости и обходят гайморову пазуху и
                 нижнечелюстной нерв. Благодаря этому временный протез можно
-                поставить сразу — вы получаете зубы в тот же день и не ждёте
+                поставить сразу - вы получаете зубы в тот же день и не ждёте
                 месяцами между этапами лечения.
               </p>
             </div>

@@ -9,7 +9,7 @@ import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
-  title: "Dental Implant Aftercare — Recovery Tips",
+  title: "Dental Implant Aftercare - Recovery Tips",
   description:
     "Essential guide to dental implant aftercare. Learn post-operative care tips, oral hygiene practices, diet recommendations, and recovery expectations.",
   alternates: {
@@ -97,7 +97,7 @@ export default function DentalImplantAftercarePost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> - Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -438,9 +438,9 @@ export default function DentalImplantAftercarePost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
               <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — After Implant Placement instructions</a></li>
-                <li><a href="https://www.cochrane.org/CD012677/ORAL_interventions-replacing-missing-teeth-treatment-peri-implantitis" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Cochrane Oral Health — Maintaining implants</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy — Implant Care</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - After Implant Placement instructions</a></li>
+                <li><a href="https://www.cochrane.org/CD012677/ORAL_interventions-replacing-missing-teeth-treatment-peri-implantitis" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Cochrane Oral Health - Maintaining implants</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy - Implant Care</a></li>
               </ul>
             </section>
 

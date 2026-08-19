@@ -5,11 +5,12 @@ import Link from "next/link"
 import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
+import CalculatorEmbed from "@/components/CalculatorEmbed"
 
 export const metadata: Metadata = {
   title: "Full Mouth Dental Implants in Roseville & Sacramento: Cost & Process",
   description:
-    "A complete guide to full mouth dental implants in the Sacramento region — All-on-4, the step-by-step process, cost ranges, candidacy, and what makes treatment succeed, from Dr. Antipov.",
+    "A complete guide to full mouth dental implants in the Sacramento region - All-on-4, the step-by-step process, cost ranges, candidacy, and what makes treatment succeed, from Dr. Antipov.",
   alternates: {
     canonical: "/for-patients/insights/full-mouth-dental-implants-cost-process",
     languages: {
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Full Mouth Dental Implants in Roseville & Sacramento: Cost & Process",
-    description: "All-on-4 and full-arch restoration explained — the process, candidacy, and honest cost ranges for the Sacramento region.",
+    description: "All-on-4 and full-arch restoration explained - the process, candidacy, and honest cost ranges for the Sacramento region.",
     images: [
       {
         url: "/images/blog/2026-06-19/full-mouth-dental-implants.png",
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Full Mouth Dental Implants in Roseville & Sacramento: Cost & Process",
-    description: "All-on-4 and full-arch restoration explained — the process, candidacy, and honest cost ranges for the Sacramento region.",
+    description: "All-on-4 and full-arch restoration explained - the process, candidacy, and honest cost ranges for the Sacramento region.",
     images: ["/images/blog/2026-06-19/full-mouth-dental-implants.png"],
   }
 }
@@ -90,7 +91,7 @@ export default function FullMouthDentalImplantsPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Written and medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Written and medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> - Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 
             {/* Featured Image */}
@@ -288,9 +289,9 @@ export default function FullMouthDentalImplantsPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
               <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Dental Implant Surgery Procedure</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M — All-on-4 immediate-function concept with Brånemark System implants</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — National Institute of Dental and Craniofacial Research: Dental Implants</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Dental Implant Surgery Procedure</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M - All-on-4 immediate-function concept with Brånemark System implants</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH - National Institute of Dental and Craniofacial Research: Dental Implants</a></li>
               </ul>
             </section>
 
@@ -340,6 +341,8 @@ export default function FullMouthDentalImplantsPost() {
           </article>
         </Container>
       </Section>
+
+      <CalculatorEmbed slug="all-on-468-per-arch" />
     </>
   )
 }

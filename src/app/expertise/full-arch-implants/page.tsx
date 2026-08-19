@@ -25,9 +25,10 @@ import {
 } from "@/lib/structured-data"
 import { siteConfig } from "@/constants/siteConfig"
 import DualCTA from "@/components/DualCTA"
+import CalculatorEmbed from "@/components/CalculatorEmbed"
 
 export const metadata = {
-  title: { absolute: "Full-Arch Dental Implants — Same-Day Teeth | Roseville" },
+  title: { absolute: "Full-Arch Dental Implants - Same-Day Teeth | Roseville" },
   description: "All-on-X full-arch dental implants with same-day fixed teeth. Board-certified surgeon in Roseville, CA. Free CT scan & consultation.",
   alternates: {
     canonical: "/expertise/full-arch-implants",
@@ -37,20 +38,20 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Full-Arch Dental Implants — All-on-X",
+    title: "Full-Arch Dental Implants - All-on-X",
     description: "Same-day full-arch dental implants by Dr. Antipov. 4–6 implants, immediate-load protocol, Roseville CA.",
     images: [
       {
         url: "/images/fullarch/08-final-result.jpeg",
         width: 1200,
         height: 630,
-        alt: "Full-Arch Dental Implants — All-on-X",
+        alt: "Full-Arch Dental Implants - All-on-X",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Full-Arch Dental Implants — All-on-X",
+    title: "Full-Arch Dental Implants - All-on-X",
     description: "Same-day full-arch dental implants by Dr. Antipov. 4–6 implants, immediate-load protocol, Roseville CA.",
     images: ["/images/fullarch/08-final-result.jpeg"],
   }
@@ -183,7 +184,7 @@ export default function FullArchImplantsPage() {
       <ExpertisePageHero
         badge="Advanced Implant Solutions"
         title="Full-Arch Implant Solutions"
-        subtitle="Full-arch dental implants (All-on-4 / All-on-X) replace an entire upper or lower row of teeth using 4–6 titanium implants anchored in the jawbone — often with same-day fixed teeth."
+        subtitle="Full-arch dental implants (All-on-4 / All-on-X) replace an entire upper or lower row of teeth using 4–6 titanium implants anchored in the jawbone - often with same-day fixed teeth."
         image="/images/procedures/dental-implants@2x-06d1b2ea.jpg"
       />
 
@@ -246,7 +247,7 @@ export default function FullArchImplantsPage() {
         </Container>
       </Section>
 
-      {/* Doctor Quote — personal touch */}
+      {/* Doctor Quote - personal touch */}
       <DoctorQuote
         quote="For a patient who has lived with failing teeth or ill-fitting dentures, walking out with a brand-new smile in a single day is one of the most rewarding things I do as a surgeon."
         author="Dr. Alexander Antipov, DDS"
@@ -450,12 +451,14 @@ export default function FullArchImplantsPage() {
         </Container>
       </Section>
 
+      <CalculatorEmbed slug="all-on-468-per-arch" />
+
       <DualCTA variant="implants"
         heading="Restore Your Full Smile"
-        subheading="Full-arch reconstruction (All-on-4 / All-on-X) — schedule a complimentary implant consultation with a 3D CT scan."
+        subheading="Full-arch reconstruction (All-on-4 / All-on-X) - schedule a complimentary implant consultation with a 3D CT scan."
       />
 
-      {/* Floating sticky CTA — appears after 25% scroll */}
+      {/* Floating sticky CTA - appears after 25% scroll */}
       <FloatingArticleCTA
         href="/contact"
         label="Book free consultation"

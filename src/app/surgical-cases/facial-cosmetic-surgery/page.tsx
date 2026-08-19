@@ -12,8 +12,8 @@ import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data
 import { siteConfig } from "@/constants/siteConfig"
 
 export const metadata: Metadata = {
-  title: "Facial Cosmetic Surgery — Before & After | Dr. Antipov",
-  description: "Rhinoplasty, eyelid surgery, facial fillers, lip augmentation, scarless mole removal — facial cosmetic surgery results by Dr. Antipov, Roseville CA.",
+  title: "Facial Cosmetic Surgery - Before & After | Dr. Antipov",
+  description: "Rhinoplasty, eyelid surgery, facial fillers, lip augmentation, scarless mole removal - facial cosmetic surgery results by Dr. Antipov, Roseville CA.",
   alternates: {
     canonical: "/surgical-cases/facial-cosmetic-surgery",
     languages: {
@@ -22,21 +22,21 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Facial Cosmetic Surgery — Before & After Cases",
-    description: "Rhinoplasty, eyelid surgery, fillers, lip augmentation, scarless mole removal — Dr. Antipov, Roseville CA.",
+    title: "Facial Cosmetic Surgery - Before & After Cases",
+    description: "Rhinoplasty, eyelid surgery, fillers, lip augmentation, scarless mole removal - Dr. Antipov, Roseville CA.",
     images: [
       {
         url: "/images/cases/facial-cosmetic-surgery/fcs000001/1/preview-9b89c3c9.jpg",
         width: 1200,
         height: 630,
-        alt: "Facial Cosmetic Surgery — Before & After by Dr. Antipov",
+        alt: "Facial Cosmetic Surgery - Before & After by Dr. Antipov",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Facial Cosmetic Surgery — Before & After",
-    description: "Rhinoplasty, eyelid surgery, fillers, lip augmentation, scarless mole removal — Dr. Antipov, Roseville CA.",
+    title: "Facial Cosmetic Surgery - Before & After",
+    description: "Rhinoplasty, eyelid surgery, fillers, lip augmentation, scarless mole removal - Dr. Antipov, Roseville CA.",
     images: ["/images/cases/facial-cosmetic-surgery/fcs000001/1/preview-9b89c3c9.jpg"],
   },
 }
@@ -52,7 +52,7 @@ export default function FacialCosmeticSurgeryPage() {
       "@context": "https://schema.org",
       "@type": "ItemList",
       name: "Facial Cosmetic Surgery Procedures",
-      description: "Facial cosmetic and aesthetic procedures performed by Dr. Alexander Antipov in Roseville, CA — including rhinoplasty, eyelid surgery, fillers, lip augmentation, facial rejuvenation, and scarless mole removal.",
+      description: "Facial cosmetic and aesthetic procedures performed by Dr. Alexander Antipov in Roseville, CA - including rhinoplasty, eyelid surgery, fillers, lip augmentation, facial rejuvenation, and scarless mole removal.",
       url: `${siteConfig.url}/surgical-cases/facial-cosmetic-surgery`,
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Rhinoplasty", item: { "@type": "MedicalProcedure", name: "Rhinoplasty", url: `${siteConfig.url}/surgical-cases/facial-cosmetic-surgery` } },
@@ -184,7 +184,7 @@ export default function FacialCosmeticSurgeryPage() {
 
       <DualCTA variant="surgical"
         heading="Ready to Discuss Cosmetic Surgery?"
-        subheading="Facial cosmetic surgery is performed at Galleria Oral & Facial Surgery — by Dr. Antipov and Dr. Kahwach."
+        subheading="Facial cosmetic surgery is performed at Galleria Oral & Facial Surgery - by Dr. Antipov and Dr. Kahwach."
       />
     </>
   )

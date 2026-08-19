@@ -7,7 +7,7 @@ import PageHero from "@/components/PageHero";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "Контакты — бесплатная консультация | Доктор Антипов" },
+  title: { absolute: "Контакты - бесплатная консультация | Доктор Антипов" },
   description:
     "Запишитесь на бесплатную консультацию русскоговорящего челюстно-лицевого хирурга с 3D КТ. Roseville, CA (район Сакраменто). Звоните (916) 783-2110 или напишите нам онлайн.",
   alternates: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Связаться с доктором Антиповым | Бесплатная консультация — Roseville, CA",
+    title: "Связаться с доктором Антиповым | Бесплатная консультация - Roseville, CA",
     description:
       "Свяжитесь с клиникой доктора Антипова в Roseville, CA. Звоните (916) 783-2110, пишите на info@galleriaoms.com или заполните форму. Бесплатные консультации с 3D КТ.",
     url: "/ru/contact",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Связаться с доктором Антиповым | Бесплатная консультация — Roseville, CA",
+    title: "Связаться с доктором Антиповым | Бесплатная консультация - Roseville, CA",
     description:
       "Свяжитесь с клиникой доктора Антипова в Roseville, CA. Звоните, пишите или заполните форму. Бесплатные консультации с 3D КТ.",
   },
@@ -55,7 +55,7 @@ export default function RuContactPage() {
                   Как с нами связаться
                 </h2>
                 <p className="text-lg text-neutral-600">
-                  Пациентам — если вы хотите попасть на лечение. Коллегам-стоматологам — если хотите направить пациента. Мы на связи. Свяжитесь, чтобы записаться на консультацию.
+                  Пациентам - если вы хотите попасть на лечение. Коллегам-стоматологам - если хотите направить пациента. Мы на связи. Свяжитесь, чтобы записаться на консультацию.
                 </p>
               </div>
 
@@ -143,7 +143,7 @@ export default function RuContactPage() {
         <Container size="lg">
           <div className="rounded-2xl overflow-hidden h-96 shadow-md">
             <iframe
-              title="Доктор Антипов — челюстно-лицевая хирургия, 911 Reserve Dr, Suite 150, Roseville, CA 95678"
+              title="Доктор Антипов - челюстно-лицевая хирургия, 911 Reserve Dr, Suite 150, Roseville, CA 95678"
               src="https://www.google.com/maps?q=911+Reserve+Dr+Suite+150,+Roseville,+CA+95678&output=embed"
               width="100%"
               height="100%"

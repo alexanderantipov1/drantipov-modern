@@ -18,7 +18,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Русскоговорящий челюстно-лицевой хирург — доктор Антипов, Roseville CA",
+      "Русскоговорящий челюстно-лицевой хирург - доктор Антипов, Roseville CA",
   },
   description:
     "Русскоговорящий сертифицированный челюстно-лицевой хирург в Roseville, California (район Сакраменто). Импланты в день операции (All-on-4, All-on-6, скуловые), ортогнатика, лечение апноэ сна, костная пластика. 25+ лет опыта.",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Русскоговорящий челюстно-лицевой хирург — доктор Антипов, Roseville CA",
+      "Русскоговорящий челюстно-лицевой хирург - доктор Антипов, Roseville CA",
     description:
       "Русскоговорящий сертифицированный челюстно-лицевой хирург. Импланты в день операции, ортогнатика, апноэ сна, костная пластика. 25+ лет опыта.",
     url: `${siteUrl}/ru`,
@@ -54,14 +54,14 @@ export const metadata: Metadata = {
         url: "/images/Antipov_white.jpg",
         width: 1016,
         height: 1400,
-        alt: "Доктор Александр Антипов, DDS — сертифицированный челюстно-лицевой хирург, Roseville CA",
+        alt: "Доктор Александр Антипов, DDS - сертифицированный челюстно-лицевой хирург, Roseville CA",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Доктор Антипов, DDS — челюстно-лицевой хирург в Roseville, CA",
+      "Доктор Антипов, DDS - челюстно-лицевой хирург в Roseville, CA",
     description:
       "Сертифицированный челюстно-лицевой хирург. Импланты в день операции, ортогнатика, апноэ сна.",
     images: ["/images/Antipov_white.jpg"],
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
 };
 
 /**
- * /ru — главная русскоязычная страница.
+ * /ru - главная русскоязычная страница.
  * Структура 1:1 с EN /page.tsx (после обновлений sysadmin).
  */
 export default function RuHomePage() {

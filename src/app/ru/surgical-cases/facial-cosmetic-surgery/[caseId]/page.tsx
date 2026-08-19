@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: CaseDetailPageProps): Promise
   return {
     title: article?.metaTitle
       ? { absolute: article.metaTitle }
-      : `${caseData.title} — кейс эстетической хирургии лица`,
+      : `${caseData.title} - кейс эстетической хирургии лица`,
     description:
       article?.metaDescription ||
       caseData.description ||

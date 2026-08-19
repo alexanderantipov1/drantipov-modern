@@ -23,7 +23,7 @@ export default function Contact() {
               <span className="gradient-text">Free Consultation</span>
             </h2>
             <p className="mt-6 text-muted text-lg leading-relaxed">
-              Ready to explore dental implants, jaw surgery, or cosmetic procedures? Contact our Roseville office to schedule a complimentary consultation with Dr. Antipov — including a free CT scan and personalized treatment plan.
+              Ready to explore dental implants, jaw surgery, or cosmetic procedures? Contact our Roseville office to schedule a complimentary consultation with Dr. Antipov - including a free CT scan and personalized treatment plan.
             </p>
 
             <div className="mt-10 space-y-6">

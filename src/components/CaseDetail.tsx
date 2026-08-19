@@ -184,8 +184,8 @@ export function CaseDetail({ caseData, article, locale = "en" }: CaseDetailProps
                   src={caseData.imagePath}
                   alt={
                     isRu
-                      ? `${caseData.title} — результат «до и после» (${categoryLabel.toLowerCase()}), врач ${caseData.surgeon || "Dr. Antipov"}, Roseville, CA`
-                      : `${caseData.title} — before and after ${categoryLabel.toLowerCase()} result by ${caseData.surgeon || "Dr. Antipov"} in Roseville, CA`
+                      ? `${caseData.title} - результат «до и после» (${categoryLabel.toLowerCase()}), врач ${caseData.surgeon || "Dr. Antipov"}, Roseville, CA`
+                      : `${caseData.title} - before and after ${categoryLabel.toLowerCase()} result by ${caseData.surgeon || "Dr. Antipov"} in Roseville, CA`
                   }
                   fill
                   className="object-cover"
@@ -195,8 +195,8 @@ export function CaseDetail({ caseData, article, locale = "en" }: CaseDetailProps
               </div>
               <figcaption className="text-sm text-neutral-500 text-center">
                 {isRu
-                  ? `${caseData.title} — ${categoryLabel}, выполнено: ${caseData.surgeon || "Dr. Antipov"}, Galleria Oral & Facial Surgery, Roseville, CA.`
-                  : <>{caseData.title} — {categoryLabel} performed by {caseData.surgeon || "Dr. Antipov"} at Galleria Oral &amp; Facial Surgery, Roseville, CA.</>}
+                  ? `${caseData.title} - ${categoryLabel}, выполнено: ${caseData.surgeon || "Dr. Antipov"}, Galleria Oral & Facial Surgery, Roseville, CA.`
+                  : <>{caseData.title} - {categoryLabel} performed by {caseData.surgeon || "Dr. Antipov"} at Galleria Oral &amp; Facial Surgery, Roseville, CA.</>}
               </figcaption>
             </figure>
           </div>
@@ -317,8 +317,8 @@ export function CaseDetail({ caseData, article, locale = "en" }: CaseDetailProps
                         src={c.imagePath}
                         alt={
                           isRu
-                            ? `${c.title} — случай по направлению «${categoryLabel.toLowerCase()}», врач Dr. Antipov, Roseville, CA`
-                            : `${c.title} — ${categoryLabel.toLowerCase()} case by Dr. Antipov in Roseville, CA`
+                            ? `${c.title} - случай по направлению «${categoryLabel.toLowerCase()}», врач Dr. Antipov, Roseville, CA`
+                            : `${c.title} - ${categoryLabel.toLowerCase()} case by Dr. Antipov in Roseville, CA`
                         }
                         fill
                         className="object-cover transition-transform duration-300 group-hover:scale-105"

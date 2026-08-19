@@ -152,8 +152,8 @@ async function postToResend(
   if (!isEmailConfigured()) return { ok: false, reason: "not_configured" };
   const { first, last } = splitName(data.name ?? "");
   const subject = data.lang === "ru"
-    ? `[RU] ${data.treatment || "Заявка"} — ${data.city || "?"}`
-    : `Lead: ${data.treatment || "Inquiry"} — ${data.city || "?"}`;
+    ? `[RU] ${data.treatment || "Заявка"} - ${data.city || "?"}`
+    : `Lead: ${data.treatment || "Inquiry"} - ${data.city || "?"}`;
   try {
     const result = await sendContactNotification({
       name: `${first} ${last}`.trim() || "Unknown",
@@ -230,7 +230,7 @@ export async function POST(request: NextRequest) {
     });
   }
 
-  // Both attempts failed (or both unconfigured). Log only non-PHI metadata —
+  // Both attempts failed (or both unconfigured). Log only non-PHI metadata -
   // operator must rely on monitoring + retry rather than reading PHI from logs.
   console.error("[lead] All delivery paths failed (PHI redacted)", {
     sf: { configured: !!oid, status: sf.status },
@@ -238,7 +238,7 @@ export async function POST(request: NextRequest) {
   });
 
   // Critical decision: still return ok=true to the user so the form shows
-  // success — the lead is captured in Vercel function logs and the operator
+  // success - the lead is captured in Vercel function logs and the operator
   // can wire up Salesforce/Resend retroactively. Better than the user thinking
   // their submission failed and abandoning.
   return NextResponse.json({

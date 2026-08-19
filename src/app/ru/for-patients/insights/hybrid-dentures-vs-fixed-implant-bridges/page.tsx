@@ -5,11 +5,12 @@ import Link from "next/link"
 import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
+import CalculatorEmbed from "@/components/CalculatorEmbed"
 
 export const metadata: Metadata = {
   title: "Гибридные протезы или несъёмные мосты на имплантах",
   description:
-    "Выбираете восстановление всей челюсти? Сравните гибридные протезы на имплантах и несъёмные мосты на имплантах по ощущениям, стоимости, уходу и сроку службы — с доктором Антиповым в Roseville.",
+    "Выбираете восстановление всей челюсти? Сравните гибридные протезы на имплантах и несъёмные мосты на имплантах по ощущениям, стоимости, уходу и сроку службы - с доктором Антиповым в Roseville.",
   alternates: {
     canonical: "/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges",
     languages: {
@@ -52,7 +53,7 @@ export default function HybridVsFixedPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges#article","headline":"Гибридные протезы или несъёмные мосты на имплантах","description":"Сравнение гибридных протезов на имплантах и несъёмных мостов на имплантах по ощущениям, стоимости, уходу и сроку службы, чтобы помочь пациентам выбрать подходящее восстановление всей челюсти.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/hybrid-vs-fixed.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Гибридный протез лучше, чем All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Они решают разные задачи. Несъёмный мост All-on-4 ощущается естественнее, а съёмный гибридный протез легче для бюджета и идеален для некоторых анатомических особенностей."}},{"@type":"Question","name":"Можно ли спать с несъёмным мостом на имплантах?","acceptedAnswer":{"@type":"Answer","text":"Да. Несъёмный мост остаётся во рту круглосуточно и снимается только стоматологом для периодического обслуживания."}},{"@type":"Question","name":"Сколько служат гибридные протезы?","acceptedAnswer":{"@type":"Answer","text":"Импланты рассчитаны на десятилетия. Сама протезная часть обычно требует перебазировки каждые несколько лет и замены каждые 7–10 лет, а крепления нуждаются в периодической замене."}},{"@type":"Question","name":"Какой вариант ощущается естественнее?","acceptedAnswer":{"@type":"Answer","text":"Пациенты стабильно отмечают, что несъёмные мосты на имплантах ощущаются ближе всего к собственным зубам — без перекрытия нёба и без снятия на ночь. Гибридные протезы всё равно держатся гораздо надёжнее обычных протезов, но они съёмные и более громоздкие."}},{"@type":"Question","name":"Можно ли позже перейти с гибридного протеза на несъёмный мост?","acceptedAnswer":{"@type":"Answer","text":"Часто да. Гибридный протез иногда можно модернизировать в несъёмный мост по мере установки дополнительных имплантов, так что первоначальный выбор — это лучшее решение на сейчас, а не пожизненное обязательство."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges#article","headline":"Гибридные протезы или несъёмные мосты на имплантах","description":"Сравнение гибридных протезов на имплантах и несъёмных мостов на имплантах по ощущениям, стоимости, уходу и сроку службы, чтобы помочь пациентам выбрать подходящее восстановление всей челюсти.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/hybrid-vs-fixed.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Гибридный протез лучше, чем All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Они решают разные задачи. Несъёмный мост All-on-4 ощущается естественнее, а съёмный гибридный протез легче для бюджета и идеален для некоторых анатомических особенностей."}},{"@type":"Question","name":"Можно ли спать с несъёмным мостом на имплантах?","acceptedAnswer":{"@type":"Answer","text":"Да. Несъёмный мост остаётся во рту круглосуточно и снимается только стоматологом для периодического обслуживания."}},{"@type":"Question","name":"Сколько служат гибридные протезы?","acceptedAnswer":{"@type":"Answer","text":"Импланты рассчитаны на десятилетия. Сама протезная часть обычно требует перебазировки каждые несколько лет и замены каждые 7–10 лет, а крепления нуждаются в периодической замене."}},{"@type":"Question","name":"Какой вариант ощущается естественнее?","acceptedAnswer":{"@type":"Answer","text":"Пациенты стабильно отмечают, что несъёмные мосты на имплантах ощущаются ближе всего к собственным зубам - без перекрытия нёба и без снятия на ночь. Гибридные протезы всё равно держатся гораздо надёжнее обычных протезов, но они съёмные и более громоздкие."}},{"@type":"Question","name":"Можно ли позже перейти с гибридного протеза на несъёмный мост?","acceptedAnswer":{"@type":"Answer","text":"Часто да. Гибридный протез иногда можно модернизировать в несъёмный мост по мере установки дополнительных имплантов, так что первоначальный выбор - это лучшее решение на сейчас, а не пожизненное обязательство."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -89,7 +90,7 @@ export default function HybridVsFixedPost() {
             </h1>
 
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Автор и медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> — сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №50724
+              Автор и медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> - сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №50724
             </p>
 
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -248,7 +249,7 @@ export default function HybridVsFixedPost() {
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">Можно ли позже перейти с гибридного протеза на несъёмный мост?</h3>
                   <p className="text-neutral-700 leading-relaxed">
                     Часто да. Гибридный протез иногда можно модернизировать в несъёмный мост по мере установки
-                    дополнительных имплантов &mdash; так что первоначальный выбор — это лучшее решение на сейчас,
+                    дополнительных имплантов &mdash; так что первоначальный выбор - это лучшее решение на сейчас,
                     а не пожизненное обязательство.
                   </p>
                 </div>
@@ -259,9 +260,9 @@ export default function HybridVsFixedPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Процедура установки дентальных имплантов</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/23211766/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Покрывные протезы на имплантах против несъёмных — сравнение результатов (PubMed)</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Процедура установки дентальных имплантов</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH - Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/23211766/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Покрывные протезы на имплантах против несъёмных - сравнение результатов (PubMed)</a></li>
               </ul>
             </section>
 
@@ -309,6 +310,8 @@ export default function HybridVsFixedPost() {
           </article>
         </Container>
       </Section>
+
+      <CalculatorEmbed slug="zirconia-teeth" locale="ru" />
     </>
   )
 }

@@ -8,8 +8,8 @@ import heroContent from "@/lib/heroContent"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Refer Patients — Dentist Referrals",
-  description: "Refer patients to Dr. Antipov for complex oral surgery — full-arch implants, orthognathic surgery, bone grafting, zygomatic implants. Streamlined referral process with detailed reports back.",
+  title: "Refer Patients - Dentist Referrals",
+  description: "Refer patients to Dr. Antipov for complex oral surgery - full-arch implants, orthognathic surgery, bone grafting, zygomatic implants. Streamlined referral process with detailed reports back.",
   alternates: {
     canonical: "/for-dentists/refer-patients",
     languages: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Refer Patients — Dr. Antipov Oral Surgery",
+    title: "Refer Patients - Dr. Antipov Oral Surgery",
     description: "Streamlined referral process for complex oral & maxillofacial surgery cases. Detailed reporting, fast scheduling.",
     url: "https://www.drantipov.com/for-dentists/refer-patients",
     type: "website",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const referralBenefits = [
   {
     title: "We Handle the Complex Procedures",
-    description: "We take care of the surgical phase—implant placement, bone grafting, extractions, and other complex procedures—so you can focus on what you do best."
+    description: "We take care of the surgical phase-implant placement, bone grafting, extractions, and other complex procedures-so you can focus on what you do best."
   },
   {
     title: "Patient Returns to You for Restorative Care",
@@ -66,7 +66,7 @@ export default function ReferPatientsPage() {
                     When you refer a patient to Dr. Antipov, you're partnering with an experienced oral surgeon who understands the importance of your patient relationships.
                   </p>
                   <p>
-                    We focus exclusively on the surgical phase of treatment—whether it's implant placement, bone grafting, extractions, or other complex procedures. Once the surgical work is complete and your patient has healed, they return to your practice for the restorative phase and ongoing dental care.
+                    We focus exclusively on the surgical phase of treatment-whether it's implant placement, bone grafting, extractions, or other complex procedures. Once the surgical work is complete and your patient has healed, they return to your practice for the restorative phase and ongoing dental care.
                   </p>
                   <p>
                     This collaborative approach ensures your patients receive expert surgical care while maintaining continuity with their trusted general dentist.

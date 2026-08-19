@@ -14,7 +14,7 @@ import PageHero from "@/components/PageHero"
 import heroContent from "@/lib/heroContent"
 
 export const metadata: Metadata = {
-  title: { absolute: "FAQ — Oral Surgery Questions | Dr. Antipov" },
+  title: { absolute: "FAQ - Oral Surgery Questions | Dr. Antipov" },
   description: "Answers to common questions about dental implants, jaw surgery, bone grafting, recovery, costs, and insurance. Roseville, CA.",
   openGraph: {
     title: "Frequently Asked Questions | Dr. Alexander Antipov",

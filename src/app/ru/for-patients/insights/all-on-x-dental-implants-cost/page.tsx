@@ -5,11 +5,12 @@ import Link from "next/link"
 import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
+import CalculatorEmbed from "@/components/CalculatorEmbed"
 
 export const metadata: Metadata = {
   title: "Стоимость имплантов All-on-X: 4, 6 или 8 имплантов?",
   description:
-    "Что на самом деле означает All-on-X, как стоимость зависит от числа имплантов на челюсть — 4, 6 или 8, что входит в смету и как понять, что нужно именно в вашем случае.",
+    "Что на самом деле означает All-on-X, как стоимость зависит от числа имплантов на челюсть - 4, 6 или 8, что входит в смету и как понять, что нужно именно в вашем случае.",
   alternates: {
     canonical: "/ru/for-patients/insights/all-on-x-dental-implants-cost",
     languages: {
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     locale: "ru_RU",
     title: "Стоимость имплантов All-on-X: 4, 6 или 8 имплантов?",
-    description: "Как меняется стоимость имплантации всей челюсти при 4, 6 или 8 имплантах — и как правильно сравнивать сметы.",
+    description: "Как меняется стоимость имплантации всей челюсти при 4, 6 или 8 имплантах - и как правильно сравнивать сметы.",
     images: [
       {
         url: "/images/blog/2026-06-19/all-on-x-cost.png",
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Стоимость имплантов All-on-X: 4, 6 или 8 имплантов?",
-    description: "Как меняется стоимость имплантации всей челюсти при 4, 6 или 8 имплантах — и как правильно сравнивать сметы.",
+    description: "Как меняется стоимость имплантации всей челюсти при 4, 6 или 8 имплантах - и как правильно сравнивать сметы.",
     images: ["/images/blog/2026-06-19/all-on-x-cost.png"],
   }
 }
@@ -52,7 +53,7 @@ export default function AllOnXCostPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/all-on-x-dental-implants-cost#article","headline":"Стоимость имплантов All-on-X: 4, 6 или 8 имплантов?","description":"Что означает All-on-X, как стоимость зависит от числа имплантов на челюсть — 4, 6 или 8, что должно входить в смету и как понять, что нужно именно в вашем случае.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/all-on-x-dental-implants-cost","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/all-on-x-cost.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/all-on-x-dental-implants-cost"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Достаточно ли All-on-4 прочен для обычной еды?","acceptedAnswer":{"@type":"Answer","text":"Да. All-on-4 выдерживает около 95% естественной силы укуса, и большинство пациентов едят что хотят, включая твёрдую и жёсткую пищу."}},{"@type":"Question","name":"Зачем вообще выбирать All-on-6 вместо All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Лучшее распределение нагрузки на длинных челюстях, дополнительная опора для тех, кто сильно сжимает зубы, отсутствие заднего консольного выноса и запас прочности на случай, если имплант не приживётся. В подходящем случае доплата оправдана."}},{"@type":"Question","name":"Одинакова ли стоимость для верхней и нижней челюсти?","acceptedAnswer":{"@type":"Answer","text":"Верхняя челюсть часто стоит чуть дороже, потому что кость там обычно мягче и ближе к пазухе, что иногда требует синус-лифтинга или скуловых имплантов."}},{"@type":"Question","name":"Что если я сейчас могу позволить только одну челюсть?","acceptedAnswer":{"@type":"Answer","text":"Многие пациенты сначала занимаются более проблемной челюстью, а вторую делают позже. Рассрочка тоже помогает разбить стоимость на посильные ежемесячные платежи."}},{"@type":"Question","name":"Все ли All-on-4 одинаковы?","acceptedAnswer":{"@type":"Answer","text":"Нет. Клиники сильно различаются по бренду имплантов, хирургической технике, материалу протеза и качеству лаборатории. Название одно и то же, но долговечность и результат отличаются существенно."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/all-on-x-dental-implants-cost#article","headline":"Стоимость имплантов All-on-X: 4, 6 или 8 имплантов?","description":"Что означает All-on-X, как стоимость зависит от числа имплантов на челюсть - 4, 6 или 8, что должно входить в смету и как понять, что нужно именно в вашем случае.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/all-on-x-dental-implants-cost","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/all-on-x-cost.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/all-on-x-dental-implants-cost"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Достаточно ли All-on-4 прочен для обычной еды?","acceptedAnswer":{"@type":"Answer","text":"Да. All-on-4 выдерживает около 95% естественной силы укуса, и большинство пациентов едят что хотят, включая твёрдую и жёсткую пищу."}},{"@type":"Question","name":"Зачем вообще выбирать All-on-6 вместо All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Лучшее распределение нагрузки на длинных челюстях, дополнительная опора для тех, кто сильно сжимает зубы, отсутствие заднего консольного выноса и запас прочности на случай, если имплант не приживётся. В подходящем случае доплата оправдана."}},{"@type":"Question","name":"Одинакова ли стоимость для верхней и нижней челюсти?","acceptedAnswer":{"@type":"Answer","text":"Верхняя челюсть часто стоит чуть дороже, потому что кость там обычно мягче и ближе к пазухе, что иногда требует синус-лифтинга или скуловых имплантов."}},{"@type":"Question","name":"Что если я сейчас могу позволить только одну челюсть?","acceptedAnswer":{"@type":"Answer","text":"Многие пациенты сначала занимаются более проблемной челюстью, а вторую делают позже. Рассрочка тоже помогает разбить стоимость на посильные ежемесячные платежи."}},{"@type":"Question","name":"Все ли All-on-4 одинаковы?","acceptedAnswer":{"@type":"Answer","text":"Нет. Клиники сильно различаются по бренду имплантов, хирургической технике, материалу протеза и качеству лаборатории. Название одно и то же, но долговечность и результат отличаются существенно."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -89,7 +90,7 @@ export default function AllOnXCostPost() {
             </h1>
 
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Автор и медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> — сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №50724
+              Автор и медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> - сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №50724
             </p>
 
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -161,10 +162,10 @@ export default function AllOnXCostPost() {
                 Откуда разница в стоимости?
               </h2>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
-                <li>&mdash; <strong>Больше имплантов — больше материала и времени.</strong> Каждый титановый имплант и каждая установка добавляют и стоимость, и минуты операции.</li>
+                <li>&mdash; <strong>Больше имплантов - больше материала и времени.</strong> Каждый титановый имплант и каждая установка добавляют и стоимость, и минуты операции.</li>
                 <li>&mdash; <strong>Конфигурация абатментов.</strong> Чем больше имплантов, тем чаще нужны угловые или мульти-юнит абатменты &mdash; премиальные компоненты.</li>
                 <li>&mdash; <strong>Конструкция протеза.</strong> Мост на шести имплантах распределяет нагрузку иначе, чем на четырёх, и может требовать другого инженерного решения.</li>
-                <li>&mdash; <strong>Снимки и планирование.</strong> Больше имплантов — сложнее 3D-планирование и хирургические шаблоны.</li>
+                <li>&mdash; <strong>Снимки и планирование.</strong> Больше имплантов - сложнее 3D-планирование и хирургические шаблоны.</li>
                 <li>&mdash; <strong>Подготовка кости.</strong> Дополнительные точки могут потребовать костной пластики или другой работы с костью.</li>
               </ul>
 
@@ -182,7 +183,7 @@ export default function AllOnXCostPost() {
               <div className="relative w-full h-[300px] md:h-[400px] my-10 rounded-[40px] overflow-hidden">
                 <Image
                   src="/images/blog/2026-06-19/zirconia-arches.png"
-                  alt="Циркониевый протез на всю челюсть — самый частый вариант финальной реставрации"
+                  alt="Циркониевый протез на всю челюсть - самый частый вариант финальной реставрации"
                   fill
                   className="object-cover"
                   sizes="100vw"
@@ -227,7 +228,7 @@ export default function AllOnXCostPost() {
                 <li>&mdash; Убедитесь, что 3D-снимки входят в консультацию.</li>
                 <li>&mdash; Получите смету в письменном виде с каждой строкой расходов.</li>
                 <li>&mdash; Проверьте, что входит, а что оплачивается отдельно (удаления, костная пластика, седация, финальный протез).</li>
-                <li>&mdash; Спросите о бренде имплантов и материале протеза — и временного, и финального.</li>
+                <li>&mdash; Спросите о бренде имплантов и материале протеза - и временного, и финального.</li>
                 <li>&mdash; Спросите о квалификации хирурга &mdash; сертифицированный челюстно-лицевой хирург или зубной врач общей практики.</li>
                 <li>&mdash; Уточните условия гарантии и послеоперационное сопровождение. Самое дешёвое редко оказывается самым выгодным.</li>
               </ul>
@@ -272,9 +273,9 @@ export default function AllOnXCostPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Процедура установки дентальных имплантов</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M — концепция немедленной нагрузки All-on-4</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Процедура установки дентальных имплантов</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M - концепция немедленной нагрузки All-on-4</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH - Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
               </ul>
             </section>
 
@@ -322,6 +323,8 @@ export default function AllOnXCostPost() {
           </article>
         </Container>
       </Section>
+
+      <CalculatorEmbed slug="all-on-468-per-arch" locale="ru" />
     </>
   )
 }

@@ -27,7 +27,7 @@ import { siteConfig } from "@/constants/siteConfig"
 import DualCTA from "@/components/DualCTA"
 
 export const metadata = {
-  title: { absolute: "Scarless Mole Removal — Radio Wave Surgery" },
+  title: { absolute: "Scarless Mole Removal - Radio Wave Surgery" },
   description: "Radio-wave mole removal with virtually no scarring. Performed in-office by oral & maxillofacial surgeon Dr. Antipov, Roseville CA.",
   alternates: {
     canonical: "/expertise/mole-removal",
@@ -38,7 +38,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Scarless Mole Removal",
-    description: "Radio-wave electrosurgery for bloodless, scar-free mole removal — single visit, minimal downtime.",
+    description: "Radio-wave electrosurgery for bloodless, scar-free mole removal - single visit, minimal downtime.",
     images: [
       {
         url: "/images/procedures/facial-cosmetic-surgery@2x-d3793d23.jpg",
@@ -51,7 +51,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Scarless Mole Removal",
-    description: "Radio-wave electrosurgery for bloodless, scar-free mole removal — single visit, minimal downtime.",
+    description: "Radio-wave electrosurgery for bloodless, scar-free mole removal - single visit, minimal downtime.",
     images: ["/images/procedures/facial-cosmetic-surgery@2x-d3793d23.jpg"],
   }
 }
@@ -65,7 +65,7 @@ const iconBenefits = [
   {
     icon: <Radio className="h-5 w-5" />,
     title: "Bloodless and clean",
-    description: "Cauterizes as it cuts — no traditional scalpel",
+    description: "Cauterizes as it cuts - no traditional scalpel",
   },
   {
     icon: <Clock className="h-5 w-5" />,
@@ -220,7 +220,7 @@ export default function MoleRemovalPage() {
       <ExpertisePageHero
         badge="Advanced Facial Cosmetic Surgery"
         title="Scarless Mole Removal from the Nose"
-        subtitle="Scarless mole removal uses radio-wave surgery (high-frequency electrosurgery) to remove benign facial and body moles in a single visit — minimal bleeding, faster healing, and a smoother cosmetic outcome than traditional excision."
+        subtitle="Scarless mole removal uses radio-wave surgery (high-frequency electrosurgery) to remove benign facial and body moles in a single visit - minimal bleeding, faster healing, and a smoother cosmetic outcome than traditional excision."
         image="/images/facial-cosmetic-surgery/mole-removal@2x-9fa33150.jpg"
       />
 
@@ -271,8 +271,8 @@ export default function MoleRemovalPage() {
 
               <p>
                 Traditional mole removal methods often leave visible scars, especially on delicate facial areas.
-                Dr. Antipov's expertise with radio wave surgery allows him to remove complex moles—including those
-                with roots deeply embedded in nasal cartilage—while preserving the natural appearance and symmetry
+                Dr. Antipov's expertise with radio wave surgery allows him to remove complex moles-including those
+                with roots deeply embedded in nasal cartilage-while preserving the natural appearance and symmetry
                 of your nose.
               </p>
 
@@ -287,7 +287,7 @@ export default function MoleRemovalPage() {
         </Container>
       </Section>
 
-      {/* Doctor Quote — personal touch */}
+      {/* Doctor Quote - personal touch */}
       <DoctorQuote
         quote="When patients have lived with a noticeable mole on the nose for years, the relief on their face after a scarless removal is unforgettable. Radio-wave technology made this possible."
         author="Dr. Alexander Antipov, DDS"
@@ -445,7 +445,7 @@ export default function MoleRemovalPage() {
         subheading="Facial cosmetic procedures including mole removal are performed at Galleria Oral & Facial Surgery."
       />
 
-      {/* Floating sticky CTA — appears after 25% scroll */}
+      {/* Floating sticky CTA - appears after 25% scroll */}
       <FloatingArticleCTA
         href="/contact"
         label="Book free consultation"

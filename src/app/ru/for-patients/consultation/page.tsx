@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Запись на консультацию — Доктор Антипов",
+    title: "Запись на консультацию - Доктор Антипов",
     description: "Бесплатная консультация: имплантация, ортогнатическая хирургия, All-on-4. Новые пациенты приветствуются.",
     url: "https://drantipov.com/ru/for-patients/consultation",
     locale: "ru_RU",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: "/images/invitations/schedule-a16fad8c.jpg",
         width: 1920,
         height: 1080,
-        alt: "Запись на консультацию — Доктор Антипов",
+        alt: "Запись на консультацию - Доктор Антипов",
       },
     ],
   },
@@ -70,7 +70,7 @@ export default function RussianConsultationPage() {
               Запишитесь на бесплатную консультацию
             </h1>
             <p className="mt-6 max-w-2xl text-xl leading-relaxed text-white/85">
-              Заполните форму ниже — наш координатор свяжется с вами в течение 24 часов для подтверждения времени.
+              Заполните форму ниже - наш координатор свяжется с вами в течение 24 часов для подтверждения времени.
             </p>
           </div>
         </section>
@@ -80,7 +80,7 @@ export default function RussianConsultationPage() {
             <div className="grid gap-10 lg:grid-cols-3">
               <div className="lg:col-span-2 rounded-3xl border border-dark/5 bg-light p-8 shadow-sm">
                 <h2 className="font-serif text-3xl font-bold text-dark mb-2">Запрос на консультацию</h2>
-                <p className="text-muted mb-8">Заполните форму — мы свяжемся с вами в течение 24 часов.</p>
+                <p className="text-muted mb-8">Заполните форму - мы свяжемся с вами в течение 24 часов.</p>
                 <RussianMultiStepForm />
               </div>
               <div className="space-y-6">

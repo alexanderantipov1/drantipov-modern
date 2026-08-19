@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Placeholder for RussianLeadForm — original was locked at FS level when migrating.
+ * Placeholder for RussianLeadForm - original was locked at FS level when migrating.
  * Used only by RussianImplantLanding (/ru/full-arch-dental-implants).
  * TODO: replace with full version when FS lock releases.
  */

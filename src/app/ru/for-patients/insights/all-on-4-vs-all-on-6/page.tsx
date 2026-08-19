@@ -5,11 +5,12 @@ import Link from "next/link"
 import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
+import CalculatorEmbed from "@/components/CalculatorEmbed"
 
 export const metadata: Metadata = {
   title: "All-on-4 или All-on-6: что лучше?",
   description:
-    "All-on-4 и All-on-6 простыми словами — количество имплантов, требования к кости, стоимость, восстановление и стабильность. Помогаем выбрать оптимальный вариант полной челюсти у доктора Антипова в Розвилле.",
+    "All-on-4 и All-on-6 простыми словами - количество имплантов, требования к кости, стоимость, восстановление и стабильность. Помогаем выбрать оптимальный вариант полной челюсти у доктора Антипова в Розвилле.",
   alternates: {
     canonical: "/ru/for-patients/insights/all-on-4-vs-all-on-6",
     languages: {
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     locale: "ru_RU",
     title: "All-on-4 или All-on-6: что лучше?",
-    description: "Количество имплантов, требования к кости, стоимость, восстановление и стабильность — сравнение, чтобы выбрать оптимальный вариант полной челюсти.",
+    description: "Количество имплантов, требования к кости, стоимость, восстановление и стабильность - сравнение, чтобы выбрать оптимальный вариант полной челюсти.",
     images: [
       {
         url: "/images/blog/2026-06-19/all-on-4-vs-all-on-6.png",
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "All-on-4 или All-on-6: что лучше?",
-    description: "Количество имплантов, требования к кости, стоимость, восстановление и стабильность — сравнение, чтобы выбрать оптимальный вариант полной челюсти.",
+    description: "Количество имплантов, требования к кости, стоимость, восстановление и стабильность - сравнение, чтобы выбрать оптимальный вариант полной челюсти.",
     images: ["/images/blog/2026-06-19/all-on-4-vs-all-on-6.png"],
   }
 }
@@ -52,7 +53,7 @@ export default function AllOn4VsAllOn6Post() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/all-on-4-vs-all-on-6#article","headline":"All-on-4 или All-on-6: что лучше?","description":"Сравнение All-on-4 и All-on-6 по количеству имплантов, требованиям к плотности кости, стоимости, времени восстановления и стабильности — чтобы выбрать оптимальный протокол полной челюсти.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/all-on-4-vs-all-on-6","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/all-on-4-vs-all-on-6.png"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/all-on-4-vs-all-on-6"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"В чём главное отличие All-on-4 от All-on-6?","acceptedAnswer":{"@type":"Answer","text":"Главное отличие — количество имплантов. All-on-4 использует четыре импланта на челюсть, All-on-6 — шесть, что влияет на стабильность и распределение жевательной нагрузки по протезу."}},{"@type":"Question","name":"All-on-4 дешевле, чем All-on-6?","acceptedAnswer":{"@type":"Answer","text":"Обычно — да. All-on-4 использует меньше имплантов и часто менее сложен, поэтому стоит дешевле."}},{"@type":"Question","name":"Можно ли поставить All-on-4 при слабой плотности кости?","acceptedAnswer":{"@type":"Answer","text":"Многие пациенты с ограниченным объёмом кости подходят для All-on-4, потому что задние импланты ставят под углом, чтобы использовать имеющуюся кость. При значительной потере кости часто рекомендуют All-on-6, чтобы распределить нагрузку на большее число опор."}},{"@type":"Question","name":"Какой вариант надёжнее в долгой перспективе?","acceptedAnswer":{"@type":"Answer","text":"Оба протокола успешны на длинной дистанции. All-on-6 даёт больше стабильности при длинных дугах, сильном прикусе или слабой кости. All-on-4 — хорошо изучен и биомеханически достаточен для большинства пациентов."}},{"@type":"Question","name":"Оба варианта требуют костной пластики?","acceptedAnswer":{"@type":"Answer","text":"Не обязательно. All-on-4 спроектирован так, чтобы минимизировать костную пластику за счёт имеющейся кости. All-on-6 тоже часто обходится без пластики, но дополнительные точки иногда требуют наращивания."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/all-on-4-vs-all-on-6#article","headline":"All-on-4 или All-on-6: что лучше?","description":"Сравнение All-on-4 и All-on-6 по количеству имплантов, требованиям к плотности кости, стоимости, времени восстановления и стабильности - чтобы выбрать оптимальный протокол полной челюсти.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/all-on-4-vs-all-on-6","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/all-on-4-vs-all-on-6.png"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/all-on-4-vs-all-on-6"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"В чём главное отличие All-on-4 от All-on-6?","acceptedAnswer":{"@type":"Answer","text":"Главное отличие - количество имплантов. All-on-4 использует четыре импланта на челюсть, All-on-6 - шесть, что влияет на стабильность и распределение жевательной нагрузки по протезу."}},{"@type":"Question","name":"All-on-4 дешевле, чем All-on-6?","acceptedAnswer":{"@type":"Answer","text":"Обычно - да. All-on-4 использует меньше имплантов и часто менее сложен, поэтому стоит дешевле."}},{"@type":"Question","name":"Можно ли поставить All-on-4 при слабой плотности кости?","acceptedAnswer":{"@type":"Answer","text":"Многие пациенты с ограниченным объёмом кости подходят для All-on-4, потому что задние импланты ставят под углом, чтобы использовать имеющуюся кость. При значительной потере кости часто рекомендуют All-on-6, чтобы распределить нагрузку на большее число опор."}},{"@type":"Question","name":"Какой вариант надёжнее в долгой перспективе?","acceptedAnswer":{"@type":"Answer","text":"Оба протокола успешны на длинной дистанции. All-on-6 даёт больше стабильности при длинных дугах, сильном прикусе или слабой кости. All-on-4 - хорошо изучен и биомеханически достаточен для большинства пациентов."}},{"@type":"Question","name":"Оба варианта требуют костной пластики?","acceptedAnswer":{"@type":"Answer","text":"Не обязательно. All-on-4 спроектирован так, чтобы минимизировать костную пластику за счёт имеющейся кости. All-on-6 тоже часто обходится без пластики, но дополнительные точки иногда требуют наращивания."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -89,7 +90,7 @@ export default function AllOn4VsAllOn6Post() {
             </h1>
 
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Автор и медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
+              Автор и медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
             </p>
 
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -115,7 +116,7 @@ export default function AllOn4VsAllOn6Post() {
               <GlassCard className="my-10 p-6">
                 <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Главное</p>
                 <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; <strong>Количество имплантов:</strong> All-on-4 — четыре, All-on-6 — шесть.</li>
+                  <li>&bull; <strong>Количество имплантов:</strong> All-on-4 - четыре, All-on-6 - шесть.</li>
                   <li>&bull; <strong>Стабильность:</strong> All-on-6 даёт дополнительную опору, особенно при ограниченной плотности кости.</li>
                   <li>&bull; <strong>Стоимость:</strong> All-on-4 обычно дешевле.</li>
                   <li>&bull; <strong>Решает планирование:</strong> ваша кость, прикус и цели определяют правильный выбор.</li>
@@ -161,7 +162,7 @@ export default function AllOn4VsAllOn6Post() {
                 Преимущества All-on-4
               </h2>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
-                <li>&mdash; <strong>Меньше инвазивность:</strong> меньше имплантов — меньше хирургического вмешательства.</li>
+                <li>&mdash; <strong>Меньше инвазивность:</strong> меньше имплантов - меньше хирургического вмешательства.</li>
                 <li>&mdash; <strong>Эффективное лечение:</strong> часто более короткая операция за счёт меньшего числа точек установки.</li>
                 <li>&mdash; <strong>Часто без пластики:</strong> угловая установка задних имплантов позволяет использовать уже имеющуюся кость.</li>
               </ul>
@@ -171,7 +172,7 @@ export default function AllOn4VsAllOn6Post() {
               </h2>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
                 <li>&mdash; <strong>Лучшая стабильность:</strong> два дополнительных импланта дают более надёжную опору для ряда пациентов.</li>
-                <li>&mdash; <strong>Лучшее распределение нагрузки:</strong> больше точек опоры — равномернее распределяется жевательная нагрузка.</li>
+                <li>&mdash; <strong>Лучшее распределение нагрузки:</strong> больше точек опоры - равномернее распределяется жевательная нагрузка.</li>
                 <li>&mdash; <strong>Надёжность на годы:</strong> особенно важно при сложных случаях или сильном прикусе.</li>
               </ul>
 
@@ -192,21 +193,21 @@ export default function AllOn4VsAllOn6Post() {
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">В чём главное отличие All-on-4 от All-on-6?</h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Количество имплантов. All-on-4 использует четыре на челюсть, All-on-6 — шесть, что влияет
+                    Количество имплантов. All-on-4 использует четыре на челюсть, All-on-6 - шесть, что влияет
                     на стабильность и распределение жевательной нагрузки по протезу.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">All-on-4 дешевле, чем All-on-6?</h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Как правило — да. Меньше имплантов и менее сложная процедура обычно делают All-on-4 более
+                    Как правило - да. Меньше имплантов и менее сложная процедура обычно делают All-on-4 более
                     доступным вариантом.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">Можно ли All-on-4 при слабой кости?</h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Часто — да. Угловая установка задних имплантов хорошо использует имеющуюся кость. При
+                    Часто - да. Угловая установка задних имплантов хорошо использует имеющуюся кость. При
                     значительной потере кости рекомендуется All-on-6, чтобы распределить нагрузку на большее
                     число опор.
                   </p>
@@ -226,9 +227,9 @@ export default function AllOn4VsAllOn6Post() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M — Концепция All-on-4 с немедленной функцией на имплантатах системы Brånemark</a></li>
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Процедура имплантации зубов</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M - Концепция All-on-4 с немедленной функцией на имплантатах системы Brånemark</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Процедура имплантации зубов</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH - Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
               </ul>
             </section>
 
@@ -276,6 +277,8 @@ export default function AllOn4VsAllOn6Post() {
           </article>
         </Container>
       </Section>
+
+      <CalculatorEmbed slug="all-on-468-per-arch" locale="ru" />
     </>
   )
 }

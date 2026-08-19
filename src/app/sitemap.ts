@@ -6,7 +6,7 @@ import { insightPosts } from "@/constants/insights";
 
 const siteUrl = siteConfig.url;
 
-// Static ISO date — Google ignores `lastmod` that churns every build.
+// Static ISO date - Google ignores `lastmod` that churns every build.
 const now = new Date("2026-06-14");
 
 type Cf = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
@@ -14,7 +14,7 @@ type Cf = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "nev
 /**
  * Emit reciprocal EN + RU sitemap entries with BIDIRECTIONAL hreflang.
  * Every public route is mirrored at /ru/*, so both versions are listed and
- * each declares { en, ru, x-default } — the reciprocity Google requires.
+ * each declares { en, ru, x-default } - the reciprocity Google requires.
  */
 function bi(path: string, priority: number, changeFrequency: Cf = "monthly"): MetadataRoute.Sitemap {
   const en = path ? `${siteUrl}/${path}` : siteUrl;

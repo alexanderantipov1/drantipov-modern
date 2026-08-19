@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Severe Overbite: When Jaw Surgery Is Needed",
-    description: "When braces are not enough — how orthognathic surgery corrects severe skeletal overbites.",
+    description: "When braces are not enough - how orthognathic surgery corrects severe skeletal overbites.",
     images: [
       {
         url: "/images/blog/2026-06-19/severe-overbite-jaw-surgery.png",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Severe Overbite: When Jaw Surgery Is Needed",
-    description: "When braces are not enough — how orthognathic surgery corrects severe skeletal overbites.",
+    description: "When braces are not enough - how orthognathic surgery corrects severe skeletal overbites.",
     images: ["/images/blog/2026-06-19/severe-overbite-jaw-surgery.png"],
   }
 }
@@ -90,7 +90,7 @@ export default function SevereOverbiteJawSurgeryPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> - Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -451,10 +451,10 @@ export default function SevereOverbiteJawSurgeryPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
               <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/conditions-treatments/corrective-jaw-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Corrective Jaw (Orthognathic) Surgery</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/malocclusion" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Malocclusion and Jaw Alignment</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/27475511/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maxillomandibular Advancement for Obstructive Sleep Apnea — Systematic Review</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/braces" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA — Braces and Orthodontic Treatment Overview</a></li>
+                <li><a href="https://www.aaoms.org/conditions-treatments/corrective-jaw-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Corrective Jaw (Orthognathic) Surgery</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/malocclusion" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR - Malocclusion and Jaw Alignment</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/27475511/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maxillomandibular Advancement for Obstructive Sleep Apnea - Systematic Review</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/braces" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA - Braces and Orthodontic Treatment Overview</a></li>
               </ul>
             </section>
 

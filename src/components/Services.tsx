@@ -9,7 +9,7 @@ const services = [
     title: "Full Arch Dental Implants",
     subtitle: "All-on-4, All-on-6, Zygomatic & Teeth-in-a-Day",
     description:
-      "Receive a complete set of permanent teeth in a single visit with our All-on-4 and All-on-6 immediate-load implant protocols. Dr. Antipov uses 3D cone beam CT imaging and computer-guided surgical templates for precise, predictable placement — even for patients who have been told they don't have enough bone. For severe upper jaw bone loss, we offer zygomatic implants anchored to the cheekbone, eliminating the need for extensive bone grafting. Every full arch case includes same-day temporary teeth so you never leave without a smile.",
+      "Receive a complete set of permanent teeth in a single visit with our All-on-4 and All-on-6 immediate-load implant protocols. Dr. Antipov uses 3D cone beam CT imaging and computer-guided surgical templates for precise, predictable placement - even for patients who have been told they don't have enough bone. For severe upper jaw bone loss, we offer zygomatic implants anchored to the cheekbone, eliminating the need for extensive bone grafting. Every full arch case includes same-day temporary teeth so you never leave without a smile.",
     image: "/images/procedures/full-arch-prosthesis.png",
     imagePosition: "center 55%",
     features: [
@@ -69,7 +69,7 @@ const services = [
     title: "Bone Grafting & Sinus Lifts",
     subtitle: "Organic, Holistic & Autogenous Bone Regeneration",
     description:
-      "Advanced bone regeneration using organic and holistic bone grafting materials to rebuild jawbone lost to tooth extraction, periodontal disease, or trauma. Dr. Antipov performs sinus lift surgery (sinus augmentation), ridge augmentation, socket preservation, block bone grafts, and guided bone regeneration (GBR). We offer autogenous (your own bone), allograft, xenograft, and synthetic bone graft options — including minimally processed, naturally derived materials for patients who prefer a holistic approach to dental implant preparation.",
+      "Advanced bone regeneration using organic and holistic bone grafting materials to rebuild jawbone lost to tooth extraction, periodontal disease, or trauma. Dr. Antipov performs sinus lift surgery (sinus augmentation), ridge augmentation, socket preservation, block bone grafts, and guided bone regeneration (GBR). We offer autogenous (your own bone), allograft, xenograft, and synthetic bone graft options - including minimally processed, naturally derived materials for patients who prefer a holistic approach to dental implant preparation.",
     image: "/images/gallery-behind-scenes/surgery-01.jpeg",
     imagePosition: "center 45%",
     features: [
@@ -165,7 +165,7 @@ export default function Services() {
             <span className="gradient-text">Specialties &amp; Procedures</span>
           </h2>
           <p className="mt-4 text-muted text-lg">
-            From same-day full arch dental implants and zygomatic implants to complex orthognathic jaw surgery, facial cosmetic procedures, and holistic bone grafting — Dr. Antipov combines cutting-edge 3D technology with 25+ years of board-certified surgical expertise to deliver results that transform lives across Northern California.
+            From same-day full arch dental implants and zygomatic implants to complex orthognathic jaw surgery, facial cosmetic procedures, and holistic bone grafting - Dr. Antipov combines cutting-edge 3D technology with 25+ years of board-certified surgical expertise to deliver results that transform lives across Northern California.
           </p>
         </motion.div>
 
@@ -185,7 +185,7 @@ export default function Services() {
               <div className="relative h-64 overflow-hidden bg-dark">
                 <Image
                   src={service.image}
-                  alt={`${service.title} — ${service.subtitle} — Dr. Alexander Antipov, Oral Surgeon, Roseville CA`}
+                  alt={`${service.title} - ${service.subtitle} - Dr. Alexander Antipov, Oral Surgeon, Roseville CA`}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                   style={{ objectPosition: service.imagePosition ?? "center" }}

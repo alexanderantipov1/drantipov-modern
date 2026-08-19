@@ -8,7 +8,7 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Dental Implants vs Dentures — 2026 Innovations",
+  title: "Dental Implants vs Dentures - 2026 Innovations",
   description:
     "Explore the latest innovations in dental implant technology including 3D printing, nanotechnology, smart implants, and AI-powered treatment planning.",
   alternates: {
@@ -27,21 +27,21 @@ export const metadata: Metadata = {
     "dental implant technology",
   ],
   openGraph: {
-    title: "Dental Implants vs Dentures — 2026",
-    description: "Modern dental implants vs traditional dentures — innovations including 3D printing, nanotechnology, smart implants.",
+    title: "Dental Implants vs Dentures - 2026",
+    description: "Modern dental implants vs traditional dentures - innovations including 3D printing, nanotechnology, smart implants.",
     images: [
       {
         url: "/images/blog/2024-08-13/implants-vs-dentures-78639392.jpg",
         width: 1200,
         height: 630,
-        alt: "Dental Implants vs Dentures — 2026",
+        alt: "Dental Implants vs Dentures - 2026",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dental Implants vs Dentures — 2026",
-    description: "Modern dental implants vs traditional dentures — innovations including 3D printing, nanotechnology, smart implants.",
+    title: "Dental Implants vs Dentures - 2026",
+    description: "Modern dental implants vs traditional dentures - innovations including 3D printing, nanotechnology, smart implants.",
     images: ["/images/blog/2024-08-13/implants-vs-dentures-78639392.jpg"],
   }
 }
@@ -93,7 +93,7 @@ export default function ImplantsVsDenturesPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> - Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -243,10 +243,10 @@ export default function ImplantsVsDenturesPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
               <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH NIDCR — Dental Implants research overview</a></li>
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Dental Implant Surgery Procedure</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy — Dental Implants</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/30816622/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Albrektsson T, Wennerberg A — On osseointegration in relation to implant surfaces</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH NIDCR - Dental Implants research overview</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Dental Implant Surgery Procedure</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy - Dental Implants</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/30816622/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Albrektsson T, Wennerberg A - On osseointegration in relation to implant surfaces</a></li>
               </ul>
             </section>
 

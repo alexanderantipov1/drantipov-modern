@@ -10,7 +10,7 @@ interface Message {
 const GREETING: Message = {
   role: "assistant",
   content:
-    "Здравствуйте! Я виртуальный помощник практики Dr. Antipov. Расскажите, что вас интересует — импланты, исправление прикуса, ринопластика — и в каком вы городе. Подскажу варианты и помогу записаться на бесплатную консультацию.",
+    "Здравствуйте! Я виртуальный помощник практики Dr. Antipov. Расскажите, что вас интересует - импланты, исправление прикуса, ринопластика - и в каком вы городе. Подскажу варианты и помогу записаться на бесплатную консультацию.",
 };
 
 const SUGGESTIONS = [
@@ -80,7 +80,7 @@ export default function RussianChatbot() {
         {
           role: "assistant",
           content:
-            "Не получилось отправить сообщение. Проверьте интернет — или позвоните (916) 783-2110.",
+            "Не получилось отправить сообщение. Проверьте интернет - или позвоните (916) 783-2110.",
         },
       ]);
       setError("network");
@@ -111,7 +111,7 @@ export default function RussianChatbot() {
         Спросить на русском
       </button>
 
-      {/* Mobile launcher — smaller, sits above the sticky bottom bar */}
+      {/* Mobile launcher - smaller, sits above the sticky bottom bar */}
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
@@ -234,7 +234,7 @@ export default function RussianChatbot() {
           </form>
 
           <p className="border-t border-dark/5 bg-white px-4 py-2 text-[11px] leading-snug text-muted">
-            AI-помощник, не заменяет консультацию. Точные рекомендации — после осмотра и 3D CT.
+            AI-помощник, не заменяет консультацию. Точные рекомендации - после осмотра и 3D CT.
             Срочно?{" "}
             <a href="tel:9167832110" className="font-semibold text-primary hover:text-primary-dark">
               (916) 783-2110

@@ -8,6 +8,7 @@ import { ConsentGatedTracking } from "@/components/analytics/ConsentGatedTrackin
 import { SiteNavbar, SiteFooter } from "@/components/SiteChrome";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import HtmlLangSetter from "@/components/HtmlLangSetter";
+import SmileFloatingButton from "@/components/SmileFloatingButton";
 import "./globals.css";
 
 const geist = Geist({
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
   },
   title: {
     default:
-      "Dr. Alexander Antipov, DDS — Oral Surgeon | Roseville, CA",
+      "Dr. Alexander Antipov, DDS - Oral Surgeon | Roseville, CA",
     template: "%s | Dr. Antipov, Roseville CA",
   },
   description:
@@ -86,9 +87,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.drantipov.com",
-    siteName: "Dr. Alexander Antipov, DDS — Oral & Maxillofacial Surgery",
+    siteName: "Dr. Alexander Antipov, DDS - Oral & Maxillofacial Surgery",
     title:
-      "Dr. Antipov — Oral Surgeon & Implant Specialist, Roseville",
+      "Dr. Antipov - Oral Surgeon & Implant Specialist, Roseville",
     description:
       "Board-certified oral surgeon, 25+ years. Same-day implants, jaw surgery, sleep apnea, bone grafting. Free CT scan. Roseville, CA.",
     images: [
@@ -96,13 +97,13 @@ export const metadata: Metadata = {
         url: "/images/slides/1/1844-99036b3b.jpg",
         width: 1844,
         height: 1024,
-        alt: "Dr. Alexander Antipov — Oral & Maxillofacial Surgery Practice in Roseville, CA — Same-Day Dental Implants",
+        alt: "Dr. Alexander Antipov - Oral & Maxillofacial Surgery Practice in Roseville, CA - Same-Day Dental Implants",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Alexander Antipov, DDS — Oral Surgeon, Roseville CA",
+    title: "Dr. Alexander Antipov, DDS - Oral Surgeon, Roseville CA",
     description:
       "Board-certified oral surgeon, 25+ years. Same-day implants, jaw surgery, sleep apnea, bone grafting. Free CT scan. Roseville, CA.",
     images: ["/images/slides/1/1844-99036b3b.jpg"],
@@ -131,6 +132,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <SiteFooter />
           <StickyMobileCTA />
+          <SmileFloatingButton />
           <CookieConsent />
         </TrackingProvider>
       </body>

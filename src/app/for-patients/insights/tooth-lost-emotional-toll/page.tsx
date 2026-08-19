@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "The Emotional Toll of Tooth Loss",
-    description: "How tooth loss affects self-esteem, social interactions, and mental health — and what to do about it.",
+    description: "How tooth loss affects self-esteem, social interactions, and mental health - and what to do about it.",
     images: [
       {
         url: "/images/blog/2024-08-09/tooth-lost-emotional-toll-fcc97e30.jpg",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "The Emotional Toll of Tooth Loss",
-    description: "How tooth loss affects self-esteem, social interactions, and mental health — and what to do about it.",
+    description: "How tooth loss affects self-esteem, social interactions, and mental health - and what to do about it.",
     images: ["/images/blog/2024-08-09/tooth-lost-emotional-toll-fcc97e30.jpg"],
   }
 }
@@ -97,7 +97,7 @@ export default function ToothLossEmotionalTollPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> - Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -289,10 +289,10 @@ export default function ToothLossEmotionalTollPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
               <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/11048395/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Davis DM, Fiske J — The emotional effects of tooth loss in a group of partially dentate people</a></li>
-                <li><a href="https://www.who.int/news-room/fact-sheets/detail/oral-health" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">WHO — Oral Health Fact Sheet</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/9744297/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Fiske J et al. — The emotional effects of tooth loss in edentulous people</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA — Replacing missing teeth</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/11048395/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Davis DM, Fiske J - The emotional effects of tooth loss in a group of partially dentate people</a></li>
+                <li><a href="https://www.who.int/news-room/fact-sheets/detail/oral-health" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">WHO - Oral Health Fact Sheet</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/9744297/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Fiske J et al. - The emotional effects of tooth loss in edentulous people</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA - Replacing missing teeth</a></li>
               </ul>
             </section>
 

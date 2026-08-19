@@ -38,7 +38,7 @@ const SURGICAL_LINKS_EN: LinkItem[] = [
   { href: "/expertise", label: "All Procedures" },
 ];
 const RESOURCE_LINKS_EN: LinkItem[] = [
-  { href: "/for-patients/insights", label: "Blog — News, Research & Education" },
+  { href: "/for-patients/insights", label: "Blog - News, Research & Education" },
   { href: "/surgical-cases", label: "Surgical Case Gallery" },
   { href: "/results", label: "Before & After Results" },
   { href: "/for-patients", label: "Patient Testimonials" },
@@ -81,7 +81,7 @@ const LEGAL_LINKS_EN: LinkItem[] = [
 
 // ─── RU footer links ───
 const IMPLANT_LINKS_RU: LinkItem[] = [
-  { href: "/ru/expertise/full-arch-implants", label: "All-on-4 — полная челюсть" },
+  { href: "/ru/expertise/full-arch-implants", label: "All-on-4 - полная челюсть" },
   { href: "/ru/all-on-4-cost", label: "Сколько стоит All-on-4" },
   { href: "/ru/all-on-4-clearchoice-alternative", label: "All-on-4 или ClearChoice" },
   { href: "/ru/full-arch-dental-implants", label: "Имплантация полного зубного ряда" },
@@ -107,7 +107,7 @@ const SURGICAL_LINKS_RU: LinkItem[] = [
   { href: "/ru/expertise", label: "Все процедуры" },
 ];
 const RESOURCE_LINKS_RU: LinkItem[] = [
-  { href: "/ru/for-patients/insights", label: "Блог — статьи и обучение" },
+  { href: "/ru/for-patients/insights", label: "Блог - статьи и обучение" },
   { href: "/ru/surgical-cases", label: "Галерея хирургических кейсов" },
   { href: "/ru/results", label: "Результаты «до и после»" },
   { href: "/ru/for-patients", label: "Отзывы пациентов" },
@@ -120,7 +120,7 @@ const RESOURCE_LINKS_RU: LinkItem[] = [
 ];
 const PATIENT_LINKS_RU: LinkItem[] = [
   { href: "/ru/for-patients/consultation", label: "Бесплатная консультация" },
-  { href: "/ru/for-patients", label: "Пациентам — общая информация" },
+  { href: "/ru/for-patients", label: "Пациентам - общая информация" },
   { href: "/ru/for-patients/pre-op", label: "Подготовка к операции" },
   { href: "/ru/for-patients/post-op", label: "После операции" },
   { href: "/ru/for-patients/travel", label: "Пациентам из других городов" },
@@ -279,7 +279,7 @@ export default function Footer() {
     : "Board-certified oral & maxillofacial surgeon specializing in same-day dental implants (All-on-4, All-on-6, zygomatic), full arch restoration, corrective jaw surgery, organic bone grafting, facial cosmetic surgery, and wisdom teeth removal. Serving Roseville, Sacramento, San Francisco, Reno, and all of Northern California.";
 
   const seoText = isRu
-    ? "Доктор Александр Антипов, DDS — сертифицированный челюстно-лицевой хирург. Делает имплантацию, All-on-4 и All-on-6, скуловые импланты, корректирующую хирургию челюстей (ортогнатику), эстетическую хирургию лица, ринопластику, подтяжку лица, блефаропластику, органическую костную пластику, синус-лифтинг, удаление зубов мудрости и лечение ВНЧС в Roseville, Калифорния. Принимаем пациентов из Сакраменто, Folsom, Rocklin, El Dorado Hills, Lincoln, Auburn, Granite Bay, Elk Grove, Сан-Франциско, Окленда, Сан-Хосе, Walnut Creek, Напы, Санта-Розы, Рино, Truckee, South Lake Tahoe, Chico, Реддинга, Стоктона, Модесто, Фресно и со всей Северной Калифорнии и Невады."
+    ? "Доктор Александр Антипов, DDS - сертифицированный челюстно-лицевой хирург. Делает имплантацию, All-on-4 и All-on-6, скуловые импланты, корректирующую хирургию челюстей (ортогнатику), эстетическую хирургию лица, ринопластику, подтяжку лица, блефаропластику, органическую костную пластику, синус-лифтинг, удаление зубов мудрости и лечение ВНЧС в Roseville, Калифорния. Принимаем пациентов из Сакраменто, Folsom, Rocklin, El Dorado Hills, Lincoln, Auburn, Granite Bay, Elk Grove, Сан-Франциско, Окленда, Сан-Хосе, Walnut Creek, Напы, Санта-Розы, Рино, Truckee, South Lake Tahoe, Chico, Реддинга, Стоктона, Модесто, Фресно и со всей Северной Калифорнии и Невады."
     : "Dr. Alexander Antipov, DDS is a board-certified oral and maxillofacial surgeon providing dental implants, All-on-4 full arch implants, All-on-6 implants, zygomatic implants, corrective jaw surgery (orthognathic surgery), facial cosmetic surgery, rhinoplasty, face lift surgery, eyelid surgery, organic bone grafting, sinus lifts, wisdom teeth removal, and TMJ treatment in Roseville, CA. Serving patients from Sacramento, Folsom, Rocklin, El Dorado Hills, Lincoln, Auburn, Granite Bay, Elk Grove, San Francisco, Oakland, San Jose, Walnut Creek, Napa, Santa Rosa, Reno, Truckee, South Lake Tahoe, Chico, Redding, Stockton, Modesto, Fresno, and all of Northern California and Northern Nevada.";
 
   return (
@@ -290,7 +290,7 @@ export default function Footer() {
           <div>
             <Image
               src="/images/logo-d10cd66c.svg"
-              alt={isRu ? "Доктор Александр Антипов, DDS — челюстно-лицевая хирургия — Roseville, CA" : "Dr. Alexander Antipov, DDS — Oral and Maxillofacial Surgery — Roseville, CA"}
+              alt={isRu ? "Доктор Александр Антипов, DDS - челюстно-лицевая хирургия - Roseville, CA" : "Dr. Alexander Antipov, DDS - Oral and Maxillofacial Surgery - Roseville, CA"}
               width={180}
               height={60}
               className="h-10 w-auto brightness-200 invert"

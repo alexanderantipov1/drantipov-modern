@@ -10,7 +10,7 @@
  * - region:      e.g. "Sacramento Metro"
  * - driveTime:   approx. driving time from Roseville office
  * - distanceMi:  approx. distance in miles
- * - lat/lng:     geo coordinates (city centroid) — used in LocalBusiness schema areaServed
+ * - lat/lng:     geo coordinates (city centroid) - used in LocalBusiness schema areaServed
  * - landmarks:   nearby landmarks / well-known places (3–5)
  * - routes:      typical driving routes from the city to the Roseville office
  * - demographic: short demographic / community blurb (1 sentence)
@@ -57,7 +57,7 @@ export const cities: CityPage[] = [
       "Highway 65 North from Roseville Road",
     ],
     demographic:
-      "Sacramento — California's capital and a major regional medical hub. Many of our patients commute from downtown, Midtown, Land Park, Pocket-Greenhaven, and Natomas.",
+      "Sacramento - California's capital and a major regional medical hub. Many of our patients commute from downtown, Midtown, Land Park, Pocket-Greenhaven, and Natomas.",
     servicesEmphasis: ["jaw-surgery", "full-arch", "implants", "cosmetic"],
   },
   {
@@ -109,7 +109,7 @@ export const cities: CityPage[] = [
       "Stanford Ranch Road to Park Drive",
     ],
     demographic:
-      "Rocklin is our closest neighbor — just minutes from the office. Families, Sierra College students, and retirees from Whitney Oaks regularly choose our practice for convenience and proximity.",
+      "Rocklin is our closest neighbor - just minutes from the office. Families, Sierra College students, and retirees from Whitney Oaks regularly choose our practice for convenience and proximity.",
     servicesEmphasis: ["implants", "jaw-surgery", "full-arch", "bone-grafting"],
   },
   {

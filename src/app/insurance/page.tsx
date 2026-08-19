@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Insurance & Financing â Dr. Antipov",
+    title: "Insurance & Financing - Dr. Antipov",
     description:
       "PPO insurance plans, CareCredit, Cherry, HSA/FSA. Transparent pricing with no hidden fees.",
     url: `${SITE_URL}/insurance`,
@@ -60,7 +60,7 @@ const financingOptions = [
     bullets: [
       "0% promotional APR on qualifying purchases",
       "6, 12, 18, or 24-month payment plans",
-      "Decision in minutes — apply online or in-office",
+      "Decision in minutes - apply online or in-office",
     ],
     cta: "Apply with CareCredit",
     href: "https://www.carecredit.com/apply/",
@@ -71,7 +71,7 @@ const financingOptions = [
     bullets: [
       "Up to $10,000 with no hard credit check for pre-approval",
       "3, 6, 12, 18, and 24-month plans",
-      "Soft credit check — will not affect your credit score",
+      "Soft credit check - will not affect your credit score",
     ],
     cta: "Get pre-approved",
     href: "https://withcherry.com/",
@@ -104,7 +104,7 @@ const valueProps = [
   {
     title: "Free consultations",
     body:
-      "Your first visit — including a 3D CBCT scan when clinically indicated and a full treatment plan — is on us. You leave with a written estimate BEFORE making any decisions.",
+      "Your first visit - including a 3D CBCT scan when clinically indicated and a full treatment plan - is on us. You leave with a written estimate BEFORE making any decisions.",
   },
   {
     title: "Pre-treatment estimates",
@@ -127,7 +127,7 @@ const faqs = [
   {
     question: "Do you accept my insurance?",
     answer:
-      "We are in-network with most major PPO plans — Delta Dental, Cigna, Aetna, MetLife, Guardian, Anthem Blue Cross, Blue Shield of California, and many others. We also accept most out-of-network PPO plans and file the claims on your behalf. Call us at (916) 783-2110 with your insurance information, and we will verify your coverage within one business day.",
+      "We are in-network with most major PPO plans - Delta Dental, Cigna, Aetna, MetLife, Guardian, Anthem Blue Cross, Blue Shield of California, and many others. We also accept most out-of-network PPO plans and file the claims on your behalf. Call us at (916) 783-2110 with your insurance information, and we will verify your coverage within one business day.",
   },
   {
     question: "I don’t have dental insurance. What are my options?",
@@ -137,7 +137,7 @@ const faqs = [
   {
     question: "How much will my treatment cost?",
     answer:
-      "It depends on the procedure, your anatomy, and your insurance coverage. After your free consultation, you receive an itemized written estimate — including the expected insurance benefit and your out-of-pocket portion. No surprise bills, ever.",
+      "It depends on the procedure, your anatomy, and your insurance coverage. After your free consultation, you receive an itemized written estimate - including the expected insurance benefit and your out-of-pocket portion. No surprise bills, ever.",
   },
   {
     question: "Does insurance cover full-arch (All-on-4) implants?",
@@ -147,7 +147,7 @@ const faqs = [
   {
     question: "Is orthognathic (jaw) surgery covered by insurance?",
     answer:
-      "Yes — when the surgery is performed for functional reasons such as severe malocclusion, sleep apnea, TMJ dysfunction, or difficulty chewing, orthognathic surgery is typically covered under medical insurance (not dental). We obtain pre-authorization before any surgical planning so you know your coverage up front.",
+      "Yes - when the surgery is performed for functional reasons such as severe malocclusion, sleep apnea, TMJ dysfunction, or difficulty chewing, orthognathic surgery is typically covered under medical insurance (not dental). We obtain pre-authorization before any surgical planning so you know your coverage up front.",
   },
   {
     question: "I live in another state. How does insurance work for me?",
@@ -157,12 +157,12 @@ const faqs = [
   {
     question: "Can I spread payments across multiple visits?",
     answer:
-      "Absolutely. For multi-phase treatments (such as All-on-4 spanning several months), payments are typically split by phase — surgical placement, healing period, final prosthesis. Both CareCredit and Cherry offer plans that match your treatment timeline.",
+      "Absolutely. For multi-phase treatments (such as All-on-4 spanning several months), payments are typically split by phase - surgical placement, healing period, final prosthesis. Both CareCredit and Cherry offer plans that match your treatment timeline.",
   },
   {
     question: "Are there discounts for cash payments or prepayment?",
     answer:
-      "Yes — select procedures offer a discount when paid in full at the start of treatment. Ask about current offers during your consultation.",
+      "Yes - select procedures offer a discount when paid in full at the start of treatment. Ask about current offers during your consultation.",
   },
 ];
 
@@ -182,7 +182,7 @@ export default function InsurancePage() {
         dangerouslySetInnerHTML={structuredDataScript(structuredData)}
       />
 
-      {/* Hero — matches PageHero style with navy overlay, same as other sections */}
+      {/* Hero - matches PageHero style with navy overlay, same as other sections */}
       <PageHero
         image="/images/forpatients-hero.jpg"
         eyebrow="Insurance & Financing"
@@ -253,7 +253,7 @@ export default function InsurancePage() {
               <a href={OFFICE_PHONE_HREF} className="font-semibold text-primary-600 hover:underline">
                 {OFFICE_PHONE}
               </a>{" "}
-              — most PPO plans allow out-of-network benefits, and we handle all the paperwork
+              - most PPO plans allow out-of-network benefits, and we handle all the paperwork
               for you.
             </p>
           </div>
@@ -291,7 +291,7 @@ export default function InsurancePage() {
               Flexible Payment Options
             </h2>
             <p className="mt-5 text-lg leading-8 text-neutral-600 max-w-3xl mx-auto">
-              Spread your treatment cost across months with trusted healthcare lenders — many
+              Spread your treatment cost across months with trusted healthcare lenders - many
               offer 0% promotional APR.
             </p>
           </div>
@@ -419,7 +419,7 @@ export default function InsurancePage() {
       <DualCTA
         variant="dual"
         heading="Ready to talk about your insurance?"
-        subheading="Call or message us — we will verify your coverage within one business day. Free consultations available."
+        subheading="Call or message us - we will verify your coverage within one business day. Free consultations available."
       />
     </>
   );

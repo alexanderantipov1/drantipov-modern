@@ -182,7 +182,7 @@ export default function PrivacyPolicyPage() {
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-4">
                   Мы используем файлы cookie и аналогичные технологии отслеживания, чтобы улучшить ваш опыт
-                  просмотра и проанализировать работу сайта. Файлы cookie — это небольшие текстовые файлы,
+                  просмотра и проанализировать работу сайта. Файлы cookie - это небольшие текстовые файлы,
                   сохраняемые на вашем устройстве.
                 </p>
                 <h3 className="text-xl font-semibold text-neutral-900 mb-3">Типы используемых нами файлов cookie:</h3>

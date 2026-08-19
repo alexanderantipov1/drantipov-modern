@@ -82,9 +82,9 @@ export const revisionArticles: RevisionArticle[] = [
     title: "Replacing a Failed Dental Implant: What to Expect",
     metaTitle: "Replacing a Failed Dental Implant: What to Expect",
     metaDescription:
-      "A failed dental implant can usually be replaced. Learn how removal, healing, bone repair, and re-placement work — and what makes a revision case succeed long term.",
+      "A failed dental implant can usually be replaced. Learn how removal, healing, bone repair, and re-placement work - and what makes a revision case succeed long term.",
     excerpt:
-      "A failed implant is rarely the end of the road. Here is how removal, healing, bone repair, and re-placement work — and why correcting the original cause is what makes a replacement last.",
+      "A failed implant is rarely the end of the road. Here is how removal, healing, bone repair, and re-placement work - and why correcting the original cause is what makes a replacement last.",
     date: "June 22, 2026",
     datePublished: "2026-06-22",
     image: `${IMG}/replacing-failed-implant.png`,
@@ -103,10 +103,10 @@ export const revisionArticles: RevisionArticle[] = [
       "A failed dental implant feels like a setback, but it is rarely the end of the road. In the large majority of cases the site can be repaired and a new implant placed successfully. The deciding factor is whether the reason the first implant failed is found and corrected before a replacement goes in.",
     tldr: [
       "Most failed implants can be replaced once the site is healthy.",
-      "Step one is diagnosing why the first implant failed — skipping this invites a repeat failure.",
+      "Step one is diagnosing why the first implant failed - skipping this invites a repeat failure.",
       "Removal is usually straightforward and protects the surrounding bone.",
       "Sites with bone loss often need grafting and a few months of healing first.",
-      "A corrected plan — different size, angle, or restoration — is what makes the new implant last.",
+      "A corrected plan - different size, angle, or restoration - is what makes the new implant last.",
     ],
     sections: [
       {
@@ -127,7 +127,7 @@ export const revisionArticles: RevisionArticle[] = [
         paras: [
           "Removal is usually simpler than patients expect, especially when the implant is already loose. Modern instruments lift the implant out while protecting the bone that surrounds it.",
           [
-            "Once it is out, the bone that remains is assessed carefully — its volume and quality decide what happens next. For a fuller picture of why implants fail in the first place, see our guide to ",
+            "Once it is out, the bone that remains is assessed carefully - its volume and quality decide what happens next. For a fuller picture of why implants fail in the first place, see our guide to ",
             { text: "dental implant complications", href: "/for-patients/insights/dental-implant-complications" },
             ".",
           ],
@@ -145,7 +145,7 @@ export const revisionArticles: RevisionArticle[] = [
       {
         heading: "Placing the New Implant",
         paras: [
-          "Once the site is healthy and stable, a new implant is placed using a corrected plan — often a different size, a better angle, or a redesigned restoration that balances the bite.",
+          "Once the site is healthy and stable, a new implant is placed using a corrected plan - often a different size, a better angle, or a redesigned restoration that balances the bite.",
           [
             "Small changes in position and load make the difference between another failure and a result that lasts for decades. Learn how rebuilding works in our overview of ",
             { text: "bone grafting for dental implants", href: "/for-patients/insights/bone-grafting-for-dental-implants-explained" },
@@ -156,7 +156,7 @@ export const revisionArticles: RevisionArticle[] = [
       {
         heading: "Success Rates for Replacement Implants",
         paras: [
-          "When the original cause is corrected and the site is properly prepared, replacement implants have high success rates. The American Academy of Implant Dentistry notes that well-planned revision treatment restores function for most patients — the key is treating the cause, not just the symptom.",
+          "When the original cause is corrected and the site is properly prepared, replacement implants have high success rates. The American Academy of Implant Dentistry notes that well-planned revision treatment restores function for most patients - the key is treating the cause, not just the symptom.",
         ],
       },
     ],
@@ -187,7 +187,7 @@ export const revisionArticles: RevisionArticle[] = [
     title: "Fixing a Failed All-on-4: Revision Options",
     metaTitle: "Fixing a Failed All-on-4: Revision Options",
     metaDescription:
-      "When a full-arch All-on-4 fails or feels wrong, it can usually be fixed. Learn the revision options — from a new prosthesis to implant replacement and grafting.",
+      "When a full-arch All-on-4 fails or feels wrong, it can usually be fixed. Learn the revision options - from a new prosthesis to implant replacement and grafting.",
     excerpt:
       "A full-arch result that fails, loosens, or never felt right can usually be corrected. Here are the revision options, from a new bridge to implant replacement and a complete redesign.",
     date: "June 22, 2026",
@@ -207,7 +207,7 @@ export const revisionArticles: RevisionArticle[] = [
     intro:
       "A full-arch All-on-4 restoration is a major investment in both your smile and your health, so when it fails, loosens, or simply does not feel right, it is natural to feel discouraged. The encouraging news is that most full-arch problems can be corrected with the right revision plan.",
     tldr: [
-      "Not every All-on-4 complaint means total failure — often only the bridge or bite is at fault.",
+      "Not every All-on-4 complaint means total failure - often only the bridge or bite is at fault.",
       "Healthy, integrated implants can usually keep supporting a new prosthesis.",
       "Failed implants are removed, the site is repaired, and new implants are placed.",
       "Some failures trace back to a flawed original design and need a full redesign.",
@@ -250,7 +250,7 @@ export const revisionArticles: RevisionArticle[] = [
         heading: "When the Original Plan Was Flawed",
         paras: [
           [
-            "Some full-arch failures trace back to the original design — too few implants, poor angulation, or a bite that overloads the arch. In these cases a complete redesign is the most reliable path, correcting implant number, position, and bite at once. See how modern planning improves accuracy in our guide to ",
+            "Some full-arch failures trace back to the original design - too few implants, poor angulation, or a bite that overloads the arch. In these cases a complete redesign is the most reliable path, correcting implant number, position, and bite at once. See how modern planning improves accuracy in our guide to ",
             { text: "guided implant surgery", href: "/for-patients/insights/guided-dental-implant-surgery-how-3d-planning-improves-accuracy" },
             ".",
           ],
@@ -259,7 +259,7 @@ export const revisionArticles: RevisionArticle[] = [
       {
         heading: "What Recovery Looks Like",
         paras: [
-          "Recovery depends on how much rebuilding is needed. A new bridge over healthy implants is quick. A case that requires implant removal and grafting can take several months before final teeth are placed — and a temporary keeps you comfortable throughout.",
+          "Recovery depends on how much rebuilding is needed. A new bridge over healthy implants is quick. A case that requires implant removal and grafting can take several months before final teeth are placed - and a temporary keeps you comfortable throughout.",
         ],
       },
     ],
@@ -292,7 +292,7 @@ export const revisionArticles: RevisionArticle[] = [
     metaDescription:
       "A bad bite after implant treatment causes pain, wear, and failures. Learn how occlusion problems are diagnosed and corrected so your implants last longer.",
     excerpt:
-      "An uneven bite after implant work causes pain, wear, and even implant failure — but it is correctable. Here is how occlusion problems are diagnosed and fixed.",
+      "An uneven bite after implant work causes pain, wear, and even implant failure - but it is correctable. Here is how occlusion problems are diagnosed and fixed.",
     date: "June 22, 2026",
     datePublished: "2026-06-22",
     image: `${IMG}/bite-problems-after-implants.png`,
@@ -308,11 +308,11 @@ export const revisionArticles: RevisionArticle[] = [
       "uneven bite implant",
     ],
     intro:
-      "A comfortable, balanced bite is one of the most important parts of successful implant treatment. When the bite is off, patients notice quickly — food feels wrong, certain teeth take too much pressure, and over time the implants themselves can be damaged. The good news is that bite problems after implant work are correctable.",
+      "A comfortable, balanced bite is one of the most important parts of successful implant treatment. When the bite is off, patients notice quickly - food feels wrong, certain teeth take too much pressure, and over time the implants themselves can be damaged. The good news is that bite problems after implant work are correctable.",
     tldr: [
       "Implants cannot cushion force the way natural teeth do, so an even bite matters more, not less.",
       "An uneven bite concentrates stress and can cause bone loss, loose screws, and fractured crowns.",
-      "Correction starts with measurement — bite registration and digital scans, not guesswork.",
+      "Correction starts with measurement - bite registration and digital scans, not guesswork.",
       "Fixes range from a simple crown adjustment to redesigning a full-arch prosthesis.",
       "A night guard and regular maintenance protect the result.",
     ],
@@ -320,7 +320,7 @@ export const revisionArticles: RevisionArticle[] = [
       {
         heading: "Why the Bite Matters So Much",
         paras: [
-          "Natural teeth sit in a thin ligament that cushions pressure. Implants do not — they are fixed directly into bone and cannot absorb force the same way. An uneven bite therefore places concentrated stress on an implant, and over months or years that stress can lead to:",
+          "Natural teeth sit in a thin ligament that cushions pressure. Implants do not - they are fixed directly into bone and cannot absorb force the same way. An uneven bite therefore places concentrated stress on an implant, and over months or years that stress can lead to:",
         ],
         list: [
           "Bone loss around the implant",
@@ -395,7 +395,7 @@ export const revisionArticles: RevisionArticle[] = [
     metaDescription:
       "Old dental bridges eventually fail. Learn how a failing bridge is replaced with implants, what the process involves, and why implants last far longer.",
     excerpt:
-      "A bridge depends on the teeth beside the gap, and those teeth eventually weaken. Here is how a failing bridge is replaced with implants — and why many patients make the switch.",
+      "A bridge depends on the teeth beside the gap, and those teeth eventually weaken. Here is how a failing bridge is replaced with implants - and why many patients make the switch.",
     date: "June 22, 2026",
     datePublished: "2026-06-22",
     image: `${IMG}/failing-bridge-to-implants.png`,
@@ -458,7 +458,7 @@ export const revisionArticles: RevisionArticle[] = [
         heading: "Is It Worth the Switch?",
         paras: [
           [
-            "For many patients, replacing a repeatedly failing bridge with implants ends a cycle of repairs. The decision depends on your bone, your budget, and your goals — and a consultation makes the right path clear. If you are weighing your choices, compare them in our guide on ",
+            "For many patients, replacing a repeatedly failing bridge with implants ends a cycle of repairs. The decision depends on your bone, your budget, and your goals - and a consultation makes the right path clear. If you are weighing your choices, compare them in our guide on ",
             { text: "implants versus other tooth-replacement options", href: "/for-patients/insights/implants-vs-dentures" },
             ".",
           ],
@@ -494,7 +494,7 @@ export const revisionArticles: RevisionArticle[] = [
     metaDescription:
       "A loose implant is a warning sign, but it does not always mean failure. Learn what causes looseness, when an implant can be saved, and when it must be replaced.",
     excerpt:
-      "A healthy implant should feel completely solid, so any movement is a signal. Whether it can be saved depends on which part is loose and why — here is how to tell.",
+      "A healthy implant should feel completely solid, so any movement is a signal. Whether it can be saved depends on which part is loose and why - here is how to tell.",
     date: "June 22, 2026",
     datePublished: "2026-06-22",
     image: `${IMG}/loose-dental-implant.png`,
@@ -510,12 +510,12 @@ export const revisionArticles: RevisionArticle[] = [
       "wobbly dental implant",
     ],
     intro:
-      "Feeling movement in a dental implant is alarming. A healthy implant should be completely solid, so any looseness is a signal that something needs attention. Whether the implant can be saved depends on what is actually loose and why — and the difference between a quick fix and true failure is bigger than most people expect.",
+      "Feeling movement in a dental implant is alarming. A healthy implant should be completely solid, so any looseness is a signal that something needs attention. Whether the implant can be saved depends on what is actually loose and why - and the difference between a quick fix and true failure is bigger than most people expect.",
     tldr: [
-      "An implant has three layers — crown, abutment screw, and implant body — and each can loosen separately.",
+      "An implant has three layers - crown, abutment screw, and implant body - and each can loosen separately.",
       "A loose crown or screw is usually a simple, single-visit fix.",
       "A loose implant body means the bond with the bone has broken and the implant must be replaced.",
-      "A loose implant rarely improves on its own — waiting risks bone loss.",
+      "A loose implant rarely improves on its own - waiting risks bone loss.",
       "Any movement, pain, or swelling deserves prompt evaluation.",
     ],
     sections: [
@@ -531,7 +531,7 @@ export const revisionArticles: RevisionArticle[] = [
       },
       {
         heading: "When the Implant Can Be Saved",
-        paras: ["If the implant body is still firmly fixed in the bone, the looseness comes from the parts above it — and these cases are very treatable. Solutions include:"],
+        paras: ["If the implant body is still firmly fixed in the bone, the looseness comes from the parts above it - and these cases are very treatable. Solutions include:"],
         list: [
           "Re-tightening or replacing the abutment screw",
           "Re-cementing or replacing a loose crown",
@@ -582,7 +582,7 @@ export const revisionArticles: RevisionArticle[] = [
     metaDescription:
       "A cracked implant crown or full-arch bridge can usually be repaired or replaced. Learn the causes, repair options, and how to prevent future breakage.",
     excerpt:
-      "When an implant tooth breaks, it is usually the visible restoration — not the implant in the bone. Here is why restorations crack and how each problem is solved.",
+      "When an implant tooth breaks, it is usually the visible restoration - not the implant in the bone. Here is why restorations crack and how each problem is solved.",
     date: "June 22, 2026",
     datePublished: "2026-06-22",
     image: `${IMG}/broken-implant-crown.png`,
@@ -600,17 +600,17 @@ export const revisionArticles: RevisionArticle[] = [
     intro:
       "The implant in your jaw and the tooth you see are two separate parts, so when something breaks it is often the visible restoration, not the implant itself. That is good news: a broken crown or bridge can usually be repaired or replaced while the implant stays right where it is.",
     tldr: [
-      "An implant restoration has layers — the implant body, the abutment, and the crown or bridge on top.",
+      "An implant restoration has layers - the implant body, the abutment, and the crown or bridge on top.",
       "When a tooth breaks, the implant underneath is usually fine.",
       "A single crown can be polished, bonded, or replaced depending on the damage.",
       "A full-arch bridge can be repaired, have worn teeth replaced, or be upgraded to zirconia.",
-      "Correcting the cause — grinding or an uneven bite — prevents the next break.",
+      "Correcting the cause - grinding or an uneven bite - prevents the next break.",
     ],
     sections: [
       {
         heading: "The Crown and the Implant Are Different",
         paras: [
-          "An implant restoration is built in layers. The implant body sits in the bone, an abutment connects to it, and the crown or bridge sits on top. When a patient says a tooth broke, the implant underneath is usually intact — the fracture is in the porcelain, acrylic, or zirconia above it. That is reassuring, because the part anchored in your bone rarely needs to change.",
+          "An implant restoration is built in layers. The implant body sits in the bone, an abutment connects to it, and the crown or bridge sits on top. When a patient says a tooth broke, the implant underneath is usually intact - the fracture is in the porcelain, acrylic, or zirconia above it. That is reassuring, because the part anchored in your bone rarely needs to change.",
         ],
       },
       {
@@ -656,7 +656,7 @@ export const revisionArticles: RevisionArticle[] = [
       {
         question: "Does a broken crown mean my implant failed?",
         answer:
-          "Usually not. The implant in the bone is typically intact — the break is in the restoration above it.",
+          "Usually not. The implant in the bone is typically intact - the break is in the restoration above it.",
       },
       {
         question: "Can a full-arch bridge be repaired in the mouth?",
@@ -701,7 +701,7 @@ export const revisionArticles: RevisionArticle[] = [
     tldr: [
       "Reconstruction is for patients with multiple failing teeth and a breaking-down bite.",
       "Treating the mouth as one system breaks the cycle of repeat repairs.",
-      "Planning is everything — 3D imaging, a bite assessment, and a staged sequence.",
+      "Planning is everything - 3D imaging, a bite assessment, and a staged sequence.",
       "It can combine extractions, grafting, implants, full-arch work, and new crowns.",
       "Treatment is staged over months, with temporaries so you always have teeth.",
     ],
@@ -720,7 +720,7 @@ export const revisionArticles: RevisionArticle[] = [
         heading: "How a Complex Case Is Planned",
         paras: [
           [
-            "Reconstruction succeeds or fails on planning. Before any treatment, a complete picture of the teeth, gums, bone, and bite is gathered — including 3D imaging, a detailed bite and jaw-joint assessment, a staged treatment sequence, and a clear preview of the final result. You can see how imaging guides accuracy in our guide to ",
+            "Reconstruction succeeds or fails on planning. Before any treatment, a complete picture of the teeth, gums, bone, and bite is gathered - including 3D imaging, a detailed bite and jaw-joint assessment, a staged treatment sequence, and a clear preview of the final result. You can see how imaging guides accuracy in our guide to ",
             { text: "guided implant surgery", href: "/for-patients/insights/guided-dental-implant-surgery-how-3d-planning-improves-accuracy" },
             ".",
           ],
@@ -779,7 +779,7 @@ export const revisionArticles: RevisionArticle[] = [
     metaDescription:
       "Bone loss can doom an implant, but it can be rebuilt. Learn how specialists graft, regrow, and re-place implants in sites that lost bone after failure.",
     excerpt:
-      "A failed implant often leaves behind less bone than it started with. Before a new implant can succeed, that bone usually has to be rebuilt — here is how revision works.",
+      "A failed implant often leaves behind less bone than it started with. Before a new implant can succeed, that bone usually has to be rebuilt - here is how revision works.",
     date: "June 22, 2026",
     datePublished: "2026-06-22",
     image: `${IMG}/implant-revision-bone-loss.png`,
@@ -795,7 +795,7 @@ export const revisionArticles: RevisionArticle[] = [
       "peri-implantitis bone loss",
     ],
     intro:
-      "When an implant fails, it often leaves behind less bone than it started with. Infection, looseness, and inflammation all eat away at the bone that holds an implant in place. Before a new implant can succeed, that bone usually has to be rebuilt — and rebuilding it well is the foundation of a successful revision.",
+      "When an implant fails, it often leaves behind less bone than it started with. Infection, looseness, and inflammation all eat away at the bone that holds an implant in place. Before a new implant can succeed, that bone usually has to be rebuilt - and rebuilding it well is the foundation of a successful revision.",
     tldr: [
       "Bone and implant rely on each other; when that relationship breaks down, bone is lost.",
       "Revision planning starts with measuring exactly how much bone remains via a 3D scan.",
@@ -808,7 +808,7 @@ export const revisionArticles: RevisionArticle[] = [
         heading: "Why Bone Loss Happens After Failure",
         paras: [
           [
-            "Bone and implant depend on each other — the implant gives the bone something to support, and the bone gives the implant stability. When that relationship breaks down, bone is lost. Common drivers include infection around the implant, an implant that loosened and moved, long-term overload from a poor bite, or a site left empty too long after removal. For more on these causes, see our guide to ",
+            "Bone and implant depend on each other - the implant gives the bone something to support, and the bone gives the implant stability. When that relationship breaks down, bone is lost. Common drivers include infection around the implant, an implant that loosened and moved, long-term overload from a poor bite, or a site left empty too long after removal. For more on these causes, see our guide to ",
             { text: "dental implant complications", href: "/for-patients/insights/dental-implant-complications" },
             ".",
           ],
@@ -894,7 +894,7 @@ export const revisionArticles: RevisionArticle[] = [
       "A revision consultation is a structured review, not a quick look.",
       "Expect a full history, a clinical exam, and 3D imaging of bone and implant position.",
       "Bringing questions helps you understand your options and feel confident.",
-      "The single most important outcome is a clear cause — replacing without it just repeats the problem.",
+      "The single most important outcome is a clear cause - replacing without it just repeats the problem.",
     ],
     sections: [
       {
@@ -910,7 +910,7 @@ export const revisionArticles: RevisionArticle[] = [
       },
       {
         heading: "What the Consultation Includes",
-        paras: ["A revision consultation is more than a quick look — it is a structured review designed to find the true source of the problem. Expect the visit to include:"],
+        paras: ["A revision consultation is more than a quick look - it is a structured review designed to find the true source of the problem. Expect the visit to include:"],
         list: [
           "A detailed history of your previous treatment",
           "A clinical exam of the implants, gums, and bite",
@@ -933,7 +933,7 @@ export const revisionArticles: RevisionArticle[] = [
         heading: "Why the Cause Matters Most",
         paras: [
           [
-            "The single most important outcome of a second opinion is a clear cause. Replacing an implant without correcting why the first one failed simply repeats the problem. A surgeon who focuses on revision work addresses that root cause first, then builds a plan around it — much like the approach in our guide to ",
+            "The single most important outcome of a second opinion is a clear cause. Replacing an implant without correcting why the first one failed simply repeats the problem. A surgeon who focuses on revision work addresses that root cause first, then builds a plan around it - much like the approach in our guide to ",
             { text: "replacing a failed dental implant", href: "/for-patients/insights/replacing-a-failed-dental-implant-what-to-expect" },
             ".",
           ],
@@ -987,7 +987,7 @@ export const revisionArticles: RevisionArticle[] = [
     intro:
       "Many patients travel overseas for dental implants to save money, and some have a good experience. Others return home with implants that hurt, loosen, or simply do not fit right, and little support to fix them. If that is your situation, there is a clear path forward.",
     tldr: [
-      "Distance is the core challenge — the original provider is not reachable for follow-up.",
+      "Distance is the core challenge - the original provider is not reachable for follow-up.",
       "The plan starts with a complete assessment, because guessing leads to repeat problems.",
       "Active infection is controlled before any rebuilding begins.",
       "Sites that lost bone are rebuilt before new implants go in.",
@@ -1035,7 +1035,7 @@ export const revisionArticles: RevisionArticle[] = [
       {
         heading: "Step Four: Replace and Restore",
         paras: [
-          "With a healthy foundation, new implants are placed using corrected planning, and a well-designed restoration is fitted on top. The bite is balanced carefully so the new work lasts, and temporaries keep you comfortable throughout — you are never without teeth.",
+          "With a healthy foundation, new implants are placed using corrected planning, and a well-designed restoration is fitted on top. The bite is balanced carefully so the new work lasts, and temporaries keep you comfortable throughout - you are never without teeth.",
         ],
       },
     ],

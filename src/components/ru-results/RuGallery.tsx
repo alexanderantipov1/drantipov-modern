@@ -22,9 +22,9 @@ const procedureImages = [
 ];
 
 const testimonialVideos = [
-  { label: "Роберт — история пациента All-on-4", videoId: "oH9rF2-DUQo" },
-  { label: "Дженнифер — костная пластика и имплантация", videoId: "_BFvqbGp7wU" },
-  { label: "Дэвид — восстановление полной дуги", videoId: "mrMUren132I" },
+  { label: "Роберт - история пациента All-on-4", videoId: "oH9rF2-DUQo" },
+  { label: "Дженнифер - костная пластика и имплантация", videoId: "_BFvqbGp7wU" },
+  { label: "Дэвид - восстановление полной дуги", videoId: "mrMUren132I" },
 ];
 
 const additionalImages = [

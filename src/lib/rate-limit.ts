@@ -2,7 +2,7 @@
  * Simple in-memory rate limiter using a sliding window per IP.
  *
  * Production note: this resets on every cold start of the serverless function.
- * For a small medical practice with low traffic this is acceptable — most
+ * For a small medical practice with low traffic this is acceptable - most
  * brute-force / spam attempts come from a single IP and would still be
  * throttled within a single function instance lifetime.
  *
@@ -73,7 +73,7 @@ export function getClientIp(req: Request): string {
   // Vercel sets x-forwarded-for in production
   const xff = req.headers.get("x-forwarded-for");
   if (xff) {
-    // x-forwarded-for can be "client, proxy1, proxy2" — first is client
+    // x-forwarded-for can be "client, proxy1, proxy2" - first is client
     const first = xff.split(",")[0];
     if (first) return first.trim();
   }

@@ -4,7 +4,7 @@ import { moleRemovalData as data } from "@/data/ruExpertiseData";
 import { siteUrl } from "@/data/russianImplantFunnel";
 
 export const metadata: Metadata = {
-  title: `${data.title} — Доктор Антипов | Roseville, California`,
+  title: `${data.title} - Доктор Антипов | Roseville, California`,
   description: data.subtitle,
   alternates: {
     canonical: `${siteUrl}/ru/expertise/mole-removal`,
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `${data.title} — Доктор Антипов`,
+    title: `${data.title} - Доктор Антипов`,
     description: data.subtitle,
     url: `${siteUrl}/ru/expertise/mole-removal`,
     locale: "ru_RU",

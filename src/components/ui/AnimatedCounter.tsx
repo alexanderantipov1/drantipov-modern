@@ -21,7 +21,7 @@ interface AnimatedCounterProps {
 }
 
 /**
- * AnimatedCounter — counts from 0 to `to` when the element scrolls into view.
+ * AnimatedCounter - counts from 0 to `to` when the element scrolls into view.
  * Triggers once. Uses requestAnimationFrame for a smooth, monotonic animation.
  */
 export function AnimatedCounter({

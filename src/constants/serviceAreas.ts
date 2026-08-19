@@ -1,5 +1,5 @@
 /* ───────────────────────────────────────────
-   Service area data — all cities within a 3.5-hour
+   Service area data - all cities within a 3.5-hour
    drive of Roseville, CA, organized by region for
    local SEO coverage. Shared by the on-page service
    section and the footer city directory.

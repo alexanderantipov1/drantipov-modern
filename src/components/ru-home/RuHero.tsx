@@ -11,7 +11,7 @@ export default function RuHero() {
         type="application/ld+json"
         dangerouslySetInnerHTML={structuredDataScript(
           getVideoSchema({
-            name: "Имплантация полного зубного ряда — рабочий процесс с доктором Александром Антиповым, DDS",
+            name: "Имплантация полного зубного ряда - рабочий процесс с доктором Александром Антиповым, DDS",
             description:
               "Имплантация All-on-4 / All-on-6 за один день: цифровое планирование, 3D-сканирование и установка с немедленной нагрузкой. Выполняет доктор Антипов в Roseville, CA.",
             thumbnailUrl: `${siteConfig.url}/videos/hero-poster.jpg`,
@@ -38,7 +38,7 @@ export default function RuHero() {
         </video>
         <Image
           src="/images/Antipov_white.jpg"
-          alt="Доктор Александр Антипов, DDS — сертифицированный челюстно-лицевой хирург в Roseville, Калифорния"
+          alt="Доктор Александр Антипов, DDS - сертифицированный челюстно-лицевой хирург в Roseville, Калифорния"
           fill
           className="object-cover object-top lg:hidden"
           priority
@@ -74,7 +74,7 @@ export default function RuHero() {
               className="hero-fade-up mt-6 text-lg text-white/80 max-w-xl leading-relaxed"
               style={{ animationDelay: "0.2s" }}
             >
-              Доктор Александр Антипов — <strong className="text-white">один из ведущих имплантологов в мире</strong>, выполняет <strong className="text-white">больше случаев полной имплантации, чем почти любой хирург в этой области</strong>. От <strong className="text-white">All-on-4 и All-on-6 — полная реконструкция челюсти</strong> до <strong className="text-white">ортогнатики</strong> и <strong className="text-white">эстетики лица</strong>. За плечами 25+ лет работы и сертификация ABOMS.
+              Доктор Александр Антипов - <strong className="text-white">один из ведущих имплантологов в мире</strong>, выполняет <strong className="text-white">больше случаев полной имплантации, чем почти любой хирург в этой области</strong>. От <strong className="text-white">All-on-4 и All-on-6 - полная реконструкция челюсти</strong> до <strong className="text-white">ортогнатики</strong> и <strong className="text-white">эстетики лица</strong>. За плечами 25+ лет работы и сертификация ABOMS.
             </p>
 
             {/* Signature */}
@@ -142,7 +142,7 @@ export default function RuHero() {
             <div className="relative">
               <Image
                 src="/images/drantipov-hero-cutout-clean.png"
-                alt="Доктор Александр Антипов, DDS — сертифицированный челюстно-лицевой хирург в Roseville, Калифорния"
+                alt="Доктор Александр Антипов, DDS - сертифицированный челюстно-лицевой хирург в Roseville, Калифорния"
                 width={2679}
                 height={3755}
                 quality={92}

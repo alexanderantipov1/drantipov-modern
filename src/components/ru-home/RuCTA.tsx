@@ -10,7 +10,7 @@ export default function RuCTA() {
       <div className="absolute inset-0">
         <Image
           src="/images/landing-pages/dental-implants/art/image-background04-713ddc8f.jpg"
-          alt="Бесплатная консультация по имплантации у доктора Антипова — Roseville, CA"
+          alt="Бесплатная консультация по имплантации у доктора Антипова - Roseville, CA"
           fill
           className="object-cover"
           sizes="100vw"
@@ -29,7 +29,7 @@ export default function RuCTA() {
             Запишитесь на бесплатную консультацию
           </h2>
           <p className="mt-6 text-xl text-white/90 max-w-2xl mx-auto">
-            Лично познакомитесь с доктором Антиповым и обсудите варианты лечения. На приёме делаем 3D КТ и собираем персональный план — без обязательств и без давления.
+            Лично познакомитесь с доктором Антиповым и обсудите варианты лечения. На приёме делаем 3D КТ и собираем персональный план - без обязательств и без давления.
           </p>
 
           <div className="mt-12 flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">

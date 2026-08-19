@@ -6,10 +6,10 @@ import { cities } from "@/constants/cities";
  * Machine-readable data feed for AI / LLM crawlers (GEO).
  *
  * Returns a single clean JSON payload describing the practice, providers,
- * services offered, locations served, rating summary, and key knowledge pages —
+ * services offered, locations served, rating summary, and key knowledge pages -
  * so agents can ingest structured facts instead of scraping HTML.
  *
- * NOTE: intentionally NO pricing — this is a personal-brand / education hub.
+ * NOTE: intentionally NO pricing - this is a personal-brand / education hub.
  * Content is grounded in docs/dr-antipov-basic-info.md and the live site.
  */
 
@@ -25,9 +25,9 @@ const providers = [
     boardCertification: "Diplomate, American Board of Oral and Maxillofacial Surgery (ABOMS)",
     inPracticeSince: 2008,
     education: [
-      "Oral & Maxillofacial Surgery — Albert Einstein College of Medicine, Yeshiva University (2007–2008)",
-      "Doctor of Dental Surgery (DDS) — Loma Linda University School of Dentistry (2001–2003)",
-      "Master of Dental Surgery — Moscow State Medical Stomatology University (1995–2000)",
+      "Oral & Maxillofacial Surgery - Albert Einstein College of Medicine, Yeshiva University (2007–2008)",
+      "Doctor of Dental Surgery (DDS) - Loma Linda University School of Dentistry (2001–2003)",
+      "Master of Dental Surgery - Moscow State Medical Stomatology University (1995–2000)",
     ],
     credentials: [
       "California Dental License #50724",

@@ -230,13 +230,13 @@ export function getPhysicianSchema() {
         "@type": "MedicalOrganization",
         name: "Galleria Oral & Facial Surgery",
         url: "https://www.galleriaoms.com",
-        description: "Oral and maxillofacial surgical practice in Roseville, California — corrective jaw surgery, sleep apnea surgery, facial cosmetic surgery, scarless mole removal.",
+        description: "Oral and maxillofacial surgical practice in Roseville, California - corrective jaw surgery, sleep apnea surgery, facial cosmetic surgery, scarless mole removal.",
       },
       {
         "@type": "MedicalOrganization",
         name: "Fusion Dental Implants",
         url: "https://www.fusiondentalimplants.com",
-        description: "Dental implant practice — All-on-4, All-on-X, zygomatic implants, single tooth implants, bone grafting, same-day teeth.",
+        description: "Dental implant practice - All-on-4, All-on-X, zygomatic implants, single tooth implants, bone grafting, same-day teeth.",
       },
       {
         "@type": "NGO",
@@ -290,7 +290,7 @@ export function getKahwachPhysicianSchema() {
     honorificSuffix: "DDS, MD",
     jobTitle: "Oral and Maxillofacial Surgeon",
     description:
-      "Dual-degree (DDS, MD) oral and maxillofacial surgeon at Galleria Oral & Facial Surgery in Roseville, California. UCSF dental graduate (Honors). Completed OMS residency and earned MD at Loma Linda University, with advanced training in anesthesia. Full-scope oral and maxillofacial surgery — cosmetic procedures, dental implants, facial trauma, and orthognathic surgery. Background in painting and sculpture informs his precision-and-creativity approach. Active in international medical and dental mission work across Europe, Africa, the Caribbean, and the Middle East.",
+      "Dual-degree (DDS, MD) oral and maxillofacial surgeon at Galleria Oral & Facial Surgery in Roseville, California. UCSF dental graduate (Honors). Completed OMS residency and earned MD at Loma Linda University, with advanced training in anesthesia. Full-scope oral and maxillofacial surgery - cosmetic procedures, dental implants, facial trauma, and orthognathic surgery. Background in painting and sculpture informs his precision-and-creativity approach. Active in international medical and dental mission work across Europe, Africa, the Caribbean, and the Middle East.",
     nationality: {
       "@type": "Country",
       name: "United States",
@@ -627,7 +627,7 @@ export function getEventSchema(event: {
 }
 
 /**
- * Surgical Case Schema — used on /surgical-cases/[category]/[caseId] pages.
+ * Surgical Case Schema - used on /surgical-cases/[category]/[caseId] pages.
  * Renders a MedicalProcedure with a reference to the performing physician.
  */
 export function getCaseSchema(c: {
@@ -683,7 +683,7 @@ export function getCaseSchema(c: {
 }
 
 /**
- * Person Schema — drantipov.com is positioned as Dr. Antipov's personal brand hub.
+ * Person Schema - drantipov.com is positioned as Dr. Antipov's personal brand hub.
  * This Person entity complements the Physician entity, surfacing the human dimension:
  * education, founder role at Smile Again Foundation, languages, professional sameAs links.
  */
@@ -790,7 +790,7 @@ export function getCityLocalBusinessSchema(city: {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
     "@id": `${siteConfig.url}/locations/${city.state.toLowerCase()}/${city.slug}#business`,
-    name: `${siteConfig.name} — Serving ${city.city}, ${city.state}`,
+    name: `${siteConfig.name} - Serving ${city.city}, ${city.state}`,
     description: `Oral & maxillofacial surgery practice serving patients in ${city.city}, ${city.stateName}. Led by Dr. Alexander V. Antipov, board-certified by ABOMS, practicing since 2008.`,
     url: `${siteConfig.url}/locations/${city.state.toLowerCase()}/${city.slug}`,
     telephone: siteConfig.contact.phone,

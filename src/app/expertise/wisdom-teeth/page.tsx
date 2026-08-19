@@ -43,17 +43,17 @@ export const metadata = {
 const faqs = [
   { question: "At what age should wisdom teeth be removed?", answer: "Most patients have wisdom teeth removed between ages 16 and 25. Earlier removal often means easier recovery because the roots haven't fully formed. Dr. Antipov evaluates each patient individually using panoramic X-rays or CBCT to determine the optimal timing." },
   { question: "Do I really need to remove my wisdom teeth?", answer: "Not always. We remove wisdom teeth when they are impacted, causing pain, infection (pericoronitis), damaging adjacent teeth, contributing to crowding, or producing cysts. Healthy, fully erupted, and easily cleanable wisdom teeth can sometimes be retained." },
-  { question: "Will I be awake during the procedure?", answer: "Most patients choose IV sedation — you remain breathing on your own but have no memory of the procedure. Local anesthesia alone is an option for simple extractions. Dr. Antipov holds a California General Anesthesia Permit (#GA 1446) and performs all sedation in-office." },
+  { question: "Will I be awake during the procedure?", answer: "Most patients choose IV sedation - you remain breathing on your own but have no memory of the procedure. Local anesthesia alone is an option for simple extractions. Dr. Antipov holds a California General Anesthesia Permit (#GA 1446) and performs all sedation in-office." },
   { question: "How long is recovery?", answer: "Most patients return to school or work in 2-3 days. Soft food diet for 5-7 days. Full healing of the sockets takes 3-4 weeks. We provide detailed post-op instructions and pain management to keep you comfortable." },
   { question: "How much does wisdom teeth removal cost?", answer: "Cost depends on the number of teeth, whether they are impacted, and the type of sedation. Most cases range $200-$600 per tooth for simple extractions and $300-$800 per tooth for impacted teeth. Dental insurance typically covers a portion. We provide complete fee estimates during your consultation." },
   { question: "What are the risks?", answer: "Common: swelling, soreness, mild bleeding. Less common: dry socket (1-5%), infection (~2%), temporary numbness from nerve proximity. Severe complications are rare with proper surgical technique. Dr. Antipov has 25+ years of experience minimizing risk through 3D CT planning when needed." },
 ]
 
 const indications = [
-  { title: "Impacted wisdom teeth", description: "Teeth trapped in the jawbone or partially erupted through the gum — high risk of infection, cyst formation, and adjacent tooth damage." },
+  { title: "Impacted wisdom teeth", description: "Teeth trapped in the jawbone or partially erupted through the gum - high risk of infection, cyst formation, and adjacent tooth damage." },
   { title: "Recurrent pericoronitis", description: "Repeated infections of the gum tissue covering partially erupted wisdom teeth." },
-  { title: "Crowding or orthodontic concerns", description: "Wisdom teeth can shift other teeth out of alignment — common reason for prophylactic removal." },
-  { title: "Cysts or tumors", description: "Dental follicles around impacted teeth occasionally develop cysts that erode bone — early removal prevents this." },
+  { title: "Crowding or orthodontic concerns", description: "Wisdom teeth can shift other teeth out of alignment - common reason for prophylactic removal." },
+  { title: "Cysts or tumors", description: "Dental follicles around impacted teeth occasionally develop cysts that erode bone - early removal prevents this." },
   { title: "Pre-orthognathic surgery", description: "Wisdom teeth are routinely removed before corrective jaw surgery to allow proper bone healing." },
   { title: "Decay or periodontal disease", description: "Hard-to-clean wisdom teeth that develop decay or gum disease beyond conservative treatment." },
 ]
@@ -61,7 +61,7 @@ const indications = [
 const recovery = [
   { day: "Day 1", description: "Bite on gauze 30-45 minutes to control bleeding. Ice packs (20 on, 20 off). Rest with head elevated. Soft, cold foods only." },
   { day: "Days 2-3", description: "Swelling peaks. Continue ice for 48 hours, then warm compresses. Start gentle salt water rinses after 24 hours. Return to desk work possible." },
-  { day: "Days 4-7", description: "Swelling subsides. Soft foods only — pasta, mashed potatoes, scrambled eggs. Continue rinses 4-6 times daily. Most patients off pain medication." },
+  { day: "Days 4-7", description: "Swelling subsides. Soft foods only - pasta, mashed potatoes, scrambled eggs. Continue rinses 4-6 times daily. Most patients off pain medication." },
   { day: "Week 2+", description: "Gradual return to normal diet. Avoid chewing on extraction sites. Sockets fully heal over 3-4 weeks. Follow-up visit at 1-2 weeks." },
 ]
 
@@ -85,7 +85,7 @@ export default function WisdomTeethPage() {
 
       <ExpertisePageHero
         badge="Third Molar Extraction"
-        title="Wisdom teeth removal — comfortable, safe, expert"
+        title="Wisdom teeth removal - comfortable, safe, expert"
         subtitle="Board-certified oral surgery with IV sedation. Most patients are back to normal life in 2–3 days. Comprehensive 3D CT planning when needed for impacted or nerve-adjacent teeth."
         image="/images/other-procedures/wisdom-teeth-removal-9108ccc6.jpg"
       />

@@ -33,7 +33,7 @@ import { siteConfig } from "@/constants/siteConfig"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: { absolute: "Our Surgical Team — Dr. Antipov & Dr. Kahwach" },
+  title: { absolute: "Our Surgical Team - Dr. Antipov & Dr. Kahwach" },
   description: "25+ years of combined surgical experience, board certification, and five hospital privileges. Meet the team at Galleria Oral Surgery.",
   alternates: {
     canonical: "/our-team",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Our Surgical Team — Dr. Antipov & Dr. Kahwach",
+    title: "Our Surgical Team - Dr. Antipov & Dr. Kahwach",
     description:
       "Two board-certified oral and maxillofacial surgeons serving Roseville and Northern California with hospital privileges at Sutter and Mercy.",
     url: "/our-team",
@@ -53,20 +53,20 @@ export const metadata: Metadata = {
         url: "/images/Antipov_white.jpg",
         width: 1016,
         height: 1400,
-        alt: "Dr. Alexander V. Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon, Roseville CA",
+        alt: "Dr. Alexander V. Antipov, DDS - Board-Certified Oral & Maxillofacial Surgeon, Roseville CA",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Surgical Team — Dr. Antipov & Dr. Kahwach",
-    description: "Meet the surgeons of Galleria Oral & Facial Surgery — Roseville, California.",
+    title: "Our Surgical Team - Dr. Antipov & Dr. Kahwach",
+    description: "Meet the surgeons of Galleria Oral & Facial Surgery - Roseville, California.",
     images: ["/images/Antipov_white.jpg"],
   },
 }
 
 // ────────────────────────────────────────────────────────────────────
-// CV DATA — derived from alexander_antipov_cv.pdf
+// CV DATA - derived from alexander_antipov_cv.pdf
 // ────────────────────────────────────────────────────────────────────
 
 const educationItems = [
@@ -86,7 +86,7 @@ const educationItems = [
     year: "2007 – 2008",
     title: "Oral & Maxillofacial Surgery Residency",
     subtitle: "Albert Einstein College of Medicine, Yeshiva University, Department of Dentistry",
-    description: "Completed OMS residency in New York — the foundation for full-scope surgical practice.",
+    description: "Completed OMS residency in New York - the foundation for full-scope surgical practice.",
   },
 ]
 
@@ -94,24 +94,24 @@ const careerItems = [
   {
     year: "2008 – Present",
     title: "Owner, Medical Director & Oral Surgeon",
-    subtitle: "Private Practice — Roseville, California",
+    subtitle: "Private Practice - Roseville, California",
     description: "Founded the Roseville practice in 2008 and has personally performed every surgery since.",
   },
   {
     year: "2008 – 2012",
     title: "Contracted Oral Surgeon",
-    subtitle: "Pacific Dental Services — Sacramento, California",
+    subtitle: "Pacific Dental Services - Sacramento, California",
   },
   {
     year: "2009 – Present",
     title: "Contracted Oral Surgeon",
-    subtitle: "California Department of Corrections and Rehabilitation — Folsom, California",
+    subtitle: "California Department of Corrections and Rehabilitation - Folsom, California",
     description: "Providing oral surgical care in a correctional medical setting since 2009.",
   },
   {
     year: "2009 – Present",
     title: "Contracted Oral Surgeon",
-    subtitle: "Sacramento State Prison — Sacramento, California",
+    subtitle: "Sacramento State Prison - Sacramento, California",
   },
   {
     year: "2025 – Present",
@@ -144,7 +144,7 @@ const memberships = [
   {
     group: "National",
     items: [
-      "American Board of Oral & Maxillofacial Surgery (ABOMS) — Diplomate",
+      "American Board of Oral & Maxillofacial Surgery (ABOMS) - Diplomate",
       "American Association of Oral & Maxillofacial Surgeons (AAOMS)",
       "American Dental Association (ADA)",
     ],
@@ -182,13 +182,13 @@ const continuingEducation = [
   "Esthetic Soft Tissue Management A to Z",
   "Periodontal Plastic Surgery for the Implant Patient",
   "Anesthesia Update for the Oral & Maxillofacial Surgeon",
-  "Observational Surgery Preceptorship in Cosmetic Facial Surgery — face lift, blepharoplasty, brow lift, facial liposuction, facial implants, neurotoxins, injectable fillers, CO2 laser resurfacing, chemical peels, radiowave surgery, and skin care",
+  "Observational Surgery Preceptorship in Cosmetic Facial Surgery - face lift, blepharoplasty, brow lift, facial liposuction, facial implants, neurotoxins, injectable fillers, CO2 laser resurfacing, chemical peels, radiowave surgery, and skin care",
   "What Hygienists Should Know",
 ]
 
 const kahwachHighlights = [
   { icon: GraduationCap, label: "DDS, University of California, San Francisco (Honors)" },
-  { icon: Stethoscope, label: "MD & OMS Residency, Loma Linda University — with advanced anesthesia training" },
+  { icon: Stethoscope, label: "MD & OMS Residency, Loma Linda University - with advanced anesthesia training" },
   { icon: Palette, label: "Background in painting and sculpture informs surgical precision and aesthetics" },
   { icon: Globe2, label: "Medical & dental mission work across Europe, Africa, the Caribbean, and the Middle East" },
 ]
@@ -256,8 +256,8 @@ export default function OurTeamPage() {
           <Reveal delay={0.2}>
             <p className="mt-6 text-lg lg:text-xl text-white/85 max-w-3xl mx-auto leading-relaxed">
               Galleria Oral &amp; Facial Surgery is led by{" "}
-              <strong className="text-white">Dr. Alexander V. Antipov, DDS</strong> —
-              Diplomate of the American Board of Oral &amp; Maxillofacial Surgery — and joined by{" "}
+              <strong className="text-white">Dr. Alexander V. Antipov, DDS</strong> -
+              Diplomate of the American Board of Oral &amp; Maxillofacial Surgery - and joined by{" "}
               <strong className="text-white">Dr. André-David Kahwach, DDS, MD</strong>.
               Combined: 25+ years of full-scope surgical experience, five hospital privileges, and dual-degree
               training.
@@ -284,7 +284,7 @@ export default function OurTeamPage() {
       <PracticePhilosophy />
 
       {/* ============================================================ */}
-      {/* Dr. Antipov — main feature                                   */}
+      {/* Dr. Antipov - main feature                                   */}
       {/* ============================================================ */}
       <Section background="default" padding="md" id="dr-antipov">
         <Container size="lg">
@@ -294,7 +294,7 @@ export default function OurTeamPage() {
                 <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl">
                   <Image
                     src="/images/Antipov_white.jpg"
-                    alt="Dr. Alexander V. Antipov, DDS — Founder, Galleria Oral & Facial Surgery"
+                    alt="Dr. Alexander V. Antipov, DDS - Founder, Galleria Oral & Facial Surgery"
                     width={1016}
                     height={1400}
                     className="w-full h-auto"
@@ -334,12 +334,12 @@ export default function OurTeamPage() {
                     Dr. Antipov has practiced full-scope oral and maxillofacial surgery in Roseville,
                     California since <strong>2008</strong>. A Diplomate of the American Board of Oral
                     and Maxillofacial Surgery, his training spans three countries and three of the most
-                    respected institutions in dentistry and medicine — <strong>Albert Einstein College
+                    respected institutions in dentistry and medicine - <strong>Albert Einstein College
                     of Medicine</strong>, <strong>Loma Linda University</strong>, and <strong>Moscow
                     State Medical Stomatology University</strong>.
                   </p>
                   <p>
-                    His practice covers the full scope of OMS — dental implants and full-arch
+                    His practice covers the full scope of OMS - dental implants and full-arch
                     restoration (All-on-4 / All-on-X), corrective jaw surgery, sleep apnea surgery,
                     bone grafting, facial trauma, and facial cosmetic procedures. He holds hospital
                     privileges at five Northern California institutions, a California General Anesthesia
@@ -548,7 +548,7 @@ export default function OurTeamPage() {
                     Smile Again Foundation
                   </h2>
                   <p className="mt-4 text-lg text-neutral-700 leading-relaxed">
-                    In 2025, Dr. Antipov founded and now directs the Smile Again Foundation — a nonprofit
+                    In 2025, Dr. Antipov founded and now directs the Smile Again Foundation - a nonprofit
                     dedicated to expanding access to restorative dental care for patients who would
                     otherwise go without. The foundation focuses on mission-driven patient support and
                     practical pathways back to oral health.
@@ -599,7 +599,7 @@ export default function OurTeamPage() {
                 <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl">
                   <Image
                     src="/images/dr-kahwach-v4.jpg"
-                    alt="Dr. André-David Kahwach, DDS, MD — Oral & Maxillofacial Surgeon"
+                    alt="Dr. André-David Kahwach, DDS, MD - Oral & Maxillofacial Surgeon"
                     width={600}
                     height={800}
                     className="w-full h-auto"
@@ -638,7 +638,7 @@ export default function OurTeamPage() {
                     With a passion for the full scope of oral and maxillofacial surgery, Dr. Kahwach is
                     committed to delivering exceptional care across cosmetic procedures, dental implants,
                     facial trauma, and orthognathic surgery. His approach combines precision with
-                    creativity — an influence shaped not only by his surgical training, but also by his
+                    creativity - an influence shaped not only by his surgical training, but also by his
                     background in painting and sculpture.
                   </p>
                   <p>

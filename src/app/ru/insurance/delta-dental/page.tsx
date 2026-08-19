@@ -6,7 +6,7 @@ import DualCTA from "@/components/DualCTA";
 import InsuranceCrossLinks from "@/components/InsuranceCrossLinks";
 
 export const metadata: Metadata = {
-  title: "Delta Dental — покрытие имплантов и хирургии",
+  title: "Delta Dental - покрытие имплантов и хирургии",
   description:
     "Как стоматологическая страховка Delta Dental применяется к зубным имплантам, челюстно-лицевой и ортогнатической хирургии у доктора Антипова. Внесетевое покрытие, предварительное согласование и помощь с возмещением.",
   alternates: {
@@ -61,7 +61,7 @@ export default function DeltaDentalPage() {
             Delta Dental и доктор Антипов
           </h1>
           <p className="mt-6 max-w-3xl text-xl leading-relaxed text-white/85">
-            Доктор Антипов — внесетевой (out-of-network) провайдер для Delta Dental. Пациенты с планами PPO обычно получают частичное возмещение. Наш координатор по страховке берёт на себя предварительное согласование и подачу заявлений — бесплатно для вас.
+            Доктор Антипов - внесетевой (out-of-network) провайдер для Delta Dental. Пациенты с планами PPO обычно получают частичное возмещение. Наш координатор по страховке берёт на себя предварительное согласование и подачу заявлений - бесплатно для вас.
           </p>
         </div>
       </section>
@@ -73,9 +73,9 @@ export default function DeltaDentalPage() {
             <ul className="space-y-3 text-neutral-700 leading-7">
               <li className="flex gap-3"><span className="text-primary-600 font-bold">✓</span>Базовые удаления зубов и челюстно-лицевая хирургия (частичное покрытие, в пределах годового максимума)</li>
               <li className="flex gap-3"><span className="text-primary-600 font-bold">✓</span>Костная пластика по медицинским показаниям (зависит от плана)</li>
-              <li className="flex gap-3"><span className="text-primary-600 font-bold">~</span>Установка зубных имплантов (зависит — некоторые планы покрывают, большинство нет)</li>
-              <li className="flex gap-3"><span className="text-primary-600 font-bold">~</span>Ортогнатическая хирургия (медицинская, не стоматологическая — покрывается по медицинским показаниям)</li>
-              <li className="flex gap-3"><span className="text-primary-600 font-bold">✗</span>Косметические процедуры (удаление родинок, подтяжки, филлеры — не покрываются)</li>
+              <li className="flex gap-3"><span className="text-primary-600 font-bold">~</span>Установка зубных имплантов (зависит - некоторые планы покрывают, большинство нет)</li>
+              <li className="flex gap-3"><span className="text-primary-600 font-bold">~</span>Ортогнатическая хирургия (медицинская, не стоматологическая - покрывается по медицинским показаниям)</li>
+              <li className="flex gap-3"><span className="text-primary-600 font-bold">✗</span>Косметические процедуры (удаление родинок, подтяжки, филлеры - не покрываются)</li>
             </ul>
           </div>
 

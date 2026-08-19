@@ -6,7 +6,7 @@ import { ConsultationModal } from "@/components/forms/ConsultationModal";
 import { siteConfig } from "@/constants/siteConfig";
 
 /**
- * StickyMobileCTA — mobile-only sticky bottom bar with Call + Book buttons.
+ * StickyMobileCTA - mobile-only sticky bottom bar with Call + Book buttons.
  * Appears after the user scrolls past ~60% of the first viewport.
  */
 export default function StickyMobileCTA() {

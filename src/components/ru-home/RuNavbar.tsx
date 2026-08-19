@@ -63,7 +63,7 @@ export default function RuNavbar() {
           className="hidden items-center gap-5 text-sm font-semibold text-muted lg:flex"
           onMouseLeave={() => setMegaOpen(false)}
         >
-          {/* About Us — placed left of the Услуги mega-menu */}
+          {/* About Us - placed left of the Услуги mega-menu */}
           <Link href="/ru/about-us" className="transition hover:text-primary">
             О нас
           </Link>

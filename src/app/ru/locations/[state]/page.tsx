@@ -29,11 +29,11 @@ export async function generateMetadata({
   const stateCities = getCitiesByState(state);
   if (!stateName || stateCities.length === 0) return {};
 
-  const title = `Челюстно-лицевой хирург в штате ${stateName} — Dr. Alexander V. Antipov`;
+  const title = `Челюстно-лицевой хирург в штате ${stateName} - Dr. Alexander V. Antipov`;
   const description = `Сертифицированный челюстно-лицевой хирург принимает пациентов из ${stateCities.length}+ населённых пунктов штата ${stateName} в клинике в Roseville: зубные импланты, ортогнатическая хирургия, апноэ сна (MMA) и эстетическая хирургия лица. Бесплатная консультация с 3D КТ.`;
 
   return {
-    title: title.length > 60 ? { absolute: `Челюстно-лицевой хирург — штат ${stateName} | Dr. Antipov` } : { absolute: title },
+    title: title.length > 60 ? { absolute: `Челюстно-лицевой хирург - штат ${stateName} | Dr. Antipov` } : { absolute: title },
     description,
     alternates: {
       canonical: `/ru/locations/${state}`,
@@ -69,7 +69,7 @@ export default async function StateHubPage({
       "@type": "MedicalBusiness",
       "@id": `${siteConfig.url}/ru/locations/${state}#business`,
       inLanguage: "ru",
-      name: `${siteConfig.name} — приём пациентов из штата ${stateName}`,
+      name: `${siteConfig.name} - приём пациентов из штата ${stateName}`,
       description: `Практика челюстно-лицевой хирургии, обслуживающая пациентов по всему штату ${stateName}, под руководством Dr. Alexander V. Antipov (дипломант ABOMS).`,
       url: `${siteConfig.url}/ru/locations/${state}`,
       telephone: siteConfig.contact.phone,
@@ -127,10 +127,10 @@ export default async function StateHubPage({
             Приём пациентов из штата {stateName}
           </span>
           <h1 className="mt-4 font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight max-w-3xl">
-            Челюстно-лицевой хирург — штат <span className="text-primary">{stateName}</span>
+            Челюстно-лицевой хирург - штат <span className="text-primary">{stateName}</span>
           </h1>
           <p className="mt-6 text-lg text-white/85 max-w-2xl leading-relaxed">
-            Dr. Alexander V. Antipov проводит челюстно-лицевую хирургию полного профиля для пациентов по всему штату {stateName} в своей клинике в Roseville — зубные импланты, ортогнатическая хирургия, апноэ сна (MMA), костная пластика и эстетические операции на лице.
+            Dr. Alexander V. Antipov проводит челюстно-лицевую хирургию полного профиля для пациентов по всему штату {stateName} в своей клинике в Roseville - зубные импланты, ортогнатическая хирургия, апноэ сна (MMA), костная пластика и эстетические операции на лице.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-6 text-sm">
@@ -168,7 +168,7 @@ export default async function StateHubPage({
               Населённые пункты штата {stateName}, которые мы обслуживаем
             </h2>
             <p className="mt-4 text-neutral-600">
-              Выберите свой город — там вы найдёте маршруты, местные ориентиры и процедуры, которые чаще всего запрашивают в вашем районе.
+              Выберите свой город - там вы найдёте маршруты, местные ориентиры и процедуры, которые чаще всего запрашивают в вашем районе.
             </p>
           </div>
 

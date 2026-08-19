@@ -21,7 +21,7 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
     ],
     readMinutes: 5,
     excerpt:
-      "This corrective jaw surgery case illustrates how a combined asymmetric deformity of the upper and lower jaws — a Class II skeletal occlusion anomaly — can be corrected through carefully planned orthognathic surgery at our Roseville, CA practice.",
+      "This corrective jaw surgery case illustrates how a combined asymmetric deformity of the upper and lower jaws - a Class II skeletal occlusion anomaly - can be corrected through carefully planned orthognathic surgery at our Roseville, CA practice.",
     sections: [
       {
         heading: "Understanding a Combined Jaw Deformity",
@@ -63,7 +63,7 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
       {
         heading: "Corrective Jaw Surgery in Roseville, CA",
         paragraphs: [
-          "This case was treated by Dr. Alexander V. Antipov at Galleria Oral & Facial Surgery in Roseville, CA. Complex orthognathic cases like this one — involving asymmetry, a Class II skeletal pattern, and combined jaw and chin correction — benefit from a surgeon with deep experience in facial skeletal surgery and careful, individualized planning.",
+          "This case was treated by Dr. Alexander V. Antipov at Galleria Oral & Facial Surgery in Roseville, CA. Complex orthognathic cases like this one - involving asymmetry, a Class II skeletal pattern, and combined jaw and chin correction - benefit from a surgeon with deep experience in facial skeletal surgery and careful, individualized planning.",
           "Patients throughout Roseville, Sacramento, Placer County, and the wider Northern California region turn to our practice for corrective jaw surgery and facial balancing procedures. If you are living with an uneven bite, jaw asymmetry, or a profile that does not reflect how you want to look and feel, a consultation is the best way to understand whether jaw surgery could help. Our team is glad to discuss your goals and walk you through the options.",
         ],
       },
@@ -96,7 +96,7 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
         heading: "Understanding Asymmetric Jaw Imbalance",
         paragraphs: [
           "Facial and jaw asymmetry can affect both function and confidence. In this case, the patient presented with a complex combination of findings centered on an asymmetric Class II occlusion anomaly. When the jaws grow unevenly, the midlines of the upper and lower teeth drift apart, the chin can shift to one side, and even the nose may appear deviated as the underlying skeleton pulls facial structures off center.",
-          "Conditions like these rarely exist in isolation. Asymmetry of the jaws often travels with bite problems and, in some patients, joint symptoms. A thorough evaluation looks at the whole picture — skeletal proportions, the way the teeth meet, the position of the chin, and the health of the jaw joints — so that the surgical plan can restore both balance and comfortable function.",
+          "Conditions like these rarely exist in isolation. Asymmetry of the jaws often travels with bite problems and, in some patients, joint symptoms. A thorough evaluation looks at the whole picture - skeletal proportions, the way the teeth meet, the position of the chin, and the health of the jaw joints - so that the surgical plan can restore both balance and comfortable function.",
         ],
       },
       {
@@ -159,12 +159,12 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
     ],
     readMinutes: 5,
     excerpt:
-      "This case study details an asymmetric Class II skeletal deformity with functional and aesthetic compromise, corrected through three-jaw surgery — Le Fort I osteotomy, BSSO, and genioplasty — performed in a single anesthesia session in Roseville, CA.",
+      "This case study details an asymmetric Class II skeletal deformity with functional and aesthetic compromise, corrected through three-jaw surgery - Le Fort I osteotomy, BSSO, and genioplasty - performed in a single anesthesia session in Roseville, CA.",
     sections: [
       {
         heading: "Understanding the Condition",
         paragraphs: [
-          "An asymmetric Class II skeletal deformity affects far more than appearance. As documented in this case, the imbalance created both functional and aesthetic compromise — meaning the patient's bite did not work efficiently and the facial proportions were noticeably uneven. When the lower jaw sits too far back and the jaws are also asymmetric, chewing can become tiring, the chin may look recessed or deviated, and overall facial balance is affected.",
+          "An asymmetric Class II skeletal deformity affects far more than appearance. As documented in this case, the imbalance created both functional and aesthetic compromise - meaning the patient's bite did not work efficiently and the facial proportions were noticeably uneven. When the lower jaw sits too far back and the jaws are also asymmetric, chewing can become tiring, the chin may look recessed or deviated, and overall facial balance is affected.",
           "Comprehensive correction in cases like this often requires repositioning both jaws and the chin together. Treating the deformity as a whole, rather than in isolated pieces, is what allows the bite and the facial profile to be improved at the same time. This case is notable because all three corrections were completed in a single anesthesia session, sparing the patient multiple separate operations.",
         ],
       },
@@ -302,7 +302,7 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
       {
         heading: "Understanding Short Face Syndrome",
         paragraphs: [
-          "Short face syndrome describes a face in which the lower third appears compressed because the jaws have not developed enough vertical height. In this case, the patient had a Class I occlusion combined with reduced lower facial height — meaning the teeth met in a relatively normal class relationship, but the underlying jaws were too short, leaving the midface and lower face collapsed and the chin foreshortened.",
+          "Short face syndrome describes a face in which the lower third appears compressed because the jaws have not developed enough vertical height. In this case, the patient had a Class I occlusion combined with reduced lower facial height - meaning the teeth met in a relatively normal class relationship, but the underlying jaws were too short, leaving the midface and lower face collapsed and the chin foreshortened.",
           "As documented, the presentation included poor nasal and lip support, a short chin, and a collapsed midface and lower face. When the skeletal foundation lacks height, the soft tissues of the lips and nose lose their underlying support, and the smile can look cramped. Correcting this requires adding height and projection to the facial skeleton rather than simply treating the teeth, which is why a comprehensive surgical approach was planned.",
         ],
       },
@@ -366,7 +366,7 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
     ],
     readMinutes: 5,
     excerpt:
-      "This case details a maxillary and mandibular deficiency corrected with maxillomandibular advancement — a 3-piece Le Fort I osteotomy with bone grafting, BSSO advancement, and genioplasty — in Roseville, CA.",
+      "This case details a maxillary and mandibular deficiency corrected with maxillomandibular advancement - a 3-piece Le Fort I osteotomy with bone grafting, BSSO advancement, and genioplasty - in Roseville, CA.",
     sections: [
       {
         heading: "Understanding Jaw Deficiency",
@@ -386,7 +386,7 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
         heading: "The Surgical Plan",
         paragraphs: [
           "The upper jaw was addressed with a maxillary Le Fort I osteotomy performed as a 3-piece advancement of approximately 10mm, as documented. The 3-piece approach allows the surgeon to shape and widen the arch while advancing it, and a substantial advancement like this restores significant midface projection and improves support for the nose and lips.",
-          "Bone grafting to the maxilla was used to fill and stabilize the spaces created by advancing the jaw, promoting solid healing in the new position. The lower jaw was then brought forward with a mandibular bilateral sagittal split osteotomy advancement (BSSO), so that both jaws moved together — the essence of maxillomandibular advancement.",
+          "Bone grafting to the maxilla was used to fill and stabilize the spaces created by advancing the jaw, promoting solid healing in the new position. The lower jaw was then brought forward with a mandibular bilateral sagittal split osteotomy advancement (BSSO), so that both jaws moved together - the essence of maxillomandibular advancement.",
           "A genioplasty was performed to lengthen and set back the chin, fine-tuning the lower face after the jaws were advanced. Coordinating these procedures allowed the surgeon to balance projection across the midface, lower face, and chin while establishing a more functional bite.",
         ],
       },
@@ -441,14 +441,14 @@ export const correctiveJawSurgeryArticles: Record<string, CaseArticle> = {
         heading: "Understanding a Comprehensive Facial Correction",
         paragraphs: [
           "Some patients present with deformities significant enough that improving the bite alone would leave the face out of balance. This case involved severe maxillary asymmetry along with a short mandibular length and a Class II malocclusion, accompanied by chin deviation, nasal deviation, and a wide nasal base. Treating concerns of this scope calls for a combined plan that addresses the jaws, the nose, and facial volume together.",
-          "When the upper jaw is severely asymmetric and the lower jaw is short, the imbalance ripples across the entire face — the chin shifts off center, the nose appears deviated, and the cheeks may look hollow or uneven. A complete face makeover approach corrects the underlying skeleton first, then refines the nose and restores soft-tissue volume, so that every element works together for a harmonious result.",
+          "When the upper jaw is severely asymmetric and the lower jaw is short, the imbalance ripples across the entire face - the chin shifts off center, the nose appears deviated, and the cheeks may look hollow or uneven. A complete face makeover approach corrects the underlying skeleton first, then refines the nose and restores soft-tissue volume, so that every element works together for a harmonious result.",
         ],
       },
       {
         heading: "The Diagnosis Explained",
         paragraphs: [
           "The documented findings were extensive. Severe maxillary asymmetry meant the upper jaw was markedly uneven from side to side, while a short mandibular length indicated the lower jaw was underdeveloped, contributing to a Class II malocclusion in which the lower jaw sits behind its ideal position.",
-          "Chin deviation reflected a chin shifted off the facial midline, and nasal deviation with a wide nasal base described a nose pulled off center and broad at its foundation — both common companions of significant skeletal asymmetry. Recognizing each of these findings made it clear that a layered plan addressing the jaws, the nose, and facial contour would be needed to restore overall balance.",
+          "Chin deviation reflected a chin shifted off the facial midline, and nasal deviation with a wide nasal base described a nose pulled off center and broad at its foundation - both common companions of significant skeletal asymmetry. Recognizing each of these findings made it clear that a layered plan addressing the jaws, the nose, and facial contour would be needed to restore overall balance.",
         ],
       },
       {

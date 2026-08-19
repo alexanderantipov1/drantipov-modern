@@ -18,7 +18,7 @@ import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data
 import { siteConfig } from "@/constants/siteConfig";
 
 export const metadata: Metadata = {
-  title: { absolute: "About — Dr. Alexander V. Antipov, DDS" },
+  title: { absolute: "About - Dr. Alexander V. Antipov, DDS" },
   description: "Meet Dr. Antipov & Dr. Kahwach. Board-certified oral & maxillofacial surgeons with 25+ years of combined experience in Roseville, CA.",
   alternates: {
     canonical: "/about",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "About Dr. Alexander Antipov",
-    description: "Board-certified oral & maxillofacial surgeon — Diplomate ABOMS. 25+ years restoring smiles in Roseville, CA.",
+    description: "Board-certified oral & maxillofacial surgeon - Diplomate ABOMS. 25+ years restoring smiles in Roseville, CA.",
     images: [
       {
         url: "/images/drantipov-about-v6.jpg",
@@ -42,13 +42,13 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About Dr. Alexander Antipov",
-    description: "Board-certified oral & maxillofacial surgeon — Diplomate ABOMS. 25+ years restoring smiles in Roseville, CA.",
+    description: "Board-certified oral & maxillofacial surgeon - Diplomate ABOMS. 25+ years restoring smiles in Roseville, CA.",
     images: ["/images/drantipov-about-v6.jpg"],
   }
 };
 
 /**
- * About — mirror of the homepage, available as a dedicated /about route.
+ * About - mirror of the homepage, available as a dedicated /about route.
  *
  * This page renders the exact same composition as the homepage. It exists so
  * "About" can appear in the top navigation as a discrete entry point even

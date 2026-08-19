@@ -15,7 +15,7 @@ interface VerticalProcessTimelineProps {
 }
 
 /**
- * VerticalProcessTimeline — animated vertical timeline with connecting line.
+ * VerticalProcessTimeline - animated vertical timeline with connecting line.
  * Replaces flat stacked process cards for a more cinematic journey feel.
  */
 export function VerticalProcessTimeline({ steps }: VerticalProcessTimelineProps) {

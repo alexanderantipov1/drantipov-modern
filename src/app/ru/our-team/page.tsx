@@ -37,7 +37,7 @@ import { siteUrl } from "@/data/russianImplantFunnel"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Наша хирургическая команда — Доктор Антипов и Доктор Кахвач | Galleria Oral & Facial Surgery",
+  title: "Наша хирургическая команда - Доктор Антипов и Доктор Кахвач | Galleria Oral & Facial Surgery",
   description:
     "Знакомьтесь с хирургической командой Galleria Oral & Facial Surgery в Розвилле, Калифорния: доктор Александр В. Антипов, DDS (основатель, board-certified OMS, более 25 лет опыта) и доктор Андре-Давид Кахвач, DDS, MD. Образование в Albert Einstein, Loma Linda, UCSF, МГМСУ. Пять госпитальных привилегий, шесть профессиональных членств, основатель фонда Smile Again Foundation.",
   alternates: {
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Наша хирургическая команда — Доктор Антипов и Доктор Кахвач",
+    title: "Наша хирургическая команда - Доктор Антипов и Доктор Кахвач",
     description:
       "Два board-certified челюстно-лицевых хирурга обслуживают Розвилл и Северную Калифорнию с госпитальными привилегиями в Sutter и Mercy.",
     url: `${siteUrl}/ru/our-team`,
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
 }
 
 // ────────────────────────────────────────────────────────────────────
-// Данные CV — переведены с alexander_antipov_cv.pdf
+// Данные CV - переведены с alexander_antipov_cv.pdf
 // ────────────────────────────────────────────────────────────────────
 
 const educationItems = [
@@ -87,7 +87,7 @@ const educationItems = [
     year: "2007 – 2008",
     title: "Резидентура по челюстно-лицевой хирургии",
     subtitle: "Albert Einstein College of Medicine, Yeshiva University, Department of Dentistry",
-    description: "Завершил резидентуру OMS в Нью-Йорке — фундамент для практики полного спектра хирургии.",
+    description: "Завершил резидентуру OMS в Нью-Йорке - фундамент для практики полного спектра хирургии.",
   },
 ]
 
@@ -95,24 +95,24 @@ const careerItems = [
   {
     year: "2008 – настоящее время",
     title: "Владелец, медицинский директор и хирург-стоматолог",
-    subtitle: "Частная практика — Розвилл, Калифорния",
+    subtitle: "Частная практика - Розвилл, Калифорния",
     description: "Основал практику в Розвилле в 2008 году и лично выполнил каждую операцию с тех пор.",
   },
   {
     year: "2008 – 2012",
     title: "Контрактный хирург-стоматолог",
-    subtitle: "Pacific Dental Services — Сакраменто, Калифорния",
+    subtitle: "Pacific Dental Services - Сакраменто, Калифорния",
   },
   {
     year: "2009 – настоящее время",
     title: "Контрактный хирург-стоматолог",
-    subtitle: "California Department of Corrections and Rehabilitation — Фолсом, Калифорния",
+    subtitle: "California Department of Corrections and Rehabilitation - Фолсом, Калифорния",
     description: "Предоставляет хирургическую помощь в исправительных медицинских учреждениях с 2009 года.",
   },
   {
     year: "2009 – настоящее время",
     title: "Контрактный хирург-стоматолог",
-    subtitle: "Sacramento State Prison — Сакраменто, Калифорния",
+    subtitle: "Sacramento State Prison - Сакраменто, Калифорния",
   },
   {
     year: "2025 – настоящее время",
@@ -145,7 +145,7 @@ const memberships = [
   {
     group: "Национальные",
     items: [
-      "American Board of Oral & Maxillofacial Surgery (ABOMS) — Diplomate",
+      "American Board of Oral & Maxillofacial Surgery (ABOMS) - Diplomate",
       "American Association of Oral & Maxillofacial Surgeons (AAOMS)",
       "American Dental Association (ADA)",
     ],
@@ -165,7 +165,7 @@ const memberships = [
   },
 ]
 
-// Курсы повышения квалификации сохранены на английском — оригинальные названия международных программ
+// Курсы повышения квалификации сохранены на английском - оригинальные названия международных программ
 const continuingEducation = [
   "Arnett Orthognathic Surgery Forum",
   "What's New in Local Anesthesia",
@@ -184,13 +184,13 @@ const continuingEducation = [
   "Esthetic Soft Tissue Management A to Z",
   "Periodontal Plastic Surgery for the Implant Patient",
   "Anesthesia Update for the Oral & Maxillofacial Surgeon",
-  "Observational Surgery Preceptorship in Cosmetic Facial Surgery — face lift, blepharoplasty, brow lift, facial liposuction, facial implants, neurotoxins, injectable fillers, CO2 laser resurfacing, chemical peels, radiowave surgery, and skin care",
+  "Observational Surgery Preceptorship in Cosmetic Facial Surgery - face lift, blepharoplasty, brow lift, facial liposuction, facial implants, neurotoxins, injectable fillers, CO2 laser resurfacing, chemical peels, radiowave surgery, and skin care",
   "What Hygienists Should Know",
 ]
 
 const kahwachHighlights = [
   { icon: GraduationCap, label: "DDS, University of California, San Francisco (с отличием)" },
-  { icon: Stethoscope, label: "MD и резидентура OMS, Loma Linda University — продвинутая подготовка в анестезиологии" },
+  { icon: Stethoscope, label: "MD и резидентура OMS, Loma Linda University - продвинутая подготовка в анестезиологии" },
   { icon: Palette, label: "Образование в области живописи и скульптуры формирует хирургическую точность и эстетику" },
   { icon: Globe2, label: "Медицинская и стоматологическая миссионерская работа в Европе, Африке, Карибском бассейне и на Ближнем Востоке" },
 ]
@@ -261,7 +261,7 @@ export default function RussianOurTeamPage() {
             <Reveal delay={0.2}>
               <p className="mt-6 text-lg lg:text-xl text-white/85 max-w-3xl mx-auto leading-relaxed">
                 Galleria Oral &amp; Facial Surgery возглавляет{" "}
-                <strong className="text-white">доктор Александр В. Антипов, DDS</strong> —
+                <strong className="text-white">доктор Александр В. Антипов, DDS</strong> -
                 Diplomate Американского борда челюстно-лицевой хирургии, к которому присоединился{" "}
                 <strong className="text-white">доктор Андре-Давид Кахвач, DDS, MD</strong>.
                 Совместный опыт: более 25 лет хирургической практики полного спектра,
@@ -279,7 +279,7 @@ export default function RussianOurTeamPage() {
         </section>
 
         {/* ============================================================ */}
-        {/* Доктор Антипов — основной блок                                */}
+        {/* Доктор Антипов - основной блок                                */}
         {/* ============================================================ */}
         <Section background="default" padding="xl" id="dr-antipov">
           <Container size="lg">
@@ -289,7 +289,7 @@ export default function RussianOurTeamPage() {
                   <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl">
                     <Image
                       src="/images/drantipov.png"
-                      alt="Доктор Александр В. Антипов, DDS — основатель Galleria Oral & Facial Surgery"
+                      alt="Доктор Александр В. Антипов, DDS - основатель Galleria Oral & Facial Surgery"
                       width={600}
                       height={800}
                       className="w-full h-auto"
@@ -330,12 +330,12 @@ export default function RussianOurTeamPage() {
                       Доктор Антипов практикует челюстно-лицевую хирургию полного спектра в Розвилле,
                       Калифорния, с <strong>2008 года</strong>. Diplomate Американского борда челюстно-лицевой
                       хирургии (ABOMS), его подготовка охватывает три страны и три самых уважаемых учреждения
-                      стоматологии и медицины — <strong>Albert Einstein College of Medicine</strong>,
+                      стоматологии и медицины - <strong>Albert Einstein College of Medicine</strong>,
                       <strong> Loma Linda University</strong> и <strong>Московский государственный
                       медико-стоматологический университет</strong>.
                     </p>
                     <p>
-                      Его практика охватывает полный объём OMS — зубные импланты и реставрацию полной дуги
+                      Его практика охватывает полный объём OMS - зубные импланты и реставрацию полной дуги
                       (All-on-4 / All-on-X), корригирующую хирургию челюсти, хирургию апноэ сна, костную
                       пластику, лицевую травматологию и косметические процедуры лица. Имеет госпитальные
                       привилегии в пяти учреждениях Северной Калифорнии, разрешение Калифорнии на общую
@@ -343,7 +343,7 @@ export default function RussianOurTeamPage() {
                     </p>
                     <p>
                       В <strong>2025 году</strong> доктор Антипов основал{" "}
-                      <strong>Smile Again Foundation</strong> — некоммерческую организацию, посвящённую
+                      <strong>Smile Again Foundation</strong> - некоммерческую организацию, посвящённую
                       расширению доступа к восстановительной стоматологической помощи для пациентов,
                       которые иначе остались бы без лечения.
                     </p>
@@ -441,7 +441,7 @@ export default function RussianOurTeamPage() {
                   Лицензии и сертификации
                 </h2>
                 <p className="mt-4 text-white/75 text-lg max-w-2xl mx-auto">
-                  Каждое разрешение, сертификация и лицензия — подтверждаются в открытых государственных реестрах.
+                  Каждое разрешение, сертификация и лицензия - подтверждаются в открытых государственных реестрах.
                 </p>
               </div>
             </Reveal>
@@ -545,7 +545,7 @@ export default function RussianOurTeamPage() {
                       Smile Again Foundation
                     </h2>
                     <p className="mt-4 text-lg text-neutral-700 leading-relaxed">
-                      В 2025 году доктор Антипов основал и теперь возглавляет фонд Smile Again Foundation —
+                      В 2025 году доктор Антипов основал и теперь возглавляет фонд Smile Again Foundation -
                       некоммерческую организацию, посвящённую расширению доступа к восстановительной
                       стоматологической помощи для пациентов, которые иначе остались бы без лечения.
                       Фонд сосредоточен на поддержке пациентов с миссией и практических путях возвращения
@@ -597,7 +597,7 @@ export default function RussianOurTeamPage() {
                   <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl">
                     <Image
                       src="/images/dr-kahwach-v3.jpg"
-                      alt="Доктор Андре-Давид Кахвач, DDS, MD — челюстно-лицевой хирург"
+                      alt="Доктор Андре-Давид Кахвач, DDS, MD - челюстно-лицевой хирург"
                       width={600}
                       height={800}
                       className="w-full h-auto"
@@ -636,7 +636,7 @@ export default function RussianOurTeamPage() {
                       С увлечением полным спектром челюстно-лицевой хирургии, доктор Кахвач посвящён
                       оказанию исключительной помощи в косметических процедурах, дентальной имплантации,
                       лицевой травматологии и ортогнатической хирургии. Его подход сочетает точность
-                      и творчество — влияние, сформированное не только хирургической подготовкой,
+                      и творчество - влияние, сформированное не только хирургической подготовкой,
                       но и его опытом в живописи и скульптуре.
                     </p>
                     <p>

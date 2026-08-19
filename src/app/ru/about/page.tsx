@@ -18,9 +18,9 @@ import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data
 import { siteConfig } from "@/constants/siteConfig";
 
 export const metadata: Metadata = {
-  title: { absolute: "О нас — Доктор Александр В. Антипов, DDS" },
+  title: { absolute: "О нас - Доктор Александр В. Антипов, DDS" },
   description:
-    "Доктор Антипов и доктор Кахвач — сертифицированные челюстно-лицевые хирурги с 25+ годами совокупного опыта в Roseville, CA.",
+    "Доктор Антипов и доктор Кахвач - сертифицированные челюстно-лицевые хирурги с 25+ годами совокупного опыта в Roseville, CA.",
   alternates: {
     canonical: `${siteConfig.url}/ru/about`,
     languages: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "О докторе Александре Антипове",
     description:
-      "Сертифицированный челюстно-лицевой хирург — Diplomate ABOMS. 25+ лет возвращает улыбки в Roseville, CA.",
+      "Сертифицированный челюстно-лицевой хирург - Diplomate ABOMS. 25+ лет возвращает улыбки в Roseville, CA.",
     locale: "ru_RU",
     images: [
       {
@@ -47,13 +47,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "О докторе Александре Антипове",
     description:
-      "Сертифицированный челюстно-лицевой хирург — Diplomate ABOMS. 25+ лет возвращает улыбки в Roseville, CA.",
+      "Сертифицированный челюстно-лицевой хирург - Diplomate ABOMS. 25+ лет возвращает улыбки в Roseville, CA.",
     images: ["/images/drantipov-about-v6.jpg"],
   },
 };
 
 /**
- * /ru/about — зеркало главной /ru, с собственным URL для пункта «О нас» в меню.
+ * /ru/about - зеркало главной /ru, с собственным URL для пункта «О нас» в меню.
  */
 export default function RuAboutPage() {
   return (

@@ -38,7 +38,7 @@ const services = [
     title: "Full Arch имплантация",
     subtitle: "All-on-4, All-on-6, zygomatic implants, teeth-in-a-day",
     body:
-      "Полный набор фиксированных зубов за один визит. Dr. Antipov использует 3D cone-beam CT и навигационную хирургию для точной установки — даже в случаях, когда другие хирурги отказались из-за нехватки кости. При тяжёлой потере кости верхней челюсти — zygomatic implants, без длительной костной пластики. В каждом случае All-on-4 / All-on-6 устанавливаются временные зубы в день операции.",
+      "Полный набор фиксированных зубов за один визит. Dr. Antipov использует 3D cone-beam CT и навигационную хирургию для точной установки - даже в случаях, когда другие хирурги отказались из-за нехватки кости. При тяжёлой потере кости верхней челюсти - zygomatic implants, без длительной костной пластики. В каждом случае All-on-4 / All-on-6 устанавливаются временные зубы в день операции.",
     image: "/images/procedures/dental-implants-26292ad9.jpg",
     features: [
       "All-on-4 / All-on-6",
@@ -53,7 +53,7 @@ const services = [
     title: "Хирургия челюсти",
     subtitle: "Orthognathic, Le Fort, BSSO, genioplasty",
     body:
-      "Компьютерное планирование исправления прикуса, восстановления функции жевания и гармонии лица. Mesial / distal occlusion, открытый прикус, перекрёстный прикус, асимметрия лица, обструктивное апноэ. Le Fort I osteotomy, BSSO, genioplasty, maxillomandibular advancement, double jaw surgery — с точностью до миллиметра по 3D-планированию.",
+      "Компьютерное планирование исправления прикуса, восстановления функции жевания и гармонии лица. Mesial / distal occlusion, открытый прикус, перекрёстный прикус, асимметрия лица, обструктивное апноэ. Le Fort I osteotomy, BSSO, genioplasty, maxillomandibular advancement, double jaw surgery - с точностью до миллиметра по 3D-планированию.",
     image: "/images/procedures/corrective-jaw-surgery-406b79a4.jpg",
     features: [
       "Orthognathic surgery",
@@ -83,7 +83,7 @@ const services = [
     title: "Костная пластика и sinus lift",
     subtitle: "Organic, holistic и аутогенная регенерация кости",
     body:
-      "Восстановление кости челюсти, потерянной из-за удаления зубов, пародонтита или травмы. Sinus lift, ridge augmentation, socket preservation, block bone graft, guided bone regeneration. Аутогенный, allograft, xenograft и синтетические материалы — включая натуральные органические варианты для подготовки к имплантации.",
+      "Восстановление кости челюсти, потерянной из-за удаления зубов, пародонтита или травмы. Sinus lift, ridge augmentation, socket preservation, block bone graft, guided bone regeneration. Аутогенный, allograft, xenograft и синтетические материалы - включая натуральные органические варианты для подготовки к имплантации.",
     image: "/images/procedures/extractions-1896b4c1.jpg",
     features: [
       "Sinus lift",
@@ -98,7 +98,7 @@ const services = [
     title: "Oral surgery",
     subtitle: "Зубы мудрости, TMJ, IV sedation",
     body:
-      "Комплексная хирургия полости рта: удаление impacted зубов мудрости, сложные удаления, хирургическое раскрытие impacted зубов для ортодонтии, лечение TMJ, удаление кист и опухолей, pre-prosthetic surgery. Все процедуры — под комфортной IV-седацией или общей анестезией в Roseville surgical center.",
+      "Комплексная хирургия полости рта: удаление impacted зубов мудрости, сложные удаления, хирургическое раскрытие impacted зубов для ортодонтии, лечение TMJ, удаление кист и опухолей, pre-prosthetic surgery. Все процедуры - под комфортной IV-седацией или общей анестезией в Roseville surgical center.",
     image: "/images/landing-pages/dental-implants/art/slider02-ff45c735.jpg",
     features: [
       "Wisdom teeth",
@@ -113,7 +113,7 @@ const services = [
     title: "Один и несколько имплантов",
     subtitle: "Single implants, мостовидные протезы, snap-on dentures",
     body:
-      "Замена одного или нескольких зубов — самый естественный и долговечный вариант. Single tooth implants с immediate temporary crowns, implant-supported bridges для нескольких соседних зубов, snap-on dentures (overdentures) для съёмного варианта на имплантах. Все импланты ставятся под 3D CT-навигацией с титаном медицинского класса.",
+      "Замена одного или нескольких зубов - самый естественный и долговечный вариант. Single tooth implants с immediate temporary crowns, implant-supported bridges для нескольких соседних зубов, snap-on dentures (overdentures) для съёмного варианта на имплантах. Все импланты ставятся под 3D CT-навигацией с титаном медицинского класса.",
     image: "/images/landing-pages/dental-implants/art/smiling-woman-7bc2b588.jpg",
     features: [
       "Single tooth implant",
@@ -130,12 +130,12 @@ const stats = [
   { value: "10 000+", label: "восстановленных улыбок" },
   { value: "25+", label: "лет board-certified практики" },
   { value: "4.9★", label: "средняя оценка по 300+ отзывам" },
-  { value: "от $99", label: "в месяц — финансирование" },
+  { value: "от $99", label: "в месяц - финансирование" },
 ];
 
 const process = [
   { n: "1", title: "Заявка", body: "Расскажите ситуацию, город, желаемые сроки и удобный канал связи. Без формальностей." },
-  { n: "2", title: "Бесплатный 3D CT и осмотр", body: "В офисе Roseville. CT-снимок, осмотр, обсуждение вариантов — без оплаты." },
+  { n: "2", title: "Бесплатный 3D CT и осмотр", body: "В офисе Roseville. CT-снимок, осмотр, обсуждение вариантов - без оплаты." },
   { n: "3", title: "Понятный план и стоимость", body: "Все опции с цифрами. Финансирование от $99/мес, до 84 месяцев под 0% APR." },
   { n: "4", title: "Операция и сопровождение", body: "Computer-guided surgery, временные зубы в день операции там, где возможно. Сопровождение до окончательного результата." },
 ];
@@ -147,7 +147,7 @@ const faq = [
   },
   {
     q: "Можно ли поставить импланты за один день?",
-    a: "Для All-on-4 и All-on-6 — да, при достаточной плотности кости. Импланты ставятся, и в этот же день фиксируются временные зубы. Постоянный протез — после периода заживления.",
+    a: "Для All-on-4 и All-on-6 - да, при достаточной плотности кости. Импланты ставятся, и в этот же день фиксируются временные зубы. Постоянный протез - после периода заживления.",
   },
   {
     q: "Мне сказали, что кости недостаточно. Есть варианты?",
@@ -359,7 +359,7 @@ export default function RussianHome() {
                 ))}
               </div>
               <p className="mt-3 text-center text-xs text-white/40">
-                Путь импланта — от удаления до постоянной коронки
+                Путь импланта - от удаления до постоянной коронки
               </p>
             </motion.div>
           </div>
@@ -386,7 +386,7 @@ export default function RussianHome() {
                 Хирургия для взрослых пациентов с 25-летним стажем
               </h2>
               <p className="mt-5 text-lg leading-8 text-muted">
-                Имплантация, реконструкция челюсти, лицевая косметология и костная пластика — всё под одной крышей и
+                Имплантация, реконструкция челюсти, лицевая косметология и костная пластика - всё под одной крышей и
                 одним хирургом, который ведёт случай от консультации до окончательного результата.
               </p>
             </div>
@@ -560,7 +560,7 @@ export default function RussianHome() {
                 Прозрачные цены, удобная оплата
               </h2>
               <p className="mt-5 text-lg leading-8 text-white/80">
-                Бесплатная консультация и 3D CT снимок — без оплаты до того, как вы поймёте план лечения и
+                Бесплатная консультация и 3D CT снимок - без оплаты до того, как вы поймёте план лечения и
                 стоимость. Финансирование от $99/мес делает имплантацию доступной без единовременной оплаты.
               </p>
             </div>
@@ -574,7 +574,7 @@ export default function RussianHome() {
                 <h3 className="mt-5 text-xl font-bold">от $99/мес</h3>
                 <p className="mt-3 leading-7 text-white/75">
                   Финансирование до 84 месяцев под 0% APR для квалифицированных заявителей. Через CareCredit,
-                  LendingClub и другие медицинские партнёры — заявка занимает ~5 минут.
+                  LendingClub и другие медицинские партнёры - заявка занимает ~5 минут.
                 </p>
               </div>
 
@@ -586,7 +586,7 @@ export default function RussianHome() {
                 </div>
                 <h3 className="mt-5 text-xl font-bold">Бесплатный 3D CT</h3>
                 <p className="mt-3 leading-7 text-white/75">
-                  Первичная консультация и компьютерная томография — без оплаты. Никаких обязательств: вы получаете
+                  Первичная консультация и компьютерная томография - без оплаты. Никаких обязательств: вы получаете
                   понятный план и стоимость прежде, чем что-то решить.
                 </p>
               </div>
@@ -600,13 +600,13 @@ export default function RussianHome() {
                 <h3 className="mt-5 text-xl font-bold">Принимаем большинство страховок</h3>
                 <p className="mt-3 leading-7 text-white/75">
                   Мы работаем с PPO-планами и помогаем разобраться, что именно покрывает ваш план. Если страховка
-                  не покрывает имплант — финансирование закрывает остаток. Координатор уточнит детали по
+                  не покрывает имплант - финансирование закрывает остаток. Координатор уточнит детали по
                   телефону.
                 </p>
               </div>
             </div>
             <p className="mx-auto mt-12 max-w-3xl text-center text-sm text-white/50">
-              Указанная стоимость — ориентировочная. Точная цена и условия финансирования называются после
+              Указанная стоимость - ориентировочная. Точная цена и условия финансирования называются после
               осмотра, 3D CT и обсуждения плана лечения. Никаких скрытых платежей в день операции.
             </p>
           </div>
@@ -621,7 +621,7 @@ export default function RussianHome() {
                 Запишитесь на консультацию
               </h2>
               <p className="mt-5 text-lg leading-8 text-muted">
-                Заполните форму — координатор перезвонит в течение 24 часов и объяснит следующий шаг. Бесплатный 3D CT
+                Заполните форму - координатор перезвонит в течение 24 часов и объяснит следующий шаг. Бесплатный 3D CT
                 и осмотр включены.
               </p>
               <div className="mt-10 space-y-5 text-dark">
@@ -659,7 +659,7 @@ export default function RussianHome() {
 
       <footer className="border-t border-dark/10 bg-white py-10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <p>© {new Date().getFullYear()} Dr. Alexander Antipov, DDS — Roseville, California</p>
+          <p>© {new Date().getFullYear()} Dr. Alexander Antipov, DDS - Roseville, California</p>
           <div className="flex gap-4">
             <a href="/" className="font-semibold text-primary hover:text-primary-dark">English</a>
             <a href="#contact" className="hover:text-primary">Контакты</a>

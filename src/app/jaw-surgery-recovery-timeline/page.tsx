@@ -6,12 +6,12 @@ import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/s
 import DualCTA from "@/components/DualCTA";
 
 export const metadata: Metadata = {
-  title: "Jaw Surgery Recovery Timeline — Week by Week | Dr. Antipov",
+  title: "Jaw Surgery Recovery Timeline - Week by Week | Dr. Antipov",
   description:
     "Complete week-by-week recovery guide after orthognathic (corrective jaw) surgery. What to expect during the first 24 hours through 12 months of full bone consolidation.",
   alternates: { canonical: "/jaw-surgery-recovery-timeline" },
   openGraph: {
-    title: "Jaw Surgery Recovery — Week by Week",
+    title: "Jaw Surgery Recovery - Week by Week",
     description: "Detailed recovery timeline after orthognathic surgery.",
     url: `${siteConfig.url}/jaw-surgery-recovery-timeline`,
     type: "article",
@@ -23,7 +23,7 @@ const faqs = [
   { question: "When can I return to work after jaw surgery?", answer: "Most desk workers return at 2-3 weeks. Physical labor jobs require 4-6 weeks. We provide work clearance notes individualized to your specific surgery and recovery progress." },
   { question: "How long until I can eat normal food?", answer: "Liquid diet: 1-2 weeks. Soft/mushy diet: weeks 3-6. Soft chewables (pasta, scrambled eggs): weeks 6-8. Most foods: weeks 8-12. Hard or crunchy foods (raw vegetables, nuts): only after week 12 with surgeon clearance." },
   { question: "Does my jaw get wired shut?", answer: "Rarely with modern technique. Most patients have elastics (rubber bands) connecting upper and lower teeth that guide healing but allow speaking and limited movement. Elastics are removable for cleaning." },
-  { question: "Will my face look different?", answer: "Yes — that's the point. The changes are typically subtle but improve facial harmony. Initial swelling (peaks days 2-4) hides the final result for the first 2-3 weeks. Final result is visible at 3-6 months as residual swelling fully resolves." },
+  { question: "Will my face look different?", answer: "Yes - that's the point. The changes are typically subtle but improve facial harmony. Initial swelling (peaks days 2-4) hides the final result for the first 2-3 weeks. Final result is visible at 3-6 months as residual swelling fully resolves." },
   { question: "Is the recovery painful?", answer: "Most patients report less pain than expected. Pain is well-controlled with prescription medications for the first 5-7 days, then over-the-counter for another week. The bigger challenges are numbness (temporary), swelling, and dietary restrictions." },
 ];
 
@@ -36,7 +36,7 @@ const phases = [
       "Significant swelling begins (peaks days 2-4)",
       "IV pain medication, transitioning to oral",
       "Ice packs every hour while awake (20 on, 20 off)",
-      "Strict liquid diet — broths, protein shakes, smoothies",
+      "Strict liquid diet - broths, protein shakes, smoothies",
       "Head elevated 30°+ for sleeping",
     ],
   },
@@ -44,7 +44,7 @@ const phases = [
     phase: "Days 3-7",
     icon: "🛌",
     points: [
-      "Discharged home — recovery continues at home",
+      "Discharged home - recovery continues at home",
       "Swelling at maximum (days 3-5), then begins to subside",
       "Numbness in lips, cheeks, chin is normal and expected",
       "Liquid + pureed soft diet (yogurt, applesauce, pudding)",
@@ -57,9 +57,9 @@ const phases = [
     icon: "📚",
     points: [
       "Most desk workers return to work at week 2-3",
-      "Swelling 50% resolved — face looks closer to normal",
+      "Swelling 50% resolved - face looks closer to normal",
       "Some numbness persists (most resolves by 6 months)",
-      "Soft foods only — mashed potatoes, scrambled eggs, fish",
+      "Soft foods only - mashed potatoes, scrambled eggs, fish",
       "First post-op X-ray and elastics adjustment",
       "Light walking and gentle exercise OK",
     ],
@@ -69,7 +69,7 @@ const phases = [
     icon: "🏃",
     points: [
       "Resume light cardio, no contact sports yet",
-      "Bone is healing — alignment is stabilizing",
+      "Bone is healing - alignment is stabilizing",
       "Soft solids: pasta, soft bread, well-cooked vegetables",
       "Elastics may decrease in tension as bite stabilizes",
       "Numbness continues to resolve (sensation returning)",
@@ -85,7 +85,7 @@ const phases = [
       "Final orthodontic refinement begins",
       "Full sensation returning (95% of cases)",
       "Resume contact sports, weight training, vigorous activity",
-      "Facial result is visible — most residual swelling gone",
+      "Facial result is visible - most residual swelling gone",
     ],
   },
   {
@@ -139,7 +139,7 @@ export default function RecoveryTimelinePage() {
           </nav>
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary-light">Recovery Guide</p>
           <h1 className="mt-4 font-serif text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-            Jaw surgery recovery — week by week
+            Jaw surgery recovery - week by week
           </h1>
           <p className="mt-6 max-w-3xl text-xl leading-relaxed text-white/85">
             A detailed timeline of what to expect during the first 24 hours through 12 months after orthognathic surgery. Knowing what's coming makes the journey easier.
@@ -173,7 +173,7 @@ export default function RecoveryTimelinePage() {
       <section className="bg-amber-50 border-l-4 border-amber-500 py-8">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-amber-900 text-sm leading-7">
-            <strong>Important:</strong> This is a general timeline. Your individual recovery depends on age, overall health, complexity of surgery, smoking status, and adherence to post-op instructions. Always follow your surgeon's specific guidance — call the office for any concerns.
+            <strong>Important:</strong> This is a general timeline. Your individual recovery depends on age, overall health, complexity of surgery, smoking status, and adherence to post-op instructions. Always follow your surgeon's specific guidance - call the office for any concerns.
           </p>
         </div>
       </section>

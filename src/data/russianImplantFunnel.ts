@@ -49,7 +49,7 @@ export const russianHomePage: RussianCityPage = {
   city: "Roseville",
   region: "Roseville, Sacramento, Bay Area, Reno, Los Angeles, Seattle, New York, Miami, Toronto, Vancouver",
   country: "United States",
-  title: "Имплантация зубов у Dr. Antipov — Roseville, California",
+  title: "Имплантация зубов у Dr. Antipov - Roseville, California",
   description:
     "All-on-4, All-on-6, zygomatic implants, bone grafting и бесплатная 3D CT консультация у Dr. Alexander Antipov в Roseville, California.",
   headline: "Имплантация зубов у Dr. Alexander Antipov",
@@ -74,7 +74,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "Roseville",
     region: "Roseville, Granite Bay, Rocklin, Lincoln, Citrus Heights",
     country: "United States",
-    title: "Dr. Antipov — имплантация зубов в Roseville",
+    title: "Dr. Antipov - имплантация зубов в Roseville",
     description:
       "Первичная заявка для пациентов Roseville: All-on-4, All-on-6, dental implants, bone grafting и бесплатная 3D CT консультация у Dr. Antipov.",
     headline: "Имплантация зубов для пациентов Roseville",
@@ -88,7 +88,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "Sacramento",
     region: "Sacramento, Roseville, Folsom, Citrus Heights",
     country: "United States",
-    title: "Dr. Antipov — имплантация зубов в Sacramento",
+    title: "Dr. Antipov - имплантация зубов в Sacramento",
     description:
       "All-on-4, All-on-6, zygomatic implants и консультации по имплантации у Dr. Antipov рядом с Sacramento.",
     headline: "Имплантация зубов для пациентов Sacramento и Roseville",
@@ -101,7 +101,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "San Francisco Bay Area",
     region: "San Francisco, San Jose, Palo Alto, Oakland, Walnut Creek",
     country: "United States",
-    title: "Dr. Antipov — All-on-4 implants в Bay Area",
+    title: "Dr. Antipov - All-on-4 implants в Bay Area",
     description:
       "All-on-4, All-on-6 и zygomatic implants для пациентов Bay Area у Dr. Antipov в Roseville.",
     headline: "Имплантация зубов у Dr. Antipov для пациентов Bay Area",
@@ -114,7 +114,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "Los Angeles",
     region: "Los Angeles, West Hollywood, Glendale, Valley",
     country: "United States",
-    title: "Dr. Antipov — dental implants в Los Angeles",
+    title: "Dr. Antipov - dental implants в Los Angeles",
     description:
       "All-on-4, All-on-6, zygomatic implants и second opinion для пациентов Los Angeles.",
     headline: "All-on-4 и сложная имплантация для пациентов Los Angeles",
@@ -127,7 +127,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "Seattle",
     region: "Seattle, Bellevue, Redmond, Everett",
     country: "United States",
-    title: "Dr. Antipov — имплантация зубов в Seattle",
+    title: "Dr. Antipov - имплантация зубов в Seattle",
     description:
       "All-on-4, full arch restoration и second opinion для пациентов Seattle у Dr. Antipov.",
     headline: "Имплантация зубов для пациентов Seattle и Bellevue",
@@ -140,12 +140,12 @@ export const russianCityPages: RussianCityPage[] = [
     city: "New York",
     region: "Brooklyn, Queens, Staten Island, Manhattan",
     country: "United States",
-    title: "Dr. Antipov — All-on-4 implants для пациентов из New York",
+    title: "Dr. Antipov - All-on-4 implants для пациентов из New York",
     description:
-      "All-on-4, All-on-6 и zygomatic implants — первичная заявка для пациентов New York у Dr. Antipov.",
+      "All-on-4, All-on-6 и zygomatic implants - первичная заявка для пациентов New York у Dr. Antipov.",
     headline: "Имплантация зубов для пациентов из New York",
     subtitle:
-      "Для пациентов из Brooklyn, Queens и Staten Island — понятная заявка и план перед поездкой в California.",
+      "Для пациентов из Brooklyn, Queens и Staten Island - понятная заявка и план перед поездкой в California.",
     proof: ["Brooklyn / Queens / Staten Island", "Бесплатная заявка на консультацию", "Понятный план перед поездкой"],
   },
   {
@@ -153,7 +153,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "Miami",
     region: "Sunny Isles, Hallandale, Aventura, South Florida",
     country: "United States",
-    title: "Dr. Antipov — dental implants для пациентов Miami",
+    title: "Dr. Antipov - dental implants для пациентов Miami",
     description:
       "Full arch implants, zygomatic implants и bone grafting для пациентов Miami и South Florida.",
     headline: "All-on-4 и zygomatic implants для пациентов Miami",
@@ -166,12 +166,12 @@ export const russianCityPages: RussianCityPage[] = [
     city: "Toronto",
     region: "GTA, North York, Richmond Hill, Vaughan, Mississauga",
     country: "Canada",
-    title: "Dr. Antipov — dental implants для пациентов Toronto",
+    title: "Dr. Antipov - dental implants для пациентов Toronto",
     description:
       "Implant treatment для пациентов Toronto / GTA у Dr. Antipov в Roseville, California.",
     headline: "Concierge-имплантация для пациентов Toronto и GTA",
     subtitle:
-      "Для пациентов Toronto и GTA — понятная заявка, обсуждение лечения и следующий шаг перед консультацией в California.",
+      "Для пациентов Toronto и GTA - понятная заявка, обсуждение лечения и следующий шаг перед консультацией в California.",
     proof: ["Пациенты из Toronto / GTA", "Интерес к All-on-4 и All-on-6", "Связь по телефону"],
   },
   {
@@ -179,7 +179,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "Vancouver",
     region: "Richmond, Burnaby, Coquitlam, North Vancouver",
     country: "Canada",
-    title: "Dr. Antipov — dental implants для пациентов Vancouver",
+    title: "Dr. Antipov - dental implants для пациентов Vancouver",
     description:
       "All-on-4, bone grafting и zygomatic implants для пациентов Vancouver у Dr. Antipov.",
     headline: "Имплантация зубов для пациентов Vancouver",
@@ -192,7 +192,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "Rocklin",
     region: "Rocklin, Roseville, Loomis, Lincoln",
     country: "United States",
-    title: "Dr. Antipov — имплантация зубов в Rocklin",
+    title: "Dr. Antipov - имплантация зубов в Rocklin",
     description:
       "Консультация по dental implants, All-on-4, bone grafting и full arch restoration для пациентов Rocklin рядом с Roseville.",
     headline: "Dental implants для пациентов Rocklin",
@@ -206,7 +206,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "Folsom",
     region: "Folsom, El Dorado Hills, Orangevale, Fair Oaks",
     country: "United States",
-    title: "Dr. Antipov — All-on-4 implants в Folsom",
+    title: "Dr. Antipov - All-on-4 implants в Folsom",
     description:
       "Первичная заявка для Folsom: All-on-4, All-on-6, zygomatic implants, bone grafting и second opinion у Dr. Antipov.",
     headline: "All-on-4 и имплантация зубов в Folsom",
@@ -220,7 +220,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "Granite Bay",
     region: "Granite Bay, Roseville, Loomis, Folsom Lake",
     country: "United States",
-    title: "Dr. Antipov — full arch implants в Granite Bay",
+    title: "Dr. Antipov - full arch implants в Granite Bay",
     description:
       "Заявка для пациентов Granite Bay, которые рассматривают full arch dental implants, All-on-4 или complex implant reconstruction.",
     headline: "Full-arch implants для пациентов Granite Bay",
@@ -234,7 +234,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "Auburn",
     region: "Auburn, Newcastle, Grass Valley, Nevada City",
     country: "United States",
-    title: "Dr. Antipov — dental implants в Auburn",
+    title: "Dr. Antipov - dental implants в Auburn",
     description:
       "Заявка для пациентов Auburn area: dental implants, full arch restoration, bone grafting и oral surgery consultation у Dr. Antipov.",
     headline: "Dental implants для пациентов Auburn и foothills",
@@ -248,7 +248,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "El Dorado Hills",
     region: "El Dorado Hills, Folsom, Cameron Park, Placerville",
     country: "United States",
-    title: "Dr. Antipov — dental implants в El Dorado Hills",
+    title: "Dr. Antipov - dental implants в El Dorado Hills",
     description:
       "Заявка на implant consultation для пациентов El Dorado Hills: All-on-4, All-on-6, dental implant cost questions и 3D CT consultation.",
     headline: "Implant consultation для пациентов El Dorado Hills",
@@ -262,7 +262,7 @@ export const russianCityPages: RussianCityPage[] = [
     city: "Reno",
     region: "Reno, Sparks, Carson City, Lake Tahoe",
     country: "United States",
-    title: "Dr. Antipov — dental implants в Reno",
+    title: "Dr. Antipov - dental implants в Reno",
     description:
       "Заявка для пациентов Reno и Northern Nevada, которые рассматривают implants, All-on-4 или second opinion в Roseville, CA.",
     headline: "Dental implant planning для пациентов Reno",
@@ -349,9 +349,9 @@ export const russianServiceFaqs: RussianFAQ[] = [
       "Стоимость зависит от количества имплантов, состояния кости, необходимости bone grafting, типа протеза и сложности случая. Для full-arch treatment индивидуальный план обычно составляется после осмотра и 3D CT консультации.",
   },
   {
-    question: "All-on-4 и All-on-6 — в чем разница?",
+    question: "All-on-4 и All-on-6 - в чем разница?",
     answer:
-      "All-on-4 использует четыре импланта на дугу, а All-on-6 — шесть. Выбор зависит от анатомии, качества кости, прикуса, бюджета и того, сколько поддержки нужно для будущего fixed bridge.",
+      "All-on-4 использует четыре импланта на дугу, а All-on-6 - шесть. Выбор зависит от анатомии, качества кости, прикуса, бюджета и того, сколько поддержки нужно для будущего fixed bridge.",
   },
   {
     question: "Можно ли получить временные зубы в день операции?",
@@ -388,7 +388,7 @@ export const russianServiceFaqs: RussianFAQ[] = [
 export const russianArticlePages: RussianArticlePage[] = [
   {
     slug: "stoimost-implantov",
-    title: "Сколько стоят зубные импланты — гид Dr. Antipov",
+    title: "Сколько стоят зубные импланты - гид Dr. Antipov",
     description:
       "Гид по стоимости dental implants: что влияет на цену, почему нужен 3D CT, чем отличаются single implant, All-on-4 и bone grafting cases.",
     h1: "Сколько стоят зубные импланты?",
@@ -399,7 +399,7 @@ export const russianArticlePages: RussianArticlePage[] = [
       {
         heading: "Почему нельзя назвать одну цену для всех",
         body:
-          "Один implant case может быть простым single-tooth replacement, а другой — full-arch reconstruction с удалением зубов, alveoloplasty, bone grafting, temporary bridge и final prosthesis. Эти случаи не должны стоить одинаково, потому что отличаются время операции, материалы, риски и лабораторная работа.",
+          "Один implant case может быть простым single-tooth replacement, а другой - full-arch reconstruction с удалением зубов, alveoloplasty, bone grafting, temporary bridge и final prosthesis. Эти случаи не должны стоить одинаково, потому что отличаются время операции, материалы, риски и лабораторная работа.",
       },
       {
         heading: "Что обычно влияет на стоимость",
@@ -409,7 +409,7 @@ export const russianArticlePages: RussianArticlePage[] = [
       {
         heading: "Как получить понятный план",
         body:
-          "Начните с короткой заявки: опишите проблему и приложите имеющиеся x-rays или записи, если они есть. Самый полезный следующий шаг — клиническая консультация с 3D CT, чтобы план был основан на анатомии, а не на догадках.",
+          "Начните с короткой заявки: опишите проблему и приложите имеющиеся x-rays или записи, если они есть. Самый полезный следующий шаг - клиническая консультация с 3D CT, чтобы план был основан на анатомии, а не на догадках.",
       },
     ],
     faqs: [
@@ -424,12 +424,12 @@ export const russianArticlePages: RussianArticlePage[] = [
   },
   {
     slug: "all-on-4-stoimost",
-    title: "All-on-4 стоимость и этапы лечения — Dr. Antipov",
+    title: "All-on-4 стоимость и этапы лечения - Dr. Antipov",
     description:
       "Объяснение All-on-4 и All-on-6: этапы лечения, временные зубы, период заживления, final prosthesis и факторы стоимости.",
     h1: "All-on-4: стоимость, этапы и временные зубы",
     summary:
-      "All-on-4 — это full-arch treatment, где фиксированные зубы держатся на имплантах. Стоимость зависит от количества дуг, состояния кости, temporary teeth, материала final prosthesis и необходимости grafting или advanced implants.",
+      "All-on-4 - это full-arch treatment, где фиксированные зубы держатся на имплантах. Стоимость зависит от количества дуг, состояния кости, temporary teeth, материала final prosthesis и необходимости grafting или advanced implants.",
     keywords: ["All-on-4 стоимость", "All-on-4 Sacramento", "full arch implants cost", "зубы за один день"],
     sections: [
       {
@@ -452,7 +452,7 @@ export const russianArticlePages: RussianArticlePage[] = [
   },
   {
     slug: "implanty-ili-protezy",
-    title: "Импланты или съемные протезы — что выбрать",
+    title: "Импланты или съемные протезы - что выбрать",
     description:
       "Сравнение dental implants, implant-supported dentures и removable dentures: комфорт, стабильность, цена и долгосрочный уход.",
     h1: "Импланты или съемные протезы?",
@@ -481,7 +481,7 @@ export const russianArticlePages: RussianArticlePage[] = [
       {
         question: "Что такое snap-on dentures?",
         answer:
-          "Snap-on dentures — это съемные dentures, которые удерживаются имплантами. Они могут быть стабильнее традиционных протезов, но отличаются от фиксированных мостов в стиле All-on-4.",
+          "Snap-on dentures - это съемные dentures, которые удерживаются имплантами. Они могут быть стабильнее традиционных протезов, но отличаются от фиксированных мостов в стиле All-on-4.",
       },
       {
         question: "Можно ли перейти от dentures к implants позже?",
@@ -492,7 +492,7 @@ export const russianArticlePages: RussianArticlePage[] = [
   },
   {
     slug: "all-on-4-ili-all-on-6",
-    title: "All-on-4 или All-on-6 — разница для full-arch implants",
+    title: "All-on-4 или All-on-6 - разница для full-arch implants",
     description:
       "Прямое сравнение All-on-4 и All-on-6: число имплантов, поддержка, bone quality, cost и treatment planning.",
     h1: "All-on-4 или All-on-6: что лучше?",
@@ -520,7 +520,7 @@ export const russianArticlePages: RussianArticlePage[] = [
   },
   {
     slug: "strahovka-i-finansirovanie",
-    title: "Покрывает ли страховка dental implants — гид Dr. Antipov",
+    title: "Покрывает ли страховка dental implants - гид Dr. Antipov",
     description:
       "Что спросить у страховки перед dental implants, All-on-4, bone grafting или oral surgery consultation у Dr. Antipov.",
     h1: "Покрывает ли страховка dental implants?",
@@ -592,7 +592,7 @@ export const russianArticlePages: RussianArticlePage[] = [
   },
   {
     slug: "nedostatochno-kosti",
-    title: "Если кости недостаточно для implants — что делать",
+    title: "Если кости недостаточно для implants - что делать",
     description:
       "Гид по потере кости перед dental implants: bone grafting, sinus lift, ridge augmentation и zygomatic implants у Dr. Antipov.",
     h1: "Если кости недостаточно для implants",
@@ -621,7 +621,7 @@ export const russianArticlePages: RussianArticlePage[] = [
       {
         question: "Что такое zygomatic implants?",
         answer:
-          "Zygomatic implants — это более длинные импланты, которые фиксируются в области скуловой кости при некоторых тяжелых случаях потери кости верхней челюсти. Они требуют advanced surgical planning и подходят не каждому пациенту.",
+          "Zygomatic implants - это более длинные импланты, которые фиксируются в области скуловой кости при некоторых тяжелых случаях потери кости верхней челюсти. Они требуют advanced surgical planning и подходят не каждому пациенту.",
       },
       {
         question: "Bone grafting всегда нужен?",

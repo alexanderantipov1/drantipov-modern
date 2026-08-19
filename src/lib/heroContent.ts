@@ -55,7 +55,7 @@ const heroContent: Record<string, HeroContent> = {
     eyebrow: "Full Arch Specialists",
     title: "All-on-4 & All-on-6 Dental Implants",
     subtitle:
-      "Same-day teeth, immediate-load protocols, and zygomatic implants for severe bone loss — performed by board-certified surgeons.",
+      "Same-day teeth, immediate-load protocols, and zygomatic implants for severe bone loss - performed by board-certified surgeons.",
     overlay: "navy",
   },
 
@@ -65,7 +65,7 @@ const heroContent: Record<string, HeroContent> = {
     eyebrow: "Comprehensive Oral Surgery",
     title: "Advanced Surgical Specialties & Procedures",
     subtitle:
-      "From same-day dental implants to corrective jaw surgery and facial cosmetics — explore the full scope of our board-certified expertise.",
+      "From same-day dental implants to corrective jaw surgery and facial cosmetics - explore the full scope of our board-certified expertise.",
     overlay: "navy",
     breadcrumbs: [{ name: "Services" }],
   },
@@ -141,7 +141,7 @@ const heroContent: Record<string, HeroContent> = {
     eyebrow: "Get Started Today",
     title: "Schedule Your Free Consultation",
     subtitle:
-      "Includes a complimentary 3D CT scan, detailed treatment plan, and review of financing options — all at no cost.",
+      "Includes a complimentary 3D CT scan, detailed treatment plan, and review of financing options - all at no cost.",
     overlay: "gradient",
     breadcrumbs: [{ name: "For Patients", href: "/for-patients" }, { name: "Consultation" }],
   },

@@ -5,7 +5,7 @@
  * Returns true only if the token is valid AND score is above threshold.
  *
  * Setup:
- *   1. Set RECAPTCHA_SECRET_KEY in env (NOT public — server-only)
+ *   1. Set RECAPTCHA_SECRET_KEY in env (NOT public - server-only)
  *   2. Client sends the token in body.recaptchaToken (or as ?token= query)
  *   3. Server calls verifyRecaptcha(token) before processing the form
  */
@@ -25,7 +25,7 @@ export async function verifyRecaptcha(token: string | undefined | null): Promise
   if (!secret) {
     // In dev: log a warning but allow through. In prod: still allow but log to monitoring.
     if (process.env.NODE_ENV === "production") {
-      console.warn("[recaptcha] RECAPTCHA_SECRET_KEY not configured — skipping verification");
+      console.warn("[recaptcha] RECAPTCHA_SECRET_KEY not configured - skipping verification");
     }
     return { valid: true, reason: "not_configured" };
   }
@@ -40,7 +40,7 @@ export async function verifyRecaptcha(token: string | undefined | null): Promise
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: params.toString(),
-      // Short timeout — don't hang the form if Google is slow
+      // Short timeout - don't hang the form if Google is slow
       signal: AbortSignal.timeout(5000),
     });
 
@@ -67,9 +67,9 @@ export async function verifyRecaptcha(token: string | undefined | null): Promise
 
     return { valid: true, score: data.score };
   } catch (err) {
-    // Network error, timeout, etc — log internally but don't expose to client
+    // Network error, timeout, etc - log internally but don't expose to client
     console.error("[recaptcha] verification error:", err instanceof Error ? err.message : "unknown");
-    // Fail-open in case of Google outage — better UX, low security risk for a clinic site
+    // Fail-open in case of Google outage - better UX, low security risk for a clinic site
     return { valid: true, reason: "verify_error_open" };
   }
 }

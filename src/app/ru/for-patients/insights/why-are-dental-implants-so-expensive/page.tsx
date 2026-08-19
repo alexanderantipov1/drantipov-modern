@@ -9,5 +9,5 @@ export const metadata: Metadata = article ? buildMetadata(article) : {}
 
 export default function Page() {
   if (!article) notFound()
-  return <InsightArticle article={article} locale="ru" />
+  return <InsightArticle article={article} locale="ru" calculatorSlug="all-on-468-per-arch" />
 }

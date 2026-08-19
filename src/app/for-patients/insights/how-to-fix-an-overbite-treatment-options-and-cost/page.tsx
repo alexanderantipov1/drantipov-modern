@@ -15,7 +15,7 @@ const IMAGE = "/images/blog/2026-06-22/how-to-fix-an-overbite.png"
 export const metadata: Metadata = {
   title: "How to Fix an Overbite: Treatment Options, Surgery & Cost",
   description:
-    "How do you fix an overbite? A board-certified oral surgeon explains every option — aligners, braces, and jaw surgery — for kids and adults, plus realistic timelines and cost.",
+    "How do you fix an overbite? A board-certified oral surgeon explains every option - aligners, braces, and jaw surgery - for kids and adults, plus realistic timelines and cost.",
   alternates: {
     canonical: CANONICAL,
     languages: { en: CANONICAL, "x-default": CANONICAL },
@@ -33,16 +33,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "How to Fix an Overbite: Treatment Options, Surgery & Cost",
     description:
-      "Every way to fix an overbite — aligners, braces, and jaw surgery — with realistic timelines and cost for adults and children.",
+      "Every way to fix an overbite - aligners, braces, and jaw surgery - with realistic timelines and cost for adults and children.",
     url: URL,
     type: "article",
-    images: [{ url: IMAGE, width: 1200, height: 630, alt: "How to fix an overbite — treatment options" }],
+    images: [{ url: IMAGE, width: 1200, height: 630, alt: "How to fix an overbite - treatment options" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "How to Fix an Overbite: Treatment Options, Surgery & Cost",
     description:
-      "Every way to fix an overbite — aligners, braces, and jaw surgery — with realistic timelines and cost.",
+      "Every way to fix an overbite - aligners, braces, and jaw surgery - with realistic timelines and cost.",
     images: [IMAGE],
   },
 }
@@ -56,7 +56,7 @@ const faqs = [
   {
     question: "Can you fix an overbite without surgery?",
     answer:
-      "Yes — the large majority of overbites are corrected without surgery using clear aligners or braces, sometimes with small attachments, elastics, or temporary anchorage devices. Surgery is only needed for severe skeletal overbites where the jaw position itself must be changed.",
+      "Yes - the large majority of overbites are corrected without surgery using clear aligners or braces, sometimes with small attachments, elastics, or temporary anchorage devices. Surgery is only needed for severe skeletal overbites where the jaw position itself must be changed.",
   },
   {
     question: "How do you fix a slight overbite?",
@@ -86,7 +86,7 @@ const articleSchema = {
   "@id": `${URL}#article`,
   headline: "How to Fix an Overbite: Treatment Options, Surgery & Cost",
   description:
-    "How do you fix an overbite? Every option — clear aligners, braces, and corrective jaw surgery — for adults and children, with realistic timelines and cost.",
+    "How do you fix an overbite? Every option - clear aligners, braces, and corrective jaw surgery - for adults and children, with realistic timelines and cost.",
   inLanguage: "en",
   url: URL,
   datePublished: "2026-06-22",
@@ -148,13 +148,13 @@ export default function HowToFixAnOverbitePost() {
             </h1>
 
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> - Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
               <Image
                 src={IMAGE}
-                alt="How to fix an overbite — clear aligners, braces, and jaw surgery options"
+                alt="How to fix an overbite - clear aligners, braces, and jaw surgery options"
                 fill
                 className="object-cover"
                 priority
@@ -164,7 +164,7 @@ export default function HowToFixAnOverbitePost() {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                An overbite — when the upper front teeth overlap the lower front teeth too much — is one
+                An overbite - when the upper front teeth overlap the lower front teeth too much - is one
                 of the most common bite problems, and almost all of them are fixable. The right approach
                 depends on one key question: is the overbite caused by the <strong>teeth</strong> or by the
                 <strong> jaw bones</strong>? Here is every option, from clear aligners to jaw surgery, with
@@ -175,7 +175,7 @@ export default function HowToFixAnOverbitePost() {
               <GlassCard className="my-10 p-6">
                 <p className="text-sm font-bold uppercase tracking-widest text-primary-700">TL;DR</p>
                 <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Most overbites are fixed without surgery — with clear aligners or braces.</li>
+                  <li>&bull; Most overbites are fixed without surgery - with clear aligners or braces.</li>
                   <li>&bull; Skeletal overbites (a jaw-position problem) are corrected with orthodontics plus jaw surgery.</li>
                   <li>&bull; Children can be treated with growth-guiding appliances; adults move teeth or have surgery.</li>
                   <li>&bull; Aligners/braces typically take 6–24 months and cost $3,000–$8,000.</li>
@@ -197,7 +197,7 @@ export default function HowToFixAnOverbitePost() {
                   corrected by <strong>moving the teeth</strong> with aligners or braces.
                 </li>
                 <li>
-                  &mdash; <strong>Skeletal overbite.</strong> The upper and lower jaw bones are misaligned — for
+                  &mdash; <strong>Skeletal overbite.</strong> The upper and lower jaw bones are misaligned - for
                   example, the lower jaw sits too far back. Moving teeth alone cannot fix the underlying bone
                   position, so the jaw itself is repositioned with <strong>corrective jaw surgery</strong>.
                 </li>
@@ -247,7 +247,7 @@ export default function HowToFixAnOverbitePost() {
                 </table>
               </div>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Severity is a guide, not a verdict — the <em>cause</em> (dental vs. skeletal) matters more than
+                Severity is a guide, not a verdict - the <em>cause</em> (dental vs. skeletal) matters more than
                 the number of millimeters.
               </p>
 
@@ -289,7 +289,7 @@ export default function HowToFixAnOverbitePost() {
                 In growing children and teens, the jaw can still be guided. Functional appliances and headgear
                 can influence how the jaws develop, sometimes preventing a skeletal overbite from requiring
                 surgery later. This is why early orthodontic evaluation (around age 7) is recommended for kids
-                with an obvious bite problem — the same overbite is often simpler to address while the patient is
+                with an obvious bite problem - the same overbite is often simpler to address while the patient is
                 still growing.
               </p>
 
@@ -297,7 +297,7 @@ export default function HowToFixAnOverbitePost() {
                 Option 4: Corrective Jaw Surgery (Skeletal Overbites)
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                When the overbite is skeletal — the jaw bones themselves are misaligned — orthodontics is
+                When the overbite is skeletal - the jaw bones themselves are misaligned - orthodontics is
                 combined with <strong>orthognathic (corrective jaw) surgery</strong>. The surgeon repositions the
                 upper jaw, lower jaw, or both and secures them with small titanium plates and screws placed from
                 inside the mouth (no facial scars). This is the only way to achieve a stable correction for true
@@ -319,7 +319,7 @@ export default function HowToFixAnOverbitePost() {
                 Fixing an Overbite as an Adult
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Adults are treated successfully every day — teeth move at any age. The only real difference is
+                Adults are treated successfully every day - teeth move at any age. The only real difference is
                 that an adult&rsquo;s jaw bones have stopped growing, so growth appliances no longer work. That
                 means an adult with a <em>dental</em> overbite is treated with aligners or braces, while an adult
                 with a <em>skeletal</em> overbite is treated with orthodontics plus jaw surgery. Treatment can
@@ -333,7 +333,7 @@ export default function HowToFixAnOverbitePost() {
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Beyond appearance, correcting a significant overbite protects your long-term oral health by
                 reducing abnormal tooth wear, preventing lower teeth from biting into the palate, easing strain
-                on the jaw joints (TMJ), and improving chewing — and, in skeletal cases, breathing and sleep.
+                on the jaw joints (TMJ), and improving chewing - and, in skeletal cases, breathing and sleep.
               </p>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
@@ -354,7 +354,7 @@ export default function HowToFixAnOverbitePost() {
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-6 max-w-2xl mx-auto">
                   A complimentary 3D CT consultation with Dr. Antipov shows exactly whether your overbite is
-                  dental or skeletal — and the simplest path to correct it.
+                  dental or skeletal - and the simplest path to correct it.
                 </p>
                 <Button asChild size="lg">
                   <Link href="/contact">Book a Free Consultation</Link>

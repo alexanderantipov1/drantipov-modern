@@ -8,8 +8,8 @@ import heroContent from "@/lib/heroContent"
 import { YouTubeShortsSection } from "@/components/home/YouTubeShortsSection"
 
 export const metadata: Metadata = {
-  title: { absolute: "For Patients — Resources & Reviews | Dr. Antipov" },
-  description: "Everything you need as a patient — quick resources, what to expect, real reviews, and 24/7 emergency contact. Roseville, CA.",
+  title: { absolute: "For Patients - Resources & Reviews | Dr. Antipov" },
+  description: "Everything you need as a patient - quick resources, what to expect, real reviews, and 24/7 emergency contact. Roseville, CA.",
   alternates: {
     canonical: "/for-patients",
     languages: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Resources for Our Patients",
-    description: "Schedule, prepare for, and recover from oral surgery with Dr. Antipov — all patient resources in one place.",
+    description: "Schedule, prepare for, and recover from oral surgery with Dr. Antipov - all patient resources in one place.",
     images: [
       {
         url: "/images/forpatients-hero.jpg",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Resources for Our Patients",
-    description: "Schedule, prepare for, and recover from oral surgery with Dr. Antipov — all patient resources in one place.",
+    description: "Schedule, prepare for, and recover from oral surgery with Dr. Antipov - all patient resources in one place.",
     images: ["/images/forpatients-hero.jpg"],
   }
 }

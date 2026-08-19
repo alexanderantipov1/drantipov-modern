@@ -20,10 +20,10 @@ const antipovCredentials = [
   "Член American Dental Association (ADA)",
   "Член California Dental Association (CDA)",
   "Лицензия дантиста Калифорнии №50724",
-  "Разрешение на общую анестезию №GA 1446 — IV-седация в офисе",
+  "Разрешение на общую анестезию №GA 1446 - IV-седация в офисе",
   "Разрешение на эстетическую хирургию лица",
   "Сертифицированный преподаватель CE №00948675",
-  "Права госпитализации — Sutter Roseville, Sutter General, Mercy General, Mercy San Juan",
+  "Права госпитализации - Sutter Roseville, Sutter General, Mercy General, Mercy San Juan",
   "Основатель и директор фонда Smile Again Foundation (2025)",
 ];
 
@@ -55,7 +55,7 @@ export default function RuAbout() {
             Два специалиста. <span className="gradient-text">Одна цель.</span>
           </h2>
           <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
-            В клинике работают два хирурга с десятками лет совокупного опыта, продвинутой подготовкой и одной общей идеей — давать пациентам результат высокого уровня.
+            В клинике работают два хирурга с десятками лет совокупного опыта, продвинутой подготовкой и одной общей идеей - давать пациентам результат высокого уровня.
           </p>
         </motion.div>
 
@@ -72,7 +72,7 @@ export default function RuAbout() {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
               <Image
                 src="/images/drantipov-about-v7.jpg"
-                alt="Доктор Александр Антипов, DDS — сертифицированный челюстно-лицевой хирург в Roseville, Калифорния"
+                alt="Доктор Александр Антипов, DDS - сертифицированный челюстно-лицевой хирург в Roseville, Калифорния"
                 fill
                 className="object-cover"
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -99,7 +99,7 @@ export default function RuAbout() {
                 </div>
               </div>
               <p className="text-muted text-xs leading-relaxed">
-                Diplomate, American Board of Oral and Maxillofacial Surgery. Профиль — All-on-4, скуловые импланты, ортогнатика, эстетика лица. Принимаем пациентов из Roseville, Сакраменто, Сан-Франциско и всей Северной Калифорнии.
+                Diplomate, American Board of Oral and Maxillofacial Surgery. Профиль - All-on-4, скуловые импланты, ортогнатика, эстетика лица. Принимаем пациентов из Roseville, Сакраменто, Сан-Франциско и всей Северной Калифорнии.
               </p>
             </motion.div>
           </motion.div>
@@ -117,7 +117,7 @@ export default function RuAbout() {
               <span className="gradient-text">Антипов, DDS</span>
             </h3>
             <p className="mt-6 text-muted text-lg leading-relaxed">
-              Доктор Александр Антипов — <strong>сертифицированный челюстно-лицевой хирург</strong> в Roseville, Калифорния. За <strong>25+ лет</strong> и <strong>более 10 000 успешных операций</strong> он стал одним из самых известных специалистов Северной Калифорнии в области <strong>дентальной имплантации</strong>, <strong>корректирующей хирургии челюстей</strong> и <strong>эстетической хирургии лица</strong>.
+              Доктор Александр Антипов - <strong>сертифицированный челюстно-лицевой хирург</strong> в Roseville, Калифорния. За <strong>25+ лет</strong> и <strong>более 10 000 успешных операций</strong> он стал одним из самых известных специалистов Северной Калифорнии в области <strong>дентальной имплантации</strong>, <strong>корректирующей хирургии челюстей</strong> и <strong>эстетической хирургии лица</strong>.
             </p>
             <p className="mt-4 text-muted leading-relaxed">
               As a Diplomate of the American Board of Oral and Maxillofacial Surgery and fellowship-trained in complex implant reconstruction, Dr. Antipov brings an unmatched depth of expertise to every case. He is one of the few surgeons in Northern California who performs <strong>zygomatic implants</strong> for patients with severe bone loss, <strong>full arch All-on-4 and All-on-6 immediate-load protocols</strong>, complex <strong>orthognathic jaw surgery</strong> including Le Fort osteotomies, BSSO, and genioplasty, and advanced <strong>facial cosmetic procedures</strong> including rhinoplasty and face lift surgery.
@@ -140,7 +140,7 @@ export default function RuAbout() {
           </motion.div>
         </div>
 
-        {/* Recognition — Neodent Elite Practitioner Award */}
+        {/* Recognition - Neodent Elite Practitioner Award */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -176,14 +176,14 @@ export default function RuAbout() {
                 </h3>
                 <div className="mt-6 h-px w-16 bg-[#A0218E]" />
                 <p className="mt-6 text-muted text-base sm:text-lg leading-relaxed max-w-md">
-                  Премия от Neodent (бренд Straumann Group) — за то, что доктор Антипов лично установил больше имплантов Neodent, чем любой другой хирург в США.
+                  Премия от Neodent (бренд Straumann Group) - за то, что доктор Антипов лично установил больше имплантов Neodent, чем любой другой хирург в США.
                 </p>
 
                 {/* Neodent logo */}
                 <div className="mt-8">
                   <Image
                     src="/images/about/neodent-logo.png"
-                    alt="Neodent — A Straumann Group Brand"
+                    alt="Neodent - A Straumann Group Brand"
                     width={414}
                     height={122}
                     className="h-12 w-auto"
@@ -216,10 +216,10 @@ export default function RuAbout() {
               Доктор Кахвач совмещает в работе <strong>хирургическую точность</strong>, <strong>художественное видение</strong> и международный опыт. Стоматологическую степень с отличием получил в <strong>UC San Francisco</strong>, затем прошёл резидентуру по челюстно-лицевой хирургии в <strong>Loma Linda University</strong>, где также получил медицинскую степень и углублённую подготовку по анестезиологии.
             </p>
             <p className="mt-4 text-muted leading-relaxed">
-              Работает по всему профилю челюстно-лицевой хирургии: <strong>эстетические процедуры</strong>, <strong>имплантация</strong>, <strong>лицевая травма</strong>, <strong>ортогнатическая хирургия</strong>. Подход сочетает аккуратность и художественный вкус — отчасти потому, что доктор серьёзно занимается живописью и скульптурой.
+              Работает по всему профилю челюстно-лицевой хирургии: <strong>эстетические процедуры</strong>, <strong>имплантация</strong>, <strong>лицевая травма</strong>, <strong>ортогнатическая хирургия</strong>. Подход сочетает аккуратность и художественный вкус - отчасти потому, что доктор серьёзно занимается живописью и скульптурой.
             </p>
             <p className="mt-4 text-muted leading-relaxed">
-              Помимо работы в клинике, доктор Кахвач много путешествовал по Европе, Африке, Карибскому бассейну и Ближнему Востоку, участвовал в медицинских и стоматологических миссиях. Пациенты отмечают его открытость и внимание — он умеет объяснить, успокоить и сделать так, чтобы человек чувствовал себя уверенно на каждом этапе лечения.
+              Помимо работы в клинике, доктор Кахвач много путешествовал по Европе, Африке, Карибскому бассейну и Ближнему Востоку, участвовал в медицинских и стоматологических миссиях. Пациенты отмечают его открытость и внимание - он умеет объяснить, успокоить и сделать так, чтобы человек чувствовал себя уверенно на каждом этапе лечения.
             </p>
 
             {/* Credentials */}
@@ -249,7 +249,7 @@ export default function RuAbout() {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
               <Image
                 src="/images/dr-kahwach-v4.jpg"
-                alt="Доктор Андре-Давид Кахвач, DDS, MD — челюстно-лицевой хирург, имплантация, лицевая травма, ортогнатика, эстетика"
+                alt="Доктор Андре-Давид Кахвач, DDS, MD - челюстно-лицевой хирург, имплантация, лицевая травма, ортогнатика, эстетика"
                 fill
                 className="object-cover"
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -272,7 +272,7 @@ export default function RuAbout() {
                 </div>
                 <div>
                   <p className="font-bold text-dark text-sm">Две степени</p>
-                  <p className="text-muted text-xs">DDS &amp; MD — UCSF и Loma Linda</p>
+                  <p className="text-muted text-xs">DDS &amp; MD - UCSF и Loma Linda</p>
                 </div>
               </div>
               <p className="text-muted text-xs leading-relaxed">
@@ -291,7 +291,7 @@ export default function RuAbout() {
           className="mt-20"
         >
           <p className="text-muted leading-relaxed text-center max-w-3xl mx-auto">
-            В клинике используем <strong>3D КТ (cone beam)</strong>, навигационные шаблоны и малоинвазивные техники — это даёт точные и предсказуемые результаты. Для тех, кто хочет натуральные материалы, есть варианты <strong>органической и холистической костной пластики</strong>. Каждый план мы собираем под конкретного человека: его анатомию, его цели и его сроки.
+            В клинике используем <strong>3D КТ (cone beam)</strong>, навигационные шаблоны и малоинвазивные техники - это даёт точные и предсказуемые результаты. Для тех, кто хочет натуральные материалы, есть варианты <strong>органической и холистической костной пластики</strong>. Каждый план мы собираем под конкретного человека: его анатомию, его цели и его сроки.
           </p>
 
           {/* Stats */}

@@ -7,7 +7,7 @@ import type { Metadata } from "next";
  */
 export const metadata: Metadata = {
   title: {
-    default: "Доктор Александр Антипов — челюстно-лицевой хирург, Roseville CA",
+    default: "Доктор Александр Антипов - челюстно-лицевой хирург, Roseville CA",
     template: "%s | Доктор Антипов, Roseville CA",
   },
   openGraph: {

@@ -63,7 +63,7 @@ export async function generateMetadata({
   const city = getCityByStateAndSlug(state, slug);
   if (!city) return {};
 
-  const title = `Oral Surgeon serving ${city.city}, ${city.state} — Dr. Alexander V. Antipov`;
+  const title = `Oral Surgeon serving ${city.city}, ${city.state} - Dr. Alexander V. Antipov`;
   const description = `Board-certified oral & maxillofacial surgeon for patients in ${city.city}. Just ${city.driveTime} from our Roseville office. Dental implants, jaw surgery, sleep apnea (MMA), facial cosmetic surgery. Free 3D CT consultation.`;
 
   return buildMetadata({
@@ -78,22 +78,22 @@ function getCityFAQs(city: ReturnType<typeof getCityByStateAndSlug>) {
   return [
     {
       question: `How far is Dr. Antipov's office from ${city.city}?`,
-      answer: `Our Roseville office is approximately ${city.distanceMi} miles from ${city.city} — about ${city.driveTime} by car. ${city.routes[0]}.`,
+      answer: `Our Roseville office is approximately ${city.distanceMi} miles from ${city.city} - about ${city.driveTime} by car. ${city.routes[0]}.`,
     },
     {
       question: `How much do dental implants cost for ${city.city} patients?`,
       answer:
-        "A single dental implant (implant, abutment, and crown) typically runs $4,000–$6,000. Full-arch restoration such as All-on-4 generally ranges from $25,000–$35,000 per arch. Your exact cost depends on bone volume, the number of implants, and whether grafting is needed — we provide a clear written estimate at your free 3D CT consultation, and offer financing through CareCredit and Cherry.",
+        "A single dental implant (implant, abutment, and crown) typically runs $4,000–$6,000. Full-arch restoration such as All-on-4 generally ranges from $25,000–$35,000 per arch. Your exact cost depends on bone volume, the number of implants, and whether grafting is needed - we provide a clear written estimate at your free 3D CT consultation, and offer financing through CareCredit and Cherry.",
     },
     {
       question: `Do you accept dental insurance for patients from ${city.city}?`,
       answer:
-        "We work with most major PPO dental insurance plans. For surgical procedures (jaw surgery, sleep apnea MMA, facial trauma), much of the treatment is covered under medical insurance — we'll verify both before your consultation.",
+        "We work with most major PPO dental insurance plans. For surgical procedures (jaw surgery, sleep apnea MMA, facial trauma), much of the treatment is covered under medical insurance - we'll verify both before your consultation.",
     },
     {
       question: `Are emergency oral surgery appointments available for ${city.city} patients?`,
       answer:
-        "Yes. We provide 24/7 emergency on-call service for urgent oral and maxillofacial surgery needs. Call (916) 783-2110 — patients from the entire Sacramento Metro area are welcome for emergencies.",
+        "Yes. We provide 24/7 emergency on-call service for urgent oral and maxillofacial surgery needs. Call (916) 783-2110 - patients from the entire Sacramento Metro area are welcome for emergencies.",
     },
     {
       question: `What makes Dr. Antipov different from other oral surgeons near ${city.city}?`,
@@ -102,7 +102,7 @@ function getCityFAQs(city: ReturnType<typeof getCityByStateAndSlug>) {
     },
     {
       question: `Can I get a free 3D CT consultation if I live in ${city.city}?`,
-      answer: `Yes — complimentary 3D CT scans and consultations are available to all new patients, including those traveling from ${city.city}. The scan takes about 10 minutes and provides a complete view of your jaw, sinuses, and bone density for accurate treatment planning.`,
+      answer: `Yes - complimentary 3D CT scans and consultations are available to all new patients, including those traveling from ${city.city}. The scan takes about 10 minutes and provides a complete view of your jaw, sinuses, and bone density for accurate treatment planning.`,
     },
   ];
 }
@@ -223,7 +223,7 @@ export default async function CityPage({
                   <li>· California Dental License #50724</li>
                   <li>· General Anesthesia Permit #GA 1446</li>
                   <li>· Founder, Smile Again Foundation</li>
-                  <li>· Albert Einstein College of Medicine — OMS Residency</li>
+                  <li>· Albert Einstein College of Medicine - OMS Residency</li>
                 </ul>
               </div>
             </div>
@@ -319,7 +319,7 @@ export default async function CityPage({
               Dental implant cost in {city.city}
             </h2>
             <p className="mt-4 text-neutral-600">
-              Affordable, transparent implant pricing for {city.city} patients — with financing through
+              Affordable, transparent implant pricing for {city.city} patients - with financing through
               CareCredit and Cherry and a written estimate at your free 3D CT consultation.
             </p>
           </div>
@@ -364,7 +364,7 @@ export default async function CityPage({
       <section className="py-16 bg-bone">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl lg:text-4xl font-bold text-neutral-900 text-center mb-10">
-            Frequently asked questions — {city.city} patients
+            Frequently asked questions - {city.city} patients
           </h2>
           <div className="space-y-4">
             {faqs.map((faq) => (

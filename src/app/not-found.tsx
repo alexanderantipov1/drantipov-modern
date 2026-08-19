@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Home, Phone, MapPin, Users, Calendar, Stethoscope } from "lucide-react";
 
 export const metadata = {
-  title: "Page Not Found — Dr. Antipov",
+  title: "Page Not Found - Dr. Antipov",
   description: "The page you were looking for couldn't be found. Try one of the suggested links below or call our Roseville office.",
   robots: { index: false, follow: false },
 };

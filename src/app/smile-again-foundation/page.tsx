@@ -5,7 +5,7 @@ import { siteConfig } from "@/constants/siteConfig";
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Smile Again Foundation — Restoring Smiles, Restoring Lives | Dr. Antipov",
+  title: "Smile Again Foundation - Restoring Smiles, Restoring Lives | Dr. Antipov",
   description:
     "Smile Again Foundation, founded by Dr. Alexander Antipov in 2025, provides pro bono restorative dental care to patients in need. Mission-driven nonprofit serving Northern California.",
   alternates: { canonical: "/smile-again-foundation" },
@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     description: "Restoring smiles for patients in need.",
     url: `${siteConfig.url}/smile-again-foundation`,
     type: "website",
-    images: [{ url: "/images/landing-pages/dental-implants/art/smiling-woman-7bc2b588.jpg", width: 1920, height: 1080, alt: "Smile Again Foundation" }],
+    images: [{ url: "/images/office-tour/12/gallery@2x-surgical-planning.jpg", width: 1600, height: 1067, alt: "Smile Again Foundation" }],
   },
 };
 
 const pillars = [
   { title: "Pro bono full-arch restoration", description: "Free All-on-4 and complex implant restoration for selected patients facing financial hardship who would otherwise live without functional teeth." },
-  { title: "Patient education", description: "Bilingual educational materials (English, Russian, Spanish) on oral health, implant care, and post-surgical recovery — distributed at community health events." },
+  { title: "Patient education", description: "Bilingual educational materials (English, Russian, Spanish) on oral health, implant care, and post-surgical recovery - distributed at community health events." },
   { title: "Provider training", description: "Hands-on workshops for dental and surgical residents on advanced implant techniques, taught by Dr. Antipov in collaboration with regional residency programs." },
   { title: "International mission support", description: "Supporting Dr. Kahwach's international mission work in Europe, Africa, the Caribbean, and the Middle East with surgical supplies and patient sponsorship." },
 ];
@@ -48,8 +48,15 @@ export default function SmileAgainFoundationPage() {
 
       <section className="relative bg-dark text-white overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/landing-pages/dental-implants/art/smiling-woman-7bc2b588.jpg" alt="Smile Again Foundation" fill className="object-cover opacity-30" priority sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/85 to-dark/55" />
+          <Image
+            src="/images/office-tour/12/gallery@2x-surgical-planning.jpg"
+            alt="Dr. Antipov performing surgery, reviewing a 3D scan during a procedure"
+            fill
+            className="object-cover object-[center_30%]"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/85 to-dark/45" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
           <nav aria-label="Breadcrumb" className="text-sm text-white/60 mb-6">
@@ -59,7 +66,7 @@ export default function SmileAgainFoundationPage() {
               <li className="text-white font-semibold">Smile Again Foundation</li>
             </ol>
           </nav>
-          <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary-light">Nonprofit · Founded 2025</p>
+          <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary-light">Nonprofit &middot; Founded 2025</p>
           <h1 className="mt-4 font-serif text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
             Smile Again Foundation
           </h1>
@@ -73,10 +80,10 @@ export default function SmileAgainFoundationPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center">Our mission</h2>
           <p className="mt-8 text-xl leading-9 text-neutral-700">
-            Smile Again Foundation was founded in 2025 by Dr. Alexander V. Antipov, DDS — a board-certified oral and maxillofacial surgeon who has personally performed over 10,000 surgeries during his 25+ year career.
+            Smile Again Foundation was founded in 2025 by Dr. Alexander V. Antipov, DDS - a board-certified oral and maxillofacial surgeon who has personally performed over 10,000 surgeries during his 25+ year career.
           </p>
           <p className="mt-5 text-lg leading-8 text-neutral-700">
-            For too many people, the ability to chew, smile, and speak confidently is a luxury they can't afford. Smile Again Foundation exists to change that — providing pro bono full-arch restoration to selected patients, supporting bilingual community health education, and sponsoring international surgical mission work.
+            For too many people, the ability to chew, smile, and speak confidently is a luxury they can't afford. Smile Again Foundation exists to change that - providing pro bono full-arch restoration to selected patients, supporting bilingual community health education, and sponsoring international surgical mission work.
           </p>
         </div>
       </section>
@@ -112,7 +119,7 @@ export default function SmileAgainFoundationPage() {
               <p className="text-sm font-bold uppercase tracking-widest text-primary-600">For partners & press</p>
               <h3 className="mt-3 font-serif text-2xl font-bold text-neutral-900">Press & partnerships</h3>
               <p className="mt-3 text-neutral-700 leading-7">
-                Journalists, healthcare partners, and corporate sponsors — contact us for press releases, interview requests, and partnership inquiries.
+                Journalists, healthcare partners, and corporate sponsors - contact us for press releases, interview requests, and partnership inquiries.
               </p>
               <a href="mailto:press@galleriaoms.com" className="mt-5 inline-block text-primary-600 hover:text-primary-700 font-bold">
                 press@galleriaoms.com

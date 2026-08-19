@@ -9,7 +9,7 @@ import { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Sedation Options for Dental Implant Surgery",
   description:
-    "Compare sedation options for dental implants — local anesthesia, oral sedation, IV sedation, and general anesthesia. Choose the right comfort level with Dr. Antipov in Roseville, CA.",
+    "Compare sedation options for dental implants - local anesthesia, oral sedation, IV sedation, and general anesthesia. Choose the right comfort level with Dr. Antipov in Roseville, CA.",
   alternates: {
     canonical: "/for-patients/insights/sedation-options-dental-implant-surgery",
     languages: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Sedation Options for Dental Implant Surgery",
-    description: "Local anesthesia, oral sedation, IV sedation, and general anesthesia — choose the right comfort level for implant surgery.",
+    description: "Local anesthesia, oral sedation, IV sedation, and general anesthesia - choose the right comfort level for implant surgery.",
     images: [
       {
         url: "/images/blog/2026-06-19/sedation-options.png",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Sedation Options for Dental Implant Surgery",
-    description: "Local anesthesia, oral sedation, IV sedation, and general anesthesia — choose the right comfort level for implant surgery.",
+    description: "Local anesthesia, oral sedation, IV sedation, and general anesthesia - choose the right comfort level for implant surgery.",
     images: ["/images/blog/2026-06-19/sedation-options.png"],
   }
 }
@@ -90,7 +90,7 @@ export default function SedationOptionsDentalImplantSurgeryPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> - Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -285,10 +285,10 @@ export default function SedationOptionsDentalImplantSurgeryPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
               <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/anesthesia" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Anesthesia in Oral &amp; Maxillofacial Surgery</a></li>
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Dental Implant Surgery</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/anesthesia-and-sedation" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy — Anesthesia and Sedation</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Dental Implants</a></li>
+                <li><a href="https://www.aaoms.org/procedures/anesthesia" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Anesthesia in Oral &amp; Maxillofacial Surgery</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Dental Implant Surgery</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/anesthesia-and-sedation" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy - Anesthesia and Sedation</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR - Dental Implants</a></li>
               </ul>
             </section>
 

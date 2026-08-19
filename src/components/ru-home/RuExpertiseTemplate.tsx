@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { RuConsultationModal } from "@/components/ru-home/RuConsultationModal";
+import CalculatorEmbed, { type CalcSlug } from "@/components/CalculatorEmbed";
 
 export interface RuExpertiseData {
   slug: string;
@@ -19,7 +20,14 @@ export interface RuExpertiseData {
   faqs: { question: string; answer: string }[];
 }
 
-export default function RuExpertiseTemplate({ data }: { data: RuExpertiseData }) {
+export default function RuExpertiseTemplate({
+  data,
+  calculatorSlug,
+}: {
+  data: RuExpertiseData;
+  /** Встраивает калькулятор стоимости этого лечения перед финальным CTA. */
+  calculatorSlug?: CalcSlug;
+}) {
   return (
     <article className="bg-white text-dark" lang="ru">
       {/* Hero */}
@@ -139,6 +147,8 @@ export default function RuExpertiseTemplate({ data }: { data: RuExpertiseData })
           </div>
         </section>
       )}
+
+      {calculatorSlug && <CalculatorEmbed slug={calculatorSlug} locale="ru" />}
 
       {/* CTA */}
       <section className="py-20 bg-primary text-white">

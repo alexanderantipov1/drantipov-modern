@@ -30,7 +30,7 @@ export async function generateMetadata({
   const stateCities = getCitiesByState(state);
   if (!stateName || stateCities.length === 0) return {};
 
-  const title = `Oral Surgeon serving ${stateName} — Dr. Alexander V. Antipov`;
+  const title = `Oral Surgeon serving ${stateName} - Dr. Alexander V. Antipov`;
   const description = `Board-certified oral & maxillofacial surgeon serving ${stateCities.length}+ ${stateName} communities from Roseville: dental implants, jaw surgery, sleep apnea (MMA), and facial cosmetic surgery. Free 3D CT consultation.`;
 
   return buildMetadata({
@@ -62,7 +62,7 @@ export default async function StateHubPage({
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
       "@id": `${siteConfig.url}/locations/${state}#business`,
-      name: `${siteConfig.name} — Serving ${stateName}`,
+      name: `${siteConfig.name} - Serving ${stateName}`,
       description: `Oral & maxillofacial surgery practice serving patients across ${stateName}, led by Dr. Alexander V. Antipov (ABOMS Diplomate).`,
       url: `${siteConfig.url}/locations/${state}`,
       telephone: siteConfig.contact.phone,
@@ -123,7 +123,7 @@ export default async function StateHubPage({
             Oral Surgeon serving <span className="text-primary">{stateName}</span>
           </h1>
           <p className="mt-6 text-lg text-white/85 max-w-2xl leading-relaxed">
-            Dr. Alexander V. Antipov provides full-scope oral &amp; maxillofacial surgery to patients across {stateName} from his Roseville practice — dental implants, corrective jaw surgery, sleep apnea (MMA), bone grafting, and facial cosmetic procedures.
+            Dr. Alexander V. Antipov provides full-scope oral &amp; maxillofacial surgery to patients across {stateName} from his Roseville practice - dental implants, corrective jaw surgery, sleep apnea (MMA), bone grafting, and facial cosmetic procedures.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-6 text-sm">

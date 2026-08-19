@@ -5,11 +5,12 @@ import Link from "next/link"
 import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
+import CalculatorEmbed from "@/components/CalculatorEmbed"
 
 export const metadata: Metadata = {
   title: "Что такое циркониевые зубные дуги? Плюсы, цена и срок службы",
   description:
-    "Циркониевые зубные дуги — золотой стандарт для имплантации всей челюсти. Как их изготавливают, почему они служат десятилетиями, сколько стоят и чем лучше акрила.",
+    "Циркониевые зубные дуги - золотой стандарт для имплантации всей челюсти. Как их изготавливают, почему они служат десятилетиями, сколько стоят и чем лучше акрила.",
   alternates: {
     canonical: "/ru/for-patients/insights/zirconia-arches",
     languages: {
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     locale: "ru_RU",
     title: "Что такое циркониевые зубные дуги? Плюсы, цена и срок службы",
-    description: "Почему диоксид циркония — золотой стандарт для имплантации всей челюсти: прочность, эстетика, срок службы и цена.",
+    description: "Почему диоксид циркония - золотой стандарт для имплантации всей челюсти: прочность, эстетика, срок службы и цена.",
     images: [
       {
         url: "/images/blog/2026-06-19/zirconia-arches.png",
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Что такое циркониевые зубные дуги? Плюсы, цена и срок службы",
-    description: "Почему диоксид циркония — золотой стандарт для имплантации всей челюсти: прочность, эстетика, срок службы и цена.",
+    description: "Почему диоксид циркония - золотой стандарт для имплантации всей челюсти: прочность, эстетика, срок службы и цена.",
     images: ["/images/blog/2026-06-19/zirconia-arches.png"],
   }
 }
@@ -54,7 +55,7 @@ export default function ZirconiaArchesPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/zirconia-arches#article","headline":"Что такое циркониевые зубные дуги? Плюсы, цена и срок службы","description":"Циркониевые зубные дуги — золотой стандарт для имплантации всей челюсти. Как их изготавливают, почему они служат десятилетиями, сколько стоят и чем лучше акрила.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/zirconia-arches","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zirconia-arches.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/zirconia-arches"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Цирконий прочнее титана?","acceptedAnswer":{"@type":"Answer","text":"Диоксид циркония твёрже и устойчивее к износу и коррозии, а титан более упругий. У них разные роли: титановые импланты служат опорой в кости, а циркониевая дуга — это видимый ряд зубов."}},{"@type":"Question","name":"Могут ли циркониевые дуги сломаться?","acceptedAnswer":{"@type":"Answer","text":"Медицинский диоксид циркония крайне устойчив к переломам. Серьёзные поломки редки и обычно связаны с травмой или явным неправильным обращением — например, если грызть лёд или вскрывать зубами упаковки."}},{"@type":"Question","name":"Пожелтеет ли моя циркониевая дуга?","acceptedAnswer":{"@type":"Answer","text":"Нет. Диоксид циркония очень устойчив к окрашиванию. Поверхностный налёт от кофе или вина легко стирается, а сам материал не меняет цвет."}},{"@type":"Question","name":"Сколько служат циркониевые дуги?","acceptedAnswer":{"@type":"Answer","text":"Правильно установленные циркониевые дуги обычно служат 15–20 лет и дольше, а многим пациентам замена не требуется вовсе."}},{"@type":"Question","name":"Безопасен ли цирконий?","acceptedAnswer":{"@type":"Answer","text":"Да. Диоксид циркония биосовместим и инертен, широко применяется в медицинских имплантах, аллергии на него неизвестны."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/zirconia-arches#article","headline":"Что такое циркониевые зубные дуги? Плюсы, цена и срок службы","description":"Циркониевые зубные дуги - золотой стандарт для имплантации всей челюсти. Как их изготавливают, почему они служат десятилетиями, сколько стоят и чем лучше акрила.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/zirconia-arches","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zirconia-arches.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/zirconia-arches"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Цирконий прочнее титана?","acceptedAnswer":{"@type":"Answer","text":"Диоксид циркония твёрже и устойчивее к износу и коррозии, а титан более упругий. У них разные роли: титановые импланты служат опорой в кости, а циркониевая дуга - это видимый ряд зубов."}},{"@type":"Question","name":"Могут ли циркониевые дуги сломаться?","acceptedAnswer":{"@type":"Answer","text":"Медицинский диоксид циркония крайне устойчив к переломам. Серьёзные поломки редки и обычно связаны с травмой или явным неправильным обращением - например, если грызть лёд или вскрывать зубами упаковки."}},{"@type":"Question","name":"Пожелтеет ли моя циркониевая дуга?","acceptedAnswer":{"@type":"Answer","text":"Нет. Диоксид циркония очень устойчив к окрашиванию. Поверхностный налёт от кофе или вина легко стирается, а сам материал не меняет цвет."}},{"@type":"Question","name":"Сколько служат циркониевые дуги?","acceptedAnswer":{"@type":"Answer","text":"Правильно установленные циркониевые дуги обычно служат 15–20 лет и дольше, а многим пациентам замена не требуется вовсе."}},{"@type":"Question","name":"Безопасен ли цирконий?","acceptedAnswer":{"@type":"Answer","text":"Да. Диоксид циркония биосовместим и инертен, широко применяется в медицинских имплантах, аллергии на него неизвестны."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -91,7 +92,7 @@ export default function ZirconiaArchesPost() {
             </h1>
 
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Автор и медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> — сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №50724
+              Автор и медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> - сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №50724
             </p>
 
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -110,16 +111,16 @@ export default function ZirconiaArchesPost() {
                 Если вы присматривались к All-on-4 или имплантации всей челюсти, то финальными зубами чаще всего
                 становится <strong>циркониевая дуга</strong>. Это полный верхний или нижний ряд зубов, выточенный
                 из единого блока медицинской керамики и закреплённый на ваших имплантах. Сегодня это золотой
-                стандарт несъёмного протезирования на всю челюсть — он пришёл на смену гибридам из акрила и
+                стандарт несъёмного протезирования на всю челюсть - он пришёл на смену гибридам из акрила и
                 титана, популярным десятилетие назад.
               </p>
 
               <GlassCard className="my-10 p-6">
                 <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко о главном</p>
                 <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Циркониевая дуга — полный ряд зубов, выточенный из одного цельного блока керамики.</li>
+                  <li>&bull; Циркониевая дуга - полный ряд зубов, выточенный из одного цельного блока керамики.</li>
                   <li>&bull; Она крепится на 4&ndash;6 имплантов и работает как постоянные зубы.</li>
-                  <li>&bull; Срок службы — 15&ndash;20 лет и больше, с высокой устойчивостью к пятнам и износу.</li>
+                  <li>&bull; Срок службы - 15&ndash;20 лет и больше, с высокой устойчивостью к пятнам и износу.</li>
                   <li>&bull; Дороже акрила при установке, но обычно дешевле в перерасчёте на весь срок службы.</li>
                 </ul>
               </GlassCard>
@@ -128,9 +129,9 @@ export default function ZirconiaArchesPost() {
                 Что такое циркониевая дуга?
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Циркониевая дуга — это протез на всю челюсть, заменяющий все верхние или нижние зубы, выточенный
+                Циркониевая дуга - это протез на всю челюсть, заменяющий все верхние или нижние зубы, выточенный
                 из единого цельного блока медицинского диоксида циркония. Этот материал необычайно прочен и
-                биосовместим — тот же диоксид циркония используют в эндопротезах тазобедренного сустава и в
+                биосовместим - тот же диоксид циркония используют в эндопротезах тазобедренного сустава и в
                 аэрокосмической отрасли. Дуга крепится к вашим имплантам и служит постоянным рядом зубов.
               </p>
 
@@ -162,7 +163,7 @@ export default function ZirconiaArchesPost() {
               </div>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Для большинства пациентов акрил в итоге обходится дороже из-за повторных замен. По сравнению с
-                металлокерамикой монолитный диоксид циркония к тому же не имеет границы «керамика — металл», где
+                металлокерамикой монолитный диоксид циркония к тому же не имеет границы «керамика - металл», где
                 обычно и возникают сколы.
               </p>
 
@@ -207,7 +208,7 @@ export default function ZirconiaArchesPost() {
                 <li>&mdash; Дороже акрила при установке (хотя за весь срок службы обычно выходит дешевле).</li>
                 <li>&mdash; Чуть тяжелее; большинство пациентов привыкают за неделю.</li>
                 <li>&mdash; Подгонку делают на уровне имплантов; серьёзные изменения могут потребовать перефрезеровки.</li>
-                <li>&mdash; Цирконий не прощает неточностей установки — поэтому так важны навигационная установка и опыт хирурга.</li>
+                <li>&mdash; Цирконий не прощает неточностей установки - поэтому так важны навигационная установка и опыт хирурга.</li>
               </ul>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
@@ -238,23 +239,23 @@ export default function ZirconiaArchesPost() {
                 Срок службы и уход
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Импланты рассчитаны на 20+ лет (нередко на всю жизнь), а циркониевая дуга — на 15&ndash;20 лет и
+                Импланты рассчитаны на 20+ лет (нередко на всю жизнь), а циркониевая дуга - на 15&ndash;20 лет и
                 дольше. Ежедневный уход прост: чистите зубы дважды в день мягкой щёткой, используйте ирригатор
                 под дугой и носите ночную каппу, если скрипите зубами. Профессиональная гигиена каждые
-                3&ndash;6 месяцев — нередко со снятием дуги для тщательной чистки на уровне имплантов — помогает
+                3&ndash;6 месяцев - нередко со снятием дуги для тщательной чистки на уровне имплантов - помогает
                 сохранить всё здоровым.
               </p>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
-                «Цирконий за один день» — честная версия
+                «Цирконий за один день» - честная версия
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Некоторые клиники рекламируют циркониевые зубы за один день. Как обстоит на самом деле: в день
                 операции ставят качественную временную акриловую дугу; через 3&ndash;6 месяцев, после полного
-                заживления, изготавливают и фиксируют финальную циркониевую дугу. Такой поэтапный подход — это
+                заживления, изготавливают и фиксируют финальную циркониевую дугу. Такой поэтапный подход - это
                 стандарт качественной помощи: окончательное положение требует зажившей слизистой, импланты
                 должны прижиться до полной нагрузки, а цирконий вытачивают по финальным слепкам. Из операции вы
-                всё равно уходите с зубами, которые отлично выглядят, — циркониевая дуга просто заменит
+                всё равно уходите с зубами, которые отлично выглядят, - циркониевая дуга просто заменит
                 временную позже.
               </p>
 
@@ -266,14 +267,14 @@ export default function ZirconiaArchesPost() {
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">Цирконий прочнее титана?</h3>
                   <p className="text-neutral-700 leading-relaxed">
                     Диоксид циркония твёрже и устойчивее к износу и коррозии, а титан более упругий. У них разные
-                    роли — титановые импланты служат опорой в кости, а циркониевая дуга — это видимый ряд зубов.
+                    роли - титановые импланты служат опорой в кости, а циркониевая дуга - это видимый ряд зубов.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">Могут ли циркониевые дуги сломаться?</h3>
                   <p className="text-neutral-700 leading-relaxed">
                     Медицинский диоксид циркония крайне устойчив к переломам. Серьёзные поломки редки и обычно
-                    связаны с травмой или неправильным обращением — например, если грызть лёд или вскрывать
+                    связаны с травмой или неправильным обращением - например, если грызть лёд или вскрывать
                     зубами упаковки.
                   </p>
                 </div>
@@ -281,7 +282,7 @@ export default function ZirconiaArchesPost() {
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">Пожелтеет ли моя циркониевая дуга?</h3>
                   <p className="text-neutral-700 leading-relaxed">
                     Нет. Диоксид циркония очень устойчив к окрашиванию. Поверхностный налёт легко стирается, а
-                    сам материал не меняет цвет — правда, это означает и то, что отбелить его нельзя.
+                    сам материал не меняет цвет - правда, это означает и то, что отбелить его нельзя.
                   </p>
                 </div>
                 <div>
@@ -298,9 +299,9 @@ export default function ZirconiaArchesPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Процедура установки дентальных имплантов</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/30638320/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Монолитный диоксид циркония в реставрациях на имплантах — обзор клинических результатов (PubMed)</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Процедура установки дентальных имплантов</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH - Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/30638320/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Монолитный диоксид циркония в реставрациях на имплантах - обзор клинических результатов (PubMed)</a></li>
               </ul>
             </section>
 
@@ -348,6 +349,8 @@ export default function ZirconiaArchesPost() {
           </article>
         </Container>
       </Section>
+
+      <CalculatorEmbed slug="zirconia-teeth" locale="ru" />
     </>
   )
 }

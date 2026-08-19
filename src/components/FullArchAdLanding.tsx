@@ -361,7 +361,7 @@ export default function FullArchAdLanding({ content }: FullArchAdLandingProps) {
 
       <footer className="border-t border-dark/10 bg-white px-4 py-8 pb-24 text-sm text-muted sm:px-6 md:pb-8 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <p>© Dr. Alexander Antipov, DDS — Roseville, California.</p>
+          <p>© Dr. Alexander Antipov, DDS - Roseville, California.</p>
           <div className="flex gap-4">
             <Link href={isRu ? "/ru" : "/"} className="font-semibold text-primary hover:text-primary-dark">
               {isRu ? "Главная" : "Main site"}

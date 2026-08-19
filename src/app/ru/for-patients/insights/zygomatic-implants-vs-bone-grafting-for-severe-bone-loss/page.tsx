@@ -9,7 +9,7 @@ import { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Скуловые импланты или костная пластика",
   description:
-    "Сравниваем скуловые импланты и костную пластику при выраженной убыли кости челюсти — сроки, восстановление, стоимость, процент успеха и кому что подходит. Доктор Антипов, Roseville, CA.",
+    "Сравниваем скуловые импланты и костную пластику при выраженной убыли кости челюсти - сроки, восстановление, стоимость, процент успеха и кому что подходит. Доктор Антипов, Roseville, CA.",
   alternates: {
     canonical: "/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss",
     languages: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     locale: "ru_RU",
     title: "Скуловые импланты или костная пластика",
-    description: "Сравниваем скуловые импланты и костную пластику при выраженной убыли кости челюсти — сроки, восстановление, стоимость и показания.",
+    description: "Сравниваем скуловые импланты и костную пластику при выраженной убыли кости челюсти - сроки, восстановление, стоимость и показания.",
     images: [
       {
         url: "/images/blog/2026-06-19/zygomatic-vs-grafting.png",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Скуловые импланты или костная пластика",
-    description: "Сравниваем скуловые импланты и костную пластику при выраженной убыли кости челюсти — сроки, восстановление, стоимость и показания.",
+    description: "Сравниваем скуловые импланты и костную пластику при выраженной убыли кости челюсти - сроки, восстановление, стоимость и показания.",
     images: ["/images/blog/2026-06-19/zygomatic-vs-grafting.png"],
   }
 }
@@ -52,7 +52,7 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss#article","headline":"Скуловые импланты или костная пластика при выраженной убыли кости","description":"Сравниваем скуловые импланты и традиционную костную пластику при выраженной убыли кости челюсти \\u2014 сроки, восстановление, стоимость, процент успеха и показания.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zygomatic-vs-grafting.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Что такое скуловые импланты?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты — это дентальные импланты, которые фиксируются в скуловой кости и служат опорой для протеза. Они особенно полезны пациентам с выраженной убылью кости верхней челюсти."}},{"@type":"Question","name":"Как работает костная пластика?","acceptedAnswer":{"@type":"Answer","text":"Костная пластика — это пересадка костной ткани в участки, где кости недостаточно. Так создаётся устойчивая основа для будущих имплантов, а на приживление обычно требуется несколько месяцев."}},{"@type":"Question","name":"Что быстрее — скуловые импланты или костная пластика?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты, как правило, быстрее: часто они позволяют установить протез сразу или раньше, тогда как костная пластика обычно требует более длительного периода заживления."}},{"@type":"Question","name":"Есть ли риски у этих процедур?","acceptedAnswer":{"@type":"Answer","text":"Как и любая операция, и скуловые импланты, и костная пластика связаны с рисками — в том числе инфекцией и осложнениями с имплантом. Консультация и тщательное планирование помогают эти риски снизить."}},{"@type":"Question","name":"Как понять, какой вариант подходит именно мне?","acceptedAnswer":{"@type":"Answer","text":"Лучший вариант зависит от состояния зубов, общего здоровья и ваших предпочтений. Подробное обследование у специалиста поможет определить наиболее подходящее лечение."}},{"@type":"Question","name":"Чего ожидать в период восстановления?","acceptedAnswer":{"@type":"Answer","text":"Восстановление у всех проходит по-разному. После скуловых имплантов часто можно быстрее вернуться к привычным делам, тогда как костная пластика требует больше времени на заживление, прежде чем можно ставить импланты."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss#article","headline":"Скуловые импланты или костная пластика при выраженной убыли кости","description":"Сравниваем скуловые импланты и традиционную костную пластику при выраженной убыли кости челюсти \\u2014 сроки, восстановление, стоимость, процент успеха и показания.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zygomatic-vs-grafting.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Что такое скуловые импланты?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты - это дентальные импланты, которые фиксируются в скуловой кости и служат опорой для протеза. Они особенно полезны пациентам с выраженной убылью кости верхней челюсти."}},{"@type":"Question","name":"Как работает костная пластика?","acceptedAnswer":{"@type":"Answer","text":"Костная пластика - это пересадка костной ткани в участки, где кости недостаточно. Так создаётся устойчивая основа для будущих имплантов, а на приживление обычно требуется несколько месяцев."}},{"@type":"Question","name":"Что быстрее - скуловые импланты или костная пластика?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты, как правило, быстрее: часто они позволяют установить протез сразу или раньше, тогда как костная пластика обычно требует более длительного периода заживления."}},{"@type":"Question","name":"Есть ли риски у этих процедур?","acceptedAnswer":{"@type":"Answer","text":"Как и любая операция, и скуловые импланты, и костная пластика связаны с рисками - в том числе инфекцией и осложнениями с имплантом. Консультация и тщательное планирование помогают эти риски снизить."}},{"@type":"Question","name":"Как понять, какой вариант подходит именно мне?","acceptedAnswer":{"@type":"Answer","text":"Лучший вариант зависит от состояния зубов, общего здоровья и ваших предпочтений. Подробное обследование у специалиста поможет определить наиболее подходящее лечение."}},{"@type":"Question","name":"Чего ожидать в период восстановления?","acceptedAnswer":{"@type":"Answer","text":"Восстановление у всех проходит по-разному. После скуловых имплантов часто можно быстрее вернуться к привычным делам, тогда как костная пластика требует больше времени на заживление, прежде чем можно ставить импланты."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -92,7 +92,7 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
+              Медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -110,7 +110,7 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
                 При выраженной убыли кости челюсти многие ищут действенное решение, чтобы вернуть и функцию,
-                и эстетику зубов. Два заметных варианта — скуловые импланты и костная пластика. Оба могут
+                и эстетику зубов. Два заметных варианта - скуловые импланты и костная пластика. Оба могут
                 стать опорой для протеза на имплантах, но решают разные задачи, рассчитаны на разные сроки
                 и подходят для разных анатомических ситуаций. Понимание этих различий поможет осознанно
                 выбрать следующий шаг.
@@ -134,7 +134,7 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Выраженная убыль кости челюсти может развиться из-за потери зубов, заболеваний пародонта,
                 длительного ношения съёмных протезов, травмы или других факторов здоровья. В результате
-                становится трудно установить обычные импланты на верхней челюсти — кости может просто не
+                становится трудно установить обычные импланты на верхней челюсти - кости может просто не
                 хватать, чтобы их удержать. Подробное обследование &mdash; включая визуализацию вроде 3D-снимков &mdash;
                 помогает понять, сколько кости осталось и какой подход даст самый предсказуемый результат.
               </p>
@@ -143,7 +143,7 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
                 Что такое скуловые импланты?
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Скуловые импланты — это особые дентальные импланты, которые фиксируются в скуловой кости, а
+                Скуловые импланты - это особые дентальные импланты, которые фиксируются в скуловой кости, а
                 не в верхней челюсти. Такая методика позволяет надёжно закрепить несъёмный протез у
                 пациентов со значительной убылью кости верхней челюсти и нередко уменьшает или вовсе
                 устраняет необходимость в объёмной костной пластике.
@@ -161,7 +161,7 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
                 Что такое костная пластика?
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Костная пластика — это хирургическая процедура, при которой в участки с недостатком кости
+                Костная пластика - это хирургическая процедура, при которой в участки с недостатком кости
                 добавляют трансплантационный материал, чтобы восстановить объём и создать устойчивую основу
                 для имплантов. Для пластики используют собственную кость пациента, донорскую кость,
                 трансплантаты животного происхождения или синтетические материалы. Обычно нужно время на
@@ -206,7 +206,7 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
                     <tr>
                       <td className="border-b border-neutral-200 py-3 px-4"><strong>Время восстановления</strong></td>
                       <td className="border-b border-neutral-200 py-3 px-4">К функции можно вернуться быстрее, хотя это всё же операция, и заживление у всех проходит по-разному.</td>
-                      <td className="border-b border-neutral-200 py-3 px-4">Заживление может занять несколько месяцев — в зависимости от вида трансплантата и объёма.</td>
+                      <td className="border-b border-neutral-200 py-3 px-4">Заживление может занять несколько месяцев - в зависимости от вида трансплантата и объёма.</td>
                     </tr>
                     <tr>
                       <td className="border-b border-neutral-200 py-3 px-4"><strong>Общая стоимость</strong></td>
@@ -274,7 +274,7 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
                     Что такое скуловые импланты?
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Скуловые импланты — это дентальные импланты, которые фиксируются в скуловой кости и
+                    Скуловые импланты - это дентальные импланты, которые фиксируются в скуловой кости и
                     служат опорой для протеза. Они особенно полезны пациентам с выраженной убылью кости
                     верхней челюсти.
                   </p>
@@ -285,7 +285,7 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
                     Как работает костная пластика?
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Костная пластика — это пересадка костной ткани в участки, где кости недостаточно. Так
+                    Костная пластика - это пересадка костной ткани в участки, где кости недостаточно. Так
                     создаётся устойчивая основа для будущих дентальных имплантов, а на приживление обычно
                     требуется несколько месяцев.
                   </p>
@@ -293,7 +293,7 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
 
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">
-                    Что быстрее — скуловые импланты или костная пластика?
+                    Что быстрее - скуловые импланты или костная пластика?
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
                     Скуловые импланты, как правило, быстрее: часто они позволяют установить протез сразу
@@ -307,7 +307,7 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
                     Есть ли риски у этих процедур?
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Как и любая операция, и скуловые импланты, и костная пластика связаны с рисками — в том
+                    Как и любая операция, и скуловые импланты, и костная пластика связаны с рисками - в том
                     числе инфекцией и осложнениями с имплантом. Консультация и тщательное планирование
                     помогают эти риски снизить.
                   </p>
@@ -341,10 +341,10 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Хирургия дентальных имплантов</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy — Обзор дентальных имплантов</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/gum-disease" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Заболевания дёсен и убыль кости</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/24533334/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Aparicio C, Manresa C et al. — Скуловые импланты: показания, методики, результаты</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Хирургия дентальных имплантов</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy - Обзор дентальных имплантов</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/gum-disease" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR - Заболевания дёсен и убыль кости</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/24533334/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Aparicio C, Manresa C et al. - Скуловые импланты: показания, методики, результаты</a></li>
               </ul>
             </section>
 
@@ -378,7 +378,7 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
                   Найдите верное решение при убыли кости
                 </h3>
                 <p className="text-neutral-700 mb-6">
-                  Лучший следующий шаг — консультация специалиста, чтобы оценить вашу анатомию, сроки и цели
+                  Лучший следующий шаг - консультация специалиста, чтобы оценить вашу анатомию, сроки и цели
                   лечения. Консультация бесплатная, а координатор перезвонит в течение 24 часов и объяснит,
                   что подготовить.
                 </p>

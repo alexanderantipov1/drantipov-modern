@@ -9,7 +9,7 @@ import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
-  title: "Здоровье полости рта и системные болезни — связь",
+  title: "Здоровье полости рта и системные болезни - связь",
   description:
     "Скрытая связь между здоровьем полости рта и системными заболеваниями: рак, болезни сердца и сосудов, диабет. Как защитить себя и что делать для профилактики.",
   alternates: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     locale: "ru_RU",
     title: "Здоровье полости рта и системные болезни",
-    description: "Связь между бактериями полости рта и системными заболеваниями — раком, болезнями сердца и сосудов, диабетом.",
+    description: "Связь между бактериями полости рта и системными заболеваниями - раком, болезнями сердца и сосудов, диабетом.",
     images: [
       {
         url: "/images/blog/2024-08-08/poor-oral-health-733c21c2.jpg",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Здоровье полости рта и системные болезни",
-    description: "Связь между бактериями полости рта и системными заболеваниями — раком, болезнями сердца и сосудов, диабетом.",
+    description: "Связь между бактериями полости рта и системными заболеваниями - раком, болезнями сердца и сосудов, диабетом.",
     images: ["/images/blog/2024-08-08/poor-oral-health-733c21c2.jpg"],
   }
 }
@@ -99,7 +99,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> — сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №50724
+              Медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> - сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -130,7 +130,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
               </GlassCard>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
-                Что такое связь «полость рта — организм»
+                Что такое связь «полость рта - организм»
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Во рту живут миллиарды бактерий, и большинство из них безвредны. Но если пренебрегать гигиеной,
@@ -140,7 +140,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
 
               <blockquote className="border-l-4 border-primary-600 pl-6 my-8 italic text-xl text-neutral-700">
                 «И стоматологам, и врачам общей практики полезно лучше понимать оральные проявления системных
-                болезней и заболевания полости рта, которые влияют на здоровье всего организма». — д-р Дженнифер
+                болезней и заболевания полости рта, которые влияют на здоровье всего организма». - д-р Дженнифер
                 Уэбстер-Сириак
               </blockquote>
 
@@ -156,7 +156,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 <GlassCard className="p-6">
                   <h3 className="text-2xl font-semibold text-neutral-900 mb-3">Колоректальный рак</h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Учёные обнаружили конкретную бактерию полости рта — Fusobacterium nucleatum — в колоректальных
+                    Учёные обнаружили конкретную бактерию полости рта - Fusobacterium nucleatum - в колоректальных
                     опухолях. Эта бактерия, которую часто связывают с болезнями дёсен, может играть роль в развитии
                     и прогрессировании опухоли.
                   </p>
@@ -203,14 +203,14 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                   <p className="text-neutral-700 leading-relaxed">
                     Связь диабета и здоровья полости рта работает в обе стороны. Диабет делает человека более
                     уязвимым к болезням дёсен, а тяжёлый пародонтит, в свою очередь, мешает держать сахар крови под
-                    контролем — образуется опасный замкнутый круг.
+                    контролем - образуется опасный замкнутый круг.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-semibold text-neutral-900 mb-3">Инфекции дыхательных путей</h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Бактерии при пародонтите можно вдохнуть в лёгкие — это способно вызвать инфекции дыхательных
+                    Бактерии при пародонтите можно вдохнуть в лёгкие - это способно вызвать инфекции дыхательных
                     путей, пневмонию и обострять хронические состояния вроде ХОБЛ.
                   </p>
                 </div>
@@ -228,14 +228,14 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 Роль хронического воспаления
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Общая нить, связывающая здоровье полости рта с системными болезнями, — хроническое воспаление. Когда
+                Общая нить, связывающая здоровье полости рта с системными болезнями, - хроническое воспаление. Когда
                 дёсны воспалены из-за бактериальной инфекции, маркеры воспаления повышаются во всём организме. Это
                 системное воспаление может запускать или усугублять самые разные болезни.
               </p>
 
               <blockquote className="border-l-4 border-primary-600 pl-6 my-8 italic text-xl text-neutral-700">
                 «Лечение рака может вызывать или усугублять проблемы во рту, а проблемы со здоровьем полости рта,
-                в свою очередь, осложняют само лечение рака». — д-р Си Чен
+                в свою очередь, осложняют само лечение рака». - д-р Си Чен
               </blockquote>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">Цифры, которые поражают</h2>
@@ -250,7 +250,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 </GlassCard>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">Профилактика — это главное</h2>
+              <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">Профилактика - это главное</h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Хорошая новость в том, что большинство проблем с полостью рта можно предотвратить. Вот как защитить
                 и здоровье рта, и здоровье в целом:
@@ -276,7 +276,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 <GlassCard className="p-6">
                   <h4 className="font-semibold text-neutral-900 mb-2">Не игнорируйте тревожные признаки</h4>
                   <p className="text-neutral-700">
-                    Кровоточивость дёсен, стойкий неприятный запах изо рта и шатающиеся зубы — сигналы, которые
+                    Кровоточивость дёсен, стойкий неприятный запах изо рта и шатающиеся зубы - сигналы, которые
                     требуют немедленного внимания.
                   </p>
                 </GlassCard>
@@ -292,7 +292,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
                 <GlassCard className="p-6">
                   <h4 className="font-semibold text-neutral-900 mb-2">Здоровый образ жизни</h4>
                   <p className="text-neutral-700">
-                    Откажитесь от табака, ограничьте алкоголь, питайтесь сбалансированно и управляйте стрессом — это
+                    Откажитесь от табака, ограничьте алкоголь, питайтесь сбалансированно и управляйте стрессом - это
                     поддерживает здоровье в целом.
                   </p>
                 </GlassCard>
@@ -300,8 +300,8 @@ export default function PoorOralHealthSystemicDiseasesPost() {
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">Заключение</h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Здоровье полости рта — это окно в состояние всего организма. Поддерживая хорошую гигиену и регулярно
-                наблюдаясь у стоматолога, вы защищаете не только улыбку — вы оберегаете всё тело от серьёзных
+                Здоровье полости рта - это окно в состояние всего организма. Поддерживая хорошую гигиену и регулярно
+                наблюдаясь у стоматолога, вы защищаете не только улыбку - вы оберегаете всё тело от серьёзных
                 болезней. Не ждите, пока проблемы заявят о себе: сделайте шаги уже сегодня ради более здорового
                 завтра.
               </p>
@@ -312,10 +312,10 @@ export default function PoorOralHealthSystemicDiseasesPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.cdc.gov/oral-health/about/index.html" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">CDC — Здоровье полости рта и хронические болезни</a></li>
-                <li><a href="https://www.nidcr.nih.gov/research/data-statistics/dental-caries" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH NIDCR — Связь здоровья полости рта и организма</a></li>
-                <li><a href="https://www.ahajournals.org/doi/10.1161/CIR.0b013e31825719f3" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Пародонтит и сердечно-сосудистые болезни — заявление AHA</a></li>
-                <li><a href="https://www.mouthhealthy.org/life-stages/adults-over-60/oral-health-and-overall-health" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy — Здоровье полости рта и общее здоровье</a></li>
+                <li><a href="https://www.cdc.gov/oral-health/about/index.html" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">CDC - Здоровье полости рта и хронические болезни</a></li>
+                <li><a href="https://www.nidcr.nih.gov/research/data-statistics/dental-caries" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH NIDCR - Связь здоровья полости рта и организма</a></li>
+                <li><a href="https://www.ahajournals.org/doi/10.1161/CIR.0b013e31825719f3" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Пародонтит и сердечно-сосудистые болезни - заявление AHA</a></li>
+                <li><a href="https://www.mouthhealthy.org/life-stages/adults-over-60/oral-health-and-overall-health" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy - Здоровье полости рта и общее здоровье</a></li>
               </ul>
             </section>
 
@@ -345,7 +345,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
             <div className="mt-12 text-center">
               <GlassCard className="p-8">
                 <h3 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
-                  Защитите здоровье всего организма — начните с полости рта
+                  Защитите здоровье всего организма - начните с полости рта
                 </h3>
                 <p className="text-neutral-700 mb-6">
                   Запишитесь на комплексную оценку состояния полости рта уже сегодня

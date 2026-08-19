@@ -52,7 +52,7 @@ export default function BoneGraftingForDentalImplantsPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/bone-grafting-for-dental-implants-explained#article","headline":"Костная пластика для дентальных имплантов простыми словами","description":"Подробный гид по костной пластике для имплантации — кому нужна, виды трансплантатов, процедура, сроки заживления, риски и альтернативы.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/bone-grafting-for-dental-implants-explained","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/bone-grafting.png"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/bone-grafting-for-dental-implants-explained"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Сколько занимает процедура костной пластики?","acceptedAnswer":{"@type":"Answer","text":"Сама операция обычно занимает 1–2 часа в зависимости от сложности случая. Общий срок восстановления зависит от индивидуальной скорости заживления."}},{"@type":"Question","name":"Костная пластика — это больно?","acceptedAnswer":{"@type":"Answer","text":"Большинство пациентов отмечают лёгкий дискомфорт после процедуры, который снимается обезболивающими. Хирург даст конкретные рекомендации, чтобы минимизировать ощущения."}},{"@type":"Question","name":"Сколько заживает костный трансплантат?","acceptedAnswer":{"@type":"Answer","text":"Обычно заживление занимает 3–6 месяцев в зависимости от типа трансплантата и состояния здоровья. Контрольные визиты помогают отслеживать процесс."}},{"@type":"Question","name":"Можно ли ставить имплант сразу после костной пластики?","acceptedAnswer":{"@type":"Answer","text":"В большинстве случаев имплант ставят после заживления трансплантата. Но некоторые современные методики позволяют делать обе процедуры одновременно — обсудите это с вашим хирургом."}},{"@type":"Question","name":"Что будет, если костный трансплантат не приживётся?","acceptedAnswer":{"@type":"Answer","text":"Если трансплантат не приживается, хирург оценит ситуацию и при необходимости порекомендует повторную пластику или альтернативное лечение."}},{"@type":"Question","name":"Покрывает ли страховка костную пластику?","acceptedAnswer":{"@type":"Answer","text":"Покрытие зависит от страхового плана. Стоит уточнить условия у своего страховщика, чтобы понять, что именно входит в покрытие."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/bone-grafting-for-dental-implants-explained#article","headline":"Костная пластика для дентальных имплантов простыми словами","description":"Подробный гид по костной пластике для имплантации - кому нужна, виды трансплантатов, процедура, сроки заживления, риски и альтернативы.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/bone-grafting-for-dental-implants-explained","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/bone-grafting.png"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/bone-grafting-for-dental-implants-explained"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Сколько занимает процедура костной пластики?","acceptedAnswer":{"@type":"Answer","text":"Сама операция обычно занимает 1–2 часа в зависимости от сложности случая. Общий срок восстановления зависит от индивидуальной скорости заживления."}},{"@type":"Question","name":"Костная пластика - это больно?","acceptedAnswer":{"@type":"Answer","text":"Большинство пациентов отмечают лёгкий дискомфорт после процедуры, который снимается обезболивающими. Хирург даст конкретные рекомендации, чтобы минимизировать ощущения."}},{"@type":"Question","name":"Сколько заживает костный трансплантат?","acceptedAnswer":{"@type":"Answer","text":"Обычно заживление занимает 3–6 месяцев в зависимости от типа трансплантата и состояния здоровья. Контрольные визиты помогают отслеживать процесс."}},{"@type":"Question","name":"Можно ли ставить имплант сразу после костной пластики?","acceptedAnswer":{"@type":"Answer","text":"В большинстве случаев имплант ставят после заживления трансплантата. Но некоторые современные методики позволяют делать обе процедуры одновременно - обсудите это с вашим хирургом."}},{"@type":"Question","name":"Что будет, если костный трансплантат не приживётся?","acceptedAnswer":{"@type":"Answer","text":"Если трансплантат не приживается, хирург оценит ситуацию и при необходимости порекомендует повторную пластику или альтернативное лечение."}},{"@type":"Question","name":"Покрывает ли страховка костную пластику?","acceptedAnswer":{"@type":"Answer","text":"Покрытие зависит от страхового плана. Стоит уточнить условия у своего страховщика, чтобы понять, что именно входит в покрытие."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -94,13 +94,13 @@ export default function BoneGraftingForDentalImplantsPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
+              Медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
               <Image
                 src="/images/blog/2026-06-19/bone-grafting.png"
-                alt="Костная пластика — восстановление объёма челюстной кости под дентальные импланты"
+                alt="Костная пластика - восстановление объёма челюстной кости под дентальные импланты"
                 fill
                 className="object-cover"
                 priority
@@ -111,9 +111,9 @@ export default function BoneGraftingForDentalImplantsPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Дентальные импланты — это надёжное решение для замещения отсутствующих зубов, но успешная
+                Дентальные импланты - это надёжное решение для замещения отсутствующих зубов, но успешная
                 установка во многом зависит от плотности и качества челюстной кости. Именно поэтому
-                костная пластика часто становится ключевым этапом — она даёт ту опору, которая необходима
+                костная пластика часто становится ключевым этапом - она даёт ту опору, которая необходима
                 для приживления импланта.
               </p>
 
@@ -133,7 +133,7 @@ export default function BoneGraftingForDentalImplantsPost() {
                 Что такое костная пластика?
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Костная пластика — это хирургическая процедура для наращивания или реконструкции костной
+                Костная пластика - это хирургическая процедура для наращивания или реконструкции костной
                 структуры там, где её не хватает. Дефицит может возникнуть после потери зуба, травмы или
                 пародонтита. В ходе процедуры в челюстную кость помещают костный материал, который
                 стимулирует рост новой кости и создаёт прочную основу для <Link href="/ru/expertise/full-arch-implants" className="text-primary-700 hover:text-primary-800 font-semibold">дентальных имплантов</Link>.
@@ -192,7 +192,7 @@ export default function BoneGraftingForDentalImplantsPost() {
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 <strong>Консультация перед операцией.</strong> Перед костной пластикой вы консультируетесь с
-                челюстно-лицевым хирургом. Делают снимки — рентген или КТ/CBCT — чтобы оценить объём кости и
+                челюстно-лицевым хирургом. Делают снимки - рентген или КТ/CBCT - чтобы оценить объём кости и
                 выбрать подходящий метод пластики.
               </p>
               <p className="text-neutral-700 leading-relaxed mb-6">
@@ -222,7 +222,7 @@ export default function BoneGraftingForDentalImplantsPost() {
                 Заживление и интеграция
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                После операции возможны отёк и небольшой дискомфорт — обычно снимается рекомендованными
+                После операции возможны отёк и небольшой дискомфорт - обычно снимается рекомендованными
                 препаратами. Заживление костного трансплантата занимает несколько месяцев, в течение которых
                 материал постепенно интегрируется с собственной костью. Регулярные контрольные визиты
                 помогают отслеживать процесс и определить, когда можно ставить имплант.
@@ -257,7 +257,7 @@ export default function BoneGraftingForDentalImplantsPost() {
                 <li>&mdash; <strong>Скуловые импланты:</strong> опираются на скуловую кость при тяжёлой потере кости верхней челюсти.</li>
               </ul>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Современные инструменты планирования — 3D-снимки и навигационная хирургия — повышают точность,
+                Современные инструменты планирования - 3D-снимки и навигационная хирургия - повышают точность,
                 делают установку безопаснее и предсказуемее. Ваш хирург выберет самый предсказуемый путь по
                 результатам снимков и полного обследования.
               </p>
@@ -292,7 +292,7 @@ export default function BoneGraftingForDentalImplantsPost() {
                     Сколько заживает костный трансплантат?
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Обычно 3&ndash;6 месяцев — зависит от типа трансплантата и состояния здоровья. Контрольные
+                    Обычно 3&ndash;6 месяцев - зависит от типа трансплантата и состояния здоровья. Контрольные
                     визиты помогают отслеживать процесс.
                   </p>
                 </div>
@@ -371,7 +371,7 @@ export default function BoneGraftingForDentalImplantsPost() {
                   Узнайте, нужна ли вам костная пластика
                 </h3>
                 <p className="text-neutral-700 mb-6">
-                  Точная рекомендация возможна только после очного осмотра и 3D-КТ. Консультация — бесплатно.
+                  Точная рекомендация возможна только после очного осмотра и 3D-КТ. Консультация - бесплатно.
                   Координатор пациента перезвонит в течение 24 часов и расскажет, что взять с собой.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -5,12 +5,12 @@ import { siteConfig } from "@/constants/siteConfig";
 import DualCTA from "@/components/DualCTA";
 
 export const metadata: Metadata = {
-  title: "Travel Guide — Patients Coming to Roseville",
+  title: "Travel Guide - Patients Coming to Roseville",
   description:
     "Complete travel guide for out-of-state and international patients: Sacramento airport, recommended hotels, recovery accommodations, and what to plan for multi-day treatment with Dr. Antipov.",
   alternates: { canonical: "/for-patients/travel" },
   openGraph: {
-    title: "Patient Travel Guide — Roseville, California",
+    title: "Patient Travel Guide - Roseville, California",
     description: "Logistics for patients traveling from out of state.",
     url: `${siteConfig.url}/for-patients/travel`,
     type: "website",
@@ -19,24 +19,24 @@ export const metadata: Metadata = {
 };
 
 const flightInfo = [
-  { airport: "SMF — Sacramento International", drive: "30 min", note: "Closest major airport. United, Southwest, Delta, American, Alaska all fly direct from most US cities." },
-  { airport: "OAK — Oakland International", drive: "1 hr 45 min", note: "Often lower fares. Southwest hub. Easy I-80 East to Roseville." },
-  { airport: "SFO — San Francisco International", drive: "2 hr 15 min", note: "Most international flights. Hertz/Avis rentals available." },
-  { airport: "RNO — Reno-Tahoe International", drive: "2 hr 15 min", note: "Alternative for patients from Nevada or coming over from Reno-Tahoe area." },
+  { airport: "SMF - Sacramento International", drive: "30 min", note: "Closest major airport. United, Southwest, Delta, American, Alaska all fly direct from most US cities." },
+  { airport: "OAK - Oakland International", drive: "1 hr 45 min", note: "Often lower fares. Southwest hub. Easy I-80 East to Roseville." },
+  { airport: "SFO - San Francisco International", drive: "2 hr 15 min", note: "Most international flights. Hertz/Avis rentals available." },
+  { airport: "RNO - Reno-Tahoe International", drive: "2 hr 15 min", note: "Alternative for patients from Nevada or coming over from Reno-Tahoe area." },
 ];
 
 const hotels = [
   { name: "Hyatt Place Roseville", distance: "5 minutes", price: "$160-200/night", note: "Walking distance to office. Recommended for short post-op stays." },
   { name: "Hilton Garden Inn Roseville", distance: "8 minutes", price: "$170-220/night", note: "Quiet, suites available, full breakfast included." },
-  { name: "Residence Inn by Marriott", distance: "10 minutes", price: "$200-280/night", note: "Kitchenette — ideal for multi-day or multi-week stays. Full kitchen for soft-food prep." },
+  { name: "Residence Inn by Marriott", distance: "10 minutes", price: "$200-280/night", note: "Kitchenette - ideal for multi-day or multi-week stays. Full kitchen for soft-food prep." },
   { name: "Holiday Inn Express Roseville-Galleria", distance: "10 minutes", price: "$130-180/night", note: "Budget-friendly. Free breakfast, easy parking." },
 ];
 
 const itineraryDays = [
-  { day: "Day 1 — Arrive & rest", description: "Fly in, check into hotel, light dinner. Avoid alcohol the night before surgery. Hydrate." },
-  { day: "Day 2 — Surgery day", description: "Pre-surgery consultation (if not done earlier). All-on-4 or implants take 3-5 hours under IV sedation. Companion drives you back to hotel. Rest, ice, soft foods." },
-  { day: "Day 3 — Post-op check", description: "Brief follow-up visit (~20 min) to inspect surgical sites and address pain or swelling. Most patients return to hotel afterward." },
-  { day: "Days 4-5 — Recovery", description: "Stay close, soft diet, gentle activity. Most patients can fly home on Day 5 or 6 with cleared surgeon approval." },
+  { day: "Day 1 - Arrive & rest", description: "Fly in, check into hotel, light dinner. Avoid alcohol the night before surgery. Hydrate." },
+  { day: "Day 2 - Surgery day", description: "Pre-surgery consultation (if not done earlier). All-on-4 or implants take 3-5 hours under IV sedation. Companion drives you back to hotel. Rest, ice, soft foods." },
+  { day: "Day 3 - Post-op check", description: "Brief follow-up visit (~20 min) to inspect surgical sites and address pain or swelling. Most patients return to hotel afterward." },
+  { day: "Days 4-5 - Recovery", description: "Stay close, soft diet, gentle activity. Most patients can fly home on Day 5 or 6 with cleared surgeon approval." },
   { day: "Optional Day 6-7", description: "If treatment plan requires staged surgery (e.g., bone graft + implants), staying additional days simplifies logistics." },
 ];
 

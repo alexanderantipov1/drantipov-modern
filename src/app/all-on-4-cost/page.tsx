@@ -4,14 +4,15 @@ import Link from "next/link";
 import { siteConfig } from "@/constants/siteConfig";
 import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/structured-data";
 import DualCTA from "@/components/DualCTA";
+import CalculatorPackages from "@/components/CalculatorPackages";
 
 export const metadata: Metadata = {
-  title: "All-on-4 Cost in California — Honest Breakdown",
+  title: "All-on-4 Cost in California - Honest Breakdown",
   description:
     "What All-on-4 dental implants actually cost in 2026: itemized breakdown, factors that affect pricing, financing options, insurance coverage. Northern California oral surgeon.",
   alternates: { canonical: "/all-on-4-cost" },
   openGraph: {
-    title: "All-on-4 Cost Breakdown — California",
+    title: "All-on-4 Cost Breakdown - California",
     description: "Honest pricing for full-arch dental implants.",
     url: `${siteConfig.url}/all-on-4-cost`,
     type: "article",
@@ -61,10 +62,11 @@ export default function AllOn4CostPage() {
 
       <section className="relative bg-dark text-white overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/fullarch/08-final-result.jpeg" alt="All-on-4 cost" fill className="object-cover opacity-30" priority sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/85 to-dark/55" />
+          <Image src="/images/procedures/full-arch-prosthesis.png" alt="Full-arch All-on-4 implant prosthesis held by the surgical team" fill priority sizes="100vw" className="object-cover object-[center_55%]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/85 to-dark/45" />
+          <div className="absolute inset-0 bg-dark/30" />
         </div>
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+        <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-14">
           <nav aria-label="Breadcrumb" className="text-sm text-white/60 mb-6">
             <ol className="flex flex-wrap items-center gap-2">
               <li><Link href="/" className="hover:text-primary-light">Home</Link></li>
@@ -74,7 +76,7 @@ export default function AllOn4CostPage() {
           </nav>
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary-light">Honest pricing</p>
           <h1 className="mt-4 font-serif text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-            All-on-4 cost in California — what you actually pay
+            All-on-4 cost in California - what you actually pay
           </h1>
           <p className="mt-6 max-w-3xl text-xl leading-relaxed text-white/85">
             Itemized breakdown of what's included, what's optional, and where the money goes. No bundled hidden fees. No sales pressure.
@@ -86,10 +88,26 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28">
+      <section className="bg-light py-8 lg:py-10">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary-600">Instant estimate</p>
+            <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">Estimate your cost in 2 minutes</h2>
+            <p className="mt-4 text-lg text-neutral-600">
+              Answer a few quick questions and get a personalized estimate with financing and insurance options - instantly, by email. No commitment.
+            </p>
+            <p className="mt-3 text-base text-neutral-500">Pick the treatment closest to what you need to begin.</p>
+          </div>
+          <div className="mt-5">
+            <CalculatorPackages />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-10 lg:py-14">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-3">Itemized breakdown</h2>
-          <p className="text-center text-neutral-600 max-w-2xl mx-auto mb-12">
+          <p className="text-center text-neutral-600 max-w-2xl mx-auto mb-6">
             What goes into the total cost of a single arch All-on-4 procedure. These are typical ranges in Northern California; your exact quote depends on your case.
           </p>
           <div className="rounded-3xl border border-neutral-200 shadow-xl overflow-hidden">
@@ -115,9 +133,9 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
-      <section className="bg-light py-20 lg:py-28">
+      <section className="bg-light py-10 lg:py-14">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-12">Factors that change your quote</h2>
+          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-6">Factors that change your quote</h2>
           <ul className="grid gap-4 md:grid-cols-2">
             {factors.map((f) => (
               <li key={f} className="flex items-start gap-3 rounded-2xl bg-white p-5 shadow-sm">
@@ -131,9 +149,9 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28">
+      <section className="py-10 lg:py-14">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-12">Financing makes it accessible</h2>
+          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-6">Financing makes it accessible</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="rounded-3xl bg-white p-7 shadow-sm border border-neutral-200">
               <p className="text-3xl font-bold text-primary-600">$99</p>
@@ -160,42 +178,42 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
-      {/* Expanded SEO content — what's included, financing, factors */}
-      <section className="bg-white py-20 lg:py-28">
+      {/* Expanded SEO content - what's included, financing, factors */}
+      <section className="bg-white py-10 lg:py-14">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl mb-8">
             What is actually included in the All-on-4 price
           </h2>
           <p className="text-lg leading-8 text-neutral-700 mb-6">
-            The number you should care about is the <strong>all-inclusive arch price</strong> — the total
+            The number you should care about is the <strong>all-inclusive arch price</strong> - the total
             cost from consultation to a permanent prosthesis in your mouth. A line-item All-on-4 fee at our
             practice covers:
           </p>
-          <ul className="space-y-3 text-neutral-700 text-base leading-relaxed list-disc pl-6 mb-10">
-            <li><strong>3D CT scan and virtual surgical planning</strong> — included, no separate diagnostic fee.</li>
+          <ul className="space-y-3 text-neutral-700 text-base leading-relaxed list-disc pl-6 mb-5">
+            <li><strong>3D CT scan and virtual surgical planning</strong> - included, no separate diagnostic fee.</li>
             <li><strong>Pre-surgical extractions</strong> of any remaining failing teeth (some practices charge $200–$500 per tooth on top of the implant fee).</li>
             <li><strong>4 to 6 titanium implants</strong> per arch, premium brand (Neodent, Nobel Biocare, or Straumann depending on the case).</li>
             <li><strong>Custom navigation guide</strong> for precise implant placement.</li>
             <li><strong>IV sedation</strong> performed by the surgeon (no separate anesthesiologist fee).</li>
             <li><strong>Same-day fixed temporary prosthesis</strong> (PMMA / acrylic) attached to the implants on the day of surgery.</li>
-            <li><strong>Permanent prosthesis</strong> — zirconia or titanium-reinforced PMMA — delivered 4–6 months later after osseointegration.</li>
+            <li><strong>Permanent prosthesis</strong> - zirconia or titanium-reinforced PMMA - delivered 4–6 months later after osseointegration.</li>
             <li><strong>Follow-up visits at days 7, 30, 90 and 6 months</strong> plus a 12-month integration check.</li>
           </ul>
           <p className="text-lg leading-8 text-neutral-700 mb-6">
-            Compare this to the &ldquo;teaser&rdquo; pricing you may see advertised at $9,995 per arch — that
+            Compare this to the &ldquo;teaser&rdquo; pricing you may see advertised at $9,995 per arch - that
             figure typically excludes extractions, the final prosthesis, sedation, and follow-up care. When
             those are added, the true all-in cost lands in the same $25K–$35K range as a transparent quote.
           </p>
 
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl mt-16 mb-8">
-            Financing &amp; insurance — the honest version
+          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl mt-8 mb-4">
+            Financing &amp; insurance - the honest version
           </h2>
           <p className="text-lg leading-8 text-neutral-700 mb-6">
             Most U.S. dental insurance plans treat All-on-4 the same way they treat dentures: they reimburse
             the &ldquo;denture equivalent&rdquo; portion, typically $1,500–$3,000 per arch. The implant
             placement portion is usually <em>not</em> covered by dental insurance. A handful of medical
             plans cover oral surgery components if there is a documented medical necessity (severe
-            edentulism, post-trauma reconstruction, post-oncology) — we provide the documentation needed
+            edentulism, post-trauma reconstruction, post-oncology) - we provide the documentation needed
             for those claims.
           </p>
           <p className="text-lg leading-8 text-neutral-700 mb-6">
@@ -209,7 +227,7 @@ export default function AllOn4CostPage() {
             6–24 months).
           </p>
 
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl mt-16 mb-8">
+          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl mt-8 mb-4">
             Why prices vary between practices
           </h2>
           <p className="text-lg leading-8 text-neutral-700 mb-6">
@@ -226,7 +244,7 @@ export default function AllOn4CostPage() {
             <li><strong>Anesthesia type.</strong> IV sedation delivered by the surgeon adds $800–$1,500.
               General anesthesia in a hospital OR adds $3,000–$5,000.</li>
             <li><strong>Pre-surgical work.</strong> Sinus lift, bone grafting, zygomatic implants for severe
-              atrophy — each adds $2,000–$8,000 depending on scope.</li>
+              atrophy - each adds $2,000–$8,000 depending on scope.</li>
             <li><strong>Geography.</strong> Major coastal metros (SF, NY, LA, Seattle) run 20–30% above the
               U.S. median; rural Midwest runs 15–25% below.</li>
           </ul>
@@ -238,9 +256,9 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
-      <section className="bg-light py-20 lg:py-28">
+      <section className="bg-light py-10 lg:py-14">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-12">Frequently asked</h2>
+          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-6">Frequently asked</h2>
           <div className="space-y-3">
             {faqs.map((f, i) => (
               <details key={f.question} open={i === 0} className="group rounded-2xl border border-neutral-200 bg-white px-6 py-4 shadow-sm">
@@ -257,7 +275,7 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
         <h2 className="font-serif text-2xl font-bold text-neutral-900 mb-8 text-center">Keep researching your options</h2>
         <div className="grid gap-6 md:grid-cols-3">
           <Link href="/all-on-4-clearchoice-alternative" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">

@@ -10,7 +10,7 @@ export default function CTA() {
       <div className="absolute inset-0">
         <Image
           src="/images/landing-pages/dental-implants/art/image-background04-713ddc8f.jpg"
-          alt="Schedule a free dental implant consultation with Dr. Antipov — oral and maxillofacial surgeon in Roseville, CA"
+          alt="Schedule a free dental implant consultation with Dr. Antipov - oral and maxillofacial surgeon in Roseville, CA"
           fill
           className="object-cover"
           sizes="100vw"
@@ -29,7 +29,7 @@ export default function CTA() {
             Schedule Your Free Consultation
           </h2>
           <p className="mt-6 text-xl text-white/90 max-w-2xl mx-auto">
-            Meet Dr. Antipov and discuss your treatment options. Every consultation includes a complimentary 3D CT scan and personalized treatment plan — no obligation, no high-pressure sales.
+            Meet Dr. Antipov and discuss your treatment options. Every consultation includes a complimentary 3D CT scan and personalized treatment plan - no obligation, no high-pressure sales.
           </p>
 
           <div className="mt-12 flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">

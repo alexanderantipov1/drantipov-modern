@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 interface StatPillProps {
   /** Icon element, e.g. <Trophy className="h-5 w-5 text-primary" /> */
   icon: ReactNode;
-  /** Value — string OR ReactNode (e.g. <AnimatedCounter to={25} suffix="+" />) */
+  /** Value - string OR ReactNode (e.g. <AnimatedCounter to={25} suffix="+" />) */
   value: ReactNode;
   label: string;
   delay?: number;

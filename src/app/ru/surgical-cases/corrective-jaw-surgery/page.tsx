@@ -15,7 +15,7 @@ import { siteUrl } from "@/data/russianImplantFunnel";
 
 export const metadata: Metadata = {
   title:
-    "Ортогнатическая хирургия — кейсы коррекции прикуса | Доктор Антипов, Roseville CA",
+    "Ортогнатическая хирургия - кейсы коррекции прикуса | Доктор Антипов, Roseville CA",
   description:
     "Случаи ортогнатической хирургии доктора Антипова: остеотомия Le Fort, BSSO, гениопластика, коррекция асимметрии лица. Реальные результаты пациентов в Roseville, Калифорния.",
   alternates: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Ортогнатическая хирургия — кейсы доктора Антипова",
+    title: "Ортогнатическая хирургия - кейсы доктора Антипова",
     description:
       "Коррекция прикуса и асимметрии лица: Le Fort, BSSO, гениопластика. Реальные результаты пациентов в Roseville, CA.",
     url: `${siteUrl}/ru/surgical-cases/corrective-jaw-surgery`,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: "/images/cases/corrective-jaw-surgery/oms000052/1/preview@2x-55e61064.jpg",
         width: 1200,
         height: 630,
-        alt: "Ортогнатическая хирургия — кейсы доктора Антипова",
+        alt: "Ортогнатическая хирургия - кейсы доктора Антипова",
       },
     ],
   },
@@ -104,7 +104,7 @@ export default function RuCorrectiveJawSurgeryCasesPage() {
           <div className="absolute inset-0">
             <Image
               src="/images/corrective-jaw-surgery/corrective-jaw-surgery-97156448.jpg"
-              alt="Ортогнатическая хирургия — доктор Антипов"
+              alt="Ортогнатическая хирургия - доктор Антипов"
               fill
               className="object-cover opacity-30"
               priority
@@ -143,7 +143,7 @@ export default function RuCorrectiveJawSurgeryCasesPage() {
             </h1>
             <p className="mt-6 max-w-2xl text-xl leading-relaxed text-white/85">
               Ортогнатическая хирургия исправляет прикус, асимметрию и пропорции
-              лица. Каждый случай — это совместная работа хирурга, 3D-планирования
+              лица. Каждый случай - это совместная работа хирурга, 3D-планирования
               и точной диагностики.
             </p>
           </div>
@@ -157,7 +157,7 @@ export default function RuCorrectiveJawSurgeryCasesPage() {
                 Результаты, которые меняют лицо и жизнь
               </h2>
               <p className="text-lg text-muted">
-                За каждым случаем — комплексный план: хирургия в связке с 3D-визуализацией
+                За каждым случаем - комплексный план: хирургия в связке с 3D-визуализацией
                 и продуманной подготовкой. Хотите понять, как проходит восстановление?
                 Посмотрите наш{" "}
                 <Link

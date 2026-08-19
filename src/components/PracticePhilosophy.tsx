@@ -59,7 +59,7 @@ export default function PracticePhilosophy() {
                 at the forefront of surgical techniques and technologies, ensuring my patients benefit from the
                 latest advancements in oral and maxillofacial surgery.&rdquo;
               </p>
-              <p className="font-semibold text-neutral-900">— Dr. Alexander Antipov</p>
+              <p className="font-semibold text-neutral-900">- Dr. Alexander Antipov</p>
             </div>
           </motion.div>
 

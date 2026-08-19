@@ -103,7 +103,7 @@ export default function RuFooter() {
 
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-sm text-white/50">
           <p>
-            © {new Date().getFullYear()} Dr. Alexander Antipov, DDS — Roseville, California
+            © {new Date().getFullYear()} Dr. Alexander Antipov, DDS - Roseville, California
           </p>
           <div className="flex gap-4">
             <Link href="/ru/legal/privacy-policy" className="hover:text-white">

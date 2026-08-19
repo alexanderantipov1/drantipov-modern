@@ -29,20 +29,20 @@ export const metadata: Metadata = {
     "dental implant care",
   ],
   openGraph: {
-    title: "Patient Education — Insights & Articles",
+    title: "Patient Education - Insights & Articles",
     description: "Expert insights on dental implants, oral surgery, recovery, and oral health from Dr. Antipov.",
     images: [
       {
         url: "/images/procedures/dental-implants@2x-06d1b2ea.jpg",
         width: 1200,
         height: 630,
-        alt: "Patient Education — Insights & Articles",
+        alt: "Patient Education - Insights & Articles",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Patient Education — Insights & Articles",
+    title: "Patient Education - Insights & Articles",
     description: "Expert insights on dental implants, oral surgery, recovery, and oral health from Dr. Antipov.",
     images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
   }

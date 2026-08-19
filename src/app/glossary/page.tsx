@@ -5,7 +5,7 @@ import { siteConfig } from "@/constants/siteConfig";
 import { structuredDataScript } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: { absolute: "Oral Surgery Glossary — Terms Explained" },
+  title: { absolute: "Oral Surgery Glossary - Terms Explained" },
   description: "Plain-English definitions for implants, jaw surgery, sleep apnea, bone grafting, and other oral surgery terminology.",
   alternates: {
     canonical: `${siteConfig.url}/glossary`,
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Dental Implant & Oral Surgery Glossary",
-    description: "Definitions for key oral surgery terms — implants, osseointegration, bone grafting, orthognathic surgery.",
+    description: "Definitions for key oral surgery terms - implants, osseointegration, bone grafting, orthognathic surgery.",
     images: [
       {
         url: "/images/procedures/dental-implants@2x-06d1b2ea.jpg",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Dental Implant & Oral Surgery Glossary",
-    description: "Definitions for key oral surgery terms — implants, osseointegration, bone grafting, orthognathic surgery.",
+    description: "Definitions for key oral surgery terms - implants, osseointegration, bone grafting, orthognathic surgery.",
     images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
   }
 };
@@ -42,12 +42,12 @@ interface Term {
 const sections: { heading: string; intro: string; terms: Term[] }[] = [
   {
     heading: "Dental Implants",
-    intro: "Core terms in implantology — what 'implant' means, how protocols differ, and why surgeons use specific names.",
+    intro: "Core terms in implantology - what 'implant' means, how protocols differ, and why surgeons use specific names.",
     terms: [
       { term: "Dental implant", body: "A titanium or zirconia post surgically placed in the jawbone to replace a missing tooth root. After osseointegration, a crown, bridge, or denture attaches to it." },
       { term: "Single tooth implant", body: "Replacement of a single missing tooth with an implant + abutment + crown. Doesn't affect adjacent teeth (unlike traditional bridges)." },
       { term: "All-on-4", body: "Full arch of fixed teeth supported by 4 implants. Two front implants placed vertically, two rear implants angled to avoid sinuses and nerves. Typically immediate-load: temporary teeth attached the day of surgery." },
-      { term: "All-on-6", body: "Same concept as All-on-4 but with 6 implants for additional support — usually when adequate bone volume is present or a larger jaw is treated." },
+      { term: "All-on-6", body: "Same concept as All-on-4 but with 6 implants for additional support - usually when adequate bone volume is present or a larger jaw is treated." },
       { term: "Zygomatic implants", body: "Long implants anchored in the zygomatic (cheek) bone instead of the upper jaw. Used when severe bone loss makes traditional implants and sinus lifts impossible." },
       { term: "Immediate load", body: "Protocol where temporary teeth are attached to implants the same day as surgery. Requires sufficient primary stability (typically ≥35 Ncm)." },
       { term: "Osseointegration", body: "Biological fusion of the implant surface with surrounding bone. Takes 3-6 months. Without full integration, the implant cannot bear long-term load." },
@@ -67,11 +67,11 @@ const sections: { heading: string; intro: string; terms: Term[] }[] = [
   },
   {
     heading: "Corrective Jaw Surgery",
-    intro: "Orthognathic surgery terms — what each procedure does and when it's used.",
+    intro: "Orthognathic surgery terms - what each procedure does and when it's used.",
     terms: [
       { term: "Le Fort I osteotomy", body: "Surgical cut across the upper jaw above the tooth roots. Used to reposition the maxilla forward, back, up, down, or to split it into segments." },
       { term: "BSSO (Bilateral Sagittal Split Osteotomy)", body: "Surgical splitting of the lower jaw on both sides to reposition it forward or backward. The most common mandibular orthognathic procedure." },
-      { term: "Genioplasty", body: "Surgical reshaping of the chin — advancement, reduction, lengthening, or rotation. Often combined with jaw surgery for facial harmony." },
+      { term: "Genioplasty", body: "Surgical reshaping of the chin - advancement, reduction, lengthening, or rotation. Often combined with jaw surgery for facial harmony." },
       { term: "MMA (Maxillomandibular Advancement)", body: "Simultaneous forward movement of both jaws. Highly effective surgical treatment for obstructive sleep apnea." },
       { term: "Malocclusion", body: "Misalignment of the bite. Class I = generally normal alignment with crowding. Class II = upper jaw ahead of lower (overbite). Class III = lower jaw ahead of upper (underbite)." },
       { term: "Virtual surgical planning (VSP)", body: "3D digital simulation of jaw surgery using CBCT data. Allows precise pre-surgical planning and creation of patient-specific surgical guides." },
@@ -79,7 +79,7 @@ const sections: { heading: string; intro: string; terms: Term[] }[] = [
   },
   {
     heading: "Anesthesia & Sedation",
-    intro: "Levels of comfort available during oral surgery — what each one means.",
+    intro: "Levels of comfort available during oral surgery - what each one means.",
     terms: [
       { term: "Local anesthesia", body: "Numbing of just the surgical area. Patient stays fully awake. Used for simple extractions and minor procedures." },
       { term: "Nitrous oxide", body: "Inhaled 'laughing gas' for mild relaxation. Patient remains conscious. Wears off within minutes after stopping." },
@@ -103,7 +103,7 @@ const sections: { heading: string; intro: string; terms: Term[] }[] = [
     intro: "Common terms patients hear during recovery and what they mean.",
     terms: [
       { term: "Dry socket (Alveolar osteitis)", body: "Painful condition when the blood clot in an extraction site dislodges, exposing bone. Occurs in 1-5% of extractions. Treated with medicated dressing." },
-      { term: "Pericoronitis", body: "Infection of the gum tissue around a partially erupted tooth — often the cause for wisdom tooth removal." },
+      { term: "Pericoronitis", body: "Infection of the gum tissue around a partially erupted tooth - often the cause for wisdom tooth removal." },
       { term: "Paresthesia", body: "Temporary or rarely permanent numbness from nerve irritation. Most common with lower wisdom teeth near the inferior alveolar nerve. Usually resolves over weeks to months." },
       { term: "Pericoronitis", body: "Infection of the gum tissue around a partially erupted wisdom tooth, often the reason for surgical removal." },
     ],
@@ -153,7 +153,7 @@ export default function GlossaryPage() {
           </nav>
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary-light">Patient education</p>
           <h1 className="mt-4 font-serif text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-            Oral & Maxillofacial Surgery — Glossary
+            Oral & Maxillofacial Surgery - Glossary
           </h1>
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-white/85">
             Plain-English definitions for the terms you'll hear at consultation: All-on-4, zygomatic implants, sinus lift, osseointegration, MMA, and more.

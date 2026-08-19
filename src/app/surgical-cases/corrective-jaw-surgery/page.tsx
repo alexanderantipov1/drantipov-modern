@@ -10,8 +10,8 @@ import heroContent from "@/lib/heroContent"
 import DualCTA from "@/components/DualCTA"
 
 export const metadata: Metadata = {
-  title: "Corrective Jaw Surgery Cases — Real Results",
-  description: "Dr. Antipov's corrective jaw surgery portfolio — orthognathic procedures, mandibular advancement, and facial skeletal corrections with real patient outcomes.",
+  title: "Corrective Jaw Surgery Cases - Real Results",
+  description: "Dr. Antipov's corrective jaw surgery portfolio - orthognathic procedures, mandibular advancement, and facial skeletal corrections with real patient outcomes.",
   alternates: {
     canonical: "/surgical-cases/corrective-jaw-surgery",
     languages: {

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Can You Fix an Overbite Naturally? What Really Works",
     description:
-      "What \"fixing an overbite naturally\" really means, the myths, and the proven ways overbites are corrected — including in adults.",
+      "What \"fixing an overbite naturally\" really means, the myths, and the proven ways overbites are corrected - including in adults.",
     url: URL,
     type: "article",
     images: [{ url: IMAGE, width: 1200, height: 630, alt: "Can you fix an overbite naturally" }],
@@ -49,12 +49,12 @@ const faqs = [
   {
     question: "Can you fix an overbite naturally?",
     answer:
-      "There is no exercise, tongue posture, or home remedy that reliably moves teeth or repositions the jaw to correct a true overbite. What people call \"natural\" correction — myofunctional therapy, breaking habits like thumb-sucking, and early growth guidance in children — can help prevent or limit an overbite, but established overbites are corrected with aligners, braces, or jaw surgery.",
+      "There is no exercise, tongue posture, or home remedy that reliably moves teeth or repositions the jaw to correct a true overbite. What people call \"natural\" correction - myofunctional therapy, breaking habits like thumb-sucking, and early growth guidance in children - can help prevent or limit an overbite, but established overbites are corrected with aligners, braces, or jaw surgery.",
   },
   {
     question: "How can I fix my overbite naturally at home?",
     answer:
-      "You cannot safely move teeth at home. The closest \"natural\" measures are habit changes — stopping thumb-sucking, tongue-thrusting, or prolonged pacifier use in children, and myofunctional (mouth and tongue muscle) therapy. These support healthy development but will not close an existing overbite on their own. Avoid DIY \"gap bands\" or mail-order pressure devices, which can damage teeth and gums.",
+      "You cannot safely move teeth at home. The closest \"natural\" measures are habit changes - stopping thumb-sucking, tongue-thrusting, or prolonged pacifier use in children, and myofunctional (mouth and tongue muscle) therapy. These support healthy development but will not close an existing overbite on their own. Avoid DIY \"gap bands\" or mail-order pressure devices, which can damage teeth and gums.",
   },
   {
     question: "Can you fix an overbite naturally as an adult?",
@@ -79,7 +79,7 @@ const articleSchema = {
   "@id": `${URL}#article`,
   headline: "Can You Fix an Overbite Naturally? What Really Works",
   description:
-    "What \"fixing an overbite naturally\" actually means, the common myths, and the proven ways overbites are corrected — including in adults.",
+    "What \"fixing an overbite naturally\" actually means, the common myths, and the proven ways overbites are corrected - including in adults.",
   inLanguage: "en",
   url: URL,
   datePublished: "2026-06-22",
@@ -141,13 +141,13 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
             </h1>
 
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> - Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
               <Image
                 src={IMAGE}
-                alt="Can you fix an overbite naturally — what works and what does not"
+                alt="Can you fix an overbite naturally - what works and what does not"
                 fill
                 className="object-cover"
                 priority
@@ -158,7 +158,7 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
                 &ldquo;How do I fix my overbite naturally?&rdquo; is one of the most-searched questions in
-                orthodontics — and the honest answer matters, because the wrong DIY shortcut can damage your
+                orthodontics - and the honest answer matters, because the wrong DIY shortcut can damage your
                 teeth. Here is what &ldquo;natural&rdquo; correction can and cannot do, the myths to avoid, and
                 the options that actually work.
               </p>
@@ -169,8 +169,8 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
                 <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
                   <li>&bull; No exercise, tongue posture, or home remedy reliably fixes an established overbite.</li>
                   <li>&bull; &ldquo;Natural&rdquo; measures (habit changes, myofunctional therapy) help <em>prevent</em> overbites, mainly in children.</li>
-                  <li>&bull; In adults, the jaw has stopped growing — natural approaches cannot change jaw position.</li>
-                  <li>&bull; DIY &ldquo;gap bands&rdquo; and mail-order devices can permanently damage teeth — avoid them.</li>
+                  <li>&bull; In adults, the jaw has stopped growing - natural approaches cannot change jaw position.</li>
+                  <li>&bull; DIY &ldquo;gap bands&rdquo; and mail-order devices can permanently damage teeth - avoid them.</li>
                   <li>&bull; Proven options: clear aligners, braces, and (for skeletal cases) jaw surgery.</li>
                 </ul>
               </GlassCard>
@@ -181,7 +181,7 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
               <p className="text-neutral-700 leading-relaxed mb-6">
                 &ldquo;Naturally&rdquo; usually means one of two things: avoiding braces and aligners, or
                 avoiding surgery. It is worth separating those goals, because the realistic answer is different
-                for each. There are genuinely helpful, non-appliance measures — but they work mainly to
+                for each. There are genuinely helpful, non-appliance measures - but they work mainly to
                 <strong> prevent or limit</strong> an overbite during childhood, not to reverse one that has
                 already formed.
               </p>
@@ -198,7 +198,7 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
                 <li>
                   &mdash; <strong>Myofunctional therapy.</strong> Guided exercises that retrain the tongue and
                   facial muscles and improve resting tongue posture and nasal breathing. They support healthy
-                  development and can complement orthodontic treatment — but do not move teeth on their own.
+                  development and can complement orthodontic treatment - but do not move teeth on their own.
                 </li>
                 <li>
                   &mdash; <strong>Early growth guidance.</strong> In children who are still growing, functional
@@ -208,7 +208,7 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
               </ul>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
-                The Myths — and Why They Are Risky
+                The Myths - and Why They Are Risky
               </h2>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
                 <li>&mdash; <strong>&ldquo;Mewing&rdquo; and jaw exercises.</strong> Not supported by evidence for correcting an overbite. They will not reposition teeth or jaws.</li>
@@ -226,7 +226,7 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
               <p className="text-neutral-700 leading-relaxed mb-6">
                 By the time you are an adult, your jaw bones have finished growing. Growth guidance is no longer
                 possible, so a skeletal overbite can only be changed by repositioning the jaw surgically.
-                A dental overbite in an adult is still very treatable — but with aligners or braces, not with
+                A dental overbite in an adult is still very treatable - but with aligners or braces, not with
                 exercises. The good news is that{" "}
                 <Link href="/for-patients/insights/how-to-fix-an-overbite-treatment-options-and-cost" className="text-primary-600 underline">
                   correcting an overbite as an adult
@@ -238,9 +238,9 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
                 The Options That Actually Work
               </h2>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
-                <li>&mdash; <strong>Clear aligners</strong> — least invasive; ideal for slight to moderate dental overbites.</li>
-                <li>&mdash; <strong>Braces</strong> — most versatile for moderate and complex cases.</li>
-                <li>&mdash; <strong>Orthodontics + jaw surgery</strong> — the stable solution for severe skeletal overbites.</li>
+                <li>&mdash; <strong>Clear aligners</strong> - least invasive; ideal for slight to moderate dental overbites.</li>
+                <li>&mdash; <strong>Braces</strong> - most versatile for moderate and complex cases.</li>
+                <li>&mdash; <strong>Orthodontics + jaw surgery</strong> - the stable solution for severe skeletal overbites.</li>
               </ul>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 For the full comparison of each option with timelines and cost, read{" "}
@@ -267,7 +267,7 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
                 </h2>
                 <p className="text-neutral-700 leading-relaxed mb-6 max-w-2xl mx-auto">
                   A complimentary 3D CT consultation with Dr. Antipov shows whether your overbite is dental or
-                  skeletal — and the simplest, safest way to correct it.
+                  skeletal - and the simplest, safest way to correct it.
                 </p>
                 <Button asChild size="lg">
                   <Link href="/contact">Book a Free Consultation</Link>

@@ -8,19 +8,19 @@ import { ConsultationModal } from "@/components/forms/ConsultationModal";
 const caseSteps = [
   {
     src: "/images/fullarch/01-before-damaged.jpeg",
-    alt: "Before full arch dental implants — severely damaged and worn upper teeth requiring complete restoration by Dr. Antipov",
+    alt: "Before full arch dental implants - severely damaged and worn upper teeth requiring complete restoration by Dr. Antipov",
     label: "Before",
-    description: "Severely worn and damaged upper teeth — patient unable to eat or smile comfortably",
+    description: "Severely worn and damaged upper teeth - patient unable to eat or smile comfortably",
   },
   {
     src: "/images/fullarch/02-teeth-extracted.jpeg",
-    alt: "Upper teeth extracted revealing damaged roots and bone loss — preparation for All-on-4 dental implants",
+    alt: "Upper teeth extracted revealing damaged roots and bone loss - preparation for All-on-4 dental implants",
     label: "Extractions",
     description: "Damaged teeth carefully removed, revealing bone loss in the anterior maxilla",
   },
   {
     src: "/images/fullarch/03-implant-sites-prepared.jpeg",
-    alt: "Implant osteotomy sites prepared in upper jawbone — surgical preparation for full arch implant placement",
+    alt: "Implant osteotomy sites prepared in upper jawbone - surgical preparation for full arch implant placement",
     label: "Sites Prepared",
     description: "Precise osteotomy sites drilled using 3D computer-guided surgical planning",
   },
@@ -32,7 +32,7 @@ const caseSteps = [
   },
   {
     src: "/images/fullarch/05-plate-fixation.jpeg",
-    alt: "Titanium fixation plate and screws securing bone graft in anterior maxilla — bone augmentation for dental implants",
+    alt: "Titanium fixation plate and screws securing bone graft in anterior maxilla - bone augmentation for dental implants",
     label: "Plate Fixation",
     description: "Titanium plate and fixation screws stabilize the graft for optimal bone regeneration",
   },
@@ -44,15 +44,15 @@ const caseSteps = [
   },
   {
     src: "/images/fullarch/07-implants-abutments.jpeg",
-    alt: "Four dental implant abutments protruding through healed gums — All-on-4 implants ready for final zirconia bridge",
+    alt: "Four dental implant abutments protruding through healed gums - All-on-4 implants ready for final zirconia bridge",
     label: "Implants Ready",
-    description: "Four osseointegrated implants with healing abutments — ready for the final restoration",
+    description: "Four osseointegrated implants with healing abutments - ready for the final restoration",
   },
   {
     src: "/images/fullarch/08-final-result.jpeg",
-    alt: "Beautiful final result after full arch All-on-4 dental implant restoration — natural looking zirconia teeth by Dr. Antipov",
+    alt: "Beautiful final result after full arch All-on-4 dental implant restoration - natural looking zirconia teeth by Dr. Antipov",
     label: "Final Result",
-    description: "Beautiful, natural-looking full arch zirconia restoration — a brand new smile",
+    description: "Beautiful, natural-looking full arch zirconia restoration - a brand new smile",
   },
 ];
 
@@ -105,7 +105,7 @@ export default function FullArchShowcase() {
             Full Arch <span className="gradient-text">Transformation</span>
           </h2>
           <p className="mt-4 text-white/60 text-lg max-w-2xl mx-auto">
-            Watch a complete All-on-4 dental implant journey — from damaged teeth to a brand new smile. Every step performed by Dr. Antipov at our Roseville office.
+            Watch a complete All-on-4 dental implant journey - from damaged teeth to a brand new smile. Every step performed by Dr. Antipov at our Roseville office.
           </p>
         </motion.div>
 
@@ -142,7 +142,7 @@ export default function FullArchShowcase() {
                       {/* Step label */}
                       <div className="absolute top-4 left-4">
                         <span className="bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-full">
-                          {activeStep + 1} of {caseSteps.length} — {caseSteps[activeStep]?.label}
+                          {activeStep + 1} of {caseSteps.length} - {caseSteps[activeStep]?.label}
                         </span>
                       </div>
                     </motion.div>

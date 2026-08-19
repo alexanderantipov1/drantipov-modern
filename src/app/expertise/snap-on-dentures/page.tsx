@@ -6,5 +6,5 @@ const data = servicePages["snap-on-dentures"];
 export const metadata = buildServiceMetadata(data);
 
 export default function Page() {
-  return <ServicePageTemplate data={data} />;
+  return <ServicePageTemplate data={data} calculatorSlug="snap-in-denture" />;
 }

@@ -117,7 +117,7 @@ export default function RussianMultiStepForm({
             несколько уточняющих вопросов в WhatsApp / Telegram, чтобы консультация прошла быстрее.
           </p>
           <p className="mt-6 text-sm text-muted">
-            Если хотите быстрее —{" "}
+            Если хотите быстрее -{" "}
             <a href="tel:9167832110" className="font-bold text-primary hover:text-primary-dark">
               позвоните (916) 783-2110
             </a>

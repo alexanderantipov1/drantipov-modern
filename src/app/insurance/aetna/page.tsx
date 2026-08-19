@@ -65,9 +65,9 @@ export default function AetnaPage() {
             <ul className="space-y-3 text-neutral-700 leading-7">
               <li className="flex gap-3"><span className="text-primary-600 font-bold">✓</span>Basic extractions and oral surgery (partial coverage, subject to annual maximum)</li>
               <li className="flex gap-3"><span className="text-primary-600 font-bold">✓</span>Bone grafting when medically necessary (varies by plan)</li>
-              <li className="flex gap-3"><span className="text-primary-600 font-bold">~</span>Dental implant placement (varies — some plans cover, most do not)</li>
-              <li className="flex gap-3"><span className="text-primary-600 font-bold">~</span>Orthognathic surgery (medical, not dental — covered when medically necessary)</li>
-              <li className="flex gap-3"><span className="text-primary-600 font-bold">✗</span>Cosmetic procedures (mole removal, facelifts, fillers — not covered)</li>
+              <li className="flex gap-3"><span className="text-primary-600 font-bold">~</span>Dental implant placement (varies - some plans cover, most do not)</li>
+              <li className="flex gap-3"><span className="text-primary-600 font-bold">~</span>Orthognathic surgery (medical, not dental - covered when medically necessary)</li>
+              <li className="flex gap-3"><span className="text-primary-600 font-bold">✗</span>Cosmetic procedures (mole removal, facelifts, fillers - not covered)</li>
             </ul>
           </div>
 

@@ -5,11 +5,12 @@ import Link from "next/link"
 import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
+import CalculatorEmbed from "@/components/CalculatorEmbed"
 
 export const metadata: Metadata = {
   title: "Импланты на всю челюсть в Roseville и Сакраменто: стоимость и процесс",
   description:
-    "Полный гид по имплантам на всю челюсть в регионе Сакраменто — All-on-4, процесс шаг за шагом, диапазоны стоимости, кому подходит и от чего зависит успех. От доктора Антипова.",
+    "Полный гид по имплантам на всю челюсть в регионе Сакраменто - All-on-4, процесс шаг за шагом, диапазоны стоимости, кому подходит и от чего зависит успех. От доктора Антипова.",
   alternates: {
     canonical: "/ru/for-patients/insights/full-mouth-dental-implants-cost-process",
     languages: {
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     locale: "ru_RU",
     title: "Импланты на всю челюсть в Roseville и Сакраменто: стоимость и процесс",
-    description: "All-on-4 и полное восстановление зубов простыми словами — процесс, кому подходит и честные диапазоны стоимости для региона Сакраменто.",
+    description: "All-on-4 и полное восстановление зубов простыми словами - процесс, кому подходит и честные диапазоны стоимости для региона Сакраменто.",
     images: [
       {
         url: "/images/blog/2026-06-19/full-mouth-dental-implants.png",
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Импланты на всю челюсть в Roseville и Сакраменто: стоимость и процесс",
-    description: "All-on-4 и полное восстановление зубов простыми словами — процесс, кому подходит и честные диапазоны стоимости для региона Сакраменто.",
+    description: "All-on-4 и полное восстановление зубов простыми словами - процесс, кому подходит и честные диапазоны стоимости для региона Сакраменто.",
     images: ["/images/blog/2026-06-19/full-mouth-dental-implants.png"],
   }
 }
@@ -52,7 +53,7 @@ export default function FullMouthDentalImplantsPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/full-mouth-dental-implants-cost-process#article","headline":"Импланты на всю челюсть в Roseville и Сакраменто: стоимость, процесс и чего ожидать","description":"Полный гид по имплантам на всю челюсть в регионе Сакраменто, включая All-on-4, процесс шаг за шагом, диапазоны стоимости, кому подходит и что отличает успешный результат от неудачного.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/full-mouth-dental-implants-cost-process","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/full-mouth-dental-implants.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/full-mouth-dental-implants-cost-process"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Что такое импланты на всю челюсть?","acceptedAnswer":{"@type":"Answer","text":"Импланты на всю челюсть заменяют все зубы на одной или обеих челюстях несъёмным протезом на имплантах. Самые распространённые решения — All-on-4 и All-on-X: от 4 до 8 имплантов на челюсть, на которых держится полный ряд зубов."}},{"@type":"Question","name":"Сколько стоят импланты на всю челюсть рядом с Сакраменто?","acceptedAnswer":{"@type":"Answer","text":"В регионе Большого Сакраменто одна челюсть обычно обходится примерно в $18 000 – $30 000, а обе челюсти — ориентировочно в $30 000 – $55 000, в зависимости от количества имплантов, материалов и подготовительных процедур. Точную сумму для вашего случая вы получите в детальном плане лечения на консультации."}},{"@type":"Question","name":"Импланты на всю челюсть — это навсегда?","acceptedAnswer":{"@type":"Answer","text":"Да. Титановые штифты имплантов рассчитаны служить постоянно, а зубы протеза несъёмные. При правильном уходе восстановление прослужит много лет."}},{"@type":"Question","name":"Можно ли получить импланты на всю челюсть в тот же день?","acceptedAnswer":{"@type":"Answer","text":"Во многих подходящих случаях — да. Несъёмный временный протез можно установить в день операции, а постоянный протез изготавливают после 3–6 месяцев заживления."}},{"@type":"Question","name":"Где сделать импланты на всю челюсть рядом с Roseville?","acceptedAnswer":{"@type":"Answer","text":"Доктор Александр Антипов — сертифицированный челюстно-лицевой хирург в Roseville, CA, который выполняет полное восстановление зубов на имплантах для региона Большого Сакраменто."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/full-mouth-dental-implants-cost-process#article","headline":"Импланты на всю челюсть в Roseville и Сакраменто: стоимость, процесс и чего ожидать","description":"Полный гид по имплантам на всю челюсть в регионе Сакраменто, включая All-on-4, процесс шаг за шагом, диапазоны стоимости, кому подходит и что отличает успешный результат от неудачного.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/full-mouth-dental-implants-cost-process","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/full-mouth-dental-implants.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/full-mouth-dental-implants-cost-process"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Что такое импланты на всю челюсть?","acceptedAnswer":{"@type":"Answer","text":"Импланты на всю челюсть заменяют все зубы на одной или обеих челюстях несъёмным протезом на имплантах. Самые распространённые решения - All-on-4 и All-on-X: от 4 до 8 имплантов на челюсть, на которых держится полный ряд зубов."}},{"@type":"Question","name":"Сколько стоят импланты на всю челюсть рядом с Сакраменто?","acceptedAnswer":{"@type":"Answer","text":"В регионе Большого Сакраменто одна челюсть обычно обходится примерно в $18 000 – $30 000, а обе челюсти - ориентировочно в $30 000 – $55 000, в зависимости от количества имплантов, материалов и подготовительных процедур. Точную сумму для вашего случая вы получите в детальном плане лечения на консультации."}},{"@type":"Question","name":"Импланты на всю челюсть - это навсегда?","acceptedAnswer":{"@type":"Answer","text":"Да. Титановые штифты имплантов рассчитаны служить постоянно, а зубы протеза несъёмные. При правильном уходе восстановление прослужит много лет."}},{"@type":"Question","name":"Можно ли получить импланты на всю челюсть в тот же день?","acceptedAnswer":{"@type":"Answer","text":"Во многих подходящих случаях - да. Несъёмный временный протез можно установить в день операции, а постоянный протез изготавливают после 3–6 месяцев заживления."}},{"@type":"Question","name":"Где сделать импланты на всю челюсть рядом с Roseville?","acceptedAnswer":{"@type":"Answer","text":"Доктор Александр Антипов - сертифицированный челюстно-лицевой хирург в Roseville, CA, который выполняет полное восстановление зубов на имплантах для региона Большого Сакраменто."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -92,7 +93,7 @@ export default function FullMouthDentalImplantsPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Автор и медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> — сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №&nbsp;50724
+              Автор и медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> - сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №&nbsp;50724
             </p>
 
             {/* Featured Image */}
@@ -123,7 +124,7 @@ export default function FullMouthDentalImplantsPost() {
                 <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
                 <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
                   <li>&bull; Импланты на всю челюсть заменяют весь зубной ряд несъёмными зубами.</li>
-                  <li>&bull; Самый частый подход — All-on-4; альтернативы — All-on-6 и протезы на имплантах.</li>
+                  <li>&bull; Самый частый подход - All-on-4; альтернативы - All-on-6 и протезы на имплантах.</li>
                   <li>&bull; Одна челюсть в регионе Сакраменто обычно обходится в $18 000&ndash;$30 000.</li>
                   <li>&bull; Многие пациенты уходят с операции в тот же день с несъёмными временными зубами.</li>
                   <li>&bull; Долгий успех зависит от 3D-снимков, опыта хирурга и качества протеза.</li>
@@ -134,7 +135,7 @@ export default function FullMouthDentalImplantsPost() {
                 Что такое импланты на всю челюсть?
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                &laquo;Импланты на всю челюсть&raquo; — это восстановление всех зубов на верхней челюсти,
+                &laquo;Импланты на всю челюсть&raquo; - это восстановление всех зубов на верхней челюсти,
                 нижней или обеих, где опорой служат дентальные импланты. В отличие от обычного протеза,
                 который лежит на дёснах и вынимается, несъёмное восстановление на имплантах закреплено
                 прямо в челюстной кости &mdash; оно держится, когда вы жуёте, смеётесь и спите.
@@ -145,7 +146,7 @@ export default function FullMouthDentalImplantsPost() {
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
                 <li>&mdash; <strong>All-on-4:</strong> четыре импланта на челюсть держат полный несъёмный ряд зубов.</li>
                 <li>&mdash; <strong>All-on-X (All-on-6 и больше):</strong> обычно от пяти до восьми имплантов на челюсть, когда случаю нужна дополнительная опора.</li>
-                <li>&mdash; <strong>Съёмный протез на имплантах:</strong> протез, который защёлкивается на имплантах для устойчивости — для тех, кто предпочитает съёмный вариант.</li>
+                <li>&mdash; <strong>Съёмный протез на имплантах:</strong> протез, который защёлкивается на имплантах для устойчивости - для тех, кто предпочитает съёмный вариант.</li>
               </ul>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
@@ -187,7 +188,7 @@ export default function FullMouthDentalImplantsPost() {
                 </li>
                 <li>
                   <strong>Цифровое планирование лечения.</strong> В специальной программе положение
-                  имплантов продумывается виртуально ещё до операции — чтобы добиться устойчивости и обойти
+                  имплантов продумывается виртуально ещё до операции - чтобы добиться устойчивости и обойти
                   важные структуры.
                 </li>
                 <li>
@@ -202,7 +203,7 @@ export default function FullMouthDentalImplantsPost() {
                 <li>
                   <strong>Постоянный протез.</strong> Когда интеграция завершена, снимают финальные слепки и
                   изготавливают ваше постоянное восстановление &mdash; обычно из циркония или акрила на
-                  титановом каркасе — его подгоняют и закрепляют.
+                  титановом каркасе - его подгоняют и закрепляют.
                 </li>
               </ol>
 
@@ -246,9 +247,9 @@ export default function FullMouthDentalImplantsPost() {
                 Долгосрочный результат полного восстановления решают три фактора:
               </p>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
-                <li>&mdash; <strong>Качество планирования.</strong> 3D-снимки и цифровое планирование — не необязательная опция, а основа предсказуемой установки.</li>
-                <li>&mdash; <strong>Опыт хирурга.</strong> Полное восстановление зубов — одна из самых сложных задач в этой области. Опыт и специализация дают более стабильный результат.</li>
-                <li>&mdash; <strong>Качество протеза.</strong> Импланты держат конструкцию, но живёте вы именно с протезом. Правильные материалы и механика прикуса — разница между восстановлением, которое служит десятилетиями, и тем, что подведёт рано.</li>
+                <li>&mdash; <strong>Качество планирования.</strong> 3D-снимки и цифровое планирование - не необязательная опция, а основа предсказуемой установки.</li>
+                <li>&mdash; <strong>Опыт хирурга.</strong> Полное восстановление зубов - одна из самых сложных задач в этой области. Опыт и специализация дают более стабильный результат.</li>
+                <li>&mdash; <strong>Качество протеза.</strong> Импланты держат конструкцию, но живёте вы именно с протезом. Правильные материалы и механика прикуса - разница между восстановлением, которое служит десятилетиями, и тем, что подведёт рано.</li>
               </ul>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
@@ -259,14 +260,14 @@ export default function FullMouthDentalImplantsPost() {
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">Что такое импланты на всю челюсть?</h3>
                   <p className="text-neutral-700 leading-relaxed">
                     Они заменяют все зубы на одной или обеих челюстях несъёмным протезом на имплантах. Самые
-                    распространённые решения — All-on-4 и All-on-X: от 4 до 8 имплантов на челюсть, на которых
+                    распространённые решения - All-on-4 и All-on-X: от 4 до 8 имплантов на челюсть, на которых
                     держится полный ряд зубов.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">Сколько они стоят рядом с Сакраменто?</h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Одна челюсть обычно обходится примерно в $18 000 – $30 000, а обе — ориентировочно в
+                    Одна челюсть обычно обходится примерно в $18 000 – $30 000, а обе - ориентировочно в
                     $30 000 – $55 000, в зависимости от числа имплантов, материалов и подготовительных
                     процедур. Точную сумму вы получите в письменном детальном плане на консультации.
                   </p>
@@ -281,7 +282,7 @@ export default function FullMouthDentalImplantsPost() {
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">Можно ли получить зубы в тот же день?</h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Во многих подходящих случаях — да. Несъёмный временный ряд устанавливают в день операции,
+                    Во многих подходящих случаях - да. Несъёмный временный ряд устанавливают в день операции,
                     а постоянный протез изготавливают после 3–6 месяцев заживления.
                   </p>
                 </div>
@@ -293,9 +294,9 @@ export default function FullMouthDentalImplantsPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Процедура установки дентальных имплантов</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M — Концепция немедленной нагрузки All-on-4 с имплантами Brånemark System</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Процедура установки дентальных имплантов</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M - Концепция немедленной нагрузки All-on-4 с имплантами Brånemark System</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH - Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
               </ul>
             </section>
 
@@ -329,7 +330,7 @@ export default function FullMouthDentalImplantsPost() {
                   Думаете об имплантах на всю челюсть?
                 </h3>
                 <p className="text-neutral-700 mb-6">
-                  3D-КТ и очный осмотр — единственный способ понять, какой подход подходит вашей анатомии
+                  3D-КТ и очный осмотр - единственный способ понять, какой подход подходит вашей анатомии
                   &mdash; и получить точную детальную стоимость для вашего случая.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -345,6 +346,8 @@ export default function FullMouthDentalImplantsPost() {
           </article>
         </Container>
       </Section>
+
+      <CalculatorEmbed slug="all-on-468-per-arch" locale="ru" />
     </>
   )
 }

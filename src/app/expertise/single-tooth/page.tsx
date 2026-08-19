@@ -25,9 +25,10 @@ import {
 } from "@/lib/structured-data"
 import { siteConfig } from "@/constants/siteConfig"
 import DualCTA from "@/components/DualCTA"
+import CalculatorEmbed from "@/components/CalculatorEmbed"
 
 export const metadata = {
-  title: { absolute: "Single Tooth Implants — Natural Replacement" },
+  title: { absolute: "Single Tooth Implants - Natural Replacement" },
   description: "Replace one missing tooth with a permanent dental implant. Natural appearance, full function, lifetime durability. Roseville, CA.",
   alternates: {
     canonical: "/expertise/single-tooth",
@@ -191,7 +192,7 @@ export default function SingleToothPage() {
       <ExpertisePageHero
         badge="Precision Implantology"
         title="Single Tooth & Bridge Replacement"
-        subtitle="A single-tooth dental implant is a titanium screw placed into the jawbone that replaces one missing tooth from root to crown — a permanent restoration that looks, feels, and functions like a natural tooth."
+        subtitle="A single-tooth dental implant is a titanium screw placed into the jawbone that replaces one missing tooth from root to crown - a permanent restoration that looks, feels, and functions like a natural tooth."
         image="/images/hero/09-final-crown.jpeg"
       />
 
@@ -255,7 +256,7 @@ export default function SingleToothPage() {
         </Container>
       </Section>
 
-      {/* Doctor Quote — personal touch */}
+      {/* Doctor Quote - personal touch */}
       <DoctorQuote
         quote="A single tooth implant is the closest we have come to truly replacing a natural tooth. It does not borrow strength from neighbors and it preserves the bone exactly where it is needed."
         author="Dr. Alexander Antipov, DDS"
@@ -425,12 +426,14 @@ export default function SingleToothPage() {
         </Container>
       </Section>
 
+      <CalculatorEmbed slug="single-implant" />
+
       <DualCTA variant="implants"
         heading="Single-Tooth Implant Consultation"
         subheading="Replace a single missing tooth with a permanent implant. Free 3D CT scan and personalized treatment plan."
       />
 
-      {/* Floating sticky CTA — appears after 25% scroll */}
+      {/* Floating sticky CTA - appears after 25% scroll */}
       <FloatingArticleCTA
         href="/contact"
         label="Book free consultation"

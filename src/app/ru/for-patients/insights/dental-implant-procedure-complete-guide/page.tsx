@@ -9,7 +9,7 @@ import { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Имплантация зуба: пошаговое руководство",
   description:
-    "Полный пошаговый гид по процедуре дентальной имплантации — от консультации и 3D-снимка до установки импланта, остеоинтеграции и финальной коронки, со сроками и стоимостью.",
+    "Полный пошаговый гид по процедуре дентальной имплантации - от консультации и 3D-снимка до установки импланта, остеоинтеграции и финальной коронки, со сроками и стоимостью.",
   alternates: {
     canonical: "/ru/for-patients/insights/dental-implant-procedure-complete-guide",
     languages: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     locale: "ru_RU",
     title: "Имплантация зуба: пошаговое руководство",
-    description: "Что именно происходит при имплантации зуба — от консультации до финальной коронки.",
+    description: "Что именно происходит при имплантации зуба - от консультации до финальной коронки.",
     images: [
       {
         url: "/images/blog/2026-06-19/dental-implant-procedure.png",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Имплантация зуба: пошаговое руководство",
-    description: "Что именно происходит при имплантации зуба — от консультации до финальной коронки.",
+    description: "Что именно происходит при имплантации зуба - от консультации до финальной коронки.",
     images: ["/images/blog/2026-06-19/dental-implant-procedure.png"],
   }
 }
@@ -52,7 +52,7 @@ export default function DentalImplantProcedureGuidePost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/dental-implant-procedure-complete-guide#article","headline":"Имплантация зуба: полное пошаговое руководство","description":"Что именно происходит при имплантации зуба — от консультации и 3D-снимка до установки импланта, остеоинтеграции, абатмента и финальной коронки, со сроками и стоимостью.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/dental-implant-procedure-complete-guide","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/dental-implant-procedure.png"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/dental-implant-procedure-complete-guide"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Сколько занимает вся процедура имплантации от начала до конца?","acceptedAnswer":{"@type":"Answer","text":"Классическая имплантация занимает 4–9 месяцев от консультации до финальной коронки. При имплантации «за один день» временный зуб ставится за один визит, а финальная коронка — через 3–6 месяцев."}},{"@type":"Question","name":"Насколько больно при имплантации?","acceptedAnswer":{"@type":"Answer","text":"Большинство пациентов описывают дискомфорт в первые 1–2 дня как сравнимый с удалением зуба — снимается ибупрофеном. Сильная боль — редкость."}},{"@type":"Question","name":"Можно ли поставить все импланты за один день?","acceptedAnswer":{"@type":"Answer","text":"Да. При полной челюсти, например All-on-4, все импланты ставятся за один визит, часто с временным протезом в тот же день."}},{"@type":"Question","name":"Какова успешность дентальной имплантации?","acceptedAnswer":{"@type":"Answer","text":"Современные импланты дают 95–98% успеха через 10 лет у здоровых пациентов при правильном послеоперационном уходе."}},{"@type":"Question","name":"Импланты подходят всем?","acceptedAnswer":{"@type":"Answer","text":"Большинству взрослых — да. Пациентам с неконтролируемым диабетом, активным пародонтитом, заядлым курильщикам или при недостаточной плотности кости может потребоваться подготовка или альтернативный вариант."}},{"@type":"Question","name":"Импланты выглядят естественно?","acceptedAnswer":{"@type":"Answer","text":"Современные коронки практически неотличимы от собственных зубов. Сам имплант скрыт под десной."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/dental-implant-procedure-complete-guide#article","headline":"Имплантация зуба: полное пошаговое руководство","description":"Что именно происходит при имплантации зуба - от консультации и 3D-снимка до установки импланта, остеоинтеграции, абатмента и финальной коронки, со сроками и стоимостью.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/dental-implant-procedure-complete-guide","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/dental-implant-procedure.png"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/dental-implant-procedure-complete-guide"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Сколько занимает вся процедура имплантации от начала до конца?","acceptedAnswer":{"@type":"Answer","text":"Классическая имплантация занимает 4–9 месяцев от консультации до финальной коронки. При имплантации «за один день» временный зуб ставится за один визит, а финальная коронка - через 3–6 месяцев."}},{"@type":"Question","name":"Насколько больно при имплантации?","acceptedAnswer":{"@type":"Answer","text":"Большинство пациентов описывают дискомфорт в первые 1–2 дня как сравнимый с удалением зуба - снимается ибупрофеном. Сильная боль - редкость."}},{"@type":"Question","name":"Можно ли поставить все импланты за один день?","acceptedAnswer":{"@type":"Answer","text":"Да. При полной челюсти, например All-on-4, все импланты ставятся за один визит, часто с временным протезом в тот же день."}},{"@type":"Question","name":"Какова успешность дентальной имплантации?","acceptedAnswer":{"@type":"Answer","text":"Современные импланты дают 95–98% успеха через 10 лет у здоровых пациентов при правильном послеоперационном уходе."}},{"@type":"Question","name":"Импланты подходят всем?","acceptedAnswer":{"@type":"Answer","text":"Большинству взрослых - да. Пациентам с неконтролируемым диабетом, активным пародонтитом, заядлым курильщикам или при недостаточной плотности кости может потребоваться подготовка или альтернативный вариант."}},{"@type":"Question","name":"Импланты выглядят естественно?","acceptedAnswer":{"@type":"Answer","text":"Современные коронки практически неотличимы от собственных зубов. Сам имплант скрыт под десной."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -92,13 +92,13 @@ export default function DentalImplantProcedureGuidePost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
+              Медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
               <Image
                 src="/images/blog/2026-06-19/dental-implant-procedure.png"
-                alt="Пошаговая процедура имплантации зуба — от консультации до финальной коронки"
+                alt="Пошаговая процедура имплантации зуба - от консультации до финальной коронки"
                 fill
                 className="object-cover"
                 priority
@@ -109,10 +109,10 @@ export default function DentalImplantProcedureGuidePost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Имплантация зуба — это замещение отсутствующего зуба титановым или циркониевым штифтом,
+                Имплантация зуба - это замещение отсутствующего зуба титановым или циркониевым штифтом,
                 который срастается с челюстной костью и держит постоянную коронку, мост или полную челюсть.
-                Это современный стандарт замещения зубов — выглядит, ощущается и работает как ваш родной зуб.
-                Большинство пациентов отмечают, что процедура оказалась проще, чем они ожидали. Ниже — что
+                Это современный стандарт замещения зубов - выглядит, ощущается и работает как ваш родной зуб.
+                Большинство пациентов отмечают, что процедура оказалась проще, чем они ожидали. Ниже - что
                 именно происходит, шаг за шагом.
               </p>
 
@@ -184,7 +184,7 @@ export default function DentalImplantProcedureGuidePost() {
                 Шаг 1: Консультация
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                До любой операции — полноценное обследование:
+                До любой операции - полноценное обследование:
               </p>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
                 <li>&mdash; Сбор медицинского и стоматологического анамнеза.</li>
@@ -204,7 +204,7 @@ export default function DentalImplantProcedureGuidePost() {
                 Шаг 2: Подготовка (если нужна)
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Подготовка нужна не каждому. Иногда — нужна.
+                Подготовка нужна не каждому. Иногда - нужна.
               </p>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
                 <li>
@@ -254,7 +254,7 @@ export default function DentalImplantProcedureGuidePost() {
                 45&ndash;90 минут. Полная челюсть All-on-4 &mdash; 2&ndash;4 часа на дугу.
               </p>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Что вы чувствуете: под седацией — ничего, в сознании — давление, но не боль. Сразу после
+                Что вы чувствуете: под седацией - ничего, в сознании - давление, но не боль. Сразу после
                 операции онемение постепенно сменяется управляемым дискомфортом. День 1&ndash;2 &mdash;
                 ощущения, как после удаления зуба, с быстрым улучшением с 3-го дня. Большинство пациентов
                 возвращаются к офисной работе через 1&ndash;2 дня.
@@ -461,10 +461,10 @@ export default function DentalImplantProcedureGuidePost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Процедура имплантации зубов</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy — Импланты, обзор</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/gum-disease" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Заболевания дёсен (пародонтит)</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/29086438/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Howe MS et al. — Долгосрочная (10-летняя) выживаемость дентальных имплантов: систематический обзор</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Процедура имплантации зубов</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy - Импланты, обзор</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/gum-disease" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR - Заболевания дёсен (пародонтит)</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/29086438/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Howe MS et al. - Долгосрочная (10-летняя) выживаемость дентальных имплантов: систематический обзор</a></li>
               </ul>
             </section>
 

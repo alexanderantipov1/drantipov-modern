@@ -9,7 +9,7 @@ import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
-  title: "Oral Health & Systemic Disease — The Link",
+  title: "Oral Health & Systemic Disease - The Link",
   description:
     "Discover the hidden connection between oral health and systemic diseases including cancer, cardiovascular disease, and diabetes. Learn prevention strategies.",
   alternates: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Oral Health & Systemic Disease",
-    description: "The link between oral bacteria and systemic diseases — cancer, cardiovascular disease, diabetes.",
+    description: "The link between oral bacteria and systemic diseases - cancer, cardiovascular disease, diabetes.",
     images: [
       {
         url: "/images/blog/2024-08-08/poor-oral-health-733c21c2.jpg",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Oral Health & Systemic Disease",
-    description: "The link between oral bacteria and systemic diseases — cancer, cardiovascular disease, diabetes.",
+    description: "The link between oral bacteria and systemic diseases - cancer, cardiovascular disease, diabetes.",
     images: ["/images/blog/2024-08-08/poor-oral-health-733c21c2.jpg"],
   }
 }
@@ -97,7 +97,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> - Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -294,7 +294,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">Conclusion</h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Your oral health is a window into your overall health. By maintaining good oral hygiene and seeking
-                regular dental care, you're not just protecting your smile—you're safeguarding your entire body against
+                regular dental care, you're not just protecting your smile-you're safeguarding your entire body against
                 serious diseases. Don't wait until problems arise; take proactive steps today to ensure a healthier
                 tomorrow.
               </p>
@@ -305,10 +305,10 @@ export default function PoorOralHealthSystemicDiseasesPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
               <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.cdc.gov/oral-health/about/index.html" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">CDC — Oral Health and Chronic Disease</a></li>
-                <li><a href="https://www.nidcr.nih.gov/research/data-statistics/dental-caries" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH NIDCR — Oral & Systemic Health Connection</a></li>
-                <li><a href="https://www.ahajournals.org/doi/10.1161/CIR.0b013e31825719f3" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Periodontal disease and cardiovascular disease — AHA statement</a></li>
-                <li><a href="https://www.mouthhealthy.org/life-stages/adults-over-60/oral-health-and-overall-health" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy — Oral Health and Overall Health</a></li>
+                <li><a href="https://www.cdc.gov/oral-health/about/index.html" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">CDC - Oral Health and Chronic Disease</a></li>
+                <li><a href="https://www.nidcr.nih.gov/research/data-statistics/dental-caries" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH NIDCR - Oral & Systemic Health Connection</a></li>
+                <li><a href="https://www.ahajournals.org/doi/10.1161/CIR.0b013e31825719f3" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Periodontal disease and cardiovascular disease - AHA statement</a></li>
+                <li><a href="https://www.mouthhealthy.org/life-stages/adults-over-60/oral-health-and-overall-health" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy - Oral Health and Overall Health</a></li>
               </ul>
             </section>
 

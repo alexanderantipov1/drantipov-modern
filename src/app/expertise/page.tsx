@@ -13,7 +13,7 @@ import { siteConfig } from "@/constants/siteConfig"
 
 export const metadata = {
   title: { absolute: "Oral Surgery Services & Procedures | Dr. Antipov" },
-  description: "Full-arch implants, jaw surgery, sleep apnea, bone grafting, single-tooth implants, mole removal — advanced oral surgery in Roseville, CA.",
+  description: "Full-arch implants, jaw surgery, sleep apnea, bone grafting, single-tooth implants, mole removal - advanced oral surgery in Roseville, CA.",
   alternates: {
     canonical: "/expertise",
     languages: {
@@ -23,7 +23,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Oral Surgery Services & Procedures",
-    description: "Full scope of board-certified oral & maxillofacial surgery — implants, jaw surgery, sleep apnea, bone grafting.",
+    description: "Full scope of board-certified oral & maxillofacial surgery - implants, jaw surgery, sleep apnea, bone grafting.",
     images: [
       {
         url: "/images/procedures/dental-implants@2x-06d1b2ea.jpg",
@@ -36,7 +36,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Oral Surgery Services & Procedures",
-    description: "Full scope of board-certified oral & maxillofacial surgery — implants, jaw surgery, sleep apnea, bone grafting.",
+    description: "Full scope of board-certified oral & maxillofacial surgery - implants, jaw surgery, sleep apnea, bone grafting.",
     images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
   }
 }
@@ -51,7 +51,7 @@ export default function ExpertisePage() {
       "@context": "https://schema.org",
       "@type": "ItemList",
       name: "Oral Surgery Services & Procedures",
-      description: "Complete list of oral & maxillofacial surgery procedures performed by Dr. Antipov in Roseville, CA — including full-arch implants, bone grafting, jaw surgery, sleep apnea treatment, single-tooth implants, mole removal, TMJ, and wisdom teeth.",
+      description: "Complete list of oral & maxillofacial surgery procedures performed by Dr. Antipov in Roseville, CA - including full-arch implants, bone grafting, jaw surgery, sleep apnea treatment, single-tooth implants, mole removal, TMJ, and wisdom teeth.",
       url: `${siteConfig.url}/expertise`,
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Full-Arch Dental Implants (All-on-4 / All-on-6)", url: `${siteConfig.url}/expertise/full-arch-implants` },
@@ -80,7 +80,7 @@ export default function ExpertisePage() {
       />
       <PageHero {...heroContent["/expertise"]!} />
 
-      {/* About Dr. Antipov — biography block */}
+      {/* About Dr. Antipov - biography block */}
       <Section background="default" padding="xl">
         <Container size="lg">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const advantages = [
   {
-    title: "Same-Day Teeth — Walk Out Smiling",
+    title: "Same-Day Teeth - Walk Out Smiling",
     description:
       "Using the All-on-4 and All-on-6 immediate-loading protocols, Dr. Antipov places dental implants and attaches a full set of temporary teeth in a single visit. You arrive with missing or failing teeth and leave the same day with a complete, natural-looking smile. No waiting months without teeth.",
     icon: (
@@ -27,7 +27,7 @@ const advantages = [
   {
     title: "Complete Care Under One Roof",
     description:
-      "3D cone beam CT imaging, fully equipped surgical suites, IV sedation, bone grafting, implant placement, and prosthetic restoration — all performed at our single Roseville location. No referrals, no bouncing between specialists. Your entire treatment journey from consultation to final teeth happens right here.",
+      "3D cone beam CT imaging, fully equipped surgical suites, IV sedation, bone grafting, implant placement, and prosthetic restoration - all performed at our single Roseville location. No referrals, no bouncing between specialists. Your entire treatment journey from consultation to final teeth happens right here.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 0H21" />
@@ -47,7 +47,7 @@ const advantages = [
   {
     title: "Organic & Holistic Bone Grafting",
     description:
-      "For patients who prefer a natural approach, Dr. Antipov offers organic and holistic bone grafting options using minimally processed, naturally derived materials. From autogenous bone grafts to biocompatible allograft and xenograft materials, we match the bone regeneration technique to your body and your values — without compromising clinical outcomes.",
+      "For patients who prefer a natural approach, Dr. Antipov offers organic and holistic bone grafting options using minimally processed, naturally derived materials. From autogenous bone grafts to biocompatible allograft and xenograft materials, we match the bone regeneration technique to your body and your values - without compromising clinical outcomes.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
@@ -57,7 +57,7 @@ const advantages = [
   {
     title: "Comfortable IV Sedation & Anesthesia",
     description:
-      "Every surgical procedure is performed under monitored IV sedation or general anesthesia administered by trained professionals in our fully equipped surgical suites. You remain comfortable and relaxed throughout — most patients remember nothing at all. We prioritize your comfort and safety at every step of the process.",
+      "Every surgical procedure is performed under monitored IV sedation or general anesthesia administered by trained professionals in our fully equipped surgical suites. You remain comfortable and relaxed throughout - most patients remember nothing at all. We prioritize your comfort and safety at every step of the process.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
@@ -65,7 +65,7 @@ const advantages = [
     ),
   },
   {
-    title: "Flexible Financing — Starting at $99/Month",
+    title: "Flexible Financing - Starting at $99/Month",
     description:
       "We believe everyone deserves access to life-changing dental care. Our practice offers flexible financing through multiple lending partners with options starting at $99/month. We accept all major insurance plans, PPO dental insurance, CareCredit, and offer interest-free payment plans to make dental implants, jaw surgery, and cosmetic procedures affordable.",
     icon: (
@@ -75,7 +75,7 @@ const advantages = [
     ),
   },
   {
-    title: "Lifetime Results — Built to Last",
+    title: "Lifetime Results - Built to Last",
     description:
       "Unlike bridges and dentures that need replacement every 5-10 years, titanium dental implants integrate permanently with your jawbone through osseointegration and are designed to last a lifetime. Our premium zirconia prosthetics are virtually indestructible, stain-resistant, and backed by a comprehensive warranty for lasting peace of mind.",
     icon: (
@@ -148,7 +148,7 @@ export default function Results() {
               <div key={i} className="relative aspect-[4/3] overflow-hidden rounded-2xl">
                 <Image
                   src={src}
-                  alt={`Dental implant patient results — same-day teeth, full arch restoration — Dr. Antipov, Roseville CA — Photo ${i + 1}`}
+                  alt={`Dental implant patient results - same-day teeth, full arch restoration - Dr. Antipov, Roseville CA - Photo ${i + 1}`}
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
                   sizes="(min-width: 1280px) 426px, 33vw"

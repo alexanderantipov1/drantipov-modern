@@ -76,10 +76,10 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          <Link href={isRu ? "/ru" : "/"} onClick={handleLogoClick} className="flex items-center gap-3 group" aria-label={isRu ? "Доктор Антипов — Главная" : "Dr. Antipov — Home"}>
+          <Link href={isRu ? "/ru" : "/"} onClick={handleLogoClick} className="flex items-center gap-3 group" aria-label={isRu ? "Доктор Антипов - Главная" : "Dr. Antipov - Home"}>
             <Image
               src="/images/logo-d10cd66c.svg"
-              alt="Dr. Alexander Antipov, DDS — Oral and Maxillofacial Surgeon"
+              alt="Dr. Alexander Antipov, DDS - Oral and Maxillofacial Surgeon"
               width={220}
               height={72}
               className="h-14 w-auto transition-transform duration-300 group-hover:scale-105"
@@ -91,7 +91,7 @@ export default function Navbar() {
             className="hidden lg:flex items-center gap-1"
             onMouseLeave={() => setMegaOpen(false)}
           >
-            {/* About / О нас — first */}
+            {/* About / О нас - first */}
             <a
               href={currentNavLinks[0]?.href ?? "/about"}
               className="px-3 py-2 rounded-full text-sm font-medium transition-all duration-300 text-dark hover:text-primary hover:bg-primary/10"

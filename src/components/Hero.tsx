@@ -22,12 +22,12 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* VideoObject schema for hero.mp4 — eligible for video rich snippet in Google */}
+      {/* VideoObject schema for hero.mp4 - eligible for video rich snippet in Google */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={structuredDataScript(
           getVideoSchema({
-            name: "Full-Arch Dental Implant Surgery — Workflow with Dr. Alexander Antipov, DDS",
+            name: "Full-Arch Dental Implant Surgery - Workflow with Dr. Alexander Antipov, DDS",
             description: "Same-day All-on-4 / All-on-6 dental implant surgical workflow including digital planning, 3D scanning, and immediate-load placement performed by Dr. Antipov in Roseville, CA.",
             thumbnailUrl: `${siteConfig.url}/videos/hero-poster.jpg`,
             uploadDate: "2026-06-14",
@@ -57,7 +57,7 @@ export default function Hero() {
         {/* Mobile: doctor portrait (face above the fold, higher trust signal) */}
         <Image
           src="/images/dr-antipov-scrubs-our-team.jpg"
-          alt="Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
+          alt="Dr. Alexander Antipov, DDS - Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
           fill
           className="object-cover object-top lg:hidden"
           priority
@@ -70,10 +70,10 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent" />
       </div>
 
-      {/* Decorative element (left side only — kept clear behind the doctor) */}
+      {/* Decorative element (left side only - kept clear behind the doctor) */}
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
 
-      {/* Subtle fade to white at very bottom — softens edge between video and white About */}
+      {/* Subtle fade to white at very bottom - softens edge between video and white About */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white/30 pointer-events-none z-[5]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20 w-full">
@@ -100,7 +100,7 @@ export default function Hero() {
               className="hero-fade-up mt-6 text-lg text-white/80 max-w-xl leading-relaxed"
               style={{ animationDelay: "0.2s" }}
             >
-              Dr. Alexander Antipov is <strong className="text-white">one of the world&rsquo;s leading dental implant surgeons</strong>, performing <strong className="text-white">more full-arch cases than nearly any surgeon in the field</strong>. From <strong className="text-white">All-on-4 and All-on-6 full arch restoration</strong> to <strong className="text-white">orthognathic jaw surgery</strong> and <strong className="text-white">facial cosmetics</strong> — backed by 25+ years of board-certified expertise.
+              Dr. Alexander Antipov is <strong className="text-white">one of the world&rsquo;s leading dental implant surgeons</strong>, performing <strong className="text-white">more full-arch cases than nearly any surgeon in the field</strong>. From <strong className="text-white">All-on-4 and All-on-6 full arch restoration</strong> to <strong className="text-white">orthognathic jaw surgery</strong> and <strong className="text-white">facial cosmetics</strong> - backed by 25+ years of board-certified expertise.
             </p>
 
             {/* Signature */}
@@ -157,20 +157,20 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: Dr. Antipov Portrait — mirrors Russian site layout, bg color matches site */}
+          {/* Right: Dr. Antipov Portrait - mirrors Russian site layout, bg color matches site */}
           <div
             className="hero-zoom-in hidden lg:block lg:absolute lg:right-0 lg:bottom-0 lg:w-[660px] lg:translate-y-[5%] lg:z-10"
             style={{ animationDelay: "0.3s" }}
           >
             <div className="relative">
               {/*
-                Cutout portrait (transparent background) — doctor stands free
+                Cutout portrait (transparent background) - doctor stands free
                 directly over the looping background video. drop-shadow grounds
                 him visually without a card frame.
               */}
               <Image
                 src="/images/drantipov-hero-cutout-clean.png"
-                alt="Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
+                alt="Dr. Alexander Antipov, DDS - Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
                 width={2679}
                 height={3755}
                 quality={92}
@@ -178,7 +178,7 @@ export default function Hero() {
                 className="w-full h-auto drop-shadow-2xl"
               />
 
-              {/* Credential caption — overlay at bottom of photo, photo position unchanged */}
+              {/* Credential caption - overlay at bottom of photo, photo position unchanged */}
               <div className="absolute bottom-0 left-0 right-0 pt-20 pb-6 px-6 text-center bg-gradient-to-t from-black/90 via-black/60 to-transparent">
                 <a
                   href="https://www.aboms.org"

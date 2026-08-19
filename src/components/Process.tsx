@@ -7,7 +7,7 @@ const steps = [
     number: "01",
     title: "Free Consultation & 3D CT Scan",
     description:
-      "Your journey starts with a complimentary consultation at our Roseville office. Dr. Antipov performs a thorough examination with a free 3D cone beam CT scan, discusses your goals, develops a personalized treatment plan for dental implants, jaw surgery, or cosmetic procedures, and reviews all financial options — at no cost to you.",
+      "Your journey starts with a complimentary consultation at our Roseville office. Dr. Antipov performs a thorough examination with a free 3D cone beam CT scan, discusses your goals, develops a personalized treatment plan for dental implants, jaw surgery, or cosmetic procedures, and reviews all financial options - at no cost to you.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -18,7 +18,7 @@ const steps = [
     number: "02",
     title: "Computer-Guided Surgery Day",
     description:
-      "On procedure day, Dr. Antipov uses 3D surgical guides and computer-assisted planning for precise execution. For dental implants, your All-on-4 or All-on-6 implants are placed and same-day temporary teeth attached — all under comfortable IV sedation. For jaw surgery, 3D virtual planning ensures millimeter-accurate repositioning.",
+      "On procedure day, Dr. Antipov uses 3D surgical guides and computer-assisted planning for precise execution. For dental implants, your All-on-4 or All-on-6 implants are placed and same-day temporary teeth attached - all under comfortable IV sedation. For jaw surgery, 3D virtual planning ensures millimeter-accurate repositioning.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
@@ -40,7 +40,7 @@ const steps = [
     number: "04",
     title: "Permanent Results for Life",
     description:
-      "Once healing is complete, your permanent prosthesis is placed — custom-crafted from premium zirconia or porcelain. These teeth look, feel, and function like natural teeth. Titanium dental implants are designed to last a lifetime with routine care, and jaw surgery results are permanent. Welcome to your new smile.",
+      "Once healing is complete, your permanent prosthesis is placed - custom-crafted from premium zirconia or porcelain. These teeth look, feel, and function like natural teeth. Titanium dental implants are designed to last a lifetime with routine care, and jaw surgery results are permanent. Welcome to your new smile.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
@@ -68,7 +68,7 @@ export default function Process() {
             <span className="gradient-text">Permanent Smile</span>
           </h2>
           <p className="mt-4 text-muted text-lg">
-            A clear, four-step path to the smile you deserve — starting with a complimentary consultation and 3D CT scan at our Roseville office. Whether you need dental implants, jaw surgery, or facial cosmetic procedures, every step is guided by Dr. Antipov&apos;s board-certified expertise and advanced technology.
+            A clear, four-step path to the smile you deserve - starting with a complimentary consultation and 3D CT scan at our Roseville office. Whether you need dental implants, jaw surgery, or facial cosmetic procedures, every step is guided by Dr. Antipov&apos;s board-certified expertise and advanced technology.
           </p>
         </motion.div>
 

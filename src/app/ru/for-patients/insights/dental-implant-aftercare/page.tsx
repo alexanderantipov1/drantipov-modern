@@ -9,7 +9,7 @@ import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
-  title: "Уход после имплантации — советы по восстановлению",
+  title: "Уход после имплантации - советы по восстановлению",
   description:
     "Подробный гид по уходу после установки дентальных имплантов: послеоперационные правила, гигиена рта, диета и сроки восстановления.",
   alternates: {
@@ -99,7 +99,7 @@ export default function DentalImplantAftercarePost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
+              Медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -130,8 +130,8 @@ export default function DentalImplantAftercarePost() {
               </GlassCard>
 
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Поздравляем — вы сделали первый шаг к восстановлению улыбки с помощью дентальных имплантов!
-                Операция позади, и теперь самое важное — правильный уход для надёжного заживления и
+                Поздравляем - вы сделали первый шаг к восстановлению улыбки с помощью дентальных имплантов!
+                Операция позади, и теперь самое важное - правильный уход для надёжного заживления и
                 долгосрочного успеха. Перед вами полное руководство по послеоперационному уходу.
               </p>
 
@@ -211,7 +211,7 @@ export default function DentalImplantAftercarePost() {
                       <ul className="space-y-2 ml-6">
                         <li className="text-neutral-700">
                           <strong>Курение:</strong> снижает кровоток, повышает риск инфекции и резко уменьшает
-                          процент успеха имплантации. Не курите минимум 2 недели, в идеале — отказаться навсегда.
+                          процент успеха имплантации. Не курите минимум 2 недели, в идеале - отказаться навсегда.
                         </li>
                         <li className="text-neutral-700">
                           <strong>Алкоголь:</strong> может конфликтовать с лекарствами и задерживать заживление.
@@ -238,7 +238,7 @@ export default function DentalImplantAftercarePost() {
                           <ul className="space-y-1 ml-6">
                             <li className="text-neutral-700">• Только холодные жидкости и мягкая пища</li>
                             <li className="text-neutral-700">• Смузи, йогурт, пудинг, мороженое</li>
-                            <li className="text-neutral-700">• Никакой горячей еды и напитков — могут усилить кровотечение</li>
+                            <li className="text-neutral-700">• Никакой горячей еды и напитков - могут усилить кровотечение</li>
                             <li className="text-neutral-700">• Не пейте через трубочку (вакуум может сорвать сгусток)</li>
                           </ul>
                         </div>
@@ -389,7 +389,7 @@ export default function DentalImplantAftercarePost() {
                 <GlassCard className="p-6 bg-blue-50">
                   <h4 className="font-semibold text-neutral-900 mb-2">Первые 24 часа:</h4>
                   <p className="text-neutral-700">
-                    Небольшое кровотечение, отёк и дискомфорт — это нормально. Холодные компрессы и отдых.
+                    Небольшое кровотечение, отёк и дискомфорт - это нормально. Холодные компрессы и отдых.
                   </p>
                 </GlassCard>
                 <GlassCard className="p-6 bg-blue-50">
@@ -431,7 +431,7 @@ export default function DentalImplantAftercarePost() {
                 </p>
                 <p className="text-neutral-700 leading-relaxed">
                   Наша команда поддержит вас на протяжении всего восстановления. Звоните с любыми вопросами
-                  или сомнениями — в любое время.
+                  или сомнениями - в любое время.
                 </p>
               </GlassCard>
             </div>
@@ -441,9 +441,9 @@ export default function DentalImplantAftercarePost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Инструкции после установки имплантов</a></li>
-                <li><a href="https://www.cochrane.org/CD012677/ORAL_interventions-replacing-missing-teeth-treatment-peri-implantitis" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Cochrane Oral Health — Поддержка имплантов</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy — Уход за имплантами</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Инструкции после установки имплантов</a></li>
+                <li><a href="https://www.cochrane.org/CD012677/ORAL_interventions-replacing-missing-teeth-treatment-peri-implantitis" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Cochrane Oral Health - Поддержка имплантов</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA Mouth Healthy - Уход за имплантами</a></li>
               </ul>
             </section>
 

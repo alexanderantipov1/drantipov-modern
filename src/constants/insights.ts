@@ -3,7 +3,7 @@
  *
  * Single source of truth for the insights hub (/for-patients/insights) and the
  * <RelatedArticles /> cross-linking section rendered at the bottom of each
- * article. Keep the order intentional — it drives the hub listing.
+ * article. Keep the order intentional - it drives the hub listing.
  */
 import { revisionArticles } from "@/constants/revisionArticles"
 import { guideArticles } from "@/constants/guideArticles"
@@ -24,7 +24,7 @@ const baseInsightPosts: InsightPost[] = [
     slug: "how-to-fix-an-overbite-treatment-options-and-cost",
     title: "How to Fix an Overbite: Treatment Options, Surgery & Cost",
     excerpt:
-      "How do you fix an overbite? Every option — clear aligners, braces, and corrective jaw surgery — for adults and children, with realistic timelines and cost.",
+      "How do you fix an overbite? Every option - clear aligners, braces, and corrective jaw surgery - for adults and children, with realistic timelines and cost.",
     date: "June 22, 2026",
     image: "/images/blog/2026-06-22/how-to-fix-an-overbite.png",
     category: "Jaw Surgery",
@@ -35,7 +35,7 @@ const baseInsightPosts: InsightPost[] = [
     slug: "can-you-fix-an-overbite-naturally",
     title: "Can You Fix an Overbite Naturally? What Really Works",
     excerpt:
-      "Can you fix an overbite naturally? What works, the myths to avoid, and why an established overbite — especially in adults — is corrected with aligners, braces, or surgery.",
+      "Can you fix an overbite naturally? What works, the myths to avoid, and why an established overbite - especially in adults - is corrected with aligners, braces, or surgery.",
     date: "June 22, 2026",
     image: "/images/blog/2026-06-22/fix-overbite-naturally.png",
     category: "Jaw Surgery",
@@ -46,7 +46,7 @@ const baseInsightPosts: InsightPost[] = [
     slug: "dental-implant-procedure-complete-guide",
     title: "Dental Implant Procedure: Complete Step-by-Step Guide",
     excerpt:
-      "Everything that happens during a dental implant procedure — from consultation and 3D scan through osseointegration, abutment, and final crown — with realistic timelines, pain expectations, and cost ranges.",
+      "Everything that happens during a dental implant procedure - from consultation and 3D scan through osseointegration, abutment, and final crown - with realistic timelines, pain expectations, and cost ranges.",
     date: "June 19, 2026",
     image: "/images/blog/2026-06-19/dental-implant-procedure.png",
     category: "Dental Implants",
@@ -79,7 +79,7 @@ const baseInsightPosts: InsightPost[] = [
     slug: "zygomatic-implants-vs-bone-grafting-for-severe-bone-loss",
     title: "Zygomatic Implants vs Bone Grafting for Severe Bone Loss",
     excerpt:
-      "For severe upper-jaw bone loss, compare zygomatic implants and staged bone grafting on timeline, recovery, cost, and candidacy — so you understand which path fits your anatomy.",
+      "For severe upper-jaw bone loss, compare zygomatic implants and staged bone grafting on timeline, recovery, cost, and candidacy - so you understand which path fits your anatomy.",
     date: "June 19, 2026",
     image: "/images/blog/2026-06-19/zygomatic-vs-grafting.png",
     category: "Dental Implants",
@@ -101,7 +101,7 @@ const baseInsightPosts: InsightPost[] = [
     slug: "dental-implants-after-tooth-extraction-timing-healing-and-options",
     title: "Dental Implants After Tooth Extraction: Timing, Healing, and Options",
     excerpt:
-      "Immediate, early, or delayed placement after an extraction — how timing affects bone preservation, the healing steps involved, and when same-day implants help prevent bone loss.",
+      "Immediate, early, or delayed placement after an extraction - how timing affects bone preservation, the healing steps involved, and when same-day implants help prevent bone loss.",
     date: "June 19, 2026",
     image: "/images/blog/2026-06-19/implants-after-extraction.png",
     category: "Dental Implants",
@@ -112,7 +112,7 @@ const baseInsightPosts: InsightPost[] = [
     slug: "guided-dental-implant-surgery-how-3d-planning-improves-accuracy",
     title: "Guided Dental Implant Surgery: How 3D Planning Improves Accuracy",
     excerpt:
-      "How 3D CBCT scans and custom surgical guides translate digital planning into precise, predictable implant placement — and what that accuracy means for safety and outcomes.",
+      "How 3D CBCT scans and custom surgical guides translate digital planning into precise, predictable implant placement - and what that accuracy means for safety and outcomes.",
     date: "June 19, 2026",
     image: "/images/blog/2026-06-19/guided-implant-surgery.png",
     category: "Dental Implants",
@@ -123,7 +123,7 @@ const baseInsightPosts: InsightPost[] = [
     slug: "sedation-options-dental-implant-surgery",
     title: "Sedation Options for Dental Implant Surgery Explained",
     excerpt:
-      "Local anesthesia, oral sedation, IV sedation, and general anesthesia compared — how each feels, what they are best suited for, and how to choose the right comfort level for your procedure.",
+      "Local anesthesia, oral sedation, IV sedation, and general anesthesia compared - how each feels, what they are best suited for, and how to choose the right comfort level for your procedure.",
     date: "June 19, 2026",
     image: "/images/blog/2026-06-19/sedation-options.png",
     category: "Oral Surgery",
@@ -156,7 +156,7 @@ const baseInsightPosts: InsightPost[] = [
     slug: "full-mouth-dental-implants-cost-process",
     title: "Full Mouth Dental Implants in Roseville & Sacramento: Cost, Process, and What to Expect",
     excerpt:
-      "A complete guide to full mouth dental implants in the Sacramento region — All-on-4, the step-by-step process, honest cost ranges, candidacy, and what separates a lasting result from a failure.",
+      "A complete guide to full mouth dental implants in the Sacramento region - All-on-4, the step-by-step process, honest cost ranges, candidacy, and what separates a lasting result from a failure.",
     date: "June 19, 2026",
     image: "/images/blog/2026-06-19/full-mouth-dental-implants.png",
     category: "Dental Implants",
@@ -167,7 +167,7 @@ const baseInsightPosts: InsightPost[] = [
     slug: "all-on-4-vs-all-on-6",
     title: "All-on-4 vs All-on-6: Which Is Better?",
     excerpt:
-      "Implant count, bone density needs, cost, recovery time, and stability compared — so you can understand which full-arch approach actually fits your anatomy and goals.",
+      "Implant count, bone density needs, cost, recovery time, and stability compared - so you can understand which full-arch approach actually fits your anatomy and goals.",
     date: "June 19, 2026",
     image: "/images/blog/2026-06-19/all-on-4-vs-all-on-6.png",
     category: "Dental Implants",
@@ -220,7 +220,7 @@ const baseInsightPosts: InsightPost[] = [
   },
   {
     slug: "same-day-implants",
-    title: "Same-Day Dental Implants (Immediate Load) — Myth or Reality?",
+    title: "Same-Day Dental Implants (Immediate Load) - Myth or Reality?",
     excerpt:
       "“Same-day implants” and “teeth in a day” are advertising lines every patient sees. Here is what you actually get the day of surgery, why the final prosthesis comes 4–6 months later, who qualifies for immediate loading, and what an honest surgeon will tell you about the risks.",
     date: "April 28, 2026",

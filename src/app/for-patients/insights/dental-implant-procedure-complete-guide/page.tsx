@@ -9,7 +9,7 @@ import { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Dental Implant Procedure: Step-by-Step Guide",
   description:
-    "A complete step-by-step guide to the dental implant procedure — from consultation and 3D scan through implant placement, osseointegration, and the final crown, with timeline and cost.",
+    "A complete step-by-step guide to the dental implant procedure - from consultation and 3D scan through implant placement, osseointegration, and the final crown, with timeline and cost.",
   alternates: {
     canonical: "/for-patients/insights/dental-implant-procedure-complete-guide",
     languages: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Dental Implant Procedure: Step-by-Step Guide",
-    description: "Everything that happens during a dental implant procedure — from consultation through final crown.",
+    description: "Everything that happens during a dental implant procedure - from consultation through final crown.",
     images: [
       {
         url: "/images/blog/2026-06-19/dental-implant-procedure.png",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Dental Implant Procedure: Step-by-Step Guide",
-    description: "Everything that happens during a dental implant procedure — from consultation through final crown.",
+    description: "Everything that happens during a dental implant procedure - from consultation through final crown.",
     images: ["/images/blog/2026-06-19/dental-implant-procedure.png"],
   }
 }
@@ -90,7 +90,7 @@ export default function DentalImplantProcedureGuidePost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> - Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -458,10 +458,10 @@ export default function DentalImplantProcedureGuidePost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
               <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Dental Implant Surgery</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy — Implants Overview</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/gum-disease" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Periodontal (Gum) Disease</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/29086438/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Howe MS et al. — Long-term (10-year) dental implant survival: A systematic review</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Dental Implant Surgery</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy - Implants Overview</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/gum-disease" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR - Periodontal (Gum) Disease</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/29086438/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Howe MS et al. - Long-term (10-year) dental implant survival: A systematic review</a></li>
               </ul>
             </section>
 

@@ -78,7 +78,7 @@ const faqs = [
     questions: [
       {
         q: "Does Dr. Antipov offer free consultations?",
-        a: "Yes. Every new patient receives a complimentary consultation that includes a 3D cone beam CT scan, thorough examination, personalized treatment plan, and discussion of all financial options — entirely free with no obligation. Virtual video consultations are also available for out-of-town patients.",
+        a: "Yes. Every new patient receives a complimentary consultation that includes a 3D cone beam CT scan, thorough examination, personalized treatment plan, and discussion of all financial options - entirely free with no obligation. Virtual video consultations are also available for out-of-town patients.",
       },
       {
         q: "What areas does Dr. Antipov serve?",
@@ -187,7 +187,7 @@ export default function FAQ() {
             <button
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-white rounded-2xl font-semibold hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 cursor-pointer"
             >
-              Ask Dr. Antipov — Free Consultation
+              Ask Dr. Antipov - Free Consultation
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

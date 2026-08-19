@@ -80,7 +80,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
     title: "Class II Occlusion Anomaly Corrective Jaw Surgery",
     category: "corrective-jaw-surgery",
     imagePath: "/images/cases/corrective-jaw-surgery/oms000050/1/preview-90866192.jpg",
-    description: "Asymmetric Class II skeletal deformity with functional and aesthetic compromise. Three-jaw surgery — Le Fort I osteotomy, BSSO, and genioplasty — performed in a single anesthesia session. Patient regained full chewing function and improved facial harmony with no relapse at 18-month follow-up.",
+    description: "Asymmetric Class II skeletal deformity with functional and aesthetic compromise. Three-jaw surgery - Le Fort I osteotomy, BSSO, and genioplasty - performed in a single anesthesia session. Patient regained full chewing function and improved facial harmony with no relapse at 18-month follow-up.",
     diagnosis: [
       "Asymmetric deformity of maxilla and mandible",
       "Class II skeletal malocclusion",
@@ -351,7 +351,7 @@ export const facialCosmeticSurgeryCases: SurgicalCase[] = [
     title: "Neck Scarless Mole Removal",
     category: "facial-cosmetic-surgery",
     imagePath: "/images/cases/facial-cosmetic-surgery/fcs000002/1/preview-9ec3a32a.jpg",
-    description: "Patient sought removal of a benign nasal mole that had become bothersome. Radio-wave surgical technique (Ellman®) — bloodless, minimal tissue damage, no sutures required. Healed without visible scar in 2 weeks. Cosmetic result excellent.",
+    description: "Patient sought removal of a benign nasal mole that had become bothersome. Radio-wave surgical technique (Ellman®) - bloodless, minimal tissue damage, no sutures required. Healed without visible scar in 2 weeks. Cosmetic result excellent.",
     procedures: ["Radio wave surgery (Ellman technique)", "Scarless mole removal"],
     date: "October 7, 2014",
     surgeon: "Dr. Alexander V. Antipov"
@@ -380,7 +380,7 @@ export const caseCategories = [
   {
     id: "corrective-jaw-surgery",
     title: "Corrective Jaw Surgery",
-    description: "Orthognathic surgery — Le Fort I, BSSO, genioplasty — for malocclusion and facial asymmetry correction.",
+    description: "Orthognathic surgery - Le Fort I, BSSO, genioplasty - for malocclusion and facial asymmetry correction.",
     count: correctiveJawSurgeryCases.length,
     icon: "jaw",
   },

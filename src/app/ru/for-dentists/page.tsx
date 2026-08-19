@@ -10,7 +10,7 @@ import MicrosoftClarity from "@/components/MicrosoftClarity";
 import { siteUrl, officePhone, officePhoneHref, officeEmail } from "@/data/russianImplantFunnel";
 
 export const metadata: Metadata = {
-  title: "Стоматологам — направления и обучение | Доктор Антипов",
+  title: "Стоматологам - направления и обучение | Доктор Антипов",
   description:
     "Сотрудничество со стоматологами: направления на сложные хирургические случаи, прозрачная коммуникация, обучающие материалы. Партнёрство с практикой доктора Антипова.",
   alternates: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Стоматологам — направления и сотрудничество",
+    title: "Стоматологам - направления и сотрудничество",
     description: "Партнёрство со стоматологическими практиками. Прозрачная коммуникация, направления, образование. Доктор Антипов, Roseville CA.",
     url: "https://drantipov.com/ru/for-dentists",
     locale: "ru_RU",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: "/images/landing-pages/dental-implants/art/meet-the-doctor-76c0424d.jpg",
         width: 1920,
         height: 1080,
-        alt: "Стоматологам — направления и сотрудничество",
+        alt: "Стоматологам - направления и сотрудничество",
       },
     ],
   },
@@ -48,10 +48,10 @@ const services = [
 ];
 
 const whyRefer = [
-  { title: "Прозрачная коммуникация", description: "Подробные послеоперационные отчёты в течение 24 часов — с фото и рекомендациями для протезного этапа." },
+  { title: "Прозрачная коммуникация", description: "Подробные послеоперационные отчёты в течение 24 часов - с фото и рекомендациями для протезного этапа." },
   { title: "Совместный подход", description: "Мы работаем как продолжение вашей практики, вовлекая вас на каждом этапе хирургического пути пациента." },
-  { title: "Современные технологии", description: "3D КТ (cone beam), цифровое планирование и навигационная хирургия с шаблонами — для предсказуемого результата." },
-  { title: "Внимание к пациенту", description: "Ваши пациенты получают такой же индивидуальный подход, как у вас — сохраняя стандарт качества вашей практики." },
+  { title: "Современные технологии", description: "3D КТ (cone beam), цифровое планирование и навигационная хирургия с шаблонами - для предсказуемого результата." },
+  { title: "Внимание к пациенту", description: "Ваши пациенты получают такой же индивидуальный подход, как у вас - сохраняя стандарт качества вашей практики." },
 ];
 
 export default function RussianForDentistsPage() {
@@ -75,7 +75,7 @@ export default function RussianForDentistsPage() {
             <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary-light">Для коллег</p>
             <h1 className="mt-4 font-serif text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">Партнёрство со стоматологами</h1>
             <p className="mt-6 max-w-2xl text-xl leading-relaxed text-white/85">
-              Направляйте ваших пациентов на сложные хирургические случаи — мы обеспечим качественную хирургию, прозрачную коммуникацию и возврат пациента в вашу практику для протезирования.
+              Направляйте ваших пациентов на сложные хирургические случаи - мы обеспечим качественную хирургию, прозрачную коммуникацию и возврат пациента в вашу практику для протезирования.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link href="/ru/for-dentists/refer-patients" className="rounded-2xl bg-primary px-7 py-4 text-base font-bold text-white transition hover:-translate-y-0.5 hover:bg-primary-dark">Направить пациента</Link>
@@ -120,7 +120,7 @@ export default function RussianForDentistsPage() {
         <section className="py-16">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-serif text-3xl font-bold tracking-tight text-dark sm:text-4xl mb-4">Связаться напрямую</h2>
-            <p className="text-lg text-muted mb-8">Для срочных вопросов или обсуждения случая — свяжитесь с нашей командой:</p>
+            <p className="text-lg text-muted mb-8">Для срочных вопросов или обсуждения случая - свяжитесь с нашей командой:</p>
             <div className="flex flex-wrap justify-center gap-4">
               <a href={officePhoneHref} className="rounded-2xl bg-primary px-7 py-4 text-base font-bold text-white transition hover:bg-primary-dark">{officePhone}</a>
               <a href={`mailto:${officeEmail}`} className="rounded-2xl border border-primary/30 px-7 py-4 text-base font-bold text-primary hover:bg-primary hover:text-white transition-colors">{officeEmail}</a>

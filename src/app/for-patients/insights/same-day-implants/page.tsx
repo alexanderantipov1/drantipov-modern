@@ -8,9 +8,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Same-Day Dental Implants — Myth or Reality?",
+  title: "Same-Day Dental Implants - Myth or Reality?",
   description:
-    "Same-day dental implants and immediate loading — who qualifies, what you get on surgery day, how the temporary differs from the final prosthesis, and the real risks.",
+    "Same-day dental implants and immediate loading - who qualifies, what you get on surgery day, how the temporary differs from the final prosthesis, and the real risks.",
   alternates: {
     canonical: "/for-patients/insights/same-day-implants",
     languages: {
@@ -27,21 +27,21 @@ export const metadata: Metadata = {
     "same day teeth Roseville",
   ],
   openGraph: {
-    title: "Same-Day Dental Implants — Myth or Reality?",
-    description: "Immediate-load dental implants explained — who qualifies, what you get on surgery day, and the real risks.",
+    title: "Same-Day Dental Implants - Myth or Reality?",
+    description: "Immediate-load dental implants explained - who qualifies, what you get on surgery day, and the real risks.",
     images: [
       {
         url: "/images/blog/2026-04-28/same-day-implants.jpg",
         width: 1200,
         height: 630,
-        alt: "Same-Day Dental Implants — Myth or Reality?",
+        alt: "Same-Day Dental Implants - Myth or Reality?",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Same-Day Dental Implants — Myth or Reality?",
-    description: "Immediate-load dental implants explained — who qualifies, what you get on surgery day, and the real risks.",
+    title: "Same-Day Dental Implants - Myth or Reality?",
+    description: "Immediate-load dental implants explained - who qualifies, what you get on surgery day, and the real risks.",
     images: ["/images/blog/2026-04-28/same-day-implants.jpg"],
   }
 }
@@ -93,13 +93,13 @@ export default function SameDayImplantsPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> — Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
+              Medically reviewed by <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> - Board-Certified Oral &amp; Maxillofacial Surgeon · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · California Dental License #50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
               <Image
                 src="/images/blog/2026-04-28/same-day-implants.jpg"
-                alt="Same-day dental implants — All-on-4 final result"
+                alt="Same-day dental implants - All-on-4 final result"
                 fill
                 className="object-cover"
                 priority
@@ -305,10 +305,10 @@ export default function SameDayImplantsPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Sources &amp; References</h2>
               <p className="text-sm text-neutral-600 mb-3">Peer-reviewed and authoritative references supporting the information in this article.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Dental Implant Surgery Procedure</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/23543541/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Esposito M, Grusovin MG et al. — Cochrane Review: Interventions for replacing missing teeth — different times for loading dental implants</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M — All-on-4 immediate-function concept with Brånemark System implants</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — National Institute of Dental and Craniofacial Research: Dental Implants</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Dental Implant Surgery Procedure</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/23543541/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Esposito M, Grusovin MG et al. - Cochrane Review: Interventions for replacing missing teeth - different times for loading dental implants</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M - All-on-4 immediate-function concept with Brånemark System implants</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH - National Institute of Dental and Craniofacial Research: Dental Implants</a></li>
               </ul>
             </section>
 

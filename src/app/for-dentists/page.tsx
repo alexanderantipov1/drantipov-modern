@@ -26,20 +26,20 @@ export const metadata: Metadata = {
     "surgical referral partner",
   ],
   openGraph: {
-    title: "For Dentists — Referrals & Education",
+    title: "For Dentists - Referrals & Education",
     description: "Refer patients, partner programs, and continuing education courses from Dr. Antipov's surgical practice.",
     images: [
       {
         url: "/images/procedures/dental-implants@2x-06d1b2ea.jpg",
         width: 1200,
         height: 630,
-        alt: "For Dentists — Referrals & Education",
+        alt: "For Dentists - Referrals & Education",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "For Dentists — Referrals & Education",
+    title: "For Dentists - Referrals & Education",
     description: "Refer patients, partner programs, and continuing education courses from Dr. Antipov's surgical practice.",
     images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
   }

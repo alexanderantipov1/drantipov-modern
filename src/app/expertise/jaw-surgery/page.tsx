@@ -52,7 +52,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Corrective Jaw Surgery (Orthognathic)",
-    description: "Orthognathic surgery — Le Fort, BSSO, genioplasty — for bite, asymmetry, and breathing correction.",
+    description: "Orthognathic surgery - Le Fort, BSSO, genioplasty - for bite, asymmetry, and breathing correction.",
     images: [
       {
         url: "/images/procedures/corrective-jaw-surgery@2x-0c58ba67.jpg",
@@ -65,7 +65,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Corrective Jaw Surgery (Orthognathic)",
-    description: "Orthognathic surgery — Le Fort, BSSO, genioplasty — for bite, asymmetry, and breathing correction.",
+    description: "Orthognathic surgery - Le Fort, BSSO, genioplasty - for bite, asymmetry, and breathing correction.",
     images: ["/images/procedures/corrective-jaw-surgery@2x-0c58ba67.jpg"],
   }
 }
@@ -302,9 +302,9 @@ export default function JawSurgeryPage() {
         </Container>
       </Section>
 
-      {/* Doctor Quote — personal touch */}
+      {/* Doctor Quote - personal touch */}
       <DoctorQuote
-        quote="Modern orthognathic surgery is not just about fixing a bite — it transforms how patients breathe, eat, sleep, and feel about their own face. That is why precision matters at every step."
+        quote="Modern orthognathic surgery is not just about fixing a bite - it transforms how patients breathe, eat, sleep, and feel about their own face. That is why precision matters at every step."
         author="Dr. Alexander Antipov, DDS"
         role="Board-Certified Oral & Maxillofacial Surgeon"
       />
@@ -452,7 +452,7 @@ export default function JawSurgeryPage() {
         subheading="Dr. Antipov performs orthognathic surgery at Galleria. Schedule a consultation to evaluate your bite and jaw alignment."
       />
 
-      {/* Floating sticky CTA — appears after 25% scroll */}
+      {/* Floating sticky CTA - appears after 25% scroll */}
       <FloatingArticleCTA
         href="/contact"
         label="Book free consultation"

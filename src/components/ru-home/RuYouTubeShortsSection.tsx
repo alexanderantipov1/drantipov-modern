@@ -5,17 +5,17 @@ import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import { useRef, useState } from "react";
 
 /**
- * RuYouTubeShortsSection — Russian mirror of YouTubeShortsSection.
- * "Жизни, которые изменили улыбки" — short educational videos by Dr. Antipov.
+ * RuYouTubeShortsSection - Russian mirror of YouTubeShortsSection.
+ * "Жизни, которые изменили улыбки" - short educational videos by Dr. Antipov.
  */
 const youtubeShorts = [
-  { id: "SeRKRyjpKaQ", title: "Имплантация зубов — выпуск 1" },
-  { id: "7I060R2iX18", title: "Имплантация зубов — выпуск 2" },
-  { id: "S7dsanzl7hU", title: "Имплантация зубов — выпуск 3" },
-  { id: "aQ8OgEezyZY", title: "Имплантация зубов — выпуск 4" },
-  { id: "iMJgKHUcdvI", title: "Имплантация зубов — выпуск 5" },
-  { id: "5mdw3XD26sY", title: "Имплантация зубов — выпуск 6" },
-  { id: "mjKzzQzT3rk", title: "Имплантация зубов — выпуск 7" },
+  { id: "SeRKRyjpKaQ", title: "Имплантация зубов - выпуск 1" },
+  { id: "7I060R2iX18", title: "Имплантация зубов - выпуск 2" },
+  { id: "S7dsanzl7hU", title: "Имплантация зубов - выпуск 3" },
+  { id: "aQ8OgEezyZY", title: "Имплантация зубов - выпуск 4" },
+  { id: "iMJgKHUcdvI", title: "Имплантация зубов - выпуск 5" },
+  { id: "5mdw3XD26sY", title: "Имплантация зубов - выпуск 6" },
+  { id: "mjKzzQzT3rk", title: "Имплантация зубов - выпуск 7" },
 ];
 
 export default function RuYouTubeShortsSection() {
@@ -62,7 +62,7 @@ export default function RuYouTubeShortsSection() {
             Улыбки, которые меняют жизнь
           </h2>
           <p className="text-lg text-muted max-w-2xl mx-auto">
-            Посмотрите, как преображаются наши пациенты — и услышите их истории из первых уст.
+            Посмотрите, как преображаются наши пациенты - и услышите их истории из первых уст.
           </p>
         </motion.div>
 

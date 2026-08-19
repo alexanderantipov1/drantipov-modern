@@ -9,9 +9,9 @@ const blogPosts = [
   { date: "Окт 2017", title: "Феминизация лица", image: "/images/blog/2017-10-17/feminization@2x-532b991f.jpg", topic: "Эстетика", href: "/ru/surgical-cases" },
   { date: "Окт 2017", title: "Ботокс и филлеры", image: "/images/blog/2017-10-16/botox@2x-d599eae3.jpg", topic: "Косметология", href: "/ru/surgical-cases" },
   { date: "Авг 2017", title: "Ринопластика", image: "/images/blog/2017-08-10/rhinoplasty@2x-089d0e54.jpg", topic: "Эстетика", href: "/ru/surgical-cases" },
-  { date: "Июн 2017", title: "BSCOSO — летний курс", image: "/images/blog/2017-06-12/2017-bscoso-summer-course@2x-da40cb05.jpg", topic: "Обучение", href: "/ru/for-dentists" },
+  { date: "Июн 2017", title: "BSCOSO - летний курс", image: "/images/blog/2017-06-12/2017-bscoso-summer-course@2x-da40cb05.jpg", topic: "Обучение", href: "/ru/for-dentists" },
   { date: "Июн 2016", title: "Рак полости рта: что важно знать", image: "/images/blog/2016-06-28/oral-cancer@2x-28244f52.jpg", topic: "Здоровье", href: "/ru/for-patients" },
-  { date: "Май 2016", title: "Зубы мудрости — что нужно знать", image: "/images/blog/2016-05-04/wisdom-teeth@2x-09b09b12.jpg", topic: "Хирургия", href: "/ru/expertise" },
+  { date: "Май 2016", title: "Зубы мудрости - что нужно знать", image: "/images/blog/2016-05-04/wisdom-teeth@2x-09b09b12.jpg", topic: "Хирургия", href: "/ru/expertise" },
   { date: "Дек 2015", title: "Восстановление после операции", image: "/images/blog/2015-12-30/patient-post-op-visit@2x-6de2a75d.jpg", topic: "Реабилитация", href: "/ru/for-patients/post-op" },
   { date: "Июл 2015", title: "Дисфункция ВНЧС: понятным языком", image: "/images/blog/2015-07-06/tmj-e4c0b47f.jpg", topic: "Обучение", href: "/ru/expertise" },
   { date: "Июн 2015", title: "Приложение Face Touch Up", image: "/images/blog/2015-06-30/app-screenshot-3d4a82b8.jpg", topic: "Технологии", href: "/ru/results" },
@@ -30,7 +30,7 @@ export default function RuBlog() {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <span className="text-primary font-semibold text-sm tracking-widest uppercase">
-            О хирургии — простыми словами
+            О хирургии - простыми словами
           </span>
           <h2 className="font-serif mt-4 text-4xl sm:text-5xl font-bold text-dark tracking-tight">
             Новости, исследования и <span className="gradient-text">обучение</span>

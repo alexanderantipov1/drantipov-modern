@@ -577,7 +577,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal" }: MultiS
               <p className="text-xs text-muted mb-4">Would you like to book a free consultation now?</p>
               <div className="space-y-2">
                 <RadioCard field="consultationReadiness" value="yes" label="Yes, I'm ready to book" description="Choose a date, time, and location" />
-                <RadioCard field="consultationReadiness" value="no" label="Not yet — contact me with more info" description="A coordinator will reach out within 1 hour" />
+                <RadioCard field="consultationReadiness" value="no" label="Not yet - contact me with more info" description="A coordinator will reach out within 1 hour" />
               </div>
               {errors.consultationReadiness && <p className="text-xs text-red-500 mt-2">{errors.consultationReadiness}</p>}
             </div>

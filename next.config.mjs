@@ -35,17 +35,17 @@ const csp = [
   "default-src 'self'",
   // Scripts: self + GTM/GA/Clarity + reCAPTCHA + Calendly + Resend tracking.
   // 'unsafe-eval' is only allowed in dev (Next/Turbopack HMR needs it); production drops it.
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com https://*.clarity.ms https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://assets.calendly.com https://static.hsforms.net https://js.hsforms.net`,
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://www.google-analytics.com https://*.clarity.ms https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://assets.calendly.com https://static.hsforms.net https://js.hsforms.net https://smile.dentalprice.ai https://widget.dentalprice.ai`,
   // Styles: self + inline (next/image, framer-motion) + Google Fonts
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   // Fonts: self + Google Fonts
   "font-src 'self' data: https://fonts.gstatic.com",
   // Images: self + youtube/vimeo/google thumbnails + GA pixel + data URIs
-  "img-src 'self' data: blob: https://i.ytimg.com https://img.youtube.com https://i.vimeocdn.com https://lh3.googleusercontent.com https://www.google-analytics.com https://www.googletagmanager.com https://*.clarity.ms",
+  "img-src 'self' data: blob: https://smile.dentalprice.ai https://widget.dentalprice.ai https://i.ytimg.com https://img.youtube.com https://i.vimeocdn.com https://lh3.googleusercontent.com https://www.google-analytics.com https://www.googletagmanager.com https://*.clarity.ms",
   // Connect: API endpoints
-  "connect-src 'self' https://www.google-analytics.com https://*.clarity.ms https://api.anthropic.com https://api.fusiondentalimplants.com https://webto.salesforce.com https://api.resend.com https://api.hsforms.com",
+  "connect-src 'self' https://smile.dentalprice.ai https://widget.dentalprice.ai https://www.google-analytics.com https://*.clarity.ms https://api.anthropic.com https://api.fusiondentalimplants.com https://webto.salesforce.com https://api.resend.com https://api.hsforms.com",
   // Iframes: reCAPTCHA + YouTube + Vimeo + Calendly + Maps
-  "frame-src 'self' https://www.google.com/recaptcha/ https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://calendly.com https://www.google.com/maps/",
+  "frame-src 'self' https://smile.dentalprice.ai https://widget.dentalprice.ai https://www.google.com/recaptcha/ https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://calendly.com https://www.google.com/maps/",
   // Media: video + audio
   "media-src 'self' blob:",
   // Workers
@@ -65,6 +65,8 @@ const csp = [
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   allowedDevOrigins: [
+    'localhost',
+    '127.0.0.1',
     '*.janeway.replit.dev',
     '*.replit.dev',
     '*.replit.app',
@@ -109,7 +111,7 @@ const nextConfig = {
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           ...(isDev ? [] : [{ key: 'X-Frame-Options', value: 'SAMEORIGIN' }]),
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-          { key: 'Permissions-Policy', value: 'camera=(self), microphone=(), geolocation=(), interest-cohort=()' },
+          { key: 'Permissions-Policy', value: 'camera=(self "https://smile.dentalprice.ai" "https://widget.dentalprice.ai"), microphone=(), geolocation=(), interest-cohort=()' },
           // X-XSS-Protection removed — deprecated by modern browsers, CSP replaces it
         ],
       },

@@ -52,7 +52,7 @@ export default function ZygomaticWhenImpossiblePost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible#article","headline":"Скуловые дентальные импланты: когда традиционные импланты невозможны","description":"Руководство по скуловым дентальным имплантам при выраженной убыли кости верхней челюсти \\u2014 почему традиционные импланты не держатся, чем особенна скуловая кость, показания, риски и немедленная нагрузка.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zygomatic-when-impossible.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Когда скуловые импланты нужны вместо традиционных?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты применяют, когда выраженная убыль кости верхней челюсти не позволяет устойчиво установить традиционные импланты. На верхней челюсти долгая потеря зубов ведёт к вертикальной резорбции кости, расширению пазухи и нехватке высоты кости. В крайних случаях даже объёмная костная пластика не способна надёжно воссоздать достаточный объём кости, поэтому импланты вместо этого фиксируют в плотной скуловой кости."}},{"@type":"Question","name":"Почему скуловая кость хорошо удерживает импланты?","acceptedAnswer":{"@type":"Answer","text":"Скуловая кость — это плотная кортикальная кость, которая со временем почти не резорбируется и обеспечивает высокую первичную стабильность. Закрепляя импланты в этой структуре, хирурги обходятся без масштабной пластики на верхней челюсти."}},{"@type":"Question","name":"Можно ли сразу нагрузить скуловые импланты зубами?","acceptedAnswer":{"@type":"Answer","text":"Многие случаи скуловых имплантов допускают немедленную нагрузку благодаря высокой первичной стабильности. Однако конструкция протеза должна быть жёсткой, силы прикуса — строго контролироваться, а уход — критически важен. Немедленная нагрузка не устраняет долгосрочный риск."}},{"@type":"Question","name":"Каковы риски скуловых имплантов?","acceptedAnswer":{"@type":"Answer","text":"Из-за своей сложности скуловые импланты несут особые риски, включая осложнения со стороны пазух, раздражение мягких тканей и трудности в конструкции протеза. Эти риски резко возрастают, когда процедуру выполняет неопытный врач, поэтому продвинутая хирургическая подготовка и тщательное планирование необходимы."}},{"@type":"Question","name":"Почему так мало клиник предлагают скуловые импланты?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты требуют продвинутой хирургической подготовки, планирования госпитального уровня и междисциплинарной координации. Это не лечение первой линии, оно предназначено для сложных случаев, поэтому встречается редко по своей сути, а не только из-за доступности."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible#article","headline":"Скуловые дентальные импланты: когда традиционные импланты невозможны","description":"Руководство по скуловым дентальным имплантам при выраженной убыли кости верхней челюсти \\u2014 почему традиционные импланты не держатся, чем особенна скуловая кость, показания, риски и немедленная нагрузка.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zygomatic-when-impossible.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Когда скуловые импланты нужны вместо традиционных?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты применяют, когда выраженная убыль кости верхней челюсти не позволяет устойчиво установить традиционные импланты. На верхней челюсти долгая потеря зубов ведёт к вертикальной резорбции кости, расширению пазухи и нехватке высоты кости. В крайних случаях даже объёмная костная пластика не способна надёжно воссоздать достаточный объём кости, поэтому импланты вместо этого фиксируют в плотной скуловой кости."}},{"@type":"Question","name":"Почему скуловая кость хорошо удерживает импланты?","acceptedAnswer":{"@type":"Answer","text":"Скуловая кость - это плотная кортикальная кость, которая со временем почти не резорбируется и обеспечивает высокую первичную стабильность. Закрепляя импланты в этой структуре, хирурги обходятся без масштабной пластики на верхней челюсти."}},{"@type":"Question","name":"Можно ли сразу нагрузить скуловые импланты зубами?","acceptedAnswer":{"@type":"Answer","text":"Многие случаи скуловых имплантов допускают немедленную нагрузку благодаря высокой первичной стабильности. Однако конструкция протеза должна быть жёсткой, силы прикуса - строго контролироваться, а уход - критически важен. Немедленная нагрузка не устраняет долгосрочный риск."}},{"@type":"Question","name":"Каковы риски скуловых имплантов?","acceptedAnswer":{"@type":"Answer","text":"Из-за своей сложности скуловые импланты несут особые риски, включая осложнения со стороны пазух, раздражение мягких тканей и трудности в конструкции протеза. Эти риски резко возрастают, когда процедуру выполняет неопытный врач, поэтому продвинутая хирургическая подготовка и тщательное планирование необходимы."}},{"@type":"Question","name":"Почему так мало клиник предлагают скуловые импланты?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты требуют продвинутой хирургической подготовки, планирования госпитального уровня и междисциплинарной координации. Это не лечение первой линии, оно предназначено для сложных случаев, поэтому встречается редко по своей сути, а не только из-за доступности."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -94,7 +94,7 @@ export default function ZygomaticWhenImpossiblePost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
+              Медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -111,7 +111,7 @@ export default function ZygomaticWhenImpossiblePost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Скуловые дентальные импланты — это продвинутая методика имплантации, которую применяют,
+                Скуловые дентальные импланты - это продвинутая методика имплантации, которую применяют,
                 когда выраженная убыль кости верхней челюсти не позволяет установить традиционные импланты.
                 Вместо того чтобы закрепляться в верхней челюсти, скуловые импланты входят в скуловую кость &mdash;
                 кость скулы, &mdash; которая даёт плотную, устойчивую опору. Эта процедура предназначена для
@@ -126,7 +126,7 @@ export default function ZygomaticWhenImpossiblePost() {
                   <li>&bull; Скуловая кость плотная, почти не резорбируется и даёт высокую первичную стабильность.</li>
                   <li>&bull; Они позволяют избежать масштабной костной пластики и долгого приживления трансплантата.</li>
                   <li>&bull; Многие случаи допускают немедленную нагрузку, но конструкция и уход критически важны.</li>
-                  <li>&bull; Это не лечение первой линии — нужен опытный <Link href="/ru/about" className="text-primary-700 hover:text-primary-800 font-semibold">челюстно-лицевой хирург</Link>.</li>
+                  <li>&bull; Это не лечение первой линии - нужен опытный <Link href="/ru/about" className="text-primary-700 hover:text-primary-800 font-semibold">челюстно-лицевой хирург</Link>.</li>
                 </ul>
               </GlassCard>
 
@@ -237,7 +237,7 @@ export default function ZygomaticWhenImpossiblePost() {
                 <li>&mdash; Междисциплинарной координации.</li>
               </ul>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Скуловые импланты встречаются нечасто — и так и должно быть: они относятся к небольшому набору
+                Скуловые импланты встречаются нечасто - и так и должно быть: они относятся к небольшому набору
                 сложных случаев, которыми занимаются опытные хирургические команды.
               </p>
 
@@ -264,7 +264,7 @@ export default function ZygomaticWhenImpossiblePost() {
                     Почему скуловая кость хорошо удерживает импланты?
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Скуловая кость — это плотная кортикальная кость, которая со временем почти не
+                    Скуловая кость - это плотная кортикальная кость, которая со временем почти не
                     резорбируется и обеспечивает высокую первичную стабильность. Закрепляя импланты в этой
                     структуре, хирурги обходятся без масштабной пластики на верхней челюсти.
                   </p>
@@ -276,8 +276,8 @@ export default function ZygomaticWhenImpossiblePost() {
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
                     Многие случаи скуловых имплантов допускают немедленную нагрузку благодаря высокой
-                    первичной стабильности. Однако конструкция протеза должна быть жёсткой, силы прикуса —
-                    строго контролироваться, а уход — критически важен. Немедленная нагрузка не устраняет
+                    первичной стабильности. Однако конструкция протеза должна быть жёсткой, силы прикуса -
+                    строго контролироваться, а уход - критически важен. Немедленная нагрузка не устраняет
                     долгосрочный риск.
                   </p>
                 </div>
@@ -313,10 +313,10 @@ export default function ZygomaticWhenImpossiblePost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Хирургия дентальных имплантов</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15074739/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Branemark PI, Gröndahl K, Ohrnell LO et al. — Скуловая фиксация при выраженной атрофии верхней челюсти</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/24533334/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Aparicio C, Manresa C et al. — Скуловые импланты: показания, методики, результаты</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA — Обзор дентальных имплантов</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Хирургия дентальных имплантов</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15074739/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Branemark PI, Gröndahl K, Ohrnell LO et al. - Скуловая фиксация при выраженной атрофии верхней челюсти</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/24533334/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Aparicio C, Manresa C et al. - Скуловые импланты: показания, методики, результаты</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA - Обзор дентальных имплантов</a></li>
               </ul>
             </section>
 

@@ -96,7 +96,7 @@ export default function ConsultationPage() {
             "@type": "ContactPage",
             name: "Schedule a Free Consultation",
             url: `${siteConfig.url}/for-patients/consultation`,
-            description: "Schedule a free in-person consultation at Galleria Oral & Facial Surgery in Roseville, CA — new patients welcome.",
+            description: "Schedule a free in-person consultation at Galleria Oral & Facial Surgery in Roseville, CA - new patients welcome.",
             mainEntity: { "@id": `${siteConfig.url}/#physician` },
           },
         ])}

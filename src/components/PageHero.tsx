@@ -19,6 +19,8 @@ export interface PageHeroProps {
   breadcrumbs?: PageHeroBreadcrumb[];
   /** When true, renders a signature line under the subtitle (homepage-style). */
   signature?: boolean;
+  /** Extra classes for the background <Image> (e.g. transform to shift focal point). */
+  imageClassName?: string;
 }
 
 export default function PageHero({
@@ -29,6 +31,7 @@ export default function PageHero({
   overlay = "navy",
   breadcrumbs,
   signature = false,
+  imageClassName = "",
 }: PageHeroProps) {
   const overlayClass =
     overlay === "dark"
@@ -44,7 +47,7 @@ export default function PageHero({
           src={image}
           alt=""
           fill
-          className="object-cover"
+          className={`object-cover ${imageClassName}`}
           priority
           quality={85}
           sizes="100vw"

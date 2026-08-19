@@ -4,6 +4,7 @@ import Link from "next/link";
 import { siteConfig } from "@/constants/siteConfig";
 import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/structured-data";
 import DualCTA from "@/components/DualCTA";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 export const metadata: Metadata = {
   title: "All-on-4: Independent Surgeon vs Corporate Chains",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/all-on-4-clearchoice-alternative" },
   openGraph: {
     title: "All-on-4 Alternatives in Northern California",
-    description: "Independent board-certified surgeon vs corporate chains — what differs.",
+    description: "Independent board-certified surgeon vs corporate chains - what differs.",
     url: `${siteConfig.url}/all-on-4-clearchoice-alternative`,
     type: "article",
     images: [{ url: "/images/fullarch/08-final-result.jpeg", width: 1920, height: 1080, alt: "All-on-4 alternatives comparison" }],
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 
 const faqs = [
   { question: "Why are corporate dental implant chains so expensive?", answer: "Corporate chains typically charge $35,000-$60,000+ per arch. Their pricing reflects overhead for sales teams, national marketing, multiple locations, and frequent staff turnover. Independent oral surgeons often charge 30-50% less because they don't carry that overhead structure." },
-  { question: "Will I see the same surgeon for every visit?", answer: "At Dr. Antipov's practice, you see Dr. Antipov for every surgical step — consultation, surgery, follow-ups. At corporate chains, you may see different surgeons or be transferred between locations during your treatment journey." },
+  { question: "Will I see the same surgeon for every visit?", answer: "At Dr. Antipov's practice, you see Dr. Antipov for every surgical step - consultation, surgery, follow-ups. At corporate chains, you may see different surgeons or be transferred between locations during your treatment journey." },
   { question: "What credentials should an All-on-4 surgeon have?", answer: "Look for: Diplomate of the American Board of Oral and Maxillofacial Surgery (ABOMS), state-issued General Anesthesia Permit for in-office sedation, hospital privileges for medical emergencies, and 5+ years of experience specifically with full-arch protocols." },
   { question: "Can I get an exact price before committing?", answer: "Yes. Dr. Antipov provides a complete written treatment plan with itemized pricing after your free consultation with 3D CT. There are no high-pressure sales tactics, no separate financial advisors, and no 'today-only' discounts." },
   { question: "What if I need bone grafting?", answer: "Independent surgeons handle bone grafting in-house if needed. Many chains either refer out (extra cost and coordination) or upsell elaborate grafting plans. Dr. Antipov is fellowship-trained in advanced bone reconstruction and often achieves implant placement without grafting using angled or zygomatic implants." },
@@ -30,12 +31,12 @@ const faqs = [
 const compareRows = [
   { feature: "Surgeon credentials", drAntipov: "Board-certified OMS (ABOMS Diplomate), 25+ years, 10,000+ surgeries", chain: "Varies by location; some surgeons may be newer in practice or rotate between offices" },
   { feature: "Consultation experience", drAntipov: "Free 3D CT scan and personal consultation with the surgeon. No sales pressure.", chain: "Often includes a 'treatment consultant' or financial advisor; high-pressure same-day decisions are common" },
-  { feature: "Pricing transparency", drAntipov: "Itemized written estimate after consultation. No surprise fees.", chain: "Bundle pricing — what's included and excluded can be unclear. Often $35,000-$60,000+ per arch." },
+  { feature: "Pricing transparency", drAntipov: "Itemized written estimate after consultation. No surprise fees.", chain: "Bundle pricing - what's included and excluded can be unclear. Often $35,000-$60,000+ per arch." },
   { feature: "Who does your surgery", drAntipov: "Dr. Antipov performs every step personally", chain: "Multiple surgeons may be involved; you may not meet your surgeon before surgery day" },
   { feature: "Long-term follow-up", drAntipov: "Same practice, same surgeon for life of the implants", chain: "Locations may close, staff may rotate; continuity of care can be disrupted" },
   { feature: "Hospital privileges", drAntipov: "Sutter Roseville, Sutter General, Mercy General, Mercy San Juan", chain: "Varies by location" },
-  { feature: "Russian / Spanish bilingual care", drAntipov: "Yes — Russian native speaker, Spanish-speaking staff", chain: "Limited at most locations" },
-  { feature: "Same-day teeth (immediate load)", drAntipov: "Yes — standard protocol", chain: "Yes — standard protocol" },
+  { feature: "Russian / Spanish bilingual care", drAntipov: "Yes - Russian native speaker, Spanish-speaking staff", chain: "Limited at most locations" },
+  { feature: "Same-day teeth (immediate load)", drAntipov: "Yes - standard protocol", chain: "Yes - standard protocol" },
   { feature: "Advanced cases (zygomatic, severe atrophy)", drAntipov: "Fellowship-trained in zygomatic implants and complex reconstruction", chain: "May refer out or upsell extensive grafting" },
   { feature: "Insurance approach", drAntipov: "Help with PPO claims and pre-authorization; transparent about coverage limits", chain: "Often out-of-network; financing emphasis" },
 ];
@@ -79,7 +80,7 @@ export default function AllOn4AlternativesPage() {
       <section className="bg-amber-50 border-l-4 border-amber-500 py-8">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <p className="text-amber-900 text-sm leading-7">
-            <strong>An honest note:</strong> Corporate dental implant chains have helped millions of patients restore their smiles. This page isn&apos;t about putting them down — it&apos;s about helping you compare so you can make an informed decision. Some patients prefer the structured, marketing-led experience of a chain; others prefer the surgeon-led continuity of an independent practice. Both can produce excellent results in skilled hands.
+            <strong>An honest note:</strong> Corporate dental implant chains have helped millions of patients restore their smiles. This page isn&apos;t about putting them down - it&apos;s about helping you compare so you can make an informed decision. Some patients prefer the structured, marketing-led experience of a chain; others prefer the surgeon-led continuity of an independent practice. Both can produce excellent results in skilled hands.
           </p>
         </div>
       </section>
@@ -92,7 +93,7 @@ export default function AllOn4AlternativesPage() {
               Side-by-side comparison
             </h2>
             <p className="mt-4 text-lg text-neutral-600 max-w-2xl mx-auto">
-              The factors that matter most to All-on-4 outcomes — and how Dr. Antipov&apos;s practice approaches them.
+              The factors that matter most to All-on-4 outcomes - and how Dr. Antipov&apos;s practice approaches them.
             </p>
           </div>
 
@@ -128,7 +129,7 @@ export default function AllOn4AlternativesPage() {
               Corporate dental implant chains typically price All-on-4 in the range of <strong>$35,000 to $60,000 per arch</strong>. That price reflects national advertising budgets, sales-team overhead, multiple-location infrastructure, and bundled financing terms.
             </p>
             <p>
-              An independent board-certified surgeon delivering the same procedure to the same clinical standard often charges <strong>$22,000 to $40,000 per arch</strong> — a 30-50% savings — without compromising on materials (premium zirconia prostheses, Nobel Biocare or Straumann implants), surgical protocol (3D-planned, immediate load), or follow-up care.
+              An independent board-certified surgeon delivering the same procedure to the same clinical standard often charges <strong>$22,000 to $40,000 per arch</strong> - a 30-50% savings - without compromising on materials (premium zirconia prostheses, Nobel Biocare or Straumann implants), surgical protocol (3D-planned, immediate load), or follow-up care.
             </p>
             <p>
               The difference isn&apos;t in clinical quality. It&apos;s in business structure. A surgeon-owned practice eliminates layers of corporate overhead.
@@ -180,6 +181,8 @@ export default function AllOn4AlternativesPage() {
           </Link>
         </div>
       </section>
+
+      <CalculatorEmbed slug="all-on-468-per-arch" />
 
       <DualCTA />
     </>

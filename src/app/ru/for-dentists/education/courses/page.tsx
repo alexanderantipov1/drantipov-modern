@@ -65,12 +65,12 @@ const courses = [
     link: "https://www.fusiondentalacademy.com/courses/alveolar-ridge-augmentation",
   },
   {
-    title: "All-on-4, 5, 6, X: имплантация всей челюсти — 7 баллов CE",
+    title: "All-on-4, 5, 6, X: имплантация всей челюсти - 7 баллов CE",
     lessons: "34 урока",
     ceCredits: "7 баллов CE",
     level: "Продвинутый",
     description:
-      "Полный курс по реконструкции всей челюсти: протоколы All-on-4, All-on-5, All-on-6 и All-on-X — от планирования лечения до установки финального протеза.",
+      "Полный курс по реконструкции всей челюсти: протоколы All-on-4, All-on-5, All-on-6 и All-on-X - от планирования лечения до установки финального протеза.",
     price: "$549.00",
     link: "https://www.fusiondentalacademy.com/courses/full-arch-dental-implant-course-all-on-4-5-6-X",
   },
@@ -115,7 +115,7 @@ const courses = [
     link: "https://www.fusiondentalacademy.com/courses/wisdom-teeth-removal",
   },
   {
-    title: "Как настроить 3D-принтер для стоматологии — техническое руководство",
+    title: "Как настроить 3D-принтер для стоматологии - техническое руководство",
     lessons: "4 урока",
     ceCredits: null,
     level: "Любой уровень",
@@ -125,7 +125,7 @@ const courses = [
     link: "https://www.fusiondentalacademy.com/courses/how-to-setup-3d-printer-technical-support-tutorial-video",
   },
   {
-    title: "Ортодонтическая подготовка к ортогнатической операции — 2 балла CE",
+    title: "Ортодонтическая подготовка к ортогнатической операции - 2 балла CE",
     lessons: "12 уроков",
     ceCredits: "2 балла CE",
     level: "Средний",
@@ -150,7 +150,7 @@ const benefits = [
   {
     title: "Малые группы",
     description:
-      "Не более 12–15 участников — больше внимания каждому и больше практики.",
+      "Не более 12–15 участников - больше внимания каждому и больше практики.",
   },
   {
     title: "Обучение у эксперта",
@@ -232,7 +232,7 @@ export default function RuEducationCoursesPage() {
             <p className="mt-6 max-w-2xl text-xl leading-relaxed text-white/85">
               Реальная практика от хирурга, который ставит импланты каждый день.
               Курсы по имплантологии, костной пластике и реконструкции всей
-              челюсти — с баллами CE.
+              челюсти - с баллами CE.
             </p>
           </div>
         </section>
@@ -335,7 +335,7 @@ export default function RuEducationCoursesPage() {
               </p>
               <p className="text-muted leading-relaxed mb-6">
                 Доктор Антипов увлечён тем, чтобы поднимать стандарт
-                имплантологии через обучение. Его подход — практичные, сразу
+                имплантологии через обучение. Его подход - практичные, сразу
                 применимые методики на основе доказательной медицины.
               </p>
               <Link

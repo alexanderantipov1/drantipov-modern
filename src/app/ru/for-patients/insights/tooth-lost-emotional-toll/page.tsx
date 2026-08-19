@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     locale: "ru_RU",
     title: "Эмоциональная цена потери зуба",
-    description: "Как потеря зуба влияет на самооценку, общение с людьми и психическое здоровье — и что с этим делать.",
+    description: "Как потеря зуба влияет на самооценку, общение с людьми и психическое здоровье - и что с этим делать.",
     images: [
       {
         url: "/images/blog/2024-08-09/tooth-lost-emotional-toll-fcc97e30.jpg",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Эмоциональная цена потери зуба",
-    description: "Как потеря зуба влияет на самооценку, общение с людьми и психическое здоровье — и что с этим делать.",
+    description: "Как потеря зуба влияет на самооценку, общение с людьми и психическое здоровье - и что с этим делать.",
     images: ["/images/blog/2024-08-09/tooth-lost-emotional-toll-fcc97e30.jpg"],
   }
 }
@@ -99,7 +99,7 @@ export default function ToothLossEmotionalTollPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> — сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №&nbsp;50724
+              Медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> - сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №&nbsp;50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -116,7 +116,7 @@ export default function ToothLossEmotionalTollPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Потеря зуба — это не только физическое изменение. Она способна глубоко затронуть эмоциональное
+                Потеря зуба - это не только физическое изменение. Она способна глубоко затронуть эмоциональное
                 состояние человека, его самооценку и качество жизни. Понимать эти переживания важно как самим
                 пациентам, так и врачам.
               </p>
@@ -153,8 +153,8 @@ export default function ToothLossEmotionalTollPost() {
                     Стадия 3: надежда через протезирование
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Когда пациенты узнают о возможностях лечения — например, о дентальных имплантах или более
-                    удобных протезах, — появляется надежда. Эта стадия становится поворотным моментом на пути к
+                    Когда пациенты узнают о возможностях лечения - например, о дентальных имплантах или более
+                    удобных протезах, - появляется надежда. Эта стадия становится поворотным моментом на пути к
                     эмоциональному восстановлению.
                   </p>
                 </GlassCard>
@@ -179,7 +179,7 @@ export default function ToothLossEmotionalTollPost() {
                   <h3 className="text-2xl font-semibold text-neutral-900 mb-3">Падение самооценки</h3>
                   <p className="text-neutral-700 leading-relaxed">
                     Отсутствие зубов сильно меняет то, как люди видят самих себя. Многие пациенты признаются, что
-                    чувствуют себя старше, менее привлекательными и менее уверенными — и на работе, и в общении.
+                    чувствуют себя старше, менее привлекательными и менее уверенными - и на работе, и в общении.
                   </p>
                 </div>
 
@@ -260,7 +260,7 @@ export default function ToothLossEmotionalTollPost() {
                     <strong className="text-neutral-900">Будьте к себе добрее:</strong>
                     <span className="text-neutral-700">
                       {" "}
-                      помните, что потеря зуба — обычное дело и никак не определяет вашу ценность
+                      помните, что потеря зуба - обычное дело и никак не определяет вашу ценность
                     </span>
                   </div>
                 </li>
@@ -279,9 +279,9 @@ export default function ToothLossEmotionalTollPost() {
                 Целостный подход к помощи
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                В нашей клинике мы понимаем, что стоматологическая помощь — это не только лечение. Мы относимся к
+                В нашей клинике мы понимаем, что стоматологическая помощь - это не только лечение. Мы относимся к
                 пациентам с участием и видим картину целиком, работая и с функциональной, и с эмоциональной
-                стороной потери зуба. Наша цель — вернуть вам не только улыбку, но и уверенность и качество жизни.
+                стороной потери зуба. Наша цель - вернуть вам не только улыбку, но и уверенность и качество жизни.
               </p>
             </div>
 
@@ -290,10 +290,10 @@ export default function ToothLossEmotionalTollPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/11048395/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Davis DM, Fiske J — Эмоциональные последствия потери зубов у людей с частичной адентией</a></li>
-                <li><a href="https://www.who.int/news-room/fact-sheets/detail/oral-health" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ВОЗ — Информационный бюллетень о здоровье полости рта</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/9744297/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Fiske J et al. — Эмоциональные последствия потери зубов у людей с полной адентией</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA — Восстановление отсутствующих зубов</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/11048395/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Davis DM, Fiske J - Эмоциональные последствия потери зубов у людей с частичной адентией</a></li>
+                <li><a href="https://www.who.int/news-room/fact-sheets/detail/oral-health" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ВОЗ - Информационный бюллетень о здоровье полости рта</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/9744297/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Fiske J et al. - Эмоциональные последствия потери зубов у людей с полной адентией</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA - Восстановление отсутствующих зубов</a></li>
               </ul>
             </section>
 

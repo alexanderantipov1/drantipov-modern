@@ -9,7 +9,7 @@ import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
 export const metadata: Metadata = {
-  title: "Осложнения дентальных имплантов — риски и решения",
+  title: "Осложнения дентальных имплантов - риски и решения",
   description:
     "Разбираемся в возможных осложнениях дентальных имплантов: инфекция, неприживление, повреждение нерва. Какие бывают риски и как их предупредить.",
   alternates: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     locale: "ru_RU",
     title: "Осложнения дентальных имплантов",
-    description: "Понимаем риски имплантации — инфекция, неприживление, повреждение нерва — и как их предупредить.",
+    description: "Понимаем риски имплантации - инфекция, неприживление, повреждение нерва - и как их предупредить.",
     images: [
       {
         url: "/images/blog/2023-04-14/dental-implant-complications-48eec3cd.jpg",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Осложнения дентальных имплантов",
-    description: "Понимаем риски имплантации — инфекция, неприживление, повреждение нерва — и как их предупредить.",
+    description: "Понимаем риски имплантации - инфекция, неприживление, повреждение нерва - и как их предупредить.",
     images: ["/images/blog/2023-04-14/dental-implant-complications-48eec3cd.jpg"],
   }
 }
@@ -99,7 +99,7 @@ export default function DentalImplantComplicationsPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №&nbsp;50724
+              Медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №&nbsp;50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -121,7 +121,7 @@ export default function DentalImplantComplicationsPost() {
                   <div>
                     <h3 className="text-lg font-semibold text-neutral-900 mb-2">Важная информация</h3>
                     <p className="text-neutral-700">
-                      У дентальных имплантов отличный процент успеха — выше 95%, но, как и у любой операции, есть
+                      У дентальных имплантов отличный процент успеха - выше 95%, но, как и у любой операции, есть
                       определённые риски. Понимание возможных осложнений помогает принимать взвешенные решения и
                       вовремя замечать тревожные сигналы.
                     </p>
@@ -165,7 +165,7 @@ export default function DentalImplantComplicationsPost() {
                   </ul>
                   <p className="text-neutral-700 leading-relaxed">
                     <strong>Что делать:</strong> если имплант не прижился, его обычно можно удалить и установить
-                    заново после заживления участка — нередко с костной пластикой для большего успеха.
+                    заново после заживления участка - нередко с костной пластикой для большего успеха.
                   </p>
                 </GlassCard>
 
@@ -371,7 +371,7 @@ export default function DentalImplantComplicationsPost() {
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">Итог</h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Дентальные импланты остаются одной из самых успешных и предсказуемых процедур в стоматологии —
+                Дентальные импланты остаются одной из самых успешных и предсказуемых процедур в стоматологии -
                 с процентом успеха выше 95%. Знать о возможных осложнениях важно, но понимание рисков не должно
                 удерживать вас от этого меняющего жизнь лечения. С опытным хирургом, грамотным планированием и
                 добросовестным уходом большинство пациентов получают успешный результат и улучшают качество
@@ -384,10 +384,10 @@ export default function DentalImplantComplicationsPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/30030610/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Renvert S, Polyzois I — Лечение патологических карманов вокруг имплантов</a></li>
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS Position Paper — Дентальные импланты</a></li>
-                <li><a href="https://www.cochrane.org/CD003815/ORAL_interventions-for-replacing-missing-teeth-different-types-of-dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Cochrane Oral Health — Методы замещения отсутствующих зубов</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/18724864/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Heitz-Mayfield LJ — Периимплантные заболевания: диагностика и факторы риска</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/30030610/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Renvert S, Polyzois I - Лечение патологических карманов вокруг имплантов</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS Position Paper - Дентальные импланты</a></li>
+                <li><a href="https://www.cochrane.org/CD003815/ORAL_interventions-for-replacing-missing-teeth-different-types-of-dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Cochrane Oral Health - Методы замещения отсутствующих зубов</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/18724864/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Heitz-Mayfield LJ - Периимплантные заболевания: диагностика и факторы риска</a></li>
               </ul>
             </section>
 

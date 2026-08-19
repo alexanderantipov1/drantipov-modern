@@ -3,7 +3,7 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
     "@id": "https://www.drantipov.com/#organization",
-    name: "Dr. Alexander Antipov, DDS — Oral & Maxillofacial Surgery",
+    name: "Dr. Alexander Antipov, DDS - Oral & Maxillofacial Surgery",
     alternateName: [
       "Alexander V. Antipov, DDS, Inc.",
       "Dr. Antipov Oral Surgery",
@@ -392,7 +392,7 @@ export default function JsonLd() {
         name: "Does Dr. Antipov offer free consultations?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Every new patient receives a complimentary consultation that includes a 3D Cone Beam CT scan, a thorough examination, a personalized treatment plan, and a discussion of financial options — all at no cost and no obligation. Virtual consultations are also available for patients who live out of the area.",
+          text: "Yes. Every new patient receives a complimentary consultation that includes a 3D Cone Beam CT scan, a thorough examination, a personalized treatment plan, and a discussion of financial options - all at no cost and no obligation. Virtual consultations are also available for patients who live out of the area.",
         },
       },
       {
@@ -441,7 +441,7 @@ export default function JsonLd() {
   const medicalWebPage = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
-    name: "Dr. Alexander Antipov, DDS — Oral & Maxillofacial Surgery",
+    name: "Dr. Alexander Antipov, DDS - Oral & Maxillofacial Surgery",
     url: "https://www.drantipov.com",
     about: {
       "@type": "MedicalSpecialty",

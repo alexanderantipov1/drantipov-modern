@@ -41,7 +41,7 @@ const treatments: Treatment[] = [
   {
     id: "multiple",
     label: "Multiple Teeth Implants",
-    description: "Replace 2-5 missing teeth with implant-supported bridge — no removable denture",
+    description: "Replace 2-5 missing teeth with implant-supported bridge - no removable denture",
     icon: <BridgeIcon />,
     baseLow: 4200,
     baseHigh: 12000,
@@ -54,7 +54,7 @@ const treatments: Treatment[] = [
   {
     id: "allon4",
     label: "All-on-4 Dental Implants",
-    description: "Full arch of fixed teeth on 4 implants — new smile in one day with immediate loading",
+    description: "Full arch of fixed teeth on 4 implants - new smile in one day with immediate loading",
     icon: <FullArchIcon />,
     baseLow: 21000,
     baseHigh: 28000,
@@ -67,7 +67,7 @@ const treatments: Treatment[] = [
   {
     id: "allon6",
     label: "All-on-6 Dental Implants",
-    description: "Full arch on 6 implants for maximum stability — ideal for patients with adequate bone",
+    description: "Full arch on 6 implants for maximum stability - ideal for patients with adequate bone",
     icon: <FullArchIcon />,
     baseLow: 25000,
     baseHigh: 35000,
@@ -80,7 +80,7 @@ const treatments: Treatment[] = [
   {
     id: "zygomatic",
     label: "Zygomatic Implants",
-    description: "No bone grafting needed — implants anchor in cheekbone for patients with severe bone loss",
+    description: "No bone grafting needed - implants anchor in cheekbone for patients with severe bone loss",
     icon: <ZygomaticIcon />,
     baseLow: 28000,
     baseHigh: 40000,
@@ -93,7 +93,7 @@ const treatments: Treatment[] = [
   {
     id: "snapon",
     label: "Snap-On Dentures",
-    description: "Removable overdenture that snaps onto 2-4 implants — affordable full arch solution",
+    description: "Removable overdenture that snaps onto 2-4 implants - affordable full arch solution",
     icon: <DentureIcon />,
     baseLow: 12000,
     baseHigh: 18000,
@@ -106,7 +106,7 @@ const treatments: Treatment[] = [
   {
     id: "jawsurgery",
     label: "Corrective Jaw Surgery",
-    description: "Orthognathic surgery to fix bite, jaw alignment, or sleep apnea — often covered by insurance",
+    description: "Orthognathic surgery to fix bite, jaw alignment, or sleep apnea - often covered by insurance",
     icon: <JawIcon />,
     baseLow: 20000,
     baseHigh: 50000,
@@ -132,7 +132,7 @@ const treatments: Treatment[] = [
   {
     id: "rhinoplasty",
     label: "Rhinoplasty",
-    description: "Nose reshaping surgery — cosmetic or functional correction by board-certified surgeon",
+    description: "Nose reshaping surgery - cosmetic or functional correction by board-certified surgeon",
     icon: <CosmeticIcon />,
     baseLow: 8000,
     baseHigh: 18000,
@@ -145,7 +145,7 @@ const treatments: Treatment[] = [
   {
     id: "facelift",
     label: "Facelift & Facial Cosmetics",
-    description: "Face lift, eyelid surgery, fillers, or facial feminization — full facial rejuvenation",
+    description: "Face lift, eyelid surgery, fillers, or facial feminization - full facial rejuvenation",
     icon: <CosmeticIcon />,
     baseLow: 5000,
     baseHigh: 25000,
@@ -160,13 +160,13 @@ const treatments: Treatment[] = [
 const archOptions = [
   { id: "upper", label: "Upper Arch", description: "Top jaw only", multiplier: 1 },
   { id: "lower", label: "Lower Arch", description: "Bottom jaw only", multiplier: 1 },
-  { id: "both", label: "Both Arches", description: "Full mouth — best value", multiplier: 1.85, badge: "Save 7.5%" },
+  { id: "both", label: "Both Arches", description: "Full mouth - best value", multiplier: 1.85, badge: "Save 7.5%" },
 ];
 
 const boneOptions = [
-  { id: "good", label: "Good Bone", description: "No prior bone loss — teeth recently lost or extracted", modifier: 0 },
-  { id: "moderate", label: "Moderate Loss", description: "Some bone resorption — missing teeth for 1-5 years", modifier: 0.1 },
-  { id: "severe", label: "Severe Loss", description: "Significant bone loss — long-term denture wear or periodontal disease", modifier: 0.2 },
+  { id: "good", label: "Good Bone", description: "No prior bone loss - teeth recently lost or extracted", modifier: 0 },
+  { id: "moderate", label: "Moderate Loss", description: "Some bone resorption - missing teeth for 1-5 years", modifier: 0.1 },
+  { id: "severe", label: "Severe Loss", description: "Significant bone loss - long-term denture wear or periodontal disease", modifier: 0.2 },
   { id: "unsure", label: "Not Sure", description: "We'll assess bone density with a free 3D CT scan at consultation", modifier: 0.1 },
 ];
 
@@ -390,7 +390,7 @@ export default function PriceCalculator() {
             Treatment <span className="gradient-text">Cost Estimator</span>
           </h2>
           <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
-            Get a personalized price estimate in 60 seconds. All-inclusive pricing with no hidden fees. 0% APR financing available up to 84 months. <strong className="text-dark">Price-match guarantee</strong> — your final cost is confirmed at your free consultation with a complimentary 3D CT scan.
+            Get a personalized price estimate in 60 seconds. All-inclusive pricing with no hidden fees. 0% APR financing available up to 84 months. <strong className="text-dark">Price-match guarantee</strong> - your final cost is confirmed at your free consultation with a complimentary 3D CT scan.
           </p>
         </motion.div>
 
@@ -443,7 +443,7 @@ export default function PriceCalculator() {
                 transition={{ duration: 0.3 }}
               >
                 <h3 className="text-xl font-bold text-dark mb-2">What treatment are you considering?</h3>
-                <p className="text-muted text-sm mb-6">Select the procedure you&apos;re interested in. Not sure? Choose the closest match — we&apos;ll refine at your free consultation.</p>
+                <p className="text-muted text-sm mb-6">Select the procedure you&apos;re interested in. Not sure? Choose the closest match - we&apos;ll refine at your free consultation.</p>
 
                 {/* Category Filter */}
                 <div className="flex flex-wrap gap-2 mb-6">
@@ -539,7 +539,7 @@ export default function PriceCalculator() {
                         </div>
                         <div className="text-right shrink-0 ml-4">
                           <div className="text-primary font-bold">
-                            ${Math.round((treatment?.baseLow || 0) * a.multiplier).toLocaleString()} — ${Math.round((treatment?.baseHigh || 0) * a.multiplier).toLocaleString()}
+                            ${Math.round((treatment?.baseLow || 0) * a.multiplier).toLocaleString()} - ${Math.round((treatment?.baseHigh || 0) * a.multiplier).toLocaleString()}
                           </div>
                         </div>
                       </div>
@@ -560,7 +560,7 @@ export default function PriceCalculator() {
               >
                 <h3 className="text-xl font-bold text-dark mb-2">How is your jawbone health?</h3>
                 <p className="text-muted text-sm mb-6">
-                  Bone density affects implant planning. Don&apos;t worry if you&apos;re not sure — Dr. Antipov will assess your bone with a complimentary 3D CT scan at your consultation.
+                  Bone density affects implant planning. Don&apos;t worry if you&apos;re not sure - Dr. Antipov will assess your bone with a complimentary 3D CT scan at your consultation.
                 </p>
 
                 <div className="space-y-3">
@@ -593,7 +593,7 @@ export default function PriceCalculator() {
               >
                 <h3 className="text-xl font-bold text-dark mb-2">Additional options (optional)</h3>
                 <p className="text-muted text-sm mb-6">
-                  These common add-on services may apply to your case. Select any that you think you may need, or skip this step — Dr. Antipov will recommend only what&apos;s necessary.
+                  These common add-on services may apply to your case. Select any that you think you may need, or skip this step - Dr. Antipov will recommend only what&apos;s necessary.
                 </p>
 
                 <div className="space-y-3">
@@ -662,7 +662,7 @@ export default function PriceCalculator() {
                     <div className="mb-6">
                       <div className="text-white/60 text-sm mb-1">Estimated Treatment Cost</div>
                       <div className="text-5xl sm:text-6xl font-bold tracking-tight">
-                        ${low.toLocaleString()} <span className="text-2xl text-white/40">—</span> ${high.toLocaleString()}
+                        ${low.toLocaleString()} <span className="text-2xl text-white/40">-</span> ${high.toLocaleString()}
                       </div>
                     </div>
 
@@ -727,21 +727,21 @@ export default function PriceCalculator() {
                   <div className="space-y-3">
                     <div className="flex items-center justify-between p-3 rounded-xl bg-white">
                       <span className="text-sm font-medium text-dark">Dr. Antipov (Roseville)</span>
-                      <span className="text-primary font-bold text-sm">${low.toLocaleString()} — ${high.toLocaleString()}</span>
+                      <span className="text-primary font-bold text-sm">${low.toLocaleString()} - ${high.toLocaleString()}</span>
                     </div>
                     {treatment?.category === "implant" && (
                       <>
                         <div className="flex items-center justify-between p-3 rounded-xl bg-white">
                           <span className="text-sm font-medium text-muted">National Chain (ClearChoice)</span>
-                          <span className="text-muted font-bold text-sm">${Math.round(avgPrice * 1.3).toLocaleString()} — ${Math.round(avgPrice * 1.8).toLocaleString()}</span>
+                          <span className="text-muted font-bold text-sm">${Math.round(avgPrice * 1.3).toLocaleString()} - ${Math.round(avgPrice * 1.8).toLocaleString()}</span>
                         </div>
                         <div className="flex items-center justify-between p-3 rounded-xl bg-white">
                           <span className="text-sm font-medium text-muted">Corporate Center (Nuvia)</span>
-                          <span className="text-muted font-bold text-sm">${Math.round(avgPrice * 1.2).toLocaleString()} — ${Math.round(avgPrice * 1.6).toLocaleString()}</span>
+                          <span className="text-muted font-bold text-sm">${Math.round(avgPrice * 1.2).toLocaleString()} - ${Math.round(avgPrice * 1.6).toLocaleString()}</span>
                         </div>
                         <div className="flex items-center justify-between p-3 rounded-xl bg-white">
                           <span className="text-sm font-medium text-muted">University / Teaching Hospital</span>
-                          <span className="text-muted font-bold text-sm">${Math.round(avgPrice * 0.7).toLocaleString()} — ${Math.round(avgPrice * 1.0).toLocaleString()}</span>
+                          <span className="text-muted font-bold text-sm">${Math.round(avgPrice * 0.7).toLocaleString()} - ${Math.round(avgPrice * 1.0).toLocaleString()}</span>
                         </div>
                       </>
                     )}
@@ -753,7 +753,7 @@ export default function PriceCalculator() {
 
                 {/* What's Included */}
                 <div className="bg-light rounded-3xl p-6 sm:p-8 mb-8">
-                  <h4 className="font-bold text-dark mb-4">All-Inclusive — What&apos;s Included</h4>
+                  <h4 className="font-bold text-dark mb-4">All-Inclusive - What&apos;s Included</h4>
                   <div className="grid sm:grid-cols-2 gap-3">
                     {[
                       "Free 3D CT Scan & Consultation",
@@ -784,7 +784,7 @@ export default function PriceCalculator() {
                       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
                       </svg>
-                      Book Free Consultation — Confirm Your Price
+                      Book Free Consultation - Confirm Your Price
                     </button>
                   </ConsultationModal>
                   <div className="flex items-center justify-center gap-4">
@@ -797,7 +797,7 @@ export default function PriceCalculator() {
                     </button>
                   </div>
                   <p className="text-xs text-muted max-w-lg mx-auto">
-                    This estimate is for informational purposes only and does not constitute a treatment plan or guarantee of pricing. Your actual cost will be determined after a clinical examination and complimentary 3D CT scan with Dr. Antipov. Most PPO dental insurance accepted — typical coverage $1,000–$3,000/year toward implants. 0% APR financing for qualified patients up to 84 months. HSA &amp; FSA accepted.
+                    This estimate is for informational purposes only and does not constitute a treatment plan or guarantee of pricing. Your actual cost will be determined after a clinical examination and complimentary 3D CT scan with Dr. Antipov. Most PPO dental insurance accepted - typical coverage $1,000–$3,000/year toward implants. 0% APR financing for qualified patients up to 84 months. HSA &amp; FSA accepted.
                   </p>
                 </div>
               </motion.div>

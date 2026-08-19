@@ -17,7 +17,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Same-Day Dental Implants & Oral Surgery — Dr. Antipov, Roseville CA",
+    absolute: "Same-Day Dental Implants & Oral Surgery - Dr. Antipov, Roseville CA",
   },
   description:
     "Board-certified oral & maxillofacial surgeon in Roseville, CA. Same-day full-arch implants, jaw surgery, sleep apnea, bone grafting. 25+ years.",
@@ -29,37 +29,37 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Same-Day Dental Implants & Oral Surgery — Dr. Antipov, Roseville CA",
+    title: "Same-Day Dental Implants & Oral Surgery - Dr. Antipov, Roseville CA",
     description: "Board-certified oral & maxillofacial surgeon. Same-day full-arch implants, jaw surgery, sleep apnea. 25+ years.",
     images: [
       {
         url: "/images/Antipov_white.jpg",
         width: 1016,
         height: 1400,
-        alt: "Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon, Roseville CA",
+        alt: "Dr. Alexander Antipov, DDS - Board-Certified Oral & Maxillofacial Surgeon, Roseville CA",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Same-Day Dental Implants & Oral Surgery — Dr. Antipov, Roseville CA",
+    title: "Same-Day Dental Implants & Oral Surgery - Dr. Antipov, Roseville CA",
     description: "Board-certified oral & maxillofacial surgeon. Same-day full-arch implants, jaw surgery, sleep apnea. 25+ years.",
     images: ["/images/Antipov_white.jpg"],
   }
 };
 
 /**
- * Homepage — personal brand hub for Dr. Alexander V. Antipov, DDS.
+ * Homepage - personal brand hub for Dr. Alexander V. Antipov, DDS.
  *
  * Narrative (top → bottom):
- *   1. Hero            — who Dr. Antipov is, primary CTA
- *   2. TrustBadges     — board certification, memberships at a glance
- *   3. About           — Dr. Antipov + Dr. Kahwach, credentials
- *   4. Services        — what we do (6 areas of expertise)
- *   5. BeforeAfter     — surgical cases preview (proof / E-E-A-T)
- *   6. Testimonials    — social proof
- *   7. FAQ             — common patient questions
- *   8. CTA             — book a free consultation
+ *   1. Hero            - who Dr. Antipov is, primary CTA
+ *   2. TrustBadges     - board certification, memberships at a glance
+ *   3. About           - Dr. Antipov + Dr. Kahwach, credentials
+ *   4. Services        - what we do (6 areas of expertise)
+ *   5. BeforeAfter     - surgical cases preview (proof / E-E-A-T)
+ *   6. Testimonials    - social proof
+ *   7. FAQ             - common patient questions
+ *   8. CTA             - book a free consultation
  *
  * Removed from previous version to focus the personal-brand narrative
  * and improve Core Web Vitals (24 sections → 9):

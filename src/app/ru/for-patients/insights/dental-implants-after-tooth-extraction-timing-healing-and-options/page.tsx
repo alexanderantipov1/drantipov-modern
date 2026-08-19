@@ -52,7 +52,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options#article","headline":"Импланты после удаления зуба: сроки, заживление и варианты","description":"Подробный гид по имплантам после удаления зуба \\u2014 немедленная, ранняя и отсроченная установка, этапы заживления, сохранение кости и факторы, влияющие на успех.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/implants-after-extraction.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Сколько времени занимает весь процесс имплантации после удаления зуба?","acceptedAnswer":{"@type":"Answer","text":"Это зависит от сроков и от того, нужна ли костная пластика. В некоторых случаях немедленная установка сокращает общий срок, но многим всё равно нужно несколько месяцев на остеоинтеграцию до фиксации финальной коронки. Если место сначала должно зажить или нуждается в укреплении кости, весь процесс займёт больше времени, и хирург должен составить для вас пошаговый план."}},{"@type":"Question","name":"Болезненна ли имплантация после удаления зуба?","acceptedAnswer":{"@type":"Answer","text":"Большинство пациентов во время процедуры чувствуют давление, но не резкую боль — благодаря анестезии. После операции несколько дней обычна болезненность, которая, как правило, хорошо контролируется рекомендованными лекарствами и соблюдением инструкций. Если боль усиливается после первоначального улучшения, обратитесь к хирургу для осмотра."}},{"@type":"Question","name":"Можно ли нормально есть после установки импланта?","acceptedAnswer":{"@type":"Answer","text":"После удаления зуба и установки импланта обычно нужна более мягкая пища на короткий период. По мере заживления большинство пациентов возвращаются к обычному рациону, но твёрдой и липкой пищи стоит избегать, пока хирург не подтвердит стабильность. Соблюдение рекомендаций по питанию помогает защитить имплант в период заживления."}},{"@type":"Question","name":"Как ухаживать за лункой удалённого зуба и зоной импланта?","acceptedAnswer":{"@type":"Answer","text":"Точно следуйте указаниям хирурга, особенно в первую неделю. Аккуратная гигиена, бережное отношение к сгустку и полоскания (если назначены) поддерживают заживление. В долгосрочной перспективе импланты требуют ежедневной чистки щёткой, межзубной гигиены и регулярного профессионального ухода."}},{"@type":"Question","name":"Какие риски у имплантации после удаления зуба?","acceptedAnswer":{"@type":"Answer","text":"У имплантов высокий процент успеха, но риски включают инфекцию, замедленное заживление, осложнения со стороны нерва или пазухи в отдельных зонах, а также неприживление импланта. Уровень риска зависит от качества кости, состояния дёсен и наличия инфекции на момент удаления. Тщательный осмотр и визуализация — лучший способ избежать неожиданностей."}},{"@type":"Question","name":"Покрывает ли страховка импланты после удаления зуба?","acceptedAnswer":{"@type":"Answer","text":"Покрытие зависит от плана. Одни полисы участвуют в оплате удаления, но не импланта, другие могут покрыть часть хирургического этапа или коронки. Лучший шаг — запросить письменную смету и попросить клинику проверить ваши льготы до начала лечения."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options#article","headline":"Импланты после удаления зуба: сроки, заживление и варианты","description":"Подробный гид по имплантам после удаления зуба \\u2014 немедленная, ранняя и отсроченная установка, этапы заживления, сохранение кости и факторы, влияющие на успех.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/implants-after-extraction.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Сколько времени занимает весь процесс имплантации после удаления зуба?","acceptedAnswer":{"@type":"Answer","text":"Это зависит от сроков и от того, нужна ли костная пластика. В некоторых случаях немедленная установка сокращает общий срок, но многим всё равно нужно несколько месяцев на остеоинтеграцию до фиксации финальной коронки. Если место сначала должно зажить или нуждается в укреплении кости, весь процесс займёт больше времени, и хирург должен составить для вас пошаговый план."}},{"@type":"Question","name":"Болезненна ли имплантация после удаления зуба?","acceptedAnswer":{"@type":"Answer","text":"Большинство пациентов во время процедуры чувствуют давление, но не резкую боль - благодаря анестезии. После операции несколько дней обычна болезненность, которая, как правило, хорошо контролируется рекомендованными лекарствами и соблюдением инструкций. Если боль усиливается после первоначального улучшения, обратитесь к хирургу для осмотра."}},{"@type":"Question","name":"Можно ли нормально есть после установки импланта?","acceptedAnswer":{"@type":"Answer","text":"После удаления зуба и установки импланта обычно нужна более мягкая пища на короткий период. По мере заживления большинство пациентов возвращаются к обычному рациону, но твёрдой и липкой пищи стоит избегать, пока хирург не подтвердит стабильность. Соблюдение рекомендаций по питанию помогает защитить имплант в период заживления."}},{"@type":"Question","name":"Как ухаживать за лункой удалённого зуба и зоной импланта?","acceptedAnswer":{"@type":"Answer","text":"Точно следуйте указаниям хирурга, особенно в первую неделю. Аккуратная гигиена, бережное отношение к сгустку и полоскания (если назначены) поддерживают заживление. В долгосрочной перспективе импланты требуют ежедневной чистки щёткой, межзубной гигиены и регулярного профессионального ухода."}},{"@type":"Question","name":"Какие риски у имплантации после удаления зуба?","acceptedAnswer":{"@type":"Answer","text":"У имплантов высокий процент успеха, но риски включают инфекцию, замедленное заживление, осложнения со стороны нерва или пазухи в отдельных зонах, а также неприживление импланта. Уровень риска зависит от качества кости, состояния дёсен и наличия инфекции на момент удаления. Тщательный осмотр и визуализация - лучший способ избежать неожиданностей."}},{"@type":"Question","name":"Покрывает ли страховка импланты после удаления зуба?","acceptedAnswer":{"@type":"Answer","text":"Покрытие зависит от плана. Одни полисы участвуют в оплате удаления, но не импланта, другие могут покрыть часть хирургического этапа или коронки. Лучший шаг - запросить письменную смету и попросить клинику проверить ваши льготы до начала лечения."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -92,7 +92,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №&nbsp;50724
+              Медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №&nbsp;50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -111,7 +111,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
                 Необходимость удалить зуб может ощущаться как серьёзная неприятность, но это ведь и первый шаг
                 к надёжной, естественной на вид замене. Если вы изучаете тему имплантации после удаления зуба,
-                самый важный вопрос обычно — сроки: ставить имплант в тот же день, через несколько недель или
+                самый важный вопрос обычно - сроки: ставить имплант в тот же день, через несколько недель или
                 после полного заживления? Правильный ответ зависит от состояния лунки, опоры кости, здоровья
                 дёсен и от того, была ли инфекция.
               </p>
@@ -132,16 +132,16 @@ export default function DentalImplantsAfterToothExtractionPost() {
                 Что такое дентальные импланты
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Дентальные импланты — это титановые стержни, которые устанавливают в челюстную кость взамен
+                Дентальные импланты - это титановые стержни, которые устанавливают в челюстную кость взамен
                 утраченных корней зубов. После заживления имплант служит опорой для коронки, восстанавливая вид
                 и функцию естественного зуба. В отличие от съёмных протезов, импланты неподвижны и стабильны,
                 а в сравнении с мостами не требуют обтачивания здоровых соседних зубов.
               </p>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Их главные плюсы — естественный вид благодаря индивидуальной коронке, подобранной по форме и
+                Их главные плюсы - естественный вид благодаря индивидуальной коронке, подобранной по форме и
                 оттенку; долговечность на многие годы при правильном уходе; восстановление функции в зоне, где
                 зуба нет; и комфорт, который многим пациентам кажется ближе к собственным зубам, чем у съёмных
-                вариантов. При замене одного зуба импланты часто считают сильным решением — они восстанавливают
+                вариантов. При замене одного зуба импланты часто считают сильным решением - они восстанавливают
                 утраченный зуб, не опираясь на соседние.
               </p>
 
@@ -168,9 +168,9 @@ export default function DentalImplantsAfterToothExtractionPost() {
               </ul>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Многим этот подход нравится: он сокращает число хирургических визитов и общий срок лечения.
-                В некоторых случаях ради эстетики можно быстро поставить временный зуб — в зависимости от
+                В некоторых случаях ради эстетики можно быстро поставить временный зуб - в зависимости от
                 стабильности и прикуса. Но немедленная установка не всегда означает немедленную финальную
-                коронку — во многих случаях до фиксации постоянного зуба ещё нужна фаза заживления.
+                коронку - во многих случаях до фиксации постоянного зуба ещё нужна фаза заживления.
               </p>
 
               <h3 className="text-xl font-semibold text-neutral-900 mb-3">
@@ -179,7 +179,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Раннюю установку часто выбирают, когда хирургу нужен короткий период заживления для смыкания
                 мягких тканей, лучшего контроля воспаления на участке или более стабильного контура десны до
-                установки. Это может быть удачным промежуточным вариантом — особенно если у зуба было лёгкое
+                установки. Это может быть удачным промежуточным вариантом - особенно если у зуба было лёгкое
                 воспаление или лунке нужно время стабилизироваться перед имплантом.
               </p>
 
@@ -196,7 +196,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
                 <li>&mdash; Случай в сложной эстетической зоне, где стабильность тканей критична.</li>
               </ul>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Отсроченный подход кажется медленнее, но часто он предсказуемее — когда участок нужно
+                Отсроченный подход кажется медленнее, но часто он предсказуемее - когда участок нужно
                 восстанавливать или когда риск инфекции выше.
               </p>
 
@@ -204,7 +204,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
                 Как проходит заживление после удаления зуба
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Заживление — это не просто «пара недель». Мягкие ткани заживают быстро, а кость меняется
+                Заживление - это не просто «пара недель». Мягкие ткани заживают быстро, а кость меняется
                 месяцами. Понимание этого помогает выстроить реалистичные ожидания.
               </p>
 
@@ -246,9 +246,9 @@ export default function DentalImplantsAfterToothExtractionPost() {
                 Сохранение кости после удаления
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Один из самых недооценённых моментов в планировании имплантации после удаления — то, что
+                Один из самых недооценённых моментов в планировании имплантации после удаления - то, что
                 происходит сразу после выхода зуба. Во многих случаях хирурги рекомендуют сохранение лунки
-                (его также называют сохранением гребня) — в лунку помещают костный материал, чтобы помочь
+                (его также называют сохранением гребня) - в лунку помещают костный материал, чтобы помочь
                 сохранить форму кости. Это бывает полезно, когда:
               </p>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
@@ -277,7 +277,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
                 </li>
                 <li>
                   &mdash; <strong>Мини-импланты.</strong> Уже стандартных, применяются в отдельных ситуациях. Это не
-                  «лучший» имплант — просто другой инструмент под определённую анатомию и задачи реставрации.
+                  «лучший» имплант - просто другой инструмент под определённую анатомию и задачи реставрации.
                 </li>
                 <li>
                   &mdash; <strong>Решения на несколько зубов или на всю челюсть.</strong> Если отсутствует несколько
@@ -294,7 +294,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
                 <li>
                   &mdash; <strong>Плотность и объём кости.</strong> Стабильная костная опора критична. Если кость тонкая
-                  или мягкая, хирург может рекомендовать костную пластику, поэтапное лечение или изменённые сроки —
+                  или мягкая, хирург может рекомендовать костную пластику, поэтапное лечение или изменённые сроки -
                   чтобы повысить предсказуемость.
                 </li>
                 <li>
@@ -304,7 +304,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
                 </li>
                 <li>
                   &mdash; <strong>Гигиена рта.</strong> Ежедневная чистка и регулярный профессиональный уход снижают риск
-                  воспаления вокруг импланта — это важный фактор, который в ваших руках.
+                  воспаления вокруг импланта - это важный фактор, который в ваших руках.
                 </li>
                 <li>
                   &mdash; <strong>Образ жизни.</strong> Курение повышает риск инфекции и замедляет заживление, а
@@ -336,7 +336,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
                     Болезненна ли имплантация после удаления зуба?
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Большинство пациентов во время процедуры чувствуют давление, но не резкую боль — благодаря
+                    Большинство пациентов во время процедуры чувствуют давление, но не резкую боль - благодаря
                     анестезии. После операции несколько дней обычна болезненность, которая, как правило, хорошо
                     контролируется рекомендованными лекарствами и соблюдением инструкций. Если боль усиливается
                     после первоначального улучшения, обратитесь к хирургу для осмотра.
@@ -375,7 +375,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
                     У имплантов высокий процент успеха, но риски включают инфекцию, замедленное заживление,
                     осложнения со стороны нерва или пазухи в отдельных зонах, а также неприживление импланта.
                     Уровень риска зависит от качества кости, состояния дёсен и наличия инфекции на момент
-                    удаления. Тщательный осмотр и визуализация — лучший способ избежать неожиданностей.
+                    удаления. Тщательный осмотр и визуализация - лучший способ избежать неожиданностей.
                   </p>
                 </div>
 
@@ -385,7 +385,7 @@ export default function DentalImplantsAfterToothExtractionPost() {
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
                     Покрытие зависит от плана. Одни полисы участвуют в оплате удаления, но не импланта, другие
-                    могут покрыть часть хирургического этапа или коронки. Лучший шаг — запросить письменную смету
+                    могут покрыть часть хирургического этапа или коронки. Лучший шаг - запросить письменную смету
                     и попросить клинику проверить ваши льготы до начала лечения.
                   </p>
                 </div>
@@ -397,10 +397,10 @@ export default function DentalImplantsAfterToothExtractionPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Хирургия дентальных имплантов</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy — Обзор дентальных имплантов</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/gum-disease" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Заболевания дёсен и здоровье полости рта</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/19885407/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Hämmerle CHF, Chen ST, Wilson TG — Консенсус о сроках установки имплантов после удаления</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Хирургия дентальных имплантов</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy - Обзор дентальных имплантов</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/gum-disease" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR - Заболевания дёсен и здоровье полости рта</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/19885407/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Hämmerle CHF, Chen ST, Wilson TG - Консенсус о сроках установки имплантов после удаления</a></li>
               </ul>
             </section>
 

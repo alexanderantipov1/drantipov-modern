@@ -4,28 +4,29 @@ import Link from "next/link";
 import { siteConfig } from "@/constants/siteConfig";
 import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/structured-data";
 import DualCTA from "@/components/DualCTA";
+import CalculatorPackages from "@/components/CalculatorPackages";
 
 export const metadata: Metadata = {
-  title: "Стоимость All-on-4 в Калифорнии — честный разбор",
+  title: "Стоимость All-on-4 в Калифорнии - честный разбор",
   description:
     "Сколько реально стоят импланты All-on-4 в 2026: детальный разбор, факторы цены, варианты рассрочки, страховое покрытие. Челюстно-лицевой хирург в Северной Калифорнии.",
   alternates: { canonical: "/ru/all-on-4-cost", languages: { ru: "/ru/all-on-4-cost", en: "/all-on-4-cost" } },
   openGraph: {
     locale: "ru_RU",
-    title: "Стоимость All-on-4 — детальный разбор",
+    title: "Стоимость All-on-4 - детальный разбор",
     description: "Честные цены на имплантацию полного зубного ряда.",
     url: `${siteConfig.url}/ru/all-on-4-cost`,
     type: "article",
-    images: [{ url: "/images/fullarch/08-final-result.jpeg", width: 1920, height: 1080, alt: "Стоимость All-on-4 — разбор" }],
+    images: [{ url: "/images/fullarch/08-final-result.jpeg", width: 1920, height: 1080, alt: "Стоимость All-on-4 - разбор" }],
   },
 };
 
 const faqs = [
-  { question: "Почему All-on-4 так дорого?", answer: "В All-on-4 входит: установка 4 имплантов, временный фиксированный протез в день операции, 3D-планирование по КТ, IV-седация, индивидуально фрезерованный финальный протез (обычно цирконий), плюс несколько контрольных приёмов на 6–12 месяцев. Только сами импланты (Nobel Biocare или Straumann) обходятся клинике в $1 500–3 000 за челюсть. Итог — это и материалы, и работа квалифицированного хирурга на протяжении года." },
-  { question: "Можно разделить лечение между челюстями?", answer: "Да. Многие пациенты сначала делают верхнюю челюсть, через 6–12 месяцев — нижнюю. Это растягивает затраты и восстановление. Если делать обе челюсти в одну операцию — часто действует скидка." },
+  { question: "Почему All-on-4 так дорого?", answer: "В All-on-4 входит: установка 4 имплантов, временный фиксированный протез в день операции, 3D-планирование по КТ, IV-седация, индивидуально фрезерованный финальный протез (обычно цирконий), плюс несколько контрольных приёмов на 6–12 месяцев. Только сами импланты (Nobel Biocare или Straumann) обходятся клинике в $1 500–3 000 за челюсть. Итог - это и материалы, и работа квалифицированного хирурга на протяжении года." },
+  { question: "Можно разделить лечение между челюстями?", answer: "Да. Многие пациенты сначала делают верхнюю челюсть, через 6–12 месяцев - нижнюю. Это растягивает затраты и восстановление. Если делать обе челюсти в одну операцию - часто действует скидка." },
   { question: "Покрывает ли это страховка?", answer: "У большинства стоматологических страховок годовой лимит $1 500–3 000, и они часто покрывают только этап удаления зубов. Медицинская страховка иногда покрывает компоненты, связанные с функциональной реабилитацией. Мы бесплатно проверяем условия вашего конкретного полиса." },
-  { question: "Какая рассрочка доступна?", answer: "Работаем с CareCredit и Lending Club. Планы стартуют от $99 в месяц, есть промо-периоды 0% годовых на 18–24 месяца. Большие суммы — до 84 месяцев. Можем сделать предварительное одобрение прямо на консультации." },
-  { question: "Самый дешёвый All-on-4 — выгодная сделка?", answer: "Осторожнее с ценой ниже $20 000 за челюсть. Проверьте: бренд имплантов (избегайте дженериков), есть ли у хирурга board-сертификация, включена ли костная пластика если она нужна, из чего финальный протез (акрил быстро изнашивается, цирконий служит 20+ лет), и входит ли послеоперационное наблюдение." },
+  { question: "Какая рассрочка доступна?", answer: "Работаем с CareCredit и Lending Club. Планы стартуют от $99 в месяц, есть промо-периоды 0% годовых на 18–24 месяца. Большие суммы - до 84 месяцев. Можем сделать предварительное одобрение прямо на консультации." },
+  { question: "Самый дешёвый All-on-4 - выгодная сделка?", answer: "Осторожнее с ценой ниже $20 000 за челюсть. Проверьте: бренд имплантов (избегайте дженериков), есть ли у хирурга board-сертификация, включена ли костная пластика если она нужна, из чего финальный протез (акрил быстро изнашивается, цирконий служит 20+ лет), и входит ли послеоперационное наблюдение." },
 ];
 
 const costItems = [
@@ -46,7 +47,7 @@ const factors = [
   "Бренд имплантов и материал протеза",
   "Тип седации (местная, IV или общий наркоз)",
   "Сложность случая (при тяжёлой атрофии могут понадобиться скуловые импланты)",
-  "Регион (Северная Калифорния — средняя цена, побережье дороже)",
+  "Регион (Северная Калифорния - средняя цена, побережье дороже)",
 ];
 
 export default function AllOn4CostPage() {
@@ -62,10 +63,11 @@ export default function AllOn4CostPage() {
 
       <section className="relative bg-dark text-white overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/images/fullarch/08-final-result.jpeg" alt="Стоимость All-on-4" fill className="object-cover opacity-30" priority sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/85 to-dark/55" />
+          <Image src="/images/procedures/full-arch-prosthesis.png" alt="Протез All-on-4 на имплантах в руках хирурга" fill priority sizes="100vw" className="object-cover object-[center_55%]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/85 to-dark/45" />
+          <div className="absolute inset-0 bg-dark/30" />
         </div>
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+        <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-14">
           <nav aria-label="Breadcrumb" className="text-sm text-white/60 mb-6">
             <ol className="flex flex-wrap items-center gap-2">
               <li><Link href="/ru" className="hover:text-primary-light">Главная</Link></li>
@@ -75,7 +77,7 @@ export default function AllOn4CostPage() {
           </nav>
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary-light">Честные цены</p>
           <h1 className="mt-4 font-serif text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-            Стоимость All-on-4 в Калифорнии — что вы реально платите
+            Стоимость All-on-4 в Калифорнии - что вы реально платите
           </h1>
           <p className="mt-6 max-w-3xl text-xl leading-relaxed text-white/85">
             Детальный разбор: что включено, что опционально, и куда уходят деньги. Никаких скрытых пакетных платежей. Никакого давления продаж.
@@ -87,11 +89,28 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28">
+      {/* Мгновенный расчёт - калькулятор на API (RU) */}
+      <section className="bg-light py-8 lg:py-10">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary-600">Мгновенный расчёт</p>
+            <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl">Рассчитайте стоимость за 2 минуты</h2>
+            <p className="mt-4 text-lg text-neutral-600">
+              Ответьте на несколько вопросов и получите персональный расчёт с вариантами рассрочки и страховки - сразу, на email. Без обязательств.
+            </p>
+            <p className="mt-3 text-base text-neutral-500">Выберите лечение, которое ближе всего к вашей ситуации.</p>
+          </div>
+          <div className="mt-5">
+            <CalculatorPackages locale="ru" />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-10 lg:py-14">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-3">Детальный разбор</h2>
-          <p className="text-center text-neutral-600 max-w-2xl mx-auto mb-12">
-            Из чего складывается полная стоимость All-on-4 для одной челюсти. Это типичные диапазоны для Северной Калифорнии; точная цена — после консультации.
+          <p className="text-center text-neutral-600 max-w-2xl mx-auto mb-6">
+            Из чего складывается полная стоимость All-on-4 для одной челюсти. Это типичные диапазоны для Северной Калифорнии; точная цена - после консультации.
           </p>
           <div className="rounded-3xl border border-neutral-200 shadow-xl overflow-hidden">
             <table className="w-full">
@@ -116,9 +135,9 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
-      <section className="bg-light py-20 lg:py-28">
+      <section className="bg-light py-10 lg:py-14">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-12">Что меняет цену</h2>
+          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-6">Что меняет цену</h2>
           <ul className="grid gap-4 md:grid-cols-2">
             {factors.map((f) => (
               <li key={f} className="flex items-start gap-3 rounded-2xl bg-white p-5 shadow-sm">
@@ -132,9 +151,9 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28">
+      <section className="py-10 lg:py-14">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-12">Рассрочка делает лечение доступным</h2>
+          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-6">Рассрочка делает лечение доступным</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="rounded-3xl bg-white p-7 shadow-sm border border-neutral-200">
               <p className="text-3xl font-bold text-primary-600">$99</p>
@@ -156,39 +175,39 @@ export default function AllOn4CostPage() {
             </div>
           </div>
           <p className="mt-8 text-center text-neutral-600 text-sm">
-            Подробности — на <Link href="/ru/insurance" className="text-primary-600 hover:underline font-semibold">странице о страховках и рассрочке</Link>.
+            Подробности - на <Link href="/ru/insurance" className="text-primary-600 hover:underline font-semibold">странице о страховках и рассрочке</Link>.
           </p>
         </div>
       </section>
 
-      {/* Expanded SEO content — what's included, financing, factors */}
-      <section className="bg-white py-20 lg:py-28">
+      {/* Expanded SEO content - what's included, financing, factors */}
+      <section className="bg-white py-10 lg:py-14">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl mb-8">
             Что реально входит в цену All-on-4
           </h2>
           <p className="text-lg leading-8 text-neutral-700 mb-6">
-            Цифра, которая важна — это <strong>полная цена за челюсть «всё включено»</strong>: от консультации до постоянного протеза у вас во рту. В нашу детальную цену All-on-4 входит:
+            Цифра, которая важна - это <strong>полная цена за челюсть «всё включено»</strong>: от консультации до постоянного протеза у вас во рту. В нашу детальную цену All-on-4 входит:
           </p>
-          <ul className="space-y-3 text-neutral-700 text-base leading-relaxed list-disc pl-6 mb-10">
-            <li><strong>3D КТ и виртуальное планирование операции</strong> — включено, без отдельной платы за диагностику.</li>
-            <li><strong>Удаление зубов перед операцией</strong> — оставшихся разрушенных зубов (некоторые клиники берут $200–500 за зуб сверх цены имплантации).</li>
-            <li><strong>4–6 титановых имплантов</strong> на челюсть, премиум-бренд (Neodent, Nobel Biocare или Straumann — по ситуации).</li>
+          <ul className="space-y-3 text-neutral-700 text-base leading-relaxed list-disc pl-6 mb-5">
+            <li><strong>3D КТ и виртуальное планирование операции</strong> - включено, без отдельной платы за диагностику.</li>
+            <li><strong>Удаление зубов перед операцией</strong> - оставшихся разрушенных зубов (некоторые клиники берут $200–500 за зуб сверх цены имплантации).</li>
+            <li><strong>4–6 титановых имплантов</strong> на челюсть, премиум-бренд (Neodent, Nobel Biocare или Straumann - по ситуации).</li>
             <li><strong>Индивидуальный навигационный шаблон</strong> для точной установки имплантов.</li>
             <li><strong>IV-седация</strong>, которую проводит сам хирург (без отдельной платы анестезиологу).</li>
-            <li><strong>Фиксированный временный протез в день операции</strong> (PMMA / акрил) — крепится на импланты в день операции.</li>
-            <li><strong>Постоянный протез</strong> — циркониевый или PMMA с титановым каркасом — устанавливается через 4–6 месяцев после остеоинтеграции.</li>
+            <li><strong>Фиксированный временный протез в день операции</strong> (PMMA / акрил) - крепится на импланты в день операции.</li>
+            <li><strong>Постоянный протез</strong> - циркониевый или PMMA с титановым каркасом - устанавливается через 4–6 месяцев после остеоинтеграции.</li>
             <li><strong>Контрольные приёмы на 7-й, 30-й, 90-й день и через 6 месяцев</strong>, плюс проверка приживаемости через 12 месяцев.</li>
           </ul>
           <p className="text-lg leading-8 text-neutral-700 mb-6">
-            Сравните это с «приманочными» ценами вроде $9 995 за челюсть — в них обычно не входит удаление, финальный протез, седация и наблюдение. Когда всё это добавляют, реальная итоговая цена приходит к тому же диапазону $25K–35K, что и в прозрачной смете.
+            Сравните это с «приманочными» ценами вроде $9 995 за челюсть - в них обычно не входит удаление, финальный протез, седация и наблюдение. Когда всё это добавляют, реальная итоговая цена приходит к тому же диапазону $25K–35K, что и в прозрачной смете.
           </p>
 
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl mt-16 mb-8">
-            Рассрочка и страховка — честная версия
+          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl mt-8 mb-4">
+            Рассрочка и страховка - честная версия
           </h2>
           <p className="text-lg leading-8 text-neutral-700 mb-6">
-            Большинство стоматологических страховок в США относятся к All-on-4 как к съёмному протезу: возмещают «эквивалент протеза», обычно $1 500–3 000 за челюсть. Сама установка имплантов стоматологической страховкой обычно <em>не</em> покрывается. Несколько медицинских страховок покрывают хирургические компоненты при подтверждённой медицинской необходимости (тяжёлая адентия, реконструкция после травмы, после онкологии) — мы готовим документы для таких заявок.
+            Большинство стоматологических страховок в США относятся к All-on-4 как к съёмному протезу: возмещают «эквивалент протеза», обычно $1 500–3 000 за челюсть. Сама установка имплантов стоматологической страховкой обычно <em>не</em> покрывается. Несколько медицинских страховок покрывают хирургические компоненты при подтверждённой медицинской необходимости (тяжёлая адентия, реконструкция после травмы, после онкологии) - мы готовим документы для таких заявок.
           </p>
           <p className="text-lg leading-8 text-neutral-700 mb-6">
             Для части, которую платит пациент, мы работаем с{" "}
@@ -199,7 +218,7 @@ export default function AllOn4CostPage() {
             по ежемесячным планам от <strong>$99 в месяц</strong> на срок до 84 месяцев. С хорошей кредитной историей доступны промо-периоды с 0% годовых на коротких сроках (обычно 6–24 месяца).
           </p>
 
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl mt-16 mb-8">
+          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl mt-8 mb-4">
             Почему цены отличаются от клиники к клинике
           </h2>
           <p className="text-lg leading-8 text-neutral-700 mb-6">
@@ -208,20 +227,20 @@ export default function AllOn4CostPage() {
           <ul className="space-y-3 text-neutral-700 text-base leading-relaxed list-disc pl-6 mb-6">
             <li><strong>Квалификация хирурга.</strong> Стоматолог общего профиля, ставящий импланты, обычно берёт меньше, чем сертифицированный челюстно-лицевой хирург (Diplomate ABOMS), но и сложность случаев и риск осложнений тоже отличаются.</li>
             <li><strong>Бренд имплантов.</strong> Премиум-бренды (Nobel, Straumann, Neodent) обходятся клинике в 2–4 раза дороже дженериков, но за ними десятилетия рецензируемых клинических данных.</li>
-            <li><strong>Материал протеза.</strong> Цирконий (+$5 000 к цене акрила) — прочнее, эстетичнее и служит 15–25 лет против 5–10 лет у акрила.</li>
-            <li><strong>Тип анестезии.</strong> IV-седация, которую делает сам хирург, добавляет $800–1 500. Общий наркоз в операционной больницы — $3 000–5 000.</li>
-            <li><strong>Подготовительная работа.</strong> Синус-лифтинг, костная пластика, скуловые импланты при тяжёлой атрофии — каждое добавляет $2 000–8 000 в зависимости от объёма.</li>
+            <li><strong>Материал протеза.</strong> Цирконий (+$5 000 к цене акрила) - прочнее, эстетичнее и служит 15–25 лет против 5–10 лет у акрила.</li>
+            <li><strong>Тип анестезии.</strong> IV-седация, которую делает сам хирург, добавляет $800–1 500. Общий наркоз в операционной больницы - $3 000–5 000.</li>
+            <li><strong>Подготовительная работа.</strong> Синус-лифтинг, костная пластика, скуловые импланты при тяжёлой атрофии - каждое добавляет $2 000–8 000 в зависимости от объёма.</li>
             <li><strong>География.</strong> Крупные побережные мегаполисы (Сан-Франциско, Нью-Йорк, Лос-Анджелес, Сиэтл) идут на 20–30% выше медианы по США; сельский Средний Запад на 15–25% ниже.</li>
           </ul>
           <p className="text-lg leading-8 text-neutral-700 mb-6">
-            Когда сравниваете предложения — просите детальную смету и уточняйте, что входит и что нет. Бесплатная консультация с КТ в нашем офисе в Roseville даёт вам твёрдую письменную смету без неприятных сюрпризов потом.
+            Когда сравниваете предложения - просите детальную смету и уточняйте, что входит и что нет. Бесплатная консультация с КТ в нашем офисе в Roseville даёт вам твёрдую письменную смету без неприятных сюрпризов потом.
           </p>
         </div>
       </section>
 
-      <section className="bg-light py-20 lg:py-28">
+      <section className="bg-light py-10 lg:py-14">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-12">Частые вопросы</h2>
+          <h2 className="font-serif text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl text-center mb-6">Частые вопросы</h2>
           <div className="space-y-3">
             {faqs.map((f, i) => (
               <details key={f.question} open={i === 0} className="group rounded-2xl border border-neutral-200 bg-white px-6 py-4 shadow-sm">
@@ -238,7 +257,7 @@ export default function AllOn4CostPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-5xl px-4 py-6 sm:px-6 lg:px-8">
         <h2 className="font-serif text-2xl font-bold text-neutral-900 mb-8 text-center">Продолжайте изучать варианты</h2>
         <div className="grid gap-6 md:grid-cols-3">
           <Link href="/ru/all-on-4-clearchoice-alternative" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -249,7 +268,7 @@ export default function AllOn4CostPage() {
           <Link href="/ru/expertise/full-arch-implants" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
             <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Процедура</p>
             <h3 className="font-bold text-neutral-900 leading-snug">Лечение имплантацией полного ряда</h3>
-            <p className="text-sm text-neutral-600 mt-2 leading-6">Как проходит фиксированная имплантация полного ряда — от консультации до финальных зубов.</p>
+            <p className="text-sm text-neutral-600 mt-2 leading-6">Как проходит фиксированная имплантация полного ряда - от консультации до финальных зубов.</p>
           </Link>
           <Link href="/ru/expertise/zygomatic-implants" className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
             <p className="text-xs uppercase tracking-widest text-primary-600 font-bold mb-2">Продвинутая опция</p>

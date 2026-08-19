@@ -8,9 +8,9 @@ import Image from "next/image"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Импланты за один день — миф или реальность?",
+  title: "Импланты за один день - миф или реальность?",
   description:
-    "Импланты за один день и немедленная нагрузка — кому подходит, что вы получаете в день операции, чем временный протез отличается от постоянного и каковы реальные риски.",
+    "Импланты за один день и немедленная нагрузка - кому подходит, что вы получаете в день операции, чем временный протез отличается от постоянного и каковы реальные риски.",
   alternates: {
     canonical: "/ru/for-patients/insights/same-day-implants",
     languages: {
@@ -29,21 +29,21 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     locale: "ru_RU",
-    title: "Импланты за один день — миф или реальность?",
-    description: "Импланты с немедленной нагрузкой простыми словами — кому подходит, что вы получаете в день операции и каковы реальные риски.",
+    title: "Импланты за один день - миф или реальность?",
+    description: "Импланты с немедленной нагрузкой простыми словами - кому подходит, что вы получаете в день операции и каковы реальные риски.",
     images: [
       {
         url: "/images/blog/2026-04-28/same-day-implants.jpg",
         width: 1200,
         height: 630,
-        alt: "Импланты за один день — миф или реальность?",
+        alt: "Импланты за один день - миф или реальность?",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Импланты за один день — миф или реальность?",
-    description: "Импланты с немедленной нагрузкой простыми словами — кому подходит, что вы получаете в день операции и каковы реальные риски.",
+    title: "Импланты за один день - миф или реальность?",
+    description: "Импланты с немедленной нагрузкой простыми словами - кому подходит, что вы получаете в день операции и каковы реальные риски.",
     images: ["/images/blog/2026-04-28/same-day-implants.jpg"],
   }
 }
@@ -53,7 +53,7 @@ export default function SameDayImplantsPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/same-day-implants#article","headline":"Импланты за один день (немедленная нагрузка) — миф или реальность?","description":"Импланты с немедленной нагрузкой — кому подходит, что вы получаете в день операции, чем временный протез отличается от постоянного, и честный разговор о рисках.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/same-day-implants","datePublished":"2026-04-28","dateModified":"2026-04-28","image":["https://www.drantipov.com/images/blog/2026-04-28/same-day-implants.jpg"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/same-day-implants"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Это действительно зубы за один день?","acceptedAnswer":{"@type":"Answer","text":"Да — с оговоркой. В день операции вы уходите из клиники с фиксированными временными зубами на имплантах. Постоянный протез изготавливают через 4–6 месяцев, после полной остеоинтеграции и стабилизации мягких тканей."}},{"@type":"Question","name":"Кому немедленная нагрузка не подходит?","acceptedAnswer":{"@type":"Answer","text":"Если первичная стабильность ниже примерно 35 Н·см — рисковать не стоит. Также: пациенты с тяжёлым остеопорозом, неконтролируемым диабетом, активным курением более 10 сигарет в день или значительной потерей кости в зоне имплантов."}},{"@type":"Question","name":"Чем временный протез отличается от постоянного?","acceptedAnswer":{"@type":"Answer","text":"Временный обычно из акрила или композита — легче, менее прочный и не идеально соответствует финальному дизайну улыбки. Постоянный — это цирконий или PMMA на титановой основе, рассчитанный на годы службы."}},{"@type":"Question","name":"Можно ли есть в день операции?","acceptedAnswer":{"@type":"Answer","text":"В день операции — только мягкие напитки, никакой жевательной нагрузки на импланты. Первые 2–4 недели — мягкая диета (пюре, рыба, яйца, йогурт). Более плотную пищу возвращают постепенно по мере заживления."}},{"@type":"Question","name":"Сколько длится сама операция?","acceptedAnswer":{"@type":"Answer","text":"Удаления + установка имплантов + временный протез — обычно 4–6 часов в зависимости от случая. Под внутривенной седацией у вас не останется воспоминаний о процедуре."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://www.drantipov.com/ru"},{"@type":"ListItem","position":2,"name":"Пациентам","item":"https://www.drantipov.com/ru/for-patients"},{"@type":"ListItem","position":3,"name":"Полезное","item":"https://www.drantipov.com/ru/for-patients/insights"},{"@type":"ListItem","position":4,"name":"Импланты за один день (немедленная нагрузка) — миф или реальность?","item":"https://www.drantipov.com/ru/for-patients/insights/same-day-implants"}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/same-day-implants#article","headline":"Импланты за один день (немедленная нагрузка) - миф или реальность?","description":"Импланты с немедленной нагрузкой - кому подходит, что вы получаете в день операции, чем временный протез отличается от постоянного, и честный разговор о рисках.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/same-day-implants","datePublished":"2026-04-28","dateModified":"2026-04-28","image":["https://www.drantipov.com/images/blog/2026-04-28/same-day-implants.jpg"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/same-day-implants"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Это действительно зубы за один день?","acceptedAnswer":{"@type":"Answer","text":"Да - с оговоркой. В день операции вы уходите из клиники с фиксированными временными зубами на имплантах. Постоянный протез изготавливают через 4–6 месяцев, после полной остеоинтеграции и стабилизации мягких тканей."}},{"@type":"Question","name":"Кому немедленная нагрузка не подходит?","acceptedAnswer":{"@type":"Answer","text":"Если первичная стабильность ниже примерно 35 Н·см - рисковать не стоит. Также: пациенты с тяжёлым остеопорозом, неконтролируемым диабетом, активным курением более 10 сигарет в день или значительной потерей кости в зоне имплантов."}},{"@type":"Question","name":"Чем временный протез отличается от постоянного?","acceptedAnswer":{"@type":"Answer","text":"Временный обычно из акрила или композита - легче, менее прочный и не идеально соответствует финальному дизайну улыбки. Постоянный - это цирконий или PMMA на титановой основе, рассчитанный на годы службы."}},{"@type":"Question","name":"Можно ли есть в день операции?","acceptedAnswer":{"@type":"Answer","text":"В день операции - только мягкие напитки, никакой жевательной нагрузки на импланты. Первые 2–4 недели - мягкая диета (пюре, рыба, яйца, йогурт). Более плотную пищу возвращают постепенно по мере заживления."}},{"@type":"Question","name":"Сколько длится сама операция?","acceptedAnswer":{"@type":"Answer","text":"Удаления + установка имплантов + временный протез - обычно 4–6 часов в зависимости от случая. Под внутривенной седацией у вас не останется воспоминаний о процедуре."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://www.drantipov.com/ru"},{"@type":"ListItem","position":2,"name":"Пациентам","item":"https://www.drantipov.com/ru/for-patients"},{"@type":"ListItem","position":3,"name":"Полезное","item":"https://www.drantipov.com/ru/for-patients/insights"},{"@type":"ListItem","position":4,"name":"Импланты за один день (немедленная нагрузка) - миф или реальность?","item":"https://www.drantipov.com/ru/for-patients/insights/same-day-implants"}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -95,13 +95,13 @@ export default function SameDayImplantsPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
+              Медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
               <Image
                 src="/images/blog/2026-04-28/same-day-implants.jpg"
-                alt="Импланты за один день — результат All-on-4"
+                alt="Импланты за один день - результат All-on-4"
                 fill
                 className="object-cover"
                 priority
@@ -308,10 +308,10 @@ export default function SameDayImplantsPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Процедура имплантации зубов</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/23543541/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Esposito M, Grusovin MG et al. — Cochrane Review: вмешательства для замещения отсутствующих зубов — различные сроки нагрузки имплантов</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M — Концепция All-on-4 с немедленной функцией на имплантатах системы Brånemark</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH — Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Процедура имплантации зубов</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/23543541/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Esposito M, Grusovin MG et al. - Cochrane Review: вмешательства для замещения отсутствующих зубов - различные сроки нагрузки имплантов</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/15008863/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Maló P, Rangert B, Nobre M - Концепция All-on-4 с немедленной функцией на имплантатах системы Brånemark</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/dental-implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIH - Национальный институт стоматологических и черепно-лицевых исследований: дентальные импланты</a></li>
               </ul>
             </section>
 

@@ -15,7 +15,7 @@ interface HeroStatsProps {
 }
 
 /**
- * HeroStats — 4 floating stat cards that overlap the hero bottom edge.
+ * HeroStats - 4 floating stat cards that overlap the hero bottom edge.
  * Drops in immediately after a `<ExpertisePageHero>` block.
  */
 export function HeroStats({ stats }: HeroStatsProps) {

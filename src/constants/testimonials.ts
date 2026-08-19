@@ -49,7 +49,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Dr. Antipov performed my rhinoplasty and the results are so natural — everyone says I look refreshed but no one can tell I had surgery. His understanding of facial bone structure as an oral surgeon gives him an incredible advantage.",
+      "Dr. Antipov performed my rhinoplasty and the results are so natural - everyone says I look refreshed but no one can tell I had surgery. His understanding of facial bone structure as an oral surgeon gives him an incredible advantage.",
     name: "Chieko T.",
     procedure: "Rhinoplasty",
     location: "Yuba City, CA",
@@ -59,7 +59,7 @@ export const testimonials: Testimonial[] = [
     quote:
       "I was told by three other surgeons that I didn't have enough bone for implants. Dr. Antipov performed zygomatic implants and I walked out with teeth the same day. He literally changed my life when no one else could help me.",
     name: "Robert J.",
-    procedure: "Zygomatic Implants — Full Arch",
+    procedure: "Zygomatic Implants - Full Arch",
     location: "Reno, NV",
     stars: 5,
   },
@@ -67,7 +67,7 @@ export const testimonials: Testimonial[] = [
     quote:
       "My daughter had corrective jaw surgery for her open bite and facial asymmetry. Dr. Antipov used 3D computer planning and the results were beyond what we imagined. Her confidence has skyrocketed. We're so grateful.",
     name: "Evelina C.",
-    procedure: "Corrective Jaw Surgery — Le Fort & Genioplasty",
+    procedure: "Corrective Jaw Surgery - Le Fort & Genioplasty",
     location: "Citrus Heights, CA",
     stars: 5,
   },

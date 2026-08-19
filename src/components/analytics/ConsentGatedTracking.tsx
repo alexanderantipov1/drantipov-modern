@@ -10,7 +10,7 @@ import MicrosoftClarity from "@/components/MicrosoftClarity";
  * Wraps third-party tracking (GA, GTM, Clarity) and only renders them
  * after the user has given consent via the cookie banner.
  *
- * Before consent: nothing loaded — no cookies, no tracking pixels, no requests.
+ * Before consent: nothing loaded - no cookies, no tracking pixels, no requests.
  * After consent: scripts inject as usual.
  *
  * This satisfies GDPR/CCPA "prior consent" requirements. For US-only practice,
@@ -21,7 +21,7 @@ export function ConsentGatedTracking() {
   const [consentGranted, setConsentGranted] = useState(false);
 
   useEffect(() => {
-    // Poll consent state — hasConsent is read from a context but consent
+    // Poll consent state - hasConsent is read from a context but consent
     // can change without re-render. Simple poll covers it.
     const check = () => setConsentGranted(hasConsent());
     check();

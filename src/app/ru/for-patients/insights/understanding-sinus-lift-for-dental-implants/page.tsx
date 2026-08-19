@@ -9,7 +9,7 @@ import { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Синус-лифтинг для дентальных имплантов: что это и зачем",
   description:
-    "Синус-лифтинг (синус-аугментация) наращивает кость в верхней челюсти, чтобы импланты можно было установить надёжно. Когда он нужен, как проходит, восстановление и стоимость — с доктором Антиповым в Roseville, Калифорния.",
+    "Синус-лифтинг (синус-аугментация) наращивает кость в верхней челюсти, чтобы импланты можно было установить надёжно. Когда он нужен, как проходит, восстановление и стоимость - с доктором Антиповым в Roseville, Калифорния.",
   alternates: {
     canonical: "/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants",
     languages: {
@@ -52,7 +52,7 @@ export default function SinusLiftPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants#article","headline":"Синус-лифтинг для дентальных имплантов: что это и зачем","description":"Синус-лифтинг (синус-аугментация) увеличивает объём кости в верхней челюсти, чтобы дентальные импланты можно было установить надёжно \\u2014 показания, ход процедуры, восстановление и преимущества.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/sinus-lift.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Сколько длится восстановление после синус-лифтинга?","acceptedAnswer":{"@type":"Answer","text":"Сроки восстановления после синус-лифтинга индивидуальны, но обычно требуется несколько месяцев, чтобы кость как следует прижилась, прежде чем можно будет ставить импланты. Как правило, пациенты приходят на контрольные визиты, чтобы врач следил за процессом."}},{"@type":"Question","name":"Синус-лифтинг — это больно?","acceptedAnswer":{"@type":"Answer","text":"Большинство пациентов отмечают лишь лёгкий дискомфорт после процедуры, который обычно снимается назначенными обезболивающими. Местная анестезия помогает свести боль во время самой операции к минимуму."}},{"@type":"Question","name":"Сколько времени занимает сама процедура синус-лифтинга?","acceptedAnswer":{"@type":"Answer","text":"Процедура синус-лифтинга обычно занимает около 1\\u20132 часов в зависимости от сложности случая. Чаще всего пациент может вернуться домой в тот же день."}},{"@type":"Question","name":"Синус-лифтинг подходит всем?","acceptedAnswer":{"@type":"Answer","text":"Подходит не всем. На этапе обследования врач учитывает общее состояние здоровья, курение и качество кости."}},{"@type":"Question","name":"Какие материалы используют для костной пластики при синус-лифтинге?","acceptedAnswer":{"@type":"Answer","text":"Для костной пластики могут применяться аутотрансплантаты (собственная кость пациента), аллотрансплантаты (донорская кость) или синтетические материалы. Выбор зависит от конкретного случая и предпочтений хирурга."}},{"@type":"Question","name":"Что будет, если не делать синус-лифтинг?","acceptedAnswer":{"@type":"Answer","text":"Если синус-лифтинг нужен, но его не сделать, установить импланты успешно может оказаться невозможно. Это способно привести к дальнейшей потере кости и осложнениям."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants#article","headline":"Синус-лифтинг для дентальных имплантов: что это и зачем","description":"Синус-лифтинг (синус-аугментация) увеличивает объём кости в верхней челюсти, чтобы дентальные импланты можно было установить надёжно \\u2014 показания, ход процедуры, восстановление и преимущества.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/sinus-lift.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Сколько длится восстановление после синус-лифтинга?","acceptedAnswer":{"@type":"Answer","text":"Сроки восстановления после синус-лифтинга индивидуальны, но обычно требуется несколько месяцев, чтобы кость как следует прижилась, прежде чем можно будет ставить импланты. Как правило, пациенты приходят на контрольные визиты, чтобы врач следил за процессом."}},{"@type":"Question","name":"Синус-лифтинг - это больно?","acceptedAnswer":{"@type":"Answer","text":"Большинство пациентов отмечают лишь лёгкий дискомфорт после процедуры, который обычно снимается назначенными обезболивающими. Местная анестезия помогает свести боль во время самой операции к минимуму."}},{"@type":"Question","name":"Сколько времени занимает сама процедура синус-лифтинга?","acceptedAnswer":{"@type":"Answer","text":"Процедура синус-лифтинга обычно занимает около 1\\u20132 часов в зависимости от сложности случая. Чаще всего пациент может вернуться домой в тот же день."}},{"@type":"Question","name":"Синус-лифтинг подходит всем?","acceptedAnswer":{"@type":"Answer","text":"Подходит не всем. На этапе обследования врач учитывает общее состояние здоровья, курение и качество кости."}},{"@type":"Question","name":"Какие материалы используют для костной пластики при синус-лифтинге?","acceptedAnswer":{"@type":"Answer","text":"Для костной пластики могут применяться аутотрансплантаты (собственная кость пациента), аллотрансплантаты (донорская кость) или синтетические материалы. Выбор зависит от конкретного случая и предпочтений хирурга."}},{"@type":"Question","name":"Что будет, если не делать синус-лифтинг?","acceptedAnswer":{"@type":"Answer","text":"Если синус-лифтинг нужен, но его не сделать, установить импланты успешно может оказаться невозможно. Это способно привести к дальнейшей потере кости и осложнениям."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -92,7 +92,7 @@ export default function SinusLiftPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> — сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №50724
+              Медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> - сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) · Лицензия стоматолога Калифорнии №50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -109,9 +109,9 @@ export default function SinusLiftPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Синус-лифтинг для дентальных имплантов — это операция, которая увеличивает объём кости в
+                Синус-лифтинг для дентальных имплантов - это операция, которая увеличивает объём кости в
                 верхней челюсти, чтобы имплант можно было установить надёжно. Когда в области моляров и
-                премоляров не хватает высоты кости, синус-лифтинг создаёт прочную основу — повышая
+                премоляров не хватает высоты кости, синус-лифтинг создаёт прочную основу - повышая
                 предсказуемость и долговечность результата.
               </p>
 
@@ -123,7 +123,7 @@ export default function SinusLiftPost() {
                   <li>&bull; Его рекомендуют, когда высоты кости недостаточно, чтобы безопасно удержать имплант.</li>
                   <li>&bull; Мембрану пазухи аккуратно приподнимают и под неё помещают костный материал.</li>
                   <li>&bull; Процедура обычно занимает 1&ndash;2 часа и нередко проводится под местной анестезией.</li>
-                  <li>&bull; Заживление занимает несколько месяцев, пока трансплантат приживается, — затем ставят импланты.</li>
+                  <li>&bull; Заживление занимает несколько месяцев, пока трансплантат приживается, - затем ставят импланты.</li>
                 </ul>
               </GlassCard>
 
@@ -131,7 +131,7 @@ export default function SinusLiftPost() {
                 Что такое синус-лифтинг?
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Синус-лифтинг — это операция, цель которой нарастить кость в верхней челюсти рядом с
+                Синус-лифтинг - это операция, цель которой нарастить кость в верхней челюсти рядом с
                 верхнечелюстными пазухами. Поскольку полость пазухи расположена над верхними жевательными
                 зубами, при малом объёме кости места для импланта может не хватать. Во время синус-лифтинга
                 мембрану пазухи аккуратно приподнимают и под неё помещают костный материал, чтобы набрать
@@ -176,7 +176,7 @@ export default function SinusLiftPost() {
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
                 <li>
                   &mdash; <strong>Недостаточная высота кости.</strong> После потери зуба кость верхней
-                  челюсти может убывать, а верхнечелюстные пазухи — со временем расширяться, ещё больше
+                  челюсти может убывать, а верхнечелюстные пазухи - со временем расширяться, ещё больше
                   уменьшая доступную высоту кости.
                 </li>
                 <li>
@@ -253,7 +253,7 @@ export default function SinusLiftPost() {
 
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">
-                    Синус-лифтинг — это больно?
+                    Синус-лифтинг - это больно?
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
                     Большинство пациентов отмечают лишь лёгкий дискомфорт после процедуры, который обычно
@@ -310,10 +310,10 @@ export default function SinusLiftPost() {
               <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-4">Источники и ссылки</h2>
               <p className="text-sm text-neutral-600 mb-3">Рецензируемые научные публикации и авторитетные источники, на которые опирается эта статья.</p>
               <ul className="space-y-2 text-sm text-neutral-700 list-disc pl-5">
-                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS — Хирургия дентальных имплантов</a></li>
-                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy — Обзор дентальных имплантов</a></li>
-                <li><a href="https://www.nidcr.nih.gov/health-info/gum-disease" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR — Болезни дёсен (пародонтит)</a></li>
-                <li><a href="https://pubmed.ncbi.nlm.nih.gov/28160394/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Pjetursson BE, Lang NP — Поднятие дна пазухи: результаты и осложнения</a></li>
+                <li><a href="https://www.aaoms.org/procedures/dental-implant-surgery" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">AAOMS - Хирургия дентальных имплантов</a></li>
+                <li><a href="https://www.mouthhealthy.org/all-topics-a-z/implants" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">ADA MouthHealthy - Обзор дентальных имплантов</a></li>
+                <li><a href="https://www.nidcr.nih.gov/health-info/gum-disease" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">NIDCR - Болезни дёсен (пародонтит)</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/28160394/" target="_blank" rel="noopener nofollow" className="text-primary-700 hover:underline">Pjetursson BE, Lang NP - Поднятие дна пазухи: результаты и осложнения</a></li>
               </ul>
             </section>
 

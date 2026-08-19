@@ -20,7 +20,7 @@ export const guideArticles: RevisionArticle[] = [
     metaDescription:
       "Severe jaw bone loss rarely rules out dental implants. Learn how bone grafting, sinus lifts, short implants, and zygomatic implants restore a foundation for a lasting result.",
     excerpt:
-      "Being told you have too little bone is not the end of the conversation. Here are the real options — from grafting to zygomatic implants — that make implants possible even after years of bone loss.",
+      "Being told you have too little bone is not the end of the conversation. Here are the real options - from grafting to zygomatic implants - that make implants possible even after years of bone loss.",
     date: "June 23, 2026",
     datePublished: "2026-06-23",
     image: `${IMG}/implants-severe-bone-loss.png`,
@@ -38,7 +38,7 @@ export const guideArticles: RevisionArticle[] = [
     intro:
       "Many patients are told they cannot have dental implants because there is not enough bone to hold them. In reality, severe bone loss changes the plan rather than ending it. Modern oral surgery offers several proven ways to rebuild or work around missing bone, and very few people are truly out of options once their anatomy is studied in detail.",
     tldr: [
-      "Severe bone loss rarely makes implants impossible — it usually changes the approach.",
+      "Severe bone loss rarely makes implants impossible - it usually changes the approach.",
       "Bone grafting and sinus lifts rebuild missing volume so standard implants can be placed.",
       "Short and angled implants can avoid grafting in some cases.",
       "Zygomatic implants anchor in the cheekbone when the upper jaw has almost no bone.",
@@ -48,7 +48,7 @@ export const guideArticles: RevisionArticle[] = [
       {
         heading: "Why Bone Disappears in the First Place",
         paras: [
-          "Jaw bone needs the stimulation of tooth roots to stay full and dense. Once teeth are lost, the bone that supported them begins to shrink — a process that continues for years and speeds up under an ill-fitting denture.",
+          "Jaw bone needs the stimulation of tooth roots to stay full and dense. Once teeth are lost, the bone that supported them begins to shrink - a process that continues for years and speeds up under an ill-fitting denture.",
           "By the time many patients ask about implants, they have lost significant width and height. The good news is that bone can be rebuilt, and where rebuilding is impractical, implants can often be anchored elsewhere.",
         ],
       },
@@ -99,7 +99,7 @@ export const guideArticles: RevisionArticle[] = [
     ],
     faqs: [
       {
-        question: "I was told I have no bone for implants — is that final?",
+        question: "I was told I have no bone for implants - is that final?",
         answer:
           "Usually not. A second opinion with a 3D scan often reveals options such as grafting, angled implants, or zygomatic implants that a general assessment may not have considered.",
       },
@@ -131,7 +131,7 @@ export const guideArticles: RevisionArticle[] = [
     metaDescription:
       "Diabetes does not rule out dental implants. Learn how well-controlled blood sugar affects healing and success rates, and the steps that make implants safe for diabetic patients.",
     excerpt:
-      "Diabetes alone is not a barrier to dental implants. What matters far more is how well blood sugar is controlled — here is what the evidence shows and how a safe plan is built.",
+      "Diabetes alone is not a barrier to dental implants. What matters far more is how well blood sugar is controlled - here is what the evidence shows and how a safe plan is built.",
     date: "June 23, 2026",
     datePublished: "2026-06-23",
     image: `${IMG}/implants-for-diabetics.png`,
@@ -191,7 +191,7 @@ export const guideArticles: RevisionArticle[] = [
         heading: "Healing and Long-Term Care",
         paras: [
           [
-            "After surgery, steady blood sugar supports clean healing, and consistent hygiene protects the implant for the long term. Diabetic patients benefit from staying alert to early warning signs — our guide to ",
+            "After surgery, steady blood sugar supports clean healing, and consistent hygiene protects the implant for the long term. Diabetic patients benefit from staying alert to early warning signs - our guide to ",
             { text: "dental implant complications", href: "/for-patients/insights/dental-implant-complications" },
             " explains what to watch for.",
           ],
@@ -232,7 +232,7 @@ export const guideArticles: RevisionArticle[] = [
     metaDescription:
       "Smoking lowers dental implant success but does not make it impossible. Learn how smoking affects healing, how much quitting helps, and what improves your odds.",
     excerpt:
-      "Smoking is the single biggest lifestyle risk factor for implant failure — but it does not automatically disqualify you. Here is the honest picture and what actually moves the odds.",
+      "Smoking is the single biggest lifestyle risk factor for implant failure - but it does not automatically disqualify you. Here is the honest picture and what actually moves the odds.",
     date: "June 23, 2026",
     datePublished: "2026-06-23",
     image: `${IMG}/implants-for-smokers.png`,
@@ -248,7 +248,7 @@ export const guideArticles: RevisionArticle[] = [
       "quit smoking before implants",
     ],
     intro:
-      "Smokers are often warned that implants will not work for them. The reality is more nuanced: smoking does raise the risk of implant failure, but many smokers still have successful implants — especially when they cut back or quit around the time of surgery. Understanding why smoking hurts healing is the key to improving your odds.",
+      "Smokers are often warned that implants will not work for them. The reality is more nuanced: smoking does raise the risk of implant failure, but many smokers still have successful implants - especially when they cut back or quit around the time of surgery. Understanding why smoking hurts healing is the key to improving your odds.",
     tldr: [
       "Smoking does not automatically disqualify you from implants.",
       "It is the strongest lifestyle risk factor for implant failure.",
@@ -261,14 +261,14 @@ export const guideArticles: RevisionArticle[] = [
         heading: "How Smoking Undermines Healing",
         paras: [
           "Implants rely on healthy gums and bone fusing around them. Tobacco smoke narrows blood vessels and lowers oxygen in the tissues, which slows healing and weakens the body's defense against infection at the surgical site.",
-          "It also raises the risk of peri-implantitis — inflammation around an implant that can lead to bone loss and, eventually, failure years down the line.",
+          "It also raises the risk of peri-implantitis - inflammation around an implant that can lead to bone loss and, eventually, failure years down the line.",
         ],
       },
       {
         heading: "How Much Does Quitting Help?",
         paras: [
           "Even a short break from smoking around surgery makes a real difference. Many surgeons advise stopping for at least a week or two before the procedure and through the early healing weeks, when the risk of failure is highest.",
-          "The longer you stay off tobacco, the closer your healing comes to that of a non-smoker — and quitting for good gives implants their best chance to last.",
+          "The longer you stay off tobacco, the closer your healing comes to that of a non-smoker - and quitting for good gives implants their best chance to last.",
         ],
       },
       {
@@ -325,7 +325,7 @@ export const guideArticles: RevisionArticle[] = [
     metaDescription:
       "There is no upper age limit for dental implants. Learn why health matters more than age, and how patients in their 70s, 80s, and beyond get full-arch implants successfully.",
     excerpt:
-      "Patients often assume they are too old for implants at 70, 80, or beyond. There is no age limit — health and bone matter far more than the number on your birthday.",
+      "Patients often assume they are too old for implants at 70, 80, or beyond. There is no age limit - health and bone matter far more than the number on your birthday.",
     date: "June 23, 2026",
     datePublished: "2026-06-23",
     image: `${IMG}/implants-for-seniors.png`,
@@ -353,7 +353,7 @@ export const guideArticles: RevisionArticle[] = [
       {
         heading: "Why Age Is Not the Deciding Factor",
         paras: [
-          "Bone heals and fuses around implants well into advanced age. A healthy 80-year-old often heals better than a much younger patient with poorly controlled health conditions. Surgeons evaluate the whole person — not a number.",
+          "Bone heals and fuses around implants well into advanced age. A healthy 80-year-old often heals better than a much younger patient with poorly controlled health conditions. Surgeons evaluate the whole person - not a number.",
           "If anything, older adults frequently have the most to gain, replacing failing teeth or loose dentures that have made eating and speaking difficult for years.",
         ],
       },
@@ -371,7 +371,7 @@ export const guideArticles: RevisionArticle[] = [
         heading: "The Quality-of-Life Benefit",
         paras: [
           [
-            "For many seniors, secure teeth mean returning to foods they had given up and smiling without worrying about slipping dentures. Full-arch options can replace an entire arch on as few as four implants — see our overview of ",
+            "For many seniors, secure teeth mean returning to foods they had given up and smiling without worrying about slipping dentures. Full-arch options can replace an entire arch on as few as four implants - see our overview of ",
             { text: "full mouth dental implants", href: "/for-patients/insights/full-mouth-dental-implants-cost-process" },
             ".",
           ],
@@ -407,7 +407,7 @@ export const guideArticles: RevisionArticle[] = [
       {
         question: "Are implants worth it later in life?",
         answer:
-          "For many seniors, yes — secure teeth restore the ability to eat well and speak clearly, which has a real impact on health and confidence.",
+          "For many seniors, yes - secure teeth restore the ability to eat well and speak clearly, which has a real impact on health and confidence.",
       },
     ],
     cta: {
@@ -422,7 +422,7 @@ export const guideArticles: RevisionArticle[] = [
     metaDescription:
       "Osteoporosis, autoimmune conditions, and their medications do not automatically rule out dental implants. Learn how they affect healing and how a safe plan is built.",
     excerpt:
-      "Osteoporosis, autoimmune disease, and the medications that treat them raise important questions for implants — but rarely a flat no. Here is how each is assessed and managed.",
+      "Osteoporosis, autoimmune disease, and the medications that treat them raise important questions for implants - but rarely a flat no. Here is how each is assessed and managed.",
     date: "June 23, 2026",
     datePublished: "2026-06-23",
     image: `${IMG}/implants-osteoporosis-autoimmune.png`,
@@ -438,7 +438,7 @@ export const guideArticles: RevisionArticle[] = [
       "implants with medical conditions",
     ],
     intro:
-      "Osteoporosis and autoimmune conditions raise reasonable questions about whether implants will heal and last. The answer for most patients is yes, with careful planning. These conditions, and the medications used to treat them, change how a case is managed rather than ruling implants out — but they do require an honest, coordinated approach.",
+      "Osteoporosis and autoimmune conditions raise reasonable questions about whether implants will heal and last. The answer for most patients is yes, with careful planning. These conditions, and the medications used to treat them, change how a case is managed rather than ruling implants out - but they do require an honest, coordinated approach.",
     tldr: [
       "Osteoporosis itself does not prevent dental implants.",
       "Certain bone medications need review because of a rare jaw healing risk.",
@@ -457,7 +457,7 @@ export const guideArticles: RevisionArticle[] = [
       {
         heading: "Bone Medications: What to Disclose",
         paras: [
-          "Bisphosphonates and similar bone-strengthening medications — taken as pills or by injection — are linked in rare cases to a jaw healing complication after oral surgery. The risk is generally low for common oral doses but higher for certain intravenous regimens.",
+          "Bisphosphonates and similar bone-strengthening medications - taken as pills or by injection - are linked in rare cases to a jaw healing complication after oral surgery. The risk is generally low for common oral doses but higher for certain intravenous regimens.",
           "This is never something to hide. Tell your surgeon exactly what you take and for how long, so the plan can be adjusted and your physician consulted where needed.",
         ],
         list: [
@@ -477,7 +477,7 @@ export const guideArticles: RevisionArticle[] = [
         heading: "Building a Safe Plan",
         paras: [
           [
-            "For any of these conditions, a safe plan starts with full disclosure and often a conversation with your treating physician. Healthy bone and controlled disease give implants their best chance — our guide to ",
+            "For any of these conditions, a safe plan starts with full disclosure and often a conversation with your treating physician. Healthy bone and controlled disease give implants their best chance - our guide to ",
             { text: "bone grafting for dental implants", href: "/for-patients/insights/bone-grafting-for-dental-implants-explained" },
             " explains how a strong foundation is built when bone needs support.",
           ],
@@ -516,9 +516,9 @@ export const guideArticles: RevisionArticle[] = [
     title: "Who Is a Candidate for Dental Implants? (And Who Is Not)",
     metaTitle: "Who Is a Candidate for Dental Implants?",
     metaDescription:
-      "What makes a good candidate for dental implants — and what makes someone a poor candidate. Learn the health, bone, and lifestyle factors that decide implant success.",
+      "What makes a good candidate for dental implants - and what makes someone a poor candidate. Learn the health, bone, and lifestyle factors that decide implant success.",
     excerpt:
-      "Most adults missing teeth are candidates for implants, but a few factors genuinely affect success. Here is what makes a strong candidate — and what needs to be fixed first.",
+      "Most adults missing teeth are candidates for implants, but a few factors genuinely affect success. Here is what makes a strong candidate - and what needs to be fixed first.",
     date: "June 23, 2026",
     datePublished: "2026-06-23",
     image: `${IMG}/candidate-for-implants.png`,
@@ -537,7 +537,7 @@ export const guideArticles: RevisionArticle[] = [
       "The large majority of adults who are missing teeth are candidates for dental implants. A few factors can make someone a poor candidate, but most of these are problems to be corrected first rather than permanent barriers. This guide explains what surgeons actually look for when deciding whether implants are right for you.",
     tldr: [
       "Most adults missing one or more teeth are candidates for implants.",
-      "Adequate bone — or a plan to rebuild it — is the main requirement.",
+      "Adequate bone - or a plan to rebuild it - is the main requirement.",
       "Healthy gums and controlled medical conditions support success.",
       "Heavy smoking and active gum disease are problems to fix first, not always permanent blocks.",
       "Only a 3D scan and full health review can confirm candidacy.",
@@ -556,7 +556,7 @@ export const guideArticles: RevisionArticle[] = [
       },
       {
         heading: "What Makes Someone a Poor Candidate",
-        paras: ["Factors that lower the odds of success — most of which can be improved before treatment — include:"],
+        paras: ["Factors that lower the odds of success - most of which can be improved before treatment - include:"],
         list: [
           "Active, untreated gum disease",
           "Heavy smoking through the healing period",
@@ -569,7 +569,7 @@ export const guideArticles: RevisionArticle[] = [
         heading: "Most Barriers Can Be Fixed First",
         paras: [
           [
-            "The important distinction is between a permanent barrier and a problem to solve first. Gum disease can be treated, bone can be rebuilt, blood sugar can be controlled, and smokers can quit around surgery. For example, severe bone loss is often solved — see ",
+            "The important distinction is between a permanent barrier and a problem to solve first. Gum disease can be treated, bone can be rebuilt, blood sugar can be controlled, and smokers can quit around surgery. For example, severe bone loss is often solved - see ",
             { text: "your options with severe bone loss", href: "/for-patients/insights/dental-implants-with-severe-bone-loss-options" },
             ".",
           ],
@@ -595,7 +595,7 @@ export const guideArticles: RevisionArticle[] = [
       {
         question: "Is anyone permanently unable to get implants?",
         answer:
-          "True permanent barriers are rare. Most issues — gum disease, bone loss, uncontrolled health conditions — can be treated first so implants become possible.",
+          "True permanent barriers are rare. Most issues - gum disease, bone loss, uncontrolled health conditions - can be treated first so implants become possible.",
       },
       {
         question: "Do I need a certain amount of bone?",
@@ -605,7 +605,7 @@ export const guideArticles: RevisionArticle[] = [
       {
         question: "Does grinding my teeth disqualify me?",
         answer:
-          "Not on its own. Grinding is managed — often with a night guard and bite adjustments — so it does not overload the implants.",
+          "Not on its own. Grinding is managed - often with a night guard and bite adjustments - so it does not overload the implants.",
       },
       {
         question: "How do I find out if I am a candidate?",
@@ -641,13 +641,13 @@ export const guideArticles: RevisionArticle[] = [
       "ceramic dental implants",
     ],
     intro:
-      "When patients ask which implant material is best, they are usually weighing proven titanium against newer metal-free zirconia. Both can work well, but they are not equal in every situation. This guide compares them honestly so you understand the trade-offs — and why titanium remains the standard for most cases.",
+      "When patients ask which implant material is best, they are usually weighing proven titanium against newer metal-free zirconia. Both can work well, but they are not equal in every situation. This guide compares them honestly so you understand the trade-offs - and why titanium remains the standard for most cases.",
     tldr: [
       "Titanium is the long-proven standard with the most research behind it.",
       "Zirconia is a metal-free, tooth-colored ceramic alternative.",
       "Titanium offers more flexibility, including two-piece angled designs.",
       "Zirconia appeals to patients wanting metal-free care or with thin gums.",
-      "Material is one factor — surgical planning matters more than the metal.",
+      "Material is one factor - surgical planning matters more than the metal.",
     ],
     sections: [
       {
@@ -683,7 +683,7 @@ export const guideArticles: RevisionArticle[] = [
         heading: "The Material Is Not the Whole Story",
         paras: [
           [
-            "Whichever fixture is used, the restoration on top matters too. Full-arch patients often choose a zirconia prosthesis for durability regardless of the implant metal — see our guide to ",
+            "Whichever fixture is used, the restoration on top matters too. Full-arch patients often choose a zirconia prosthesis for durability regardless of the implant metal - see our guide to ",
             { text: "zirconia arches", href: "/for-patients/insights/zirconia-arches" },
             ". Above all, planning and placement decide long-term success more than the choice of metal.",
           ],
@@ -714,7 +714,7 @@ export const guideArticles: RevisionArticle[] = [
     ],
     cta: {
       heading: "Not sure which implant material fits?",
-      body: "Dr. Antipov recommends the right material for your anatomy and goals — never a one-size-fits-all answer. Book a free consultation in Roseville.",
+      body: "Dr. Antipov recommends the right material for your anatomy and goals - never a one-size-fits-all answer. Book a free consultation in Roseville.",
     },
   },
   {
@@ -722,9 +722,9 @@ export const guideArticles: RevisionArticle[] = [
     title: "Can Dental Implants Get Cavities or Gum Disease?",
     metaTitle: "Can Dental Implants Get Cavities or Gum Disease?",
     metaDescription:
-      "Dental implants cannot get cavities, but they can develop peri-implantitis — gum disease around an implant. Learn what causes late implant failure and how to prevent it.",
+      "Dental implants cannot get cavities, but they can develop peri-implantitis - gum disease around an implant. Learn what causes late implant failure and how to prevent it.",
     excerpt:
-      "Implants cannot decay like natural teeth, but they are not maintenance-free. The real long-term threat is peri-implantitis — and it is largely preventable. Here is how.",
+      "Implants cannot decay like natural teeth, but they are not maintenance-free. The real long-term threat is peri-implantitis - and it is largely preventable. Here is how.",
     date: "June 23, 2026",
     datePublished: "2026-06-23",
     image: `${IMG}/implant-gum-disease.png`,
@@ -740,7 +740,7 @@ export const guideArticles: RevisionArticle[] = [
       "dental implant maintenance",
     ],
     intro:
-      "A common and reasonable question is whether implants can decay or develop gum disease like natural teeth. The short answer: implants cannot get cavities, but the gum and bone around them can become infected. That condition, called peri-implantitis, is the leading reason implants fail years after placement — and it is largely preventable.",
+      "A common and reasonable question is whether implants can decay or develop gum disease like natural teeth. The short answer: implants cannot get cavities, but the gum and bone around them can become infected. That condition, called peri-implantitis, is the leading reason implants fail years after placement - and it is largely preventable.",
     tldr: [
       "Implants are titanium or ceramic, so they cannot get cavities.",
       "The gum and bone around an implant can still get infected.",
@@ -752,8 +752,8 @@ export const guideArticles: RevisionArticle[] = [
       {
         heading: "Why Implants Cannot Decay",
         paras: [
-          "Cavities form when bacteria erode tooth enamel. An implant has no enamel — it is made of titanium or ceramic, materials that simply do not decay. That is one genuine advantage implants have over natural teeth.",
-          "But the crown is not the whole story. What surrounds the implant — your own gum and bone — remains living tissue that needs care.",
+          "Cavities form when bacteria erode tooth enamel. An implant has no enamel - it is made of titanium or ceramic, materials that simply do not decay. That is one genuine advantage implants have over natural teeth.",
+          "But the crown is not the whole story. What surrounds the implant - your own gum and bone - remains living tissue that needs care.",
         ],
       },
       {
@@ -800,7 +800,7 @@ export const guideArticles: RevisionArticle[] = [
       {
         question: "What is peri-implantitis?",
         answer:
-          "It is gum disease around an implant — a bacterial infection that inflames the gum and can destroy supporting bone if untreated. It is the leading cause of late implant failure.",
+          "It is gum disease around an implant - a bacterial infection that inflames the gum and can destroy supporting bone if untreated. It is the leading cause of late implant failure.",
       },
       {
         question: "How do I prevent gum disease around my implant?",
@@ -823,9 +823,9 @@ export const guideArticles: RevisionArticle[] = [
     title: "Single Dental Implant Cost in Northern California",
     metaTitle: "Single Dental Implant Cost in Northern California (2026)",
     metaDescription:
-      "What a single dental implant really costs out-of-pocket in Northern California — the implant, abutment, and crown — plus what adds to the price and how financing helps.",
+      "What a single dental implant really costs out-of-pocket in Northern California - the implant, abutment, and crown - plus what adds to the price and how financing helps.",
     excerpt:
-      "What does one dental implant actually cost in the Sacramento region? Here is an honest breakdown of the implant, abutment, and crown — and what can add to the total.",
+      "What does one dental implant actually cost in the Sacramento region? Here is an honest breakdown of the implant, abutment, and crown - and what can add to the total.",
     date: "June 23, 2026",
     datePublished: "2026-06-23",
     image: `${IMG}/single-implant-cost-norcal.png`,
@@ -841,7 +841,7 @@ export const guideArticles: RevisionArticle[] = [
       "dental implant out of pocket cost",
     ],
     intro:
-      "Cost is one of the first questions patients ask, and it deserves a straight answer. In Northern California, a single dental implant — including the implant, abutment, and crown — typically runs in the range of $4,000 to $6,000. That figure shifts based on your specific needs, so it helps to understand exactly what goes into the number.",
+      "Cost is one of the first questions patients ask, and it deserves a straight answer. In Northern California, a single dental implant - including the implant, abutment, and crown - typically runs in the range of $4,000 to $6,000. That figure shifts based on your specific needs, so it helps to understand exactly what goes into the number.",
     tldr: [
       "A complete single implant in Northern California typically runs about $4,000–$6,000.",
       "That price covers the implant, the abutment, and the crown.",
@@ -865,7 +865,7 @@ export const guideArticles: RevisionArticle[] = [
       },
       {
         heading: "What Can Add to the Total",
-        paras: ["Some patients need additional steps that raise the price — and any of these should be disclosed up front:"],
+        paras: ["Some patients need additional steps that raise the price - and any of these should be disclosed up front:"],
         list: [
           "Tooth extraction before the implant",
           "Bone grafting or a sinus lift to rebuild support",
@@ -876,7 +876,7 @@ export const guideArticles: RevisionArticle[] = [
       {
         heading: "Why Very Cheap Quotes Are a Red Flag",
         paras: [
-          "If one quote is dramatically lower than the rest, it often means part of the work is missing from the number — commonly the abutment or crown — or that grafting will be billed later. The cheapest line item is rarely the cheapest finished tooth. Ask for an all-in figure so you are comparing the same thing.",
+          "If one quote is dramatically lower than the rest, it often means part of the work is missing from the number - commonly the abutment or crown - or that grafting will be billed later. The cheapest line item is rarely the cheapest finished tooth. Ask for an all-in figure so you are comparing the same thing.",
         ],
       },
       {
@@ -896,7 +896,7 @@ export const guideArticles: RevisionArticle[] = [
       {
         question: "How much is a single dental implant in the Sacramento area?",
         answer:
-          "A complete single implant — fixture, abutment, and crown — typically runs about $4,000 to $6,000 in Northern California, with extras like grafting adding to that.",
+          "A complete single implant - fixture, abutment, and crown - typically runs about $4,000 to $6,000 in Northern California, with extras like grafting adding to that.",
       },
       {
         question: "Does insurance cover a dental implant?",
@@ -924,9 +924,9 @@ export const guideArticles: RevisionArticle[] = [
     title: "Why Are Dental Implants So Expensive?",
     metaTitle: "Why Are Dental Implants So Expensive? (Explained)",
     metaDescription:
-      "Why dental implants cost more than bridges or dentures — the surgery, materials, technology, and expertise behind the price, and why they are often the better long-term value.",
+      "Why dental implants cost more than bridges or dentures - the surgery, materials, technology, and expertise behind the price, and why they are often the better long-term value.",
     excerpt:
-      "Implants cost more than bridges or dentures for real reasons — surgical expertise, premium materials, and technology. Here is where the money goes, and why they often pay off.",
+      "Implants cost more than bridges or dentures for real reasons - surgical expertise, premium materials, and technology. Here is where the money goes, and why they often pay off.",
     date: "June 23, 2026",
     datePublished: "2026-06-23",
     image: `${IMG}/why-implants-expensive.png`,
@@ -942,19 +942,19 @@ export const guideArticles: RevisionArticle[] = [
       "dental implant value",
     ],
     intro:
-      "It is fair to wonder why dental implants cost more than a bridge or a denture. The price reflects a surgical procedure, precision-engineered materials, advanced imaging, and years of specialized training — not just a replacement tooth. Understanding where the money goes also explains why implants are so often the better long-term value.",
+      "It is fair to wonder why dental implants cost more than a bridge or a denture. The price reflects a surgical procedure, precision-engineered materials, advanced imaging, and years of specialized training - not just a replacement tooth. Understanding where the money goes also explains why implants are so often the better long-term value.",
     tldr: [
       "An implant is a surgical procedure, not just a tooth.",
       "The fixture, abutment, and crown are precision-made components.",
       "3D imaging and surgical planning add cost but improve safety.",
       "A surgeon's specialized training is part of what you pay for.",
-      "Implants last decades and protect neighboring teeth — strong long-term value.",
+      "Implants last decades and protect neighboring teeth - strong long-term value.",
     ],
     sections: [
       {
         heading: "You Are Paying for Surgery, Not a Tooth",
         paras: [
-          "Unlike a bridge that is cemented onto neighboring teeth, an implant is surgically placed into the jaw and must fuse with living bone. That requires a sterile surgical setting, careful planning, and a healing process measured in months — all of which carries real cost.",
+          "Unlike a bridge that is cemented onto neighboring teeth, an implant is surgically placed into the jaw and must fuse with living bone. That requires a sterile surgical setting, careful planning, and a healing process measured in months - all of which carries real cost.",
         ],
       },
       {
@@ -984,7 +984,7 @@ export const guideArticles: RevisionArticle[] = [
         heading: "Making Implants Affordable",
         paras: [
           [
-            "Cost should not be the only lens — but it is real, and there are ways to manage it. Financing, HSA/FSA funds, and using every available insurance benefit all help. For a regional breakdown, see ",
+            "Cost should not be the only lens - but it is real, and there are ways to manage it. Financing, HSA/FSA funds, and using every available insurance benefit all help. For a regional breakdown, see ",
             { text: "single dental implant cost in Northern California", href: "/for-patients/insights/single-dental-implant-cost-northern-california" },
             ".",
           ],
@@ -1010,7 +1010,7 @@ export const guideArticles: RevisionArticle[] = [
       {
         question: "Can I make implants more affordable?",
         answer:
-          "Yes — financing, HSA/FSA funds, and maximizing insurance benefits all help spread or reduce the out-of-pocket cost.",
+          "Yes - financing, HSA/FSA funds, and maximizing insurance benefits all help spread or reduce the out-of-pocket cost.",
       },
     ],
     cta: {
@@ -1023,7 +1023,7 @@ export const guideArticles: RevisionArticle[] = [
     title: "Normal Healing vs Infection After Dental Implant Surgery",
     metaTitle: "Normal Healing vs Infection After Implant Surgery",
     metaDescription:
-      "What is normal after dental implant surgery — swelling, bruising, and mild pain — versus the warning signs of infection. Know when throbbing pain or fever means call your surgeon.",
+      "What is normal after dental implant surgery - swelling, bruising, and mild pain - versus the warning signs of infection. Know when throbbing pain or fever means call your surgeon.",
     excerpt:
       "Some swelling and soreness after implant surgery is completely normal. Knowing the difference between healing and an infection tells you when to relax and when to call.",
     date: "June 23, 2026",
@@ -1041,13 +1041,13 @@ export const guideArticles: RevisionArticle[] = [
       "swelling after implant surgery",
     ],
     intro:
-      "After implant surgery it is natural to wonder whether what you are feeling is normal or a sign that something is wrong. Most discomfort, swelling, and minor bleeding are an expected part of healing. A smaller set of symptoms — worsening pain after several days, fever, or pus — are warning signs worth a call. Knowing the difference brings real peace of mind.",
+      "After implant surgery it is natural to wonder whether what you are feeling is normal or a sign that something is wrong. Most discomfort, swelling, and minor bleeding are an expected part of healing. A smaller set of symptoms - worsening pain after several days, fever, or pus - are warning signs worth a call. Knowing the difference brings real peace of mind.",
     tldr: [
       "Swelling, bruising, and mild pain in the first few days are normal.",
       "Discomfort should steadily improve, not worsen, after about day three.",
       "Throbbing pain that increases days later can signal a problem.",
       "Fever, pus, or a bad taste are warning signs to call your surgeon.",
-      "When in doubt, call — early attention keeps small issues small.",
+      "When in doubt, call - early attention keeps small issues small.",
     ],
     sections: [
       {

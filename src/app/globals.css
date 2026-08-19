@@ -270,3 +270,22 @@ body {
     animation: none;
   }
 }
+
+/* AI Smile floating button — periodic subtle attention bounce/pulse */
+@keyframes smileFloatAttn {
+  0%, 68%, 100% { transform: translateY(0) scale(1); }
+  74% { transform: translateY(-7px) scale(1.06); }
+  80% { transform: translateY(0) scale(1.03); }
+  86% { transform: translateY(-4px) scale(1.04); }
+  93% { transform: translateY(0) scale(1); }
+}
+.smile-float-attn {
+  animation: smileFloatAttn 5s ease-in-out infinite;
+  will-change: transform;
+}
+.smile-float-attn:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .smile-float-attn { animation: none; }
+}

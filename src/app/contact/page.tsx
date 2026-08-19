@@ -8,7 +8,7 @@ import heroContent from "@/lib/heroContent"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: { absolute: "Contact Us — Free Consultation | Dr. Antipov" },
+  title: { absolute: "Contact Us - Free Consultation | Dr. Antipov" },
   description: "Schedule a free oral surgery consultation with 3D CT scan. Roseville, CA. Call (916) 783-2110 or message us online today.",
   alternates: {
     canonical: "/contact",
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Contact Dr. Antipov | Schedule Free Consultation — Roseville, CA",
+    title: "Contact Dr. Antipov | Schedule Free Consultation - Roseville, CA",
     description: "Contact Dr. Alexander Antipov's oral surgery practice in Roseville, CA. Call (916) 783-2110, email info@galleriaoms.com, or use the form. Free consultations with complimentary 3D CT scan.",
     url: "/contact",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Dr. Antipov | Schedule Free Consultation — Roseville, CA",
+    title: "Contact Dr. Antipov | Schedule Free Consultation - Roseville, CA",
     description: "Contact Dr. Alexander Antipov's oral surgery practice in Roseville, CA. Call (916) 783-2110, email info@galleriaoms.com, or use the form. Free consultations with complimentary 3D CT scan.",
   },
 }
@@ -143,7 +143,7 @@ export default function ContactPage() {
         <Container size="lg">
           <div className="rounded-2xl overflow-hidden h-96 shadow-md">
             <iframe
-              title="Dr. Antipov Oral & Maxillofacial Surgery — 911 Reserve Dr, Suite 150, Roseville, CA 95678"
+              title="Dr. Antipov Oral & Maxillofacial Surgery - 911 Reserve Dr, Suite 150, Roseville, CA 95678"
               src="https://www.google.com/maps?q=911+Reserve+Dr+Suite+150,+Roseville,+CA+95678&output=embed"
               width="100%"
               height="100%"

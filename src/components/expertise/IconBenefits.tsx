@@ -16,7 +16,7 @@ interface IconBenefitsProps {
 }
 
 /**
- * IconBenefits — 2-column grid of benefits with icon chips.
+ * IconBenefits - 2-column grid of benefits with icon chips.
  * Replaces plain bullet lists for visual interest and scan-ability.
  */
 export function IconBenefits({ items, columns = 2 }: IconBenefitsProps) {

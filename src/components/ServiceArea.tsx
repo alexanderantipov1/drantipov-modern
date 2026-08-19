@@ -13,7 +13,7 @@ const services = [
     title: "Full Arch Dental Implants",
     aka: "All-on-4 / All-on-6 Implants",
     description:
-      "Permanently replace an entire arch of missing or failing teeth in a single visit. Our full arch dental implant procedure uses four to six strategically placed titanium implants to support a fixed, non-removable bridge — giving you a complete, natural-looking smile the same day.",
+      "Permanently replace an entire arch of missing or failing teeth in a single visit. Our full arch dental implant procedure uses four to six strategically placed titanium implants to support a fixed, non-removable bridge - giving you a complete, natural-looking smile the same day.",
     keywords: [
       "Full Arch Dental Implants",
       "All-on-4 Implants",
@@ -29,7 +29,7 @@ const services = [
     title: "Organic & Holistic Bone Grafting",
     aka: "Biocompatible Bone Regeneration",
     description:
-      "Dr. Antipov offers organic and holistic bone grafting solutions using biocompatible, minimally processed human donor tissue and advanced growth factors. Unlike synthetic alternatives, our organic bone grafts integrate naturally with your existing bone, creating a strong foundation for dental implant placement — even in patients with significant bone loss.",
+      "Dr. Antipov offers organic and holistic bone grafting solutions using biocompatible, minimally processed human donor tissue and advanced growth factors. Unlike synthetic alternatives, our organic bone grafts integrate naturally with your existing bone, creating a strong foundation for dental implant placement - even in patients with significant bone loss.",
     keywords: [
       "Organic Bone Graft",
       "Holistic Bone Grafting",
@@ -61,7 +61,7 @@ const services = [
     title: "Immediate Load Implants",
     aka: "Same-Day Smile / Teeth in 24 Hours",
     description:
-      "Walk in with missing teeth and walk out with a brand-new smile — all in a single appointment. Our immediate load implant protocol allows Dr. Antipov to place implants and attach fully functional temporary teeth the same day, eliminating the months-long wait associated with traditional implant procedures.",
+      "Walk in with missing teeth and walk out with a brand-new smile - all in a single appointment. Our immediate load implant protocol allows Dr. Antipov to place implants and attach fully functional temporary teeth the same day, eliminating the months-long wait associated with traditional implant procedures.",
     keywords: [
       "Immediate Load Implants",
       "Same-Day Dental Implants",
@@ -96,11 +96,11 @@ export default function ServiceArea() {
             <span className="gradient-text">Oral Surgery Near You</span>
           </h2>
           <p className="mt-6 text-muted text-lg leading-relaxed">
-            Dr. Alexander Antipov provides full arch dental implants, organic bone grafting, corrective jaw surgery, and facial cosmetic procedures to patients across Northern California and Northern Nevada. Our main office in Roseville, CA is within a 3.5-hour drive of over {totalCities} cities — from Redding to Fresno, San Francisco to Reno.
+            Dr. Alexander Antipov provides full arch dental implants, organic bone grafting, corrective jaw surgery, and facial cosmetic procedures to patients across Northern California and Northern Nevada. Our main office in Roseville, CA is within a 3.5-hour drive of over {totalCities} cities - from Redding to Fresno, San Francisco to Reno.
           </p>
         </motion.div>
 
-        {/* Service descriptions — keyword blocks */}
+        {/* Service descriptions - keyword blocks */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -141,7 +141,7 @@ export default function ServiceArea() {
           </div>
         </motion.div>
 
-        {/* SEO-rich bottom content — long-form keyword text */}
+        {/* SEO-rich bottom content - long-form keyword text */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -157,13 +157,13 @@ export default function ServiceArea() {
               If you are searching for <strong>full arch dental implants near me</strong>, <strong>All-on-4 dental implants</strong>, or a <strong>same-day teeth procedure</strong> in Northern California or Nevada, Dr. Alexander Antipov&apos;s practice in Roseville, CA offers the expertise, technology, and results you deserve. With over 25 years of experience and more than 10,000 patients treated, Dr. Antipov is one of the most experienced oral and maxillofacial surgeons in the region for <strong>full mouth dental implant restoration</strong>.
             </p>
             <p>
-              Unlike dental implant centers that rely on general dentists, Dr. Antipov is a <strong>board-certified oral and maxillofacial surgeon</strong> who personally performs every procedure — from the initial <strong>cone beam CT scan</strong> and treatment planning to implant placement, <strong>organic bone grafting</strong>, and final prosthetic delivery. This means your entire treatment stays under one roof with one surgeon, eliminating the complexity of being referred between multiple providers.
+              Unlike dental implant centers that rely on general dentists, Dr. Antipov is a <strong>board-certified oral and maxillofacial surgeon</strong> who personally performs every procedure - from the initial <strong>cone beam CT scan</strong> and treatment planning to implant placement, <strong>organic bone grafting</strong>, and final prosthetic delivery. This means your entire treatment stays under one roof with one surgeon, eliminating the complexity of being referred between multiple providers.
             </p>
             <p>
               Our <strong>organic and holistic bone grafting</strong> program sets us apart from other implant centers. We use biocompatible, minimally processed human donor tissue combined with advanced platelet-rich growth factors to naturally regenerate bone in the jaw. This approach is ideal for patients who prefer <strong>natural bone graft materials</strong> over synthetic alternatives, or for those with <strong>severe bone loss</strong> who have been told they are not candidates for dental implants elsewhere.
             </p>
             <p>
-              Patients travel to our Roseville office from <strong>Sacramento, San Francisco, Oakland, San Jose, Reno, Stockton, Modesto, Fresno, Redding, Chico, Napa, Santa Rosa</strong>, and over 150 other cities across California and Nevada. We offer <strong>free consultations</strong> that include a complimentary cone beam CT scan, a personalized treatment plan, and a review of your financing options — all at no cost or obligation.
+              Patients travel to our Roseville office from <strong>Sacramento, San Francisco, Oakland, San Jose, Reno, Stockton, Modesto, Fresno, Redding, Chico, Napa, Santa Rosa</strong>, and over 150 other cities across California and Nevada. We offer <strong>free consultations</strong> that include a complimentary cone beam CT scan, a personalized treatment plan, and a review of your financing options - all at no cost or obligation.
             </p>
             <p>
               Whether you need <strong>full arch dental implants</strong>, <strong>All-on-4 or All-on-6 implant-supported teeth</strong>, <strong>immediate load same-day implants</strong>, <strong>holistic bone grafting</strong>, <strong>corrective jaw surgery</strong>, or <strong>wisdom teeth removal</strong>, Dr. Antipov and his team deliver life-changing results with the precision and care that only a board-certified oral surgeon can provide. <strong>Dental implant financing</strong> is available through multiple lending partners, making treatment accessible regardless of budget.

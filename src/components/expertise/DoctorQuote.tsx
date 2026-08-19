@@ -11,7 +11,7 @@ interface DoctorQuoteProps {
 }
 
 /**
- * DoctorQuote — large centered pull-quote with decorative quote icon.
+ * DoctorQuote - large centered pull-quote with decorative quote icon.
  * Used to break up text-heavy sections with a personal note from the surgeon.
  */
 export function DoctorQuote({

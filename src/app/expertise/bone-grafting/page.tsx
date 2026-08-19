@@ -38,7 +38,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Bone Grafting & Augmentation",
-    description: "Advanced bone grafting techniques rebuild jaw volume for stable implants — sinus lift, ridge augmentation.",
+    description: "Advanced bone grafting techniques rebuild jaw volume for stable implants - sinus lift, ridge augmentation.",
     images: [
       {
         url: "/images/procedures/dental-implants@2x-06d1b2ea.jpg",
@@ -51,7 +51,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Bone Grafting & Augmentation",
-    description: "Advanced bone grafting techniques rebuild jaw volume for stable implants — sinus lift, ridge augmentation.",
+    description: "Advanced bone grafting techniques rebuild jaw volume for stable implants - sinus lift, ridge augmentation.",
     images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
   }
 }
@@ -224,7 +224,7 @@ export default function BoneGraftingPage() {
           item: {
             "@type": "MedicalEntity",
             name: "Allograft",
-            description: "Processed bone from human tissue banks — sterilized and demineralized. The most common choice for routine bone grafting, with no secondary surgical site.",
+            description: "Processed bone from human tissue banks - sterilized and demineralized. The most common choice for routine bone grafting, with no secondary surgical site.",
             url: `${siteConfig.url}/expertise/bone-grafting#organic-materials`,
           },
         },
@@ -235,7 +235,7 @@ export default function BoneGraftingPage() {
             "@type": "MedicalEntity",
             name: "Xenograft",
             alternateName: "Bovine Bone Graft (Bio-Oss)",
-            description: "Processed bovine bone with slow resorption — excellent for sinus lift and ridge preservation cases requiring long-term volume stability.",
+            description: "Processed bovine bone with slow resorption - excellent for sinus lift and ridge preservation cases requiring long-term volume stability.",
             url: `${siteConfig.url}/expertise/bone-grafting#organic-materials`,
           },
         },
@@ -328,7 +328,7 @@ export default function BoneGraftingPage() {
         </Container>
       </Section>
 
-      {/* Doctor Quote — personal touch */}
+      {/* Doctor Quote - personal touch */}
       <DoctorQuote
         quote="Bone grafting is the quiet hero of modern implant dentistry. Without a solid foundation, even the most advanced implant cannot last. We build the base so the smile holds for decades."
         author="Dr. Alexander Antipov, DDS"
@@ -405,7 +405,7 @@ export default function BoneGraftingPage() {
         </Container>
       </Section>
 
-      {/* Graft Materials — Organic & Synthetic */}
+      {/* Graft Materials - Organic & Synthetic */}
       <Section id="organic-materials" background="default" padding="xl" className="scroll-mt-24 bg-light">
         <Container size="lg">
           <div className="text-center space-y-4 mb-12">
@@ -413,7 +413,7 @@ export default function BoneGraftingPage() {
               Bone Graft Materials
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              Organic and synthetic options — Dr. Antipov selects the best material for your specific case
+              Organic and synthetic options - Dr. Antipov selects the best material for your specific case
             </p>
           </div>
 
@@ -449,7 +449,7 @@ export default function BoneGraftingPage() {
               </div>
               <p className="text-neutral-700 leading-relaxed">
                 Processed bovine bone (most commonly Bio-Oss). Excellent for ridge preservation and sinus lift
-                cases — slow resorption rate gives the graft long-term volume stability.
+                cases - slow resorption rate gives the graft long-term volume stability.
               </p>
             </GlassCard>
 
@@ -526,7 +526,7 @@ export default function BoneGraftingPage() {
         subheading="Bone grafting and sinus lifts to rebuild the foundation for future implants."
       />
 
-      {/* Floating sticky CTA — appears after 25% scroll */}
+      {/* Floating sticky CTA - appears after 25% scroll */}
       <FloatingArticleCTA
         href="/contact"
         label="Book free consultation"

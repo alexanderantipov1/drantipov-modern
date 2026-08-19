@@ -41,7 +41,7 @@ export default function ReferringDoctors() {
               <span className="gradient-text">Dr. Antipov</span>
             </h2>
             <p className="mt-6 text-muted text-lg leading-relaxed">
-              Over 100 dentists and orthodontists across Northern California trust Dr. Antipov for their most complex surgical cases — from full arch dental implants and zygomatic implants to orthognathic jaw surgery and bone grafting. We make the referral process seamless and keep you informed every step of the way.
+              Over 100 dentists and orthodontists across Northern California trust Dr. Antipov for their most complex surgical cases - from full arch dental implants and zygomatic implants to orthognathic jaw surgery and bone grafting. We make the referral process seamless and keep you informed every step of the way.
             </p>
             <p className="mt-4 text-muted leading-relaxed">
               Whether your patient needs All-on-4 implant placement, sinus augmentation, wisdom teeth extraction, TMJ treatment, or corrective jaw surgery, we provide the surgical expertise while you maintain the restorative relationship. Download our referral form or call us directly to discuss a case.

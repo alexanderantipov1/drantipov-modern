@@ -7,6 +7,7 @@ import Link from "next/link"
 import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import type { RevisionArticle, Para } from "@/constants/revisionArticles"
+import CalculatorEmbed, { type CalcSlug } from "@/components/CalculatorEmbed"
 
 const SITE = "https://www.drantipov.com"
 
@@ -22,7 +23,16 @@ function renderSegments(para: Para, keyPrefix: string) {
   })
 }
 
-export function InsightArticle({ article, locale = "en" }: { article: RevisionArticle; locale?: "en" | "ru" }) {
+export function InsightArticle({
+  article,
+  locale = "en",
+  calculatorSlug,
+}: {
+  article: RevisionArticle
+  locale?: "en" | "ru"
+  /** Embeds the cost calculator for this treatment right after the article body. */
+  calculatorSlug?: CalcSlug
+}) {
   const isRu = locale === "ru"
   const insightsHref = isRu ? "/ru/for-patients/insights" : "/for-patients/insights"
   const contactHref = isRu ? "/ru/contact" : "/contact"
@@ -96,7 +106,7 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
 
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
               {isRu ? "Медицинская проверка: " : "Medically reviewed by "}
-              <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> —
+              <strong className="not-italic text-neutral-900">Dr. Alexander V. Antipov, DDS</strong> -
               {isRu
                 ? " сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS) · лицензия штата Калифорния №50724"
                 : " Board-Certified Oral & Maxillofacial Surgeon · Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS) · California Dental License #50724"}
@@ -197,6 +207,8 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
           </article>
         </Container>
       </Section>
+
+      {calculatorSlug && <CalculatorEmbed slug={calculatorSlug} locale={locale} />}
 
       <RelatedArticles currentSlug={article.slug} />
     </>

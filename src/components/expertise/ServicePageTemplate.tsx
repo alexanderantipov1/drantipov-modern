@@ -10,6 +10,7 @@ import {
 } from "@/lib/structured-data";
 import { siteConfig } from "@/constants/siteConfig";
 import DualCTA from "@/components/DualCTA";
+import CalculatorEmbed, { type CalcSlug } from "@/components/CalculatorEmbed";
 import type { ServicePageData } from "@/constants/servicePages";
 
 export function buildServiceMetadata(
@@ -34,7 +35,7 @@ export function buildServiceMetadata(
       url: `${siteConfig.url}${canonical}`,
       type: "website",
       locale: isRu ? "ru_RU" : "en_US",
-      siteName: "Dr. Alexander Antipov, DDS — Oral & Maxillofacial Surgery",
+      siteName: "Dr. Alexander Antipov, DDS - Oral & Maxillofacial Surgery",
       images: [{ url: image }],
     },
     twitter: {
@@ -49,9 +50,12 @@ export function buildServiceMetadata(
 export default function ServicePageTemplate({
   data,
   locale = "en",
+  calculatorSlug,
 }: {
   data: ServicePageData;
   locale?: "en" | "ru";
+  /** Embeds the cost calculator for this treatment above the closing CTA. */
+  calculatorSlug?: CalcSlug;
 }) {
   const isRu = locale === "ru";
   const prefix = isRu ? "/ru" : "";
@@ -188,6 +192,8 @@ export default function ServicePageTemplate({
           </Container>
         </Section>
       )}
+
+      {calculatorSlug && <CalculatorEmbed slug={calculatorSlug} locale={locale} />}
 
       <DualCTA />
     </>

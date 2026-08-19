@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Dr. Alexander Antipov, DDS — Oral & Maxillofacial Surgery",
+    name: "Dr. Alexander Antipov, DDS - Oral & Maxillofacial Surgery",
     short_name: "Dr. Antipov",
     description:
       "Board-certified oral and maxillofacial surgeon in Roseville, CA. Specializing in dental implants, corrective jaw surgery, and facial cosmetic procedures.",

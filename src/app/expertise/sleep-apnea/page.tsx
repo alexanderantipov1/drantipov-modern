@@ -27,7 +27,7 @@ import { siteConfig } from "@/constants/siteConfig"
 import DualCTA from "@/components/DualCTA"
 
 export const metadata = {
-  title: { absolute: "Sleep Apnea Surgery (MMA) — CPAP Alternative" },
+  title: { absolute: "Sleep Apnea Surgery (MMA) - CPAP Alternative" },
   description: "Maxillomandibular advancement surgery for OSA. A permanent CPAP alternative by board-certified oral surgeon Dr. Antipov, Roseville CA.",
   alternates: {
     canonical: "/expertise/sleep-apnea",
@@ -37,21 +37,21 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Sleep Apnea Surgery — MMA",
-    description: "Maxillomandibular advancement for obstructive sleep apnea — long-term surgical solution for CPAP-intolerant patients.",
+    title: "Sleep Apnea Surgery - MMA",
+    description: "Maxillomandibular advancement for obstructive sleep apnea - long-term surgical solution for CPAP-intolerant patients.",
     images: [
       {
         url: "/images/sleep-apnea-mma-surgery.jpg",
         width: 1200,
         height: 630,
-        alt: "Sleep Apnea Surgery — MMA",
+        alt: "Sleep Apnea Surgery - MMA",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sleep Apnea Surgery — MMA",
-    description: "Maxillomandibular advancement for obstructive sleep apnea — long-term surgical solution for CPAP-intolerant patients.",
+    title: "Sleep Apnea Surgery - MMA",
+    description: "Maxillomandibular advancement for obstructive sleep apnea - long-term surgical solution for CPAP-intolerant patients.",
     images: ["/images/sleep-apnea-mma-surgery.jpg"],
   }
 }
@@ -215,7 +215,7 @@ export default function SleepApneaPage() {
       <ExpertisePageHero
         badge="Airway Surgery"
         title="Sleep Apnea Surgical Solutions"
-        subtitle="Maxillomandibular advancement (MMA) is a surgical procedure that moves the upper and lower jaws forward to enlarge the airway — the most effective long-term surgical treatment for obstructive sleep apnea in CPAP-intolerant patients."
+        subtitle="Maxillomandibular advancement (MMA) is a surgical procedure that moves the upper and lower jaws forward to enlarge the airway - the most effective long-term surgical treatment for obstructive sleep apnea in CPAP-intolerant patients."
         image="/images/sleep-apnea-mma-surgery.jpg"
       />
 
@@ -285,7 +285,7 @@ export default function SleepApneaPage() {
         </Container>
       </Section>
 
-      {/* Doctor Quote — personal touch */}
+      {/* Doctor Quote - personal touch */}
       <DoctorQuote
         quote="After years of CPAP intolerance, patients often tell me the first night of natural sleep after MMA surgery is what changes their life. Surgery is not first-line, but for the right patient it is transformative."
         author="Dr. Alexander Antipov, DDS"
@@ -414,7 +414,7 @@ export default function SleepApneaPage() {
         subheading="MMA (maxillomandibular advancement) and other surgical sleep apnea options are performed at Galleria."
       />
 
-      {/* Floating sticky CTA — appears after 25% scroll */}
+      {/* Floating sticky CTA - appears after 25% scroll */}
       <FloatingArticleCTA
         href="/contact"
         label="Book free consultation"

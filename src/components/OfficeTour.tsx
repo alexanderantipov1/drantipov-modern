@@ -41,7 +41,7 @@ export default function OfficeTour() {
             A Modern <span className="gradient-text">Surgical Facility</span>
           </h2>
           <p className="mt-4 text-muted text-lg">
-            Our Roseville office features cone beam CT imaging, dedicated surgical suites, comfortable recovery areas, and the latest sterilization technology — all designed with your safety and comfort in mind.
+            Our Roseville office features cone beam CT imaging, dedicated surgical suites, comfortable recovery areas, and the latest sterilization technology - all designed with your safety and comfort in mind.
           </p>
         </motion.div>
 
@@ -56,7 +56,7 @@ export default function OfficeTour() {
               onClick={() => setLightbox(i)}
               className="group relative aspect-[4/3] rounded-2xl overflow-hidden"
             >
-              <Image src={img.src} alt={`${img.label} — Dr. Antipov\'s oral & maxillofacial surgery office in Roseville, CA`} fill className="object-cover group-hover:scale-105 transition-transform duration-500"
+              <Image src={img.src} alt={`${img.label} - Dr. Antipov\'s oral & maxillofacial surgery office in Roseville, CA`} fill className="object-cover group-hover:scale-105 transition-transform duration-500"
           sizes="100vw"
         />
               <div className="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -94,7 +94,7 @@ export default function OfficeTour() {
               <button onClick={() => setLightbox(null)} className="absolute -top-12 right-0 text-white/70 hover:text-white">
                 <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
               </button>
-              <Image src={allImages[lightbox] ?? ""} alt={`${officeImages[lightbox]?.label ?? "Office"} — Dr. Antipov\'s Roseville oral surgery facility`} width={1400} height={900} className="w-full h-auto rounded-2xl" />
+              <Image src={allImages[lightbox] ?? ""} alt={`${officeImages[lightbox]?.label ?? "Office"} - Dr. Antipov\'s Roseville oral surgery facility`} width={1400} height={900} className="w-full h-auto rounded-2xl" />
               <div className="mt-4 flex justify-between">
                 <button onClick={() => setLightbox(Math.max(0, lightbox - 1))} disabled={lightbox === 0} className="px-4 py-2 bg-white/10 rounded-xl text-white text-sm disabled:opacity-30">&larr; Prev</button>
                 <span className="text-white text-sm">{lightbox + 1} / {allImages.length}</span>

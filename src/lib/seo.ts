@@ -49,7 +49,7 @@ export function buildMetadata({
       url,
       type: "website",
       locale: "en_US",
-      siteName: "Dr. Alexander Antipov, DDS — Oral & Maxillofacial Surgery",
+      siteName: "Dr. Alexander Antipov, DDS - Oral & Maxillofacial Surgery",
       images: [{ url: image }],
     },
     twitter: {

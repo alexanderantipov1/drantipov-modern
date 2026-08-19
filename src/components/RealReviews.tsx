@@ -51,7 +51,7 @@ export default function RealReviews({ variant = "full" }: Props) {
                 Что говорят пациенты Dr. Antipov
               </h2>
               <p className="mt-5 text-lg leading-8 text-muted">
-                4.9★ — средняя оценка по 300+ верифицированным отзывам на Google. Истории пациентов — про
+                4.9★ - средняя оценка по 300+ верифицированным отзывам на Google. Истории пациентов - про
                 сложные случаи, прозрачную стоимость, comfort во время процедуры и долгосрочный результат.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">

@@ -24,9 +24,9 @@ const procedureImages = [
 // Template placeholder images excluded (slider04-06, image-background01-03 are generic stock/watermarked assets)
 
 const testimonialVideos = [
-  { label: "Robert — All-on-4 Patient Story", videoId: "oH9rF2-DUQo" },
-  { label: "Jennifer — Bone Grafting & Implants", videoId: "_BFvqbGp7wU" },
-  { label: "David — Full-Arch Restoration", videoId: "mrMUren132I" },
+  { label: "Robert - All-on-4 Patient Story", videoId: "oH9rF2-DUQo" },
+  { label: "Jennifer - Bone Grafting & Implants", videoId: "_BFvqbGp7wU" },
+  { label: "David - Full-Arch Restoration", videoId: "mrMUren132I" },
 ];
 
 // Template placeholders excluded (pattern-background is stock collage, meet-the-doctor already used in About)

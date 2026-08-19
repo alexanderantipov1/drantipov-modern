@@ -9,7 +9,7 @@ import { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Кто такой челюстно-лицевой хирург и что он делает?",
   description:
-    "Челюстно-лицевой хирург — стоматолог-специалист с хирургической подготовкой. Что он лечит, как обучается, какие операции выполняет и когда к нему обращаться.",
+    "Челюстно-лицевой хирург - стоматолог-специалист с хирургической подготовкой. Что он лечит, как обучается, какие операции выполняет и когда к нему обращаться.",
   alternates: {
     canonical: "/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do",
     languages: {
@@ -52,7 +52,7 @@ export default function WhatIsAnOralSurgeonPost() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do#article","headline":"Кто такой челюстно-лицевой хирург и что он делает?","description":"Челюстно-лицевой хирург — стоматолог-специалист с хирургической подготовкой. Что он лечит, как обучается, какие операции выполняет и когда к нему обращаться.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/what-is-oral-surgeon.png"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Челюстно-лицевые хирурги — это настоящие врачи?","acceptedAnswer":{"@type":"Answer","text":"Да — у них докторская степень в стоматологической хирургии (DDS или DMD) и 4–6 лет дополнительной хирургической резидентуры. У многих есть также медицинская степень MD."}},{"@type":"Question","name":"Делают ли челюстно-лицевые хирурги косметические операции?","acceptedAnswer":{"@type":"Answer","text":"Часть делает — особенно операции, связанные со структурами челюстно-лицевой области (подбородочные импланты, восстановление переломов лица, ринопластику отдельных видов). Большинство специализируются на функциональной хирургии."}},{"@type":"Question","name":"Может ли челюстно-лицевой хирург заменить моего обычного стоматолога?","acceptedAnswer":{"@type":"Answer","text":"Нет — челюстно-лицевые хирурги специализируются на хирургии. Для обычной чистки, пломб и текущей стоматологической помощи нужен общий стоматолог."}},{"@type":"Question","name":"Сколько стоит приём челюстно-лицевого хирурга?","acceptedAnswer":{"@type":"Answer","text":"Процедуры дороже общей стоматологии — из-за специализированного обучения и оборудования. Но сложные случаи, сделанные правильно с первого раза, часто обходятся дешевле, чем исправление потом."}},{"@type":"Question","name":"Безопасна ли седация у челюстно-лицевого хирурга?","acceptedAnswer":{"@type":"Answer","text":"Да — челюстно-лицевые хирурги проходят серьёзную подготовку по анестезиологии в резидентуре. Седация в клинике сертифицированным хирургом имеет отличный профиль безопасности."}},{"@type":"Question","name":"Покрывает ли страховка челюстно-лицевую хирургию?","acceptedAnswer":{"@type":"Answer","text":"Многие процедуры покрываются медицинской (а не стоматологической) страховкой при функциональных показаниях — зубы мудрости, челюстная хирургия, травмы, некоторые удаления. Стоматологическая страховка обычно покрывает удаления и часть стоимости имплантации."}}]}]` }}
+        dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do#article","headline":"Кто такой челюстно-лицевой хирург и что он делает?","description":"Челюстно-лицевой хирург - стоматолог-специалист с хирургической подготовкой. Что он лечит, как обучается, какие операции выполняет и когда к нему обращаться.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/what-is-oral-surgeon.png"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Челюстно-лицевые хирурги - это настоящие врачи?","acceptedAnswer":{"@type":"Answer","text":"Да - у них докторская степень в стоматологической хирургии (DDS или DMD) и 4–6 лет дополнительной хирургической резидентуры. У многих есть также медицинская степень MD."}},{"@type":"Question","name":"Делают ли челюстно-лицевые хирурги косметические операции?","acceptedAnswer":{"@type":"Answer","text":"Часть делает - особенно операции, связанные со структурами челюстно-лицевой области (подбородочные импланты, восстановление переломов лица, ринопластику отдельных видов). Большинство специализируются на функциональной хирургии."}},{"@type":"Question","name":"Может ли челюстно-лицевой хирург заменить моего обычного стоматолога?","acceptedAnswer":{"@type":"Answer","text":"Нет - челюстно-лицевые хирурги специализируются на хирургии. Для обычной чистки, пломб и текущей стоматологической помощи нужен общий стоматолог."}},{"@type":"Question","name":"Сколько стоит приём челюстно-лицевого хирурга?","acceptedAnswer":{"@type":"Answer","text":"Процедуры дороже общей стоматологии - из-за специализированного обучения и оборудования. Но сложные случаи, сделанные правильно с первого раза, часто обходятся дешевле, чем исправление потом."}},{"@type":"Question","name":"Безопасна ли седация у челюстно-лицевого хирурга?","acceptedAnswer":{"@type":"Answer","text":"Да - челюстно-лицевые хирурги проходят серьёзную подготовку по анестезиологии в резидентуре. Седация в клинике сертифицированным хирургом имеет отличный профиль безопасности."}},{"@type":"Question","name":"Покрывает ли страховка челюстно-лицевую хирургию?","acceptedAnswer":{"@type":"Answer","text":"Многие процедуры покрываются медицинской (а не стоматологической) страховкой при функциональных показаниях - зубы мудрости, челюстная хирургия, травмы, некоторые удаления. Стоматологическая страховка обычно покрывает удаления и часть стоимости имплантации."}}]}]` }}
       />
       {/* Back Button */}
       <Section background="default" padding="sm" className="pt-24">
@@ -92,7 +92,7 @@ export default function WhatIsAnOralSurgeonPost() {
 
             {/* E-E-A-T: Medically reviewed byline */}
             <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              Медицинская проверка — <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
+              Медицинская проверка - <strong className="not-italic text-neutral-900">Доктор Александр В. Антипов, DDS</strong> &mdash; сертифицированный челюстно-лицевой хирург &middot; Diplomate, American Board of Oral &amp; Maxillofacial Surgery (ABOMS) &middot; Лицензия стоматолога Калифорнии №&nbsp;50724
             </p>
 {/* Featured Image */}
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
@@ -109,7 +109,7 @@ export default function WhatIsAnOralSurgeonPost() {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-xl text-neutral-700 leading-relaxed mb-8">
-                Челюстно-лицевой хирург (OMS или OMFS) — это стоматолог-специалист, обученный хирургии полости
+                Челюстно-лицевой хирург (OMS или OMFS) - это стоматолог-специалист, обученный хирургии полости
                 рта, челюстей, лица и шеи. Челюстно-лицевые хирурги совмещают стоматологический и
                 хирургический опыт и лечат то, что выходит за рамки общей стоматологии.
               </p>
@@ -118,7 +118,7 @@ export default function WhatIsAnOralSurgeonPost() {
               <GlassCard className="my-10 p-6">
                 <p className="text-sm font-bold uppercase tracking-widest text-primary-700">Коротко</p>
                 <ul className="mt-3 space-y-2 text-base leading-7 text-neutral-700 list-none pl-0">
-                  <li>&bull; Челюстно-лицевой хирург — стоматолог-специалист с серьёзной хирургической подготовкой.</li>
+                  <li>&bull; Челюстно-лицевой хирург - стоматолог-специалист с серьёзной хирургической подготовкой.</li>
                   <li>&bull; Полное обучение занимает 12&ndash;14 лет после школы, включая 4&ndash;6-летнюю резидентуру в больнице.</li>
                   <li>&bull; Делают имплантацию, удаления, челюстную хирургию, лечение травм и патологий.</li>
                   <li>&bull; Имеют право проводить внутривенную седацию и общую анестезию прямо в клинике.</li>
@@ -130,7 +130,7 @@ export default function WhatIsAnOralSurgeonPost() {
                 Кто такой челюстно-лицевой хирург?
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Челюстно-лицевой хирург (OMS или OMFS) — это стоматолог-специалист, обученный хирургическим
+                Челюстно-лицевой хирург (OMS или OMFS) - это стоматолог-специалист, обученный хирургическим
                 вмешательствам в области рта, челюстей, лица и шеи. Челюстно-лицевые хирурги сочетают
                 стоматологический и хирургический опыт, лечат состояния, которые выходят за рамки обычной
                 стоматологии.
@@ -152,7 +152,7 @@ export default function WhatIsAnOralSurgeonPost() {
                 <li>&mdash; <strong>4&ndash;6 лет резидентуры в больнице</strong> по челюстно-лицевой хирургии &mdash; часто совмещается с медицинской степенью MD.</li>
               </ul>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                <strong>Итого обучение: 12&ndash;14 лет после школы</strong> — часто дольше, чем у большинства
+                <strong>Итого обучение: 12&ndash;14 лет после школы</strong> - часто дольше, чем у большинства
                 медицинских специальностей. Резидентура включает:
               </p>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
@@ -302,10 +302,10 @@ export default function WhatIsAnOralSurgeonPost() {
                 Когда нужно обращаться к челюстно-лицевому хирургу?
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                <strong>Однозначно — при:</strong>
+                <strong>Однозначно - при:</strong>
               </p>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
-                <li>&mdash; Удалении зубов мудрости — особенно ретинированных.</li>
+                <li>&mdash; Удалении зубов мудрости - особенно ретинированных.</li>
                 <li>&mdash; Имплантации нескольких или полной челюсти.</li>
                 <li>&mdash; Костной пластике или синус-лифтинге.</li>
                 <li>&mdash; Корригирующей челюстной хирургии при тяжёлых проблемах с прикусом.</li>
@@ -320,7 +320,7 @@ export default function WhatIsAnOralSurgeonPost() {
               </p>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
                 <li>&mdash; Неудачные предыдущие стоматологические работы.</li>
-                <li>&mdash; Сложные одиночные импланты — особенно фронтальные зубы или эстетическая зона.</li>
+                <li>&mdash; Сложные одиночные импланты - особенно фронтальные зубы или эстетическая зона.</li>
                 <li>&mdash; Второе мнение по удалению или имплантации.</li>
                 <li>&mdash; Хроническая лицевая боль неясного происхождения.</li>
               </ul>
@@ -371,7 +371,7 @@ export default function WhatIsAnOralSurgeonPost() {
                 Какие виды анестезии предлагают челюстно-лицевые хирурги
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Главное преимущество хирургических клиник — гибкость по анестезии:
+                Главное преимущество хирургических клиник - гибкость по анестезии:
               </p>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
                 <li>&mdash; <strong>Местная анестезия</strong> &mdash; зона обезболивается, вы остаётесь в сознании.</li>
@@ -382,7 +382,7 @@ export default function WhatIsAnOralSurgeonPost() {
               </ul>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Большинство общих стоматологов могут предложить только первые три варианта. Челюстно-лицевые
-                хирурги в обычном порядке проводят внутривенную седацию и общую анестезию прямо в клинике —
+                хирурги в обычном порядке проводят внутривенную седацию и общую анестезию прямо в клинике -
                 это критично для сложных и длительных процедур.
               </p>
 
@@ -410,7 +410,7 @@ export default function WhatIsAnOralSurgeonPost() {
               <div className="space-y-6 my-8">
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 mb-3">
-                    Челюстно-лицевые хирурги — это настоящие врачи?
+                    Челюстно-лицевые хирурги - это настоящие врачи?
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
                     Да &mdash; у них докторская степень в стоматологической хирургии (DDS или DMD) и 4&ndash;6 лет
@@ -444,7 +444,7 @@ export default function WhatIsAnOralSurgeonPost() {
                     Сколько стоит приём челюстно-лицевого хирурга?
                   </h3>
                   <p className="text-neutral-700 leading-relaxed">
-                    Процедуры дороже общей стоматологии — из-за специализированного обучения и оборудования.
+                    Процедуры дороже общей стоматологии - из-за специализированного обучения и оборудования.
                     Но сложные случаи, сделанные правильно с первого раза, часто обходятся дешевле, чем
                     исправление осложнений потом.
                   </p>
@@ -513,10 +513,10 @@ export default function WhatIsAnOralSurgeonPost() {
             <div className="mt-12 text-center">
               <GlassCard className="p-8">
                 <h3 className="text-2xl font-serif font-bold text-neutral-900 mb-4">
-                  Нужна сложная процедура — сделайте её правильно с первого раза
+                  Нужна сложная процедура - сделайте её правильно с первого раза
                 </h3>
                 <p className="text-neutral-700 mb-6">
-                  Запишитесь на консультацию к нашей команде челюстно-лицевой хирургии — мы оценим ваш случай
+                  Запишитесь на консультацию к нашей команде челюстно-лицевой хирургии - мы оценим ваш случай
                   и объясним все реалистичные варианты. Координатор свяжется с вами в течение 24 часов.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

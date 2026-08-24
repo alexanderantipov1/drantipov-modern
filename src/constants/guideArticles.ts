@@ -8863,6 +8863,121 @@ export const guideArticles: RevisionArticle[] = [
     },
   },
 
+  {
+    slug: "how-long-do-dental-implants-last",
+    title: "How Long Do Dental Implants Last? A Realistic Longevity Guide for 2026",
+    metaTitle: "How Long Do Dental Implants Last? 2026 Longevity Guide",
+    metaDescription:
+      "How long do dental implants last? Board-certified Roseville oral surgeon Dr. Antipov explains the difference between the implant post and crown or bridge, realistic longevity, what shortens lifespan, maintenance, and signs to call your surgeon.",
+    excerpt:
+      "Dental implants are designed for decades of service, but \u201can implant\u201d is really two things with different lifespans: the post in the bone and the crown or bridge you see. Here is the realistic timeline, what determines it, and what you can do to protect the investment.",
+    date: "August 13, 2026",
+    datePublished: "2026-08-13",
+    image: "/images/blog/2026-08-04/how-long-do-dental-implants-last.png",
+    heroAlt: "Dental implant crown model beside dental hygiene tools and a calendar during a long-term follow-up consultation",
+    category: "Dental Implants",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "how long do dental implants last",
+      "dental implant lifespan",
+      "how long do implant crowns last",
+      "dental implant maintenance",
+      "dental implant failure signs",
+    ],
+    intro: [
+      "Dental implants are designed to last decades, and long-term success rates are commonly cited above 95% \u2014 but the honest answer to how long they last depends on which part you mean, explains Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA. The titanium implant post fused into your bone can serve for decades with good hygiene and regular follow-up, while the visible crown or full-arch bridge absorbs daily wear and may eventually need maintenance or replacement. This guide separates those timelines, explains the factors that determine longevity, and shows what to watch for before a small issue becomes a revision case.",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical exam. Implant longevity varies by anatomy, health history, bite forces, and maintenance; a surgeon can assess your specific restoration with an exam and imaging.",
+    tldr: [],
+    sections: [
+      {
+        heading: "The Short Answer: Two Parts, Two Timelines",
+        paras: ["An implant restoration is not one component. The foundation and the visible teeth face very different demands:"],
+        table: {
+          headers: ["Component", "What it does", "Realistic service life"],
+          rows: [
+            ["Implant post", "Titanium fixture fused into jawbone", "Designed to serve for decades with care"],
+            ["Abutment", "Connector between post and crown or bridge", "Long-lived; occasionally adjusted or replaced"],
+            ["Single crown", "Visible replacement tooth", "Often many years; wear varies by bite and material"],
+            ["Full-arch bridge", "Fixed teeth spanning 4\u20136 implants", "Long-lived, with maintenance or eventual renewal possible"],
+            ["Snap-in attachments", "Mechanical connectors for removable overdenture", "Wear parts needing periodic replacement"],
+          ],
+        },
+      },
+      {
+        heading: "Why the Implant Post Can Last So Long",
+        paras: [
+          ["An implant is not simply screwed into the jaw. After placement, living bone grows directly onto its titanium surface through osseointegration \u2014 the biological bonding process described in the National Library of Medicine's overview of ", { text: "dental implants", href: "https://medlineplus.gov/ency/article/007645.htm" }, ". Once healed, that bond lets the post transmit chewing forces into the bone much like a natural root. Unlike a natural tooth, titanium does not decay; with stable bone and healthy gum tissue around it, the post is designed to serve for decades."],
+          "That does not mean \u201cmaintenance-free\u201d or guaranteed for life. The gums around an implant can still develop inflammation, bone can recede under excessive forces or infection, and the hardware above the bone is subject to normal mechanical wear. Long-term success is the product of careful planning, successful healing, daily hygiene, and professional monitoring \u2014 not a promise printed on the day of surgery.",
+        ],
+      },
+      {
+        heading: "The Crown or Bridge Has a Different Job",
+        paras: [
+          "Your crown or bridge handles every bite, temperature change, and clenching episode. It is therefore the part of an implant restoration most likely to need attention first. A single crown may eventually be replaced due to wear, fracture, or cosmetic changes around the gumline; a full-arch prosthetic can need polishing, repairs, screw checks, or eventual renewal after years of use. This is normal lifecycle maintenance, not necessarily implant failure.",
+          ["Material matters. Monolithic zirconia is exceptionally resistant to wear and staining, while titanium-acrylic hybrid bridges cost less initially and can be easier to repair but may show wear sooner. Your bite, night grinding, and the design of the restoration all influence that trade-off. Our guide to ", { text: "fixed dentures on implants", href: "/for-patients/insights/fixed-dentures-on-implants" }, " explains materials and maintenance in the full-arch setting."],
+        ],
+      },
+      {
+        heading: "The Factors That Shorten Implant Lifespan",
+        paras: ["Most long-term problems are not random. These are the risk factors surgeons plan around and patients can actively manage:"],
+        list: [
+          "Smoking and nicotine use, which impair blood flow and healing around the implant.",
+          "Uncontrolled diabetes and other health conditions that slow healing or raise infection risk.",
+          "Gum inflammation around implants (peri-implant mucositis or peri-implantitis) from plaque buildup.",
+          "Heavy clenching or grinding, especially without a protective night guard.",
+          "Poorly distributed bite forces or a restoration that no longer fits correctly.",
+          "Skipping professional maintenance until bleeding, loosening, or pain becomes noticeable.",
+        ],
+      },
+      {
+        heading: "How to Make Your Implant Last as Long as Possible",
+        paras: [
+          "The daily routine is straightforward, but it needs to be consistent: brush twice daily with a soft brush, clean around the gumline, and use the cleaning method your team recommends for your specific design. For single teeth, floss or interdental brushes clean the sides of the crown; for fixed bridges, a water flosser and floss threaders clean beneath the bridge; snap-in dentures are removed nightly so both the prosthetic and attachments can be cleaned.",
+          [
+            "Professional recalls matter just as much. Your hygienist checks tissues for early inflammation, your surgeon or restorative dentist checks the bite and hardware, and periodic imaging confirms that the bone level remains stable. If you clench or grind, a night guard protects both the visible ceramic and the bone-to-implant interface from overload. Our ",
+            { text: "dental implant aftercare guide", href: "/for-patients/insights/dental-implant-aftercare" },
+            " provides a more detailed routine.",
+          ],
+        ],
+      },
+      {
+        heading: "Signs to Call Your Surgeon \u2014 and What They May Mean",
+        paras: [
+          "A healthy, integrated implant should not hurt, move, or bleed repeatedly. Call your dental team if you notice persistent bleeding when brushing, swelling or drainage around the implant, pain with biting, a crown that feels loose, a change in how your teeth meet, or a crack or chip in the prosthetic. Many concerns are repairable when caught early: a loose screw, worn attachment, or chipped crown is not the same as a failed post.",
+          ["If imaging shows bone loss, infection, or a compromised implant, a specialist can assess whether the restoration can be cleaned and stabilized, repaired, or needs revision. See our guides to ", { text: "repairing a broken implant crown or prosthesis", href: "/for-patients/insights/repairing-a-broken-implant-crown-or-prosthesis" }, " and ", { text: "dental implant revision surgery", href: "/for-patients/insights/dental-implant-revision-surgery" }, " for what those paths can involve."],
+        ],
+      },
+      {
+        heading: "What If an Implant Actually Fails?",
+        paras: [
+          "Implant failure is uncommon, but it is not the end of the story. Early failures generally happen before osseointegration completes; later failures are more often linked to infection, overload, or progressive bone loss. The first step is determining why it failed \u2014 simply placing another implant without addressing the cause risks repeating the problem. After removal and healing, grafting may rebuild the site before a replacement is considered.",
+          ["Complex cases benefit from a surgeon who performs both placement and revision planning. If you are already dealing with a loose or painful implant, our guide to ", { text: "replacing a failed dental implant", href: "/for-patients/insights/replacing-a-failed-dental-implant-what-to-expect" }, " covers the process and timing."],
+        ],
+      },
+      {
+        heading: "Protecting Your Long-Term Investment in Roseville",
+        paras: [["The best longevity plan begins before surgery \u2014 with 3D planning, a restoration designed for your bite, and a team that stays involved after the final teeth are placed. Dr. Antipov provides implant placement, complex assessment, and revision planning at his Roseville practice for patients traveling from Sacramento and throughout Northern California. To understand the full treatment process, visit our ", { text: "dental implant procedure guide", href: "/for-patients/insights/dental-implant-procedure-complete-guide" }, "."]],
+      },
+    ],
+    faqs: [
+      { question: "How long do dental implants last?", answer: "The implant post is designed to serve for decades with good hygiene and regular checkups, and long-term success rates are commonly cited above 95%. The visible crown or bridge experiences normal wear and may need maintenance or replacement over its life." },
+      { question: "How long does an implant crown last?", answer: "A crown on an implant often serves for many years, but its lifespan depends on material, bite forces, clenching, hygiene, and whether the gum and bone remain healthy. Unlike the implant post, the crown is the exposed wear surface and is more likely to need eventual replacement." },
+      { question: "Can dental implants fail after 10 years?", answer: "Yes, although long-term implant survival is high. Late problems are more commonly linked to gum infection, progressive bone loss, excessive bite forces, smoking, or skipped maintenance than to the titanium post wearing out. Regular checks help catch issues while they are still manageable." },
+      { question: "Do implants need special maintenance?", answer: "Yes. Implants cannot decay, but the gums and bone around them still need daily plaque control and professional cleanings. Fixed bridges also need cleaning underneath with tools such as a water flosser or floss threaders; snap-in attachments need periodic inspection and replacement as they wear." },
+      { question: "What are the warning signs of implant failure?", answer: "Persistent bleeding, swelling, drainage, pain while biting, a mobile implant or crown, a bite change, or a loose screw all deserve a prompt evaluation. A loose crown or worn attachment may be a straightforward repair, but imaging is needed to rule out bone or implant problems." },
+      { question: "Does grinding teeth damage dental implants?", answer: "Heavy clenching and grinding can overload the crown, bridge, screws, and surrounding bone. If you grind, a custom night guard and periodic bite checks protect the restoration and reduce the risk of mechanical complications." },
+      { question: "Can a failed dental implant be replaced?", answer: "Often, yes. The cause of failure is assessed first, then the implant may be removed and the site allowed to heal or be grafted before a replacement is placed. The exact sequence depends on infection, available bone, and the health of surrounding tissues." },
+      { question: "Are zirconia implant bridges more durable?", answer: "Monolithic zirconia bridges are highly resistant to wear, staining, and chipping, which can make them an excellent long-term option for fixed full-arch treatment. Titanium-acrylic hybrids cost less and can be easier to repair. The best material depends on your bite, design, and budget." },
+    ],
+    cta: {
+      heading: "Make Sure Your Implant Is Built to Last",
+      body: "Schedule a free implant consultation with Dr. Antipov in Roseville \u2014 3D evaluation, an honest assessment of your implant health or treatment plan, and clear guidance on the maintenance that protects your investment. Restrictions apply.",
+    },
+  },
+
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

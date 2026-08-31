@@ -8978,6 +8978,116 @@ export const guideArticles: RevisionArticle[] = [
     },
   },
 
+  {
+    slug: "all-on-4-dental-implants-cost-elk-grove",
+    title: "All-on-4 Dental Implants Cost for Elk Grove Patients: A 2026 Buying Guide",
+    metaTitle: "All-on-4 Cost for Elk Grove Patients | 2026 Guide",
+    metaDescription:
+      "All-on-4 dental implants commonly cost $25,000\u2013$35,000 per arch. Board-certified Roseville oral surgeon Dr. Antipov explains what Elk Grove patients should compare, what a complete quote includes, zirconia vs. acrylic, financing, and why the drive can be worthwhile.",
+    excerpt:
+      "All-on-4 prices are difficult to compare because the lowest advertised number often excludes extractions, sedation, temporary teeth, or the final bridge. This Elk Grove patient guide explains the realistic complete cost, what drives it, and how to compare Roseville-area plans line by line.",
+    date: "August 13, 2026",
+    datePublished: "2026-08-13",
+    image: "/images/blog/2026-08-04/all-on-4-dental-implants-cost-elk-grove.png",
+    heroAlt: "Patient and oral surgeon reviewing a full-arch implant cost plan beside a zirconia bridge and four-implant jaw model",
+    category: "Dental Implants",
+    readTime: "9 min read",
+    author: "Dr. Alexander V. Antipov",
+    keywords: [
+      "all-on-4 dental implants cost elk grove",
+      "all-on-4 elk grove",
+      "full arch dental implants elk grove",
+      "dental implant cost elk grove",
+      "all-on-4 financing elk grove",
+    ],
+    intro: [
+      "For Elk Grove patients, complete All-on-4 treatment commonly costs $25,000\u2013$35,000 per arch, or $50,000\u2013$70,000 for both arches \u2014 including the surgical and restorative stages \u2014 and many patients make the drive — often around 40 minutes, depending on traffic — to Dr. Alexander Antipov, a board-certified oral and maxillofacial surgeon in Roseville, CA, for specialist-led planning and a transparent written quote. The important word is complete: advertised prices may exclude extractions, IV sedation, the same-day provisional bridge, or the final zirconia teeth. This buying guide explains what moves the price, what every comparison should include, and how material choice, insurance, and financing affect the real long-term value.",
+    ],
+    disclaimer:
+      "This article is for general education and is not a substitute for a clinical exam. Prices are typical ranges, not quotes; your actual cost and same-day candidacy depend on your bone volume, health history, extractions, and material choice, determined after 3D imaging in Roseville.",
+    tldr: [],
+    sections: [
+      {
+        heading: "All-on-4 Cost at a Glance",
+        paras: ["Use these figures as comparison anchors, not as a substitute for an itemized clinical plan:"],
+        table: {
+          headers: ["Cost factor", "Typical expectation", "What to verify"],
+          rows: [
+            ["Complete treatment per arch", "$25,000\u2013$35,000", "Surgery, provisional, and final bridge included"],
+            ["Both arches", "$50,000\u2013$70,000", "Whether combined treatment changes the fee"],
+            ["Dental insurance", "Commonly $1,000\u2013$3,000 depending on plan", "Which surgical/restorative portions qualify"],
+            ["Implant count", "Usually 4; sometimes 5\u20136", "Chosen from anatomy, not sold as an upgrade"],
+            ["Final material", "Zirconia or titanium-acrylic", "Exact material written into the quote"],
+          ],
+        },
+      },
+      {
+        heading: "What You Are Actually Paying For",
+        paras: [
+          ["All-on-4 replaces a failing or missing full arch with a fixed bridge supported by four implants. Two posterior implants are commonly tilted to use denser available bone and avoid anatomical structures, allowing many patients to avoid separate grafting. The posts then fuse with the jaw through osseointegration, the process described in the National Library of Medicine's overview of ", { text: "dental implants", href: "https://medlineplus.gov/ency/article/007645.htm" }, "."],
+          "A complete plan combines several disciplines: 3D CBCT imaging and digital planning, extractions where needed, implant surgery, IV sedation, a fixed provisional bridge for qualifying same-day patients, healing checks over three to six months, and the final custom bridge. When one quote is dramatically lower, one or more of those components is often missing rather than cheaper.",
+        ],
+      },
+      {
+        heading: "The Five Variables That Change an Elk Grove Patient's Quote",
+        paras: ["Most of the price difference between otherwise legitimate plans comes from five case-specific variables:"],
+        list: [
+          "One arch versus both arches, and whether they are treated during the same surgical visit.",
+          "The number and complexity of failing teeth that must be removed.",
+          "Bone volume, including whether grafting or a more advanced implant approach is needed.",
+          "Four implants versus five or six when bone density and bite forces call for additional support.",
+          "The final bridge material, especially zirconia versus a titanium-acrylic hybrid.",
+        ],
+      },
+      {
+        heading: "Zirconia vs. Acrylic: Upfront Price and Long-Term Value",
+        paras: [
+          "A titanium-acrylic hybrid bridge usually lowers the initial price and can be repaired relatively easily, but acrylic teeth wear and stain sooner. Monolithic zirconia costs more upfront but resists wear, fracture, and staining exceptionally well. Neither is automatically right for every patient: bite forces, available restorative space, priorities, and budget all matter.",
+          ["Do not accept a quote that says only \u201cfinal teeth.\u201d The material should be named in writing because it can change both the price and future maintenance. Our ", { text: "full fixed-arch quote breakdown", href: "/for-patients/insights/full-fixed-arch-implant-cost" }, " explains every other line item that should appear beside it."],
+        ],
+      },
+      {
+        heading: "Why the Surgeon Is Part of the Value Calculation",
+        paras: [
+          "A low surgical fee is not a bargain if poor positioning creates bite problems, difficult hygiene, bone loss, or a revision. Full-arch outcomes depend heavily on planning implant angles from the CT scan, achieving primary stability, managing soft tissue, distributing bite forces, and recognizing when four implants are not enough. Those are surgical decisions, not product features.",
+          ["Dr. Antipov completed hospital-based oral and maxillofacial surgery training and is board certified by the American Board of Oral and Maxillofacial Surgery. Patients can verify any surgeon's credentials and compare training objectively using our guide to ", { text: "choosing a board-certified implant surgeon", href: "/for-patients/insights/board-certified-dental-implant-surgeon-california" }, "."],
+        ],
+      },
+      {
+        heading: "Financing and Insurance Without the Sales Pitch",
+        paras: [
+          ["Dental insurance rarely pays for an entire fixed arch, but many plans contribute toward portions of treatment \u2014 commonly $1,000\u2013$3,000 depending on the policy. HSA or FSA funds can reduce the after-tax cost, and third-party healthcare financing can spread the remaining balance over predictable monthly payments. Our ", { text: "dental implant payment plans guide", href: "/for-patients/insights/dental-implant-payment-plans" }, " explains how to compare terms without focusing only on the monthly number."],
+          "The safest sequence is clinical plan first, financing second. Until imaging confirms the number of implants, extraction scope, and final material, a payment estimate is financing a guess rather than a treatment plan.",
+        ],
+      },
+      {
+        heading: "Is Traveling From Elk Grove to Roseville Practical?",
+        paras: [
+          "For most patients, yes. Elk Grove is roughly 40 minutes from Roseville depending on traffic. Full-arch care concentrates the major work into a consultation with CBCT imaging, the surgical visit, and a limited number of follow-ups and bridge appointments. That makes comparing a specialist plan outside your immediate neighborhood much more practical than many people expect.",
+          ["Dr. Antipov's only practice location is in Roseville; Elk Grove patients travel there for treatment. If you are comparing several offices, bring itemized plans showing the implant count, extractions, sedation, provisional bridge, final material, and follow-up care. For the broader process and cost framework, see our guide to ", { text: "full-mouth dental implants in the Sacramento region", href: "/for-patients/insights/full-mouth-dental-implants-cost-process" }, "."],
+        ],
+      },
+      {
+        heading: "Your Next Step",
+        paras: [["A meaningful All-on-4 price is built from your anatomy, not an advertisement. Start with 3D imaging and request one complete written number that identifies every surgical and restorative component. You can learn more about ", { text: "full-arch implant treatment at our Roseville practice", href: "/expertise/full-arch-implants" }, " before scheduling your visit from Elk Grove."]],
+      },
+    ],
+    faqs: [
+      { question: "How much does All-on-4 cost for Elk Grove patients?", answer: "Complete All-on-4 treatment commonly costs $25,000\u2013$35,000 per arch, or $50,000\u2013$70,000 for both arches. Confirm that imaging, extractions, sedation, implant placement, the provisional teeth, and the final bridge are all included before comparing quotes." },
+      { question: "Is there an All-on-4 office in Elk Grove for Dr. Antipov?", answer: "No. Dr. Antipov's practice is located only in Roseville. Elk Grove patients often travel around 40 minutes to the Roseville office for consultation, surgery, and follow-up care, though the drive varies with traffic." },
+      { question: "Can I receive teeth on the same day as surgery?", answer: "Qualifying patients can receive a fixed provisional bridge on the day implants are placed. The final bridge is delivered after osseointegration, commonly three to six months later. Same-day candidacy depends on bone quality and implant stability confirmed during planning and surgery." },
+      { question: "Why are some All-on-4 advertisements much cheaper?", answer: "Low headline prices often exclude extractions, IV sedation, temporary teeth, follow-up visits, or the final zirconia bridge. Ask for an itemized, all-inclusive written plan; a price that omits the final restoration is incomplete, not necessarily less expensive." },
+      { question: "Is zirconia worth the additional cost?", answer: "Zirconia is highly resistant to wear, staining, and chipping and is often chosen for long-term fixed full-arch treatment. Titanium-acrylic hybrids cost less and can be easier to repair. Your bite, restorative space, and budget determine which offers better value for your case." },
+      { question: "Does insurance cover All-on-4 treatment?", answer: "Full coverage is uncommon, but many plans contribute $1,000\u2013$3,000 depending on the policy, often toward extractions and restorative components. A benefits review before treatment clarifies what your plan will contribute." },
+      { question: "Can I get All-on-4 if I have bone loss?", answer: "Often, yes. Tilted posterior implants use denser bone toward the front of the jaw and frequently avoid grafting. If bone loss is severe, grafting or advanced alternatives may still make treatment possible. A CBCT scan determines the safest option." },
+      { question: "How many visits will I need from Elk Grove?", answer: "Expect a CBCT consultation, the surgical visit, healing checks, and appointments to design and deliver the final bridge. Some visits can often be coordinated to reduce travel, but the exact number depends on healing and the complexity of your case." },
+    ],
+    cta: {
+      heading: "Get a Complete All-on-4 Quote Worth the Drive",
+      body: "Schedule a free implant consultation with Dr. Antipov in Roseville \u2014 3D CBCT imaging and one transparent written plan you can compare line by line with any Elk Grove quote. Restrictions apply.",
+    },
+  },
+
 ]
 
 export function getGuideArticle(slug: string): RevisionArticle | undefined {

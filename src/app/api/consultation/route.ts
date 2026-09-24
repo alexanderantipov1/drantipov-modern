@@ -38,6 +38,12 @@ export async function POST(request: NextRequest) {
     }
 
     // Send emails if configured
+    if (!isEmailConfigured()) {
+      return NextResponse.json(
+        { error: "Delivery is temporarily unavailable. Please try again or call us." },
+        { status: 503 }
+      )
+    }
     if (isEmailConfigured()) {
       // Send notification to admin
       const notificationResult = await sendConsultationNotification(
@@ -50,7 +56,11 @@ export async function POST(request: NextRequest) {
       )
 
       if (!notificationResult.success) {
-        console.error('Failed to send admin notification:', notificationResult.error)
+        console.error('Failed to send admin notification')
+        return NextResponse.json(
+          { error: "Your request could not be delivered. Please try again or call us." },
+          { status: 503 }
+        )
       }
 
       // Send confirmation to patient

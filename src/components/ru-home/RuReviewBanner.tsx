@@ -56,15 +56,14 @@ function MonoGlyph({ children }: { children: ReactNode }) {
 }
 
 export default function RuReviewBanner({
-  rating = "4.7",
+  rating,
   caption,
   trustedLabel = "НАМ ДОВЕРЯЮТ",
   className = "",
 }: RuReviewBannerProps) {
   const captionContent = caption ?? (
     <>
-      Средняя оценка от{" "}
-      <span className="font-semibold text-white underline">740+ пациентов</span>
+      <span className="font-semibold text-white underline">Читать отзывы пациентов</span>
     </>
   );
 
@@ -80,7 +79,7 @@ export default function RuReviewBanner({
             </div>
 
             <div>
-              <div className="flex items-center gap-2">
+              {rating && <div className="flex items-center gap-2">
                 <span className="text-lg font-bold leading-none text-white sm:text-xl">{rating}</span>
                 <span className="flex items-center gap-0.5" role="img" aria-label={`Оценка ${rating} из 5`}>
                   <Star />
@@ -89,8 +88,9 @@ export default function RuReviewBanner({
                   <Star />
                   <Star />
                 </span>
-              </div>
+              </div>}
               <ReviewsPanel
+                locale="ru"
                 rating={rating}
                 trigger={captionContent}
                 triggerClassName="mt-1 block cursor-pointer text-left text-xs text-white/65 transition hover:text-white sm:text-sm"

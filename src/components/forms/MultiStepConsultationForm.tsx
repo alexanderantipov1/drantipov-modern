@@ -5,6 +5,7 @@ import { Loader2, CheckCircle, ArrowRight, ArrowLeft, Calendar, Clock, Phone, St
 import { cn } from "@/lib/utils"
 import { useTracking } from "@/components/TrackingProvider"
 import { getRecaptchaToken } from "@/lib/recaptcha-client"
+import { hasAnalyticsConsent } from "@/lib/tracking"
 
 const US_STATES = [
   { value: "AL", label: "Alabama" }, { value: "AK", label: "Alaska" },
@@ -185,7 +186,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal" }: MultiS
   }
 
   const getUrlParams = () => {
-    if (typeof window === "undefined") return {}
+    if (typeof window === "undefined" || !hasAnalyticsConsent()) return {}
     const urlSearchParams = new URLSearchParams(window.location.search)
     const params: Record<string, string> = {}
     const trackingKeys = [
@@ -262,7 +263,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal" }: MultiS
         setSubmitStatus("success")
         setCurrentStep(5)
       } else {
-        const msg = responseData?.message || "Submission failed"
+        const msg = responseData?.message || responseData?.error || "Submission failed"
         setSubmitErrorMessage(msg)
         throw new Error(msg)
       }

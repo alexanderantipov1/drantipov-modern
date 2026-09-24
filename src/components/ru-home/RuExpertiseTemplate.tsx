@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { RuConsultationModal } from "@/components/ru-home/RuConsultationModal";
+import { getWebPageSchema, getFAQSchema, getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data";
 
 export interface RuExpertiseData {
   slug: string;
@@ -22,6 +23,15 @@ export interface RuExpertiseData {
 export default function RuExpertiseTemplate({ data }: { data: RuExpertiseData }) {
   return (
     <article className="bg-white text-dark" lang="ru">
+      <script type="application/ld+json" dangerouslySetInnerHTML={structuredDataScript([
+        getWebPageSchema({ path: `/ru/expertise/${data.slug}`, name: data.title, locale: "ru", type: "MedicalWebPage" }),
+        getFAQSchema(data.faqs),
+        getBreadcrumbSchema([
+          { name: "Главная", url: "https://www.drantipov.com/ru" },
+          { name: "Услуги", url: "https://www.drantipov.com/ru/expertise" },
+          { name: data.title, url: `https://www.drantipov.com/ru/expertise/${data.slug}` },
+        ]),
+      ])} />
       {/* Hero */}
       <header className="relative bg-dark text-white overflow-hidden">
         <div className="absolute inset-0">

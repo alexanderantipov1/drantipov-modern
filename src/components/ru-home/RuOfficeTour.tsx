@@ -6,16 +6,16 @@ import Image from "next/image";
 
 const officeImages = [
   { src: "/images/gallery-behind-scenes/surgery-16.jpeg", preview: "/images/gallery-behind-scenes/surgery-16.jpeg", label: "Операционная" },
-  { src: "/images/gallery-behind-scenes/surgery-26.jpeg", preview: "/images/gallery-behind-scenes/surgery-26.jpeg", label: "3D CT-Guided Treatment" },
-  { src: "/images/gallery-behind-scenes/surgery-10.jpeg", preview: "/images/gallery-behind-scenes/surgery-10.jpeg", label: "Surgical Team" },
-  { src: "/images/gallery-behind-scenes/surgery-07.jpeg", preview: "/images/gallery-behind-scenes/surgery-07.jpeg", label: "Sterile Surgical Field" },
-  { src: "/images/gallery-behind-scenes/surgery-20.jpeg", preview: "/images/gallery-behind-scenes/surgery-20.jpeg", label: "Implant Surgery" },
-  { src: "/images/gallery-behind-scenes/surgery-32.jpeg", preview: "/images/gallery-behind-scenes/surgery-32.jpeg", label: "Surgical Lighting & Equipment" },
-  { src: "/images/gallery-behind-scenes/surgery-02.jpeg", preview: "/images/gallery-behind-scenes/surgery-02.jpeg", label: "Surgical Assisting" },
-  { src: "/images/gallery-behind-scenes/lab-01.jpeg", preview: "/images/gallery-behind-scenes/lab-01.jpeg", label: "Sterilization & Prep" },
-  { src: "/images/gallery-behind-scenes/lab-03.jpeg", preview: "/images/gallery-behind-scenes/lab-03.jpeg", label: "Procedure Prep" },
+  { src: "/images/gallery-behind-scenes/surgery-26.jpeg", preview: "/images/gallery-behind-scenes/surgery-26.jpeg", label: "Лечение под контролем 3D-КТ" },
+  { src: "/images/gallery-behind-scenes/surgery-10.jpeg", preview: "/images/gallery-behind-scenes/surgery-10.jpeg", label: "Хирургическая команда" },
+  { src: "/images/gallery-behind-scenes/surgery-07.jpeg", preview: "/images/gallery-behind-scenes/surgery-07.jpeg", label: "Стерильное операционное поле" },
+  { src: "/images/gallery-behind-scenes/surgery-20.jpeg", preview: "/images/gallery-behind-scenes/surgery-20.jpeg", label: "Операция по установке имплантов" },
+  { src: "/images/gallery-behind-scenes/surgery-32.jpeg", preview: "/images/gallery-behind-scenes/surgery-32.jpeg", label: "Хирургическое освещение и оборудование" },
+  { src: "/images/gallery-behind-scenes/surgery-02.jpeg", preview: "/images/gallery-behind-scenes/surgery-02.jpeg", label: "Работа ассистента хирурга" },
+  { src: "/images/gallery-behind-scenes/lab-01.jpeg", preview: "/images/gallery-behind-scenes/lab-01.jpeg", label: "Стерилизация и подготовка" },
+  { src: "/images/gallery-behind-scenes/lab-03.jpeg", preview: "/images/gallery-behind-scenes/lab-03.jpeg", label: "Подготовка к процедуре" },
   { src: "/images/office-tour/10/gallery@2x-instrument-prep.jpg", preview: "/images/office-tour/10/gallery@2x-instrument-prep.jpg", label: "Подготовка инструментов" },
-  { src: "/images/office-tour/11/gallery@2x-digital-workflow.jpg", preview: "/images/office-tour/11/gallery@2x-digital-workflow.jpg", label: "Digital Smile Design" },
+  { src: "/images/office-tour/11/gallery@2x-digital-workflow.jpg", preview: "/images/office-tour/11/gallery@2x-digital-workflow.jpg", label: "Цифровое моделирование улыбки" },
   { src: "/images/office-tour/12/gallery@2x-surgical-planning.jpg", preview: "/images/office-tour/12/gallery@2x-surgical-planning.jpg", label: "Станция планирования операций" },
 ];
 
@@ -56,9 +56,13 @@ export default function RuOfficeTour() {
               onClick={() => setLightbox(i)}
               className="group relative aspect-[4/3] rounded-2xl overflow-hidden"
             >
-              <Image src={img.src} alt={`${img.label} — клиника доктора Антипова в Roseville, CA`} fill className="object-cover group-hover:scale-105 transition-transform duration-500"
-          sizes="100vw"
-        />
+              <Image
+                src={img.src}
+                alt={`${img.label} — клиника доктора Антипова в Roseville, CA`}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-3 left-3 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">{img.label}</div>
             </motion.button>
@@ -73,9 +77,13 @@ export default function RuOfficeTour() {
               onClick={() => setLightbox(officeImages.length + i)}
               className="group relative aspect-[4/3] rounded-2xl overflow-hidden"
             >
-              <Image src={src} alt={`Office ${i + 10}`} fill className="object-cover group-hover:scale-105 transition-transform duration-500"
-          sizes="100vw"
-        />
+              <Image
+                src={src}
+                alt={`Хирургический офис доктора Антипова в Roseville, вид ${i + 1}`}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+              />
             </motion.button>
           ))}
         </div>

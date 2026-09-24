@@ -1,9 +1,10 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { siteConfig } from "@/constants/siteConfig"
 import { Shield, Info } from "lucide-react"
 import PageHero from "@/components/PageHero"
 
-export const metadata = {
+export const metadata = finalizeMetadata({
   title: "Уведомление о практиках конфиденциальности (HIPAA) | Dr. Antipov",
   description:
     "Уведомление о практиках конфиденциальности (HIPAA) практики доктора Александра Антипова. Узнайте, как мы защищаем вашу медицинскую информацию.",
@@ -16,7 +17,7 @@ export const metadata = {
       "x-default": "/legal/hipaa-notice"
     }
   }
-}
+}, "/ru/legal/hipaa-notice")
 
 export default function HIPAANoticePage() {
   const effectiveDate = "12 октября 2025"
@@ -24,6 +25,7 @@ export default function HIPAANoticePage() {
   return (
     <>
       <PageHero
+        locale="ru"
         image="/images/landing-pages/dental-implants/art/pattern-background01-5a7afc40.jpg"
         eyebrow="Юридическое"
         title="Уведомление о практиках конфиденциальности (HIPAA)"

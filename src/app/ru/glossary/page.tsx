@@ -1,10 +1,11 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/constants/siteConfig";
 import { structuredDataScript } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: { absolute: "Глоссарий челюстно-лицевой хирургии — термины простыми словами" },
   description: "Понятные определения терминов: импланты, челюстная хирургия, апноэ сна, костная пластика и другие термины челюстно-лицевой хирургии.",
   alternates: {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     description: "Определения ключевых терминов челюстно-лицевой хирургии — импланты, остеоинтеграция, костная пластика, ортогнатика.",
     images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
   }
-};
+}, "/ru/glossary");
 
 interface Term {
   term: string;

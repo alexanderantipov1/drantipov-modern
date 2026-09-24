@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -16,7 +17,7 @@ const ruHero = {
   breadcrumbs: [{ name: "Пациентам" }],
 }
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: { absolute: "Пациентам — ресурсы и отзывы | Доктор Антипов" },
   description: "Всё, что нужно пациенту — быстрые ресурсы, чего ожидать, отзывы и круглосуточная экстренная связь. Розвилл, Калифорния.",
   alternates: {
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     description: "Запись, подготовка и восстановление — все ресурсы для пациентов доктора Антипова в одном месте.",
     images: ["/images/forpatients-hero.jpg"],
   }
-}
+}, "/ru/for-patients")
 
 const resources = [
   {
@@ -168,7 +169,7 @@ const writtenTestimonials = [
 export default function ForPatientsPage() {
   return (
     <>
-      <PageHero {...ruHero} />
+      <PageHero {...ruHero} locale="ru" />
 
 {/* Join Our Family of Happy Patients */}
       <Section background="gradient" padding="md">

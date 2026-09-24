@@ -1,9 +1,25 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 import { getVideoSchema, structuredDataScript } from "@/lib/structured-data";
 import { siteConfig } from "@/constants/siteConfig";
 
 export default function RuHero({ heading }: { heading?: React.ReactNode } = {}) {
+  // Avoid requesting the multi-megabyte hero video on mobile. CSS-only hiding can
+  // still allow media discovery; mounting it only for desktop makes the boundary
+  // explicit while retaining the lightweight portrait as the mobile LCP candidate.
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const update = () => setIsDesktop(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" lang="ru">
       {/* VideoObject schema for hero.mp4 */}
@@ -23,26 +39,28 @@ export default function RuHero({ heading }: { heading?: React.ReactNode } = {}) 
       />
       {/* Background: video on desktop, poster on mobile + navy overlay */}
       <div className="absolute inset-0">
-        <video
-          className="absolute inset-0 w-full h-full object-cover hidden lg:block"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="none"
-          poster="/videos/hero-poster.jpg"
-          aria-hidden="true"
-        >
-          <source src="/videos/hero.webm" type="video/webm" />
-          <source src="/videos/hero.mp4" type="video/mp4" />
-        </video>
+        {isDesktop && (
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+            poster="/videos/hero-poster.jpg"
+            aria-hidden="true"
+          >
+            <source src="/videos/hero.webm" type="video/webm" />
+            <source src="/videos/hero.mp4" type="video/mp4" />
+          </video>
+        )}
         <Image
           src="/images/Antipov_white.jpg"
           alt="Доктор Александр Антипов, DDS — сертифицированный челюстно-лицевой хирург в Roseville, Калифорния"
           fill
           className="object-cover object-top lg:hidden"
-          priority
-          quality={85}
+          preload
+          quality={75}
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-navy/65" />
@@ -150,7 +168,6 @@ export default function RuHero({ heading }: { heading?: React.ReactNode } = {}) 
                 width={1600}
                 height={2243}
                 quality={80}
-                priority
                 sizes="(min-width: 1024px) 50vw, 0vw"
                 className="w-full h-auto drop-shadow-2xl"
               />

@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -12,7 +14,7 @@ const CANONICAL = "/ru/for-patients/insights/how-to-fix-an-overbite-treatment-op
 const URL = "https://www.drantipov.com" + CANONICAL
 const IMAGE = "/images/blog/2026-06-22/how-to-fix-an-overbite.png"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Как исправить глубокий прикус: варианты лечения, операция и стоимость",
   description:
     "Как исправить глубокий прикус? Сертифицированный челюстно-лицевой хирург разбирает все варианты — элайнеры, брекеты и операцию на челюсти — для детей и взрослых, с реальными сроками и стоимостью.",
@@ -50,7 +52,7 @@ export const metadata: Metadata = {
       "Все способы исправить глубокий прикус — элайнеры, брекеты и операция на челюсти — с реальными сроками и стоимостью.",
     images: [IMAGE],
   },
-}
+}, "/ru/for-patients/insights/how-to-fix-an-overbite-treatment-options-and-cost")
 
 const faqs = [
   {
@@ -114,7 +116,7 @@ const articleSchema = {
 
 export default function HowToFixAnOverbitePost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/how-to-fix-an-overbite-treatment-options-and-cost">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={structuredDataScript([articleSchema, getFAQSchema(faqs)])}
@@ -360,7 +362,7 @@ export default function HowToFixAnOverbitePost() {
         </Container>
       </Section>
 
-      <RelatedArticles currentSlug="how-to-fix-an-overbite-treatment-options-and-cost" />
-    </>
+      <RelatedArticles currentSlug="how-to-fix-an-overbite-treatment-options-and-cost" locale="ru" />
+    </PatientArticleSchema>
   )
 }

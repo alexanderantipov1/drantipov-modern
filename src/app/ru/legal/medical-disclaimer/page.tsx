@@ -1,9 +1,10 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { siteConfig } from "@/constants/siteConfig"
 import { AlertTriangle } from "lucide-react"
 import PageHero from "@/components/PageHero"
 
-export const metadata = {
+export const metadata = finalizeMetadata({
   title: "Медицинский дисклеймер | Dr. Antipov",
   description:
     "Медицинский дисклеймер сайта доктора Александра Антипова. Важная информация о содержании, размещённом на этом сайте.",
@@ -16,7 +17,7 @@ export const metadata = {
       "x-default": "/legal/medical-disclaimer"
     }
   }
-}
+}, "/ru/legal/medical-disclaimer")
 
 export default function MedicalDisclaimerPage() {
   const lastUpdated = "12 октября 2025"
@@ -24,6 +25,7 @@ export default function MedicalDisclaimerPage() {
   return (
     <>
       <PageHero
+        locale="ru"
         image="/images/landing-pages/dental-implants/art/pattern-background01-5a7afc40.jpg"
         eyebrow="Юридическое"
         title="Медицинский дисклеймер"

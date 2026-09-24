@@ -1,0 +1,1418 @@
+[
+  {
+    "path": "",
+    "ok": true
+  },
+  {
+    "path": "/about",
+    "ok": true
+  },
+  {
+    "path": "/all-on-4-clearchoice-alternative",
+    "ok": true
+  },
+  {
+    "path": "/all-on-4-cost",
+    "ok": true
+  },
+  {
+    "path": "/contact",
+    "ok": true
+  },
+  {
+    "path": "/expertise",
+    "ok": true
+  },
+  {
+    "path": "/expertise/bone-grafting",
+    "ok": true
+  },
+  {
+    "path": "/expertise/facial-cosmetic",
+    "ok": true
+  },
+  {
+    "path": "/expertise/full-arch-implants",
+    "ok": true
+  },
+  {
+    "path": "/expertise/implant-rescue",
+    "ok": true
+  },
+  {
+    "path": "/expertise/jaw-surgery",
+    "ok": true
+  },
+  {
+    "path": "/expertise/mole-removal",
+    "ok": true
+  },
+  {
+    "path": "/expertise/oral-pathology",
+    "ok": true
+  },
+  {
+    "path": "/expertise/sedation-anesthesia",
+    "ok": true
+  },
+  {
+    "path": "/expertise/single-tooth",
+    "ok": true
+  },
+  {
+    "path": "/expertise/sleep-apnea",
+    "ok": true
+  },
+  {
+    "path": "/expertise/snap-on-dentures",
+    "ok": true
+  },
+  {
+    "path": "/expertise/tmj",
+    "ok": true
+  },
+  {
+    "path": "/expertise/tooth-extractions",
+    "ok": true
+  },
+  {
+    "path": "/expertise/wisdom-teeth",
+    "ok": true
+  },
+  {
+    "path": "/expertise/zygomatic-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-dentists",
+    "ok": true
+  },
+  {
+    "path": "/for-dentists/doctors-corner",
+    "ok": true
+  },
+  {
+    "path": "/for-dentists/education/courses",
+    "ok": true
+  },
+  {
+    "path": "/for-dentists/refer-patients",
+    "ok": true
+  },
+  {
+    "path": "/for-dentists/referral-partners",
+    "ok": true
+  },
+  {
+    "path": "/for-dentists/referring-doctors",
+    "ok": true
+  },
+  {
+    "path": "/for-patients",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/consultation",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/faqs",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/affordable-dental-implants-california",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/all-on-4-dental-implants-cost-elk-grove",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/all-on-4-dental-implants-explained-new-smile-in-one-day",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/all-on-4-dental-implants-recovery-timeline",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/all-on-4-dental-implants-san-francisco",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/all-on-4-vs-all-on-6",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/all-on-4-vs-snap-in-dentures-cost",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/all-on-x-dental-implants-cost",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/alternatives-to-dental-bridges",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/before-and-after-all-on-4-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/benefits-of-all-on-4-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/best-full-arch-dental-implant-clinics-california-how-to-compare",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/board-certified-dental-implant-surgeon-california",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/bone-grafting-for-dental-implants-explained",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/can-a-loose-dental-implant-be-saved",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/can-dental-implants-get-cavities-or-gum-disease",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/can-you-fix-an-overbite-naturally",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/clearchoice-alternatives-northern-california",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/correcting-bite-problems-after-implant-work",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implant-aftercare",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implant-complications",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implant-financing-options",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implant-payment-plans",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implant-price-match-guarantee",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implant-price-match-guarantee-california",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implant-procedure-complete-guide",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implant-recovery-time",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implant-revision-surgery",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implant-surgery-complete-guide",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implants-el-dorado-hills",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implants-for-diabetics",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implants-for-missing-back-teeth",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implants-for-seniors-age-limit",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implants-for-smokers",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implants-with-osteoporosis-and-autoimmune-conditions",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/dental-implants-with-severe-bone-loss-options",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/denture-alternatives-that-work",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/fixed-dentures-on-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/fixing-a-failed-all-on-4-revision-options",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/full-fixed-arch-implant-cost",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/full-mouth-dental-implants-california",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/full-mouth-dental-implants-cost-2026-guide",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/full-mouth-dental-implants-cost-process",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/full-mouth-reconstruction-for-failed-dental-work",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/guided-dental-implant-surgery-how-3d-planning-improves-accuracy",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/how-bone-loss-affects-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/how-long-do-dental-implants-last",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/how-much-do-dental-implants-cost",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/how-to-fix-an-overbite-treatment-options-and-cost",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/how-to-fix-loose-dentures-permanently",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/implant-revision-after-bone-loss",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/implant-supported-dentures-monterey",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/implant-supported-dentures-vs-traditional-dentures",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/implants-vs-dentures",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/iv-sedation-dentistry-what-to-expect",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/missing-front-tooth-replacement-options",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/normal-healing-vs-infection-after-dental-implant-surgery",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/permanent-dentures-fixed-vs-removable",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/permanent-teeth-implants-complete-guide",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/poor-oral-health-systemic-diseases",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/redoing-dental-implants-done-abroad-recovery-plan",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/repairing-a-broken-implant-crown-or-prosthesis",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/replacing-a-failed-dental-implant-what-to-expect",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/replacing-old-failing-bridges-with-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/same-day-dental-implant-process-step-by-step",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/same-day-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/same-day-teeth-roseville-ca",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/second-opinion-on-failed-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/sedation-options-dental-implant-surgery",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/single-dental-implant-cost-northern-california",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/single-tooth-implant-cost-without-insurance",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/single-tooth-implant-process-timeline",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/single-tooth-implant-roseville",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/single-tooth-implant-vs-dental-bridge-real-cost",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/snap-in-dentures-california",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/snap-in-dentures-complete-guide",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/snap-in-dentures-el-dorado-hills",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/specialist-for-complex-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/surgical-wisdom-tooth-removal-tooth-sectioning-explained",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/teeth-in-a-day-same-day-smile-restoration",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/titanium-vs-zirconia-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/told-no-to-dental-implants-why-specialists-say-yes",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/tooth-lost-emotional-toll",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/types-of-permanent-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/understanding-sinus-lift-for-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/what-to-eat-after-all-on-4-surgery",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/who-is-a-candidate-for-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/why-are-dental-implants-so-expensive",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/zirconia-arches",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/zirconia-dental-implants-california",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/zygomatic-implants",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/post-op",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/pre-op",
+    "ok": true
+  },
+  {
+    "path": "/for-patients/travel",
+    "ok": true
+  },
+  {
+    "path": "/full-arch-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/glossary",
+    "ok": true
+  },
+  {
+    "path": "/insurance",
+    "ok": true
+  },
+  {
+    "path": "/insurance/aetna",
+    "ok": true
+  },
+  {
+    "path": "/insurance/anthem-blue-cross",
+    "ok": true
+  },
+  {
+    "path": "/insurance/delta-dental",
+    "ok": true
+  },
+  {
+    "path": "/jaw-surgery-recovery-timeline",
+    "ok": true
+  },
+  {
+    "path": "/legal/hipaa-notice",
+    "ok": true
+  },
+  {
+    "path": "/legal/medical-disclaimer",
+    "ok": true
+  },
+  {
+    "path": "/legal/privacy-policy",
+    "ok": true
+  },
+  {
+    "path": "/legal/terms-of-service",
+    "ok": true
+  },
+  {
+    "path": "/locations",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/antelope",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/arden-arcade",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/auburn",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/cameron-park",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/carmichael",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/citrus-heights",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/davis",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/el-dorado-hills",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/elk-grove",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/fair-oaks",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/fairfield",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/folsom",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/galt",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/granite-bay",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/lincoln",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/loomis",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/north-highlands",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/orangevale",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/orinda",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/oroville",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/placerville",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/rancho-cordova",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/rocklin",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/roseville",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/sacramento",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/vacaville",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/vallejo",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/west-sacramento",
+    "ok": true
+  },
+  {
+    "path": "/locations/ca/woodland",
+    "ok": true
+  },
+  {
+    "path": "/media/speaking",
+    "ok": true
+  },
+  {
+    "path": "/media/videos",
+    "ok": true
+  },
+  {
+    "path": "/our-team",
+    "ok": true
+  },
+  {
+    "path": "/results",
+    "ok": true
+  },
+  {
+    "path": "/ru",
+    "ok": true
+  },
+  {
+    "path": "/ru/about",
+    "ok": true
+  },
+  {
+    "path": "/ru/all-on-4-clearchoice-alternative",
+    "ok": true
+  },
+  {
+    "path": "/ru/all-on-4-cost",
+    "ok": true
+  },
+  {
+    "path": "/ru/contact",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/bone-grafting",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/facial-cosmetic",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/full-arch-implants",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/implant-rescue",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/jaw-surgery",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/mole-removal",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/oral-pathology",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/sedation-anesthesia",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/single-tooth",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/sleep-apnea",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/snap-on-dentures",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/tmj",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/tooth-extractions",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/wisdom-teeth",
+    "ok": true
+  },
+  {
+    "path": "/ru/expertise/zygomatic-implants",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-dentists",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-dentists/education/courses",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-dentists/refer-patients",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-dentists/referral-partners",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/consultation",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/faqs",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/all-on-4-vs-all-on-6",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/all-on-x-dental-implants-cost",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/bone-grafting-for-dental-implants-explained",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/can-a-loose-dental-implant-be-saved",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/can-dental-implants-get-cavities-or-gum-disease",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/can-you-fix-an-overbite-naturally",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/correcting-bite-problems-after-implant-work",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/dental-implant-aftercare",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/dental-implant-complications",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/dental-implant-procedure-complete-guide",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/dental-implants-for-diabetics",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/dental-implants-for-seniors-age-limit",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/dental-implants-for-smokers",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/dental-implants-with-osteoporosis-and-autoimmune-conditions",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/dental-implants-with-severe-bone-loss-options",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/fixing-a-failed-all-on-4-revision-options",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/full-mouth-dental-implants-cost-process",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/full-mouth-reconstruction-for-failed-dental-work",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/guided-dental-implant-surgery-how-3d-planning-improves-accuracy",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/how-to-fix-an-overbite-treatment-options-and-cost",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/implant-revision-after-bone-loss",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/implants-vs-dentures",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/normal-healing-vs-infection-after-dental-implant-surgery",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/poor-oral-health-systemic-diseases",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/redoing-dental-implants-done-abroad-recovery-plan",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/repairing-a-broken-implant-crown-or-prosthesis",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/replacing-a-failed-dental-implant-what-to-expect",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/replacing-old-failing-bridges-with-implants",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/same-day-implants",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/second-opinion-on-failed-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/sedation-options-dental-implant-surgery",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/single-dental-implant-cost-northern-california",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/titanium-vs-zirconia-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/tooth-lost-emotional-toll",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/who-is-a-candidate-for-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/why-are-dental-implants-so-expensive",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/zirconia-arches",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/zygomatic-implants",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/post-op",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/pre-op",
+    "ok": true
+  },
+  {
+    "path": "/ru/for-patients/travel",
+    "ok": true
+  },
+  {
+    "path": "/ru/full-arch-dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/ru/glossary",
+    "ok": true
+  },
+  {
+    "path": "/ru/insurance",
+    "ok": true
+  },
+  {
+    "path": "/ru/insurance/aetna",
+    "ok": true
+  },
+  {
+    "path": "/ru/insurance/anthem-blue-cross",
+    "ok": true
+  },
+  {
+    "path": "/ru/insurance/delta-dental",
+    "ok": true
+  },
+  {
+    "path": "/ru/jaw-surgery-recovery-timeline",
+    "ok": true
+  },
+  {
+    "path": "/ru/legal/hipaa-notice",
+    "ok": true
+  },
+  {
+    "path": "/ru/legal/medical-disclaimer",
+    "ok": true
+  },
+  {
+    "path": "/ru/legal/privacy-policy",
+    "ok": true
+  },
+  {
+    "path": "/ru/legal/terms-of-service",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/antelope",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/arden-arcade",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/auburn",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/cameron-park",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/carmichael",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/citrus-heights",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/davis",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/el-dorado-hills",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/elk-grove",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/fair-oaks",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/fairfield",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/folsom",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/galt",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/granite-bay",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/lincoln",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/loomis",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/north-highlands",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/orangevale",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/orinda",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/oroville",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/placerville",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/rancho-cordova",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/rocklin",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/roseville",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/sacramento",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/vacaville",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/vallejo",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/west-sacramento",
+    "ok": true
+  },
+  {
+    "path": "/ru/locations/ca/woodland",
+    "ok": true
+  },
+  {
+    "path": "/ru/media/speaking",
+    "ok": true
+  },
+  {
+    "path": "/ru/media/videos",
+    "ok": true
+  },
+  {
+    "path": "/ru/our-team",
+    "ok": true
+  },
+  {
+    "path": "/ru/results",
+    "ok": true
+  },
+  {
+    "path": "/ru/smile-again-foundation",
+    "ok": true
+  },
+  {
+    "path": "/ru/smile-gallery",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/corrective-jaw-surgery",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/corrective-jaw-surgery/oms000045",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/corrective-jaw-surgery/oms000046",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/corrective-jaw-surgery/oms000047",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/corrective-jaw-surgery/oms000048",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/corrective-jaw-surgery/oms000049",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/corrective-jaw-surgery/oms000050",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/corrective-jaw-surgery/oms000051",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/corrective-jaw-surgery/oms000052",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/dental-implants/di000001",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/dental-implants/di000005",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/dental-implants/di000006",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/dental-implants/di000007",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/dental-implants/di000008",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/dental-implants/di000009",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/dental-implants/di000010",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/facial-cosmetic-surgery",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/facial-cosmetic-surgery/fcs000001",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/facial-cosmetic-surgery/fcs000002",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/facial-cosmetic-surgery/fcs000003",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/facial-cosmetic-surgery/fcs000004",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/facial-cosmetic-surgery/fcs000005",
+    "ok": true
+  },
+  {
+    "path": "/ru/surgical-cases/facial-cosmetic-surgery/fcs000006",
+    "ok": true
+  },
+  {
+    "path": "/smile-again-foundation",
+    "ok": true
+  },
+  {
+    "path": "/smile-gallery",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/corrective-jaw-surgery",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/corrective-jaw-surgery/oms000045",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/corrective-jaw-surgery/oms000046",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/corrective-jaw-surgery/oms000047",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/corrective-jaw-surgery/oms000048",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/corrective-jaw-surgery/oms000049",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/corrective-jaw-surgery/oms000050",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/corrective-jaw-surgery/oms000051",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/corrective-jaw-surgery/oms000052",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/dental-implants",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/dental-implants/di000001",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/dental-implants/di000005",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/dental-implants/di000006",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/dental-implants/di000007",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/dental-implants/di000008",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/dental-implants/di000009",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/dental-implants/di000010",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/facial-cosmetic-surgery",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/facial-cosmetic-surgery/fcs000001",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/facial-cosmetic-surgery/fcs000002",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/facial-cosmetic-surgery/fcs000003",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/facial-cosmetic-surgery/fcs000004",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/facial-cosmetic-surgery/fcs000005",
+    "ok": true
+  },
+  {
+    "path": "/surgical-cases/facial-cosmetic-surgery/fcs000006",
+    "ok": true
+  }
+]

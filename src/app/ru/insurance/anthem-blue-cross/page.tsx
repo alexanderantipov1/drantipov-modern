@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import { siteConfig } from "@/constants/siteConfig";
 import DualCTA from "@/components/DualCTA";
 import InsuranceCrossLinks from "@/components/InsuranceCrossLinks";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Anthem Blue Cross — покрытие зубных имплантов",
   description:
     "Как стоматологическая страховка Anthem Blue Cross применяется к зубным имплантам, челюстно-лицевой и ортогнатической хирургии у доктора Антипова. Внесетевое покрытие, предварительное согласование и помощь с возмещением.",
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     description: "Покрытие Anthem Blue Cross для зубных имплантов и челюстно-лицевой хирургии — вне сети, предварительное согласование.",
     images: ["/images/financial/insurance-coverage.jpg"],
   }
-};
+}, "/ru/insurance/anthem-blue-cross");
 
 export default function AnthemBlueCrossPage() {
   return (

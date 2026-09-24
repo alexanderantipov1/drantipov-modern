@@ -1,11 +1,12 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import RuCTA from "@/components/ru-home/RuCTA";
-import { getAggregateRatingSchema, structuredDataScript } from "@/lib/structured-data";
+import { getWebPageSchema, structuredDataScript } from "@/lib/structured-data";
 import { siteConfig } from "@/constants/siteConfig";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: { absolute: "Результаты пациентов и галерея клиники | Доктор Антипов" },
   description:
     "Реальные преображения пациентов русскоговорящего челюстно-лицевого хирурга доктора Антипова, кейсы «до и после» и современная клиника в Roseville (район Сакраменто).",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
       "Реальные преображения пациентов, кейсы «до и после» и наша клиника челюстно-лицевой хирургии в Roseville.",
     images: ["/images/office-tour/1/gallery@2x-ecef5848.jpg"],
   },
-};
+}, "/ru/results");
 
 const advantages = [
   {
@@ -97,15 +98,16 @@ const galleryImages = [
 ];
 
 export default function RuResultsPage() {
-  const aggregateRating = getAggregateRatingSchema({ ratingValue: 4.9, reviewCount: 312 });
+  const pageSchema = getWebPageSchema({ path: "/ru/results", name: "Результаты говорят сами за себя", locale: "ru", type: "CollectionPage" });
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={structuredDataScript([aggregateRating])}
+        dangerouslySetInnerHTML={structuredDataScript(pageSchema)}
       />
       <PageHero
+        locale="ru"
         image="/images/office-tour/1/gallery@2x-ecef5848.jpg"
         eyebrow="Почему пациенты выбирают нас"
         title="Результаты говорят сами за себя"

@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Badge } from "@/components/ui/badge"
 import { AlertTriangle, CheckCircle, XCircle, Phone, Calendar } from "lucide-react"
@@ -16,7 +17,7 @@ const ruHero = {
   breadcrumbs: [{ name: "Пациентам", href: "/ru/for-patients" }, { name: "Подготовка к операции" }],
 }
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Подготовка к операции | Доктор Антипов",
   description:
     "Ключевые рекомендации по подготовке к челюстно-лицевой операции у доктора Антипова. Что делать до процедуры, что взять с собой и как подготовиться к успешной операции.",
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     description: "Подготовка, голодание, лекарства и чего ожидать перед операцией.",
     images: ["/images/invitations/information-fdeb739a.jpg"],
   }
-}
+}, "/ru/for-patients/pre-op")
 
 const beforeSurgeryChecklist = [
   {
@@ -137,7 +138,7 @@ const dayOfSurgery = [
 export default function PreOpPage() {
   return (
     <>
-      <PageHero {...ruHero} />
+      <PageHero {...ruHero} locale="ru" />
 
       {/* Important Notice */}
       <Section background="default" padding="md">

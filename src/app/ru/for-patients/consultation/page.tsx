@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,7 +8,7 @@ import RussianChatbot from "@/components/RussianChatbot";
 import MicrosoftClarity from "@/components/MicrosoftClarity";
 import { siteUrl, officeAddress, officePhone, officePhoneHref, officeEmail } from "@/data/russianImplantFunnel";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Запись на консультацию",
   description:
     "Запишитесь на бесплатную консультацию по имплантам, ортогнатической хирургии или All-on-4. Принимаем новых пациентов. Удобное расположение в Roseville.",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+}, "/ru/for-patients/consultation");
 
 const whatToExpect = [
   { step: "1", title: "Комплексное обследование", description: "Доктор Антипов изучит медицинскую историю, проведёт клинический осмотр и обсудит ваши пожелания." },

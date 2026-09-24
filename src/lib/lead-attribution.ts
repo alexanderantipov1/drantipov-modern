@@ -1,4 +1,5 @@
 import { CookieManager } from "@/lib/cookies";
+import { hasAnalyticsConsent } from "@/lib/tracking";
 
 const ATTRIBUTION_KEYS = [
   "utm_source",
@@ -50,7 +51,7 @@ export function collectLeadAttribution({
   landingPath,
   formVariant,
 }: LeadAttributionInput): Record<string, string> {
-  if (typeof window === "undefined") {
+  if (typeof window === "undefined" || !hasAnalyticsConsent()) {
     return {
       landing_path: landingPath,
       started_at: String(startedAt),

@@ -2,7 +2,7 @@ import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { RelatedArticles } from "@/components/RelatedArticles"
-import { structuredDataScript, getFAQSchema } from "@/lib/structured-data"
+import { structuredDataScript, getFAQSchema, getWebPageSchema } from "@/lib/structured-data"
 import Link from "next/link"
 import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
@@ -39,16 +39,16 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
   const isRu = locale === "ru"
   const insightsHref = isRu ? "/ru/for-patients/insights" : "/for-patients/insights"
   const contactHref = isRu ? "/ru/contact" : "/contact"
-  const canonical = `/for-patients/insights/${article.slug}`
+  const canonical = `${insightsHref}/${article.slug}`
   const url = SITE + canonical
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "MedicalScholarlyArticle",
+    "@type": "Article",
     "@id": `${url}#article`,
     headline: article.title,
     description: article.metaDescription,
-    inLanguage: "en",
+    inLanguage: locale,
     url,
     datePublished: article.datePublished,
     dateModified: article.datePublished,
@@ -57,22 +57,27 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
       "@type": "Person",
       name: "Dr. Alexander V. Antipov, DDS",
       url: `${SITE}/about`,
-      identifier: `${SITE}/#physician`,
+      "@id": `${SITE}/#physician`,
     },
     publisher: {
       "@type": "Organization",
+      "@id": `${SITE}/#organization`,
       name: "Dr. Alexander V. Antipov, DDS",
       url: SITE,
       logo: { "@type": "ImageObject", url: `${SITE}/images/logo-d10cd66c.svg` },
     },
-    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    mainEntityOfPage: { "@id": `${url}#webpage` },
   }
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={structuredDataScript([articleSchema, getFAQSchema(article.faqs)])}
+        dangerouslySetInnerHTML={structuredDataScript([
+          getWebPageSchema({ path: canonical, name: article.title, locale }),
+          articleSchema,
+          getFAQSchema(article.faqs),
+        ])}
       />
 
       {/* Back Button */}
@@ -200,7 +205,7 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
                 <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-3">{article.cta.heading}</h2>
                 <p className="text-neutral-700 leading-relaxed mb-6 max-w-2xl mx-auto">{article.cta.body}</p>
                 <Button asChild size="lg">
-                  <Link href={contactHref}>{article.cta.buttonLabel ?? (isRu ? "Записаться на бесплатную консультацию" : "Book a Free Consultation")}</Link>
+                  <Link href={contactHref}>{article.cta.buttonLabel ?? (isRu ? "Записаться на консультацию" : "Book a Consultation")}</Link>
                 </Button>
               </GlassCard>
             </div>
@@ -208,7 +213,7 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
         </Container>
       </Section>
 
-      <RelatedArticles currentSlug={article.slug} />
+      <RelatedArticles currentSlug={article.slug} locale={locale} />
     </>
   )
 }

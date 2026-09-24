@@ -82,7 +82,11 @@ if (!body.firstName || !body.lastName || !body.email || !body.phone) {
       console.warn(
         "[submit-consultation] Dev mode: no reCAPTCHA token (domain-locked key); skipping upstream submission. Lead NOT sent to Salesforce.",
       )
-      return NextResponse.json({ success: true, dev: true })
+      return NextResponse.json({
+        success: false,
+        dev: true,
+        message: "Preview cannot send this request without anti-bot verification. No lead was sent.",
+      }, { status: 503 })
     }
 
 

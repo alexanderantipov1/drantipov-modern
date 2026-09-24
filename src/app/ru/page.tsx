@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import RuHero from "@/components/ru-home/RuHero";
 import RuReviewBanner from "@/components/ru-home/RuReviewBanner";
 import RuAbout from "@/components/ru-home/RuAbout";
@@ -15,7 +16,7 @@ import RuCTA from "@/components/ru-home/RuCTA";
 import { siteUrl } from "@/data/russianImplantFunnel";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: {
     absolute:
       "Русскоговорящий челюстно-лицевой хирург — доктор Антипов, Roseville CA",
@@ -66,7 +67,7 @@ export const metadata: Metadata = {
       "Сертифицированный челюстно-лицевой хирург. Импланты в день операции, ортогнатика, апноэ сна.",
     images: ["/images/Antipov_white.jpg"],
   },
-};
+}, "/ru");
 
 /**
  * /ru — главная русскоязычная страница.

@@ -91,11 +91,12 @@ export default function RussianMultiStepForm({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...payload, recaptchaToken }),
       });
-      if (!res.ok) throw new Error(String(res.status));
+      const result = await res.json();
+      if (!res.ok || result.ok !== true) throw new Error("delivery_failed");
       setStatus("success");
     } catch (e) {
       setStatus("error");
-      setErrorMsg(e instanceof Error ? e.message : "unknown");
+      setErrorMsg("Не удалось отправить заявку");
     }
   }
 

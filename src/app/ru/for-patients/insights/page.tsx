@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -8,7 +9,7 @@ import { Metadata } from "next"
 import PageHero from "@/components/PageHero"
 import { ruInsightPosts as insightPosts } from "@/constants/ruInsights"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Полезное для пациентов | Челюстно-лицевая хирургия доктора Антипова",
   description:
     "Экспертные статьи о дентальных имплантах, челюстно-лицевой хирургии и здоровье полости рта от доктора Александра Антипова. Помогаем принимать осознанные решения о лечении.",
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     description: "Экспертные статьи об имплантации, челюстно-лицевой хирургии, восстановлении и здоровье полости рта от доктора Антипова.",
     images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
   }
-}
+}, "/ru/for-patients/insights")
 
 const ruHero = {
   image: "/images/blog/2023-04-10/dental-implants-process-c1577863.jpg",
@@ -64,7 +65,7 @@ const blogPosts = insightPosts
 export default function InsightsPage() {
   return (
     <>
-      <PageHero {...ruHero} />
+      <PageHero {...ruHero} locale="ru" />
 
       {/* Blog Posts Grid */}
       <Section background="default" padding="xl">

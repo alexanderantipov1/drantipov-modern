@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/constants/siteConfig";
+import { getSeoAlternates } from "./seo-foundation";
 
 /**
  * Centralized metadata builder.
  *
  * Produces a consistent Next.js `Metadata` object for every page:
- * self-referencing canonical, English-only hreflang, OpenGraph + Twitter cards.
- * The site is English-only, so no locale-prefixing or conditional hreflang.
+ * self-referencing canonical, registered translations, OpenGraph + Twitter cards.
  *
  * Title rules:
  * - `title` is run through the layout template (`%s | Dr. Antipov, Roseville CA`).
@@ -20,7 +20,6 @@ export function buildMetadata({
   description,
   ogImage,
   absoluteTitle,
-  keywords,
 }: {
   path: string;
   title?: string;
@@ -35,14 +34,7 @@ export function buildMetadata({
   return {
     title: absoluteTitle ? { absolute: absoluteTitle } : title,
     description,
-    ...(keywords && keywords.length ? { keywords } : {}),
-    alternates: {
-      canonical: path,
-      languages: {
-        en: path,
-        "x-default": path,
-      },
-    },
+    alternates: getSeoAlternates(path),
     openGraph: {
       title: absoluteTitle ?? title,
       description,

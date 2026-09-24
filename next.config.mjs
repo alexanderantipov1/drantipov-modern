@@ -64,6 +64,7 @@ const csp = [
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   allowedDevOrigins: [
+    '127.0.0.1',
     '*.janeway.replit.dev',
     '*.replit.dev',
     '*.replit.app',
@@ -72,7 +73,7 @@ const nextConfig = {
     root: __dirname,
   },
   images: {
-    qualities: [75, 85, 90, 92],
+    qualities: [75, 80, 85, 90, 92],
     remotePatterns: [
       { protocol: 'https', hostname: 'i.ytimg.com', pathname: '/vi/**' },         // YouTube thumbnails only
       { protocol: 'https', hostname: 'img.youtube.com', pathname: '/vi/**' },     // YouTube thumbnails (alt)

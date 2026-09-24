@@ -118,7 +118,7 @@ export default function RuGallery() {
         </div>
 
         <h3 className="text-lg font-bold text-dark mb-4">Видео-истории пациентов</h3>
-        <p className="text-sm text-muted mb-6">Живые отзывы наших пациентов в формате видео.</p>
+        <p className="text-sm text-muted mb-6">Видеоотзывы пациентов. Оригиналы на английском языке.</p>
         <div className="grid md:grid-cols-3 gap-4 mb-12">
           {testimonialVideos.map((t) => (
             <div key={t.videoId} className="rounded-2xl overflow-hidden bg-dark shadow-md">

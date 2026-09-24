@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,7 +8,7 @@ import RussianChatbot from "@/components/RussianChatbot";
 import MicrosoftClarity from "@/components/MicrosoftClarity";
 import { siteUrl, officePhone, officePhoneHref, officeEmail } from "@/data/russianImplantFunnel";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Стоматологам — направления и обучение",
   description:
     "Сотрудничество со стоматологами: направления на сложные хирургические случаи, прозрачная коммуникация, обучающие материалы. Партнёрство с практикой доктора Антипова.",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+}, "/ru/for-dentists");
 
 const services = [
   { title: "Имплантационная хирургия", description: "От одиночного импланта до полной реабилитации с протоколами немедленной нагрузки." },

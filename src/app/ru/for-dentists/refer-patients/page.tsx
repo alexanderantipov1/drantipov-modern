@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -16,7 +17,7 @@ import {
   officeEmail,
 } from "@/data/russianImplantFunnel";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Направить пациента — для стоматологов",
   description:
     "Направляйте пациентов к доктору Антипову на сложную хирургию: имплантация всей челюсти, ортогнатика, костная пластика, скуловые импланты. Простой процесс направления и подробные отчёты обратно.",
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     locale: "ru_RU",
     type: "website",
   },
-};
+}, "/ru/for-dentists/refer-patients");
 
 const benefits = [
   {

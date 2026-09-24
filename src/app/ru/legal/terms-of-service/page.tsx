@@ -1,8 +1,10 @@
+import PageIdentity from "@/components/PageIdentity";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { siteConfig } from "@/constants/siteConfig"
 import PageHero from "@/components/PageHero"
 
-export const metadata = {
+export const metadata = finalizeMetadata({
   title: "Условия использования | Dr. Antipov",
   description:
     "Условия использования сайта доктора Александра Антипова. Пожалуйста, внимательно прочитайте эти условия перед использованием нашего сайта.",
@@ -15,14 +17,16 @@ export const metadata = {
       "x-default": "/legal/terms-of-service"
     }
   }
-}
+}, "/ru/legal/terms-of-service")
 
 export default function TermsOfServicePage() {
   const lastUpdated = "12 октября 2025"
 
   return (
     <>
+      <PageIdentity path="/ru/legal/terms-of-service" name="Условия использования" locale="ru" />
       <PageHero
+        locale="ru"
         image="/images/landing-pages/dental-implants/art/pattern-background01-5a7afc40.jpg"
         eyebrow="Юридическое"
         title="Условия использования"

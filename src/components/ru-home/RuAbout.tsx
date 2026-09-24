@@ -331,7 +331,7 @@ export default function RuAbout() {
               href="#before-after"
               className="px-8 py-3.5 border-2 border-dark/10 text-dark rounded-2xl font-semibold hover:border-primary hover:text-primary transition-all duration-300"
             >
-              View Before &amp; After Cases
+              Посмотреть результаты до и после
             </a>
           </div>
         </motion.div>

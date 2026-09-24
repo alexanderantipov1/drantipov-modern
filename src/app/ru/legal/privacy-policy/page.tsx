@@ -1,8 +1,10 @@
+import PageIdentity from "@/components/PageIdentity";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { siteConfig } from "@/constants/siteConfig"
 import PageHero from "@/components/PageHero"
 
-export const metadata = {
+export const metadata = finalizeMetadata({
   title: "Политика конфиденциальности | Dr. Antipov",
   description: "Политика конфиденциальности сайта доктора Александра Антипова. Узнайте, как мы собираем, используем и защищаем вашу информацию.",
   robots: "index, follow",
@@ -14,14 +16,16 @@ export const metadata = {
       "x-default": "/legal/privacy-policy"
     }
   }
-}
+}, "/ru/legal/privacy-policy")
 
 export default function PrivacyPolicyPage() {
   const lastUpdated = "12 октября 2025"
 
   return (
     <>
+      <PageIdentity path="/ru/legal/privacy-policy" name="Политика конфиденциальности" locale="ru" />
       <PageHero
+        locale="ru"
         image="/images/landing-pages/dental-implants/art/pattern-background01-5a7afc40.jpg"
         eyebrow="Юридическое"
         title="Политика конфиденциальности"
@@ -247,7 +251,7 @@ export default function PrivacyPolicyPage() {
                   </li>
                   <li>
                     <a
-                      href="https://www.hotjar.com/legal/policies/privacy/"
+                      href="https://trust.contentsquare.com/?itemUid=fa7a4923-3f51-431c-9eb6-3f88989ea858&amp;source=title"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary-600 hover:underline"

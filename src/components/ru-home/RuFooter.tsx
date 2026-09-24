@@ -14,7 +14,7 @@ const linkGroups = [
       { label: "Имплантация челюсти", href: "/ru/expertise/full-arch-implants" },
       { label: "Одиночные импланты", href: "/ru/expertise/single-tooth" },
       { label: "Ортогнатическая хирургия", href: "/ru/expertise/jaw-surgery" },
-      { label: "Sleep Apnea", href: "/ru/expertise/sleep-apnea" },
+      { label: "Апноэ сна", href: "/ru/expertise/sleep-apnea" },
       { label: "Костная пластика", href: "/ru/expertise/bone-grafting" },
       { label: "Удаление родинок", href: "/ru/expertise/mole-removal" },
     ],
@@ -62,7 +62,7 @@ export default function RuFooter() {
           <div className="lg:col-span-1">
             <h3 className="font-serif text-2xl font-bold mb-4">Доктор Антипов</h3>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Board-certified челюстно-лицевой хирург. 25+ лет практики, 10 000+ пациентов. Roseville, Калифорния. Двуязычный приём: английский и русский.
+              Сертифицированный челюстно-лицевой хирург. Приём в Розвилле, Калифорния, на английском и русском языках.
             </p>
             <div className="space-y-2 text-sm text-white/70">
               <p>{officeAddress}</p>
@@ -76,15 +76,15 @@ export default function RuFooter() {
                   {officeEmail}
                 </a>
               </p>
-              <p>Пн–Пт: 8:00–17:00 · Экстренные случаи 24/7</p>
+              <p>Пн–Чт: 8:00–17:00 · Пт: 8:00–14:00</p>
             </div>
           </div>
 
           {linkGroups.map((group) => (
             <div key={group.title}>
-              <h4 className="text-sm font-bold uppercase tracking-widest text-primary mb-4">
+              <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-4">
                 {group.title}
-              </h4>
+              </h2>
               <ul className="space-y-2">
                 {group.links.map((link) => (
                   <li key={link.href}>

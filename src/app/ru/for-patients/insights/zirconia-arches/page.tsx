@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Что такое циркониевые зубные дуги? Плюсы, цена и срок службы",
   description:
     "Циркониевые зубные дуги — золотой стандарт для имплантации всей челюсти. Как их изготавливают, почему они служат десятилетиями, сколько стоят и чем лучше акрила.",
@@ -47,11 +49,11 @@ export const metadata: Metadata = {
     description: "Почему диоксид циркония — золотой стандарт для имплантации всей челюсти: прочность, эстетика, срок службы и цена.",
     images: ["/images/blog/2026-06-19/zirconia-arches.png"],
   }
-}
+}, "/ru/for-patients/insights/zirconia-arches")
 
 export default function ZirconiaArchesPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/zirconia-arches">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/zirconia-arches#article","headline":"Что такое циркониевые зубные дуги? Плюсы, цена и срок службы","description":"Циркониевые зубные дуги — золотой стандарт для имплантации всей челюсти. Как их изготавливают, почему они служат десятилетиями, сколько стоят и чем лучше акрила.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/zirconia-arches","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zirconia-arches.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/zirconia-arches"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Цирконий прочнее титана?","acceptedAnswer":{"@type":"Answer","text":"Диоксид циркония твёрже и устойчивее к износу и коррозии, а титан более упругий. У них разные роли: титановые импланты служат опорой в кости, а циркониевая дуга — это видимый ряд зубов."}},{"@type":"Question","name":"Могут ли циркониевые дуги сломаться?","acceptedAnswer":{"@type":"Answer","text":"Медицинский диоксид циркония крайне устойчив к переломам. Серьёзные поломки редки и обычно связаны с травмой или явным неправильным обращением — например, если грызть лёд или вскрывать зубами упаковки."}},{"@type":"Question","name":"Пожелтеет ли моя циркониевая дуга?","acceptedAnswer":{"@type":"Answer","text":"Нет. Диоксид циркония очень устойчив к окрашиванию. Поверхностный налёт от кофе или вина легко стирается, а сам материал не меняет цвет."}},{"@type":"Question","name":"Сколько служат циркониевые дуги?","acceptedAnswer":{"@type":"Answer","text":"Правильно установленные циркониевые дуги обычно служат 15–20 лет и дольше, а многим пациентам замена не требуется вовсе."}},{"@type":"Question","name":"Безопасен ли цирконий?","acceptedAnswer":{"@type":"Answer","text":"Да. Диоксид циркония биосовместим и инертен, широко применяется в медицинских имплантах, аллергии на него неизвестны."}}]}]` }}
@@ -338,6 +340,6 @@ export default function ZirconiaArchesPost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

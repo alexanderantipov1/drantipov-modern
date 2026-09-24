@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,7 +12,7 @@ import {
 } from "@/lib/structured-data";
 import { siteUrl } from "@/data/russianImplantFunnel";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Обучение имплантологии и курсы | Доктор Антипов",
   description:
     "Освойте продвинутые методики имплантации на практических курсах доктора Антипова: реконструкция всей челюсти, костная пластика, сложная имплантология. Доступны баллы CE.",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+}, "/ru/for-dentists/education/courses");
 
 const courses = [
   {

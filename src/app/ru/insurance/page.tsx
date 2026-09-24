@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +12,7 @@ import {
   siteUrl,
 } from "@/data/russianImplantFunnel";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: {
     absolute:
       "Страховка и финансирование | Доктор Антипов, Roseville CA",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     locale: "ru_RU",
     type: "website",
   },
-};
+}, "/ru/insurance");
 
 const insurancePlans = [
   "Delta Dental (PPO)",

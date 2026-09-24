@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -16,7 +17,7 @@ import {
   officeEmail,
 } from "@/data/russianImplantFunnel";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Партнёрам по направлениям — надёжная хирургия | Доктор Антипов",
   description:
     "Партнёрство с доктором Антиповым по направлениям на хирургию: прозрачная коммуникация, внимательный уход за пациентом и совместное планирование лечения. Для стоматологов Северной Калифорнии.",
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+}, "/ru/for-dentists/referral-partners");
 
 const benefits = [
   "Прямая связь с доктором Антиповым для консультаций по сложным случаям",

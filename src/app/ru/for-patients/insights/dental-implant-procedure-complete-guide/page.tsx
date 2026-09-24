@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Имплантация зуба: пошаговое руководство",
   description:
     "Полный пошаговый гид по процедуре дентальной имплантации — от консультации и 3D-снимка до установки импланта, остеоинтеграции и финальной коронки, со сроками и стоимостью.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Что именно происходит при имплантации зуба — от консультации до финальной коронки.",
     images: ["/images/blog/2026-06-19/dental-implant-procedure.png"],
   }
-}
+}, "/ru/for-patients/insights/dental-implant-procedure-complete-guide")
 
 export default function DentalImplantProcedureGuidePost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/dental-implant-procedure-complete-guide">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/dental-implant-procedure-complete-guide#article","headline":"Имплантация зуба: полное пошаговое руководство","description":"Что именно происходит при имплантации зуба — от консультации и 3D-снимка до установки импланта, остеоинтеграции, абатмента и финальной коронки, со сроками и стоимостью.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/dental-implant-procedure-complete-guide","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/dental-implant-procedure.png"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/dental-implant-procedure-complete-guide"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Сколько занимает вся процедура имплантации от начала до конца?","acceptedAnswer":{"@type":"Answer","text":"Классическая имплантация занимает 4–9 месяцев от консультации до финальной коронки. При имплантации «за один день» временный зуб ставится за один визит, а финальная коронка — через 3–6 месяцев."}},{"@type":"Question","name":"Насколько больно при имплантации?","acceptedAnswer":{"@type":"Answer","text":"Большинство пациентов описывают дискомфорт в первые 1–2 дня как сравнимый с удалением зуба — снимается ибупрофеном. Сильная боль — редкость."}},{"@type":"Question","name":"Можно ли поставить все импланты за один день?","acceptedAnswer":{"@type":"Answer","text":"Да. При полной челюсти, например All-on-4, все импланты ставятся за один визит, часто с временным протезом в тот же день."}},{"@type":"Question","name":"Какова успешность дентальной имплантации?","acceptedAnswer":{"@type":"Answer","text":"Современные импланты дают 95–98% успеха через 10 лет у здоровых пациентов при правильном послеоперационном уходе."}},{"@type":"Question","name":"Импланты подходят всем?","acceptedAnswer":{"@type":"Answer","text":"Большинству взрослых — да. Пациентам с неконтролируемым диабетом, активным пародонтитом, заядлым курильщикам или при недостаточной плотности кости может потребоваться подготовка или альтернативный вариант."}},{"@type":"Question","name":"Импланты выглядят естественно?","acceptedAnswer":{"@type":"Answer","text":"Современные коронки практически неотличимы от собственных зубов. Сам имплант скрыт под десной."}}]}]` }}
@@ -502,6 +504,6 @@ export default function DentalImplantProcedureGuidePost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

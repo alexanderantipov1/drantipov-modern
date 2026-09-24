@@ -1,9 +1,10 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import RuExpertiseTemplate from "@/components/ru-home/RuExpertiseTemplate";
 import { wisdomTeethData as data } from "@/data/ruExpertiseData";
 import { siteUrl } from "@/data/russianImplantFunnel";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: data.title,
   description: data.subtitle,
   alternates: {
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     locale: "ru_RU",
     type: "website",
   },
-};
+}, "/ru/expertise/wisdom-teeth");
 
 export default function Page() {
   return <RuExpertiseTemplate data={data} />;

@@ -1,0 +1,497 @@
+[
+  {
+    "key": "alt",
+    "title": " An alt Decision Tree | Web Accessibility Initiative (WAI) | W3C",
+    "url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
+    "accessed": "2026-09-24",
+    "publicationDate": "Not extracted; see saved source",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/alt.md"
+  },
+  {
+    "key": "consent-overview",
+    "title": "Consent mode overview  |  Tag Platform  |  Google for Developers",
+    "url": "https://developers.google.com/tag-platform/security/concepts/consent-mode",
+    "accessed": "2026-09-24",
+    "publicationDate": "2026-07-30",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/consent-overview.md"
+  },
+  {
+    "key": "consent-setup",
+    "title": "Set up consent mode on websites  |  Tag Platform  |  Google for Developers",
+    "url": "https://developers.google.com/tag-platform/security/guides/consent",
+    "accessed": "2026-09-24",
+    "publicationDate": "2026-07-30",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/consent-setup.md"
+  },
+  {
+    "key": "google-article",
+    "title": "Learn About Article Schema Markup | Google Search Central  |  Documentation  |  Google for Developers",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/article",
+    "accessed": "2026-09-24",
+    "publicationDate": "2026-09-08",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-article.md"
+  },
+  {
+    "key": "google-canonical",
+    "title": "How to Specify a Canonical with rel=\"canonical\" and Other Methods | Google Search Central  |  Documentation  |  Google for Developers",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+    "accessed": "2026-09-24",
+    "publicationDate": "2026-07-10",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-canonical.md"
+  },
+  {
+    "key": "google-faq",
+    "title": "Latest Google Search Documentation Updates | Google Search Central  |  What's new  |  Google for Developers",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/faqpage",
+    "accessed": "2026-09-24",
+    "publicationDate": "Not extracted; see saved source",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-faq.md"
+  },
+  {
+    "key": "google-keywords",
+    "title": "Google does not use the keywords meta tag in web ranking  |  Google Search Central Blog  |  Google for Developers",
+    "url": "https://developers.google.com/search/blog/2009/09/google-does-not-use-keywords-meta-tag",
+    "accessed": "2026-09-24",
+    "publicationDate": "Not extracted; see saved source",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-keywords.md"
+  },
+  {
+    "key": "google-links",
+    "title": "Qualify Outbound Links for SEO | Google Search Central  |  Documentation  |  Google for Developers",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+    "accessed": "2026-09-24",
+    "publicationDate": "2025-12-10",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-links.md"
+  },
+  {
+    "key": "google-localized",
+    "title": "Localized Versions of your Pages | Google Search Central  |  Documentation  |  Google for Developers",
+    "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+    "accessed": "2026-09-24",
+    "publicationDate": "2026-09-21",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-localized.md"
+  },
+  {
+    "key": "google-multilingual",
+    "title": "Managing Multi-Regional and Multilingual Sites | Google Search Central  |  Documentation  |  Google for Developers",
+    "url": "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites",
+    "accessed": "2026-09-24",
+    "publicationDate": "2025-12-10",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-multilingual.md"
+  },
+  {
+    "key": "google-reviews",
+    "title": "Review Snippet (Review, AggregateRating) Structured Data | Google Search Central  |  Documentation  |  Google for Developers",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/review-snippet",
+    "accessed": "2026-09-24",
+    "publicationDate": "2026-09-08",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-reviews.md"
+  },
+  {
+    "key": "google-schema",
+    "title": "General Structured Data Guidelines | Google Search Central  |  Documentation  |  Google for Developers",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+    "accessed": "2026-09-24",
+    "publicationDate": "2026-07-10",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-schema.md"
+  },
+  {
+    "key": "google-sitemap",
+    "title": "Build and Submit a Sitemap | Google Search Central  |  Documentation  |  Google for Developers",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+    "accessed": "2026-09-24",
+    "publicationDate": "2026-07-08",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-sitemap.md"
+  },
+  {
+    "key": "google-snippets",
+    "title": "How to Write Meta Descriptions | Google Search Central  |  Documentation  |  Google for Developers",
+    "url": "https://developers.google.com/search/docs/appearance/snippet",
+    "accessed": "2026-09-24",
+    "publicationDate": "2026-04-20",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-snippets.md"
+  },
+  {
+    "key": "google-spam",
+    "title": "Spam Policies for Google Web Search | Google Search Central  |  Documentation  |  Google for Developers",
+    "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+    "accessed": "2026-09-24",
+    "publicationDate": "2026-08-28",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-spam.md"
+  },
+  {
+    "key": "google-titles",
+    "title": "Influencing Title Links in Google Search | Google Search Central  |  Documentation  |  Google for Developers",
+    "url": "https://developers.google.com/search/docs/appearance/title-link",
+    "accessed": "2026-09-24",
+    "publicationDate": "2025-12-10",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-titles.md"
+  },
+  {
+    "key": "google-updates",
+    "title": "Latest Google Search Documentation Updates | Google Search Central  |  What's new  |  Google for Developers",
+    "url": "https://developers.google.com/search/updates#removing-faq-rich-result",
+    "accessed": "2026-09-24",
+    "publicationDate": "Not extracted; see saved source",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/google-updates.md"
+  },
+  {
+    "key": "hsts",
+    "title": "HSTS Preload List Submission",
+    "url": "https://hstspreload.org/",
+    "accessed": "2026-09-24",
+    "publicationDate": "Not extracted; see saved source",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/hsts.md"
+  },
+  {
+    "key": "next-i18n",
+    "title": "Guides: Internationalization | Next.js",
+    "url": "https://nextjs.org/docs/app/guides/internationalization",
+    "accessed": "2026-09-24",
+    "publicationDate": "June 10, 2026",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/next-i18n.md"
+  },
+  {
+    "key": "next-image",
+    "title": "Components: Image Component | Next.js",
+    "url": "https://nextjs.org/docs/app/api-reference/components/image",
+    "accessed": "2026-09-24",
+    "publicationDate": "August 25, 2026",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/next-image.md"
+  },
+  {
+    "key": "next-metadata",
+    "title": "Functions: generateMetadata | Next.js",
+    "url": "https://nextjs.org/docs/app/api-reference/functions/generate-metadata",
+    "accessed": "2026-09-24",
+    "publicationDate": "August 25, 2026",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/next-metadata.md"
+  },
+  {
+    "key": "next-proxy",
+    "title": "File-system conventions: proxy.js | Next.js",
+    "url": "https://nextjs.org/docs/app/api-reference/file-conventions/proxy",
+    "accessed": "2026-09-24",
+    "publicationDate": "September 7, 2026",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/next-proxy.md"
+  },
+  {
+    "key": "schema-medical",
+    "title": "MedicalWebPage - Schema.org Type",
+    "url": "https://schema.org/MedicalWebPage",
+    "accessed": "2026-09-24",
+    "publicationDate": "Not extracted; see saved source",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/schema-medical.md"
+  },
+  {
+    "key": "schema-scholarly",
+    "title": "MedicalScholarlyArticle - Schema.org Type",
+    "url": "https://schema.org/MedicalScholarlyArticle",
+    "accessed": "2026-09-24",
+    "publicationDate": "Not extracted; see saved source",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/schema-scholarly.md"
+  },
+  {
+    "key": "web-lcp",
+    "title": "Optimize Largest Contentful Paint  |  Articles  |  web.dev",
+    "url": "https://web.dev/articles/optimize-lcp",
+    "accessed": "2026-09-24",
+    "publicationDate": "2025-03-31",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/web-lcp.md"
+  },
+  {
+    "key": "web-vitals",
+    "title": "Web Vitals  |  Articles  |  web.dev",
+    "url": "https://web.dev/articles/vitals",
+    "accessed": "2026-09-24",
+    "publicationDate": "2024-10-31",
+    "quality": "Primary official documentation (authoritative for own platform/specification)",
+    "evidence": "research/sources/web-vitals.md"
+  },
+  {
+    "key": "1KHBqAS-nXySjCrehBAiRXTF7oTS4QHTeCw9Q6ejMRNA",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/1KHBqAS-nXySjCrehBAiRXTF7oTS4QHTeCw9Q6ejMRNA/export?format=csv",
+    "accessed": "2026-09-24T16:50:05.360Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1KHBqAS-nXySjCrehBAiRXTF7oTS4QHTeCw9Q6ejMRNA.csv"
+  },
+  {
+    "key": "1J6panuwlYdOafSWPA7-9OB-Yj3s39G-rCRd9R5spM4Q",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/1J6panuwlYdOafSWPA7-9OB-Yj3s39G-rCRd9R5spM4Q/export?format=csv",
+    "accessed": "2026-09-24T16:50:05.360Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1J6panuwlYdOafSWPA7-9OB-Yj3s39G-rCRd9R5spM4Q.csv"
+  },
+  {
+    "key": "1gF6LYZ5QWRgr9_YioFSUFL4Kz8f7a6v2q5zDn9pkSDk",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/1gF6LYZ5QWRgr9_YioFSUFL4Kz8f7a6v2q5zDn9pkSDk/export?format=csv",
+    "accessed": "2026-09-24T16:50:05.365Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1gF6LYZ5QWRgr9_YioFSUFL4Kz8f7a6v2q5zDn9pkSDk.csv"
+  },
+  {
+    "key": "1zt_kA0TkultTxTE0MluRkuUaf3vfFd86JJcNP2VfQbg",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/1zt_kA0TkultTxTE0MluRkuUaf3vfFd86JJcNP2VfQbg/export?format=csv",
+    "accessed": "2026-09-24T16:50:05.409Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1zt_kA0TkultTxTE0MluRkuUaf3vfFd86JJcNP2VfQbg.csv"
+  },
+  {
+    "key": "1vpTAj8u6Lkc8M10QCQFdEkoYn67D_v9hPY5waitLyNs",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/1vpTAj8u6Lkc8M10QCQFdEkoYn67D_v9hPY5waitLyNs/export?format=csv",
+    "accessed": "2026-09-24T16:50:05.412Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1vpTAj8u6Lkc8M10QCQFdEkoYn67D_v9hPY5waitLyNs.csv"
+  },
+  {
+    "key": "1YEajdE3KCVN0E61Bqx6bWryhXJgw0oud4s_E_KSy9pI",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/1YEajdE3KCVN0E61Bqx6bWryhXJgw0oud4s_E_KSy9pI/export?format=csv",
+    "accessed": "2026-09-24T16:50:05.665Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1YEajdE3KCVN0E61Bqx6bWryhXJgw0oud4s_E_KSy9pI.csv"
+  },
+  {
+    "key": "1L3nbAy1Z2vwKsnlBC3QV1rg_QHp6kKjdqvueix7JeCI",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/1L3nbAy1Z2vwKsnlBC3QV1rg_QHp6kKjdqvueix7JeCI/export?format=csv",
+    "accessed": "2026-09-24T16:50:05.676Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1L3nbAy1Z2vwKsnlBC3QV1rg_QHp6kKjdqvueix7JeCI.csv"
+  },
+  {
+    "key": "1vEghA7WE0Dob2de1cK--P5qw_e_5TC0C0SFIX9xok8Y",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/1vEghA7WE0Dob2de1cK--P5qw_e_5TC0C0SFIX9xok8Y/export?format=csv",
+    "accessed": "2026-09-24T16:50:05.683Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1vEghA7WE0Dob2de1cK--P5qw_e_5TC0C0SFIX9xok8Y.csv"
+  },
+  {
+    "key": "1jcVMW4dUt0bUeXN6yPUEzjmaIntYyvfv40qcFAiiFl4",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/1jcVMW4dUt0bUeXN6yPUEzjmaIntYyvfv40qcFAiiFl4/export?format=csv",
+    "accessed": "2026-09-24T16:50:05.686Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1jcVMW4dUt0bUeXN6yPUEzjmaIntYyvfv40qcFAiiFl4.csv"
+  },
+  {
+    "key": "121m5nhXwTuqe4LPaMCoNIIBJBpIXHPlStwsSZCGj5wo",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/121m5nhXwTuqe4LPaMCoNIIBJBpIXHPlStwsSZCGj5wo/export?format=csv",
+    "accessed": "2026-09-24T16:50:05.739Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/121m5nhXwTuqe4LPaMCoNIIBJBpIXHPlStwsSZCGj5wo.csv"
+  },
+  {
+    "key": "1HWO89tc8erYrzfb8VJEbQzRLAoa58CvMzEziwEQKEOM",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/1HWO89tc8erYrzfb8VJEbQzRLAoa58CvMzEziwEQKEOM/export?format=csv",
+    "accessed": "2026-09-24T16:50:05.976Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1HWO89tc8erYrzfb8VJEbQzRLAoa58CvMzEziwEQKEOM.csv"
+  },
+  {
+    "key": "1fa93j1kJRbs2r_fY0IZgHk_Pf80g0vuK2oQH8TDMeWo",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/1fa93j1kJRbs2r_fY0IZgHk_Pf80g0vuK2oQH8TDMeWo/export?format=csv",
+    "accessed": "2026-09-24T16:50:05.996Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1fa93j1kJRbs2r_fY0IZgHk_Pf80g0vuK2oQH8TDMeWo.csv"
+  },
+  {
+    "key": "1j8sqADFbFUBHekbpnDlRCtPxX17cBmfN9Ijotx2Grbg",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/1j8sqADFbFUBHekbpnDlRCtPxX17cBmfN9Ijotx2Grbg/export?format=csv",
+    "accessed": "2026-09-24T16:50:06.006Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1j8sqADFbFUBHekbpnDlRCtPxX17cBmfN9Ijotx2Grbg.csv"
+  },
+  {
+    "key": "13Oh7ZrcqI_PzQW1XLRG0YMdDj-2Ik1ymlZShfcr08F8",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/13Oh7ZrcqI_PzQW1XLRG0YMdDj-2Ik1ymlZShfcr08F8/export?format=csv",
+    "accessed": "2026-09-24T16:50:06.025Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/13Oh7ZrcqI_PzQW1XLRG0YMdDj-2Ik1ymlZShfcr08F8.csv"
+  },
+  {
+    "key": "14OwvNaT6fykrpwIe5VVXfROHBe3GQHoij5_jxb6oVnk",
+    "title": "Supplied audit linked spreadsheets",
+    "url": "https://docs.google.com/spreadsheets/d/14OwvNaT6fykrpwIe5VVXfROHBe3GQHoij5_jxb6oVnk/export?format=csv",
+    "accessed": "2026-09-24T16:50:06.055Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/14OwvNaT6fykrpwIe5VVXfROHBe3GQHoij5_jxb6oVnk.csv"
+  },
+  {
+    "key": "live-1",
+    "title": "Public HTML sample: https://www.drantipov.com/ru",
+    "url": "https://www.drantipov.com/ru",
+    "accessed": "2026-09-24T16:50:06.144Z",
+    "publicationDate": "Not stated",
+    "quality": "First-party observed response; not clinical verification",
+    "evidence": "research/sources/live-1.html"
+  },
+  {
+    "key": "live-2",
+    "title": "Public HTML sample: https://www.drantipov.com/ru/contact",
+    "url": "https://www.drantipov.com/ru/contact",
+    "accessed": "2026-09-24T16:50:06.145Z",
+    "publicationDate": "Not stated",
+    "quality": "First-party observed response; not clinical verification",
+    "evidence": "research/sources/live-2.html"
+  },
+  {
+    "key": "live-0",
+    "title": "Public HTML sample: https://www.drantipov.com/",
+    "url": "https://www.drantipov.com/",
+    "accessed": "2026-09-24T16:50:06.171Z",
+    "publicationDate": "Not stated",
+    "quality": "First-party observed response; not clinical verification",
+    "evidence": "research/sources/live-0.html"
+  },
+  {
+    "key": "1NwuSK87I5DRdQIw81vESXp-EkaG3bGQ9tbXD3upBViQ",
+    "title": "Supplied audit linked document",
+    "url": "https://docs.google.com/document/d/1NwuSK87I5DRdQIw81vESXp-EkaG3bGQ9tbXD3upBViQ/export?format=txt",
+    "accessed": "2026-09-24T16:50:06.379Z",
+    "publicationDate": "2026-08-28",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1NwuSK87I5DRdQIw81vESXp-EkaG3bGQ9tbXD3upBViQ.txt"
+  },
+  {
+    "key": "1Vku9n22Eaj6IRLP-ih9E_0k3bKln4VnZpmCBSJRhw1A",
+    "title": "Supplied audit linked document",
+    "url": "https://docs.google.com/document/d/1Vku9n22Eaj6IRLP-ih9E_0k3bKln4VnZpmCBSJRhw1A/export?format=txt",
+    "accessed": "2026-09-24T16:50:06.434Z",
+    "publicationDate": "Not stated",
+    "quality": "Contractor evidence; historical crawl, not independently validated in full",
+    "evidence": "research/sources/1Vku9n22Eaj6IRLP-ih9E_0k3bKln4VnZpmCBSJRhw1A.txt"
+  },
+  {
+    "key": "live-5",
+    "title": "Public HTML sample: https://www.drantipov.com/ru/locations/sacramento",
+    "url": "https://www.drantipov.com/ru/locations/sacramento",
+    "accessed": "2026-09-24T16:50:06.472Z",
+    "publicationDate": "Not stated",
+    "quality": "First-party observed response; not clinical verification",
+    "evidence": "research/sources/live-5.html"
+  },
+  {
+    "key": "live-3",
+    "title": "Public HTML sample: https://www.drantipov.com/ru/expertise/full-arch-implants",
+    "url": "https://www.drantipov.com/ru/expertise/full-arch-implants",
+    "accessed": "2026-09-24T16:50:06.480Z",
+    "publicationDate": "Not stated",
+    "quality": "First-party observed response; not clinical verification",
+    "evidence": "research/sources/live-3.html"
+  },
+  {
+    "key": "live-4",
+    "title": "Public HTML sample: https://www.drantipov.com/expertise/full-arch-implants",
+    "url": "https://www.drantipov.com/expertise/full-arch-implants",
+    "accessed": "2026-09-24T16:50:06.488Z",
+    "publicationDate": "Not stated",
+    "quality": "First-party observed response; not clinical verification",
+    "evidence": "research/sources/live-4.html"
+  },
+  {
+    "key": "live-7",
+    "title": "Public HTML sample: https://www.drantipov.com/sitemap.xml",
+    "url": "https://www.drantipov.com/sitemap.xml",
+    "accessed": "2026-09-24T16:50:06.499Z",
+    "publicationDate": "Not stated",
+    "quality": "First-party observed response; not clinical verification",
+    "evidence": "research/sources/live-7.html"
+  },
+  {
+    "key": "live-6",
+    "title": "Public HTML sample: https://www.drantipov.com/robots.txt",
+    "url": "https://www.drantipov.com/robots.txt",
+    "accessed": "2026-09-24T16:50:06.506Z",
+    "publicationDate": "Not stated",
+    "quality": "First-party observed response; not clinical verification",
+    "evidence": "research/sources/live-6.html"
+  },
+  {
+    "key": "live-8",
+    "title": "Public HTML sample: https://www.drantipov.com/ru/legal/privacy-policy",
+    "url": "https://www.drantipov.com/ru/legal/privacy-policy",
+    "accessed": "2026-09-24T16:50:06.556Z",
+    "publicationDate": "Not stated",
+    "quality": "First-party observed response; not clinical verification",
+    "evidence": "research/sources/live-8.html"
+  },
+  {
+    "key": "live-11",
+    "title": "Public HTML sample: https://www.drantipov.com/smile-gallery",
+    "url": "https://www.drantipov.com/smile-gallery",
+    "accessed": "2026-09-24T16:50:06.618Z",
+    "publicationDate": "Not stated",
+    "quality": "First-party observed response; not clinical verification",
+    "evidence": "research/sources/live-11.html"
+  },
+  {
+    "key": "live-9",
+    "title": "Public HTML sample: https://www.drantipov.com/locations/ca/loomis",
+    "url": "https://www.drantipov.com/locations/ca/loomis",
+    "accessed": "2026-09-24T16:50:06.622Z",
+    "publicationDate": "Not stated",
+    "quality": "First-party observed response; not clinical verification",
+    "evidence": "research/sources/live-9.html"
+  },
+  {
+    "key": "live-10",
+    "title": "Public HTML sample: https://www.drantipov.com/ru/locations/ca/roseville",
+    "url": "https://www.drantipov.com/ru/locations/ca/roseville",
+    "accessed": "2026-09-24T16:50:06.667Z",
+    "publicationDate": "Not stated",
+    "quality": "First-party observed response; not clinical verification",
+    "evidence": "research/sources/live-10.html"
+  }
+]

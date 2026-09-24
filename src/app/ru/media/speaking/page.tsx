@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -12,7 +13,7 @@ import {
 import { Metadata } from "next";
 import PageHero from "@/components/PageHero"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Выступления и лекции | Доктор Александр Антипов",
   description:
     "Доктор Антипов проводит выступления, мастер-классы и образовательные лекции по дентальной имплантации, челюстно-лицевой хирургии и хирургическим методикам.",
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ru_RU",
   },
-};
+}, "/ru/media/speaking");
 
 // Speaking topics
 const speakingTopics = [
@@ -237,7 +238,7 @@ function parseEngagementDate(date: string): { month: string; year: string } {
 export default function SpeakingPage() {
   return (
     <>
-      <PageHero image="/images/blog/2014-12-05/speaker-dr-antipov-8af6f91c.jpg" eyebrow="Выступления и обучение" title="Доклады на конференциях" subtitle="Доктор Антипов делится опытом на национальных и международных стоматологических конференциях." overlay="navy" />
+      <PageHero locale="ru" image="/images/blog/2014-12-05/speaker-dr-antipov-8af6f91c.jpg" eyebrow="Выступления и обучение" title="Доклады на конференциях" subtitle="Доктор Антипов делится опытом на национальных и международных стоматологических конференциях." overlay="navy" />
 
       {/* Stats Section */}
       <Section background="default" padding="md">

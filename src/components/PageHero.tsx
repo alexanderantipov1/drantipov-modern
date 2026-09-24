@@ -19,6 +19,7 @@ export interface PageHeroProps {
   breadcrumbs?: PageHeroBreadcrumb[];
   /** When true, renders a signature line under the subtitle (homepage-style). */
   signature?: boolean;
+  locale?: "en" | "ru";
 }
 
 export default function PageHero({
@@ -29,6 +30,7 @@ export default function PageHero({
   overlay = "navy",
   breadcrumbs,
   signature = false,
+  locale = "en",
 }: PageHeroProps) {
   const overlayClass =
     overlay === "dark"
@@ -56,7 +58,7 @@ export default function PageHero({
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
         {breadcrumbs && breadcrumbs.length > 0 && (
           <motion.nav
-            aria-label="Breadcrumb"
+            aria-label={locale === "ru" ? "Навигационная цепочка" : "Breadcrumb"}
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
@@ -65,11 +67,11 @@ export default function PageHero({
             <ol className="flex flex-wrap items-center gap-1.5">
               <li className="flex items-center">
                 <Link
-                  href="/"
+                  href={locale === "ru" ? "/ru" : "/"}
                   className="flex items-center gap-1 hover:text-bone transition-colors"
                 >
                   <Home className="h-3.5 w-3.5" />
-                  <span className="sr-only sm:not-sr-only">Home</span>
+                  <span className="sr-only sm:not-sr-only">{locale === "ru" ? "Главная" : "Home"}</span>
                 </Link>
               </li>
               {breadcrumbs.map((item, idx) => {
@@ -124,7 +126,7 @@ export default function PageHero({
             >
               <span className="h-px w-12 bg-primary/60" />
               <span className="font-signature text-3xl text-primary tracking-wide">
-                Dr. Antipov
+                {locale === "ru" ? "Доктор Антипов" : "Dr. Antipov"}
               </span>
             </motion.div>
           )}

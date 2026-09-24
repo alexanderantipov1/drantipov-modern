@@ -190,7 +190,7 @@ const externalLinks = [
     name: "American Association of Oral and Maxillofacial Surgeons",
     description:
       "The professional organization representing oral and maxillofacial surgeons in the United States.",
-    href: "https://www.aaoms.org",
+    href: "https://aaoms.org/",
   },
   {
     name: "California Dental Association",

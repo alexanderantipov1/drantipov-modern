@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import RuHero from "@/components/ru-home/RuHero";
 import RuReviewBanner from "@/components/ru-home/RuReviewBanner";
 import RuAbout from "@/components/ru-home/RuAbout";
@@ -17,7 +18,7 @@ import type { Metadata } from "next";
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data";
 import { siteConfig } from "@/constants/siteConfig";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: { absolute: "О нас — Доктор Александр В. Антипов, DDS" },
   description:
     "Доктор Антипов и доктор Кахвач — сертифицированные челюстно-лицевые хирурги с 25+ годами совокупного опыта в Roseville, CA.",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
       "Сертифицированный челюстно-лицевой хирург — Diplomate ABOMS. 25+ лет возвращает улыбки в Roseville, CA.",
     images: ["/images/drantipov-about-v6.jpg"],
   },
-};
+}, "/ru/about");
 
 /**
  * /ru/about — зеркало главной /ru, с собственным URL для пункта «О нас» в меню.

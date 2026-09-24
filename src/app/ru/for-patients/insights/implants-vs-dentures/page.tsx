@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -7,7 +9,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Импланты или съёмные протезы — инновации 2026",
   description:
     "Свежий взгляд на инновации в дентальной имплантологии: 3D-печать, нанотехнологии, «умные» импланты и планирование лечения с ИИ.",
@@ -46,11 +48,11 @@ export const metadata: Metadata = {
     description: "Современные дентальные импланты против классических съёмных протезов — инновации: 3D-печать, нанотехнологии, умные импланты.",
     images: ["/images/blog/2024-08-13/implants-vs-dentures-78639392.jpg"],
   }
-}
+}, "/ru/for-patients/insights/implants-vs-dentures")
 
 export default function ImplantsVsDenturesPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/implants-vs-dentures">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/implants-vs-dentures#article","headline":"Прощайте, съёмные протезы: дентальные импланты 2026 года","description":"Современные дентальные импланты против классических съёмных протезов — 10 революционных технологий: 3D-печать, нанотехнологии, умные импланты, планирование с ИИ.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/implants-vs-dentures","datePublished":"2024-08-13","dateModified":"2026-04-28","image":["https://www.drantipov.com/images/blog/2024-08-13/implants-vs-dentures-78639392.jpg"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/implants-vs-dentures"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://www.drantipov.com/ru"},{"@type":"ListItem","position":2,"name":"Пациентам","item":"https://www.drantipov.com/ru/for-patients"},{"@type":"ListItem","position":3,"name":"Полезное","item":"https://www.drantipov.com/ru/for-patients/insights"},{"@type":"ListItem","position":4,"name":"Прощайте, съёмные протезы: дентальные импланты 2026 года","item":"https://www.drantipov.com/ru/for-patients/insights/implants-vs-dentures"}]}]` }}
@@ -304,7 +306,7 @@ export default function ImplantsVsDenturesPost() {
         </Container>
       </Section>
 
-      <RelatedArticles currentSlug="implants-vs-dentures" />
-    </>
+      <RelatedArticles currentSlug="implants-vs-dentures" locale="ru" />
+    </PatientArticleSchema>
   )
 }

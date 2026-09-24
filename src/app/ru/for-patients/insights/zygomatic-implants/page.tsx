@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -7,7 +9,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Скуловые импланты — когда они нужны",
   description:
     "Скуловые импланты при тяжёлой убыли кости верхней челюсти. Когда классические импланты невозможны, как проходит операция, кому подходит, сроки и стоимость у доктора Антипова в Roseville, CA.",
@@ -46,11 +48,11 @@ export const metadata: Metadata = {
     description: "Длинные скуловые импланты при тяжёлой убыли кости верхней челюсти — альтернатива поэтапной костной пластике.",
     images: ["/images/blog/2026-04-28/zygomatic-implants.jpg"],
   }
-}
+}, "/ru/for-patients/insights/zygomatic-implants")
 
 export default function ZygomaticImplantsPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/zygomatic-implants">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants#article","headline":"Скуловые импланты: когда нужны и как они работают","description":"Подробный разбор скуловых имплантов при тяжёлой убыли кости верхней челюсти: показания, ход операции, восстановление, кому подходят и сколько стоит.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants","datePublished":"2026-04-28","dateModified":"2026-04-28","image":["https://www.drantipov.com/images/blog/2026-04-28/zygomatic-implants.jpg"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"В чём разница между скуловыми и обычными имплантами?","acceptedAnswer":{"@type":"Answer","text":"Обычные импланты ставят в альвеолярный гребень челюсти высотой 8–13 мм. Скуловые импланты — длинные (30–55 мм) и фиксируются в скуловой кости. Их применяют, когда кости верхней челюсти попросту нет: она слишком тонкая или сильно рассосалась. Скуловая кость значительно плотнее и не атрофируется, поэтому даёт надёжную опору даже в самых сложных случаях."}},{"@type":"Question","name":"Можно ли получить временные зубы в день операции?","acceptedAnswer":{"@type":"Answer","text":"Да, в большинстве случаев. Скуловые импланты рассчитаны на немедленную нагрузку — высокая первичная стабильность позволяет сразу зафиксировать временный протез. Постоянную конструкцию изготавливают через 4–6 месяцев после заживления."}},{"@type":"Question","name":"Это больно? Под какой анестезией делают?","acceptedAnswer":{"@type":"Answer","text":"Операция проходит под внутривенной седацией или общим наркозом — вы не будете ничего помнить. Дискомфорт после операции обычно умеренный и хорошо снимается обычными обезболивающими в течение 3–5 дней."}},{"@type":"Question","name":"Кому скуловые импланты противопоказаны?","acceptedAnswer":{"@type":"Answer","text":"Противопоказания — активный синусит, тяжёлые системные заболевания, некомпенсированный диабет и приём высоких доз бисфосфонатов. Курение значительно повышает риск неудачи. Полный список противопоказаний обсуждается на консультации после КТ."}},{"@type":"Question","name":"Сколько это стоит?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты дороже обычных, но в большинстве случаев общая стоимость ниже — и сроки заметно короче — чем поэтапная костная пластика, синус-лифтинг и обычные импланты. Точная цена определяется после КТ; большинство случаев на всю челюсть со скуловыми имплантами попадает в диапазон $35 000–$60 000. Доступна рассрочка от $99 в месяц."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://www.drantipov.com/ru"},{"@type":"ListItem","position":2,"name":"Пациентам","item":"https://www.drantipov.com/ru/for-patients"},{"@type":"ListItem","position":3,"name":"Полезное","item":"https://www.drantipov.com/ru/for-patients/insights"},{"@type":"ListItem","position":4,"name":"Скуловые импланты: когда нужны и как они работают","item":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants"}]}]` }}
@@ -300,7 +302,7 @@ export default function ZygomaticImplantsPost() {
         </Container>
       </Section>
 
-      <RelatedArticles currentSlug="zygomatic-implants" />
-    </>
+      <RelatedArticles currentSlug="zygomatic-implants" locale="ru" />
+    </PatientArticleSchema>
   )
 }

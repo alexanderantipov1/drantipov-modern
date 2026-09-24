@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Сильный глубокий прикус: когда нужна хирургия челюсти",
   description:
     "Большинство глубоких прикусов исправляют брекетами, но при тяжёлом скелетном прикусе нужна хирургия челюсти. Когда требуется ортогнатическая операция, как она проходит, восстановление и стоимость — рассказывает доктор Антипов.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Когда брекетов недостаточно — как ортогнатическая хирургия исправляет тяжёлый скелетный прикус.",
     images: ["/images/blog/2026-06-19/severe-overbite-jaw-surgery.png"],
   }
-}
+}, "/ru/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed")
 
 export default function SevereOverbiteJawSurgeryPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed#article","headline":"Сильный глубокий прикус: когда нужна хирургия челюсти","description":"Большинство глубоких прикусов исправляют ортодонтией, но тяжёлый скелетный прикус требует ортогнатической операции. Когда нужна операция, какие методики применяют, последовательность лечения, восстановление и стоимость.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/severe-overbite-jaw-surgery.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/severe-overbite-when-jaw-surgery-is-needed"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Насколько болезненна хирургия челюсти?","acceptedAnswer":{"@type":"Answer","text":"Это скорее дискомфорт, чем сильная боль. Большинство пациентов описывают своё состояние как заметный отёк и онемение, а не острую боль. Обезболивающие хорошо снимают дискомфорт."}},{"@type":"Question","name":"Лицо изменится до неузнаваемости?","acceptedAnswer":{"@type":"Answer","text":"При тяжёлых скелетных случаях — да, заметно. Большинство пациентов воспринимают изменения как положительные и соответствующие тому, как они всегда хотели выглядеть. Также часто бывают мягкие или умеренные изменения."}},{"@type":"Question","name":"Сколько времени пройдёт, пока я снова буду выглядеть нормально?","acceptedAnswer":{"@type":"Answer","text":"Основной отёк сходит за 2–4 недели. Существенное улучшение заметно к 6–8 неделе. Окончательный результат виден через 6–12 месяцев."}},{"@type":"Question","name":"Можно ли есть твёрдую пищу после операции?","acceptedAnswer":{"@type":"Answer","text":"Первые 1–2 недели — только жидкая пища, затем мягкая до 6-й недели. К полноценному рациону обычно возвращаются к 8–12 неделе."}},{"@type":"Question","name":"Будут ли пластины срабатывать на металлодетекторах в аэропорту?","acceptedAnswer":{"@type":"Answer","text":"Современные титановые пластины редко вызывают срабатывание детекторов. Если вас спросят, может пригодиться справка о проведённой операции."}},{"@type":"Question","name":"Можно ли делать хирургию челюсти в зрелом возрасте?","acceptedAnswer":{"@type":"Answer","text":"Да. Кандидатами могут быть взрослые любого возраста при достаточном уровне здоровья. Кость хорошо заживает в любом возрасте."}},{"@type":"Question","name":"Придётся ли мне носить брекеты всю жизнь после операции?","acceptedAnswer":{"@type":"Answer","text":"В той или иной форме ретейнеры нужны будут пожизненно, но сами брекеты обычно снимают через 6–12 месяцев после операции."}}]}]` }}
@@ -498,6 +500,6 @@ export default function SevereOverbiteJawSurgeryPost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

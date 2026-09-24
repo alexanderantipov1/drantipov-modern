@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import { siteConfig } from "@/constants/siteConfig";
 import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/structured-data";
 import DualCTA from "@/components/DualCTA";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Стоимость All-on-4 в Калифорнии — честный разбор",
   description:
     "Сколько реально стоят импланты All-on-4 в 2026: детальный разбор, факторы цены, варианты рассрочки, страховое покрытие. Челюстно-лицевой хирург в Северной Калифорнии.",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [{ url: "/images/fullarch/08-final-result.jpeg", width: 1920, height: 1080, alt: "Стоимость All-on-4 — разбор" }],
   },
-};
+}, "/ru/all-on-4-cost");
 
 const faqs = [
   { question: "Почему All-on-4 так дорого?", answer: "В All-on-4 входит: установка 4 имплантов, временный фиксированный протез в день операции, 3D-планирование по КТ, IV-седация, индивидуально фрезерованный финальный протез (обычно цирконий), плюс несколько контрольных приёмов на 6–12 месяцев. Только сами импланты (Nobel Biocare или Straumann) обходятся клинике в $1 500–3 000 за челюсть. Итог — это и материалы, и работа квалифицированного хирурга на протяжении года." },

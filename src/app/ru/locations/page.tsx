@@ -1,3 +1,5 @@
+import PageIdentity from "@/components/PageIdentity";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
@@ -9,7 +11,7 @@ import {
   structuredDataScript,
 } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: { absolute: "Локации и зона обслуживания | Roseville, Сакраменто" },
   description:
     "Главный офис в Roseville, Калифорния. Принимаем пациентов из Сакраменто, района залива и десятков городов Северной Калифорнии. Имплантация, ортогнатика, эстетика лица.",
@@ -37,7 +39,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+}, "/ru/locations");
 
 export default function RuLocationsPage() {
   const stateSlug = "ca";
@@ -59,12 +61,14 @@ export default function RuLocationsPage() {
 
   return (
     <>
+      <PageIdentity path="/ru/locations" name="Локации и зона обслуживания" locale="ru" type="CollectionPage" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={structuredDataScript(structuredData)}
       />
 
       <PageHero
+        locale="ru"
         image="/images/locations/locations@2x-dc292d32.jpg"
         eyebrow="Как нас найти"
         title="Локации и зона обслуживания"

@@ -2756,7 +2756,7 @@ export const guideArticles: RevisionArticle[] = [
         paras: [
           [
             "Throughout the procedure, your vital signs are tracked continuously — a pulse oximeter on your finger monitors blood oxygen while your blood pressure and heart rate are checked at regular intervals, and a trained team member remains with you at all times. This is a core part of the office-based anesthesia model that oral and maxillofacial surgeons train for: administering sedation safely is part of hospital-based OMS residency, and the ",
-            { text: "American Association of Oral and Maxillofacial Surgeons", href: "https://www.aaoms.org/procedures/anesthesia" },
+            { text: "American Association of Oral and Maxillofacial Surgeons", href: "https://aaoms.org/advocacy/state-advocacy/state-issues/anesthesia/" },
             " outlines how surgeons and their teams are prepared to deliver office-based anesthesia and respond to emergencies.",
           ],
           "In California, administering this level of sedation in an office also requires the appropriate state anesthesia permit, in addition to the training itself. At your consultation, you are entitled to ask directly: Who administers the sedation? What monitoring is used? What is the emergency protocol? A well-run surgical practice welcomes those questions.",
@@ -3113,7 +3113,7 @@ export const guideArticles: RevisionArticle[] = [
         paras: [
           [
             "The most important part of All-on-4 recovery is invisible. Over roughly three to six months, living bone grows onto the surface of each implant — the process called osseointegration that turns four posts into a permanent foundation. This is why the soft-food discipline continues well after you feel completely normal: feeling healed and being fully integrated are two different milestones. The ",
-            { text: "American Association of Oral and Maxillofacial Surgeons", href: "https://www.aaoms.org/procedures/dental-implant-surgery" },
+            { text: "American Association of Oral and Maxillofacial Surgeons", href: "https://aaoms.org/wp-content/uploads/2024/05/dental_implant_surgery.pdf" },
             " provides a good independent overview of how implant treatment and healing work.",
           ],
           [
@@ -3403,7 +3403,7 @@ export const guideArticles: RevisionArticle[] = [
         paras: [
           [
             "Traditional implant treatment waits months between placing implants and attaching teeth, because implants need time to fuse with the jawbone — a process called osseointegration. Teeth in a Day does not skip that biology; it works around it mechanically. By placing implants at strategic angles into the densest available bone and connecting them immediately with a rigid bridge, the implants brace each other so no single one is overloaded while healing. The ",
-            { text: "American Association of Oral and Maxillofacial Surgeons", href: "https://www.aaoms.org/procedures/dental-implant-surgery/" },
+            { text: "American Association of Oral and Maxillofacial Surgeons", href: "https://aaoms.org/wp-content/uploads/2024/05/dental_implant_surgery.pdf" },
             " describes dental implant surgery and why surgical training matters for these cases.",
           ],
           [
@@ -3891,7 +3891,7 @@ export const guideArticles: RevisionArticle[] = [
         paras: [
           [
             "Any licensed dentist may legally place implants, but the training behind the drill varies enormously. A general dentist's education centers on restorative care — fillings, crowns, cleanings — with implant training often added through weekend courses. An oral and maxillofacial surgeon completes a four-to-six-year hospital-based surgical residency after dental school, devoted to jaw surgery, bone grafting, and anesthesia. The ",
-            { text: "American Association of Oral and Maxillofacial Surgeons", href: "https://www.aaoms.org/procedures/dental-implant-surgery" },
+            { text: "American Association of Oral and Maxillofacial Surgeons", href: "https://aaoms.org/wp-content/uploads/2024/05/dental_implant_surgery.pdf" },
             " outlines what that surgical scope includes. For routine cases the gap may not show; in complex ones, it is the difference between a predictable outcome and a referral after something goes wrong.",
           ],
           [

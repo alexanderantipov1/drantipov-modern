@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,7 +12,7 @@ import {
 } from "@/lib/structured-data";
 import { siteUrl } from "@/data/russianImplantFunnel";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title:
     "Имплантация зубов — кейсы All-on-4 и немедленная имплантация | Доктор Антипов",
   description:
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+}, "/ru/surgical-cases/dental-implants");
 
 const benefits = [
   {

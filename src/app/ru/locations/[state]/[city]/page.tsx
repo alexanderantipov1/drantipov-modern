@@ -1,3 +1,5 @@
+import PageIdentity from "@/components/PageIdentity";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -65,7 +67,7 @@ export async function generateMetadata({
   const title = `Челюстно-лицевой хирург для пациентов из ${city.city}, ${city.state} — Dr. Alexander V. Antipov`;
   const description = `Сертифицированный челюстно-лицевой хирург принимает пациентов из ${city.city}. Всего ${city.driveTime} от клиники в Roseville. Зубные импланты, ортогнатическая хирургия, апноэ сна (MMA), эстетическая хирургия лица. Бесплатная консультация с 3D КТ.`;
 
-  return {
+  return finalizeMetadata({
     title: { absolute: title },
     description,
     alternates: {
@@ -76,7 +78,7 @@ export async function generateMetadata({
         "x-default": `/locations/${state}/${city.slug}`,
       },
     },
-  };
+  });
 }
 
 function getCityFAQs(city: ReturnType<typeof getCityByStateAndSlug>) {
@@ -142,6 +144,7 @@ export default async function CityPage({
 
   return (
     <>
+      <PageIdentity path={`/ru/locations/${stateSlug}/${city.slug}`} name={`Челюстно-лицевой хирург для пациентов из ${city.city}, ${city.state}`} locale="ru" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={structuredDataScript(structuredData)}

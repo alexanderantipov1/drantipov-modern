@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { correctiveJawSurgeryCases } from "@/constants/ruCases"
@@ -21,12 +22,12 @@ export async function generateMetadata({ params }: CaseDetailPageProps): Promise
   const caseData = correctiveJawSurgeryCases.find((c) => c.id === caseId)
 
   if (!caseData) {
-    return { title: "Кейс не найден" }
+    return finalizeMetadata({ title: "Кейс не найден" })
   }
 
   const article = caseArticles[caseData.id]
 
-  return {
+  return finalizeMetadata({
     title: article?.metaTitle
       ? { absolute: article.metaTitle }
       : `${caseData.title} — кейс ортогнатической хирургии`,
@@ -50,7 +51,7 @@ export async function generateMetadata({ params }: CaseDetailPageProps): Promise
       locale: "ru_RU",
       type: "article",
     },
-  }
+  })
 }
 
 export default async function CaseDetailPage({ params }: CaseDetailPageProps) {

@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "All-on-4 или All-on-6: что лучше?",
   description:
     "All-on-4 и All-on-6 простыми словами — количество имплантов, требования к кости, стоимость, восстановление и стабильность. Помогаем выбрать оптимальный вариант полной челюсти у доктора Антипова в Розвилле.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Количество имплантов, требования к кости, стоимость, восстановление и стабильность — сравнение, чтобы выбрать оптимальный вариант полной челюсти.",
     images: ["/images/blog/2026-06-19/all-on-4-vs-all-on-6.png"],
   }
-}
+}, "/ru/for-patients/insights/all-on-4-vs-all-on-6")
 
 export default function AllOn4VsAllOn6Post() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/all-on-4-vs-all-on-6">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/all-on-4-vs-all-on-6#article","headline":"All-on-4 или All-on-6: что лучше?","description":"Сравнение All-on-4 и All-on-6 по количеству имплантов, требованиям к плотности кости, стоимости, времени восстановления и стабильности — чтобы выбрать оптимальный протокол полной челюсти.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/all-on-4-vs-all-on-6","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/all-on-4-vs-all-on-6.png"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/all-on-4-vs-all-on-6"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"В чём главное отличие All-on-4 от All-on-6?","acceptedAnswer":{"@type":"Answer","text":"Главное отличие — количество имплантов. All-on-4 использует четыре импланта на челюсть, All-on-6 — шесть, что влияет на стабильность и распределение жевательной нагрузки по протезу."}},{"@type":"Question","name":"All-on-4 дешевле, чем All-on-6?","acceptedAnswer":{"@type":"Answer","text":"Обычно — да. All-on-4 использует меньше имплантов и часто менее сложен, поэтому стоит дешевле."}},{"@type":"Question","name":"Можно ли поставить All-on-4 при слабой плотности кости?","acceptedAnswer":{"@type":"Answer","text":"Многие пациенты с ограниченным объёмом кости подходят для All-on-4, потому что задние импланты ставят под углом, чтобы использовать имеющуюся кость. При значительной потере кости часто рекомендуют All-on-6, чтобы распределить нагрузку на большее число опор."}},{"@type":"Question","name":"Какой вариант надёжнее в долгой перспективе?","acceptedAnswer":{"@type":"Answer","text":"Оба протокола успешны на длинной дистанции. All-on-6 даёт больше стабильности при длинных дугах, сильном прикусе или слабой кости. All-on-4 — хорошо изучен и биомеханически достаточен для большинства пациентов."}},{"@type":"Question","name":"Оба варианта требуют костной пластики?","acceptedAnswer":{"@type":"Answer","text":"Не обязательно. All-on-4 спроектирован так, чтобы минимизировать костную пластику за счёт имеющейся кости. All-on-6 тоже часто обходится без пластики, но дополнительные точки иногда требуют наращивания."}}]}]` }}
@@ -276,6 +278,6 @@ export default function AllOn4VsAllOn6Post() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

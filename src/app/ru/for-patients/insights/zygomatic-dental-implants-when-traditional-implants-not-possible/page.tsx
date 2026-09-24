@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Скуловые импланты: когда обычные импланты невозможны",
   description:
     "Скуловые дентальные импланты при выраженной убыли кости верхней челюсти. Когда традиционные импланты невозможны, как скуловая кость удерживает несъёмное решение, показания, риски и восстановление. Доктор Антипов.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Скуловые дентальные импланты фиксируются в скуловой кости при выраженной убыли кости верхней челюсти, когда традиционные импланты невозможны.",
     images: ["/images/blog/2026-06-19/zygomatic-when-impossible.png"],
   }
-}
+}, "/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible")
 
 export default function ZygomaticWhenImpossiblePost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible#article","headline":"Скуловые дентальные импланты: когда традиционные импланты невозможны","description":"Руководство по скуловым дентальным имплантам при выраженной убыли кости верхней челюсти \\u2014 почему традиционные импланты не держатся, чем особенна скуловая кость, показания, риски и немедленная нагрузка.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zygomatic-when-impossible.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-dental-implants-when-traditional-implants-not-possible"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Когда скуловые импланты нужны вместо традиционных?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты применяют, когда выраженная убыль кости верхней челюсти не позволяет устойчиво установить традиционные импланты. На верхней челюсти долгая потеря зубов ведёт к вертикальной резорбции кости, расширению пазухи и нехватке высоты кости. В крайних случаях даже объёмная костная пластика не способна надёжно воссоздать достаточный объём кости, поэтому импланты вместо этого фиксируют в плотной скуловой кости."}},{"@type":"Question","name":"Почему скуловая кость хорошо удерживает импланты?","acceptedAnswer":{"@type":"Answer","text":"Скуловая кость — это плотная кортикальная кость, которая со временем почти не резорбируется и обеспечивает высокую первичную стабильность. Закрепляя импланты в этой структуре, хирурги обходятся без масштабной пластики на верхней челюсти."}},{"@type":"Question","name":"Можно ли сразу нагрузить скуловые импланты зубами?","acceptedAnswer":{"@type":"Answer","text":"Многие случаи скуловых имплантов допускают немедленную нагрузку благодаря высокой первичной стабильности. Однако конструкция протеза должна быть жёсткой, силы прикуса — строго контролироваться, а уход — критически важен. Немедленная нагрузка не устраняет долгосрочный риск."}},{"@type":"Question","name":"Каковы риски скуловых имплантов?","acceptedAnswer":{"@type":"Answer","text":"Из-за своей сложности скуловые импланты несут особые риски, включая осложнения со стороны пазух, раздражение мягких тканей и трудности в конструкции протеза. Эти риски резко возрастают, когда процедуру выполняет неопытный врач, поэтому продвинутая хирургическая подготовка и тщательное планирование необходимы."}},{"@type":"Question","name":"Почему так мало клиник предлагают скуловые импланты?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты требуют продвинутой хирургической подготовки, планирования госпитального уровня и междисциплинарной координации. Это не лечение первой линии, оно предназначено для сложных случаев, поэтому встречается редко по своей сути, а не только из-за доступности."}}]}]` }}
@@ -354,6 +356,6 @@ export default function ZygomaticWhenImpossiblePost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

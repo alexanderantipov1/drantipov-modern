@@ -18,7 +18,7 @@ export default function RealReviews({ variant = "full" }: Props) {
         <span className="flex items-center gap-0.5 text-primary" aria-hidden="true">
           <Star /> <Star /> <Star /> <Star /> <Star />
         </span>
-        <span>4.9 · 300+ отзывов на Google</span>
+        <span>Отзывы на Google</span>
       </a>
     );
   }
@@ -30,8 +30,7 @@ export default function RealReviews({ variant = "full" }: Props) {
           <div className="grid items-center gap-10 md:grid-cols-[auto_1fr]">
             <div className="text-center md:text-left">
               <div className="text-6xl font-bold tracking-tight text-dark sm:text-7xl">
-                4.9
-                <span className="text-3xl text-muted">/5</span>
+                Google
               </div>
               <div className="mt-3 flex justify-center text-primary md:justify-start" aria-hidden="true">
                 <Star className="h-6 w-6" />
@@ -41,7 +40,7 @@ export default function RealReviews({ variant = "full" }: Props) {
                 <Star className="h-6 w-6" />
               </div>
               <p className="mt-3 text-sm font-semibold uppercase tracking-widest text-muted">
-                300+ verified reviews
+                Отзывы пациентов
               </p>
             </div>
 
@@ -51,8 +50,8 @@ export default function RealReviews({ variant = "full" }: Props) {
                 Что говорят пациенты Dr. Antipov
               </h2>
               <p className="mt-5 text-lg leading-8 text-muted">
-                4.9★ — средняя оценка по 300+ верифицированным отзывам на Google. Истории пациентов — про
-                сложные случаи, прозрачную стоимость, comfort во время процедуры и долгосрочный результат.
+                Истории пациентов — про сложные случаи, прозрачную стоимость,
+                комфорт во время процедуры и долгосрочный результат. Актуальные оценки доступны на Google.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <a
@@ -67,7 +66,7 @@ export default function RealReviews({ variant = "full" }: Props) {
                     <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" />
                     <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
                   </svg>
-                  Read reviews on Google
+                  Читать отзывы на Google
                 </a>
                 <a
                   href="#contact"

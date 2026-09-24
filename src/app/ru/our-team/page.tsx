@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container } from "@/components/sections"
 import Link from "next/link"
 import Image from "next/image"
@@ -34,7 +35,7 @@ import { siteUrl } from "@/data/russianImplantFunnel"
 
 import type { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Наша хирургическая команда — Доктор Антипов и Доктор Кахвач | Galleria Oral & Facial Surgery",
   description:
     "Знакомьтесь с хирургической командой Galleria Oral & Facial Surgery в Розвилле, Калифорния: доктор Александр В. Антипов, DDS (основатель, board-certified OMS, более 25 лет опыта) и доктор Андре-Давид Кахвач, DDS, MD. Образование в Albert Einstein, Loma Linda, UCSF, МГМСУ. Пять госпитальных привилегий, шесть профессиональных членств, основатель фонда Smile Again Foundation.",
@@ -62,7 +63,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-}
+}, "/ru/our-team")
 
 // ────────────────────────────────────────────────────────────────────
 // Данные CV — переведены с alexander_antipov_cv.pdf

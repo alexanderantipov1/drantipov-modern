@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Кто такой челюстно-лицевой хирург и что он делает?",
   description:
     "Челюстно-лицевой хирург — стоматолог-специалист с хирургической подготовкой. Что он лечит, как обучается, какие операции выполняет и когда к нему обращаться.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Что лечит челюстно-лицевой хирург, как он обучается и когда нужно к нему обращаться.",
     images: ["/images/blog/2026-06-19/what-is-oral-surgeon.png"],
   }
-}
+}, "/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do")
 
 export default function WhatIsAnOralSurgeonPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do#article","headline":"Кто такой челюстно-лицевой хирург и что он делает?","description":"Челюстно-лицевой хирург — стоматолог-специалист с хирургической подготовкой. Что он лечит, как обучается, какие операции выполняет и когда к нему обращаться.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/what-is-oral-surgeon.png"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/what-is-an-oral-surgeon-and-what-do-they-do"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Челюстно-лицевые хирурги — это настоящие врачи?","acceptedAnswer":{"@type":"Answer","text":"Да — у них докторская степень в стоматологической хирургии (DDS или DMD) и 4–6 лет дополнительной хирургической резидентуры. У многих есть также медицинская степень MD."}},{"@type":"Question","name":"Делают ли челюстно-лицевые хирурги косметические операции?","acceptedAnswer":{"@type":"Answer","text":"Часть делает — особенно операции, связанные со структурами челюстно-лицевой области (подбородочные импланты, восстановление переломов лица, ринопластику отдельных видов). Большинство специализируются на функциональной хирургии."}},{"@type":"Question","name":"Может ли челюстно-лицевой хирург заменить моего обычного стоматолога?","acceptedAnswer":{"@type":"Answer","text":"Нет — челюстно-лицевые хирурги специализируются на хирургии. Для обычной чистки, пломб и текущей стоматологической помощи нужен общий стоматолог."}},{"@type":"Question","name":"Сколько стоит приём челюстно-лицевого хирурга?","acceptedAnswer":{"@type":"Answer","text":"Процедуры дороже общей стоматологии — из-за специализированного обучения и оборудования. Но сложные случаи, сделанные правильно с первого раза, часто обходятся дешевле, чем исправление потом."}},{"@type":"Question","name":"Безопасна ли седация у челюстно-лицевого хирурга?","acceptedAnswer":{"@type":"Answer","text":"Да — челюстно-лицевые хирурги проходят серьёзную подготовку по анестезиологии в резидентуре. Седация в клинике сертифицированным хирургом имеет отличный профиль безопасности."}},{"@type":"Question","name":"Покрывает ли страховка челюстно-лицевую хирургию?","acceptedAnswer":{"@type":"Answer","text":"Многие процедуры покрываются медицинской (а не стоматологической) страховкой при функциональных показаниях — зубы мудрости, челюстная хирургия, травмы, некоторые удаления. Стоматологическая страховка обычно покрывает удаления и часть стоимости имплантации."}}]}]` }}
@@ -520,6 +522,6 @@ export default function WhatIsAnOralSurgeonPost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

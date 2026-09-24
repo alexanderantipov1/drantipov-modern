@@ -1,10 +1,11 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/constants/siteConfig";
 import DualCTA from "@/components/DualCTA";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Гид для иногородних пациентов — Розвилл, Калифорния",
   description:
     "Полный гид для пациентов из других штатов и стран: аэропорты Сакраменто, рекомендованные отели, жильё на восстановление и как спланировать многодневное лечение у доктора Антипова.",
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: "/images/landing-pages/dental-implants/art/office01-d1051d16.jpg", width: 1920, height: 1080, alt: "Гид для иногородних пациентов в Розвилле" }],
   },
-};
+}, "/ru/for-patients/travel");
 
 const flightInfo = [
   { airport: "SMF — Сакраменто International", drive: "30 мин", note: "Ближайший крупный аэропорт. United, Southwest, Delta, American, Alaska — прямые рейсы из большинства городов США." },

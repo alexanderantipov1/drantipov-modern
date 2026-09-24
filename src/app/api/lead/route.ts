@@ -178,6 +178,11 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: false, error: "bad_json" }, { status: 400 });
   }
 
+  if (!data || typeof data !== "object" || Array.isArray(data) ||
+      Object.values(data).some(value => value != null && typeof value !== "string")) {
+    return NextResponse.json({ ok: false, error: "invalid_fields" }, { status: 400 });
+  }
+
   // Honeypot
   if (data.website && data.website.trim() !== "") {
     return NextResponse.json({ ok: true });
@@ -186,7 +191,11 @@ export async function POST(request: NextRequest) {
   // Min-fill spam guard
   const startedAt = Number(data.started_at);
   if (Number.isFinite(startedAt) && Date.now() - startedAt < MIN_FILL_MS) {
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: false, error: "submitted_too_quickly" }, { status: 400 });
+  }
+
+  if (!data.name?.trim() || !data.phone || data.phone.replace(/\D/g, "").length < 7) {
+    return NextResponse.json({ ok: false, error: "invalid_contact_details" }, { status: 400 });
   }
 
   const geoCity = request.headers.get("x-vercel-ip-city") ?? "";
@@ -226,13 +235,9 @@ export async function POST(request: NextRequest) {
     email: { configured: isEmailConfigured(), reason: email.reason },
   });
 
-  // Critical decision: still return ok=true to the user so the form shows
-  // success — the lead is captured in Vercel function logs and the operator
-  // can wire up Salesforce/Resend retroactively. Better than the user thinking
-  // their submission failed and abandoning.
   return NextResponse.json({
-    ok: true,
+    ok: false,
+    error: "delivery_failed",
     delivered: { salesforce: false, email: false },
-    note: "logged_only",
-  });
+  }, { status: 503 });
 }

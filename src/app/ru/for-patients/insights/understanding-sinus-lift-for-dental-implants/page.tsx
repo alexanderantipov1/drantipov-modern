@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Синус-лифтинг для дентальных имплантов: что это и зачем",
   description:
     "Синус-лифтинг (синус-аугментация) наращивает кость в верхней челюсти, чтобы импланты можно было установить надёжно. Когда он нужен, как проходит, восстановление и стоимость — с доктором Антиповым в Roseville, Калифорния.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Как синус-лифтинг наращивает кость верхней челюсти для надёжной установки дентальных имплантов.",
     images: ["/images/blog/2026-06-19/sinus-lift.png"],
   }
-}
+}, "/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants")
 
 export default function SinusLiftPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants#article","headline":"Синус-лифтинг для дентальных имплантов: что это и зачем","description":"Синус-лифтинг (синус-аугментация) увеличивает объём кости в верхней челюсти, чтобы дентальные импланты можно было установить надёжно \\u2014 показания, ход процедуры, восстановление и преимущества.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/sinus-lift.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/understanding-sinus-lift-for-dental-implants"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Сколько длится восстановление после синус-лифтинга?","acceptedAnswer":{"@type":"Answer","text":"Сроки восстановления после синус-лифтинга индивидуальны, но обычно требуется несколько месяцев, чтобы кость как следует прижилась, прежде чем можно будет ставить импланты. Как правило, пациенты приходят на контрольные визиты, чтобы врач следил за процессом."}},{"@type":"Question","name":"Синус-лифтинг — это больно?","acceptedAnswer":{"@type":"Answer","text":"Большинство пациентов отмечают лишь лёгкий дискомфорт после процедуры, который обычно снимается назначенными обезболивающими. Местная анестезия помогает свести боль во время самой операции к минимуму."}},{"@type":"Question","name":"Сколько времени занимает сама процедура синус-лифтинга?","acceptedAnswer":{"@type":"Answer","text":"Процедура синус-лифтинга обычно занимает около 1\\u20132 часов в зависимости от сложности случая. Чаще всего пациент может вернуться домой в тот же день."}},{"@type":"Question","name":"Синус-лифтинг подходит всем?","acceptedAnswer":{"@type":"Answer","text":"Подходит не всем. На этапе обследования врач учитывает общее состояние здоровья, курение и качество кости."}},{"@type":"Question","name":"Какие материалы используют для костной пластики при синус-лифтинге?","acceptedAnswer":{"@type":"Answer","text":"Для костной пластики могут применяться аутотрансплантаты (собственная кость пациента), аллотрансплантаты (донорская кость) или синтетические материалы. Выбор зависит от конкретного случая и предпочтений хирурга."}},{"@type":"Question","name":"Что будет, если не делать синус-лифтинг?","acceptedAnswer":{"@type":"Answer","text":"Если синус-лифтинг нужен, но его не сделать, установить импланты успешно может оказаться невозможно. Это способно привести к дальнейшей потере кости и осложнениям."}}]}]` }}
@@ -351,6 +353,6 @@ export default function SinusLiftPost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

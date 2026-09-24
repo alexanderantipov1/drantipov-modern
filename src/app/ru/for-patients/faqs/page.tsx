@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -22,7 +23,7 @@ const ruHero = {
   breadcrumbs: [{ name: "Пациентам", href: "/ru/for-patients" }, { name: "Частые вопросы" }],
 }
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: { absolute: "Частые вопросы — челюстно-лицевая хирургия | Доктор Антипов" },
   description: "Ответы на частые вопросы о дентальных имплантах, челюстной хирургии, костной пластике, восстановлении, стоимости и страховании. Розвилл, Калифорния.",
   openGraph: {
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
       ru: "https://www.drantipov.com/ru/for-patients/faqs",
     },
   }
-}
+}, "/ru/for-patients/faqs")
 
 const faqCategories = [
   {
@@ -209,7 +210,7 @@ const faqCategories = [
 export default function FAQsPage() {
   return (
     <>
-      <PageHero {...ruHero} />
+      <PageHero {...ruHero} locale="ru" />
       <div className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
         {/* FAQ Categories */}

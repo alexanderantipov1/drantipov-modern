@@ -56,12 +56,12 @@ export default function Hero({ heading }: { heading?: React.ReactNode } = {}) {
         )}
         {/* Mobile: doctor portrait (face above the fold, higher trust signal) */}
         <Image
-          src="/images/dr-antipov-scrubs-our-team.jpg"
+          src="/images/Antipov_white.jpg"
           alt="Dr. Alexander Antipov, DDS — Board-Certified Oral & Maxillofacial Surgeon in Roseville, California"
           fill
           className="object-cover object-top lg:hidden"
-          priority
-          quality={85}
+          preload
+          quality={75}
           sizes="100vw"
         />
         {/* Semi-transparent navy overlay (65%) for text contrast */}

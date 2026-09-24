@@ -1,10 +1,11 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Badge } from "@/components/ui/badge"
 import { Play, Clock, Calendar, Eye } from "lucide-react"
 import { Metadata } from "next"
 import PageHero from "@/components/PageHero"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Образовательные видео и лекции | Доктор Александр Антипов",
   description:
     "Смотрите образовательные видео доктора Антипова, демонстрации операций и доклады с конференций по дентальной имплантации, хирургии челюстей и методикам челюстно-лицевой хирургии.",
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ru_RU",
   },
-}
+}, "/ru/media/videos")
 
 // Video categories
 const categories = [
@@ -226,7 +227,7 @@ export default function VideosPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
-      <PageHero image="/images/testimonials/video-preview-3@2x-adae89ec.jpg" eyebrow="Медиа и видео" title="Смотрите наши процедуры" subtitle="Образовательные видео о наших хирургических методиках и результатах лечения пациентов." overlay="dark" />
+      <PageHero locale="ru" image="/images/testimonials/video-preview-3@2x-adae89ec.jpg" eyebrow="Медиа и видео" title="Смотрите наши процедуры" subtitle="Образовательные видео о наших хирургических методиках и результатах лечения пациентов." overlay="dark" />
 
       {/* Categories */}
       <Section background="default" padding="md">
@@ -430,7 +431,7 @@ export default function VideosPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://www.youtube.com/@DrAntipovchannel"
+                href="https://www.youtube.com/@FusionDentalImplants"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white rounded-full font-semibold hover:bg-red-700 transition-colors shadow-lg"

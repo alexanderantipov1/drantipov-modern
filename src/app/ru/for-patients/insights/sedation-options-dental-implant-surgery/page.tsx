@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Варианты седации при установке дентальных имплантов",
   description:
     "Сравниваем варианты седации при имплантации зубов — местная анестезия, седация в таблетках, внутривенная седация и общий наркоз. Подберите комфортный уровень с доктором Антиповым в Roseville, CA.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Местная анестезия, седация в таблетках, внутривенная седация и общий наркоз — выберите комфортный уровень для операции по имплантации.",
     images: ["/images/blog/2026-06-19/sedation-options.png"],
   }
-}
+}, "/ru/for-patients/insights/sedation-options-dental-implant-surgery")
 
 export default function SedationOptionsDentalImplantSurgeryPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/sedation-options-dental-implant-surgery">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/sedation-options-dental-implant-surgery#article","headline":"Варианты седации при установке дентальных имплантов — разбор","description":"Сравниваем варианты седации при имплантации зубов \\u2014 местная анестезия, седация в таблетках, внутривенная седация и общий наркоз \\u2014 и как выбрать комфортный уровень.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/sedation-options-dental-implant-surgery","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/sedation-options.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/sedation-options-dental-implant-surgery"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"В чём разница между седацией и обезболиванием?","acceptedAnswer":{"@type":"Answer","text":"Это не одно и то же. Седация снижает осознанность и тревогу, а местная анестезия убирает боль, обезболивая операционную зону. Даже при глубокой седации всё равно применяют местный анестетик, чтобы зона операции оставалась полностью нечувствительной. Путаница между этими понятиями приводит к нереалистичным ожиданиям."}},{"@type":"Question","name":"Буду ли я в сознании во время имплантации под местной анестезией?","acceptedAnswer":{"@type":"Answer","text":"Да. При одной только местной анестезии вы полностью в сознании. Операционная зона обезболена, вы не чувствуете боли, и нет общих эффектов седации, поэтому восстановление быстрое. Это подходит для простых процедур и пациентов с низкой тревожностью."}},{"@type":"Question","name":"Чем внутривенная седация отличается от седации в таблетках?","acceptedAnswer":{"@type":"Answer","text":"Седация в таблетках снижает тревогу, но всасывается по-разному, даёт непредсказуемую глубину и ограниченный контроль после приёма таблетки. Внутривенная седация поступает прямо в кровь, поэтому действует быстро, позволяет регулировать глубину и снижает осознанность во время процедуры. Внутривенная седация требует продвинутого мониторинга и обученного персонала."}},{"@type":"Question","name":"Когда при имплантации рекомендуют общий наркоз?","acceptedAnswer":{"@type":"Answer","text":"Общий наркоз применяют в отдельных случаях — например, при обширной операции, сильной тревожности или по медицинским показаниям. Он несёт более высокий системный риск и требует строгих протоколов и мониторинга, поэтому при простой имплантации его рутинно не используют."}},{"@type":"Question","name":"Как выбрать подходящий вариант седации?","acceptedAnswer":{"@type":"Answer","text":"Правильный выбор зависит от уровня вашей тревожности, сложности процедуры, истории болезни и личных предпочтений. На консультации мы оцениваем все эти факторы и рекомендуем самый безопасный и комфортный подход для вашей ситуации."}}]}]` }}
@@ -329,6 +331,6 @@ export default function SedationOptionsDentalImplantSurgeryPost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

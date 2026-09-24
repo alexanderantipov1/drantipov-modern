@@ -59,10 +59,10 @@ const implantCases: CaseData[] = [
   { id: "di000005", label: "Кейс 5", title: "Немедленные импланты и зубы по All-on-4", description: "Same-day teeth using the All-on-4 protocol. Remaining failing teeth extracted, four implants placed per arch, and immediate fixed provisional delivered the same day.", images: ["/images/cases/dental-implants/di000005/1/gallery@2x-9923c0e8.jpg","/images/cases/dental-implants/di000005/2/gallery@2x-63b92ca3.jpg"] },
   { id: "di000006", label: "Кейс 6", title: "Немедленная имплантация после травмы челюсти", description: "Emergency implant placement following traumatic jaw injury. Bone fragments stabilized with grafting material and implants placed to restore function and aesthetics.", images: ["/images/cases/dental-implants/di000006/1/gallery@2x-deb220f6.jpg","/images/cases/dental-implants/di000006/2/gallery@2x-94113dd4.jpg"] },
   { id: "di000007", label: "Кейс 7", title: "Имплантация полного ряда с синус-лифтингом", description: "Bilateral sinus augmentation with organic bone graft followed by full arch implant placement and fixed prosthetic rehabilitation.", images: ["/images/cases/dental-implants/di000007/1/gallery@2x-c76993ff.jpg","/images/cases/dental-implants/di000007/2/gallery@2x-2681867e.jpg"] },
-  { id: "di000008", label: "Кейс 8", title: "Зубы за один день — полное преображение улыбки", description: "Full mouth extraction with immediate All-on-4 implant placement. Patient walked in with failing dentition and left with a complete fixed smile the same day.", images: ["/images/cases/dental-implants/di000008/1/gallery@2x-599ba9c9.jpg","/images/cases/dental-implants/di000008/2/gallery@2x-3bb6c4ef.jpg"] },
+  { id: "di000008", label: "Кейс 8", title: "Зубы за один день — полное преображение улыбки", description: "Удаление зубов с немедленной установкой имплантов All-on-4. Пациент пришёл с разрушенными зубами и в тот же день получил несъёмный протез.", images: ["/images/cases/dental-implants/di000008/1/gallery@2x-599ba9c9.jpg","/images/cases/dental-implants/di000008/2/gallery@2x-3bb6c4ef.jpg"] },
   { id: "di000009", label: "Кейс 9", title: "Мост на имплантах — жевательная группа", description: "Multiple posterior implants placed to support a fixed bridge, restoring chewing function and eliminating the need for a removable partial denture.", images: ["/images/cases/dental-implants/di000009/1/gallery@2x-dfb8a211.jpg","/images/cases/dental-implants/di000009/2/gallery@2x-27cc66cc.jpg"] },
   { id: "di000010", label: "Кейс 10", title: "Полная реконструкция с холистической костной пластикой", description: "Advanced full mouth rehabilitation using holistic bone grafting techniques. Natural bone graft materials used to regenerate sufficient bone volume for implant placement.", images: ["/images/cases/dental-implants/di000010/1/gallery@2x-8d2e0357.jpg","/images/cases/dental-implants/di000010/2/gallery@2x-88019b6b.jpg"] },
-  { id: "di000011", label: "Кейс 11", title: "Full-Arch Smile Transformation", description: "Patient presented with severely damaged and missing teeth. After full-arch implant restoration, the patient left with a complete, natural-looking fixed smile. Drag the slider to compare the before and after.", images: ["/images/cases/dental-implants/di000011/1.jpeg","/images/cases/dental-implants/di000011/2.jpeg","/images/cases/dental-implants/di000011/3.jpeg","/images/cases/dental-implants/di000011/4.jpeg"] },
+  { id: "di000011", label: "Кейс 11", title: "Восстановление полного зубного ряда", description: "Пациент обратился с сильно повреждёнными и отсутствующими зубами. После восстановления полного зубного ряда на имплантах он получил несъёмный протез с естественным видом. Перемещайте ползунок, чтобы сравнить результат до и после.", images: ["/images/cases/dental-implants/di000011/1.jpeg","/images/cases/dental-implants/di000011/2.jpeg","/images/cases/dental-implants/di000011/3.jpeg","/images/cases/dental-implants/di000011/4.jpeg"] },
 ];
 
 const cosmeticCases: CaseData[] = [
@@ -251,7 +251,7 @@ export default function RuBeforeAfter() {
             Реальные результаты пациентов
           </span>
           <h2 className="font-serif mt-4 text-4xl sm:text-5xl font-bold text-dark tracking-tight">
-            Before &amp; After
+            До и после
             <br />
             <span className="gradient-text">галерея кейсов</span>
           </h2>

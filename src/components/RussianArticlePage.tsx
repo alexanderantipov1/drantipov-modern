@@ -7,11 +7,11 @@ import RuFooter from "@/components/ru-home/RuFooter";
 import StickyConciergeBar from "@/components/StickyConciergeBar";
 import RussianChatbot from "@/components/RussianChatbot";
 import MicrosoftClarity from "@/components/MicrosoftClarity";
+import { ruGuideArticles } from "@/constants/ruGuideArticles";
 import {
   officeAddress,
   officePhone,
   officePhoneHref,
-  russianArticlePages,
   RussianArticlePage as RussianArticlePageData,
 } from "@/data/russianImplantFunnel";
 
@@ -20,7 +20,7 @@ interface RussianArticlePageProps {
 }
 
 export default function RussianArticlePage({ article }: RussianArticlePageProps) {
-  const related = russianArticlePages.filter((item) => item.slug !== article.slug).slice(0, 3);
+  const related = ruGuideArticles.filter((item) => item.slug !== article.slug).slice(0, 3);
 
   return (
     <div className="min-h-screen bg-white text-dark" lang="ru">
@@ -46,7 +46,7 @@ export default function RussianArticlePage({ article }: RussianArticlePageProps)
               <ol className="flex flex-wrap items-center gap-2">
                 <li><Link href="/ru" className="hover:text-primary-light">Главная</Link></li>
                 <li aria-hidden="true">/</li>
-                <li><Link href="/ru/questions" className="hover:text-primary-light">Гиды</Link></li>
+                <li><Link href="/ru/for-patients/insights" className="hover:text-primary-light">Гиды</Link></li>
                 <li aria-hidden="true">/</li>
                 <li className="text-white font-semibold line-clamp-1">{article.h1}</li>
               </ol>
@@ -129,10 +129,10 @@ export default function RussianArticlePage({ article }: RussianArticlePageProps)
                   {related.map((item) => (
                     <Link
                       key={item.slug}
-                      href={`/ru/questions/${item.slug}`}
+                      href={`/ru/for-patients/insights/${item.slug}`}
                       className="block text-sm font-semibold text-primary hover:text-primary-dark leading-snug"
                     >
-                      {item.h1} →
+                      {item.title} →
                     </Link>
                   ))}
                 </div>

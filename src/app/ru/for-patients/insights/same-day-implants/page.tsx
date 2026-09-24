@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -7,7 +9,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Импланты за один день — миф или реальность?",
   description:
     "Импланты за один день и немедленная нагрузка — кому подходит, что вы получаете в день операции, чем временный протез отличается от постоянного и каковы реальные риски.",
@@ -46,11 +48,11 @@ export const metadata: Metadata = {
     description: "Импланты с немедленной нагрузкой простыми словами — кому подходит, что вы получаете в день операции и каковы реальные риски.",
     images: ["/images/blog/2026-04-28/same-day-implants.jpg"],
   }
-}
+}, "/ru/for-patients/insights/same-day-implants")
 
 export default function SameDayImplantsPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/same-day-implants">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/same-day-implants#article","headline":"Импланты за один день (немедленная нагрузка) — миф или реальность?","description":"Импланты с немедленной нагрузкой — кому подходит, что вы получаете в день операции, чем временный протез отличается от постоянного, и честный разговор о рисках.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/same-day-implants","datePublished":"2026-04-28","dateModified":"2026-04-28","image":["https://www.drantipov.com/images/blog/2026-04-28/same-day-implants.jpg"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/same-day-implants"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Это действительно зубы за один день?","acceptedAnswer":{"@type":"Answer","text":"Да — с оговоркой. В день операции вы уходите из клиники с фиксированными временными зубами на имплантах. Постоянный протез изготавливают через 4–6 месяцев, после полной остеоинтеграции и стабилизации мягких тканей."}},{"@type":"Question","name":"Кому немедленная нагрузка не подходит?","acceptedAnswer":{"@type":"Answer","text":"Если первичная стабильность ниже примерно 35 Н·см — рисковать не стоит. Также: пациенты с тяжёлым остеопорозом, неконтролируемым диабетом, активным курением более 10 сигарет в день или значительной потерей кости в зоне имплантов."}},{"@type":"Question","name":"Чем временный протез отличается от постоянного?","acceptedAnswer":{"@type":"Answer","text":"Временный обычно из акрила или композита — легче, менее прочный и не идеально соответствует финальному дизайну улыбки. Постоянный — это цирконий или PMMA на титановой основе, рассчитанный на годы службы."}},{"@type":"Question","name":"Можно ли есть в день операции?","acceptedAnswer":{"@type":"Answer","text":"В день операции — только мягкие напитки, никакой жевательной нагрузки на импланты. Первые 2–4 недели — мягкая диета (пюре, рыба, яйца, йогурт). Более плотную пищу возвращают постепенно по мере заживления."}},{"@type":"Question","name":"Сколько длится сама операция?","acceptedAnswer":{"@type":"Answer","text":"Удаления + установка имплантов + временный протез — обычно 4–6 часов в зависимости от случая. Под внутривенной седацией у вас не останется воспоминаний о процедуре."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://www.drantipov.com/ru"},{"@type":"ListItem","position":2,"name":"Пациентам","item":"https://www.drantipov.com/ru/for-patients"},{"@type":"ListItem","position":3,"name":"Полезное","item":"https://www.drantipov.com/ru/for-patients/insights"},{"@type":"ListItem","position":4,"name":"Импланты за один день (немедленная нагрузка) — миф или реальность?","item":"https://www.drantipov.com/ru/for-patients/insights/same-day-implants"}]}]` }}
@@ -350,7 +352,7 @@ export default function SameDayImplantsPost() {
         </Container>
       </Section>
 
-      <RelatedArticles currentSlug="same-day-implants" />
-    </>
+      <RelatedArticles currentSlug="same-day-implants" locale="ru" />
+    </PatientArticleSchema>
   )
 }

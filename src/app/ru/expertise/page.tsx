@@ -1,3 +1,5 @@
+import PageIdentity from "@/components/PageIdentity";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container } from "@/components/sections"
 import { ServiceCard } from "@/components/expertise"
 import PageHero from "@/components/PageHero"
@@ -112,7 +114,7 @@ const ruExpertise = [
   },
 ] as const
 
-export const metadata = {
+export const metadata = finalizeMetadata({
   title: { absolute: "Услуги челюстно-лицевой хирургии | Доктор Антипов" },
   description: "Русскоговорящий челюстно-лицевой хирург в Roseville, CA (район Сакраменто): импланты на полную челюсть (All-on-4), челюстная хирургия, апноэ сна, костная пластика, одиночные импланты, удаление родинок.",
   alternates: {
@@ -142,7 +144,7 @@ export const metadata = {
     description: "Полный спектр сертифицированной челюстно-лицевой хирургии — импланты, ортогнатика, апноэ сна, костная пластика.",
     images: ["/images/procedures/dental-implants@2x-06d1b2ea.jpg"],
   }
-}
+}, "/ru/expertise")
 
 export default function ExpertisePage() {
   const structuredData = [
@@ -177,11 +179,12 @@ export default function ExpertisePage() {
   ]
   return (
     <>
+      <PageIdentity path="/ru/expertise" name={ruHero.title} locale="ru" type="CollectionPage" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={structuredDataScript(structuredData)}
       />
-      <PageHero {...ruHero} />
+      <PageHero {...ruHero} locale="ru" />
 
       {/* About Dr. Antipov — biography block */}
       <Section background="default" padding="xl">

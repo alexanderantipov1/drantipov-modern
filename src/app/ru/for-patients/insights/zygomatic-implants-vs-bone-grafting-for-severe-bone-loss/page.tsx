@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Скуловые импланты или костная пластика",
   description:
     "Сравниваем скуловые импланты и костную пластику при выраженной убыли кости челюсти — сроки, восстановление, стоимость, процент успеха и кому что подходит. Доктор Антипов, Roseville, CA.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Сравниваем скуловые импланты и костную пластику при выраженной убыли кости челюсти — сроки, восстановление, стоимость и показания.",
     images: ["/images/blog/2026-06-19/zygomatic-vs-grafting.png"],
   }
-}
+}, "/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss")
 
 export default function ZygomaticImplantsVsBoneGraftingPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss#article","headline":"Скуловые импланты или костная пластика при выраженной убыли кости","description":"Сравниваем скуловые импланты и традиционную костную пластику при выраженной убыли кости челюсти \\u2014 сроки, восстановление, стоимость, процент успеха и показания.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/zygomatic-vs-grafting.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/zygomatic-implants-vs-bone-grafting-for-severe-bone-loss"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Что такое скуловые импланты?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты — это дентальные импланты, которые фиксируются в скуловой кости и служат опорой для протеза. Они особенно полезны пациентам с выраженной убылью кости верхней челюсти."}},{"@type":"Question","name":"Как работает костная пластика?","acceptedAnswer":{"@type":"Answer","text":"Костная пластика — это пересадка костной ткани в участки, где кости недостаточно. Так создаётся устойчивая основа для будущих имплантов, а на приживление обычно требуется несколько месяцев."}},{"@type":"Question","name":"Что быстрее — скуловые импланты или костная пластика?","acceptedAnswer":{"@type":"Answer","text":"Скуловые импланты, как правило, быстрее: часто они позволяют установить протез сразу или раньше, тогда как костная пластика обычно требует более длительного периода заживления."}},{"@type":"Question","name":"Есть ли риски у этих процедур?","acceptedAnswer":{"@type":"Answer","text":"Как и любая операция, и скуловые импланты, и костная пластика связаны с рисками — в том числе инфекцией и осложнениями с имплантом. Консультация и тщательное планирование помогают эти риски снизить."}},{"@type":"Question","name":"Как понять, какой вариант подходит именно мне?","acceptedAnswer":{"@type":"Answer","text":"Лучший вариант зависит от состояния зубов, общего здоровья и ваших предпочтений. Подробное обследование у специалиста поможет определить наиболее подходящее лечение."}},{"@type":"Question","name":"Чего ожидать в период восстановления?","acceptedAnswer":{"@type":"Answer","text":"Восстановление у всех проходит по-разному. После скуловых имплантов часто можно быстрее вернуться к привычным делам, тогда как костная пластика требует больше времени на заживление, прежде чем можно ставить импланты."}}]}]` }}
@@ -383,6 +385,6 @@ export default function ZygomaticImplantsVsBoneGraftingPost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

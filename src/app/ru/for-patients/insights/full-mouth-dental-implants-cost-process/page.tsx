@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Импланты на всю челюсть в Roseville и Сакраменто: стоимость и процесс",
   description:
     "Полный гид по имплантам на всю челюсть в регионе Сакраменто — All-on-4, процесс шаг за шагом, диапазоны стоимости, кому подходит и от чего зависит успех. От доктора Антипова.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "All-on-4 и полное восстановление зубов простыми словами — процесс, кому подходит и честные диапазоны стоимости для региона Сакраменто.",
     images: ["/images/blog/2026-06-19/full-mouth-dental-implants.png"],
   }
-}
+}, "/ru/for-patients/insights/full-mouth-dental-implants-cost-process")
 
 export default function FullMouthDentalImplantsPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/full-mouth-dental-implants-cost-process">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/full-mouth-dental-implants-cost-process#article","headline":"Импланты на всю челюсть в Roseville и Сакраменто: стоимость, процесс и чего ожидать","description":"Полный гид по имплантам на всю челюсть в регионе Сакраменто, включая All-on-4, процесс шаг за шагом, диапазоны стоимости, кому подходит и что отличает успешный результат от неудачного.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/full-mouth-dental-implants-cost-process","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/full-mouth-dental-implants.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/full-mouth-dental-implants-cost-process"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Что такое импланты на всю челюсть?","acceptedAnswer":{"@type":"Answer","text":"Импланты на всю челюсть заменяют все зубы на одной или обеих челюстях несъёмным протезом на имплантах. Самые распространённые решения — All-on-4 и All-on-X: от 4 до 8 имплантов на челюсть, на которых держится полный ряд зубов."}},{"@type":"Question","name":"Сколько стоят импланты на всю челюсть рядом с Сакраменто?","acceptedAnswer":{"@type":"Answer","text":"В регионе Большого Сакраменто одна челюсть обычно обходится примерно в $18 000 – $30 000, а обе челюсти — ориентировочно в $30 000 – $55 000, в зависимости от количества имплантов, материалов и подготовительных процедур. Точную сумму для вашего случая вы получите в детальном плане лечения на консультации."}},{"@type":"Question","name":"Импланты на всю челюсть — это навсегда?","acceptedAnswer":{"@type":"Answer","text":"Да. Титановые штифты имплантов рассчитаны служить постоянно, а зубы протеза несъёмные. При правильном уходе восстановление прослужит много лет."}},{"@type":"Question","name":"Можно ли получить импланты на всю челюсть в тот же день?","acceptedAnswer":{"@type":"Answer","text":"Во многих подходящих случаях — да. Несъёмный временный протез можно установить в день операции, а постоянный протез изготавливают после 3–6 месяцев заживления."}},{"@type":"Question","name":"Где сделать импланты на всю челюсть рядом с Roseville?","acceptedAnswer":{"@type":"Answer","text":"Доктор Александр Антипов — сертифицированный челюстно-лицевой хирург в Roseville, CA, который выполняет полное восстановление зубов на имплантах для региона Большого Сакраменто."}}]}]` }}
@@ -333,6 +335,6 @@ export default function FullMouthDentalImplantsPost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

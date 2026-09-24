@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
 import RuNavbar from "@/components/ru-home/RuNavbar";
 import RuFooter from "@/components/ru-home/RuFooter";
+import SiteDocument, { metadata as sharedMetadata } from "@/components/SiteDocument";
+
+export { viewport } from "@/components/SiteDocument";
 
 /**
- * RU subtree layout. Sets a Russian <title> template and ru_RU OpenGraph locale
- * for every /ru/* page via Next.js metadata merging. (The <html lang="ru">
- * itself is set in the root layout based on the request pathname.)
+ * Independent RU root document: language is static server output, not request
+ * headers or client mutation. Cross-language navigation reloads the document.
  *
  * Renders the Russian navbar/footer once here so every /ru page gets consistent
  * chrome. The shared English Navbar/Footer return null on /ru routes.
  */
 export const metadata: Metadata = {
+  ...sharedMetadata,
   title: {
     default: "Доктор Александр Антипов — челюстно-лицевой хирург, Roseville CA",
     template: "%s | Доктор Антипов, Roseville CA",
@@ -23,10 +26,10 @@ export const metadata: Metadata = {
 
 export default function RuLayout({ children }: { children: React.ReactNode }) {
   return (
-    <>
+    <SiteDocument lang="ru">
       <RuNavbar />
       {children}
       <RuFooter />
-    </>
+    </SiteDocument>
   );
 }

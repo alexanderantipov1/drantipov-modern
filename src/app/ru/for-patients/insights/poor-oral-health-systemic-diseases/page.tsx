@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -8,7 +9,7 @@ import Image from "next/image"
 import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Здоровье полости рта и системные болезни — связь",
   description:
     "Скрытая связь между здоровьем полости рта и системными заболеваниями: рак, болезни сердца и сосудов, диабет. Как защитить себя и что делать для профилактики.",
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     description: "Связь между бактериями полости рта и системными заболеваниями — раком, болезнями сердца и сосудов, диабетом.",
     images: ["/images/blog/2024-08-08/poor-oral-health-733c21c2.jpg"],
   }
-}
+}, "/ru/for-patients/insights/poor-oral-health-systemic-diseases")
 
 export default function PoorOralHealthSystemicDiseasesPost() {
   return (
@@ -364,7 +365,7 @@ export default function PoorOralHealthSystemicDiseasesPost() {
         </Container>
       </Section>
 
-      <RelatedArticles currentSlug="poor-oral-health-systemic-diseases" />
+      <RelatedArticles currentSlug="poor-oral-health-systemic-diseases" locale="ru" />
     </>
   )
 }

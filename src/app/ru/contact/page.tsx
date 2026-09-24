@@ -1,3 +1,5 @@
+import PageIdentity from "@/components/PageIdentity";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
@@ -6,7 +8,7 @@ import PageHero from "@/components/PageHero";
 
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: { absolute: "Контакты — бесплатная консультация | Доктор Антипов" },
   description:
     "Запишитесь на бесплатную консультацию русскоговорящего челюстно-лицевого хирурга с 3D КТ. Roseville, CA (район Сакраменто). Звоните (916) 783-2110 или напишите нам онлайн.",
@@ -32,12 +34,14 @@ export const metadata: Metadata = {
     description:
       "Свяжитесь с клиникой доктора Антипова в Roseville, CA. Звоните, пишите или заполните форму. Бесплатные консультации с 3D КТ.",
   },
-};
+}, "/ru/contact");
 
 export default function RuContactPage() {
   return (
     <>
+      <PageIdentity path="/ru/contact" name="Связаться с клиникой" locale="ru" type="ContactPage" />
       <PageHero
+        locale="ru"
         image="/images/invitations/schedule@2x-d30ac039.jpg"
         eyebrow="Свяжитесь с нами"
         title="Связаться с клиникой"
@@ -144,7 +148,7 @@ export default function RuContactPage() {
           <div className="rounded-2xl overflow-hidden h-96 shadow-md">
             <iframe
               title="Доктор Антипов — челюстно-лицевая хирургия, 911 Reserve Dr, Suite 100, Roseville, CA 95678"
-              src="https://www.google.com/maps?q=911+Reserve+Dr+Suite+100,+Roseville,+CA+95678&output=embed"
+              src="https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1s911+Reserve+Dr+Suite+100,+Roseville,+CA+95678"
               width="100%"
               height="100%"
               loading="lazy"

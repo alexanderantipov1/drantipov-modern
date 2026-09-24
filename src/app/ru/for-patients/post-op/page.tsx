@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Badge } from "@/components/ui/badge"
 import { AlertTriangle, CheckCircle, Phone, Clock, Thermometer, Pill } from "lucide-react"
@@ -16,7 +17,7 @@ const ruHero = {
   breadcrumbs: [{ name: "Пациентам", href: "/ru/for-patients" }, { name: "Послеоперационный уход" }],
 }
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Послеоперационный уход | Гид по восстановлению | Доктор Антипов",
   description:
     "Ключевые рекомендации по послеоперационному уходу после челюстно-лицевой хирургии у доктора Антипова. Как справиться с болью, отёком, кровотечением и обеспечить правильное заживление.",
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     description: "Восстановление, обезболивание, отёк, диета и правильное заживление после хирургии.",
     images: ["/images/dental-implants/dental-implants@2x-0aad592f.jpg"],
   }
-}
+}, "/ru/for-patients/post-op")
 
 const immediatePostOp = [
   {
@@ -185,7 +186,7 @@ const whenToCall = [
 export default function PostOpPage() {
   return (
     <>
-      <PageHero {...ruHero} />
+      <PageHero {...ruHero} locale="ru" />
 
       {/* Emergency Contact */}
       <Section background="default" padding="md">

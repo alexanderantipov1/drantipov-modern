@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -13,7 +15,7 @@ const EN_CANONICAL = "/for-patients/insights/can-you-fix-an-overbite-naturally"
 const URL = "https://www.drantipov.com" + CANONICAL
 const IMAGE = "/images/blog/2026-06-22/fix-overbite-naturally.png"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Можно ли исправить глубокий прикус естественным путём? Что работает на самом деле",
   description:
     "Можно ли исправить глубокий прикус естественным путём? Челюстно-лицевой хирург объясняет, что работает (и какие мифы есть), почему у «естественной» коррекции есть пределы и как глубокий прикус исправляют у взрослых на самом деле.",
@@ -45,7 +47,7 @@ export const metadata: Metadata = {
       "Что на самом деле значит «исправить прикус естественным путём», какие есть мифы и проверенные способы коррекции глубокого прикуса.",
     images: [IMAGE],
   },
-}
+}, "/ru/for-patients/insights/can-you-fix-an-overbite-naturally")
 
 const faqs = [
   {
@@ -104,7 +106,7 @@ const articleSchema = {
 
 export default function CanYouFixAnOverbiteNaturallyPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/can-you-fix-an-overbite-naturally">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={structuredDataScript([articleSchema, getFAQSchema(faqs)])}
@@ -270,7 +272,7 @@ export default function CanYouFixAnOverbiteNaturallyPost() {
         </Container>
       </Section>
 
-      <RelatedArticles currentSlug="can-you-fix-an-overbite-naturally" />
-    </>
+      <RelatedArticles currentSlug="can-you-fix-an-overbite-naturally" locale="ru" />
+    </PatientArticleSchema>
   )
 }

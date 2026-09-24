@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -8,7 +9,7 @@ import Image from "next/image"
 import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Уход после имплантации — советы по восстановлению",
   description:
     "Подробный гид по уходу после установки дентальных имплантов: послеоперационные правила, гигиена рта, диета и сроки восстановления.",
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     description: "Послеоперационный уход, гигиена, рекомендации по диете и сроки восстановления при дентальных имплантах.",
     images: ["/images/blog/2023-04-13/dental-implant-aftercare-3ae5a0d1.jpg"],
   }
-}
+}, "/ru/for-patients/insights/dental-implant-aftercare")
 
 export default function DentalImplantAftercarePost() {
   return (
@@ -492,7 +493,7 @@ export default function DentalImplantAftercarePost() {
         </Container>
       </Section>
 
-      <RelatedArticles currentSlug="dental-implant-aftercare" />
+      <RelatedArticles currentSlug="dental-implant-aftercare" locale="ru" />
     </>
   )
 }

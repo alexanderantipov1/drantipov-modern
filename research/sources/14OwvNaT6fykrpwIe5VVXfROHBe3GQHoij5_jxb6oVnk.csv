@@ -1,0 +1,7 @@
+Address,Content Type,Status Code,Status,Indexability,Indexability Status,Inlinks,Response Time,Redirect URL,Redirect Type
+https://www.aaoms.org/,text/html; charset=UTF-8,301,Moved Permanently,Non-Indexable,Redirected,1,0.491,https://aaoms.org/,HTTP Redirect
+"https://www.google.com/maps?q=911+Reserve+Dr+Suite+100,+Roseville,+CA+95678&output=embed",text/html,301,Moved Permanently,Non-Indexable,Redirected,0,0.123,"https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1s911+Reserve+Dr+Suite+100,+Roseville,+CA+95678",HTTP Redirect
+https://www.hotjar.com/legal/policies/privacy/,,301,Moved Permanently,Non-Indexable,Redirected,2,0.183,https://trust.contentsquare.com/?itemUid=fa7a4923-3f51-431c-9eb6-3f88989ea858&source=title,HTTP Redirect
+https://www.aaoms.org/procedures/dental-implant-surgery,text/html; charset=UTF-8,301,Moved Permanently,Non-Indexable,Redirected,42,1.13,https://aaoms.org/wp-content/uploads/2024/05/dental_implant_surgery.pdf,HTTP Redirect
+https://www.aaoms.org/procedures/dental-implant-surgery/,text/html; charset=UTF-8,301,Moved Permanently,Non-Indexable,Redirected,1,2.27,https://aaoms.org/wp-content/uploads/2024/05/dental_implant_surgery.pdf,HTTP Redirect
+https://www.aaoms.org/procedures/anesthesia,text/html; charset=UTF-8,301,Moved Permanently,Non-Indexable,Redirected,3,1.989,https://aaoms.org/advocacy/state-advocacy/state-issues/anesthesia/,HTTP Redirect

@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import { siteConfig } from "@/constants/siteConfig";
 import DualCTA from "@/components/DualCTA";
 import InsuranceCrossLinks from "@/components/InsuranceCrossLinks";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Delta Dental — покрытие имплантов и хирургии",
   description:
     "Как стоматологическая страховка Delta Dental применяется к зубным имплантам, челюстно-лицевой и ортогнатической хирургии у доктора Антипова. Внесетевое покрытие, предварительное согласование и помощь с возмещением.",
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     description: "Страховка Delta Dental для зубных имплантов, челюстно-лицевой и ортогнатической хирургии.",
     images: ["/images/financial/insurance-coverage.jpg"],
   }
-};
+}, "/ru/insurance/delta-dental");
 
 export default function DeltaDentalPage() {
   return (

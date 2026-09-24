@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -8,7 +9,7 @@ import Image from "next/image"
 import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Скрытая эмоциональная цена потери зуба",
   description:
     "Разбираем психологические и эмоциональные последствия потери зуба, способы с ними справиться и то, как дентальные импланты возвращают уверенность и качество жизни.",
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     description: "Как потеря зуба влияет на самооценку, общение с людьми и психическое здоровье — и что с этим делать.",
     images: ["/images/blog/2024-08-09/tooth-lost-emotional-toll-fcc97e30.jpg"],
   }
-}
+}, "/ru/for-patients/insights/tooth-lost-emotional-toll")
 
 export default function ToothLossEmotionalTollPost() {
   return (
@@ -343,7 +344,7 @@ export default function ToothLossEmotionalTollPost() {
         </Container>
       </Section>
 
-      <RelatedArticles currentSlug="tooth-lost-emotional-toll" />
+      <RelatedArticles currentSlug="tooth-lost-emotional-toll" locale="ru" />
     </>
   )
 }

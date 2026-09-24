@@ -56,9 +56,13 @@ export default function OfficeTour() {
               onClick={() => setLightbox(i)}
               className="group relative aspect-[4/3] rounded-2xl overflow-hidden"
             >
-              <Image src={img.src} alt={`${img.label} — Dr. Antipov\'s oral & maxillofacial surgery office in Roseville, CA`} fill className="object-cover group-hover:scale-105 transition-transform duration-500"
-          sizes="100vw"
-        />
+              <Image
+                src={img.src}
+                alt={`${img.label} — Dr. Antipov's oral and maxillofacial surgery office in Roseville, CA`}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-3 left-3 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">{img.label}</div>
             </motion.button>
@@ -73,9 +77,13 @@ export default function OfficeTour() {
               onClick={() => setLightbox(officeImages.length + i)}
               className="group relative aspect-[4/3] rounded-2xl overflow-hidden"
             >
-              <Image src={src} alt={`Office ${i + 10}`} fill className="object-cover group-hover:scale-105 transition-transform duration-500"
-          sizes="100vw"
-        />
+              <Image
+                src={src}
+                alt={`Dr. Antipov's Roseville surgical office, view ${i + 1}`}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+              />
             </motion.button>
           ))}
         </div>

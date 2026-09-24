@@ -4,6 +4,7 @@ import { useState, useCallback, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export interface SmilePhoto {
   src: string;
@@ -29,6 +30,7 @@ export default function SmileGallery({
   background = "light",
   id = "smile-gallery",
 }: SmileGalleryProps) {
+  const isRu = usePathname()?.startsWith("/ru") ?? false;
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const dialogRef = useRef<HTMLDivElement | null>(null);
   const triggerRefs = useRef<(HTMLButtonElement | null)[]>([]);
@@ -117,7 +119,7 @@ export default function SmileGallery({
               viewport={{ once: true }}
               transition={{ delay: (i % 8) * 0.04 }}
               className="group relative aspect-[3/4] rounded-2xl overflow-hidden bg-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-              aria-label={`View ${photo.alt}`}
+              aria-label={`${isRu ? "Посмотреть" : "View"} ${photo.alt}`}
             >
               <Image
                 src={photo.src}
@@ -132,7 +134,7 @@ export default function SmileGallery({
                     photo.badge === "After" ? "bg-primary" : "bg-dark/80"
                   }`}
                 >
-                  {photo.badge}
+                  {isRu ? (photo.badge === "After" ? "После" : "До") : photo.badge}
                 </span>
               )}
               {photo.caption && (
@@ -152,14 +154,14 @@ export default function SmileGallery({
           className="fixed inset-0 z-[100] bg-dark/90 backdrop-blur-sm flex items-center justify-center p-4 focus:outline-none"
           role="dialog"
           aria-modal="true"
-          aria-label="Photo viewer"
+          aria-label={isRu ? "Просмотр фотографий" : "Photo viewer"}
           onClick={close}
         >
           <button
             type="button"
             onClick={close}
             className="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
-            aria-label="Close"
+            aria-label={isRu ? "Закрыть" : "Close"}
           >
             <X className="w-6 h-6" />
           </button>
@@ -171,7 +173,7 @@ export default function SmileGallery({
               prev();
             }}
             className="absolute left-2 sm:left-6 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
-            aria-label="Previous photo"
+            aria-label={isRu ? "Предыдущее фото" : "Previous photo"}
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
@@ -183,7 +185,7 @@ export default function SmileGallery({
               next();
             }}
             className="absolute right-2 sm:right-6 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
-            aria-label="Next photo"
+            aria-label={isRu ? "Следующее фото" : "Next photo"}
           >
             <ChevronRight className="w-6 h-6" />
           </button>

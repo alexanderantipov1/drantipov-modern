@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import FullArchAdLanding from "@/components/FullArchAdLanding";
 import { fullArchLanding, getFullArchLandingStructuredData } from "@/data/fullArchLanding";
@@ -6,7 +7,7 @@ import { siteConfig } from "@/constants/siteConfig";
 
 const content = fullArchLanding.ru;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: content.title,
   description: content.description,
   keywords: content.keywords,
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-};
+}, "/ru/full-arch-dental-implants");
 
 export default function RuFullArchDentalImplantsLandingPage() {
   const structuredData = getFullArchLandingStructuredData(content);

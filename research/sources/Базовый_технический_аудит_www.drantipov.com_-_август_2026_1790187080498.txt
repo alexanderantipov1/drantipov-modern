@@ -1,0 +1,460 @@
+Базовый технический аудит сайта www.drantipov.com
+Проверка сайта на HSTS - Программист
+Провалено. Сайт не соответствует стандарту HSTS.
+
+
+
+
+Задача 1
+Сделать для сайта HSTS. Подробнее здесь - https://hstspreload.org/.
+Низкая скорость загрузки - Программист
+У сайта имеются проблемы со скоростью загрузки на мобильных. Оценки сервиса Гугла по
+скорости загрузки такие:
+
+https://pagespeed.web.dev/analysis/https-www-drantipov-com-ru-surgical-cases-corrective-jaw-surgery
+/1z7k5c4dwp?hl=ru&form_factor=mobile
+
+https://pagespeed.web.dev/analysis/https-www-drantipov-com-ru-contact/46rheb2jj3?hl=ru&form_fact
+or=mobile
+
+https://pagespeed.web.dev/analysis/https-www-drantipov-com-ru-expertise-jaw-surgery/pmdce8ht91?
+hl=ru&form_factor=mobile
+
+https://pagespeed.web.dev/analysis/https-www-drantipov-com-ru-expertise-full-arch-implants/lasmkw4
+lxp?hl=ru&form_factor=mobile
+
+https://pagespeed.web.dev/analysis/https-www-drantipov-com/domfmyzf56?hl=ru&form_factor=mobil
+e
+
+
+
+Задача 2
+Выяснить какие есть проблемы, тормозящие сайт. Исправить ошибки. Ускорить сайт.
+Рекомендую войти в зеленую зону по скорости загрузки сайта. Рекомендации по
+ускорению можно посмотреть по ссылкам на отчеты:
+
+https://pagespeed.web.dev/analysis/https-www-drantipov-com-ru-surgical-cases-corrective-jaw-surg
+ery/1z7k5c4dwp?hl=ru&form_factor=mobile
+
+https://pagespeed.web.dev/analysis/https-www-drantipov-com-ru-contact/46rheb2jj3?hl=ru&form_f
+actor=mobile
+
+https://pagespeed.web.dev/analysis/https-www-drantipov-com-ru-expertise-jaw-surgery/pmdce8ht9
+1?hl=ru&form_factor=mobile
+
+https://pagespeed.web.dev/analysis/https-www-drantipov-com-ru-expertise-full-arch-implants/lasm
+kw4lxp?hl=ru&form_factor=mobile
+
+https://pagespeed.web.dev/analysis/https-www-drantipov-com/domfmyzf56?hl=ru&form_factor=mo
+bile
+Отсутствие description - SEO-специалист
+Список страниц -
+https://docs.google.com/spreadsheets/d/1J6panuwlYdOafSWPA7-9OB-Yj3s39G-rCRd9R5spM4Q/edit?us
+p=drive_link/
+
+
+
+Задача 3
+Прописать description в соответствии с семантикой.
+Слишком длинные description - SEO-специалист
+Список страниц с мета описанием более 160 символов -
+https://docs.google.com/spreadsheets/d/1vpTAj8u6Lkc8M10QCQFdEkoYn67D_v9hPY5waitLyNs/edit?us
+p=sharing/
+
+
+
+Задача 4
+Адаптировать description под размер до 160 символов.
+Отсутствие h1 на странице - SEO-специалист
+Список страниц -
+https://docs.google.com/spreadsheets/d/1KHBqAS-nXySjCrehBAiRXTF7oTS4QHTeCw9Q6ejMRNA/edit?u
+sp=drive_link/
+
+
+
+Задача 5
+Внедрить и заполнить h1 на данных страницах.
+Дубли h1 - SEO-специалист
+Найдено большое количество страниц с дублями данного тега -
+https://docs.google.com/spreadsheets/d/1zt_kA0TkultTxTE0MluRkuUaf3vfFd86JJcNP2VfQbg/edit?usp=
+drive_link.
+
+
+
+Задача 6
+Разобраться в ошибке подробнее. Сформировать ТЗ на исправление ошибок. Исправить
+дублирование h1.
+H1 совпадает с title - SEO-специалист
+Список страниц:
+
+https://docs.google.com/spreadsheets/d/1gF6LYZ5QWRgr9_YioFSUFL4Kz8f7a6v2q5zDn9pkSDk/edit?usp
+=drive_link.
+
+
+
+Задача 7
+Исправить совпадение h1 и Title.
+Отсутствие title на странице - SEO-специалист
+Список страниц -
+https://docs.google.com/spreadsheets/d/1YEajdE3KCVN0E61Bqx6bWryhXJgw0oud4s_E_KSy9pI/edit?us
+p=drive_link.
+
+
+
+Задача 8
+Внедрить и заполнить title на данных страницах.
+Наличие прописанных keywords - Программист
+Найдено -
+https://docs.google.com/spreadsheets/d/1jcVMW4dUt0bUeXN6yPUEzjmaIntYyvfv40qcFAiiFl4/edit?usp
+=drive_link.
+
+
+
+Задача 9
+Очистить содержимое keywords на всех страницах.
+Сообщение о куки и политика конфиденциальности - Программист
+
+Задача 10
+Доработать существующее окно. Добавить страницу Privacy Policy и вывести ссылку на нее в
+окно:
+
+
+
+
+Также нужно сделать страницу о кукис и добавить ссылку на нее в окно выше.
+Проблемы с изображениями - Программист
+Множество изображений более 100кб:
+
+https://docs.google.com/spreadsheets/d/1L3nbAy1Z2vwKsnlBC3QV1rg_QHp6kKjdqvueix7JeCI/edit?usp
+=drive_link
+
+Большой объем изображений замедляет их загрузку и загрузку страницы в целом.
+
+Данные картинки находятся на страницах:
+
+https://docs.google.com/spreadsheets/d/121m5nhXwTuqe4LPaMCoNIIBJBpIXHPlStwsSZCGj5wo/edit?us
+p=drive_link
+
+
+
+Alt изображений не прописаны:
+
+Полный отчет по страницам в файле
+https://docs.google.com/spreadsheets/d/1vEghA7WE0Dob2de1cK--P5qw_e_5TC0C0SFIX9xok8Y/edit?us
+p=drive_link
+
+Данные картинки расположены на страницах
+https://docs.google.com/spreadsheets/d/1j8sqADFbFUBHekbpnDlRCtPxX17cBmfN9Ijotx2Grbg/edit?usp
+=drive_link
+
+
+
+
+Задача 11 - Программист
+Ошибка с размером картинок не критичная, однако рекомендую немного уменьшить
+размеры изображений. Оптимизация изображения для страниц сайта позволит ускорить
+загрузку страниц. Если сжатие настроить нет возможности, то нужно выгрузить
+изображения на компьютер и сжать их на компьютере. В дальнейшем рекомендуется
+закачивать небольшие по размеру изображения (нужно стремиться к размеру около 100кб).
+
+
+
+Задача 12 - SEO-специалист
+Организовать работу по прописыванию альтов изображений. Составить и прописать альты
+на сайте.
+Не ЧПУ урлы картинок - Программист
+В данный момент урлы картинок формируются в виде:
+
+https://www.drantipov.com/_next/image?url=%2Fimages%2Fgallery-behind-scenes%2Fsurgery-18.jpeg
+&w=3840&q=75&dpl=dpl_AocR8G927cD9b1EN7RTdG1PPiWAf
+
+https://www.drantipov.com/_next/image?url=%2Fimages%2Fsmile-gallery%2Fpatient-01.jpeg&w=3840
+&q=85&dpl=dpl_AocR8G927cD9b1EN7RTdG1PPiWAf
+
+https://www.drantipov.com/_next/image?url=%2Fimages%2Fsmile-gallery%2Fpatient-23.jpeg&w=3840
+&q=75&dpl=dpl_AocR8G927cD9b1EN7RTdG1PPiWAf
+
+https://www.drantipov.com/_next/image?url=%2Fimages%2Fgallery-behind-scenes%2Fwith-patients-04
+.jpeg&w=3840&q=75&dpl=dpl_AocR8G927cD9b1EN7RTdG1PPiWAf
+
+
+
+Это не ЧПУ.
+
+
+
+Задача 13
+Сделать полностью ЧПУ урлы для картинок.
+Robots и sitemap.xml - Программист
+Файл с картой сайта для людей не найден.
+
+
+
+Задача 14
+Исправить ошибки, перечисленные выше:
+
+   ●​ Сделать карту сайта со структурой сайта для людей (html). Пример -
+      https://www.xn----7sbaqftafkcifv.xn--90ais/%d0%ba%d0%b0%d1%80%d1%82%d0%b0-%d1%81
+      %d0%b0%d0%b9%d1%82%d0%b0-2/
+   ●​ Разместить ссылку на карту сайта для людей в футере сайта.
+Битые ссылки - Программист
+Обнаружены битые ссылки. Ссылка на отчет -
+https://docs.google.com/spreadsheets/d/1HWO89tc8erYrzfb8VJEbQzRLAoa58CvMzEziwEQKEOM/edit?u
+sp=drive_link.
+
+Отчет со страницами, на которых содержаться данные битые ссылки -
+https://docs.google.com/spreadsheets/d/1fa93j1kJRbs2r_fY0IZgHk_Pf80g0vuK2oQH8TDMeWo/edit?usp
+=drive_link.
+
+
+
+Задача 15
+Удалить битые ссылки на удаленные страницы, заменить ссылки на существующие
+страницы либо удалить их.
+Внешние ссылки без nofollow - Программист
+Внешние ссылки на сайте на данный момент все dofollow – это значит, что они передают
+ссылочный вес внешним сайтам.
+
+
+
+Задача 16
+Сделать для всех внешних ссылок nofollow.
+Ссылки на страницы с редиректами - Программист
+Обнаружил ссылки на редиректные страницы -
+https://docs.google.com/spreadsheets/d/14OwvNaT6fykrpwIe5VVXfROHBe3GQHoij5_jxb6oVnk/edit?us
+p=drive_link
+
+Здесь можно посмотреть отчет, откуда и куда идут такие ссылки -
+https://docs.google.com/spreadsheets/d/13Oh7ZrcqI_PzQW1XLRG0YMdDj-2Ik1ymlZShfcr08F8/edit?usp
+=drive_link
+
+
+
+Задача 17
+Сменить ссылки на исходящих страницах на конечные страницы. Т.е. сами записи о
+редиректах остаются, но на страницах ссылки с которых идут редиректы сменяем на
+ссылки, куда эти редиректы ведут.
+Неправильное использование тегов заголовков - Программист
+Теги заголовков на сайте используются неправильно.
+
+
+
+Главная страница:
+
+<H3> Доктор Александр Антипов, DDS
+
+<H3> Доктор АлександрАнтипов, DDS
+
+<H4> Сертификации и членства
+
+<H3> 2026 NeodentElite Practitioner
+
+<H3> Доктор Андре-ДавидКахвач, DDS, MD
+
+<H4> Образование и подготовка
+
+<H3> Имплантация полного зубного ряда
+
+<H3> Хирургия челюстей
+
+<H3> Эстетическая хирургия лица
+
+<H3> Костная пластика и синус-лифтинг
+
+<H3> Хирургическая стоматология
+
+<H3> Имплантация одного или нескольких зубов
+
+<H3> Импланты
+
+<H4> Сколько стоят импланты All-on-4?
+
+<H4> В чём разница между All-on-4 и All-on-6?
+
+<H4> Можно ли получить зубы за один день?
+
+<H4> Что такое скуловые (zygomatic) импланты и кому они нужны?
+
+<H4> Сколько служат импланты?
+
+<H4> Импланты лучше съёмного протеза?
+
+<H3> Челюстная хирургия
+
+<H4> Какие проблемы решает корректирующая хирургия челюстей?
+
+<H4> Сколько длится восстановление после челюстной операции?
+
+<H4> Может ли челюстная операция вылечить апноэ сна?
+
+<H3> Костная пластика
+
+<H4> Что такое органическая или холистическая костная пластика?
+
+<H4> Нужна ли костная пластика перед имплантацией?
+
+<H3> Эстетика лица
+
+<H4> Какие эстетические процедуры лица делает доктор Антипов?
+<H4> Что такое бесшрамное удаление родинок?
+
+<H3> Общие вопросы
+
+<H4> Консультация действительно бесплатная?
+
+<H4> Откуда приезжают пациенты к доктору Антипову?
+
+<H4> Какие есть варианты оплаты и рассрочки?
+
+<H4> IV-седация безопасна?
+
+<H3> Что можно сделать в офисе в Roseville
+
+<H4> Имплантация полного зубного ряда
+
+<H4> Органическая и холистическая костная пластика
+
+<H4> Полная реконструкция полости рта
+
+<H4> Импланты с немедленной нагрузкой
+
+<H3> Почему пациенты выбирают доктора Антипова для имплантации полного ряда
+
+<H3> Roseville, CA
+
+<H3> Сан-Франциско, CA
+
+<H3> Онлайн-консультация
+
+<H2> Направить пациента кдоктору Антипову
+
+<H3> Удобный процесс направления
+
+<H3> Подробные отчёты и связь
+
+<H3> Совместное планирование
+
+<H3> Пациент возвращается к вам
+
+<H3> Доктор Антипов
+
+<H4> Услуги
+
+<H4> О практике
+
+<H4> Пациентам
+
+<H4> Стоматологам и Медиа
+
+
+
+Страницы услуг (пример - https://www.drantipov.com/ru/expertise/full-arch-implants):
+
+<H3> Полное отсутствие зубов
+
+<H3> Съёмные протезы не подходят
+
+<H3> Сложные комплексные случаи
+
+<H3> Сильная убыль кости
+
+<H3> 1. Бесплатная консультация + 3D КТ
+<H3> 2. Цифровое планирование
+
+<H3> 3. День операции — зубы в этот же визит
+
+<H3> 4. Период приживления
+
+<H3> 5. Постоянный протез
+
+<H3> Доктор Антипов
+
+<H4> Услуги
+
+<H4> О практике
+
+<H4> Пациентам
+
+<H4> Стоматологам и Медиа
+
+
+
+Задача 18
+   ●​   Использовать теги заголовков для обрамления ссылок и якорных ссылок нельзя.
+   ●​   Использовать теги заголовков для разметки страниц нельзя.
+   ●​   Использовать теги заголовков для разметки форм нельзя.
+   ●​   Использовать теги заголовков для обрамления логотипов нельзя
+   ●​   Использовать теги заголовков для оформления описаний товаров нельзя.
+
+Нужно устранить проблемы на всех страницах сайта и поддоменах.
+
+В заголовках, озвученных выше (по примерам), сменить теги на div с сохранением
+дизайна.
+Микроразметка - Программист
+С помощью ИИшки выполнил аудит микроразетки. Есть проблемы.
+
+Ссылка на аудит -
+https://docs.google.com/document/d/1NwuSK87I5DRdQIw81vESXp-EkaG3bGQ9tbXD3upBViQ/edit?usp
+=sharing.
+
+
+
+Задача 19
+Внедрить микроразметку на сайт.
+
+Исправить ошибки.
+
+Смотреть файл -
+https://docs.google.com/document/d/1NwuSK87I5DRdQIw81vESXp-EkaG3bGQ9tbXD3upBViQ/edit?usp
+=sharing.
+Исправление ошибок, исследованных совместно с анализом с помощью ИИ -
+Программист
+
+Задача 20
+Выполнить задачи из файла -
+https://docs.google.com/document/d/1Vku9n22Eaj6IRLP-ih9E_0k3bKln4VnZpmCBSJRhw1A/edit?usp=dr
+ive_link
+Нестабильное значение атрибута lang на русскоязычных страницах -
+Программист
+
+На одних и тех же русскоязычных URL в зависимости от устройства, браузера, User-Agent и
+других условий загрузки может формироваться разное значение атрибута языка: lang="ru"
+или lang="en". При этом Google Search Console сохраняет версию страницы с lang="en", то есть
+Googlebot может получать неправильное обозначение языка документа.
+
+Пример
+
+Русскоязычная страница:
+
+https://www.drantipov.com/ru
+
+В браузере может загружаться:
+
+<html lang="ru">
+
+В сохранённой или проверенной через Google Search Console версии:
+
+<html lang="en">
+
+Аналогичная ситуация может возникать на других URL в разделе /ru/.
+
+
+
+Задача 21
+
+Обеспечить стабильную серверную установку атрибута языка:
+
+   ●​ на всех страницах /ru/ всегда должен возвращаться <html lang="ru">;
+   ●​ на англоязычных страницах — <html lang="en">;
+   ●​ значение не должно зависеть от устройства, браузера, User-Agent, cookies, кэша или
+      выполнения JavaScript;
+   ●​ проверить серверные шаблоны, определение локали, клиентскую гидратацию и
+      правила кэширования/CDN;
+   ●​ после исправления очистить кэш и проверить страницы с разными User-Agent, на
+      мобильных и десктопных устройствах;
+   ●​ выполнить повторную проверку через «Проверить URL» → «Тестировать
+      опубликованную страницу» в Google Search Console.
+
+Критерий выполнения: Googlebot и обычные браузеры при любом способе загрузки
+получают lang="ru" для всех русскоязычных страниц.
+

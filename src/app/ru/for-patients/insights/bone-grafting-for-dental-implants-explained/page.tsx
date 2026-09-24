@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Костная пластика для имплантов простыми словами",
   description:
     "Костная пластика для дентальных имплантов: кому нужна, виды трансплантатов, как проходит процедура, сроки заживления, риски и как это влияет на долгий успех имплантации.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Кому нужна костная пластика, какие бывают трансплантаты, сроки заживления и как это влияет на успех имплантации.",
     images: ["/images/blog/2026-06-19/bone-grafting.png"],
   }
-}
+}, "/ru/for-patients/insights/bone-grafting-for-dental-implants-explained")
 
 export default function BoneGraftingForDentalImplantsPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/bone-grafting-for-dental-implants-explained">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/bone-grafting-for-dental-implants-explained#article","headline":"Костная пластика для дентальных имплантов простыми словами","description":"Подробный гид по костной пластике для имплантации — кому нужна, виды трансплантатов, процедура, сроки заживления, риски и альтернативы.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/bone-grafting-for-dental-implants-explained","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/bone-grafting.png"],"author":{"@type":"Person","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Доктор Александр В. Антипов, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/bone-grafting-for-dental-implants-explained"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Сколько занимает процедура костной пластики?","acceptedAnswer":{"@type":"Answer","text":"Сама операция обычно занимает 1–2 часа в зависимости от сложности случая. Общий срок восстановления зависит от индивидуальной скорости заживления."}},{"@type":"Question","name":"Костная пластика — это больно?","acceptedAnswer":{"@type":"Answer","text":"Большинство пациентов отмечают лёгкий дискомфорт после процедуры, который снимается обезболивающими. Хирург даст конкретные рекомендации, чтобы минимизировать ощущения."}},{"@type":"Question","name":"Сколько заживает костный трансплантат?","acceptedAnswer":{"@type":"Answer","text":"Обычно заживление занимает 3–6 месяцев в зависимости от типа трансплантата и состояния здоровья. Контрольные визиты помогают отслеживать процесс."}},{"@type":"Question","name":"Можно ли ставить имплант сразу после костной пластики?","acceptedAnswer":{"@type":"Answer","text":"В большинстве случаев имплант ставят после заживления трансплантата. Но некоторые современные методики позволяют делать обе процедуры одновременно — обсудите это с вашим хирургом."}},{"@type":"Question","name":"Что будет, если костный трансплантат не приживётся?","acceptedAnswer":{"@type":"Answer","text":"Если трансплантат не приживается, хирург оценит ситуацию и при необходимости порекомендует повторную пластику или альтернативное лечение."}},{"@type":"Question","name":"Покрывает ли страховка костную пластику?","acceptedAnswer":{"@type":"Answer","text":"Покрытие зависит от страхового плана. Стоит уточнить условия у своего страховщика, чтобы понять, что именно входит в покрытие."}}]}]` }}
@@ -375,6 +377,6 @@ export default function BoneGraftingForDentalImplantsPost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

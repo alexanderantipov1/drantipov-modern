@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -8,7 +9,7 @@ import Image from "next/image"
 import { Metadata } from "next"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Осложнения дентальных имплантов — риски и решения",
   description:
     "Разбираемся в возможных осложнениях дентальных имплантов: инфекция, неприживление, повреждение нерва. Какие бывают риски и как их предупредить.",
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     description: "Понимаем риски имплантации — инфекция, неприживление, повреждение нерва — и как их предупредить.",
     images: ["/images/blog/2023-04-14/dental-implant-complications-48eec3cd.jpg"],
   }
-}
+}, "/ru/for-patients/insights/dental-implant-complications")
 
 export default function DentalImplantComplicationsPost() {
   return (
@@ -436,7 +437,7 @@ export default function DentalImplantComplicationsPost() {
         </Container>
       </Section>
 
-      <RelatedArticles currentSlug="dental-implant-complications" />
+      <RelatedArticles currentSlug="dental-implant-complications" locale="ru" />
     </>
   )
 }

@@ -29,9 +29,11 @@ interface ReviewsPanelProps {
   trigger: ReactNode;
   triggerClassName?: string;
   rating?: string;
+  locale?: "en" | "ru";
 }
 
-export default function ReviewsPanel({ trigger, triggerClassName = "", rating = "4.9" }: ReviewsPanelProps) {
+export default function ReviewsPanel({ trigger, triggerClassName = "", rating = "4.9", locale = "en" }: ReviewsPanelProps) {
+  const isRu = locale === "ru";
   const [open, setOpen] = useState(false);
   const [count, setCount] = useState(INITIAL_COUNT);
 
@@ -72,7 +74,7 @@ export default function ReviewsPanel({ trigger, triggerClassName = "", rating = 
       <div
         role="dialog"
         aria-modal="true"
-        aria-label="Patient reviews"
+        aria-label={isRu ? "Отзывы пациентов" : "Patient reviews"}
         className={`fixed inset-y-0 left-0 z-[101] flex w-full max-w-md flex-col bg-white shadow-2xl transition-transform duration-300 ease-out ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
@@ -80,8 +82,8 @@ export default function ReviewsPanel({ trigger, triggerClassName = "", rating = 
         {/* Header */}
         <div className="flex items-start justify-between gap-4 border-b border-dark/10 px-6 py-5">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Patient Reviews</p>
-            <div className="mt-2 flex items-center gap-2">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">{isRu ? "Отзывы пациентов" : "Patient Reviews"}</p>
+            {!isRu && <div className="mt-2 flex items-center gap-2">
               <span className="text-2xl font-bold text-dark">{rating}</span>
               <span className="flex items-center gap-0.5" role="img" aria-label={`${rating} out of 5 stars`}>
                 <Star />
@@ -90,13 +92,13 @@ export default function ReviewsPanel({ trigger, triggerClassName = "", rating = 
                 <Star />
                 <Star />
               </span>
-            </div>
-            <p className="mt-1 text-xs text-muted">Showing 5-star reviews from 740+ patients</p>
+            </div>}
+            <p className="mt-1 text-xs text-muted">{isRu ? "Выборка отзывов с оценкой 5 звёзд. Оригиналы на английском языке." : "Showing 5-star reviews from 740+ patients"}</p>
           </div>
           <button
             type="button"
             onClick={() => setOpen(false)}
-            aria-label="Close reviews"
+            aria-label={isRu ? "Закрыть отзывы" : "Close reviews"}
             className="rounded-full p-2 text-muted transition hover:bg-dark/5 hover:text-dark"
           >
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={2}>
@@ -119,18 +121,18 @@ export default function ReviewsPanel({ trigger, triggerClassName = "", rating = 
                       <p className="truncate text-sm font-semibold text-dark">{r.name}</p>
                       <GoogleMark />
                     </div>
-                    <p className="truncate text-xs text-muted">{r.procedure}</p>
+                    <p lang="en" className="truncate text-xs text-muted">{r.procedure}</p>
                   </div>
                 </div>
-                <div className="mt-3 flex items-center gap-0.5" role="img" aria-label="5 out of 5 stars">
+                <div className="mt-3 flex items-center gap-0.5" role="img" aria-label={isRu ? "5 из 5 звёзд" : "5 out of 5 stars"}>
                   <Star />
                   <Star />
                   <Star />
                   <Star />
                   <Star />
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-dark/80">&ldquo;{r.quote}&rdquo;</p>
-                <p className="mt-3 text-[11px] uppercase tracking-wide text-muted">{r.location}</p>
+                <p lang="en" className="mt-3 text-sm leading-relaxed text-dark/80">&ldquo;{r.quote}&rdquo;</p>
+                <p lang="en" className="mt-3 text-[11px] uppercase tracking-wide text-muted">{r.location}</p>
               </li>
             ))}
           </ul>
@@ -141,7 +143,7 @@ export default function ReviewsPanel({ trigger, triggerClassName = "", rating = 
               onClick={() => setCount((c) => c + STEP)}
               className="mt-5 w-full rounded-2xl border border-dark/10 px-6 py-3 text-sm font-bold text-dark transition hover:border-primary/40 hover:text-primary"
             >
-              Load More
+              {isRu ? "Показать ещё" : "Load More"}
             </button>
           )}
         </div>

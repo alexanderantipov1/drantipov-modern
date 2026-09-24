@@ -7,6 +7,26 @@
 
 import { siteConfig } from "@/constants/siteConfig"
 
+/** Use only in the route that owns this canonical identity; never in a global layout. */
+export function getWebPageSchema(page: {
+  path: string
+  name: string
+  locale: "en" | "ru"
+  type?: "WebPage" | "MedicalWebPage" | "CollectionPage" | "ContactPage" | "AboutPage"
+}) {
+  const url = new URL(page.path, siteConfig.url).href
+  return {
+    "@context": "https://schema.org",
+    "@type": page.type ?? "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: page.name,
+    inLanguage: page.locale,
+    isPartOf: { "@id": `${siteConfig.url}/#website` },
+    publisher: { "@id": `${siteConfig.url}/#organization` },
+  }
+}
+
 /**
  * Organization Schema - Used site-wide
  */
@@ -684,14 +704,14 @@ export function getCaseSchema(c: {
 
 /**
  * Person Schema — drantipov.com is positioned as Dr. Antipov's personal brand hub.
- * This Person entity complements the Physician entity, surfacing the human dimension:
+ * This Person entity enriches the same stable surgeon identity:
  * education, founder role at Smile Again Foundation, languages, professional sameAs links.
  */
 export function getAntipovPersonSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": `${siteConfig.url}/#antipov-person`,
+    "@id": `${siteConfig.url}/#physician`,
     name: "Dr. Alexander V. Antipov",
     alternateName: "Alexander Antipov",
     givenName: "Alexander",
@@ -763,15 +783,14 @@ export function structuredDataScript(data: object | object[]) {
   const jsonLd = Array.isArray(data) ? data : [data]
 
   return {
-    __html: JSON.stringify(jsonLd.length === 1 ? jsonLd[0] : jsonLd),
+    __html: JSON.stringify(jsonLd.length === 1 ? jsonLd[0] : jsonLd).replace(/</g, "\\u003c"),
   }
 }
 
 /**
  * Local SEO schema for city-specific landing pages.
- * Emits a MedicalBusiness node anchored to the city, with areaServed pointing
- * to that City, plus geo coordinates and a reference to the Physician @id
- * so the city page is wired into the main graph.
+ * Enriches the sole Roseville practice with a service area.
+ * Never creates a branch office or business identity in the target city.
  */
 export function getCityLocalBusinessSchema(city: {
   slug: string;
@@ -784,10 +803,10 @@ export function getCityLocalBusinessSchema(city: {
   return {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "@id": `${siteConfig.url}/locations/${city.state.toLowerCase()}/${city.slug}#business`,
-    name: `${siteConfig.name} — Serving ${city.city}, ${city.state}`,
+    "@id": `${siteConfig.url}/#organization`,
+    name: siteConfig.name,
     description: `Oral & maxillofacial surgery practice serving patients in ${city.city}, ${city.stateName}. Led by Dr. Alexander V. Antipov, board-certified by ABOMS, practicing since 2008.`,
-    url: `${siteConfig.url}/locations/${city.state.toLowerCase()}/${city.slug}`,
+    url: siteConfig.url,
     telephone: siteConfig.contact.phone,
     email: siteConfig.contact.email,
     image: `${siteConfig.url}/images/drantipov.png`,
@@ -818,15 +837,18 @@ export function getCityLocalBusinessSchema(city: {
         longitude: city.lng,
       },
     },
-    parentOrganization: {
-      "@id": `${siteConfig.url}/#organization`,
-    },
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
         opens: "08:00",
         closes: "17:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Friday",
+        opens: "08:00",
+        closes: "14:00",
       },
     ],
   } as const;

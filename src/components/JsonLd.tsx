@@ -1,4 +1,13 @@
 export default function JsonLd() {
+  const website = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.drantipov.com/#website",
+    url: "https://www.drantipov.com",
+    name: "Dr. Alexander Antipov",
+    inLanguage: ["en", "ru"],
+    publisher: { "@id": "https://www.drantipov.com/#organization" },
+  };
   const localBusiness = {
     "@context": "https://schema.org",
     "@type": ["Dentist", "MedicalBusiness", "LocalBusiness"],
@@ -275,54 +284,6 @@ export default function JsonLd() {
         },
       ],
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "312",
-      bestRating: "5",
-    },
-    review: [
-      {
-        "@type": "Review",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        author: { "@type": "Person", name: "Sarah M." },
-        datePublished: "2024-06-15",
-        reviewBody:
-          "I had a single tooth extraction and implant placement. Everything was done in one day. The whole process was quick and painless. I'm very grateful to Dr. Antipov for his great work.",
-      },
-      {
-        "@type": "Review",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        author: { "@type": "Person", name: "Michael R." },
-        datePublished: "2024-05-22",
-        reviewBody:
-          "I had large bone grafting with sinus lifts on both sides of the upper jaw with multiple implants and I got teeth in a day. Everything went very smoothly without any complications. Now look at my new smile!",
-      },
-      {
-        "@type": "Review",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        author: { "@type": "Person", name: "Linda K." },
-        datePublished: "2024-04-10",
-        reviewBody:
-          "Dr. Antipov and his team made me feel comfortable from the very first consultation. The results exceeded my expectations. I can finally eat my favorite foods and smile with confidence again.",
-      },
-      {
-        "@type": "Review",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        author: { "@type": "Person", name: "Val M." },
-        datePublished: "2024-03-18",
-        reviewBody:
-          "I flew from Honolulu to see Dr. Antipov because of his reputation for corrective jaw surgery. The results were life-changing. The entire team was incredible from start to finish.",
-      },
-      {
-        "@type": "Review",
-        reviewRating: { "@type": "Rating", ratingValue: "5" },
-        author: { "@type": "Person", name: "Vadim S." },
-        datePublished: "2024-02-28",
-        reviewBody:
-          "Best oral surgeon in Northern California. My All-on-4 procedure was completed in one day and the results are amazing. I can eat, talk, and smile with complete confidence now.",
-      },
-    ],
     founder: { "@id": "https://www.drantipov.com/#physician" },
     employee: [
       { "@id": "https://www.drantipov.com/#physician" },
@@ -333,32 +294,6 @@ export default function JsonLd() {
       "https://www.instagram.com/drantipov",
       "https://www.linkedin.com/in/drantipov",
     ],
-  };
-
-  const medicalWebPage = {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    name: "Dr. Alexander Antipov, DDS — Oral & Maxillofacial Surgery",
-    url: "https://www.drantipov.com",
-    about: {
-      "@type": "MedicalSpecialty",
-      name: "Oral and Maxillofacial Surgery",
-    },
-    specialty: [
-      { "@type": "MedicalSpecialty", name: "Oral Surgery" },
-      { "@type": "MedicalSpecialty", name: "Maxillofacial Surgery" },
-      { "@type": "MedicalSpecialty", name: "Implant Dentistry" },
-      { "@type": "MedicalSpecialty", name: "Orthognathic Surgery" },
-      { "@type": "MedicalSpecialty", name: "Facial Cosmetic Surgery" },
-    ],
-    mainContentOfPage: {
-      "@type": "WebPageElement",
-      cssSelector: "#main-content",
-    },
-    audience: {
-      "@type": "MedicalAudience",
-      audienceType: "Patient",
-    },
   };
 
   const physicianAntipov = {
@@ -424,6 +359,7 @@ export default function JsonLd() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(website) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
@@ -435,10 +371,6 @@ export default function JsonLd() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianKahwach) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPage) }}
       />
     </>
   );

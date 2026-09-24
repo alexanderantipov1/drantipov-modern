@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Импланты после удаления зуба",
   description:
     "Импланты после удаления зуба: когда устанавливать, как на самом деле проходит заживление, сохранение кости и как выбрать самый надёжный план для долговечного результата.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Когда устанавливать, этапы заживления и сохранение кости при имплантации после удаления зуба.",
     images: ["/images/blog/2026-06-19/implants-after-extraction.png"],
   }
-}
+}, "/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options")
 
 export default function DentalImplantsAfterToothExtractionPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options#article","headline":"Импланты после удаления зуба: сроки, заживление и варианты","description":"Подробный гид по имплантам после удаления зуба \\u2014 немедленная, ранняя и отсроченная установка, этапы заживления, сохранение кости и факторы, влияющие на успех.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/implants-after-extraction.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/dental-implants-after-tooth-extraction-timing-healing-and-options"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Сколько времени занимает весь процесс имплантации после удаления зуба?","acceptedAnswer":{"@type":"Answer","text":"Это зависит от сроков и от того, нужна ли костная пластика. В некоторых случаях немедленная установка сокращает общий срок, но многим всё равно нужно несколько месяцев на остеоинтеграцию до фиксации финальной коронки. Если место сначала должно зажить или нуждается в укреплении кости, весь процесс займёт больше времени, и хирург должен составить для вас пошаговый план."}},{"@type":"Question","name":"Болезненна ли имплантация после удаления зуба?","acceptedAnswer":{"@type":"Answer","text":"Большинство пациентов во время процедуры чувствуют давление, но не резкую боль — благодаря анестезии. После операции несколько дней обычна болезненность, которая, как правило, хорошо контролируется рекомендованными лекарствами и соблюдением инструкций. Если боль усиливается после первоначального улучшения, обратитесь к хирургу для осмотра."}},{"@type":"Question","name":"Можно ли нормально есть после установки импланта?","acceptedAnswer":{"@type":"Answer","text":"После удаления зуба и установки импланта обычно нужна более мягкая пища на короткий период. По мере заживления большинство пациентов возвращаются к обычному рациону, но твёрдой и липкой пищи стоит избегать, пока хирург не подтвердит стабильность. Соблюдение рекомендаций по питанию помогает защитить имплант в период заживления."}},{"@type":"Question","name":"Как ухаживать за лункой удалённого зуба и зоной импланта?","acceptedAnswer":{"@type":"Answer","text":"Точно следуйте указаниям хирурга, особенно в первую неделю. Аккуратная гигиена, бережное отношение к сгустку и полоскания (если назначены) поддерживают заживление. В долгосрочной перспективе импланты требуют ежедневной чистки щёткой, межзубной гигиены и регулярного профессионального ухода."}},{"@type":"Question","name":"Какие риски у имплантации после удаления зуба?","acceptedAnswer":{"@type":"Answer","text":"У имплантов высокий процент успеха, но риски включают инфекцию, замедленное заживление, осложнения со стороны нерва или пазухи в отдельных зонах, а также неприживление импланта. Уровень риска зависит от качества кости, состояния дёсен и наличия инфекции на момент удаления. Тщательный осмотр и визуализация — лучший способ избежать неожиданностей."}},{"@type":"Question","name":"Покрывает ли страховка импланты после удаления зуба?","acceptedAnswer":{"@type":"Answer","text":"Покрытие зависит от плана. Одни полисы участвуют в оплате удаления, но не импланта, другие могут покрыть часть хирургического этапа или коронки. Лучший шаг — запросить письменную смету и попросить клинику проверить ваши льготы до начала лечения."}}]}]` }}
@@ -438,6 +440,6 @@ export default function DentalImplantsAfterToothExtractionPost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

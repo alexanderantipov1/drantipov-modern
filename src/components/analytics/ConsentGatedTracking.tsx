@@ -3,16 +3,21 @@
 import { GoogleAnalytics } from "./GoogleAnalytics";
 import { GoogleTagManager } from "./GoogleTagManager";
 import MicrosoftClarity from "@/components/MicrosoftClarity";
+import { useEffect, useState } from "react";
+import { CONSENT_CHANGED, hasAnalyticsConsent } from "@/lib/tracking";
 
 /**
- * Loads third-party tracking (GA, GTM, Clarity) on every visit.
- *
- * NOTE: Consent gating is currently disabled to capture all traffic. Consent
- * Mode defaults are set to "granted" (see DEFAULT_CONSENT in src/lib/tracking.ts),
- * so analytics run in full mode without waiting for the cookie banner. The cookie
- * banner still records the user's choice and can downgrade consent on Reject.
+ * No vendor script is rendered until an explicit stored acceptance exists.
  */
 export function ConsentGatedTracking() {
+  const [accepted, setAccepted] = useState(false);
+  useEffect(() => {
+    const sync = () => setAccepted(hasAnalyticsConsent());
+    sync();
+    window.addEventListener(CONSENT_CHANGED, sync);
+    return () => window.removeEventListener(CONSENT_CHANGED, sync);
+  }, []);
+  if (!accepted) return null;
   return (
     <>
       <GoogleAnalytics />

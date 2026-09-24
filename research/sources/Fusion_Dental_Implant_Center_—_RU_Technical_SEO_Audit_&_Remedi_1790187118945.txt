@@ -1,0 +1,468 @@
+Technical SEO Audit & Remediation Plan
+Fusion Dental Implant Center — Russian-Language Section
+Document purpose: client-facing implementation plan and acceptance criteria. This is not
+authorization to change the English-language site or shared production infrastructure without
+regression testing.
+
+
+Executive Summary
+The supplied audit contains several valid findings, but its recommendations should not be
+implemented as one undifferentiated checklist. The highest-value work is the
+multilingual/indexation layer, deterministic server output, structured-data accuracy, localization
+quality, internal crawl paths, and measurable mobile performance. Several other items are
+hygiene tasks or optional improvements, while a few recommendations are technically incorrect
+or unnecessarily risky.
+The Russian and English versions share one domain, codebase, templates, caching/CDN
+behavior, analytics, and conversion paths. Every template-level change must therefore be
+treated as a whole-site release even when the SEO scope is limited to /ru/.
+
+Recommended implementation order
+   ●​ First: freeze a baseline crawl and release test set for both EN and RU.
+   ●​ Second: repair hreflang/canonical/indexability relationships and stabilize the
+      server-rendered language output.
+   ●​ Third: correct structured-data identity and rating inconsistencies, then remove English
+      interface leakage from RU templates and add transparent original/translation handling
+      for patient reviews.
+   ●​ Fourth: fix high-value RU metadata, broken internal links, redirecting internal links, and
+      mobile Core Web Vitals.
+   ●​ Fifth: complete medium-priority template hygiene and optional enhancements only after
+      P0/P1 verification.
+
+Key reviewer conclusions
+   ●​ Accept: bidirectional hreflang remediation, sitemap completeness review, deterministic
+      lang output, broken-link cleanup, direct internal links, interface localization, transparent
+      review-translation UX, structured-data corrections, and targeted performance work.
+   ●​ Accept with revision: HSTS, headings, image optimization, alt text, titles/H1/meta
+      descriptions, cookie/privacy work, and HTML sitemap recommendations.
+   ●​ Do not implement as written: nofollow on every external link, rewriting Next.js image
+      optimization URLs solely to make them “SEO-friendly,” forcing every H1 to differ from the
+      title, enforcing a universal 160-character description limit, converting all flagged headings
+      to divs, or using a green PageSpeed score as the acceptance criterion.
+Scope, Evidence, and Guardrails
+  ●​ Primary SEO scope: Russian-language URLs under /ru/.
+  ●​ Shared-site safeguard: verify EN behavior after every change to routing, metadata
+     generation, templates, schema, caching, image delivery, headers, analytics, or consent
+     logic.
+  ●​ Evidence base: the contractor’s base technical audit, the structured-data audit, the
+     remaining technical SEO issues report, the semantic-core review, prior project
+     discussions, and a current public-page spot-check.
+  ●​ Confirmed public observation: the RU homepage still contains English review-module
+     labels, CTA text, service descriptions, and interface fragments. English patient-authored
+     reviews are authentic source content and require transparent translation handling rather
+     than silent replacement.
+  ●​ Not independently re-crawled in full: every URL list attached to the contractor audit.
+     Counts from those reports should be revalidated immediately before implementation.
+  ●​ No production edit should be marked complete without a before/after URL list, test
+     evidence, and confirmation that EN templates and conversions were not damaged.
+
+
+Priority Definitions
+  ●​ P0 — Blocking / immediate: can impair multilingual interpretation, indexation
+     consistency, or safe deployment across the shared site.
+  ●​ P1 — High: meaningful SEO, trust, crawl, conversion, or structured-data impact;
+     implement after P0 safeguards.
+  ●​ P2 — Medium: useful quality, accessibility, social-sharing, security, or maintenance
+     improvement; schedule after P0/P1.
+  ●​ P3 — Reject or defer: not an SEO requirement, incorrectly generalized, low-value
+     relative to cost, or risky if applied sitewide.
+
+
+P0 — Blocking / Immediate
+P0-1. Rebuild reciprocal hreflang clusters and align canonicals
+  ●​ Evidence: the supporting audit reports 128 indexable RU URLs, but only 8 complete
+     EN↔RU pairs; 120 RU pages reportedly lack a return link from the EN version.
+  ●​ Required action: maintain one translation-pair registry and generate the same
+     self-reference, alternate-language reference, and agreed x-default on both versions.
+     Never point an untranslated URL to an unrelated homepage.
+  ●​ Canonical rule: each indexable language page should normally self-canonicalize. Do not
+     canonicalize RU pages to EN merely because the content topics overlap.
+  ●​ Validation: every hreflang target returns 200, is indexable, does not redirect, matches its
+     canonical, and returns the same reciprocal cluster.
+  ●​ Client decision: confirm whether the target codes should be en-US / ru-US or generic en
+     / ru, and confirm the x-default destination.
+  ●​ Owner: developer, with SEO mapping supplied and approved before implementation.
+  ●​ EN/shared-site risk: critical. A global generator change can invalidate EN annotations or
+     canonicals across the domain.
+
+P0-2. Make server-rendered language output deterministic
+  ●​ Evidence: the same /ru/ URL has reportedly returned lang="ru" or lang="en" depending
+     on device, user agent, cache, cookies, JavaScript, or rendering path; Google Search
+     Console captured an English value on a Russian page.
+  ●​ Required action: /ru/ must consistently return <html lang="ru"> in the initial server
+     response; EN pages must return <html lang="en">. Review locale resolution, hydration,
+     edge/CDN cache keys, cookie behavior, and shared layouts.
+  ●​ Important nuance: Google does not use the HTML lang attribute by itself to detect page
+     language. The priority comes from deterministic rendering, accessibility, browser
+     behavior, and the possibility that the same inconsistency also affects metadata, schema,
+     hreflang, or content.
+  ●​ Validation: test representative EN and RU URLs with desktop/mobile user agents, clean
+     sessions, different cache states, JavaScript disabled where possible, and Search
+     Console live inspection. HTML source and hydrated DOM must agree.
+  ●​ EN/shared-site risk: critical. Fix the shared locale mechanism, not only individual RU
+     pages.
+
+P0-3. Establish a single indexability inventory and repair XML
+sitemap coverage
+  ●​ Evidence: the supporting audit reports 30 indexable URLs outside the XML sitemap,
+     including 29 RU location pages and one EN gallery page.
+  ●​ Required action: create one inventory containing final URL, language, template, HTTP
+     status, indexability, canonical, hreflang cluster, sitemap inclusion, and strategic decision.
+  ●​ Decision gate: add a URL to the sitemap only if it is canonical, indexable, returns 200,
+     and is intended to rank. Otherwise change its indexability or consolidate it; do not use
+     the sitemap to legitimize thin or unapproved location pages.
+  ●​ Location-page safeguard: confirm which locations are actual offices versus service-area
+     pages. Avoid large sets of near-duplicate city pages without distinct patient value.
+  ●​ Validation: XML sitemap contains only approved canonical 200 URLs; lastmod reflects
+     substantive changes; sitemap and HTML hreflang logic agree.
+  ●​ EN/shared-site risk: high because sitemap generation is shared and the reported gap
+     includes an EN URL.
+P0-4. Create release gates before template-level implementation
+  ●​ Required action: capture a pre-change crawl and a representative QA set covering
+     EN/RU homepages, service pages, articles, locations, contact, insurance, case galleries,
+     and 404 pages.
+  ●​ Required action: deploy through a reviewed GitHub pull request and staging/preview
+     environment where available; document changed templates and generated metadata.
+  ●​ Release gate: no unexpected changes to EN titles, canonicals, hreflang, schema,
+     internal links, forms, phone links, GTM/GA4 events, or Salesforce lead delivery.
+  ●​ Rollback requirement: keep the prior production version and configuration available until
+     post-release checks pass.
+
+
+P1 — High Priority
+
+P1-1. Localize RU templates without misrepresenting original
+reviews
+  ●​ Confirmed observation: the public RU homepage still shows English interface labels,
+     CTAs, service descriptions, gallery text, and review-module labels. English
+     patient-authored review text is a separate case and should not automatically be treated
+     as localization leakage.
+  ●​ Required action: localize all site-authored template strings under /ru/, including CTAs,
+     review-module labels, filters, related-content cards, footer elements, accessibility labels,
+     form states, and validation/error messages.
+  ●​ Authenticity rule: do not replace an English patient review with Russian copy presented
+     as though the patient wrote it in Russian. Keep the reviewer name, rating, review date,
+     location, source, and original English text unchanged.
+  ●​ Recommended review widget: on RU pages, show a Russian translation with a visible
+     label and provide an accessible “Show original” / “Show translation” toggle. The original
+     English review remains the authoritative source.
+  ●​ Translation labeling: use “Translated from English” only for a human-reviewed
+     translation; use “Automatically translated from English” when machine translation is
+     shown. Patient names and other identity fields must never be translated.
+  ●​ Technical implementation: render the review and translation in indexable,
+     server-delivered HTML where feasible; mark the original text with lang="en" and the
+     translation with lang="ru"; make the toggle keyboard- and screen-reader-accessible and
+     ensure both states work without changing the EN template.
+  ●​ Data integrity: retain the source review ID and original text, store the translation as a
+     separate field, and refresh or invalidate it if the source review changes. Do not overwrite
+     the source review body.
+  ●​ Platform option: Places API (New) exposes both localized review text and originalText,
+     but returns a limited review set. Before implementation, confirm the current review
+     source/widget, Google Maps and author attribution, API limits, caching rules, and
+     product terms. If the current widget cannot expose both versions, use a custom
+     accessible component or an approved widget that can.
+  ●​ Structured-data rule: any Review markup must match the visible review, rating, author,
+     source, and language presentation. A machine translation must not be represented as
+     the unqualified original review text.
+  ●​ Validation: compare every displayed review against its source; test labels and toggle
+     behavior on mobile and desktop; inspect initial HTML and the hydrated DOM; verify that
+     Google Maps/source attribution remains visible and accurate.
+  ●​ EN/shared-site risk: high if locale strings or review data are stored in shared
+     components. EN review rendering and copy must remain unchanged.
+
+P1-2. Correct page identity in structured data
+  ●​ Evidence: the structured-data report states that 297/297 tested URLs repeat a
+     homepage MedicalWebPage identity instead of describing the current URL.
+  ●​ Required action: generate WebPage or MedicalWebPage per canonical URL with
+     page-specific @id, url, name, inLanguage, isPartOf, and relevant mainEntity/about
+     relationships.
+  ●​ Required action: use stable @id references for shared Organization, LocalBusiness,
+     WebSite, and Person entities instead of reproducing a large commercial graph on every
+     internal page.
+  ●​ Validation: service, article, location, contact, legal, collection, and 404 templates each
+     expose only entities supported by visible page content and pass syntax plus semantic
+     review.
+  ●​ EN/shared-site risk: high. This is a shared graph/template change.
+
+P1-3. Resolve rating and review-count inconsistencies
+  ●​ Evidence: the schema audit reported 4.9/312 sitewide, while visible public content
+     currently presents different combinations, including 4.7 with 740+ patients and 4.9 with
+     300+ reviews on the same RU homepage.
+  ●​ Required action: choose one verifiable source of truth and distinguish reviews, patients,
+     cases, and ratings. Do not use these counts interchangeably.
+  ●​ Required action: remove sitewide AggregateRating/Review markup until the visible
+     value, count, entity, and source are consistent. Do not expect self-serving LocalBusiness
+     review stars in Google.
+  ●​ Validation: every displayed and marked-up rating/count is identical, current, attributable,
+     and visible on the page where it is marked up.
+  ●​ Client decision: identify the approved review platform/data source and the precise
+     meaning of each count.
+  ●​ EN/shared-site risk: high because rating components and schema appear global.
+
+P1-4. Prioritize titles, H1s, and meta descriptions by page value
+  ●​ Evidence: the contractor supplied separate URL lists for missing titles, missing H1s,
+     missing descriptions, duplicate H1s, and long descriptions.
+  ●​ Required action: re-crawl and prioritize indexable RU money pages first: full-arch
+     implants, implant rescue, single/multiple implants, zygomatic implants, bone grafting,
+     consultation, and approved locations.
+  ●​ Title/H1 rule: both should accurately describe the page and may legitimately be similar.
+     Do not rewrite solely because they match.
+  ●​ Description rule: write unique, useful snippets for important indexable pages. There is no
+     universal 160-character requirement; optimize for clarity and expected display, not a
+     hard cutoff.
+  ●​ H1 rule: use a clear primary heading and logical hierarchy. Do not treat every repeated
+     or multiple H1 as an error without inspecting the rendered template.
+  ●​ Validation: page-to-keyword mapping, unique intent, correct language, no template
+     leakage, and no accidental EN changes.
+
+P1-5. Repair broken internal links and links that pass through
+redirects
+  ●​ Required action: replace internal links to 4xx/5xx URLs with the correct live destination
+     or remove them when no valid destination exists.
+  ●​ Required action: update internal links that currently point to redirecting URLs so they link
+     directly to the final canonical URL; retain necessary redirect rules for external traffic and
+     historical URLs.
+  ●​ Validation: zero unintended broken internal links in the approved crawl; no avoidable
+     internal redirect chains; navigation, footer, breadcrumbs, related content, and CTA links
+     tested.
+  ●​ EN/shared-site risk: medium to high when links come from shared navigation or
+     templates.
+
+P1-6. Improve mobile performance using Core Web Vitals, not a
+color score
+  ●​ Evidence: the contractor supplied mobile PageSpeed reports for several RU and EN
+     templates but did not provide a root-cause breakdown or field-data baseline.
+  ●​ Required action: diagnose representative templates using field data where available and
+     lab traces for root causes. Prioritize LCP, INP, and CLS at the 75th percentile, plus
+     conversion usability.
+  ●​ Likely workstreams to validate: hero/LCP image delivery, responsive image sizes, font
+     loading, unused JavaScript, hydration cost, third-party scripts, caching, lazy loading
+     below the fold, and layout-reserved dimensions.
+  ●​ Acceptance criterion: material improvement in field Core Web Vitals and no regression to
+     forms, analytics, accessibility, image quality, or EN pages. A green
+     Lighthouse/PageSpeed score is not the project goal.
+  ●​ EN/shared-site risk: critical because performance code, image components, and scripts
+     are shared.
+P1-7. Normalize article and medical structured-data types
+  ●​ Evidence: the structured-data audit reports widespread use of MedicalScholarlyArticle
+     for ordinary patient guides and inconsistent author/publisher links.
+  ●​ Required action: use Article or BlogPosting for patient education unless a page is
+     genuinely a scholarly publication. Connect author and publisher to stable
+     Person/Organization @id values.
+  ●​ Required action: preserve only properties supported by visible content, including
+     headline, description, dates, image, and mainEntityOfPage.
+  ●​ Validation: each article template uses the correct type; author/publisher entities are not
+     duplicated; medical topics may be represented through about/mentions where
+     appropriate.
+  ●​ EN/shared-site risk: high because article templates span both languages.
+
+P1-8. Protect analytics and conversions during SEO releases
+  ●​ Required action: test RU form submissions, click-to-call, consultation CTAs, thank-you
+     behavior, GTM/GA4 events, consent behavior, and Salesforce lead receipt before and
+     after release.
+  ●​ Required action: preserve tracking identifiers and event names when headings, buttons,
+     templates, cookie logic, or client-side rendering are changed.
+  ●​ Validation: one documented end-to-end test per primary RU conversion path plus an EN
+     regression test.
+  ●​ EN/shared-site risk: critical; a technically correct SEO release is unacceptable if lead
+     tracking or conversion elements fail.
+
+
+P2 — Medium Priority
+P2-1. Repair heading semantics template by template
+  ●​ Required action: inspect page outlines by template and use headings for meaningful
+     sections in a logical hierarchy. Links, logos, form labels, decorative labels, and
+     layout-only text should not become headings.
+  ●​ Do not bulk-convert every reported H3/H4 to div. Many listed items are legitimate
+     service, FAQ, process, location, or physician section headings.
+  ●​ Validation: each template has a coherent accessible outline and no heading is removed
+     solely because it is repeated visually.
+
+P2-2. Improve image delivery and alt text selectively
+  ●​ Required action: compress oversized assets, use modern formats where supported,
+     serve responsive dimensions, and avoid loading unnecessarily large images.
+  ●​ Do not impose a universal 100 KB limit; acceptable size depends on dimensions, format,
+     quality, placement, and performance impact.
+  ●​ Alt-text rule: write concise contextual alt text for informative images; use empty alt for
+     decorative images; avoid keyword stuffing and duplicating adjacent captions.
+  ●​ Validation: reduced transferred bytes and improved LCP/CLS where relevant, with image
+     quality and accessibility preserved.
+
+P2-3. Standardize Open Graph and social metadata
+  ●​ Evidence: the supporting audit reports missing og:image, og:url, and og:locale across
+     multiple templates.
+  ●​ Required action: generate page-specific og:title, og:description, og:image, og:url,
+     og:type, and consistent locale values. Use absolute, accessible image URLs.
+  ●​ Validation: social preview test on representative EN/RU templates; og:url equals the
+     canonical URL; shared templates do not cross languages.
+
+P2-4. Complete supporting schema only where visible and
+relevant
+  ●​ Add BreadcrumbList only when visible breadcrumbs exist and match the marked-up
+     hierarchy.
+  ●​ Use ContactPage, CollectionPage/ItemList, MedicalProcedure, and location business
+     entities only when the visible page content supports them.
+  ●​ FAQPage must be generated from the same visible Q&A source; markup should not
+     contain hidden or unrelated questions.
+  ●​ 404/410 pages should retain noindex and avoid the full commercial entity graph.
+  ●​ Validation: schema tests plus manual semantic review; a passing parser alone is not
+     sufficient.
+
+P2-5. Implement HSTS as a security project, not an SEO shortcut
+  ●​ Required action: first verify HTTPS availability, redirects, certificates, third-party
+     dependencies, and every required subdomain.
+  ●​ Enable a safe Strict-Transport-Security policy in stages. Consider preload only after the
+     domain and all required subdomains satisfy preload requirements and the client accepts
+     the operational commitment.
+  ●​ Do not describe HSTS preload as a direct ranking fix.
+  ●​ EN/shared-site risk: critical at the infrastructure level; a mistake can make the entire
+     domain or subdomains inaccessible.
+
+P2-6. Review cookie consent and privacy implementation
+  ●​ Required action: have the client’s legal/privacy owner confirm required notices, policy
+     text, consent categories, and regional behavior. SEO should not draft legal compliance
+     rules.
+  ●​ Technical requirement: consent logic must not block essential page content or break
+     permitted analytics/conversion tracking; tags must respect the selected consent state.
+  ●​ Validation: banner links, policy pages, consent persistence, tag behavior, and EN/RU
+     language variants tested.
+
+P2-7. Remove obsolete meta keywords as low-risk hygiene
+  ●​ Removing meta keywords is reasonable cleanup but is not expected to improve Google
+     rankings.
+  ●​ Implement only when convenient within shared metadata work; do not prioritize above
+     indexation, multilingual, content, or performance issues.
+
+P2-8. Qualify outbound links individually
+  ●​ Use rel="sponsored" for paid links and rel="ugc" for user-generated links. Use nofollow
+     when the site does not want to endorse or associate with a destination.
+  ●​ Normal editorial links to trusted professional organizations, licensing bodies, sources, or
+     partners do not need blanket nofollow.
+  ●​ Validation: review by link purpose, not with a global regex or sitewide attribute.
+
+P2-9. Treat an HTML sitemap as optional UX support
+  ●​ An XML sitemap and crawlable internal architecture are the SEO requirements. A
+     human-readable HTML sitemap is optional.
+  ●​ Create one only if it materially helps users or exposes otherwise hard-to-reach approved
+     pages; do not use it to compensate for weak navigation or thin location-page
+     architecture.
+
+
+P3 — Reject or Defer
+P3-1. Do not rewrite Next.js image optimization URLs for
+“SEO-friendly” appearance
+  ●​ URLs under /_next/image are normal delivery endpoints for optimized assets and are not
+     inherently an SEO error.
+  ●​ Only change the image pipeline if original assets are inaccessible, indexing is required
+     and blocked, caching is poor, or performance tests show a real problem.
+
+P3-2. Do not add nofollow to every external link
+  ●​ Blanket nofollow removes useful editorial signals and is not required by Google.
+  ●​ Classify paid, user-generated, untrusted, and normal editorial links separately.
+
+P3-3. Do not force H1 and title to be different
+  ●​ Similarity is often natural because both identify the page topic.
+  ●​ Rewrite only when one element is inaccurate, duplicated across multiple URLs, overly
+     generic, or misaligned with search intent.
+
+P3-4. Do not enforce a universal 160-character description limit
+  ●​ Google may truncate or rewrite snippets and does not define a fixed ranking threshold at
+     160 characters.
+  ●​ Prioritize usefulness, uniqueness, intent alignment, and high-value pages.
+
+P3-5. Do not use a green PageSpeed score as the acceptance
+criterion
+  ●​ Use PageSpeed/Lighthouse as diagnostics. Accept work based on field Core Web
+     Vitals, root-cause resolution, conversion usability, and absence of regressions.
+
+P3-6. Do not globally replace reported headings with div elements
+  ●​ Several reported headings describe real sections and FAQs. A blind replacement can
+     damage accessibility, document structure, and search understanding.
+  ●​ Correct the component semantics after reviewing each template role.
+
+
+Implementation Phases and Control Points
+Phase 0 — Baseline and decisions
+  ●​ Export current GSC coverage, performance, Core Web Vitals, and sitemap status for RU
+     and EN.
+  ●​ Run one full crawl with rendered and source-HTML checks.
+  ●​ Create the EN↔RU URL-pair registry and decide indexability for every RU location
+     page.
+  ●​ Confirm approved rating/review sources, language-region codes, x-default destination,
+     and implementation owner.
+  ●​ Define the staging and rollback process.
+
+Phase 1 — Multilingual and indexation foundation
+  ●​   Implement reciprocal hreflang/canonical logic.
+  ●​   Stabilize server-rendered lang and locale-dependent metadata/content.
+  ●​   Rebuild XML sitemap from the approved indexability inventory.
+  ●​   Run EN/RU regression tests and Search Console live inspections.
+
+Phase 2 — Shared template and trust fixes
+  ●​ Remove RU interface localization leakage and implement transparent original/translation
+     handling for patient reviews.
+  ●​ Correct WebPage identity, global graph scope, ratings, article types, and entity
+     references.
+  ●​ Repair high-value metadata, broken links, and redirecting internal links.
+  ●​ Confirm conversions and analytics.
+
+Phase 3 — Performance and supporting quality
+  ●​ Implement measured Core Web Vitals improvements.
+  ●​ Optimize responsive images and alt text.
+  ●​ Repair headings, Open Graph, breadcrumb/template schema, privacy/consent behavior,
+     and security items as approved.
+
+
+Release Acceptance Checklist
+  ●​ Representative RU and EN pages return the expected 200/3xx/4xx status.
+  ●​ Canonicals are correct and language-specific.
+  ●​ Hreflang clusters are reciprocal, self-referencing, canonical-aligned, and free of
+     redirect/noindex targets.
+  ●​ Server HTML and hydrated DOM return the correct lang, locale, metadata, and content.
+  ●​ XML sitemap contains only approved canonical indexable 200 URLs.
+  ●​ Structured data matches the current page and visible content; ratings and counts use an
+     approved source.
+  ●​ RU templates contain no unintended English interface or explanatory copy; authentic
+     English reviews retain the original text, and any RU translation is clearly labeled and
+     paired with an accessible original/translation toggle.
+  ●​ Internal broken links and avoidable redirect hops are removed.
+  ●​ Forms, phone links, GTM/GA4 events, consent behavior, and Salesforce lead delivery
+     pass end-to-end tests.
+  ●​ Mobile performance is compared against the baseline using field data where available.
+  ●​ No unintended EN template, ranking-signal, analytics, or conversion regression is
+     observed.
+  ●​ GSC live tests and post-deployment crawl results are attached to the completion report.
+
+
+Client Decisions Required Before Development
+  ●​ Which RU location pages should be indexable, and which locations are actual offices
+     versus broader service areas?
+  ●​ Should hreflang target en-US / ru-US or generic en / ru, and where should x-default
+     point?
+  ●​ What is the authoritative source for ratingValue, reviewCount, patient counts, and other
+     trust metrics? For review copy, approve human-reviewed translation, clearly labeled
+     machine translation, or original-only display.
+  ●​ Which privacy/cookie requirements and consent platform have been approved by
+     legal/privacy stakeholders?
+   ●​ Who owns implementation, staging QA, production deployment, rollback, and final SEO
+      acceptance?
+   ●​ Which changes may touch shared EN templates, and who provides EN-side approval?
+
+
+Required Contractor Reporting
+   ●​ For every issue: baseline count, affected URL list, implementation specification, owner,
+      status, deployment reference, and verification result.
+   ●​ Separate fixed, partially fixed, not fixed, out of scope, rejected, and awaiting client
+      decision.
+   ●​ Report RU and EN regression results separately.
+   ●​ Do not mark a broad template task complete based on one manually checked URL.
+   ●​ Use measurable acceptance criteria from this document rather than statements such as
+      “improved,” “optimized,” or “green zone reached.”
+
+
+Limitations
+This document consolidates and reviews the supplied audits and a public-page spot-check. It
+does not replace a fresh authenticated crawl, Search Console data, repository review,
+CDN/cache configuration review, analytics debug session, or legal review. URL counts and
+issue statuses should be revalidated immediately before implementation and again after
+deployment.
+

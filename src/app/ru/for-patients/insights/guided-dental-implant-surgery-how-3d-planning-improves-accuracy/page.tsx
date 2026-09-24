@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Имплантация по шаблону: 3D-планирование",
   description:
     "Что такое имплантация по навигационному шаблону: 3D-снимки CBCT, индивидуальные хирургические шаблоны, преимущества по точности и то, чего ждать в день операции с доктором Антиповым.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Как 3D-снимки, цифровое планирование и индивидуальные хирургические шаблоны повышают точность имплантации.",
     images: ["/images/blog/2026-06-19/guided-implant-surgery.png"],
   }
-}
+}, "/ru/for-patients/insights/guided-dental-implant-surgery-how-3d-planning-improves-accuracy")
 
 export default function GuidedDentalImplantSurgeryPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/guided-dental-implant-surgery-how-3d-planning-improves-accuracy">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/guided-dental-implant-surgery-how-3d-planning-improves-accuracy#article","headline":"Имплантация по шаблону: как 3D-планирование повышает точность","description":"Что такое имплантация по навигационному шаблону: 3D-снимки CBCT, индивидуальные хирургические шаблоны, преимущества по точности и то, чего ждать в день операции.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/guided-dental-implant-surgery-how-3d-planning-improves-accuracy","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/guided-implant-surgery.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/ru/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/guided-dental-implant-surgery-how-3d-planning-improves-accuracy"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Какие снимки используют при имплантации по шаблону?","acceptedAnswer":{"@type":"Answer","text":"В большинстве случаев применяют снимок CBCT для 3D-планирования. Также часто делают цифровые сканы зубов и дёсен, чтобы хирургический план совпадал с финальной формой зубов."}},{"@type":"Question","name":"Сколько длится имплантация по шаблону?","acceptedAnswer":{"@type":"Answer","text":"Сама операция может занимать очень по-разному. Установка одного импланта иногда проходит быстро, а восстановление полного ряда длится дольше из-за нескольких имплантов и дополнительных этапов. Этап планирования проходит до операции, и именно он во многом повышает точность и предсказуемость."}},{"@type":"Question","name":"Болезненна ли имплантация по шаблону?","acceptedAnswer":{"@type":"Answer","text":"Процедуру обычно проводят под местной анестезией, а при необходимости доступны варианты седации. Большинство пациентов описывают давление во время лечения и лёгкую или умеренную болезненность после, которая обычно снимается рекомендованными препаратами и уходом."}},{"@type":"Question","name":"Можно ли при имплантации по шаблону поставить зубы в тот же день при полном ряде?","acceptedAnswer":{"@type":"Answer","text":"Во многих случаях полного ряда планирование по шаблону помогает поставить временный несъёмный мост в тот же день, если позволяют клинические условия. Это зависит от стабильности имплантов, жевательных нагрузок и общего плана. Хирург должен объяснить, подходит ли немедленная нагрузка и какие ограничения соблюдать в период заживления."}},{"@type":"Question","name":"Имплантация по шаблону безопаснее установки от руки?","acceptedAnswer":{"@type":"Answer","text":"Планирование по шаблону во многих случаях повышает безопасность, потому что помогает обойти нервы и пазухи и поставить импланты там, где они лучше поддержат финальные зубы. Установка от руки тоже может быть очень успешной, особенно у опытного врача. Лучший подход зависит от вашей анатомии, сложности случая и целей лечения."}},{"@type":"Question","name":"Сокращает ли имплантация по шаблону срок восстановления?","acceptedAnswer":{"@type":"Answer","text":"Может, особенно когда установка по шаблону позволяет делать меньшие разрезы или проводить операцию эффективнее. Восстановление всё равно зависит от числа имплантов, удалений, костной пластики и индивидуальных особенностей заживления."}},{"@type":"Question","name":"Имплантация по шаблону стоит дороже?","acceptedAnswer":{"@type":"Answer","text":"Иногда такие случаи включают дополнительные расходы на планирование и изготовление шаблона. Многие пациенты считают, что повышенная точность и предсказуемость того стоят, особенно при восстановлении полного ряда, где точное положение влияет на долговечную посадку и работу конструкции."}},{"@type":"Question","name":"Что делать, если нужны костная пластика или удаление зубов?","acceptedAnswer":{"@type":"Answer","text":"Планирование по шаблону можно сочетать с удалением зубов или костной пластикой — в зависимости от сроков и плана лечения. Хирург может порекомендовать поэтапный подход для большей стабильности, особенно при инфекции или убыли кости."}}]}]` }}
@@ -461,6 +463,6 @@ export default function GuidedDentalImplantSurgeryPost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

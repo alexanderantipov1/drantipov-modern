@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import { siteConfig } from "@/constants/siteConfig";
 import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/structured-data";
 import DualCTA from "@/components/DualCTA";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Восстановление после челюстной операции — неделя за неделей | Доктор Антипов",
   description:
     "Подробное руководство по восстановлению после ортогнатической операции — неделя за неделей. Что ждать с первых 24 часов до полной консолидации кости за 12 месяцев.",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [{ url: "/images/corrective-jaw-surgery/corrective-jaw-surgery-97156448.jpg", width: 1920, height: 1080, alt: "Восстановление после челюстной операции" }],
   },
-};
+}, "/ru/jaw-surgery-recovery-timeline");
 
 const faqs = [
   { question: "Когда можно вернуться на работу после челюстной операции?", answer: "Офисные работники чаще всего возвращаются через 2–3 недели. Физический труд — 4–6 недель. Мы пишем индивидуальные справки на работу под вашу операцию и темп восстановления." },

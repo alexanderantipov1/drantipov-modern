@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import SmileGallery from "@/components/SmileGallery";
@@ -7,7 +8,7 @@ import { structuredDataScript } from "@/lib/structured-data";
 
 const ogImage = smileGalleryPhotos[0]?.src ?? "/images/smile-gallery/patient-01.jpeg";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: { absolute: "Галерея улыбок — реальные результаты пациентов | Доктор Антипов" },
   description:
     "Реальные результаты пациентов после восстановления зубов на имплантах (полная челюсть) у доктора Александра Антипова в Roseville, Калифорния.",
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
       "Реальные преображения улыбок после имплантации всей челюсти в Roseville, Калифорния.",
     images: [ogImage],
   },
-};
+}, "/ru/smile-gallery");
 
 const SITE_URL = "https://www.drantipov.com";
 
@@ -67,6 +68,7 @@ export default function RuSmileGalleryPage() {
         dangerouslySetInnerHTML={structuredDataScript([imageGallerySchema])}
       />
       <PageHero
+        locale="ru"
         image="/images/smile-gallery/patient-01.jpeg"
         eyebrow="Реальные результаты пациентов"
         title="Галерея улыбок"

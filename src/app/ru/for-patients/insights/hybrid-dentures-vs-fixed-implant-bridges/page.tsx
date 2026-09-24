@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Гибридные протезы или несъёмные мосты на имплантах",
   description:
     "Выбираете восстановление всей челюсти? Сравните гибридные протезы на имплантах и несъёмные мосты на имплантах по ощущениям, стоимости, уходу и сроку службы — с доктором Антиповым в Roseville.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Сравнение протезов на имплантах и несъёмных мостов на имплантах по ощущениям, стоимости, уходу и сроку службы.",
     images: ["/images/blog/2026-06-19/hybrid-vs-fixed.png"],
   }
-}
+}, "/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges")
 
 export default function HybridVsFixedPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges#article","headline":"Гибридные протезы или несъёмные мосты на имплантах","description":"Сравнение гибридных протезов на имплантах и несъёмных мостов на имплантах по ощущениям, стоимости, уходу и сроку службы, чтобы помочь пациентам выбрать подходящее восстановление всей челюсти.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/hybrid-vs-fixed.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/hybrid-dentures-vs-fixed-implant-bridges"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Гибридный протез лучше, чем All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Они решают разные задачи. Несъёмный мост All-on-4 ощущается естественнее, а съёмный гибридный протез легче для бюджета и идеален для некоторых анатомических особенностей."}},{"@type":"Question","name":"Можно ли спать с несъёмным мостом на имплантах?","acceptedAnswer":{"@type":"Answer","text":"Да. Несъёмный мост остаётся во рту круглосуточно и снимается только стоматологом для периодического обслуживания."}},{"@type":"Question","name":"Сколько служат гибридные протезы?","acceptedAnswer":{"@type":"Answer","text":"Импланты рассчитаны на десятилетия. Сама протезная часть обычно требует перебазировки каждые несколько лет и замены каждые 7–10 лет, а крепления нуждаются в периодической замене."}},{"@type":"Question","name":"Какой вариант ощущается естественнее?","acceptedAnswer":{"@type":"Answer","text":"Пациенты стабильно отмечают, что несъёмные мосты на имплантах ощущаются ближе всего к собственным зубам — без перекрытия нёба и без снятия на ночь. Гибридные протезы всё равно держатся гораздо надёжнее обычных протезов, но они съёмные и более громоздкие."}},{"@type":"Question","name":"Можно ли позже перейти с гибридного протеза на несъёмный мост?","acceptedAnswer":{"@type":"Answer","text":"Часто да. Гибридный протез иногда можно модернизировать в несъёмный мост по мере установки дополнительных имплантов, так что первоначальный выбор — это лучшее решение на сейчас, а не пожизненное обязательство."}}]}]` }}
@@ -299,6 +301,6 @@ export default function HybridVsFixedPost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

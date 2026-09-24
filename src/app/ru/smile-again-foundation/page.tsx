@@ -1,10 +1,11 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/constants/siteConfig";
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Smile Again Foundation — Возвращаем улыбки, возвращаем жизни | Доктор Антипов",
   description:
     "Smile Again Foundation основан доктором Александром Антиповым в 2025 году. Некоммерческая организация, которая бесплатно проводит восстановительное стоматологическое лечение нуждающимся пациентам в Северной Калифорнии.",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [{ url: "/images/landing-pages/dental-implants/art/smiling-woman-7bc2b588.jpg", width: 1920, height: 1080, alt: "Smile Again Foundation" }],
   },
-};
+}, "/ru/smile-again-foundation");
 
 const pillars = [
   { title: "Бесплатная имплантация полного зубного ряда", description: "Бесплатные All-on-4 и сложная имплантационная реконструкция для пациентов с тяжёлым финансовым положением, которые без помощи остались бы без функциональных зубов." },

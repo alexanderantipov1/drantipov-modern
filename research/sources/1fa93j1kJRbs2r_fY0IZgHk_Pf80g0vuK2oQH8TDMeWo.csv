@@ -1,0 +1,5 @@
+Type,From,To,Anchor Text,Alt Text,Follow,Target,Rel,Status Code,Status,Path Type,Link Path,Link Position,Link Origin
+Hyperlink,https://www.drantipov.com/media/videos,https://www.youtube.com/@DrAntipovchannel,Subscribe on YouTube,,True,_blank,noopener noreferrer,404,Not Found,Absolute,//body/main/section[6]/div/div/div/a[1],Content,HTML
+Hyperlink,https://www.drantipov.com/ru/media/videos,https://www.youtube.com/@DrAntipovchannel,Подписаться на YouTube,,True,_blank,noopener noreferrer,404,Not Found,Absolute,//body/main/section[6]/div/div/div/a[1],Content,HTML
+Hyperlink,https://www.drantipov.com/for-dentists/education/courses,https://www.udemy.com/user/dr-alexander-antipov/ ,Browse All Courses on Udemy (opens in a new tab),,True,_blank,noopener noreferrer,403,Forbidden,Absolute,//body/main/section[5]/div/div/div/a[1],Content,HTML
+Hyperlink,https://www.drantipov.com/ru/for-dentists/education/courses,https://www.udemy.com/user/dr-alexander-antipov/,Все курсы на Udemy,,True,_blank,noopener noreferrer,403,Forbidden,Absolute,//body/main/div/main/section[5]/div/div/a[1],Content,HTML

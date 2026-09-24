@@ -1,3 +1,5 @@
+import PatientArticleSchema from "@/components/PatientArticleSchema";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import { Section, Container, GlassCard } from "@/components/sections"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -6,7 +8,7 @@ import { Calendar, ArrowLeft, Clock } from "lucide-react"
 import Image from "next/image"
 import { Metadata } from "next"
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "Стоимость имплантов All-on-X: 4, 6 или 8 имплантов?",
   description:
     "Что на самом деле означает All-on-X, как стоимость зависит от числа имплантов на челюсть — 4, 6 или 8, что входит в смету и как понять, что нужно именно в вашем случае.",
@@ -45,11 +47,11 @@ export const metadata: Metadata = {
     description: "Как меняется стоимость имплантации всей челюсти при 4, 6 или 8 имплантах — и как правильно сравнивать сметы.",
     images: ["/images/blog/2026-06-19/all-on-x-cost.png"],
   }
-}
+}, "/ru/for-patients/insights/all-on-x-dental-implants-cost")
 
 export default function AllOnXCostPost() {
   return (
-    <>
+    <PatientArticleSchema path="/ru/for-patients/insights/all-on-x-dental-implants-cost">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: `[{"@context":"https://schema.org","@type":"MedicalScholarlyArticle","@id":"https://www.drantipov.com/ru/for-patients/insights/all-on-x-dental-implants-cost#article","headline":"Стоимость имплантов All-on-X: 4, 6 или 8 имплантов?","description":"Что означает All-on-X, как стоимость зависит от числа имплантов на челюсть — 4, 6 или 8, что должно входить в смету и как понять, что нужно именно в вашем случае.","inLanguage":"ru","url":"https://www.drantipov.com/ru/for-patients/insights/all-on-x-dental-implants-cost","datePublished":"2026-06-19","dateModified":"2026-06-19","image":["https://www.drantipov.com/images/blog/2026-06-19/all-on-x-cost.png"],"author":{"@type":"Person","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com/about","identifier":"https://www.drantipov.com/#physician"},"publisher":{"@type":"Organization","name":"Dr. Alexander V. Antipov, DDS","url":"https://www.drantipov.com","logo":{"@type":"ImageObject","url":"https://www.drantipov.com/images/logo-d10cd66c.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.drantipov.com/ru/for-patients/insights/all-on-x-dental-implants-cost"}},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Достаточно ли All-on-4 прочен для обычной еды?","acceptedAnswer":{"@type":"Answer","text":"Да. All-on-4 выдерживает около 95% естественной силы укуса, и большинство пациентов едят что хотят, включая твёрдую и жёсткую пищу."}},{"@type":"Question","name":"Зачем вообще выбирать All-on-6 вместо All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Лучшее распределение нагрузки на длинных челюстях, дополнительная опора для тех, кто сильно сжимает зубы, отсутствие заднего консольного выноса и запас прочности на случай, если имплант не приживётся. В подходящем случае доплата оправдана."}},{"@type":"Question","name":"Одинакова ли стоимость для верхней и нижней челюсти?","acceptedAnswer":{"@type":"Answer","text":"Верхняя челюсть часто стоит чуть дороже, потому что кость там обычно мягче и ближе к пазухе, что иногда требует синус-лифтинга или скуловых имплантов."}},{"@type":"Question","name":"Что если я сейчас могу позволить только одну челюсть?","acceptedAnswer":{"@type":"Answer","text":"Многие пациенты сначала занимаются более проблемной челюстью, а вторую делают позже. Рассрочка тоже помогает разбить стоимость на посильные ежемесячные платежи."}},{"@type":"Question","name":"Все ли All-on-4 одинаковы?","acceptedAnswer":{"@type":"Answer","text":"Нет. Клиники сильно различаются по бренду имплантов, хирургической технике, материалу протеза и качеству лаборатории. Название одно и то же, но долговечность и результат отличаются существенно."}}]}]` }}
@@ -312,6 +314,6 @@ export default function AllOnXCostPost() {
           </article>
         </Container>
       </Section>
-    </>
+    </PatientArticleSchema>
   )
 }

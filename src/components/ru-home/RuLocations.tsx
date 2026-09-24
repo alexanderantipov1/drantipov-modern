@@ -59,9 +59,13 @@ export default function RuLocations() {
               className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-500"
             >
               <div className="relative h-48 overflow-hidden">
-                <Image src={loc.image} alt={loc.name} fill className="object-cover"
-          sizes="100vw"
-        />
+                <Image
+                  src={loc.image}
+                  alt={loc.name}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                />
                 {loc.primary && (
                   <div className="absolute top-3 left-3 px-3 py-1 bg-primary text-white text-xs font-semibold rounded-full">
                     Main Office

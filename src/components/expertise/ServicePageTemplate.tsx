@@ -4,7 +4,7 @@ import { Section, Container, GlassCard } from "@/components/sections";
 import { ExpertisePageHero } from "@/components/expertise/ExpertisePageHero";
 import {
   getMedicalProcedureSchema,
-  getBreadcrumbSchema,
+  getWebPageSchema,
   getFAQSchema,
   structuredDataScript,
 } from "@/lib/structured-data";
@@ -57,11 +57,12 @@ export default function ServicePageTemplate({
   const prefix = isRu ? "/ru" : "";
   const url = `${siteConfig.url}${prefix}/expertise/${data.slug}`;
 
-  const breadcrumb = getBreadcrumbSchema([
-    { name: isRu ? "Главная" : "Home", url: `${siteConfig.url}${prefix}` },
-    { name: isRu ? "Услуги" : "Expertise", url: `${siteConfig.url}${prefix}/expertise` },
-    { name: data.breadcrumbName, url },
-  ]);
+  const pageSchema = getWebPageSchema({
+    path: `${prefix}/expertise/${data.slug}`,
+    name: data.heroTitle,
+    locale,
+    type: "MedicalWebPage",
+  });
   const procedure = getMedicalProcedureSchema({
     name: data.procedureName,
     description: data.procedureDescription,
@@ -74,7 +75,7 @@ export default function ServicePageTemplate({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={structuredDataScript([breadcrumb, procedure, faqSchema])}
+        dangerouslySetInnerHTML={structuredDataScript([pageSchema, procedure, faqSchema])}
       />
 
       <ExpertisePageHero

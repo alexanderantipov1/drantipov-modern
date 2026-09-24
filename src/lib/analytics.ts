@@ -4,6 +4,7 @@
  * This file contains utilities for tracking events and page views
  * with Google Analytics 4. Property: G-9RB71866JE
  */
+import { hasAnalyticsConsent } from "./tracking"
 
 // Extend the Window interface to include gtag
 declare global {
@@ -30,7 +31,7 @@ export const isAnalyticsEnabled = () => {
  * Track page view
  */
 export const pageview = (url: string) => {
-  if (!isAnalyticsEnabled()) return
+  if (!isAnalyticsEnabled() || !hasAnalyticsConsent()) return
 
   window.gtag?.('config', GA_MEASUREMENT_ID!, {
     page_path: url,
@@ -51,7 +52,7 @@ export const event = ({
   label?: string
   value?: number
 }) => {
-  if (!isAnalyticsEnabled()) return
+  if (!isAnalyticsEnabled() || !hasAnalyticsConsent()) return
 
   window.gtag?.('event', action, {
     event_category: category,

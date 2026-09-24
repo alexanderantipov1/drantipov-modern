@@ -1,3 +1,5 @@
+import PageIdentity from "@/components/PageIdentity";
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -32,7 +34,7 @@ export async function generateMetadata({
   const title = `Челюстно-лицевой хирург в штате ${stateName} — Dr. Alexander V. Antipov`;
   const description = `Сертифицированный челюстно-лицевой хирург принимает пациентов из ${stateCities.length}+ населённых пунктов штата ${stateName} в клинике в Roseville: зубные импланты, ортогнатическая хирургия, апноэ сна (MMA) и эстетическая хирургия лица. Бесплатная консультация с 3D КТ.`;
 
-  return {
+  return finalizeMetadata({
     title: title.length > 60 ? { absolute: `Челюстно-лицевой хирург — штат ${stateName} | Dr. Antipov` } : { absolute: title },
     description,
     alternates: {
@@ -43,7 +45,7 @@ export async function generateMetadata({
         "x-default": `/locations/${state}`,
       },
     },
-  };
+  });
 }
 
 export default async function StateHubPage({
@@ -67,11 +69,11 @@ export default async function StateHubPage({
     {
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
-      "@id": `${siteConfig.url}/ru/locations/${state}#business`,
+      "@id": `${siteConfig.url}/#organization`,
       inLanguage: "ru",
-      name: `${siteConfig.name} — приём пациентов из штата ${stateName}`,
+      name: siteConfig.name,
       description: `Практика челюстно-лицевой хирургии, обслуживающая пациентов по всему штату ${stateName}, под руководством Dr. Alexander V. Antipov (дипломант ABOMS).`,
-      url: `${siteConfig.url}/ru/locations/${state}`,
+      url: siteConfig.url,
       telephone: siteConfig.contact.phone,
       email: siteConfig.contact.email,
       address: {
@@ -87,7 +89,6 @@ export default async function StateHubPage({
         latitude: 38.7521,
         longitude: -121.2880,
       },
-      parentOrganization: { "@id": `${siteConfig.url}/#organization` },
       areaServed: stateCities.map((c) => ({
         "@type": "City",
         name: c.city,
@@ -103,6 +104,7 @@ export default async function StateHubPage({
 
   return (
     <>
+      <PageIdentity path={`/ru/locations/${state}`} name={`Приём пациентов из штата ${stateName}`} locale="ru" type="CollectionPage" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={structuredDataScript(structuredData)}

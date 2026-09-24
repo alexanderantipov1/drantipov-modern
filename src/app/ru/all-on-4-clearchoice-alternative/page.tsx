@@ -1,3 +1,4 @@
+import { finalizeMetadata } from "@/lib/seo-foundation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import { siteConfig } from "@/constants/siteConfig";
 import { getBreadcrumbSchema, getFAQSchema, structuredDataScript } from "@/lib/structured-data";
 import DualCTA from "@/components/DualCTA";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = finalizeMetadata({
   title: "All-on-4: независимый хирург против корпоративных сетей",
   description:
     "Сравните варианты All-on-4 в Северной Калифорнии: независимый сертифицированный челюстно-лицевой хирург против корпоративных стоматологических сетей. Прозрачность цен, опыт хирурга и философия лечения.",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [{ url: "/images/fullarch/08-final-result.jpeg", width: 1920, height: 1080, alt: "Сравнение альтернатив All-on-4" }],
   },
-};
+}, "/ru/all-on-4-clearchoice-alternative");
 
 const faqs = [
   { question: "Почему корпоративные стоматологические сети такие дорогие?", answer: "Корпоративные сети обычно берут $35 000–60 000+ за челюсть. В эту цену входят расходы на отделы продаж, национальную рекламу, сеть клиник и текучку персонала. Независимые челюстно-лицевые хирурги часто берут на 30–50% меньше, потому что у них нет такого корпоративного оверхеда." },

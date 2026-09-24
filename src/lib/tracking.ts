@@ -51,11 +51,17 @@ interface ConsentState {
 }
 
 const DEFAULT_CONSENT: ConsentState = {
-  ad_storage: "granted",
-  analytics_storage: "granted",
+  ad_storage: "denied",
+  analytics_storage: "denied",
   functionality_storage: "granted",
-  personalization_storage: "granted",
+  personalization_storage: "denied",
   security_storage: "granted",
+}
+
+export const CONSENT_CHANGED = "fdi-consent-changed"
+
+export function hasAnalyticsConsent(): boolean {
+  return new CookieManager().getJSONCookie<ConsentState>(COOKIE_NAMES.consent)?.analytics_storage === "granted"
 }
 
 function generateId(): string {
@@ -78,6 +84,9 @@ export class ConsentManager {
   }
 
   initialize(): void {
+    // Queue consent before any Google scripts are allowed to mount.
+    window.dataLayer = window.dataLayer || []
+    window.gtag = window.gtag || function () { window.dataLayer!.push(arguments) }
     const consent = this.getConsent()
     if (consent) {
       this.updateGTMConsent(consent)
@@ -106,10 +115,25 @@ export class ConsentManager {
   }
 
   saveConsent(updates: Partial<ConsentState>): void {
+    const wasAccepted = hasAnalyticsConsent()
     const current = this.getConsent() || DEFAULT_CONSENT
     const newConsent = { ...current, ...updates }
     this.cookieManager.setJSONCookie(COOKIE_NAMES.consent, newConsent, 365)
     this.updateGTMConsent(newConsent)
+    window.dispatchEvent(new Event(CONSENT_CHANGED))
+    if (wasAccepted && newConsent.analytics_storage === "denied") {
+      // Removing a script element cannot stop already-running vendor code.
+      // Clear accessible tracking cookies, then restart with denied consent.
+      const names = document.cookie.split(";").map(cookie => cookie.trim().split("=")[0] || "")
+      for (const name of names) {
+        if (/^(_ga|_gid|_gat|_gcl_|_clck|_clsk|_fdi_(sess|ft|mkt|cid))/.test(name)) {
+          this.cookieManager.deleteCookie(name)
+          document.cookie = `${name}=; Max-Age=0; path=/`
+          document.cookie = `${name}=; Max-Age=0; path=/; domain=${window.location.hostname}`
+        }
+      }
+      window.location.reload()
+    }
   }
 
   acceptAll(): void {
@@ -164,8 +188,15 @@ export class Tracker {
     this.initialized = true
 
     this.consentManager.initialize()
-    this.extractAndStoreMarketingParams()
-    this.initializeSession()
+    let trackingStarted = false
+    const startTracking = () => {
+      if (!hasAnalyticsConsent() || trackingStarted) return
+      trackingStarted = true
+      this.extractAndStoreMarketingParams()
+      this.initializeSession()
+    }
+    startTracking()
+    window.addEventListener(CONSENT_CHANGED, startTracking)
   }
 
   private extractAndStoreMarketingParams(): void {
@@ -240,6 +271,7 @@ export class Tracker {
   }
 
   getTrackingData(): Record<string, unknown> {
+    if (!hasAnalyticsConsent()) return this.consentManager.getConsentState()
     const session = this.cookieManager.getJSONCookie<SessionData>(COOKIE_NAMES.session)
     const marketing = this.cookieManager.getJSONCookie<MarketingParams>(COOKIE_NAMES.marketing)
     const attribution = this.cookieManager.getJSONCookie<Record<string, string>>(COOKIE_NAMES.firstTouch)

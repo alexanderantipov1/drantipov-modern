@@ -102,7 +102,7 @@ export default function RuOfficeTour() {
               <button onClick={() => setLightbox(null)} className="absolute -top-12 right-0 text-white/70 hover:text-white">
                 <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
               </button>
-              <Image src={allImages[lightbox] ?? ""} alt={`${officeImages[lightbox]?.label ?? "Office"} — клиника доктора Антипова в Roseville`} width={1400} height={900} className="w-full h-auto rounded-2xl" />
+              <Image src={allImages[lightbox] ?? ""} alt={`${officeImages[lightbox]?.label ?? "Клиника"} — клиника доктора Антипова в Розвилле`} width={1400} height={900} className="w-full h-auto rounded-2xl" />
               <div className="mt-4 flex justify-between">
                 <button onClick={() => setLightbox(Math.max(0, lightbox - 1))} disabled={lightbox === 0} className="px-4 py-2 bg-white/10 rounded-xl text-white text-sm disabled:opacity-30">&larr; Назад</button>
                 <span className="text-white text-sm">{lightbox + 1} / {allImages.length}</span>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 
 export type DualCTAVariant = "surgical" | "implants" | "dual";
@@ -16,24 +17,45 @@ export default function DualCTA({
   variant = "dual",
   heading,
   subheading,
-  footnote = "Free 3D CT Scan · No Obligation · Flexible Financing · Roseville, CA · Restrictions apply",
+  footnote,
 }: DualCTAProps) {
+  const pathname = usePathname();
+  const isRu = pathname === "/ru" || pathname?.startsWith("/ru/");
   const defaultHeading =
-    variant === "surgical"
+    isRu
+      ? variant === "surgical"
+        ? "Обсудим вашу операцию?"
+        : variant === "implants"
+        ? "Готовы вернуть улыбку?"
+        : "Запишитесь на консультацию"
+    : variant === "surgical"
       ? "Ready to Discuss Your Surgery?"
       : variant === "implants"
       ? "Ready to Restore Your Smile?"
       : "Schedule Your Consultation";
 
   const defaultSub =
-    variant === "surgical"
+    isRu
+      ? variant === "surgical"
+        ? "Dr. Antipov проводит челюстно-лицевые операции. Запишитесь на консультацию, чтобы обсудить процедуру."
+        : variant === "implants"
+        ? "Планируете установку одного импланта или восстановление всей челюсти? Начните с бесплатной консультации по имплантации и 3D КТ."
+        : "Обсудите с доктором Антиповым варианты лечения, включая 3D-диагностику и индивидуальный план."
+    : variant === "surgical"
       ? "Dr. Antipov performs full-scope oral and maxillofacial surgery. Schedule a consultation to discuss your procedure."
       : variant === "implants"
       ? "Whether you're considering single-tooth implants or full-arch restoration, start with a free dental implant consultation and 3D CT scan."
       : "Meet Dr. Antipov and discuss your treatment options, including advanced 3D imaging and a personalized treatment plan.";
 
   const buttonLabel =
-    variant === "implants" ? "Free Dental Implant Consultation" : "Book a Consultation";
+    isRu
+      ? variant === "implants" ? "Бесплатная консультация по имплантации" : "Записаться на консультацию"
+      : variant === "implants" ? "Free Dental Implant Consultation" : "Book a Consultation";
+  const defaultFootnote = isRu
+    ? variant === "implants"
+      ? "3D КТ включена · Без обязательств · Рассрочка · Roseville, CA · Действуют ограничения"
+      : "3D-диагностика · Индивидуальный план лечения · Roseville, CA"
+    : "Free 3D CT Scan · No Obligation · Flexible Financing · Roseville, CA · Restrictions apply";
 
   return (
     <section className="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-br from-navy via-navy-dark to-navy">
@@ -70,11 +92,11 @@ export default function DualCTA({
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              Call (916) 783-2110
+              {isRu ? "Позвонить (916) 783-2110" : "Call (916) 783-2110"}
             </a>
           </div>
 
-          <p className="mt-8 text-sm text-white/60">{footnote}</p>
+          <p className="mt-8 text-sm text-white/60">{footnote ?? defaultFootnote}</p>
         </motion.div>
       </div>
     </section>

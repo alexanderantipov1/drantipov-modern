@@ -9,6 +9,7 @@ export interface BreadcrumbItem {
 interface BreadcrumbsProps {
   items: BreadcrumbItem[];
   className?: string;
+  locale?: "en" | "ru";
 }
 
 /**
@@ -16,20 +17,21 @@ interface BreadcrumbsProps {
  * The corresponding BreadcrumbList JSON-LD should be emitted separately
  * via getBreadcrumbSchema() from @/lib/structured-data.
  */
-export default function Breadcrumbs({ items, className = "" }: BreadcrumbsProps) {
+export default function Breadcrumbs({ items, className = "", locale = "en" }: BreadcrumbsProps) {
+  const isRu = locale === "ru" || items.some((item) => item.href === "/ru" || item.href?.startsWith("/ru/"));
   return (
     <nav
-      aria-label="Breadcrumb"
+      aria-label={isRu ? "Навигационная цепочка" : "Breadcrumb"}
       className={`text-sm ${className}`}
     >
       <ol className="flex flex-wrap items-center gap-1.5">
         <li className="flex items-center">
           <Link
-            href="/"
+            href={isRu ? "/ru" : "/"}
             className="flex items-center gap-1 text-neutral-500 hover:text-primary transition-colors"
           >
             <Home className="h-3.5 w-3.5" />
-            <span className="sr-only sm:not-sr-only">Home</span>
+            <span className="sr-only sm:not-sr-only">{isRu ? "Главная" : "Home"}</span>
           </Link>
         </li>
         {items.map((item, idx) => {

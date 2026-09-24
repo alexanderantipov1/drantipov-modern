@@ -113,7 +113,7 @@ export default async function StateHubPage({
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-navy via-navy-dark to-navy text-white py-20 lg:py-28 overflow-hidden">
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="text-sm text-white/60 mb-6" aria-label="Breadcrumb">
+          <nav className="text-sm text-white/60 mb-6" aria-label="Навигационная цепочка">
             <Link href="/ru" className="hover:text-white">
               Главная
             </Link>
@@ -192,7 +192,7 @@ export default async function StateHubPage({
                         {c.city}, {c.state}
                       </h4>
                       <p className="mt-1 text-sm text-neutral-600">
-                        {c.driveTime} · {c.distanceMi} миль от Roseville
+                        {c.driveTime.replace(/\bhr\b/g, "ч").replace(/\bmin\b/g, "мин")} · {c.distanceMi} миль от Roseville
                       </p>
                       <span className="mt-3 inline-block text-primary text-sm font-semibold">
                         Открыть {c.city} →

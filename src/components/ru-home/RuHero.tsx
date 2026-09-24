@@ -179,7 +179,7 @@ export default function RuHero({ heading }: { heading?: React.ReactNode } = {}) 
                   rel="noopener nofollow"
                   className="text-primary text-xs font-bold tracking-widest uppercase hover:text-primary-light transition-colors"
                 >
-                  Diplomate · ABOMS
+                  Сертификация ABOMS
                 </a>
                 <h3 className="font-serif text-white text-xl font-bold mt-1">
                   Доктор Александр Антипов, DDS

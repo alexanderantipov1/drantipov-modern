@@ -52,7 +52,7 @@ export default function RuWallOfSmiles() {
             >
               <Image
                 src={photo.src}
-                alt={photo.alt}
+                 alt={`Улыбка пациента после ${photo.alt.includes("full-arch") ? "восстановления полного зубного ряда" : "имплантации зубов"}`}
                 fill
                 className="object-cover"
                 sizes="(min-width: 1024px) 14rem, (min-width: 640px) 12rem, 10rem"

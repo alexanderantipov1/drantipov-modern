@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const badges = [
-  { label: "ABOMS Board-Certified", icon: "shield" },
+  { label: "Сертификация ABOMS", icon: "shield" },
   { label: "Член AAOMS", icon: "badge" },
   { label: "Член CALAOMS", icon: "badge" },
   { label: "Член ADA", icon: "badge" },

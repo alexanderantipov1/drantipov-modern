@@ -300,7 +300,7 @@ export const fullArchLanding: Record<FullArchLocale, FullArchLandingContent> = {
       body: "Заполните основное. Команда свяжется с вами, расскажет о следующем шаге и что подготовить к консультации.",
       name: "Полное имя",
       phone: "Телефон",
-      email: "Email",
+      email: "Электронная почта",
       city: "Город",
       condition: "Что лучше всего описывает ваши зубы?",
       timing: "Когда хотите начать?",
@@ -323,7 +323,7 @@ export const fullArchLanding: Record<FullArchLocale, FullArchLandingContent> = {
         "Хочу второе мнение",
       ],
       timingOptions: ["Как можно скорее", "В этом месяце", "1–3 месяца", "Пока просто узнаю"],
-      contactOptions: ["Звонок", "SMS", "Email", "WhatsApp", "Telegram"],
+      contactOptions: ["Звонок", "SMS", "Электронная почта", "WhatsApp", "Telegram"],
     },
     offer: {
       eyebrow: "Что входит в консультацию",

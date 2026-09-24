@@ -1,0 +1,30 @@
+const { test } = require("node:test")
+const assert = require("node:assert/strict")
+const { readFileSync } = require("node:fs")
+const { join } = require("node:path")
+
+const component = (file) => readFileSync(join(__dirname, "..", file), "utf8")
+
+test("RU consultation modal uses the original Fusion form and endpoint", () => {
+  const modal = component("forms/ConsultationModal.tsx")
+  const form = component("forms/MultiStepConsultationForm.tsx")
+  assert.match(modal, /<MultiStepConsultationForm onClose=.*locale=\{isRu \? "ru" : "en"\}/)
+  assert.doesNotMatch(modal, /RussianMultiStepForm/)
+  assert.match(form, /fetch\("\/api\/submit-consultation"/)
+  assert.doesNotMatch(form, /fetch\("\/api\/lead"/)
+  assert.match(form, /businessUnit: "Fusion Dental Implants"/)
+  assert.match(form, /getRecaptchaToken\("form_submit"\)/)
+  assert.match(form, /currentSituation\.includes\("missingTeeth"\)/)
+  assert.match(form, /locale = "en"/)
+  assert.match(form, /tr\("Please select at least one option", "Выберите хотя бы один вариант"\)/)
+  assert.match(form, /tr\("Booking Confirmed!", "Запись подтверждена!"\)/)
+})
+
+test("RU shared CTA renders Russian while EN retains the original copy", () => {
+  const cta = component("DualCTA.tsx")
+  assert.match(cta, /pathname === "\/ru" \|\| pathname\?\.startsWith\("\/ru\/"\)/)
+  assert.match(cta, /"Бесплатная консультация по имплантации"/)
+  assert.match(cta, /"Free Dental Implant Consultation"/)
+  assert.match(cta, /isRu \? "Позвонить \(916\) 783-2110" : "Call \(916\) 783-2110"/)
+  assert.match(cta, /footnote \?\? defaultFootnote/)
+})

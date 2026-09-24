@@ -33,7 +33,7 @@ export const metadata: Metadata = finalizeMetadata({
   openGraph: {
     title: "О докторе Александре Антипове",
     description:
-      "Сертифицированный челюстно-лицевой хирург — Diplomate ABOMS. 25+ лет возвращает улыбки в Roseville, CA.",
+      "Сертифицированный челюстно-лицевой хирург (ABOMS). Более 25 лет возвращает улыбки пациентам в Розвилле, Калифорния.",
     locale: "ru_RU",
     images: [
       {
@@ -48,7 +48,7 @@ export const metadata: Metadata = finalizeMetadata({
     card: "summary_large_image",
     title: "О докторе Александре Антипове",
     description:
-      "Сертифицированный челюстно-лицевой хирург — Diplomate ABOMS. 25+ лет возвращает улыбки в Roseville, CA.",
+      "Сертифицированный челюстно-лицевой хирург (ABOMS). Более 25 лет возвращает улыбки пациентам в Розвилле, Калифорния.",
     images: ["/images/drantipov-about-v6.jpg"],
   },
 }, "/ru/about");
@@ -69,7 +69,7 @@ export default function RuAboutPage() {
             url: `${siteConfig.url}/ru/about`,
             name: "О докторе Александре Антипове, DDS",
             description:
-              "Сертифицированный челюстно-лицевой хирург, практикующий в Roseville, Калифорния. Diplomate American Board of Oral and Maxillofacial Surgery (ABOMS), 25+ лет хирургического опыта.",
+              "Сертифицированный Американским советом челюстно-лицевой хирургии (ABOMS) хирург, практикующий в Розвилле, Калифорния. Более 25 лет хирургического опыта.",
             inLanguage: "ru",
             mainEntity: { "@id": `${siteConfig.url}/#physician` },
           },

@@ -76,7 +76,7 @@ export default function ZygomaticImplantsPost() {
             {/* Meta Info */}
             <div className="flex flex-wrap items-center gap-4 text-sm text-neutral-600 mb-6">
               <Badge className="bg-primary-100 text-primary-700 hover:bg-primary-200">
-                Dental Implants
+                Зубные импланты
               </Badge>
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
@@ -173,29 +173,29 @@ export default function ZygomaticImplantsPost() {
               </ol>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
-                Recovery
+                Восстановление
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
                 Большинство пациентов возвращаются на работу через 5–7 дней. Первые две недели — мягкая диета, сниженная физическая активность и тщательная гигиена. Контрольные приёмы: 7-й, 30-й, 90-й день и через 6 месяцев. Полная остеоинтеграция занимает 4–6 месяцев, но временные зубы делают этот период комфортным — и есть, и общаться можно нормально.
               </p>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
-                Who Performs It
+                Кто проводит операцию
               </h2>
               <p className="text-neutral-700 leading-relaxed mb-6">
-                Скуловую имплантацию делает только челюстно-лицевой хирург с fellowship-подготовкой. Это не процедура общей стоматологии. <Link href="/ru/about" className="text-primary-700 hover:text-primary-800 font-semibold">Доктор Антипов</Link>:
+                Скуловую имплантацию проводит челюстно-лицевой хирург со специальной подготовкой. Это не процедура общей стоматологии. <Link href="/ru/about" className="text-primary-700 hover:text-primary-800 font-semibold">Доктор Антипов</Link>:
               </p>
               <ul className="space-y-3 text-neutral-700 leading-relaxed mb-6 list-none pl-0">
-                <li>— Diplomate American Board of Oral &amp; Maxillofacial Surgery (ABOMS).</li>
-                <li>— Fellowship-подготовка по продвинутой имплантологии и реконструкции верхней челюсти.</li>
-                <li>— 25+ лет board-certified практики, 10 000+ возвращённых улыбок.</li>
+                <li>— Сертификация Американского совета челюстно-лицевой хирургии (ABOMS).</li>
+                <li>— Углублённая подготовка по имплантологии и реконструкции верхней челюсти.</li>
+                <li>— Более 25 лет сертифицированной практики, свыше 10 000 восстановленных улыбок.</li>
                 <li>
                   — Принимает пациентов из других штатов и стран на скуловую имплантацию (Roseville, CA — 30 минут от международного аэропорта Сакраменто).
                 </li>
               </ul>
 
               <h2 className="text-3xl font-serif font-bold text-neutral-900 mt-12 mb-6">
-                Frequently Asked Questions
+                Частые вопросы
               </h2>
 
               <div className="space-y-6 my-8">

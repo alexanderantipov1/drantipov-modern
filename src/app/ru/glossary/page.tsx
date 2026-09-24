@@ -88,7 +88,7 @@ const sections: { heading: string; intro: string; terms: Term[] }[] = [
       { term: "Закись азота (веселящий газ)", body: "Газ для лёгкой релаксации, вдыхается через маску. Пациент в сознании. После прекращения подачи действие проходит за несколько минут." },
       { term: "IV-седация", body: "Седативные препараты вводятся внутривенно. Пациент дышит сам, но почти ничего не помнит. Самый частый выбор при удалении зубов мудрости, имплантации и биопсии." },
       { term: "Общий наркоз", body: "Пациент полностью без сознания, дыхание поддерживается. Применяют при крупных операциях вроде ортогнатики в условиях стационара." },
-      { term: "ABOMS (American Board of Oral and Maxillofacial Surgery)", body: "Сертификация совета, которая подтверждает, что хирург прошёл аккредитованную резидентуру по челюстно-лицевой хирургии и сдал серьёзные письменные и устные экзамены. Золотой стандарт в специальности." },
+      { term: "ABOMS (Американский совет челюстно-лицевой хирургии)", body: "Сертификация совета подтверждает, что хирург прошёл аккредитованную резидентуру по челюстно-лицевой хирургии и сдал письменные и устные экзамены." },
     ],
   },
   {
@@ -108,7 +108,7 @@ const sections: { heading: string; intro: string; terms: Term[] }[] = [
       { term: "«Сухая лунка» (альвеолярный остеит)", body: "Болезненное состояние, когда сгусток крови в лунке после удаления выпадает и обнажается кость. Случается в 1–5% удалений. Лечится медикаментозной повязкой." },
       { term: "Перикоронит", body: "Воспаление дёсен вокруг частично прорезавшегося зуба — частая причина для удаления зуба мудрости." },
       { term: "Парестезия", body: "Временное (редко стойкое) онемение из-за раздражения нерва. Чаще всего возникает при удалении нижних зубов мудрости рядом с нижнечелюстным нервом. Обычно проходит за недели или месяцы." },
-      { term: "Pericoronitis", body: "Infection of the gum tissue around a partially erupted wisdom tooth, often the reason for surgical removal." },
+      { term: "Перикоронит", body: "Воспаление десны вокруг частично прорезавшегося зуба мудрости; часто становится причиной его хирургического удаления." },
     ],
   },
 ];
@@ -147,7 +147,7 @@ export default function GlossaryPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/85 to-dark/55" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
-          <nav aria-label="Breadcrumb" className="text-sm text-white/60 mb-6">
+          <nav aria-label="Навигационная цепочка" className="text-sm text-white/60 mb-6">
             <ol className="flex flex-wrap items-center gap-2">
               <li><Link href="/ru" className="hover:text-primary-light">Главная</Link></li>
               <li aria-hidden="true">/</li>
@@ -161,7 +161,7 @@ export default function GlossaryPage() {
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-white/85">
             Понятные определения терминов, которые вы услышите на консультации: All-on-4, скуловые импланты, синус-лифтинг, остеоинтеграция, MMA и других.
           </p>
-          <nav aria-label="Sections" className="mt-8 flex flex-wrap gap-2">
+          <nav aria-label="Разделы" className="mt-8 flex flex-wrap gap-2">
             {sections.map((s, i) => (
               <a
                 key={s.heading}
@@ -218,13 +218,13 @@ export default function GlossaryPage() {
               href="/ru/contact"
               className="rounded-2xl bg-primary-600 px-7 py-4 text-base font-bold text-white transition hover:-translate-y-0.5 hover:bg-primary-700"
             >
-              Schedule a free consultation
+              Записаться на бесплатную консультацию
             </Link>
             <Link
               href="/ru/expertise"
               className="rounded-2xl border border-white/25 bg-white/10 px-7 py-4 text-base font-bold text-white backdrop-blur-sm transition hover:bg-white/20"
             >
-              Browse procedures
+              Посмотреть процедуры
             </Link>
           </div>
         </div>

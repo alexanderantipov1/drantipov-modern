@@ -132,7 +132,7 @@ export default function RecoveryTimelinePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/85 to-dark/55" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
-          <nav aria-label="Breadcrumb" className="text-sm text-white/60 mb-6">
+          <nav aria-label="Навигационная цепочка" className="text-sm text-white/60 mb-6">
             <ol className="flex flex-wrap items-center gap-2">
               <li><Link href="/ru" className="hover:text-primary-light">Главная</Link></li>
               <li aria-hidden="true">/</li>

@@ -169,7 +169,7 @@ export default function RuLocationsPage() {
                         {c.city}, {c.state}
                       </h4>
                       <p className="mt-1 text-sm text-neutral-600">
-                        {c.driveTime} · {c.distanceMi} миль от Roseville
+                        {c.driveTime.replace(/\bhr\b/g, "ч").replace(/\bmin\b/g, "мин")} · {c.distanceMi} миль от Roseville
                       </p>
                       <span className="mt-3 inline-block text-primary text-sm font-semibold">
                         Открыть {c.city} →

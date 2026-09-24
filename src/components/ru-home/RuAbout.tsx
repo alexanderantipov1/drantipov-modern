@@ -13,7 +13,7 @@ const stats = [
 
 const antipovCredentials = [
   "Премия Neodent Elite Practitioner 2026 (Straumann Group)",
-  "Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS)",
+  "Сертификация Американского совета челюстно-лицевой хирургии (ABOMS)",
   "Член American Association of Oral & Maxillofacial Surgeons (AAOMS)",
   "Член California Association of Oral & Maxillofacial Surgeons (CALAOMS)",
   "Член Sacramento District Dental Society (SDDS)",
@@ -99,7 +99,7 @@ export default function RuAbout() {
                 </div>
               </div>
               <p className="text-muted text-xs leading-relaxed">
-                Diplomate, American Board of Oral and Maxillofacial Surgery. Профиль — All-on-4, скуловые импланты, ортогнатика, эстетика лица. Принимаем пациентов из Roseville, Сакраменто, Сан-Франциско и всей Северной Калифорнии.
+                Доктор Антипов сертифицирован Американским советом челюстно-лицевой хирургии. Профиль — All-on-4, скуловые импланты, ортогнатика, эстетика лица. Принимаем пациентов из Розвилла, Сакраменто, Сан-Франциско и всей Северной Калифорнии.
               </p>
             </motion.div>
           </motion.div>
@@ -120,7 +120,7 @@ export default function RuAbout() {
               Доктор Александр Антипов — <strong>сертифицированный челюстно-лицевой хирург</strong> в Roseville, Калифорния. За <strong>25+ лет</strong> и <strong>более 10 000 успешных операций</strong> он стал одним из самых известных специалистов Северной Калифорнии в области <strong>дентальной имплантации</strong>, <strong>корректирующей хирургии челюстей</strong> и <strong>эстетической хирургии лица</strong>.
             </p>
             <p className="mt-4 text-muted leading-relaxed">
-              As a Diplomate of the American Board of Oral and Maxillofacial Surgery and fellowship-trained in complex implant reconstruction, Dr. Antipov brings an unmatched depth of expertise to every case. He is one of the few surgeons in Northern California who performs <strong>zygomatic implants</strong> for patients with severe bone loss, <strong>full arch All-on-4 and All-on-6 immediate-load protocols</strong>, complex <strong>orthognathic jaw surgery</strong> including Le Fort osteotomies, BSSO, and genioplasty, and advanced <strong>facial cosmetic procedures</strong> including rhinoplasty and face lift surgery.
+              Доктор Антипов — сертифицированный специалист American Board of Oral and Maxillofacial Surgery, прошедший углублённую подготовку по сложной реконструктивной имплантации. Он применяет свой опыт в каждом клиническом случае. Он один из немногих хирургов Северной Калифорнии, выполняющих <strong>скуловую имплантацию</strong> при выраженной потере кости, <strong>полное восстановление зубного ряда по протоколам All-on-4 и All-on-6 с немедленной нагрузкой</strong>, сложные <strong>ортогнатические операции</strong>, включая остеотомию Le Fort, BSSO и гениопластику, а также <strong>эстетические операции на лице</strong>, в том числе ринопластику и подтяжку лица.
             </p>
 
             {/* Credentials */}
@@ -154,7 +154,7 @@ export default function RuAbout() {
               <div className="relative bg-white min-h-[320px] lg:min-h-[520px]">
                 <Image
                   src="/images/about/neodent-award-plaque-v4.jpeg"
-                  alt="2026 Neodent Elite Practitioner Award plaque engraved for Dr. Alexander Antipov"
+                  alt="Наградная табличка Neodent Elite Practitioner Award 2026 с именем доктора Александра Антипова"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -183,7 +183,7 @@ export default function RuAbout() {
                 <div className="mt-8">
                   <Image
                     src="/images/about/neodent-logo.png"
-                    alt="Neodent — A Straumann Group Brand"
+                    alt="Neodent — бренд группы Straumann"
                     width={414}
                     height={122}
                     className="h-12 w-auto"
@@ -318,14 +318,14 @@ export default function RuAbout() {
               <button
                 className="px-8 py-3.5 bg-primary text-white rounded-2xl font-semibold hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 cursor-pointer"
               >
-                Book a Free Consultation
+                Записаться на бесплатную консультацию
               </button>
             </ConsultationModal>
             <a
               href="/ru/our-team"
               className="px-8 py-3.5 border-2 border-dark/10 text-dark rounded-2xl font-semibold hover:border-primary hover:text-primary transition-all duration-300"
             >
-              Meet Our Surgeons
+              Познакомиться с хирургами
             </a>
             <a
               href="#before-after"

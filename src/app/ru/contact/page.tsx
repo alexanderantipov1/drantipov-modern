@@ -88,7 +88,7 @@ export default function RuContactPage() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-neutral-900 mb-1">Email</h3>
+                     <h3 className="font-semibold text-neutral-900 mb-1">Электронная почта</h3>
                     <a
                       href={`mailto:${siteConfig.contact.email}`}
                       className="text-primary-600 hover:underline"
@@ -123,8 +123,8 @@ export default function RuContactPage() {
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-1">Часы работы</h3>
                     <div className="text-neutral-600">
-                      <p>{siteConfig.hours.weekday}</p>
-                      <p className="text-sm text-primary-600 mt-2">{siteConfig.hours.emergency}</p>
+                       <p>Понедельник — пятница: 8:00–17:00</p>
+                       <p className="text-sm text-primary-600 mt-2">Экстренная помощь по вызову доступна круглосуточно</p>
                     </div>
                   </div>
                 </GlassCard>

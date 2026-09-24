@@ -116,7 +116,7 @@ export default function InsightsPage() {
                     <div className="mt-6">
                       <Button asChild variant="outline" className="group">
                         <Link href={`/ru/for-patients/insights/${post.slug}`}>
-                          Read Article
+                          Читать статью
                           <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
                         </Link>
                       </Button>

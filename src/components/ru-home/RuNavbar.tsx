@@ -9,11 +9,11 @@ import { officePhone, officePhoneHref, officeEmail, officeAddress } from "@/data
 import LanguageToggle from "@/components/LanguageToggle";
 
 const expertiseItems = [
-  { slug: "full-arch-implants", title: "Имплантация полной дуги", desc: "All-on-4, All-on-6, zygomatic" },
+  { slug: "full-arch-implants", title: "Имплантация полного зубного ряда", desc: "All-on-4, All-on-6, скуловые импланты" },
   { slug: "single-tooth", title: "Одиночные импланты", desc: "Замена одного зуба" },
   { slug: "jaw-surgery", title: "Корригирующая хирургия", desc: "Ортогнатическая хирургия" },
-  { slug: "sleep-apnea", title: "Хирургия апноэ сна", desc: "Maxillomandibular advancement" },
-  { slug: "bone-grafting", title: "Костная пластика", desc: "Sinus lift, augmentation" },
+  { slug: "sleep-apnea", title: "Хирургия апноэ сна", desc: "Выдвижение верхней и нижней челюсти" },
+  { slug: "bone-grafting", title: "Костная пластика", desc: "Синус-лифтинг, наращивание кости" },
   { slug: "mole-removal", title: "Удаление родинок", desc: "Бесшрамная техника" },
 ];
 
@@ -23,7 +23,7 @@ const navLinks = [
   { href: "/ru/surgical-cases", label: "До и после" },
   { href: "/ru/for-patients", label: "Пациентам" },
     { href: "/ru/insurance", label: "Страховка" },
-  { href: "/ru/for-patients/faqs", label: "FAQ" },
+  { href: "/ru/for-patients/faqs", label: "Частые вопросы" },
   { href: "/ru/contact", label: "Контакты" },
 ];
 

@@ -139,7 +139,7 @@ export default function ServicePageTemplate({
       <Section background="accent" padding="xl">
         <Container size="md">
           <h2 className="font-serif text-3xl font-bold text-neutral-900 text-center mb-12">
-            Frequently asked questions
+            {isRu ? "Частые вопросы" : "Frequently asked questions"}
           </h2>
           <div className="space-y-3">
             {data.faqs.map((f, i) => (
@@ -173,13 +173,13 @@ export default function ServicePageTemplate({
         <Section background="default" padding="lg">
           <Container size="md">
             <h2 className="font-serif text-2xl font-bold text-neutral-900 text-center mb-8">
-              Related expertise
+              {isRu ? "Другие направления" : "Related expertise"}
             </h2>
             <div className="flex flex-wrap justify-center gap-3">
               {data.relatedLinks.map((link) => (
                 <Link
                   key={link.href}
-                  href={link.href}
+                  href={isRu && link.href.startsWith("/") && !link.href.startsWith("/ru/") ? `/ru${link.href}` : link.href}
                   className="inline-flex items-center rounded-full border border-neutral-200 bg-white px-5 py-2.5 text-sm font-semibold text-neutral-800 shadow-sm transition-colors hover:border-primary hover:text-primary"
                 >
                   {link.label} →

@@ -74,6 +74,32 @@ const cosmeticCases: CaseData[] = [
   { id: "fcs000006", label: "Кейс 6", title: "Азиатская блефаропластика — формирование двойного века", description: "Asian blepharoplasty (double eyelid surgery) creating a natural supratarsal crease for wider, more defined eyes while preserving ethnic features.", images: ["/images/cases/facial-cosmetic-surgery/fcs000006/1/gallery@2x-1b475bf7.jpg"] },
 ];
 
+const russianCaseDescriptions: Record<string, string> = {
+  oms000045: "Недоразвитие верхней челюсти, нарушение прикуса III класса, отклонение подбородка и носа. Остеотомия Le Fort I с костной пластикой верхней челюсти.",
+  oms000046: "Выраженная асимметрия верхней челюсти и нарушение прикуса II класса. Трёхфрагментная остеотомия Le Fort I, BSSO, костная пластика, ринопластика и пересадка собственного жира.",
+  oms000047: "Недоразвитие верхней и нижней челюстей, нарушение прикуса III класса. Трёхфрагментная остеотомия Le Fort I с выдвижением на 10 мм, BSSO и гениопластика.",
+  oms000048: "Синдром короткого лица, западение средней зоны лица и нарушение прикуса I класса. Трёхфрагментная остеотомия Le Fort I, выдвижение нижней челюсти методом BSSO и удлинение подбородка.",
+  oms000049: "Асимметрия верхней и нижней челюстей, скелетное нарушение прикуса II класса. BSSO, остеотомия Le Fort I и гениопластика.",
+  oms000050: "Асимметрия верхней и нижней челюстей, скелетное нарушение прикуса II класса. BSSO, остеотомия Le Fort I и гениопластика.",
+  oms000051: "Асимметрия верхней челюсти, чрезмерное развитие нижней, нарушение прикуса III класса и проблема ВНЧС. BSSO, остеотомия Le Fort I и гениопластика.",
+  oms000052: "Асимметрия обеих челюстей и нарушение прикуса II класса. Остеотомия Le Fort I, BSSO, гениопластика и выдвижение челюстей.",
+  di000001: "Восстановление полного зубного ряда по протоколу All-on-4 с немедленной нагрузкой. Четыре импланта поддерживают временный несъёмный протез, установленный в день операции.",
+  di000002: "Обширная костная пластика с двусторонним синус-лифтингом, затем установка нескольких имплантов и протезирование полного зубного ряда.",
+  di000003: "Удаление повреждённого зуба, установка импланта и временной коронки за один визит.",
+  di000004: "Восстановление обеих челюстей с опорой на шесть имплантов на каждой. Перед немедленной нагрузкой несъёмными протезами выполнены костная пластика и синус-лифтинг.",
+  di000005: "Зубы в день операции по протоколу All-on-4: удалены повреждённые зубы, установлено по четыре импланта на челюсть и сразу зафиксирован временный протез.",
+  di000006: "Срочная имплантация после травмы челюсти. Костные фрагменты стабилизированы материалом для пластики; импланты восстановили функцию и внешний вид.",
+  di000007: "Двусторонний синус-лифтинг с костной пластикой, затем установка имплантов на всю челюсть и несъёмное протезирование.",
+  di000009: "Несколько имплантов в боковом отделе поддерживают несъёмный мост, восстанавливая жевание без частичного съёмного протеза.",
+  di000010: "Комплексное восстановление зубов с костной пластикой натуральными материалами для создания достаточного объёма кости перед имплантацией.",
+  fcs000001: "Точное удаление заметной родинки на носу с минимальным образованием рубца. Естественный результат без видимого шрама.",
+  fcs000002: "Удаление крупной родинки на шее малоинвазивным методом без видимого рубца после заживления.",
+  fcs000003: "Безоперационное омоложение лица филлерами Juvederm: восстановление объёма, разглаживание морщин и коррекция контуров.",
+  fcs000004: "Увеличение губ филлером Juvederm для естественного объёма, улучшения симметрии и чёткости контура.",
+  fcs000005: "Комплексное омоложение лица: подтяжка и блефаропластика верхних и нижних век для естественного результата.",
+  fcs000006: "Азиатская блефаропластика с формированием естественной складки верхнего века, при которой сохраняются индивидуальные черты лица.",
+};
+
 type Category = "jaw" | "implants" | "cosmetic";
 
 const categories: { key: Category; label: string; count: number; cases: CaseData[] }[] = [
@@ -101,7 +127,7 @@ function CaseGallery({ caseData, categoryLabel }: { caseData: CaseData; category
             {count > 2 && (
               <button
                 onClick={() => setLightbox(0)}
-                aria-label={`Open full gallery (${count} фото)`}
+                aria-label={`Открыть всю галерею (${count} фото)`}
                 className="absolute top-3 left-1/2 -translate-x-1/2 z-10 bg-white/95 hover:bg-white text-dark text-xs font-bold px-3 py-1.5 rounded-full shadow-md transition"
               >
                 📷 Все {count} этапов
@@ -118,7 +144,7 @@ function CaseGallery({ caseData, categoryLabel }: { caseData: CaseData; category
               >
                 <Image
                   src={src}
-                  alt={`${caseData.label} — Photo ${i + 1}`}
+                  alt={`${caseData.label} — фото ${i + 1}`}
                   width={400}
                   height={500}
                   className="w-full h-auto block group-hover:scale-105 transition-transform duration-500"
@@ -144,12 +170,12 @@ function CaseGallery({ caseData, categoryLabel }: { caseData: CaseData; category
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
               </svg>
-              Click to enlarge
+              Нажмите, чтобы увеличить
             </div>
           </div>
           {caseData.description && (
             <p className="mt-1.5 text-xs text-muted/80 leading-relaxed">
-              {caseData.description}
+              {russianCaseDescriptions[caseData.id] ?? caseData.description}
             </p>
           )}
         </div>
@@ -181,7 +207,7 @@ function CaseGallery({ caseData, categoryLabel }: { caseData: CaseData; category
               </button>
               <Image
                 src={caseData.images[lightbox] ?? ""}
-                alt={`${caseData.label} — Photo ${lightbox + 1}`}
+                alt={`${caseData.label} — фото ${lightbox + 1}`}
                 width={1200}
                 height={1500}
                 className="w-full h-auto rounded-2xl"

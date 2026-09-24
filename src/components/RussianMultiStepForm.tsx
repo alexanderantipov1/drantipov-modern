@@ -166,7 +166,7 @@ export default function RussianMultiStepForm({
       {/* Honeypot */}
       <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
         <label>
-          Website
+          Сайт
           <input
             type="text"
             tabIndex={-1}
@@ -278,7 +278,7 @@ export default function RussianMultiStepForm({
             </div>
             <div>
               <label htmlFor="rmsf-email" className="block text-sm font-semibold text-dark">
-                Email
+                Электронная почта
               </label>
               <input
                 id="rmsf-email"

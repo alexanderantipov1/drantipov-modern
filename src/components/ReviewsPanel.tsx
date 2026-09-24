@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, type ReactNode } from "react";
-import { testimonials } from "@/constants/testimonials";
+import { testimonials, type Testimonial } from "@/constants/testimonials";
 
 const INITIAL_COUNT = 5;
 const STEP = 4;
@@ -26,18 +26,19 @@ function GoogleMark() {
 }
 
 interface ReviewsPanelProps {
+  reviews?: Testimonial[];
   trigger: ReactNode;
   triggerClassName?: string;
   rating?: string;
   locale?: "en" | "ru";
 }
 
-export default function ReviewsPanel({ trigger, triggerClassName = "", rating = "4.9", locale = "en" }: ReviewsPanelProps) {
+export default function ReviewsPanel({ trigger, triggerClassName = "", rating = "4.9", locale = "en", reviews: reviewData = testimonials }: ReviewsPanelProps) {
   const isRu = locale === "ru";
   const [open, setOpen] = useState(false);
   const [count, setCount] = useState(INITIAL_COUNT);
 
-  const reviews = testimonials.filter((t) => t.stars === 5);
+  const reviews = reviewData.filter((t) => t.stars === 5);
   const visible = reviews.slice(0, count);
   const hasMore = count < reviews.length;
 
@@ -93,7 +94,7 @@ export default function ReviewsPanel({ trigger, triggerClassName = "", rating = 
                 <Star />
               </span>
             </div>}
-            <p className="mt-1 text-xs text-muted">{isRu ? "Выборка отзывов с оценкой 5 звёзд. Оригиналы на английском языке." : "Showing 5-star reviews from 740+ patients"}</p>
+             <p className="mt-1 text-xs text-muted">{isRu ? "Переводы отзывов пациентов с оценкой 5 звёзд." : "Showing 5-star reviews from 740+ patients"}</p>
           </div>
           <button
             type="button"
@@ -121,7 +122,7 @@ export default function ReviewsPanel({ trigger, triggerClassName = "", rating = 
                       <p className="truncate text-sm font-semibold text-dark">{r.name}</p>
                       <GoogleMark />
                     </div>
-                    <p lang="en" className="truncate text-xs text-muted">{r.procedure}</p>
+                     <p lang={locale} className="truncate text-xs text-muted">{r.procedure}</p>
                   </div>
                 </div>
                 <div className="mt-3 flex items-center gap-0.5" role="img" aria-label={isRu ? "5 из 5 звёзд" : "5 out of 5 stars"}>
@@ -131,8 +132,8 @@ export default function ReviewsPanel({ trigger, triggerClassName = "", rating = 
                   <Star />
                   <Star />
                 </div>
-                <p lang="en" className="mt-3 text-sm leading-relaxed text-dark/80">&ldquo;{r.quote}&rdquo;</p>
-                <p lang="en" className="mt-3 text-[11px] uppercase tracking-wide text-muted">{r.location}</p>
+                 <p lang={locale} className="mt-3 text-sm leading-relaxed text-dark/80">&ldquo;{r.quote}&rdquo;</p>
+                 <p lang={locale} className="mt-3 text-[11px] uppercase tracking-wide text-muted">{r.location}</p>
               </li>
             ))}
           </ul>

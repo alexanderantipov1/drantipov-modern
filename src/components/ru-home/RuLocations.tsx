@@ -68,7 +68,7 @@ export default function RuLocations() {
                 />
                 {loc.primary && (
                   <div className="absolute top-3 left-3 px-3 py-1 bg-primary text-white text-xs font-semibold rounded-full">
-                    Main Office
+                    Основная клиника
                   </div>
                 )}
               </div>

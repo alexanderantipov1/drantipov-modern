@@ -77,7 +77,7 @@ export default function LanguageToggle({ className = "" }: { className?: string 
         onClick={() => setOpen((o) => !o)}
         aria-haspopup="menu"
         aria-expanded={open}
-        aria-label="Select language / Выбрать язык"
+        aria-label={isRu ? "Выбрать язык" : "Select language / Выбрать язык"}
         className="inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-dark/15 py-1.5 pl-1.5 pr-2.5 text-xs font-semibold text-muted transition hover:border-primary/40 hover:text-dark"
       >
         <span className="h-4 w-4 overflow-hidden rounded-full ring-1 ring-black/10">
@@ -103,6 +103,8 @@ export default function LanguageToggle({ className = "" }: { className?: string 
                 href={l.href}
                 onClick={() => setOpen(false)}
                 role="menuitem"
+                lang={l.code}
+                aria-current={active ? "page" : undefined}
                 className={`flex items-center gap-2.5 px-3 py-2.5 text-sm transition ${
                   active
                     ? "font-semibold text-dark"

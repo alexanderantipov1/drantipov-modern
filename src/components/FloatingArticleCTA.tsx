@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface FloatingArticleCTAProps {
   href?: string;
@@ -14,6 +15,8 @@ export default function FloatingArticleCTA({
   label = "Schedule consultation",
   showAfterPct = 25,
 }: FloatingArticleCTAProps) {
+  const pathname = usePathname();
+  const isRu = pathname === "/ru" || pathname?.startsWith("/ru/");
   const [progress, setProgress] = useState(0);
   const [visible, setVisible] = useState(false);
 
@@ -44,7 +47,7 @@ export default function FloatingArticleCTA({
       }`}
     >
       <Link
-        href={href}
+        href={isRu && href === "/contact" ? "/ru/contact" : href}
         className="group relative flex items-center gap-3 rounded-full bg-primary text-white shadow-2xl shadow-primary/30 transition hover:bg-primary-dark px-5 py-3"
       >
         <div className="relative h-10 w-10 shrink-0">
@@ -76,7 +79,7 @@ export default function FloatingArticleCTA({
             </svg>
           </div>
         </div>
-        <span className="text-sm font-bold hidden sm:inline">{label}</span>
+        <span className="text-sm font-bold hidden sm:inline">{isRu && label === "Schedule consultation" ? "Записаться на консультацию" : label}</span>
       </Link>
     </div>
   );

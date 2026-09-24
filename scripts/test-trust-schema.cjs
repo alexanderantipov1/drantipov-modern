@@ -36,7 +36,7 @@ assert.doesNotMatch(article, /MedicalScholarlyArticle|inLanguage: "en"|identifie
 assert.match(article, /getFAQSchema\(article.faqs\)/);
 assert.match(article, /article.faqs.map/);
 assert.match(article, /locale=\{locale\}/);
-assert.match(read("src/components/ReviewsPanel.tsx"), /lang="en"/);
+assert.match(read("src/components/ReviewsPanel.tsx"), /lang=\{locale\}/);
 assert.match(read("src/components/ru-home/RuReviewBanner.tsx"), /locale="ru"/);
 console.log("Trust/schema regression assertions passed.");
 

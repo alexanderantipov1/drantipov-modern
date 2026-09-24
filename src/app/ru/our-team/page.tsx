@@ -18,7 +18,6 @@ import {
 import { StatPill } from "@/components/our-team/StatPill"
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter"
 import { Timeline } from "@/components/our-team/Timeline"
-import { CEAccordion } from "@/components/our-team/CEAccordion"
 import { Reveal } from "@/components/our-team/Reveal"
 import RuCTA from "@/components/ru-home/RuCTA"
 import StickyConciergeBar from "@/components/StickyConciergeBar"
@@ -38,7 +37,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = finalizeMetadata({
   title: "Наша хирургическая команда — Доктор Антипов и Доктор Кахвач | Galleria Oral & Facial Surgery",
   description:
-    "Знакомьтесь с хирургической командой Galleria Oral & Facial Surgery в Розвилле, Калифорния: доктор Александр В. Антипов, DDS (основатель, board-certified OMS, более 25 лет опыта) и доктор Андре-Давид Кахвач, DDS, MD. Образование в Albert Einstein, Loma Linda, UCSF, МГМСУ. Пять госпитальных привилегий, шесть профессиональных членств, основатель фонда Smile Again Foundation.",
+    "Знакомьтесь с хирургической командой Galleria Oral & Facial Surgery в Розвилле, Калифорния: доктор Александр В. Антипов, DDS (основатель, сертифицированный челюстно-лицевой хирург с опытом более 25 лет) и доктор Андре-Давид Кахвач, DDS, MD. Образование в Albert Einstein, Loma Linda, UCSF и МГМСУ. Госпитальные привилегии и профессиональные членства.",
   alternates: {
     canonical: `${siteUrl}/ru/our-team`,
     languages: {
@@ -50,7 +49,7 @@ export const metadata: Metadata = finalizeMetadata({
   openGraph: {
     title: "Наша хирургическая команда — Доктор Антипов и Доктор Кахвач",
     description:
-      "Два board-certified челюстно-лицевых хирурга обслуживают Розвилл и Северную Калифорнию с госпитальными привилегиями в Sutter и Mercy.",
+      "Два сертифицированных челюстно-лицевых хирурга принимают пациентов Розвилла и Северной Калифорнии; врачи имеют госпитальные привилегии в Sutter и Mercy.",
     url: `${siteUrl}/ru/our-team`,
     locale: "ru_RU",
     type: "website",
@@ -78,7 +77,7 @@ const educationItems = [
   },
   {
     year: "2001 – 2003",
-    title: "Doctor of Dental Surgery (DDS)",
+    title: "Доктор стоматологической хирургии (DDS)",
     subtitle: "Loma Linda University, School of Dentistry",
     description: "Получил американскую степень DDS в одной из самых уважаемых стоматологических школ Калифорнии.",
   },
@@ -135,9 +134,9 @@ const certifications = [
   { label: "Разрешение на общую анестезию", value: "#GA 1446" },
   { label: "Разрешение на лицевую косметическую хирургию", value: "Калифорния" },
   { label: "Зарегистрированный провайдер CE", value: "#00948675" },
-  { label: "Diplomate, ABOMS", value: "Board-Certified" },
+  { label: "Сертификация ABOMS", value: "Подтверждена" },
   { label: "Life Support Network", value: "Действует" },
-  { label: "CPR / BLS Certified", value: "Действует" },
+  { label: "Сертификат по сердечно-лёгочной реанимации (CPR / BLS)", value: "Действует" },
 ]
 
 const memberships = [
@@ -164,27 +163,26 @@ const memberships = [
   },
 ]
 
-// Курсы повышения квалификации сохранены на английском — оригинальные названия международных программ
 const continuingEducation = [
-  "Arnett Orthognathic Surgery Forum",
-  "What's New in Local Anesthesia",
-  "Protocols of Care in Treating Patients with Clefts",
-  "Medicine for the OMS Patient and You",
-  "Site Augmentation for Advanced and Complex Implant Care",
-  "Principles of Attachment Selection for Implant Supported Overdenture",
-  "Full Arch Immediate-Load Fixed Prosthetic Rehabilitation",
-  "Esthetic Zone Reconstruction",
-  "Alveolar Bone Grafting: The Evidence",
-  "Horizontal Augmentation Through the Ridge-Split Procedure",
-  "Immediate Provisionalization of Dental Implants",
-  "Management of Complications in the Edentulous Patient",
-  "Digital Implant Dentistry: Impression-Free Implant Planning",
-  "Avoiding and Managing Complications in Esthetic Implant Therapy",
-  "Esthetic Soft Tissue Management A to Z",
-  "Periodontal Plastic Surgery for the Implant Patient",
-  "Anesthesia Update for the Oral & Maxillofacial Surgeon",
-  "Observational Surgery Preceptorship in Cosmetic Facial Surgery — face lift, blepharoplasty, brow lift, facial liposuction, facial implants, neurotoxins, injectable fillers, CO2 laser resurfacing, chemical peels, radiowave surgery, and skin care",
-  "What Hygienists Should Know",
+  "Форум Арнетта по ортогнатической хирургии",
+  "Новое в местной анестезии",
+  "Протоколы лечения пациентов с расщелинами губы и нёба",
+  "Медицинские аспекты лечения пациентов в челюстно-лицевой хирургии",
+  "Наращивание костной ткани для сложной имплантации",
+  "Принципы выбора креплений для съёмных протезов с опорой на импланты",
+  "Восстановление полного зубного ряда несъёмным протезом с немедленной нагрузкой",
+  "Реконструкция эстетически значимой зоны",
+  "Костная пластика альвеолярного отростка: научные данные",
+  "Горизонтальная костная пластика методом расщепления гребня",
+  "Немедленное временное протезирование на имплантах",
+  "Ведение осложнений у пациентов с полной потерей зубов",
+  "Цифровая имплантология: планирование без слепков",
+  "Профилактика и лечение осложнений при эстетической имплантации",
+  "Работа с мягкими тканями в эстетической зоне от А до Я",
+  "Пародонтальная пластическая хирургия для пациентов с имплантами",
+  "Обновление знаний по анестезии для челюстно-лицевых хирургов",
+  "Практическое обучение эстетической хирургии лица — подтяжка лица, блефаропластика, подтяжка бровей, липосакция лица, лицевые импланты, нейротоксины, инъекционные филлеры, лазерная шлифовка CO2, химические пилинги, радиоволновая хирургия и уход за кожей",
+  "Что необходимо знать стоматологическим гигиенистам",
 ]
 
 const kahwachHighlights = [
@@ -260,7 +258,7 @@ export default function RussianOurTeamPage() {
               <p className="mt-6 text-lg lg:text-xl text-white/85 max-w-3xl mx-auto leading-relaxed">
                 Galleria Oral &amp; Facial Surgery возглавляет{" "}
                 <strong className="text-white">доктор Александр В. Антипов, DDS</strong> —
-                Diplomate Американского борда челюстно-лицевой хирургии, к которому присоединился{" "}
+                 сертифицированный Американским советом челюстно-лицевой хирургии. К нему присоединился{" "}
                 <strong className="text-white">доктор Андре-Давид Кахвач, DDS, MD</strong>.
                 Совместный опыт: более 25 лет хирургической практики полного спектра,
                 пять госпитальных привилегий и двойная медицинская подготовка.
@@ -269,7 +267,7 @@ export default function RussianOurTeamPage() {
 
             <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-3 max-w-4xl mx-auto">
               <StatPill icon={<Trophy className="h-5 w-5 text-primary" />} value={<AnimatedCounter to={25} suffix="+" />} label="Лет в практике" delay={0.3} />
-              <StatPill icon={<ShieldCheck className="h-5 w-5 text-primary" />} value="ABOMS" label="Board-Certified" delay={0.35} />
+              <StatPill icon={<ShieldCheck className="h-5 w-5 text-primary" />} value="ABOMS" label="Сертифицирован" delay={0.35} />
               <StatPill icon={<Hospital className="h-5 w-5 text-primary" />} value={<AnimatedCounter to={5} />} label="Госпитальных привилегий" delay={0.4} />
               <StatPill icon={<Award className="h-5 w-5 text-primary" />} value={<AnimatedCounter to={6} />} label="Профессиональных членств" delay={0.45} />
             </div>
@@ -296,7 +294,7 @@ export default function RussianOurTeamPage() {
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy/95 via-navy/60 to-transparent p-6">
                       <p className="text-white/70 text-xs uppercase tracking-widest font-semibold">
-                        Diplomate · ABOMS
+                        Сертификация ABOMS
                       </p>
                       <p className="text-white font-serif text-xl font-bold mt-1">
                         Доктор Александр В. Антипов, DDS
@@ -326,14 +324,14 @@ export default function RussianOurTeamPage() {
                   <div className="space-y-4 text-lg text-neutral-700 leading-relaxed">
                     <p>
                       Доктор Антипов практикует челюстно-лицевую хирургию полного спектра в Розвилле,
-                      Калифорния, с <strong>2008 года</strong>. Diplomate Американского борда челюстно-лицевой
+                       Калифорния, с <strong>2008 года</strong>. Он сертифицирован Американским советом челюстно-лицевой
                       хирургии (ABOMS), его подготовка охватывает три страны и три самых уважаемых учреждения
                       стоматологии и медицины — <strong>Albert Einstein College of Medicine</strong>,
                       <strong> Loma Linda University</strong> и <strong>Московский государственный
                       медико-стоматологический университет</strong>.
                     </p>
                     <p>
-                      Его практика охватывает полный объём OMS — зубные импланты и реставрацию полной дуги
+                       Его практика охватывает весь спектр челюстно-лицевой хирургии — зубные импланты и восстановление полного зубного ряда
                       (All-on-4 / All-on-X), корригирующую хирургию челюсти, хирургию апноэ сна, костную
                       пластику, лицевую травматологию и косметические процедуры лица. Имеет госпитальные
                       привилегии в пяти учреждениях Северной Калифорнии, разрешение Калифорнии на общую
@@ -579,7 +577,22 @@ export default function RussianOurTeamPage() {
             </Reveal>
 
             <Reveal delay={0.1}>
-              <CEAccordion courses={continuingEducation} />
+              <details className="group bg-white border border-neutral-200 rounded-2xl overflow-hidden shadow-sm">
+                <summary className="cursor-pointer px-6 py-5 text-left hover:bg-bone/30 transition-colors">
+                  <span className="block font-serif text-2xl font-bold text-neutral-900">Повышение квалификации</span>
+                  <span className="block text-sm text-neutral-600 mt-0.5">
+                    Пройдено курсов и профессиональных форумов: {continuingEducation.length}
+                  </span>
+                </summary>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2.5 px-6 pb-6 pt-4 border-t border-neutral-100">
+                  {continuingEducation.map((course) => (
+                    <li key={course} className="text-sm text-neutral-700 leading-relaxed flex items-start gap-2.5">
+                      <span className="text-primary text-xs mt-1.5 flex-shrink-0">▸</span>
+                      <span>{course}</span>
+                    </li>
+                  ))}
+                </ul>
+              </details>
             </Reveal>
           </div>
         </section>

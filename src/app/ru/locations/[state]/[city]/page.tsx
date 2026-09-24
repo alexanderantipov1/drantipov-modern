@@ -51,6 +51,86 @@ const SERVICE_LABELS: Record<string, { label: string; href: string; description:
   },
 };
 
+// Russian copy for the local introductions; English city data stays intact for /locations.
+const CITY_INTROS: Record<string, string> = {
+  sacramento: "Сакраменто — столица Калифорнии и крупный медицинский центр. Пациенты из центра, Мидтауна, Ленд-Парка, Покет-Гринхейвена и Натомаса приезжают к нам за имплантацией, восстановлением полного зубного ряда и прозрачными ценами без наценки сетевых клиник. Путь по I-80 занимает около 20 минут.",
+  folsom: "В Фолсоме живёт много специалистов технологических и инженерных компаний, включая Intel. Наши пациенты ценят точную диагностику, планирование по 3D-КТ и малоинвазивные методики имплантации, удаления зубов мудрости и других операций.",
+  rocklin: "Роклин — один из ближайших к нам городов. Семьи, студенты Sierra College и пенсионеры из Уитни-Окс выбирают нашу клинику благодаря удобному расположению.",
+  "granite-bay": "Пациенты из Гранит-Бей часто совмещают визит в клинику с поездкой по бульвару Дуглас. К нам приезжают жители Три-Лейк, Уэксфорд и Лос-Лагос для сложной имплантации и эстетических процедур.",
+  lincoln: "Из Линкольна, в том числе района Sun City Lincoln Hills, к нам приезжают для восстановления полного зубного ряда и челюстных операций. Пациенты выбирают наш опыт в костной пластике и лечении по протоколам All-on-4 и All-on-X.",
+  "elk-grove": "Элк-Гроув, включая районы Элк-Гроув-Виллидж и Лагуна, — один из быстрорастущих городов региона. Его жители приезжают к сертифицированному челюстно-лицевому хирургу за имплантацией, восстановлением полного ряда и удалением зубов мудрости.",
+  "el-dorado-hills": "Жители Эль-Дорадо-Хиллз часто выбирают опытного хирурга для восстановления полного зубного ряда, установки одиночных имплантов и костной пластики.",
+  auburn: "Из Оберна и предгорий округа Плейсер пациенты приезжают по I-80 для имплантации зубов, восстановления полного ряда и коррекции прикуса.",
+  "citrus-heights": "Ситрус-Хайтс находится в нескольких минутах езды от нашей клиники в Розвилле. Это удобный вариант для имплантации, восстановления полного зубного ряда и хирургии полости рта.",
+  "rancho-cordova": "Ранчо-Кордова — развивающийся жилой и деловой район вдоль US-50. Местные пациенты обращаются к нам за имплантацией, восстановлением полного зубного ряда и костной пластикой.",
+  vacaville: "Пациенты из Вакавилла вдоль I-80 выбирают доктора Антипова для имплантации полного ряда, съёмных протезов на имплантах и сложного восстановительного лечения.",
+  vallejo: "Пациенты из Вальехо приезжают по I-80, чтобы воспользоваться хирургическим опытом доктора Антипова в восстановлении полного зубного ряда и коррекции прикуса.",
+  fairfield: "Из Фэрфилда, где находится авиабаза Трэвис, пациенты приезжают по I-80 для имплантации зубов, восстановления полного ряда и челюстно-лицевых операций.",
+  oroville: "Жители Оровилла и округа Бьютт приезжают на юг для восстановления полного зубного ряда на имплантах и корректирующих операций у сертифицированного специалиста.",
+  roseville: "Розвилл — наш родной город: клиника находится на Reserve Drive рядом с торговым центром Westfield Galleria. Пациентам доступны имплантация зубов, восстановление полного ряда по All-on-4, неотложная хирургическая помощь и удаление зубов мудрости.",
+  orinda: "Из Оринды и района Ламоринда пациенты приезжают в Розвилл за сложными процедурами: имплантацией с немедленной нагрузкой, восстановлением полного ряда по All-on-4 и All-on-6 и скуловыми имплантами при выраженной потере кости.",
+  placerville: "Из Плейсервилла и предгорий округа Эль-Дорадо пациенты приезжают по шоссе 50 для имплантации, восстановления полного зубного ряда и сложной хирургии полости рта.",
+  antelope: "Антилоп находится рядом с Розвиллом. Мы принимаем местные семьи для удаления зубов мудрости подросткам, имплантации и восстановления полного зубного ряда взрослым.",
+  loomis: "Жители Лумиса, Пенрина и Ньюкасла ценят сложившиеся за годы отношения с направляющими стоматологами и приезжают к нам по I-80 для имплантации, удаления зубов и коррекции прикуса.",
+  orangevale: "Жители Оранжвейла обращаются за специализированной имплантацией: многие планируют восстановление полного зубного ряда или замену старых мостов постоянными имплантами.",
+  "fair-oaks": "Из Фэр-Окс-Виллидж к нам приезжают для протезов на имплантах, установки одиночных имплантов и костной пластики при износе старых стоматологических конструкций.",
+  "north-highlands": "В Норт-Хайлендс и районе Макклеллан-Парк живут многие ветераны и работающие семьи. Им доступны имплантация, срочное удаление зубов и реконструкция после травм; на консультации можно обсудить варианты финансирования.",
+  carmichael: "Жители Кармайкла обращаются к нам за хирургической помощью: имплантацией и мостами на имплантах, биопсией, диагностикой заболеваний полости рта и оценкой ВНЧС.",
+  "arden-arcade": "Пациенты из Арден-Аркейд выбирают нашу клинику для имплантации у сертифицированного хирурга, эстетических операций на лице и сложного удаления зубов под внутривенной седацией.",
+  "west-sacramento": "От районов Бридж-Дистрикт и Саутпорт в Западном Сакраменто до нашей клиники в Розвилле удобно добираться по I-80. Пациенты приезжают для имплантации, удаления зубов мудрости и восстановления полного ряда.",
+  "cameron-park": "Камерон-Парк находится между Плейсервиллом и Эль-Дорадо-Хиллз. Его жители приезжают к нам для имплантации, синус-лифтинга, костной пластики и восстановления полного зубного ряда.",
+  woodland: "Из Вудленда к нам приезжают за специализированной помощью, недоступной поблизости: восстановлением полного ряда, сложным удалением зубов и челюстными операциями во взаимодействии с местными стоматологами.",
+  davis: "Пациенты из Дэвиса, в том числе сотрудники и студенты университета, выбирают нашу клинику для имплантации, удаления зубов мудрости и консультаций по хирургическому лечению апноэ сна.",
+  galt: "Из Галта и сельских районов южной части округа Сакраменто пациенты приезжают на север для восстановления полного ряда на имплантах, перехода со съёмных протезов на импланты и удаления зубов под внутривенной седацией.",
+};
+
+function localizeDriveTime(time: string) {
+  return time.replace(/\bmin\b/g, "мин").replace(/\bhr\b/g, "ч");
+}
+
+function localizeRoute(route: string) {
+  return route
+    .replace(/\bthe\s+/gi, "")
+    .replace(/\bDowntown\b/gi, "центра")
+    .replace(/\babout (\d+) minutes\b/gi, "около $1 минут")
+    .replace(/\babout (\d+) hr (\d+) min\b/gi, "около $1 ч $2 мин")
+    .replace(/\bminutes\b/gi, "минут")
+    .replace(/\bmin\b/g, "мин")
+    .replace(/\bfrom\b/gi, "от")
+    .replace(/\bthrough\b/gi, "через")
+    .replace(/\bacross\b/gi, "через")
+    .replace(/\binto\b/gi, "в")
+    .replace(/\btoward\b/gi, "в сторону")
+    .replace(/\bvia\b/gi, "через")
+    .replace(/\bthen\b/gi, "затем")
+    .replace(/\bto\b/gi, "до")
+    .replace(/\bexit\b/gi, "съезд")
+    .replace(/\bEast\b/gi, "восток")
+    .replace(/\bWest\b/gi, "запад")
+    .replace(/\bNorth\b/gi, "север")
+    .replace(/\bSouth\b/gi, "юг")
+    .replace(/\bHighway\b/g, "шоссе")
+    .replace(/\bRoad\b/g, "дорога")
+    .replace(/\bBoulevard\b/g, "бульвар")
+    .replace(/\bAvenue\b/g, "авеню")
+    .replace(/\bStreet\b/g, "улица")
+    .replace(/\bDrive\b/g, "проезд");
+}
+
+function localizeLandmark(landmark: string) {
+  return landmark
+    .replace("(former Air Force Base)", "(бывшая авиабаза)")
+    .replace("(residential fly-in community)", "(жилой район с аэродромом)")
+    .replace("(and its famous chickens)", "(известен гуляющими по улицам курами)")
+    .replace("(flea market)", "(блошиный рынок)")
+    .replace("(Granite Bay entrance)", "(вход со стороны Гранит-Бей)")
+    .replace("(Sutter Street)", "(улица Саттер)")
+    .replace(/\barea\b/g, "район")
+    .replace(/\bcorridor\b/g, "район")
+    .replace(/\bcampus\b/g, "кампус")
+    .replace(/\bschools\b/g, "школы");
+}
+
 export async function generateStaticParams() {
   return cities.map((c) => ({ state: c.state.toLowerCase(), city: c.slug }));
 }
@@ -65,7 +145,7 @@ export async function generateMetadata({
   if (!city) return {};
 
   const title = `Челюстно-лицевой хирург для пациентов из ${city.city}, ${city.state} — Dr. Alexander V. Antipov`;
-  const description = `Сертифицированный челюстно-лицевой хирург принимает пациентов из ${city.city}. Всего ${city.driveTime} от клиники в Roseville. Зубные импланты, ортогнатическая хирургия, апноэ сна (MMA), эстетическая хирургия лица. Бесплатная консультация с 3D КТ.`;
+  const description = `Сертифицированный челюстно-лицевой хирург принимает пациентов из ${city.city}. Всего ${localizeDriveTime(city.driveTime)} от клиники в Розвилле. Зубные импланты, ортогнатическая хирургия, апноэ сна (MMA), эстетическая хирургия лица. Бесплатная консультация с 3D-КТ.`;
 
   return finalizeMetadata({
     title: { absolute: title },
@@ -86,7 +166,7 @@ function getCityFAQs(city: ReturnType<typeof getCityByStateAndSlug>) {
   return [
     {
       question: `Как далеко клиника Dr. Antipov от ${city.city}?`,
-      answer: `Наша клиника в Roseville находится примерно в ${city.distanceMi} милях от ${city.city} — около ${city.driveTime} на машине. ${city.routes[0]}.`,
+      answer: `Наша клиника в Розвилле находится примерно в ${city.distanceMi} милях от ${city.city} — около ${localizeDriveTime(city.driveTime)} на машине. Маршрут: ${localizeRoute(city.routes[0]!)}.`,
     },
     {
       question: `Сколько стоят зубные импланты для пациентов из ${city.city}?`,
@@ -153,7 +233,7 @@ export default async function CityPage({
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-navy via-navy-dark to-navy text-white py-20 lg:py-28 overflow-hidden">
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="text-sm text-white/60 mb-6" aria-label="Breadcrumb">
+          <nav className="text-sm text-white/60 mb-6" aria-label="Навигационная цепочка">
             <Link href="/ru" className="hover:text-white">
               Главная
             </Link>
@@ -178,14 +258,14 @@ export default async function CityPage({
                 Челюстно-лицевой хирург — <span className="text-primary">{city.city}, {city.state}</span>
               </h1>
               <p className="mt-6 text-lg text-white/85 max-w-xl leading-relaxed">
-                Dr. Alexander V. Antipov проводит челюстно-лицевую хирургию полного профиля для пациентов из {city.city} с момента открытия своей клиники в Roseville в 2008 году. {city.demographic}
+                Доктор Александр В. Антипов проводит челюстно-лицевые операции для пациентов из {city.city} с момента открытия своей клиники в Розвилле в 2008 году. {CITY_INTROS[city.slug]}
               </p>
 
               <div className="mt-8 flex flex-wrap items-center gap-6 text-sm">
                 <div className="flex items-center gap-2 text-white/80">
                   <Clock className="h-4 w-4 text-primary" />
                   <span>
-                    <strong className="text-white">{city.driveTime}</strong> от Roseville
+                    <strong className="text-white">{localizeDriveTime(city.driveTime)}</strong> от Розвилла
                   </span>
                 </div>
                 <div className="flex items-center gap-2 text-white/80">
@@ -257,7 +337,7 @@ export default async function CityPage({
                     <span className="flex-shrink-0 w-7 h-7 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mt-0.5">
                       {i + 1}
                     </span>
-                    <span className="text-neutral-700">{route}</span>
+                     <span className="text-neutral-700">{localizeRoute(route)}</span>
                   </li>
                 ))}
               </ul>
@@ -274,7 +354,7 @@ export default async function CityPage({
                 {city.landmarks.map((landmark) => (
                   <li key={landmark} className="flex items-center gap-2 text-neutral-700">
                     <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span>{landmark}</span>
+                     <span>{localizeLandmark(landmark)}</span>
                   </li>
                 ))}
               </ul>
@@ -397,7 +477,7 @@ export default async function CityPage({
       <DualCTA
         variant="dual"
         heading={`Готовы записаться из ${city.city}?`}
-        subheading={`Большинство пациентов из ${city.city} добираются до нас примерно за ${city.driveTime}. Бесплатная консультация с 3D КТ, две клиники, одна надёжная хирургическая команда.`}
+        subheading={`Большинство пациентов из ${city.city} добираются до нас примерно за ${localizeDriveTime(city.driveTime)}. Бесплатная консультация с 3D-КТ, две клиники, одна надёжная хирургическая команда.`}
       />
     </>
   );

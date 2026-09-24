@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { fadeInUp, staggerContainer } from "@/lib/animations"
 import { ChevronLeft, ChevronRight, Play } from "lucide-react"
 import { useRef, useState } from "react"
+import { usePathname } from "next/navigation"
 
 /**
  * YouTube Shorts — dental implant education from Dr. Antipov
@@ -41,6 +42,8 @@ const youtubeShorts = [
 ]
 
 export function YouTubeShortsSection() {
+  const pathname = usePathname()
+  const isRu = pathname === "/ru" || pathname?.startsWith("/ru/")
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(true)
@@ -84,13 +87,13 @@ export function YouTubeShortsSection() {
             className="text-3xl lg:text-4xl font-serif font-bold text-neutral-900 mb-4"
             variants={fadeInUp}
           >
-            Life-Changing Smiles
+            {isRu ? "Улыбки, меняющие жизнь" : "Life-Changing Smiles"}
           </motion.h2>
           <motion.p
             className="text-lg text-neutral-600 max-w-2xl mx-auto"
             variants={fadeInUp}
           >
-            See the incredible transformations and hear from our happy patients
+            {isRu ? "Посмотрите результаты лечения и послушайте истории наших пациентов" : "See the incredible transformations and hear from our happy patients"}
           </motion.p>
         </motion.div>
 
@@ -101,7 +104,7 @@ export function YouTubeShortsSection() {
             <button
               onClick={() => scroll("left")}
               className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 items-center justify-center bg-white rounded-full shadow-lg hover:bg-neutral-50 transition-colors"
-              aria-label="Scroll left"
+              aria-label={isRu ? "Прокрутить влево" : "Scroll left"}
             >
               <ChevronLeft className="w-6 h-6 text-neutral-700" />
             </button>
@@ -112,7 +115,7 @@ export function YouTubeShortsSection() {
             <button
               onClick={() => scroll("right")}
               className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 items-center justify-center bg-white rounded-full shadow-lg hover:bg-neutral-50 transition-colors"
-              aria-label="Scroll right"
+              aria-label={isRu ? "Прокрутить вправо" : "Scroll right"}
             >
               <ChevronRight className="w-6 h-6 text-neutral-700" />
             </button>
@@ -141,7 +144,7 @@ export function YouTubeShortsSection() {
                   {/* YouTube Shorts Embed */}
                   <iframe
                     src={`https://www.youtube.com/embed/${short.id}?controls=1&modestbranding=1&color=white`}
-                    title={short.title}
+                    title={isRu ? `Об имплантации зубов, видео № ${index + 1}` : short.title}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="absolute inset-0 w-full h-full"
@@ -173,7 +176,7 @@ export function YouTubeShortsSection() {
             rel="noopener noreferrer"
             className="text-primary-600 hover:text-primary-700 font-medium transition-colors"
           >
-            View More on YouTube →
+            {isRu ? "Больше видео на YouTube →" : "View More on YouTube →"}
           </a>
         </motion.div>
       </Container>

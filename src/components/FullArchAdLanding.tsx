@@ -28,28 +28,31 @@ const caseImages = [
   {
     src: "/images/fullarch/01-before-damaged.jpeg",
     alt: "Full-arch implant case before treatment",
+    ruAlt: "Зубы пациента до восстановления всей челюсти имплантами",
   },
   {
     src: "/images/fullarch/07-implants-abutments.jpeg",
     alt: "Full-arch implant abutments during treatment",
+    ruAlt: "Импланты и абатменты во время восстановления зубного ряда",
   },
   {
     src: "/images/fullarch/08-final-result.jpeg",
     alt: "Full-arch implant final result",
+    ruAlt: "Результат восстановления всей челюсти имплантами",
   },
 ];
 
 export default function FullArchAdLanding({ content }: FullArchAdLandingProps) {
-  const isRu = false; // EN-only build
+  const isRu = content.locale === "ru";
   const alternateLabel = isRu ? "EN" : "RU";
   const phoneText = isRu ? `Позвонить ${siteConfig.contact.phone}` : `Call ${siteConfig.contact.phone}`;
-  const compareFixedLabel = isRu ? "Fixed implants" : "Fixed implants";
-  const compareDentureLabel = isRu ? "Dentures" : "Dentures";
+  const compareFixedLabel = isRu ? "Несъёмные импланты" : "Fixed implants";
+  const compareDentureLabel = isRu ? "Съёмные протезы" : "Dentures";
   const primaryCredential = content.proof[0] ?? (isRu ? "Сертифицированный хирург" : "Board-certified surgeon");
   const caseEyebrow = isRu ? "Клинический кейс" : "Clinical case";
   const caseTitle = isRu ? "Сложные случаи требуют 3D-плана" : "Complex cases need a 3D plan";
   const caseBody = isRu
-    ? "Full-arch treatment может включать удаление зубов, grafting, implants, abutments, temporary teeth и final bridge. На консультации Dr. Antipov объясняет, какие этапы нужны именно вам."
+    ? "Восстановление всей челюсти может включать удаление зубов, костную пластику, установку имплантов и абатментов, временных зубов и постоянного протеза. На консультации Dr. Antipov объясняет, какие этапы нужны именно вам."
     : "Full-arch treatment may include extractions, grafting, implants, abutments, temporary teeth, and a final bridge. During consultation, Dr. Antipov explains which steps your case actually needs.";
 
   return (
@@ -59,7 +62,7 @@ export default function FullArchAdLanding({ content }: FullArchAdLandingProps) {
           <Link href={isRu ? "/ru" : "/"} className="flex items-center gap-3">
             <Image
               src="/images/logo-d10cd66c.svg"
-              alt="Dr. Alexander Antipov, DDS"
+              alt={isRu ? "Доктор Александр Антипов, DDS" : "Dr. Alexander Antipov, DDS"}
               width={176}
               height={58}
               className="h-10 w-auto brightness-0 invert"
@@ -88,7 +91,7 @@ export default function FullArchAdLanding({ content }: FullArchAdLandingProps) {
         <section className="relative min-h-screen overflow-hidden bg-navy text-white">
           <Image
             src="/images/dr-antipov-work.png"
-            alt="Dr. Alexander Antipov performing implant surgery"
+            alt={isRu ? "Доктор Александр Антипов проводит операцию по установке зубных имплантов" : "Dr. Alexander Antipov performing implant surgery"}
             fill
             className="object-cover opacity-35"
             priority
@@ -141,8 +144,8 @@ export default function FullArchAdLanding({ content }: FullArchAdLandingProps) {
           <div className="mx-auto grid max-w-7xl gap-4 px-4 py-8 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
             {[
               { icon: BadgeCheck, label: primaryCredential },
-              { icon: CalendarCheck, label: isRu ? "Бесплатная 3D CT консультация" : "Complimentary 3D CT consultation" },
-              { icon: HeartPulse, label: isRu ? "IV sedation / general anesthesia" : "IV sedation / general anesthesia" },
+              { icon: CalendarCheck, label: isRu ? "Бесплатная консультация по имплантации с 3D КТ" : "Complimentary 3D CT consultation" },
+              { icon: HeartPulse, label: isRu ? "Внутривенная седация / общий наркоз" : "IV sedation / general anesthesia" },
               { icon: MapPin, label: officeAddress },
             ].map((item) => (
               <div key={item.label} className="flex items-center gap-3 text-sm font-semibold text-dark">
@@ -233,7 +236,7 @@ export default function FullArchAdLanding({ content }: FullArchAdLandingProps) {
                   <div className="relative aspect-[4/5]">
                     <Image
                       src={image.src}
-                      alt={image.alt}
+                      alt={isRu ? image.ruAlt : image.alt}
                       fill
                       className="object-cover"
                       sizes="(min-width: 1024px) 18vw, 33vw"
@@ -299,13 +302,13 @@ export default function FullArchAdLanding({ content }: FullArchAdLandingProps) {
         <section className="bg-light py-20 lg:py-28">
           <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary">FAQ</p>
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary">{isRu ? "Частые вопросы" : "FAQ"}</p>
               <h2 className="mt-4 text-4xl font-bold tracking-tight text-dark sm:text-5xl">
                 {isRu ? "Частые вопросы" : "Questions patients ask before booking"}
               </h2>
               <p className="mt-5 text-lg leading-8 text-muted">
                 {isRu
-                  ? "Ответы помогают понять, подходит ли вам full-arch консультация, и какие вопросы стоит подготовить."
+                  ? "Ответы помогут понять, подходит ли вам консультация по восстановлению всей челюсти и какие вопросы стоит подготовить."
                   : "These answers help you decide whether a full-arch consultation is the right next step."}
               </p>
             </div>
@@ -361,7 +364,7 @@ export default function FullArchAdLanding({ content }: FullArchAdLandingProps) {
 
       <footer className="border-t border-dark/10 bg-white px-4 py-8 pb-24 text-sm text-muted sm:px-6 md:pb-8 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <p>© Dr. Alexander Antipov, DDS — Roseville, California.</p>
+          <p>{isRu ? "© Доктор Александр Антипов, DDS — Розвилл, Калифорния." : "© Dr. Alexander Antipov, DDS — Roseville, California."}</p>
           <div className="flex gap-4">
             <Link href={isRu ? "/ru" : "/"} className="font-semibold text-primary hover:text-primary-dark">
               {isRu ? "Главная" : "Main site"}

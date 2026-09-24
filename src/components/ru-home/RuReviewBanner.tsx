@@ -1,5 +1,15 @@
+"use client";
+
 import type { ReactNode } from "react";
 import ReviewsPanel from "@/components/ReviewsPanel";
+import { testimonials } from "@/constants/testimonials";
+import { russianTestimonials } from "@/components/ru-home/RuTestimonials";
+
+const translatedTestimonials = testimonials.map((testimonial) => {
+  const translation = russianTestimonials[testimonial.name];
+  if (!translation) throw new Error(`Не найден русский перевод отзыва: ${testimonial.name}`);
+  return { ...testimonial, ...translation };
+});
 
 interface RuReviewBannerProps {
   rating?: string;
@@ -91,6 +101,7 @@ export default function RuReviewBanner({
               </div>}
               <ReviewsPanel
                 locale="ru"
+                reviews={translatedTestimonials}
                 rating={rating}
                 trigger={captionContent}
                 triggerClassName="mt-1 block cursor-pointer text-left text-xs text-white/65 transition hover:text-white sm:text-sm"

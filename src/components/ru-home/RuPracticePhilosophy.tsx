@@ -97,7 +97,7 @@ export default function RuPracticePhilosophy() {
               transition={{ duration: 0.5 }}
               className="mt-7 text-center text-sm font-medium uppercase tracking-wider text-primary"
             >
-              Real patients. Real smiles.
+              Реальные пациенты. Настоящие улыбки.
             </motion.p>
           </motion.div>
         </div>

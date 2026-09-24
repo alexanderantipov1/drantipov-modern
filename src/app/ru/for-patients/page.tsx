@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Calendar, Heart, Star, FileText, Phone, Quote } from "lucide-react"
 import { Metadata } from "next"
 import PageHero from "@/components/PageHero"
-import { YouTubeShortsSection } from "@/components/home/YouTubeShortsSection"
+import RuYouTubeShortsSection from "@/components/ru-home/RuYouTubeShortsSection"
 
 const ruHero = {
   image: "/images/landing-pages/dental-implants/art/meet-the-doctor-76c0424d.jpg",
@@ -333,7 +333,7 @@ export default function ForPatientsPage() {
       </Section>
 
       {/* Life-Changing Smiles (YouTube Shorts) */}
-      <YouTubeShortsSection />
+      <RuYouTubeShortsSection />
 
       {/* Have Questions? */}
       <Section background="default" padding="sm">

@@ -162,6 +162,12 @@ export default function RuCorrectiveJawSurgeryCasesPage() {
                 </Link>
                 .
               </p>
+              <p className="mt-5 text-lg text-muted">
+                Другие результаты, включая более ранние случаи 019–044, смотрите в{" "}
+                <Link href="/ru/#before-after" className="text-primary font-semibold hover:underline">
+                  полном архиве фото до и после
+                </Link>.
+              </p>
             </div>
           </div>
         </section>

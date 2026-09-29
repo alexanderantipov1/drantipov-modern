@@ -62,6 +62,12 @@ export default function CorrectiveJawSurgeryPage() {
             </div>
 
             <CaseGrid cases={correctiveJawSurgeryCases} columns={3} />
+            <p className="text-center text-neutral-600">
+              Looking for earlier cases? Browse the{" "}
+              <Link href="/#before-after" className="text-primary-600 font-semibold hover:underline">
+                complete before-and-after archive, including jaw cases 019–044
+              </Link>.
+            </p>
           </div>
         </Container>
       </Section>

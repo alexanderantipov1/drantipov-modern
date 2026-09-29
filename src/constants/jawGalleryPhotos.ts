@@ -33,6 +33,43 @@ const width640 = new Set([
   "045/3", "047/5",
 ]);
 
+// Verified alternate before/after composites for the eight surgical case pages.
+// 045's main image already shows its side profile, so don't repeat it here.
+export const jawCaseAdditionalViews: Record<string, string[]> = {
+  oms000045: [
+    "/images/cases/corrective-jaw-surgery/oms000045/2/gallery@2x-169c8a85.jpg",
+    "/images/cases/corrective-jaw-surgery/oms000045/4/gallery@2x-29ef8f91.jpg",
+  ],
+  oms000046: [
+    "/images/cases/corrective-jaw-surgery/oms000046/2/gallery@2x-92e0b6c0.jpg",
+    "/images/cases/corrective-jaw-surgery/oms000046/4/gallery@2x-6e10b165.jpg",
+  ],
+  oms000047: [
+    "/images/cases/corrective-jaw-surgery/oms000047/2/gallery@2x-0f0db188.jpg",
+    "/images/cases/corrective-jaw-surgery/oms000047/3/gallery@2x-f8db8eb2.jpg",
+  ],
+  oms000048: [
+    "/images/cases/corrective-jaw-surgery/oms000048/2/gallery@2x-a1cab86d.jpg",
+    "/images/cases/corrective-jaw-surgery/oms000048/3/gallery@2x-c2ecbc1f.jpg",
+  ],
+  oms000049: [
+    "/images/cases/corrective-jaw-surgery/oms000049/2/gallery@2x-88276f2e.jpg",
+    "/images/cases/corrective-jaw-surgery/oms000049/3/gallery@2x-f37124fe.jpg",
+  ],
+  oms000050: [
+    "/images/cases/corrective-jaw-surgery/oms000050/2/gallery@2x-759e36c4.jpg",
+    "/images/cases/corrective-jaw-surgery/oms000050/3/gallery@2x-a2fced22.jpg",
+  ],
+  oms000051: [
+    "/images/cases/corrective-jaw-surgery/oms000051/2/gallery@2x-0d180ee1.jpg",
+    "/images/cases/corrective-jaw-surgery/oms000051/3/gallery@2x-ac8c18ca.jpg",
+  ],
+  oms000052: [
+    "/images/cases/corrective-jaw-surgery/oms000052/2/gallery@2x-39848b9d.jpg",
+    "/images/cases/corrective-jaw-surgery/oms000052/3/gallery@2x-e2f7d0a1.jpg",
+  ],
+};
+
 export function jawGalleryPhoto(src: string): { src: string; width: number } {
   const match = src.match(/^\/images\/cases\/corrective-jaw-surgery\/oms000(\d{3})\/(\d+)\/gallery@2x-[a-f0-9]+\.jpg$/);
   if (!match) throw new Error(`Unexpected jaw gallery image: ${src}`);

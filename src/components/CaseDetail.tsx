@@ -18,6 +18,7 @@ import { getCaseSchema, getBreadcrumbSchema, structuredDataScript } from "@/lib/
 import { siteConfig } from "@/constants/siteConfig"
 import { ArrowLeft, Calendar, User, Stethoscope, Activity, Clock } from "lucide-react"
 import DualCTA from "@/components/DualCTA"
+import { jawCaseAdditionalViews, jawGalleryPhoto } from "@/constants/jawGalleryPhotos"
 
 const CATEGORY_LABEL: Record<SurgicalCase["category"], string> = {
   "corrective-jaw-surgery": "Corrective Jaw Surgery",
@@ -74,6 +75,7 @@ export function CaseDetail({ caseData, article, locale = "en" }: CaseDetailProps
   const url = `${siteConfig.url}${localePrefix}/surgical-cases/${caseData.category}/${caseData.id}`
   const lead = article?.excerpt || caseData.description
   const jawCase = caseData.category === "corrective-jaw-surgery"
+  const additionalJawViews = jawCase ? jawCaseAdditionalViews[caseData.id] || [] : []
   // oms000052's "@2x" asset is only 640px wide; the suffix is not a resolution guarantee.
   const smallJawImage = jawCase && (!caseData.imagePath.includes("preview@2x-") || caseData.id === "oms000052")
 
@@ -207,6 +209,45 @@ export function CaseDetail({ caseData, article, locale = "en" }: CaseDetailProps
         </Container>
       </Section>
 
+      {additionalJawViews.length > 0 && (
+        <Section background="default" padding="md">
+          <Container size="lg">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-neutral-900 mb-3">
+                {isRu ? "Дополнительные ракурсы" : "Additional views"}
+              </h2>
+              <p className="text-neutral-600 mb-6">
+                {isRu ? "Другие ракурсы этого случая: сравнение до и после." : "Other before-and-after views of this case."}
+              </p>
+              <div className="grid sm:grid-cols-2 gap-6">
+                {additionalJawViews.map((src, index) => {
+                  const photo = jawGalleryPhoto(src)
+                  return (
+                    <figure key={src} className="flex flex-col items-center gap-2">
+                      <div className="w-full bg-neutral-100 rounded-2xl overflow-hidden shadow-glass" style={{ maxWidth: Math.min(photo.width, 720) }}>
+                        <Image
+                          src={photo.src}
+                          alt={isRu ? `${caseData.title} — дополнительный ракурс до и после ${index + 1}` : `${caseData.title} — additional before-and-after view ${index + 1}`}
+                          width={photo.width}
+                          height={Math.round(photo.width * 476 / 720)}
+                          unoptimized={photo.width <= 720}
+                          quality={85}
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 720px"
+                          className="w-full h-auto object-contain"
+                        />
+                      </div>
+                      <figcaption className="text-sm text-neutral-500">
+                        {isRu ? `Ракурс ${index + 2} — до и после` : `View ${index + 2} — before and after`}
+                      </figcaption>
+                    </figure>
+                  )
+                })}
+              </div>
+            </div>
+          </Container>
+        </Section>
+      )}
+
       {/* Article Body */}
       <Section background="default" padding="md">
         <Container size="lg">
@@ -295,6 +336,19 @@ export function CaseDetail({ caseData, article, locale = "en" }: CaseDetailProps
           </div>
         </Container>
       </Section>
+
+      {jawCase && (
+        <Section background="default" padding="sm">
+          <Container size="lg">
+            <p className="text-center text-neutral-700">
+              {isRu ? "Посмотрите также архив результатов ортогнатической хирургии, включая случаи 019–044: " : "Explore the full jaw surgery before-and-after archive, including cases 019–044: "}
+              <Link href={`${localePrefix}/#before-after`} className="text-primary-600 font-semibold hover:underline">
+                {isRu ? "все случаи до и после" : "view all before-and-after cases"}
+              </Link>
+            </p>
+          </Container>
+        </Section>
+      )}
 
       {/* Related Cases */}
       {relatedCases.length > 0 && (

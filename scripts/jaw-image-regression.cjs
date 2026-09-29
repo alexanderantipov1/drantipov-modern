@@ -2,9 +2,15 @@ const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
+const ts = require("typescript");
 
 const root = path.resolve(__dirname, "..");
 const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
+require.extensions[".ts"] = (module, filename) => {
+  module._compile(ts.transpileModule(fs.readFileSync(filename, "utf8"), {
+    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 },
+  }).outputText, filename);
+};
 
 // JPEG SOF dimensions, including progressive JPEGs. Do not infer resolution from "@2x".
 function jpegSize(file) {
@@ -82,4 +88,45 @@ test("all 34 historical jaw cases retain real same-case photos in both galleries
       assert.ok(actual >= cap, `${source}: ${effective} has ${actual}px but renders up to ${cap}px`);
     }
   }
+});
+
+test("each EN/RU jaw detail case exposes its verified profile and existing same-case alternate views", () => {
+  const { jawCaseAdditionalViews, jawGalleryPhoto } = require("../src/constants/jawGalleryPhotos.ts");
+  const { correctiveJawSurgeryCases } = require("../src/constants/cases.ts");
+  const { correctiveJawSurgeryCases: ruCases } = require("../src/constants/ruCases.ts");
+  const confirmedProfiles = {
+    oms000045: "/images/cases/corrective-jaw-surgery/oms000045/1/preview@2x-9b9e2864.jpg",
+    oms000046: "/images/cases/corrective-jaw-surgery/oms000046/2/gallery@2x-92e0b6c0.jpg",
+    oms000047: "/images/cases/corrective-jaw-surgery/oms000047/2/gallery@2x-0f0db188.jpg",
+    oms000048: "/images/cases/corrective-jaw-surgery/oms000048/2/gallery@2x-a1cab86d.jpg",
+    oms000049: "/images/cases/corrective-jaw-surgery/oms000049/2/gallery@2x-88276f2e.jpg",
+    oms000050: "/images/cases/corrective-jaw-surgery/oms000050/2/gallery@2x-759e36c4.jpg",
+    oms000051: "/images/cases/corrective-jaw-surgery/oms000051/2/gallery@2x-0d180ee1.jpg",
+    oms000052: "/images/cases/corrective-jaw-surgery/oms000052/2/gallery@2x-39848b9d.jpg",
+  };
+  assert.deepEqual(Object.keys(jawCaseAdditionalViews).sort(), Object.keys(confirmedProfiles).sort());
+  for (const cases of [correctiveJawSurgeryCases, ruCases]) {
+    for (const { id, imagePath } of cases) {
+      const views = jawCaseAdditionalViews[id];
+      assert.ok(views?.length, `${id}: missing alternate views`);
+      assert.ok(id === "oms000045" ? imagePath === confirmedProfiles[id] : views.includes(confirmedProfiles[id]), `${id}: missing verified side profile`);
+      assert.ok(fs.existsSync(path.join(root, "public", imagePath)), `${id}: missing main image`);
+      assert.equal(new Set(views).size, views.length, `${id}: repeated alternate view`);
+      for (const src of views) {
+        assert.ok(src.startsWith(`/images/cases/corrective-jaw-surgery/${id}/`), `${id}: image from a different case: ${src}`);
+        assert.ok(fs.existsSync(path.join(root, "public", src)), `${id}: missing alternate ${src}`);
+        const effective = jawGalleryPhoto(src);
+        assert.ok(fs.existsSync(path.join(root, "public", effective.src)), `${id}: missing displayed ${effective.src}`);
+        assert.ok(jpegSize(effective.src.slice(1)).width >= Math.min(effective.width, 720), `${id}: alternate would be upscaled`);
+      }
+    }
+  }
+  const detail = read("src/components/CaseDetail.tsx");
+  assert.match(detail, /jawCaseAdditionalViews\[caseData\.id\]/);
+  assert.match(detail, /additionalJawViews\.map/);
+  assert.match(detail, /jawGalleryPhoto\(src\)/);
+  assert.match(detail, /className="w-full h-auto object-contain"/);
+  assert.match(detail, /href=\{`\$\{localePrefix\}\/#before-after`\}/);
+  assert.match(read("src/app/(en)/surgical-cases/corrective-jaw-surgery/page.tsx"), /href="\/#before-after"/);
+  assert.match(read("src/app/ru/surgical-cases/corrective-jaw-surgery/page.tsx"), /href="\/ru\/#before-after"/);
 });

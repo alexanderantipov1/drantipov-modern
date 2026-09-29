@@ -30,7 +30,7 @@ export const metadata: Metadata = finalizeMetadata({
 export default function CorrectiveJawSurgeryPage() {
   return (
     <>
-      <PageHero {...heroContent["/surgical-cases/corrective-jaw-surgery"]!} />
+      <PageHero {...heroContent["/surgical-cases/corrective-jaw-surgery"]!} clinicalComparison />
 
       {/* Back Navigation */}
       <Section background="default" padding="sm">

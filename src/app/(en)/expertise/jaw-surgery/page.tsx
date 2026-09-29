@@ -241,6 +241,7 @@ export default function JawSurgeryPage() {
         title="Corrective Jaw Surgery"
         subtitle="Corrective jaw surgery (orthognathic surgery) repositions the upper jaw, lower jaw, or both to correct skeletal malocclusion, facial asymmetry, and breathing problems caused by bite or jaw misalignment."
         image="/images/procedures/corrective-jaw-surgery@2x-0c58ba67.jpg"
+        clinicalComparison
       />
 
       {/* Animated stat cards overlapping hero bottom */}

@@ -35,7 +35,7 @@ export default function RuExpertiseTemplate({ data }: { data: RuExpertiseData })
       {/* Hero */}
       <header className="relative bg-dark text-white overflow-hidden">
         <div className="absolute inset-0">
-          <Image src={data.heroImage} alt={data.title} fill className="object-cover opacity-30" priority sizes="100vw" />
+          {data.slug !== "jaw-surgery" && <Image src={data.heroImage} alt={data.title} fill className="object-cover opacity-30" priority sizes="100vw" />}
           <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/85 to-dark/55" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
@@ -51,6 +51,12 @@ export default function RuExpertiseTemplate({ data }: { data: RuExpertiseData })
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-primary-light">{data.category}</p>
           <h1 className="mt-4 font-serif text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">{data.title}</h1>
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-white/85">{data.subtitle}</p>
+          {data.slug === "jaw-surgery" && (
+            <figure className="mt-8 w-full max-w-[384px]">
+              <Image src={data.heroImage} alt={`${data.title} — до и после`} width={384} height={200} priority quality={85} sizes="(max-width: 384px) 100vw, 384px" className="w-full h-auto object-contain rounded-lg" />
+              <figcaption className="flex justify-around mt-2 text-sm text-white/80"><span>До</span><span>После</span></figcaption>
+            </figure>
+          )}
         </div>
       </header>
 

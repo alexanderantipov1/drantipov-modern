@@ -81,8 +81,8 @@ export default function BeforeAfterSlider({
         src={afterSrc}
         alt={afterAlt}
         fill
-        className="object-cover pointer-events-none"
-        sizes="(min-width: 1024px) 50vw, 100vw"
+        className="object-contain pointer-events-none"
+        sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
         draggable={false}
       />
 
@@ -95,8 +95,8 @@ export default function BeforeAfterSlider({
           src={beforeSrc}
           alt={beforeAlt}
           fill
-          className="object-cover"
-          sizes="(min-width: 1024px) 50vw, 100vw"
+          className="object-contain"
+          sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
           draggable={false}
         />
       </div>

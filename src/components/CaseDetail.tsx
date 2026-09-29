@@ -73,6 +73,9 @@ export function CaseDetail({ caseData, article, locale = "en" }: CaseDetailProps
   const relatedCases = getRelatedCases(caseData, 3, isRu)
   const url = `${siteConfig.url}${localePrefix}/surgical-cases/${caseData.category}/${caseData.id}`
   const lead = article?.excerpt || caseData.description
+  const jawCase = caseData.category === "corrective-jaw-surgery"
+  // oms000052's "@2x" asset is only 640px wide; the suffix is not a resolution guarantee.
+  const smallJawImage = jawCase && (!caseData.imagePath.includes("preview@2x-") || caseData.id === "oms000052")
 
   const structuredData: object[] = [
     getCaseSchema(caseData),
@@ -177,9 +180,9 @@ export function CaseDetail({ caseData, article, locale = "en" }: CaseDetailProps
       {/* Main Image */}
       <Section background="default" padding="lg">
         <Container size="lg">
-          <div className="max-w-4xl mx-auto">
+          <div className={`${smallJawImage ? "max-w-[640px]" : "max-w-4xl"} mx-auto`}>
             <figure className="space-y-3">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-glass-lg">
+              <div className={`relative ${jawCase ? "aspect-[640/423] bg-neutral-100" : "aspect-[4/3]"} rounded-2xl overflow-hidden shadow-glass-lg`}>
                 <Image
                   src={caseData.imagePath}
                   alt={
@@ -188,9 +191,10 @@ export function CaseDetail({ caseData, article, locale = "en" }: CaseDetailProps
                       : `${caseData.title} — before and after ${categoryLabel.toLowerCase()} result by ${caseData.surgeon || "Dr. Antipov"} in Roseville, CA`
                   }
                   fill
-                  className="object-cover"
+                  className={jawCase ? "object-contain" : "object-cover"}
                   priority
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1024px"
+                  quality={85}
+                  sizes={smallJawImage ? "(max-width: 640px) 100vw, 640px" : "(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 896px"}
                 />
               </div>
               <figcaption className="text-sm text-neutral-500 text-center">
@@ -312,7 +316,7 @@ export function CaseDetail({ caseData, article, locale = "en" }: CaseDetailProps
                     href={`${localePrefix}/surgical-cases/${c.category}/${c.id}`}
                     className="group block overflow-hidden rounded-2xl bg-white shadow-glass border border-neutral-100 transition-all duration-300 hover:shadow-glass-lg hover:-translate-y-1"
                   >
-                    <div className="relative aspect-[4/3] overflow-hidden">
+                    <div className={`relative aspect-[4/3] overflow-hidden ${jawCase ? "bg-neutral-100" : ""}`}>
                       <Image
                         src={c.imagePath}
                         alt={
@@ -321,7 +325,7 @@ export function CaseDetail({ caseData, article, locale = "en" }: CaseDetailProps
                             : `${c.title} — ${categoryLabel.toLowerCase()} case by Dr. Antipov in Roseville, CA`
                         }
                         fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        className={jawCase ? "object-contain" : "object-cover transition-transform duration-300 group-hover:scale-105"}
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                     </div>

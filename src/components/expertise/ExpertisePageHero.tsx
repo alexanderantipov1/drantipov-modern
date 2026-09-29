@@ -11,23 +11,24 @@ interface ExpertisePageHeroProps {
   subtitle: string
   badge?: string
   image?: string
+  clinicalComparison?: boolean
 }
 
-export function ExpertisePageHero({ title, subtitle, badge, image }: ExpertisePageHeroProps) {
+export function ExpertisePageHero({ title, subtitle, badge, image, clinicalComparison = false }: ExpertisePageHeroProps) {
   // If an image is provided, render the dark hero variant with photo background.
   if (image) {
     return (
       <section className="relative min-h-[520px] sm:min-h-[600px] lg:min-h-[640px] flex items-center overflow-hidden pt-24 text-white">
         {/* Background image */}
-        <div className="absolute inset-0">
-          <Image
+        <div className="absolute inset-0 bg-navy">
+          {!clinicalComparison && <Image
             src={image}
             alt=""
             fill
             priority
             sizes="100vw"
             className="object-cover"
-          />
+          />}
           <div className="absolute inset-0 bg-navy/80" />
           <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent" />
         </div>
@@ -60,6 +61,12 @@ export function ExpertisePageHero({ title, subtitle, badge, image }: ExpertisePa
             >
               {subtitle}
             </motion.p>
+            {clinicalComparison && (
+              <motion.figure variants={fadeInUp} className="mx-auto w-full max-w-[384px]">
+                <Image src={image} alt={`${title} — before and after`} width={384} height={200} quality={85} priority sizes="(max-width: 384px) 100vw, 384px" className="w-full h-auto object-contain rounded-lg" />
+                <figcaption className="flex justify-around mt-2 text-sm text-bone/80"><span>Before</span><span>After</span></figcaption>
+              </motion.figure>
+            )}
           </motion.div>
         </Container>
 

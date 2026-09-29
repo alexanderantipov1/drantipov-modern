@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+import { jawGalleryPhoto } from "@/constants/jawGalleryPhotos";
 import { ConsultationModal } from "@/components/forms/ConsultationModal";
 
 interface CaseData {
@@ -85,18 +86,28 @@ const categories: { key: Category; label: string; count: number; cases: CaseData
 function CaseGallery({ caseData, categoryLabel }: { caseData: CaseData; categoryLabel: string }) {
   const [lightbox, setLightbox] = useState<number | null>(null);
   const count = caseData.images.length;
+  const photo = (index: number) => caseData.id.startsWith("oms")
+    ? jawGalleryPhoto(caseData.images[index]!)
+    : { src: caseData.images[index]!, width: 1200 };
 
   return (
     <>
       <div className="bg-white/85 backdrop-blur-xl border border-white/60 rounded-3xl overflow-hidden shadow-md hover:shadow-[0_25px_70px_-15px_rgba(14,62,94,0.3)] hover:-translate-y-1 transition-all duration-500">
-        {count >= 2 ? (
+        {caseData.id.startsWith("oms") ? (
+          <button type="button" onClick={() => setLightbox(0)} className="relative block w-full bg-neutral-100 text-left" style={{ maxWidth: Math.min(720, photo(0).width) }}>
+            <Image src={photo(0).src} alt={`${caseData.label} — before and after`} width={720} height={476} unoptimized={photo(0).width <= 720} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" className="w-full h-auto object-contain" />
+            <span className="absolute bottom-2 left-3 rounded bg-dark/70 px-2 py-1 text-xs font-semibold text-white">Before</span>
+            <span className="absolute bottom-2 right-3 rounded bg-dark/70 px-2 py-1 text-xs font-semibold text-white">After</span>
+            {count > 1 && <span className="absolute top-3 left-1/2 -translate-x-1/2 rounded-full bg-white/95 px-3 py-1.5 text-xs font-bold text-dark shadow-md">📷 View all {count} views</span>}
+          </button>
+        ) : count >= 2 ? (
           <div className="relative">
             <BeforeAfterSlider
               beforeSrc={caseData.images[0]!}
               afterSrc={caseData.images[count - 1]!}
               beforeAlt="Before"
               afterAlt="After"
-              className="aspect-[4/3]"
+              className={caseData.id.startsWith("oms") ? "aspect-[720/476] bg-neutral-100" : "aspect-[4/3]"}
             />
             {count > 2 && (
               <button
@@ -119,8 +130,8 @@ function CaseGallery({ caseData, categoryLabel }: { caseData: CaseData; category
                 <Image
                   src={src}
                   alt={`${caseData.label} — Photo ${i + 1}`}
-                  width={400}
-                  height={500}
+                  width={caseData.id.startsWith("oms") ? 720 : 400}
+                  height={caseData.id.startsWith("oms") ? 476 : 500}
                   className="w-full h-auto block group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-dark/70 to-transparent pt-6 pb-2 px-2">
@@ -168,7 +179,8 @@ function CaseGallery({ caseData, categoryLabel }: { caseData: CaseData; category
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="relative max-w-4xl w-full"
+              className={`relative w-full ${caseData.id.startsWith("oms") ? "max-w-[720px]" : "max-w-4xl"}`}
+              style={caseData.id.startsWith("oms") ? { maxWidth: Math.min(720, photo(lightbox).width) } : undefined}
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -180,11 +192,14 @@ function CaseGallery({ caseData, categoryLabel }: { caseData: CaseData; category
                 </svg>
               </button>
               <Image
-                src={caseData.images[lightbox] ?? ""}
+                src={photo(lightbox).src}
+                unoptimized={caseData.id.startsWith("oms") && photo(lightbox).width <= 720}
                 alt={`${caseData.label} — Photo ${lightbox + 1}`}
-                width={1200}
-                height={1500}
-                className="w-full h-auto rounded-2xl"
+                width={caseData.id.startsWith("oms") ? 720 : 1200}
+                height={caseData.id.startsWith("oms") ? 476 : 1500}
+                quality={85}
+                sizes={caseData.id.startsWith("oms") ? `(max-width: 720px) 100vw, ${Math.min(720, photo(lightbox).width)}px` : "(max-width: 896px) 100vw, 896px"}
+                className={caseData.id.startsWith("oms") ? "w-full h-auto max-h-[75vh] object-contain rounded-2xl" : "w-full h-auto rounded-2xl"}
               />
               <div className="mt-4 flex items-center justify-between">
                 <button
@@ -196,7 +211,7 @@ function CaseGallery({ caseData, categoryLabel }: { caseData: CaseData; category
                 </button>
                 <span className="text-white text-sm font-medium text-center">
                   {caseData.title || caseData.label} &mdash;{" "}
-                  {lightbox === 0 ? "Before" : lightbox === count - 1 ? "After" : `Step ${lightbox + 1}`}{" "}
+                  {caseData.id.startsWith("oms") ? `Before & After — View ${lightbox + 1}` : lightbox === 0 ? "Before" : lightbox === count - 1 ? "After" : `Step ${lightbox + 1}`}{" "}
                   ({lightbox + 1}/{count})
                 </span>
                 <button
@@ -216,8 +231,8 @@ function CaseGallery({ caseData, categoryLabel }: { caseData: CaseData; category
                       i === lightbox ? "border-primary scale-110" : "border-transparent opacity-60 hover:opacity-100"
                     }`}
                   >
-                    <Image src={src} alt="" fill className="object-cover"
-          sizes="100vw"
+                    <Image src={caseData.id.startsWith("oms") ? photo(i).src : src} alt="" fill className={caseData.id.startsWith("oms") ? "object-contain" : "object-cover"}
+          sizes="64px"
         />
                   </button>
                 ))}

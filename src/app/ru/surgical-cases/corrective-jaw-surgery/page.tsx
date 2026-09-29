@@ -100,14 +100,6 @@ export default function RuCorrectiveJawSurgeryCasesPage() {
         {/* Hero */}
         <section className="relative bg-dark text-white overflow-hidden">
           <div className="absolute inset-0">
-            <Image
-              src="/images/corrective-jaw-surgery/corrective-jaw-surgery-97156448.jpg"
-              alt="Ортогнатическая хирургия — доктор Антипов"
-              fill
-              className="object-cover opacity-30"
-              priority
-              sizes="100vw"
-            />
             <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/85 to-dark/55" />
           </div>
           <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
@@ -144,6 +136,10 @@ export default function RuCorrectiveJawSurgeryCasesPage() {
               лица. Каждый случай — это совместная работа хирурга, 3D-планирования
               и точной диагностики.
             </p>
+            <figure className="mt-8 w-full max-w-[415px]">
+              <Image src="/images/corrective-jaw-surgery/corrective-jaw-surgery-97156448.jpg" alt="Ортогнатическая хирургия — до и после" width={415} height={296} priority quality={85} sizes="(max-width: 415px) 100vw, 415px" className="w-full h-auto object-contain rounded-lg" />
+              <figcaption className="flex justify-around mt-2 text-sm text-white/80"><span>До</span><span>После</span></figcaption>
+            </figure>
           </div>
         </section>
 

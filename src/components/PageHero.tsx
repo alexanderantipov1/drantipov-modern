@@ -20,6 +20,7 @@ export interface PageHeroProps {
   /** When true, renders a signature line under the subtitle (homepage-style). */
   signature?: boolean;
   locale?: "en" | "ru";
+  clinicalComparison?: boolean;
 }
 
 export default function PageHero({
@@ -31,6 +32,7 @@ export default function PageHero({
   breadcrumbs,
   signature = false,
   locale = "en",
+  clinicalComparison = false,
 }: PageHeroProps) {
   const overlayClass =
     overlay === "dark"
@@ -41,8 +43,8 @@ export default function PageHero({
 
   return (
     <section className="relative min-h-[520px] sm:min-h-[600px] lg:min-h-[640px] flex items-center overflow-hidden pt-24">
-      <div className="absolute inset-0">
-        <Image
+      <div className="absolute inset-0 bg-navy">
+        {!clinicalComparison && <Image
           src={image}
           alt=""
           fill
@@ -50,7 +52,7 @@ export default function PageHero({
           priority
           quality={85}
           sizes="100vw"
-        />
+        />}
         <div className={`absolute inset-0 ${overlayClass}`} />
         <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent" />
       </div>
@@ -116,6 +118,12 @@ export default function PageHero({
           <p className="mt-5 text-bone/80 text-lg sm:text-xl max-w-2xl leading-relaxed">
             {subtitle}
           </p>
+          {clinicalComparison && (
+            <figure className="mt-8 w-full max-w-[415px]">
+              <Image src={image} alt={`${title} — before and after`} width={415} height={296} priority quality={85} sizes="(max-width: 415px) 100vw, 415px" className="w-full h-auto object-contain rounded-lg" />
+              <figcaption className="flex justify-around mt-2 text-sm text-bone/80"><span>Before</span><span>After</span></figcaption>
+            </figure>
+          )}
 
           {signature && (
             <motion.div

@@ -22,7 +22,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
     id: "oms000051",
     title: "Коррекция асимметричной аномалии прикуса II класса",
     category: "corrective-jaw-surgery",
-    imagePath: "/images/cases/corrective-jaw-surgery/oms000051/1/preview-adf6b82f.jpg",
+    imagePath: "/images/cases/corrective-jaw-surgery/oms000051/1/preview@2x-c3a69e8f.jpg",
     diagnosis: [
       "Асимметрия гипоплазии верхней челюсти",
       "Асимметрия гиперплазии нижней челюсти",
@@ -59,7 +59,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
     id: "oms000049",
     title: "Коррекция нарушения прикуса II класса",
     category: "corrective-jaw-surgery",
-    imagePath: "/images/cases/corrective-jaw-surgery/oms000049/1/preview-18f5c36d.jpg",
+    imagePath: "/images/cases/corrective-jaw-surgery/oms000049/1/preview@2x-29ea0568.jpg",
     diagnosis: [
       "Асимметричная деформация верхней и нижней челюстей",
       "Скелетная аномалия прикуса II класса",
@@ -119,7 +119,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
     id: "oms000046",
     title: "Ортогнатическая хирургия — полное преображение лица",
     category: "corrective-jaw-surgery",
-    imagePath: "/images/cases/corrective-jaw-surgery/oms000046/1/preview-b2a17db4.jpg",
+    imagePath: "/images/cases/corrective-jaw-surgery/oms000046/1/preview@2x-4283b1f2.jpg",
     diagnosis: [
       "Выраженная асимметрия верхней челюсти",
       "Укорочение нижней челюсти",
@@ -141,7 +141,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
     id: "oms000045",
     title: "Ортогнатическая хирургия с костной пластикой",
     category: "corrective-jaw-surgery",
-    imagePath: "/images/cases/corrective-jaw-surgery/oms000045/1/preview-2bbec581.jpg",
+    imagePath: "/images/cases/corrective-jaw-surgery/oms000045/1/preview@2x-9b9e2864.jpg",
     diagnosis: [
       "Гипоплазия верхней челюсти",
       "Нормальная длина нижней челюсти",

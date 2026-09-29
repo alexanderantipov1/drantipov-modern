@@ -59,7 +59,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
     id: "oms000051",
     title: "Correction of an Asymmetric Anomaly of Class II Occlusion",
     category: "corrective-jaw-surgery",
-    imagePath: "/images/cases/corrective-jaw-surgery/oms000051/1/preview-adf6b82f.jpg",
+    imagePath: "/images/cases/corrective-jaw-surgery/oms000051/1/preview@2x-c3a69e8f.jpg",
     diagnosis: [
       "Maxillary hypoplasia asymmetry",
       "Mandibular asymmetry hyperpasia",
@@ -96,7 +96,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
     id: "oms000049",
     title: "Correction Of Class II Malocclusion",
     category: "corrective-jaw-surgery",
-    imagePath: "/images/cases/corrective-jaw-surgery/oms000049/1/preview-18f5c36d.jpg",
+    imagePath: "/images/cases/corrective-jaw-surgery/oms000049/1/preview@2x-29ea0568.jpg",
     diagnosis: [
       "Asymmetric deformity of the upper and lower jaw",
       "Class II skeletal occlusion anomaly",
@@ -156,7 +156,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
     id: "oms000046",
     title: "Corrective Jaw Surgery Complete Face Makeover",
     category: "corrective-jaw-surgery",
-    imagePath: "/images/cases/corrective-jaw-surgery/oms000046/1/preview-b2a17db4.jpg",
+    imagePath: "/images/cases/corrective-jaw-surgery/oms000046/1/preview@2x-4283b1f2.jpg",
     diagnosis: [
       "Severe maxillary asymmetry",
       "Mandibular length short",
@@ -178,7 +178,7 @@ export const correctiveJawSurgeryCases: SurgicalCase[] = [
     id: "oms000045",
     title: "Orthognathic Surgery With Bone Grafting",
     category: "corrective-jaw-surgery",
-    imagePath: "/images/cases/corrective-jaw-surgery/oms000045/1/preview-2bbec581.jpg",
+    imagePath: "/images/cases/corrective-jaw-surgery/oms000045/1/preview@2x-9b9e2864.jpg",
     diagnosis: [
       "Maxillary hypoplasia",
       "Mandible normal length",

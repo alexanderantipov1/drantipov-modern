@@ -37,6 +37,8 @@ export interface RevisionArticle {
   category: string
   readTime: string
   author: string
+  /** Editorial draft not yet clinically reviewed by Dr. Antipov. */
+  editorialReviewPending?: boolean
   keywords: string[]
   intro: Para
   disclaimer?: string

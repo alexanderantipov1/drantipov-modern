@@ -53,12 +53,19 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
     datePublished: article.datePublished,
     dateModified: article.datePublished,
     image: [`${SITE}${article.image}`],
-    author: {
-      "@type": "Person",
-      name: "Dr. Alexander V. Antipov, DDS",
-      url: `${SITE}/about`,
-      "@id": `${SITE}/#physician`,
-    },
+    author: article.editorialReviewPending
+      ? {
+          "@type": "Organization",
+          "@id": `${SITE}/#organization`,
+          name: article.author,
+          url: SITE,
+        }
+      : {
+          "@type": "Person",
+          name: "Dr. Alexander V. Antipov, DDS",
+          url: `${SITE}/about`,
+          "@id": `${SITE}/#physician`,
+        },
     publisher: {
       "@type": "Organization",
       "@id": `${SITE}/#organization`,
@@ -112,16 +119,25 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
               {article.title}
             </h1>
 
-            <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
-              {isRu ? "Медицинская проверка: " : "Medically reviewed by "}
-              <Link href={isRu ? "/ru/about" : "/about"} className="not-italic font-bold text-neutral-900 underline decoration-primary-300 hover:decoration-primary-600">
-                Dr. Alexander V. Antipov, DDS
-              </Link>{" "}
-              —
-              {isRu
-                ? " сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS) · лицензия штата Калифорния №50724"
-                : " Board-Certified Oral & Maxillofacial Surgeon · Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS) · California Dental License #50724"}
-            </p>
+            {article.editorialReviewPending ? (
+              <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
+                By {article.author}. Clinical review pending; this article has not yet been medically reviewed by{" "}
+                <Link href="/about" className="not-italic font-bold text-neutral-900 underline decoration-primary-300 hover:decoration-primary-600">
+                  Dr. Alexander V. Antipov, DDS
+                </Link>.
+              </p>
+            ) : (
+              <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
+                {isRu ? "Медицинская проверка: " : "Medically reviewed by "}
+                <Link href={isRu ? "/ru/about" : "/about"} className="not-italic font-bold text-neutral-900 underline decoration-primary-300 hover:decoration-primary-600">
+                  Dr. Alexander V. Antipov, DDS
+                </Link>{" "}
+                —
+                {isRu
+                  ? " сертифицированный челюстно-лицевой хирург · Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS) · лицензия штата Калифорния №50724"
+                  : " Board-Certified Oral & Maxillofacial Surgeon · Diplomate, American Board of Oral & Maxillofacial Surgery (ABOMS) · California Dental License #50724"}
+              </p>
+            )}
 
             <div className="relative w-full h-[400px] md:h-[500px] mb-12 rounded-[40px] overflow-hidden">
               <Image

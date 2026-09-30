@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start -H 0.0.0.0 -p 5000",
     "lint": "next lint",
-    "test:seo": "node --test scripts/foundation-regression.cjs scripts/conversion-regression.cjs scripts/test-trust-schema.cjs",
+    "test:seo": "node --test scripts/foundation-regression.cjs scripts/conversion-regression.cjs scripts/test-trust-schema.cjs scripts/new-insights-regression.cjs",
     "test:seo:runtime": "node --test scripts/seo-runtime-404.cjs"
   },
   "dependencies": {

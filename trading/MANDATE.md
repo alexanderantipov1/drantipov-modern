@@ -1,6 +1,6 @@
 # Autonomous Trading Mandate — Account ••••8511
 
-**Status:** active
+**Status:** NOT LIVE — routine created but disabled, pending connector grant
 **Authorized by:** account owner, 2026-10-11
 **Scope:** Robinhood individual account ending 8511 ("Agentic"), and no other account.
 **Risk budget:** Moderate
@@ -56,6 +56,22 @@ and report. Halts are not self-clearing beyond their stated window.
 - Weekly loss reached → no new entries for the remainder of that week.
 - Hard kill reached → no new orders of any kind; notify and stop. Existing
   stops stay live. Do not liquidate as a reaction to the kill trigger.
+
+## Deployment status
+
+Routine `trig_01WiBcQkG8GXC5KxGdSoWY35` ("Autonomous trading - Robinhood 8511")
+was created on 2026-10-11 with schedule `CRON_TZ=America/New_York 41 9-15 * * 1-5`
+(hourly, 9:41am–3:41pm ET, weekdays) and then **disabled immediately**.
+
+Reason: the routine stores no MCP connector grant (`mcp_connections: []`). This
+organization does not permit attaching connectors to routines created through
+the API, so sessions it fires would start with no Robinhood tools and could
+neither read the account nor place an order. It was disabled rather than left
+firing to no effect.
+
+To make it live, the owner must attach the Robinhood connector from the
+claude.ai routines UI and then enable it. Until that is done, nothing trades
+automatically and the limits above are not in force because nothing is running.
 
 ## Kill switch
 

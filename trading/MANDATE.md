@@ -47,6 +47,36 @@ primary listing.
 6. Never average down into a losing position.
 7. One position per symbol. No pyramiding.
 
+## Pre-existing positions outside the mandate
+
+**Scope is account ••••8511 only.** This is enforced by the broker as well as by
+this document: it is the sole account with agent trading enabled, and the other
+four on the login (individual margin ••••6313, two Roth IRAs, one custodial
+UTMA) are read-only to this agent. The routine prompt additionally instructs a
+stop-and-report if any tool returns a different account number.
+
+One holding inside ••••8511 falls outside the instrument rules and is therefore
+**owner-managed, not routine-managed**:
+
+- **0.00234706 BTC**, cost basis $200.03, value ~$194.76.
+- Protected by an agent-placed stop order from 2026-09-25: trigger $77,500,
+  limit $73,625, GTC.
+
+Because crypto is a prohibited instrument, the routine will neither trail this
+stop nor close the position. Two consequences the owner should accept or
+resolve:
+
+1. The stop has not moved since 2026-09-25 and sits roughly 6.6% below market.
+   It will not be trailed by any automated pass.
+2. Crypto trades continuously, and the order's limit is 5% below its trigger. A
+   move straight through $73,625 outside of a monitored window can leave the
+   order unfilled with the position still open.
+
+Resolving this requires an explicit decision from the owner: close the position,
+accept it as a static holding, or amend this mandate to permit upward-only
+trailing of crypto stops (which would be a change to the approved instrument
+rules, not an interpretation of them).
+
 ## Halt conditions
 
 On any halt, place no new orders, leave existing protective stops in place,

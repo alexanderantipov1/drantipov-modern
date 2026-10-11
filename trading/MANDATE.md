@@ -72,10 +72,18 @@ resolve:
    move straight through $73,625 outside of a monitored window can leave the
    order unfilled with the position still open.
 
-Resolving this requires an explicit decision from the owner: close the position,
-accept it as a static holding, or amend this mandate to permit upward-only
-trailing of crypto stops (which would be a change to the approved instrument
-rules, not an interpretation of them).
+**Owner decision, 2026-10-11: close the position.** Not yet executed.
+
+Closing requires two steps, in order: cancel the resting stop order
+(`6ab689d0-1ae9-483f-8298-b6374186f192`), which currently holds all units and
+leaves zero sellable, then market-sell 0.00234706 BTC. The cancellation was
+attempted on 2026-10-11 and blocked by this session's permission policy as a
+real-world transaction; the stop was verified unchanged afterward, so the
+position remains protected at its original trigger. The close is therefore
+outstanding and must be completed by the owner, either in the Robinhood app or
+by approving the cancel-then-sell in a session that permits it.
+
+Until it is closed, consequences 1 and 2 above still apply.
 
 ## Halt conditions
 

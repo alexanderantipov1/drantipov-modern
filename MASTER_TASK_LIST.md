@@ -5,6 +5,16 @@
 **Created**: 2025-10-12
 **Purpose**: Single source of truth for project implementation with PRD and rules references
 
+> **Status note (2026-10-18)**
+>
+> This list is the original October 2025 build plan. The site has been live on Vercel at https://www.drantipov.com for a long time and has grown well past this plan: a Russian version at `/ru`, location, insurance, surgical-case, and insights pages, cost calculators, and SEO regression tests. On 2026-10-18 the task items were reconciled against the code:
+>
+> - **Checked off (`[x]`)** only where the code or the live site shows the item is done. Notes give the evidence, for example the actual file path when a page shipped at a different route.
+> - **Obsolete (~~struck through~~)** where the item no longer applies: superseded by a different implementation, conflicting with the current stack (Next.js 16, Tailwind 4, `app/sitemap.ts`/`robots.ts`, Microsoft Clarity instead of Hotjar), or tied to a page or component that was never built that way. Task-level notes explain why.
+> - **Still open (`[ ]`)**: anything not clearly done in code, including all manual QA, external-account, and monitoring items. When in doubt, items were left open.
+>
+> Counts after reconciliation: 203 checked, 141 obsolete, 187 open. The "Technical Stack" and "Pages to Build" sections below are kept as the original plan; see README.md for the current stack and structure.
+
 ---
 
 ## 📋 HOW TO USE THIS TASK LIST
@@ -50,7 +60,7 @@ This document serves as the **complete roadmap** for building the Dr. Antipov we
 - 50% reduction in bounce rate
 - Outrank Nuvia for "oral surgeon Northern California" within 6 months
 
-### Technical Stack (PRD §3.1)
+### Technical Stack (PRD §3.1, original plan; current: Next.js 16, React 19, Tailwind 4, Zod 4, Yarn 1, see README.md)
 - **Framework**: Next.js 14.2+ (App Router)
 - **Language**: TypeScript (strict mode)
 - **Styling**: Tailwind CSS 3.4+ + Shadcn UI
@@ -60,7 +70,7 @@ This document serves as the **complete roadmap** for building the Dr. Antipov we
 - **Analytics**: GA4, GTM, Hotjar, Facebook Pixel
 - **Package Manager**: yarn
 
-### Pages to Build: 19 Total (PRD §5)
+### Pages to Build: 19 Total (PRD §5, original plan; the live site has far more routes, several at different paths)
 1. Home (`/`)
 2. About (`/about`)
 3. Contact (`/contact`)
@@ -642,7 +652,7 @@ import { ProfileImagePlaceholder, VideoThumbnailPlaceholder } from "@/components
 
 ## 🔄 IN PROGRESS TASKS
 
-Currently no tasks in progress.
+Currently no tasks in progress. Open items below are the remaining backlog as of 2026-10-18.
 
 ---
 
@@ -659,7 +669,7 @@ Currently no tasks in progress.
 - [x] Set up absolute imports (`@/` alias)
 - [x] Configure `tsconfig.json` with strict mode
 - [x] Set up ESLint and Prettier
-- [ ] Initialize Git repository
+- [x] Initialize Git repository — *repo on GitHub*
 - [x] Create `.gitignore` (include `.env.local`)
 
 **Acceptance Criteria**:
@@ -767,7 +777,7 @@ npx shadcn-ui@latest add button card input textarea select dialog sheet tabs acc
 **Dependencies**: Task 1.1
 
 **Subtasks**:
-- [ ] Create directory structure:
+- [x] Create directory structure: — *structure exists (no `hooks/` dir; not needed so far)*
   ```
   src/
   ├── app/              # Next.js App Router pages
@@ -788,8 +798,8 @@ npx shadcn-ui@latest add button card input textarea select dialog sheet tabs acc
   ├── hooks/            # Custom React hooks
   └── utils/            # Utility functions
   ```
-- [ ] Create `README.md` with setup instructions
-- [ ] Create `.env.example` with required variables
+- [x] Create `README.md` with setup instructions — *rewritten 2026-10-18 to match the current stack*
+- [x] Create `.env.example` with required variables
 - [ ] Document file naming conventions
 
 **Acceptance Criteria**:
@@ -807,7 +817,7 @@ npx shadcn-ui@latest add button card input textarea select dialog sheet tabs acc
 
 **Subtasks**:
 - [ ] Create `.env.local` file (not committed)
-- [ ] Create `.env.example` file (committed)
+- [x] Create `.env.example` file (committed)
 - [ ] Add required variables:
   ```bash
   # Email Service
@@ -828,7 +838,7 @@ npx shadcn-ui@latest add button card input textarea select dialog sheet tabs acc
   NEXT_PUBLIC_SITE_URL=https://drantipov.com
   ```
 - [ ] Add TypeScript types for env vars in `next-env.d.ts`
-- [ ] Verify `.env.local` in `.gitignore`
+- [x] Verify `.env.local` in `.gitignore` — *covered by `.env*.local` in .gitignore*
 
 **Acceptance Criteria**:
 - ✅ `.env.example` documented
@@ -844,15 +854,15 @@ npx shadcn-ui@latest add button card input textarea select dialog sheet tabs acc
 **Dependencies**: Task 1.1
 
 **Subtasks**:
-- [ ] Install production dependencies:
+- ~~Install production dependencies:~~ — *obsolete: deps are tracked in package.json; react-player was never used*
   ```bash
   yarn add framer-motion react-player react-hook-form zod @hookform/resolvers/zod resend
   ```
-- [ ] Install dev dependencies:
+- ~~Install dev dependencies:~~ — *obsolete: tests use node:test (`yarn test:seo`); vitest/testing-library never adopted*
   ```bash
   yarn add -D @types/node vitest @testing-library/react @testing-library/jest-dom
   ```
-- [ ] Verify all packages installed correctly
+- [x] Verify all packages installed correctly — *clean `yarn install --frozen-lockfile` + build verified 2026-10-18*
 - [ ] Run `yarn audit` to check for vulnerabilities
 
 **Acceptance Criteria**:
@@ -970,7 +980,7 @@ export const staggerChildren = {
 - [x] Add HTML metadata
 - [x] Add Google Fonts (Inter, Merriweather)
 - [x] Add global styles
-- [ ] Add analytics scripts (GA4, GTM, Hotjar)
+- [x] Add analytics scripts (GA4, GTM, Hotjar) — *GA4 + GTM + Microsoft Clarity, loaded only after cookie consent (ConsentGatedTracking); Hotjar not used*
 - [x] Test layout renders correctly
 
 **Acceptance Criteria**:
@@ -1051,8 +1061,8 @@ export const staggerChildren = {
 **Dependencies**: Task 2.2
 
 **Subtasks**:
-- [ ] Create `src/components/layout/Navigation.tsx`
-- [ ] Define navigation structure:
+- ~~Create `src/components/layout/Navigation.tsx`~~ — *obsolete: navigation lives in `src/components/Navbar.tsx`*
+- [x] Define navigation structure: — *in Navbar.tsx*
   - Home
   - About
   - Expertise (dropdown)
@@ -1071,9 +1081,9 @@ export const staggerChildren = {
     - Videos
     - Speaking
   - Contact
-- [ ] Add hover effects
+- [x] Add hover effects
 - [ ] Add active state styling
-- [ ] Implement dropdown menus
+- [x] Implement dropdown menus — *mega menu + For Patients dropdown*
 - [ ] Test keyboard navigation
 - [ ] Test accessibility (ARIA labels)
 
@@ -1091,7 +1101,7 @@ export const staggerChildren = {
 **Dependencies**: Task 2.4
 
 **Subtasks**:
-- [ ] Create `src/components/layout/MobileMenu.tsx`
+- ~~Create `src/components/layout/MobileMenu.tsx`~~ — *obsolete: mobile menu is part of `src/components/Navbar.tsx`*
 - [ ] Add hamburger icon animation
 - [ ] Implement slide-in menu
 - [ ] Add menu items with collapsible sections
@@ -1118,7 +1128,7 @@ export const staggerChildren = {
 
 **Subtasks**:
 - [x] Create `src/app/page.tsx` (homepage)
-- [ ] Create `src/components/home/Hero.tsx` (currently in page.tsx)
+- [x] Create `src/components/home/Hero.tsx` (currently in page.tsx) — *`src/components/Hero.tsx`*
 - [x] Implement hero layout:
   - Center-aligned with gradient background
   - Headline + subheadline + CTAs
@@ -1128,7 +1138,7 @@ export const staggerChildren = {
   - Primary: "Schedule Consultation"
   - Secondary: "View Services"
 - [x] Add trust indicators as glassmorphism cards (Board Certified, Training, Trusted by Dentists)
-- [ ] Add hero image with video overlay
+- [x] Add hero image with video overlay — *hero.mp4 background video*
 - [ ] Add scroll animation (fade in up)
 - [ ] Test responsive layout
 
@@ -1146,22 +1156,25 @@ export const staggerChildren = {
 ---
 
 ### Task 3.2: Build Problem/Solution Section (Patients)
+
+> **Status 2026-10-18:** The homepage shipped with a different section lineup (Hero, ReviewBanner, About, Services, PracticePhilosophy, WallOfSmiles, BeforeAfter, Testimonials, FAQ, OfficeTour, ServiceArea, Locations, ReferringDoctors, CTA). This planned component and its copy were never built, so the items below no longer apply.
+
 **PRD Reference**: §6.1 (HOME PAGE - Problem/Solution Section)
 **Rules Reference**: `ui-components.md`
 **Dependencies**: Task 3.1
 
 **Subtasks**:
-- [ ] Create `src/components/home/ProblemSolution.tsx`
-- [ ] Add section heading: "Finally, A Smile You're Proud Of"
-- [ ] Create 3 problem/solution cards:
+- ~~Create `src/components/home/ProblemSolution.tsx`~~ — *obsolete*
+- ~~Add section heading: "Finally, A Smile You're Proud Of"~~ — *obsolete*
+- ~~Create 3 problem/solution cards:~~ — *obsolete*
   1. Missing or Failing Teeth → Dental Implants
   2. Jaw Pain or Misalignment → Corrective Jaw Surgery
   3. Need a Specialist You Trust → Meet Dr. Antipov
-- [ ] Add card hover effects (lift + shadow)
-- [ ] Add icons for each card
-- [ ] Add CTA at bottom: "Schedule Your Consultation"
-- [ ] Add scroll animations (stagger cards)
-- [ ] Test responsive grid
+- ~~Add card hover effects (lift + shadow)~~ — *obsolete*
+- ~~Add icons for each card~~ — *obsolete*
+- ~~Add CTA at bottom: "Schedule Your Consultation"~~ — *obsolete*
+- ~~Add scroll animations (stagger cards)~~ — *obsolete*
+- ~~Test responsive grid~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ 3 cards visible
@@ -1177,25 +1190,28 @@ export const staggerChildren = {
 ---
 
 ### Task 3.3: Build Services Overview Section
+
+> **Status 2026-10-18:** The homepage shipped with a different section lineup (Hero, ReviewBanner, About, Services, PracticePhilosophy, WallOfSmiles, BeforeAfter, Testimonials, FAQ, OfficeTour, ServiceArea, Locations, ReferringDoctors, CTA). This planned component and its copy were never built, so the items below no longer apply.
+
 **PRD Reference**: §6.1 (HOME PAGE - Services Overview)
 **Rules Reference**: `ui-components.md`
 **Dependencies**: Task 3.1
 
 **Subtasks**:
-- [ ] Create `src/components/home/ServicesOverview.tsx`
-- [ ] Add section heading: "Specialized Expertise You Can Trust"
-- [ ] Create service cards for:
+- ~~Create `src/components/home/ServicesOverview.tsx`~~ — *obsolete*
+- ~~Add section heading: "Specialized Expertise You Can Trust"~~ — *obsolete*
+- ~~Create service cards for:~~ — *obsolete*
   1. Dental Implants & Full-Arch Restoration
   2. Corrective Jaw Surgery (Orthognathic)
   3. Wisdom Teeth Removal
   4. Facial Reconstruction
   5. Bone Grafting
   6. TMJ Treatment
-- [ ] Add service images
-- [ ] Add hover effects (scale image, lift card)
-- [ ] Add "Learn More →" links
-- [ ] Add scroll animations
-- [ ] Test responsive grid (3 columns → 2 → 1)
+- ~~Add service images~~ — *obsolete*
+- ~~Add hover effects (scale image, lift card)~~ — *obsolete*
+- ~~Add "Learn More →" links~~ — *obsolete*
+- ~~Add scroll animations~~ — *obsolete*
+- ~~Test responsive grid (3 columns → 2 → 1)~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ All 6 services displayed
@@ -1206,25 +1222,28 @@ export const staggerChildren = {
 ---
 
 ### Task 3.4: Build For Dentists Section
+
+> **Status 2026-10-18:** The homepage shipped with a different section lineup (Hero, ReviewBanner, About, Services, PracticePhilosophy, WallOfSmiles, BeforeAfter, Testimonials, FAQ, OfficeTour, ServiceArea, Locations, ReferringDoctors, CTA). This planned component and its copy were never built, so the items below no longer apply.
+
 **PRD Reference**: §6.1 (HOME PAGE - For Dentists Section)
 **Rules Reference**: `ui-components.md`
 **Dependencies**: Task 3.1
 
 **Subtasks**:
-- [ ] Create `src/components/home/ForDentists.tsx`
-- [ ] Implement dark background (`bg-primary-900`)
-- [ ] Add badge: "For Dental Professionals"
-- [ ] Add headline: "Expand Your Practice. Master Advanced Techniques."
-- [ ] Add 3 benefit points with checkmarks:
+- ~~Create `src/components/home/ForDentists.tsx`~~ — *obsolete*
+- ~~Implement dark background (`bg-primary-900`)~~ — *obsolete*
+- ~~Add badge: "For Dental Professionals"~~ — *obsolete*
+- ~~Add headline: "Expand Your Practice. Master Advanced Techniques."~~ — *obsolete*
+- ~~Add 3 benefit points with checkmarks:~~ — *obsolete*
   - Referral Partnerships
   - Hands-On Courses
   - Collaborative Growth
-- [ ] Add dual CTAs:
+- ~~Add dual CTAs:~~ — *obsolete*
   - "Become a Referral Partner"
   - "Explore Courses"
-- [ ] Add collaboration image on right
-- [ ] Add scroll animations
-- [ ] Test contrast ratios (WCAG)
+- ~~Add collaboration image on right~~ — *obsolete*
+- ~~Add scroll animations~~ — *obsolete*
+- ~~Test contrast ratios (WCAG)~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ Dark theme applied
@@ -1239,20 +1258,23 @@ export const staggerChildren = {
 ---
 
 ### Task 3.5: Build Video Testimonials Section
+
+> **Status 2026-10-18:** The homepage shipped with a different section lineup (Hero, ReviewBanner, About, Services, PracticePhilosophy, WallOfSmiles, BeforeAfter, Testimonials, FAQ, OfficeTour, ServiceArea, Locations, ReferringDoctors, CTA). This planned component and its copy were never built, so the items below no longer apply.
+
 **PRD Reference**: §6.1 (HOME PAGE - Video Testimonials)
 **Rules Reference**: `ui-components.md`
 **Dependencies**: Task 3.1
 
 **Subtasks**:
-- [ ] Create `src/components/home/VideoTestimonials.tsx`
-- [ ] Add section heading: "Real Patients. Life-Changing Results."
-- [ ] Create video card grid (3 columns)
-- [ ] Add YouTube thumbnail images
-- [ ] Add play button overlay (glassmorphism)
-- [ ] Implement lazy loading (load on click)
-- [ ] Add video modal/dialog with react-player
-- [ ] Add "Watch More Stories →" CTA
-- [ ] Test video embeds
+- ~~Create `src/components/home/VideoTestimonials.tsx`~~ — *obsolete*
+- ~~Add section heading: "Real Patients. Life-Changing Results."~~ — *obsolete*
+- ~~Create video card grid (3 columns)~~ — *obsolete*
+- ~~Add YouTube thumbnail images~~ — *obsolete*
+- ~~Add play button overlay (glassmorphism)~~ — *obsolete*
+- ~~Implement lazy loading (load on click)~~ — *obsolete*
+- ~~Add video modal/dialog with react-player~~ — *obsolete*
+- ~~Add "Watch More Stories →" CTA~~ — *obsolete*
+- ~~Test video embeds~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ Video thumbnails display
@@ -1264,24 +1286,27 @@ export const staggerChildren = {
 ---
 
 ### Task 3.6: Build Credentials & Trust Section
+
+> **Status 2026-10-18:** The homepage shipped with a different section lineup (Hero, ReviewBanner, About, Services, PracticePhilosophy, WallOfSmiles, BeforeAfter, Testimonials, FAQ, OfficeTour, ServiceArea, Locations, ReferringDoctors, CTA). This planned component and its copy were never built, so the items below no longer apply.
+
 **PRD Reference**: §6.1 (HOME PAGE - Credentials & Trust)
 **Rules Reference**: `ui-components.md`
 **Dependencies**: Task 3.1
 
 **Subtasks**:
-- [ ] Create `src/components/home/Credentials.tsx`
-- [ ] Add 2-column layout (image left, content right)
-- [ ] Add professional photo of Dr. Antipov
-- [ ] Add badge: "Board Certified Specialist"
-- [ ] Add headline: "Why Northern California Dentists Trust Dr. Antipov"
-- [ ] Add quote from Dr. Antipov
-- [ ] Add 4 credential items with icons:
+- ~~Create `src/components/home/Credentials.tsx`~~ — *obsolete*
+- ~~Add 2-column layout (image left, content right)~~ — *obsolete*
+- ~~Add professional photo of Dr. Antipov~~ — *obsolete*
+- ~~Add badge: "Board Certified Specialist"~~ — *obsolete*
+- ~~Add headline: "Why Northern California Dentists Trust Dr. Antipov"~~ — *obsolete*
+- ~~Add quote from Dr. Antipov~~ — *obsolete*
+- ~~Add 4 credential items with icons:~~ — *obsolete*
   - Elite Training (Loma Linda, Albert Einstein)
   - Board Certified (ABOMS)
   - Founder, Fusion Dental Academy
   - Patient-Centered Care (15+ years)
-- [ ] Add CTA: "Learn More About Dr. Antipov →"
-- [ ] Test responsive layout
+- ~~Add CTA: "Learn More About Dr. Antipov →"~~ — *obsolete*
+- ~~Test responsive layout~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ Image displays correctly
@@ -1292,21 +1317,24 @@ export const staggerChildren = {
 ---
 
 ### Task 3.7: Build Final CTA Section
+
+> **Status 2026-10-18:** The homepage shipped with a different section lineup (Hero, ReviewBanner, About, Services, PracticePhilosophy, WallOfSmiles, BeforeAfter, Testimonials, FAQ, OfficeTour, ServiceArea, Locations, ReferringDoctors, CTA). This planned component and its copy were never built, so the items below no longer apply.
+
 **PRD Reference**: §6.1 (HOME PAGE - Final CTA)
 **Rules Reference**: `ui-components.md`
 **Dependencies**: Task 3.1
 
 **Subtasks**:
-- [ ] Create `src/components/home/FinalCTA.tsx`
-- [ ] Add gradient background (`from-primary-500 to-primary-700`)
-- [ ] Add headline: "Ready to Transform Your Smile or Practice?"
-- [ ] Add subheadline
-- [ ] Add dual CTAs:
+- ~~Create `src/components/home/FinalCTA.tsx`~~ — *obsolete*
+- ~~Add gradient background (`from-primary-500 to-primary-700`)~~ — *obsolete*
+- ~~Add headline: "Ready to Transform Your Smile or Practice?"~~ — *obsolete*
+- ~~Add subheadline~~ — *obsolete*
+- ~~Add dual CTAs:~~ — *obsolete*
   - "Book Patient Consultation"
   - "Contact for Partnerships"
-- [ ] Add contact info (phone, location)
-- [ ] Add scroll animation
-- [ ] Test contrast (white text on blue)
+- ~~Add contact info (phone, location)~~ — *obsolete*
+- ~~Add scroll animation~~ — *obsolete*
+- ~~Test contrast (white text on blue)~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ Gradient background works
@@ -1322,13 +1350,13 @@ export const staggerChildren = {
 **Dependencies**: Task 3.1
 
 **Subtasks**:
-- [ ] Add title tag: "Dr. Alexander Antipov - Northern California's Premier Oral Surgeon | Roseville, Sacramento"
-- [ ] Add meta description (150-160 chars)
-- [ ] Add meta keywords
-- [ ] Add canonical URL
-- [ ] Add Open Graph tags (og:title, og:description, og:image)
-- [ ] Add Twitter Card tags
-- [ ] Add Schema.org structured data:
+- ~~Add title tag: "Dr. Alexander Antipov - Northern California's Premier Oral Surgeon | Roseville, Sacramento"~~ — *obsolete: final title differs and is set through `finalizeMetadata`*
+- [x] Add meta description (150-160 chars)
+- ~~Add meta keywords~~ — *obsolete: meta keywords are deliberately omitted (`keywords: null` in seo-foundation)*
+- [x] Add canonical URL
+- [x] Add Open Graph tags (og:title, og:description, og:image)
+- [x] Add Twitter Card tags
+- [x] Add Schema.org structured data: — *site-wide JSON-LD in `src/components/JsonLd.tsx` plus page schemas*
   - Physician schema
   - MedicalBusiness schema
   - Review schema
@@ -1363,14 +1391,14 @@ export const staggerChildren = {
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/app/about/page.tsx`
-- [ ] Add SEO meta tags
-- [ ] Create hero section
-- [ ] Create biography section
+- [x] Create `src/app/about/page.tsx` — *`src/app/(en)/about/page.tsx`*
+- [x] Add SEO meta tags
+- [x] Create hero section
+- [x] Create biography section — *`About` section*
 - [ ] Create education & credentials section
-- [ ] Create philosophy section
-- [ ] Create CTA section
-- [ ] Test page structure
+- [x] Create philosophy section — *`PracticePhilosophy`*
+- [x] Create CTA section
+- [x] Test page structure — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ All sections present
@@ -1381,16 +1409,19 @@ export const staggerChildren = {
 ---
 
 ### Task 4.2: Build About Hero Section
+
+> **Status 2026-10-18:** The About page is built from shared sections (Hero, TrustBadges, About, PracticePhilosophy, Testimonials, FAQ, CTA, ...) instead of these bespoke sections, so this planned layout and copy no longer apply.
+
 **PRD Reference**: §6.2 (About Page - Hero)
 **Rules Reference**: `ui-components.md`
 **Dependencies**: Task 4.1
 
 **Subtasks**:
-- [ ] Create hero with gradient background
-- [ ] Add H1: "Meet Dr. Alexander Antipov"
-- [ ] Add subtitle: "Board-Certified Oral Surgeon | Educator | Innovator"
-- [ ] Add scroll animation
-- [ ] Test responsive text sizing
+- ~~Create hero with gradient background~~ — *obsolete*
+- ~~Add H1: "Meet Dr. Alexander Antipov"~~ — *obsolete*
+- ~~Add subtitle: "Board-Certified Oral Surgeon | Educator | Innovator"~~ — *obsolete*
+- ~~Add scroll animation~~ — *obsolete*
+- ~~Test responsive text sizing~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ H1 present
@@ -1401,17 +1432,20 @@ export const staggerChildren = {
 ---
 
 ### Task 4.3: Build Biography Section
+
+> **Status 2026-10-18:** The About page is built from shared sections (Hero, TrustBadges, About, PracticePhilosophy, Testimonials, FAQ, CTA, ...) instead of these bespoke sections, so this planned layout and copy no longer apply.
+
 **PRD Reference**: §6.2 (About Page - Biography)
 **Rules Reference**: `ui-components.md`
 **Dependencies**: Task 4.1
 
 **Subtasks**:
-- [ ] Create 2-column layout (image left, text right)
-- [ ] Add professional photo (sticky positioning)
-- [ ] Add 3-4 paragraphs of biography copy
-- [ ] Add pull quote: "Every patient is special to me..."
-- [ ] Add scroll animations
-- [ ] Test responsive layout
+- ~~Create 2-column layout (image left, text right)~~ — *obsolete*
+- ~~Add professional photo (sticky positioning)~~ — *obsolete*
+- ~~Add 3-4 paragraphs of biography copy~~ — *obsolete*
+- ~~Add pull quote: "Every patient is special to me..."~~ — *obsolete*
+- ~~Add scroll animations~~ — *obsolete*
+- ~~Test responsive layout~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ Image sticky on desktop
@@ -1422,21 +1456,24 @@ export const staggerChildren = {
 ---
 
 ### Task 4.4: Build Education & Credentials Section
+
+> **Status 2026-10-18:** The About page is built from shared sections (Hero, TrustBadges, About, PracticePhilosophy, Testimonials, FAQ, CTA, ...) instead of these bespoke sections, so this planned layout and copy no longer apply.
+
 **PRD Reference**: §6.2 (About Page - Education & Credentials)
 **Rules Reference**: `ui-components.md`
 **Dependencies**: Task 4.1
 
 **Subtasks**:
-- [ ] Create section with light background (`bg-neutral-50`)
-- [ ] Add section heading: "Education & Credentials"
-- [ ] Create 4 credential cards:
+- ~~Create section with light background (`bg-neutral-50`)~~ — *obsolete*
+- ~~Add section heading: "Education & Credentials"~~ — *obsolete*
+- ~~Create 4 credential cards:~~ — *obsolete*
   1. D.D.S. from Loma Linda University
   2. Fellowship at Columbia/Harlem Hospital
   3. 4-Year Residency at Montefiore/Albert Einstein
   4. Board Certification (ABOMS)
-- [ ] Add icons for each card
-- [ ] Add scroll animations (stagger)
-- [ ] Test responsive layout
+- ~~Add icons for each card~~ — *obsolete*
+- ~~Add scroll animations (stagger)~~ — *obsolete*
+- ~~Test responsive layout~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ All credentials listed
@@ -1447,16 +1484,19 @@ export const staggerChildren = {
 ---
 
 ### Task 4.5: Build Philosophy Section
+
+> **Status 2026-10-18:** The About page is built from shared sections (Hero, TrustBadges, About, PracticePhilosophy, Testimonials, FAQ, CTA, ...) instead of these bespoke sections, so this planned layout and copy no longer apply.
+
 **PRD Reference**: §6.2 (About Page - Philosophy)
 **Rules Reference**: `ui-components.md`
 **Dependencies**: Task 4.1
 
 **Subtasks**:
-- [ ] Create centered text section
-- [ ] Add heading: "My Approach to Care"
-- [ ] Add 2 paragraphs of philosophy copy
-- [ ] Add scroll animation
-- [ ] Test text readability
+- ~~Create centered text section~~ — *obsolete*
+- ~~Add heading: "My Approach to Care"~~ — *obsolete*
+- ~~Add 2 paragraphs of philosophy copy~~ — *obsolete*
+- ~~Add scroll animation~~ — *obsolete*
+- ~~Test text readability~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ Centered layout
@@ -1474,8 +1514,8 @@ export const staggerChildren = {
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/components/expertise/ServiceTemplate.tsx`
-- [ ] Define reusable sections:
+- [x] Create `src/components/expertise/ServiceTemplate.tsx` — *`src/components/expertise/ServicePageTemplate.tsx`*
+- [x] Define reusable sections:
   - Hero
   - What is this procedure
   - Types/Variations
@@ -1485,8 +1525,8 @@ export const staggerChildren = {
   - Video testimonials
   - FAQ accordion
   - CTA
-- [ ] Accept props for customization
-- [ ] Test with sample data
+- [x] Accept props for customization
+- [x] Test with sample data — *used by several expertise pages*
 
 **Acceptance Criteria**:
 - ✅ Reusable template created
@@ -1497,14 +1537,17 @@ export const staggerChildren = {
 ---
 
 ### Task 5.2: Build Dental Implants Page
+
+> **Status 2026-10-18:** Shipped as `/expertise/single-tooth` (plus `/expertise/full-arch-implants`), not `/expertise/dental-implants`.
+
 **PRD Reference**: §6.3.1 (Dental Implants Page)
 **Rules Reference**: `page-structure.md`
 **Dependencies**: Task 5.1
 
 **Subtasks**:
-- [ ] Create `src/app/expertise/dental-implants/page.tsx`
-- [ ] Add SEO meta tags (title, description, keywords)
-- [ ] Add H1: "Dental Implants: Permanent Solutions for Missing Teeth"
+- [x] Create `src/app/expertise/dental-implants/page.tsx` — *at `src/app/(en)/expertise/single-tooth/page.tsx`*
+- [x] Add SEO meta tags (title, description, keywords)
+- ~~Add H1: "Dental Implants: Permanent Solutions for Missing Teeth"~~ — *obsolete: final copy differs*
 - [ ] Add all sections:
   - Hero
   - What are dental implants
@@ -1515,8 +1558,8 @@ export const staggerChildren = {
   - Video testimonials
   - FAQ (5-10 questions)
   - CTA
-- [ ] Add Schema.org MedicalProcedure markup
-- [ ] Test page
+- [x] Add Schema.org MedicalProcedure markup
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ All sections complete
@@ -1533,20 +1576,23 @@ export const staggerChildren = {
 ---
 
 ### Task 5.3: Build Full-Arch Restoration Page
+
+> **Status 2026-10-18:** Shipped as `/expertise/full-arch-implants`.
+
 **PRD Reference**: §6.3.3 (Full-Arch Restoration Page)
 **Rules Reference**: `page-structure.md`
 **Dependencies**: Task 5.1
 
 **Subtasks**:
-- [ ] Create `src/app/expertise/full-arch-restoration/page.tsx`
-- [ ] Add SEO meta tags
-- [ ] Add H1: "Full-Arch Restoration: A Complete Smile in One Procedure"
+- [x] Create `src/app/expertise/full-arch-restoration/page.tsx` — *at `src/app/(en)/expertise/full-arch-implants/page.tsx`*
+- [x] Add SEO meta tags
+- ~~Add H1: "Full-Arch Restoration: A Complete Smile in One Procedure"~~ — *obsolete: final copy differs*
 - [ ] Add all sections (use template)
 - [ ] Customize content for full-arch (All-on-4, All-on-6)
-- [ ] Add before/after gallery (if available)
-- [ ] Add FAQ
-- [ ] Add Schema markup
-- [ ] Test page
+- [x] Add before/after gallery (if available)
+- [x] Add FAQ
+- [x] Add Schema markup
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ All sections complete
@@ -1557,21 +1603,24 @@ export const staggerChildren = {
 ---
 
 ### Task 5.4: Build Corrective Jaw Surgery Page
+
+> **Status 2026-10-18:** Shipped as `/expertise/jaw-surgery`.
+
 **PRD Reference**: §6.3.2 (Corrective Jaw Surgery Page)
 **Rules Reference**: `page-structure.md`
 **Dependencies**: Task 5.1
 
 **Subtasks**:
-- [ ] Create `src/app/expertise/corrective-jaw-surgery/page.tsx`
-- [ ] Add SEO meta tags
-- [ ] Add H1: "Corrective Jaw Surgery: Transform Function and Appearance"
+- [x] Create `src/app/expertise/corrective-jaw-surgery/page.tsx` — *at `src/app/(en)/expertise/jaw-surgery/page.tsx`*
+- [x] Add SEO meta tags
+- ~~Add H1: "Corrective Jaw Surgery: Transform Function and Appearance"~~ — *obsolete: final copy differs*
 - [ ] Add all sections
 - [ ] Add conditions treated (underbite, overbite, open bite, etc.)
 - [ ] Add surgical process explanation
-- [ ] Add before/after gallery
-- [ ] Add FAQ
-- [ ] Add Schema markup
-- [ ] Test page
+- [x] Add before/after gallery
+- [x] Add FAQ
+- [x] Add Schema markup
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ All sections complete
@@ -1587,16 +1636,16 @@ export const staggerChildren = {
 **Dependencies**: Task 5.1
 
 **Subtasks**:
-- [ ] Create `src/app/expertise/wisdom-teeth/page.tsx`
-- [ ] Add SEO meta tags
-- [ ] Add H1: "Wisdom Teeth Removal: Expert, Comfortable Care"
+- [x] Create `src/app/expertise/wisdom-teeth/page.tsx` — *at `src/app/(en)/expertise/wisdom-teeth/page.tsx`*
+- [x] Add SEO meta tags
+- ~~Add H1: "Wisdom Teeth Removal: Expert, Comfortable Care"~~ — *obsolete: final copy differs*
 - [ ] Add all sections
 - [ ] Add reasons for removal
 - [ ] Add removal process
 - [ ] Add recovery tips
-- [ ] Add FAQ
-- [ ] Add Schema markup
-- [ ] Test page
+- [x] Add FAQ
+- [x] Add Schema markup
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ All sections complete
@@ -1607,6 +1656,9 @@ export const staggerChildren = {
 ---
 
 ### Task 5.6: Build Facial Reconstruction Page
+
+> **Status 2026-10-18:** Not built as planned. The site has `/expertise/facial-cosmetic` (cosmetic focus) but no facial reconstruction/trauma page. Left open for a decision.
+
 **PRD Reference**: §6.3.5 (Facial Reconstruction Page)
 **Rules Reference**: `page-structure.md`
 **Dependencies**: Task 5.1
@@ -1638,9 +1690,9 @@ export const staggerChildren = {
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/app/for-dentists/referral-partners/page.tsx`
-- [ ] Add SEO meta tags
-- [ ] Add H1: "Your Trusted Surgical Partner"
+- [x] Create `src/app/for-dentists/referral-partners/page.tsx` — *at `src/app/(en)/for-dentists/referral-partners/page.tsx`*
+- [x] Add SEO meta tags
+- [x] Add H1: "Your Trusted Surgical Partner" — *in ReferralHero*
 - [ ] Add sections:
   - Hero
   - Why dentists choose Dr. Antipov (6 benefit cards)
@@ -1650,7 +1702,7 @@ export const staggerChildren = {
   - Testimonials from referring dentists
   - CTA
 - [ ] Add Schema markup
-- [ ] Test page
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ All sections complete
@@ -1661,14 +1713,17 @@ export const staggerChildren = {
 ---
 
 ### Task 6.2: Build Referral Form Component
+
+> **Status 2026-10-18:** No dedicated referral form or schema was built. Referrals go through `ContactForm` (`isReferringDentist` flag → `/api/contact`) on `/for-dentists/refer-patients`, so the items below no longer apply.
+
 **PRD Reference**: §6.4 (Referral Form)
 **Rules Reference**: `form-handling.md`, `data-fetching.md`, `security.md`
 **Dependencies**: Task 6.1
 
 **Subtasks**:
-- [ ] Create `src/lib/validations/referral.ts` (Zod schema)
-- [ ] Create `src/components/forms/ReferralForm.tsx`
-- [ ] Add form fields:
+- ~~Create `src/lib/validations/referral.ts` (Zod schema)~~ — *obsolete*
+- ~~Create `src/components/forms/ReferralForm.tsx`~~ — *obsolete*
+- ~~Add form fields:~~ — *obsolete*
   - Dentist name
   - Practice name
   - Email
@@ -1679,12 +1734,12 @@ export const staggerChildren = {
   - Urgency (select: Routine/Urgent/Emergency)
   - Notes (textarea)
   - Consent checkbox
-- [ ] Add client-side validation (Zod)
-- [ ] Add honeypot field (spam prevention)
-- [ ] Add loading states
-- [ ] Add success/error messages
-- [ ] Style form consistently
-- [ ] Test form submission
+- ~~Add client-side validation (Zod)~~ — *obsolete*
+- ~~Add honeypot field (spam prevention)~~ — *obsolete*
+- ~~Add loading states~~ — *obsolete*
+- ~~Add success/error messages~~ — *obsolete*
+- ~~Style form consistently~~ — *obsolete*
+- ~~Test form submission~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ All fields validated
@@ -1717,9 +1772,9 @@ export const referralFormSchema = z.object({
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/app/for-dentists/education/courses/page.tsx`
-- [ ] Add SEO meta tags
-- [ ] Add H1: "Master Advanced Implant Techniques"
+- [x] Create `src/app/for-dentists/education/courses/page.tsx` — *at `src/app/(en)/for-dentists/education/courses/page.tsx`*
+- [x] Add SEO meta tags
+- ~~Add H1: "Master Advanced Implant Techniques"~~ — *obsolete: final copy differs*
 - [ ] Add sections:
   - Hero (dark background with glassmorphism)
   - Why Fusion Dental Academy (3 benefit cards)
@@ -1733,7 +1788,7 @@ export const referralFormSchema = z.object({
   - What you'll learn (bullet points)
   - CTAs (View Details, Enroll on Udemy)
 - [ ] Add Schema markup (Course schema)
-- [ ] Test page
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ All sections complete
@@ -1750,22 +1805,25 @@ export const referralFormSchema = z.object({
 ## 📝 PHASE 7: FOR PATIENTS PAGES (Week 7)
 
 ### Task 7.1: Build Testimonials Page
+
+> **Status 2026-10-18:** `/for-patients/testimonials` now 308-redirects to `/for-patients` (next.config.mjs). Testimonials live in shared sections, and rating schema was removed on purpose (trust/schema regression test), so the items below no longer apply.
+
 **PRD Reference**: §6 (For Patients - Testimonials)
 **Rules Reference**: `page-structure.md`, `ui-components.md`
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/app/for-patients/testimonials/page.tsx`
-- [ ] Add SEO meta tags
-- [ ] Add H1: "Real Patients. Life-Changing Results."
-- [ ] Add filter buttons (All, Dental Implants, Jaw Surgery, etc.)
-- [ ] Create video testimonial grid (6-9 videos)
-- [ ] Add text testimonials section
-- [ ] Add before/after gallery (if available)
-- [ ] Add star ratings
-- [ ] Add CTA: "Schedule Your Consultation"
-- [ ] Add Schema markup (Review schema)
-- [ ] Test page
+- ~~Create `src/app/for-patients/testimonials/page.tsx`~~ — *obsolete*
+- ~~Add SEO meta tags~~ — *obsolete*
+- ~~Add H1: "Real Patients. Life-Changing Results."~~ — *obsolete*
+- ~~Add filter buttons (All, Dental Implants, Jaw Surgery, etc.)~~ — *obsolete*
+- ~~Create video testimonial grid (6-9 videos)~~ — *obsolete*
+- ~~Add text testimonials section~~ — *obsolete*
+- ~~Add before/after gallery (if available)~~ — *obsolete*
+- ~~Add star ratings~~ — *obsolete*
+- ~~Add CTA: "Schedule Your Consultation"~~ — *obsolete*
+- ~~Add Schema markup (Review schema)~~ — *obsolete*
+- ~~Test page~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ Videos display correctly
@@ -1781,16 +1839,16 @@ export const referralFormSchema = z.object({
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/app/for-patients/consultation/page.tsx`
-- [ ] Add SEO meta tags
-- [ ] Add H1: "Schedule Your Consultation"
-- [ ] Add consultation form
+- [x] Create `src/app/for-patients/consultation/page.tsx` — *at `src/app/(en)/for-patients/consultation/page.tsx`*
+- [x] Add SEO meta tags
+- ~~Add H1: "Schedule Your Consultation"~~ — *obsolete: final copy differs*
+- [x] Add consultation form
 - [ ] Add "What to Expect" section
-- [ ] Add office information (hours, location)
-- [ ] Add contact alternatives (phone, email)
-- [ ] Add Google Maps embed
+- [x] Add office information (hours, location)
+- [x] Add contact alternatives (phone, email)
+- [x] Add Google Maps embed
 - [ ] Add FAQ
-- [ ] Test page
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ Form functional
@@ -1806,9 +1864,9 @@ export const referralFormSchema = z.object({
 **Dependencies**: Task 7.2
 
 **Subtasks**:
-- [ ] Create `src/lib/validations/consultation.ts` (Zod schema)
-- [ ] Create `src/components/forms/ConsultationForm.tsx`
-- [ ] Add form fields:
+- [x] Create `src/lib/validations/consultation.ts` (Zod schema)
+- [x] Create `src/components/forms/ConsultationForm.tsx`
+- [x] Add form fields:
   - First name
   - Last name
   - Email
@@ -1818,11 +1876,11 @@ export const referralFormSchema = z.object({
   - Preferred contact method (radio: Phone/Email)
   - Consent checkbox (required)
   - Honeypot field (hidden)
-- [ ] Add client-side validation
-- [ ] Add loading states
-- [ ] Add success/error messages
-- [ ] Add security notice: "We follow best practices for data security. This form does NOT collect medical records or health information."
-- [ ] Style form
+- [x] Add client-side validation
+- [x] Add loading states
+- [x] Add success/error messages
+- [x] Add security notice: "We follow best practices for data security. This form does NOT collect medical records or health information." — *PHI notice in ConsultationForm*
+- [x] Style form
 - [ ] Test submission
 
 **Acceptance Criteria**:
@@ -1864,17 +1922,17 @@ export const consultationFormSchema = z.object({
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/app/media/videos/page.tsx`
-- [ ] Add SEO meta tags
-- [ ] Add H1: "Educational Videos & Patient Stories"
+- [x] Create `src/app/media/videos/page.tsx` — *at `src/app/(en)/media/videos/page.tsx`*
+- [x] Add SEO meta tags
+- [x] Add H1: "Educational Videos & Patient Stories" — *"Educational Videos & Lectures"*
 - [ ] Create video categories:
   - Patient testimonials
   - Procedure explanations
   - Educational content
 - [ ] Add video grid with thumbnails
-- [ ] Add video modal with react-player
+- ~~Add video modal with react-player~~ — *obsolete: react-player not used*
 - [ ] Add lazy loading
-- [ ] Test page
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ Videos display correctly
@@ -1890,14 +1948,14 @@ export const consultationFormSchema = z.object({
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/app/media/speaking/page.tsx`
-- [ ] Add SEO meta tags
-- [ ] Add H1: "Speaking Engagements & Presentations"
-- [ ] Add speaking topics section
-- [ ] Add past events section (cards with photos)
-- [ ] Add "Book Dr. Antipov" CTA
-- [ ] Add contact form or email link
-- [ ] Test page
+- [x] Create `src/app/media/speaking/page.tsx` — *at `src/app/(en)/media/speaking/page.tsx`*
+- [x] Add SEO meta tags
+- [x] Add H1: "Speaking Engagements & Presentations"
+- [x] Add speaking topics section
+- [x] Add past events section (cards with photos)
+- [x] Add "Book Dr. Antipov" CTA
+- [x] Add contact form or email link — *mailto + /contact link*
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ All sections complete
@@ -1915,19 +1973,19 @@ export const consultationFormSchema = z.object({
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/app/contact/page.tsx`
-- [ ] Add SEO meta tags
-- [ ] Add H1: "Contact Dr. Antipov"
-- [ ] Add contact form
-- [ ] Add office information:
+- [x] Create `src/app/contact/page.tsx` — *at `src/app/(en)/contact/page.tsx`*
+- [x] Add SEO meta tags
+- [x] Add H1: "Contact Dr. Antipov"
+- [x] Add contact form
+- [x] Add office information:
   - Address
   - Phone
   - Email
   - Hours
-- [ ] Add Google Maps embed
+- [x] Add Google Maps embed
 - [ ] Add directions/parking info
 - [ ] Add FAQ
-- [ ] Test page
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ Form functional
@@ -1943,9 +2001,9 @@ export const consultationFormSchema = z.object({
 **Dependencies**: Task 9.1
 
 **Subtasks**:
-- [ ] Create `src/lib/validations/contact.ts` (Zod schema)
-- [ ] Create `src/components/forms/ContactForm.tsx`
-- [ ] Add form fields:
+- [x] Create `src/lib/validations/contact.ts` (Zod schema)
+- [x] Create `src/components/forms/ContactForm.tsx`
+- [x] Add form fields:
   - Name
   - Email
   - Phone (optional)
@@ -1953,10 +2011,10 @@ export const consultationFormSchema = z.object({
   - Message
   - Consent checkbox
   - Honeypot field
-- [ ] Add validation
-- [ ] Add loading states
-- [ ] Add success/error messages
-- [ ] Style form
+- [x] Add validation
+- [x] Add loading states
+- [x] Add success/error messages
+- [x] Style form
 - [ ] Test submission
 
 **Acceptance Criteria**:
@@ -1973,9 +2031,9 @@ export const consultationFormSchema = z.object({
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/app/legal/privacy-policy/page.tsx`
-- [ ] Add SEO meta tags (noindex)
-- [ ] Add H1: "Privacy Policy"
+- [x] Create `src/app/legal/privacy-policy/page.tsx`
+- ~~Add SEO meta tags (noindex)~~ — *obsolete: legal pages are deliberately indexable (listed in `seo-route-inventory.json` and the sitemap)*
+- [x] Add H1: "Privacy Policy"
 - [ ] Add required sections:
   - Information we collect
   - How we use information
@@ -1986,8 +2044,8 @@ export const consultationFormSchema = z.object({
   - Third-party services (GA, Hotjar, etc.)
   - Contact information
   - Last updated date
-- [ ] Add table of contents
-- [ ] Test page
+- [x] Add table of contents
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ All sections complete
@@ -2003,9 +2061,9 @@ export const consultationFormSchema = z.object({
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/app/legal/terms-of-service/page.tsx`
-- [ ] Add SEO meta tags (noindex)
-- [ ] Add H1: "Terms of Service"
+- [x] Create `src/app/legal/terms-of-service/page.tsx`
+- ~~Add SEO meta tags (noindex)~~ — *obsolete: legal pages are deliberately indexable (listed in `seo-route-inventory.json` and the sitemap)*
+- [x] Add H1: "Terms of Service"
 - [ ] Add required sections:
   - Acceptance of terms
   - Use of website
@@ -2015,8 +2073,8 @@ export const consultationFormSchema = z.object({
   - Governing law
   - Contact information
   - Last updated date
-- [ ] Add table of contents
-- [ ] Test page
+- [x] Add table of contents
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ All sections complete
@@ -2032,9 +2090,9 @@ export const consultationFormSchema = z.object({
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/app/legal/medical-disclaimer/page.tsx`
-- [ ] Add SEO meta tags (noindex)
-- [ ] Add H1: "Medical Disclaimer"
+- [x] Create `src/app/legal/medical-disclaimer/page.tsx`
+- ~~Add SEO meta tags (noindex)~~ — *obsolete: legal pages are deliberately indexable (listed in `seo-route-inventory.json` and the sitemap)*
+- [x] Add H1: "Medical Disclaimer"
 - [ ] Add required sections:
   - Not medical advice
   - No doctor-patient relationship
@@ -2043,7 +2101,7 @@ export const consultationFormSchema = z.object({
   - Testimonials disclaimer
   - Before/after photos disclaimer
   - Contact information
-- [ ] Test page
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ All disclaimers present
@@ -2059,9 +2117,9 @@ export const consultationFormSchema = z.object({
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create `src/app/legal/hipaa-notice/page.tsx`
-- [ ] Add SEO meta tags (noindex)
-- [ ] Add H1: "HIPAA Notice of Privacy Practices"
+- [x] Create `src/app/legal/hipaa-notice/page.tsx`
+- ~~Add SEO meta tags (noindex)~~ — *obsolete: legal pages are deliberately indexable (listed in `seo-route-inventory.json` and the sitemap)*
+- [x] Add H1: "HIPAA Notice of Privacy Practices"
 - [ ] Add required sections:
   - How we use and disclose PHI
   - Your rights regarding PHI
@@ -2070,7 +2128,7 @@ export const consultationFormSchema = z.object({
   - Complaints
   - Contact information
   - **Important**: Clarify that website does NOT collect PHI
-- [ ] Test page
+- [x] Test page — *live, returns 200*
 
 **Acceptance Criteria**:
 - ✅ HIPAA-compliant
@@ -2097,7 +2155,7 @@ export const consultationFormSchema = z.object({
   FROM_EMAIL=noreply@drantipov.com
   TO_EMAIL=office@drantipov.com
   ```
-- [ ] Create `src/lib/email.ts` utility
+- [x] Create `src/lib/email.ts` utility — *`src/lib/email.ts`*
 - [ ] Test email sending
 
 **Acceptance Criteria**:
@@ -2114,14 +2172,14 @@ export const consultationFormSchema = z.object({
 **Dependencies**: Task 10.1, Task 7.3
 
 **Subtasks**:
-- [ ] Create `src/app/api/consultation/route.ts`
-- [ ] Implement POST handler
-- [ ] Add server-side validation (Zod)
-- [ ] Check honeypot field
-- [ ] Send email to office
-- [ ] Send confirmation email to user
+- [x] Create `src/app/api/consultation/route.ts`
+- [x] Implement POST handler
+- [x] Add server-side validation (Zod)
+- [x] Check honeypot field
+- [x] Send email to office
+- [x] Send confirmation email to user
 - [ ] Optional: Send to CRM webhook (HubSpot)
-- [ ] Add error handling
+- [x] Add error handling
 - [ ] Test API route
 
 **Acceptance Criteria**:
@@ -2161,18 +2219,21 @@ export async function POST(request: NextRequest) {
 ---
 
 ### Task 10.3: Create Referral API Route
+
+> **Status 2026-10-18:** No `/api/referral` route was built. Dentist referrals use `/api/contact` (`isReferringDentist`) and `/api/lead`, so the items below no longer apply.
+
 **PRD Reference**: Referral form specs from `data-fetching.md`
 **Rules Reference**: `data-fetching.md`, `security.md`
 **Dependencies**: Task 10.1, Task 6.2
 
 **Subtasks**:
-- [ ] Create `src/app/api/referral/route.ts`
-- [ ] Implement POST handler
-- [ ] Add server-side validation
-- [ ] Send email to office (highlight urgency)
-- [ ] Send confirmation to referring dentist
-- [ ] Add error handling
-- [ ] Test API route
+- ~~Create `src/app/api/referral/route.ts`~~ — *obsolete*
+- ~~Implement POST handler~~ — *obsolete*
+- ~~Add server-side validation~~ — *obsolete*
+- ~~Send email to office (highlight urgency)~~ — *obsolete*
+- ~~Send confirmation to referring dentist~~ — *obsolete*
+- ~~Add error handling~~ — *obsolete*
+- ~~Test API route~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ Validates input
@@ -2189,12 +2250,12 @@ export async function POST(request: NextRequest) {
 **Dependencies**: Task 10.1, Task 9.2
 
 **Subtasks**:
-- [ ] Create `src/app/api/contact/route.ts`
-- [ ] Implement POST handler
-- [ ] Add server-side validation
-- [ ] Send email to office
+- [x] Create `src/app/api/contact/route.ts`
+- [x] Implement POST handler
+- [x] Add server-side validation
+- [x] Send email to office
 - [ ] Send confirmation to user
-- [ ] Add error handling
+- [x] Add error handling
 - [ ] Test API route
 
 **Acceptance Criteria**:
@@ -2217,7 +2278,7 @@ export async function POST(request: NextRequest) {
   - Missing required fields
   - Honeypot triggered
   - Verify emails received
-- [ ] Test referral form:
+- ~~Test referral form:~~ — *obsolete: no separate referral form (see Task 6.2)*
   - All fields
   - Urgency handling
   - Verify emails received
@@ -2251,8 +2312,8 @@ export async function POST(request: NextRequest) {
   ```bash
   NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
   ```
-- [ ] Install `react-ga4` or use Next.js Script
-- [ ] Add GA script to root layout
+- [x] Install `react-ga4` or use Next.js Script — *Next.js `Script` in `GoogleAnalytics.tsx`*
+- [x] Add GA script to root layout — *loaded after cookie consent*
 - [ ] Configure data streams
 - [ ] Set up goals/conversions:
   - Form submissions
@@ -2281,7 +2342,7 @@ export async function POST(request: NextRequest) {
   ```bash
   NEXT_PUBLIC_GTM_ID=GTM-XXXXXX
   ```
-- [ ] Add GTM script to root layout
+- [x] Add GTM script to root layout — *loaded after cookie consent*
 - [ ] Create tags:
   - GA4 configuration
   - Form submission events
@@ -2299,21 +2360,24 @@ export async function POST(request: NextRequest) {
 ---
 
 ### Task 11.3: Set Up Hotjar
+
+> **Status 2026-10-18:** The site uses Microsoft Clarity (heatmaps and recordings, `NEXT_PUBLIC_CLARITY_ID`) instead of Hotjar, so the items below no longer apply.
+
 **PRD Reference**: §3.1 (Analytics & Tracking)
 **Rules Reference**: `environment-variables.md`
 **Dependencies**: Task 2.1
 
 **Subtasks**:
-- [ ] Create Hotjar account
-- [ ] Get site ID
-- [ ] Add to `.env.local`:
+- ~~Create Hotjar account~~ — *obsolete*
+- ~~Get site ID~~ — *obsolete*
+- ~~Add to `.env.local`:~~ — *obsolete*
   ```bash
   NEXT_PUBLIC_HOTJAR_ID=XXXXXX
   ```
-- [ ] Add Hotjar script to root layout
-- [ ] Configure heatmaps
-- [ ] Configure session recordings
-- [ ] Test tracking
+- ~~Add Hotjar script to root layout~~ — *obsolete*
+- ~~Configure heatmaps~~ — *obsolete*
+- ~~Configure session recordings~~ — *obsolete*
+- ~~Test tracking~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ Hotjar installed
@@ -2351,6 +2415,9 @@ export async function POST(request: NextRequest) {
 ---
 
 ### Task 11.5: Implement Event Tracking
+
+> **Status 2026-10-18:** Helpers exist in `src/lib/analytics.ts` (trackConsultationSubmission, trackPhoneClick, trackCTAClick, trackVideoPlay, trackExternalLink), but nothing calls them yet (checked 2026-10-18).
+
 **PRD Reference**: §3.1 (Analytics & Tracking)
 **Rules Reference**: None specific
 **Dependencies**: Task 11.1, 11.2
@@ -2381,18 +2448,21 @@ export async function POST(request: NextRequest) {
 ## 📝 PHASE 12: SEO OPTIMIZATION (Week 12)
 
 ### Task 12.1: Generate XML Sitemap
+
+> **Status 2026-10-18:** The sitemap is generated by `src/app/sitemap.ts` from `src/lib/seo-foundation` (with hreflang alternates). next-sitemap is no longer used, although the package is still in package.json.
+
 **PRD Reference**: §6 (SEO Requirements)
 **Rules Reference**: None specific
 **Dependencies**: All pages complete
 
 **Subtasks**:
-- [ ] Install `next-sitemap` package
-- [ ] Configure `next-sitemap.config.js`
-- [ ] Include all pages (19 pages)
-- [ ] Exclude admin/draft pages
-- [ ] Set change frequencies
-- [ ] Set priorities
-- [ ] Generate sitemap.xml
+- ~~Install `next-sitemap` package~~ — *obsolete: replaced by `src/app/sitemap.ts`*
+- ~~Configure `next-sitemap.config.js`~~ — *obsolete: replaced by `src/app/sitemap.ts`*
+- [x] Include all pages (19 pages) — *all indexable routes, EN + RU*
+- [x] Exclude admin/draft pages — *noindex routes excluded*
+- ~~Set change frequencies~~ — *obsolete: lastmod/changefreq/priority deliberately omitted*
+- ~~Set priorities~~ — *obsolete: deliberately omitted*
+- [x] Generate sitemap.xml
 - [ ] Submit to Google Search Console
 
 **Acceptance Criteria**:
@@ -2414,10 +2484,10 @@ yarn add next-sitemap
 **Dependencies**: Task 12.1
 
 **Subtasks**:
-- [ ] Create `public/robots.txt`
-- [ ] Allow all pages except legal
-- [ ] Add sitemap URL
-- [ ] Test robots.txt
+- ~~Create `public/robots.txt`~~ — *obsolete: replaced by `src/app/robots.ts`*
+- ~~Allow all pages except legal~~ — *obsolete: legal pages are deliberately indexable (listed in `seo-route-inventory.json` and the sitemap)*
+- [x] Add sitemap URL
+- [x] Test robots.txt — *live at /robots.txt*
 
 **Acceptance Criteria**:
 - ✅ robots.txt created
@@ -2443,9 +2513,9 @@ Sitemap: https://drantipov.com/sitemap.xml
 
 **Subtasks**:
 - [ ] Add Physician schema to homepage
-- [ ] Add MedicalBusiness schema to homepage
-- [ ] Add MedicalProcedure schema to service pages
-- [ ] Add Review schema to testimonials page
+- [x] Add MedicalBusiness schema to homepage — *site-wide JSON-LD*
+- [x] Add MedicalProcedure schema to service pages — *MedicalProcedure on expertise pages*
+- ~~Add Review schema to testimonials page~~ — *obsolete: testimonials page removed; rating schema removed on purpose*
 - [ ] Add BreadcrumbList schema to all pages
 - [ ] Add Course schema to courses page
 - [ ] Validate all schemas with Google Rich Results Test
@@ -2465,13 +2535,13 @@ Sitemap: https://drantipov.com/sitemap.xml
 **Dependencies**: All pages complete
 
 **Subtasks**:
-- [ ] Convert all images to WebP format
-- [ ] Add JPEG fallbacks
+- ~~Convert all images to WebP format~~ — *obsolete: next/image serves WebP/AVIF automatically*
+- ~~Add JPEG fallbacks~~ — *obsolete: handled by next/image*
 - [ ] Optimize file sizes (<200KB)
 - [ ] Add descriptive filenames (with keywords)
 - [ ] Add alt text to all images
-- [ ] Use Next.js Image component everywhere
-- [ ] Configure lazy loading
+- [x] Use Next.js Image component everywhere — *no raw `<img>` tags in src/*
+- [x] Configure lazy loading — *next/image lazy-loads by default*
 - [ ] Test image loading performance
 
 **Acceptance Criteria**:
@@ -2534,19 +2604,22 @@ Sitemap: https://drantipov.com/sitemap.xml
 ## 📝 PHASE 13: BLOG INTEGRATION (Week 12)
 
 ### Task 13.1: Set Up Blog Proxy/Subdomain
+
+> **Status 2026-10-18:** Not pursued. Articles live on-site (`/for-patients/insights`, guide and insight articles in `src/constants`), and `/blog` returns 404. The items below no longer apply. Any old blog URLs that still get traffic should get redirects (tracked separately).
+
 **PRD Reference**: §5.2 (Blog Integration Strategy)
 **Rules Reference**: None specific
 **Dependencies**: Production deployment
 
 **Subtasks**:
-- [ ] Choose integration approach:
+- ~~Choose integration approach:~~ — *obsolete*
   - Option A: Subdirectory proxy (`/blog/*`)
   - Option B: Subdomain (`blog.drantipov.com`)
-- [ ] Configure Next.js rewrites (if Option A)
-- [ ] Configure DNS (if Option B)
-- [ ] Update old blog header/footer with new branding
-- [ ] Test navigation between sites
-- [ ] Verify SEO preservation (no 301 redirects needed)
+- ~~Configure Next.js rewrites (if Option A)~~ — *obsolete*
+- ~~Configure DNS (if Option B)~~ — *obsolete*
+- ~~Update old blog header/footer with new branding~~ — *obsolete*
+- ~~Test navigation between sites~~ — *obsolete*
+- ~~Verify SEO preservation (no 301 redirects needed)~~ — *obsolete*
 
 **Acceptance Criteria**:
 - ✅ Blog accessible
@@ -2660,9 +2733,9 @@ Sitemap: https://drantipov.com/sitemap.xml
 - [ ] Test honeypot spam prevention
 - [ ] Verify no PHI collection (HIPAA compliance)
 - [ ] Test HTTPS enforcement
-- [ ] Verify security headers
-- [ ] Test CSP (Content Security Policy)
-- [ ] Check for exposed secrets (.env.local not in Git)
+- [x] Verify security headers — *HSTS, nosniff, X-Frame-Options, Referrer-Policy, Permissions-Policy in next.config.mjs, served live*
+- [x] Test CSP (Content Security Policy) — *CSP in next.config.mjs, served live*
+- [x] Check for exposed secrets (.env.local not in Git) — *only `.env.example` is tracked*
 - [ ] Document security measures
 
 **Acceptance Criteria**:
@@ -2682,16 +2755,16 @@ Sitemap: https://drantipov.com/sitemap.xml
 **Dependencies**: All tasks complete
 
 **Subtasks**:
-- [ ] Create Vercel account
-- [ ] Connect GitHub repository
-- [ ] Configure build settings:
+- [x] Create Vercel account
+- [x] Connect GitHub repository — *Vercel GitHub integration; deployments created by vercel[bot]*
+- [x] Configure build settings:
   - Framework: Next.js
   - Build command: `yarn build`
   - Output directory: `.next`
 - [ ] Add environment variables to Vercel:
   - All `NEXT_PUBLIC_*` vars
   - All private vars (RESEND_API_KEY, etc.)
-- [ ] Test preview deployment
+- [x] Test preview deployment — *preview deployments exist*
 
 **Acceptance Criteria**:
 - ✅ Vercel project created
@@ -2707,14 +2780,14 @@ Sitemap: https://drantipov.com/sitemap.xml
 **Dependencies**: Task 15.1
 
 **Subtasks**:
-- [ ] Add drantipov.com to Vercel
-- [ ] Configure DNS records:
+- [x] Add drantipov.com to Vercel
+- [x] Configure DNS records:
   - A record → Vercel IP
   - CNAME www → Vercel
-- [ ] Wait for DNS propagation
-- [ ] Enable HTTPS (automatic via Vercel)
+- [x] Wait for DNS propagation
+- [x] Enable HTTPS (automatic via Vercel)
 - [ ] Force HTTPS redirect
-- [ ] Test domain
+- [x] Test domain — *https://www.drantipov.com live on Vercel*
 
 **Acceptance Criteria**:
 - ✅ Domain points to Vercel
@@ -2733,7 +2806,7 @@ Sitemap: https://drantipov.com/sitemap.xml
 - [ ] Final code review
 - [ ] Run all tests
 - [ ] Check .env.local vs production env vars
-- [ ] Deploy to production
+- [x] Deploy to production — *production deployments on Vercel*
 - [ ] Monitor deployment logs
 - [ ] Test production site thoroughly
 - [ ] Check analytics tracking
@@ -2784,14 +2857,14 @@ Sitemap: https://drantipov.com/sitemap.xml
 _Tasks that may be implemented post-launch_
 
 ### Task F.1: A/B Testing
-- [ ] Set up A/B testing tool (Google Optimize)
+- ~~Set up A/B testing tool (Google Optimize)~~ — *obsolete: Google Optimize was shut down in 2023*
 - [ ] Test headline variations
 - [ ] Test CTA button colors/copy
 - [ ] Test form layouts
 - [ ] Implement winning variations
 
 ### Task F.2: Advanced SEO
-- [ ] Create location-specific pages
+- [x] Create location-specific pages — *`/locations/[state]/[city]` pages*
 - [ ] Build backlink strategy
 - [ ] Guest posting on dental blogs
 - [ ] Local SEO citations
@@ -2800,7 +2873,7 @@ _Tasks that may be implemented post-launch_
 ### Task F.3: Content Updates
 - [ ] Add more video testimonials
 - [ ] Create procedure explanation videos
-- [ ] Write blog posts (if blog hosting)
+- [x] Write blog posts (if blog hosting) — *many insight and guide articles on-site*
 - [ ] Update before/after gallery
 - [ ] Add more FAQs
 
@@ -2815,25 +2888,27 @@ _Tasks that may be implemented post-launch_
 
 ## 📊 PROGRESS TRACKING
 
-### Overall Progress: 0% Complete
+### Subtask status (reconciled 2026-10-18)
 
-**Phase 1**: Foundation (0/8 tasks) - 0%
-**Phase 2**: Layout & Navigation (0/5 tasks) - 0%
-**Phase 3**: Homepage (0/8 tasks) - 0%
-**Phase 4**: About Page (0/5 tasks) - 0%
-**Phase 5**: Service Pages (0/6 tasks) - 0%
-**Phase 6**: For Dentists Pages (0/3 tasks) - 0%
-**Phase 7**: For Patients Pages (0/3 tasks) - 0%
-**Phase 8**: Media Pages (0/2 tasks) - 0%
-**Phase 9**: Contact & Legal (0/6 tasks) - 0%
-**Phase 10**: API Routes & Email (0/5 tasks) - 0%
-**Phase 11**: Analytics & Tracking (0/5 tasks) - 0%
-**Phase 12**: SEO Optimization (0/6 tasks) - 0%
-**Phase 13**: Blog Integration (0/1 tasks) - 0%
-**Phase 14**: Testing & QA (0/5 tasks) - 0%
-**Phase 15**: Deployment & Launch (0/4 tasks) - 0%
-
-**Total Tasks**: 72 main tasks + many subtasks
+| Phase | Done | Open | Obsolete |
+| --- | --- | --- | --- |
+| PHASE 1: PROJECT FOUNDATION (Weeks 1-2) | 29 | 7 | 2 |
+| PHASE 2: LAYOUT & NAVIGATION (Week 2) | 27 | 11 | 2 |
+| PHASE 3: HOMEPAGE IMPLEMENTATION (Weeks 3-4) | 13 | 3 | 53 |
+| PHASE 4: ABOUT PAGE (Week 4) | 7 | 1 | 22 |
+| PHASE 5: EXPERTISE/SERVICE PAGES (Week 5) | 25 | 19 | 4 |
+| PHASE 6: FOR DENTISTS PAGES (Week 6) | 7 | 5 | 10 |
+| PHASE 7: FOR PATIENTS PAGES (Week 7) | 15 | 3 | 12 |
+| PHASE 8: MEDIA PAGES (Week 8) | 12 | 3 | 1 |
+| PHASE 9: CONTACT & LEGAL PAGES (Week 9) | 28 | 7 | 4 |
+| PHASE 10: API ROUTES & EMAIL INTEGRATION (Week 10) | 13 | 14 | 8 |
+| PHASE 11: ANALYTICS & TRACKING (Week 11) | 3 | 24 | 7 |
+| PHASE 12: SEO OPTIMIZATION (Week 12) | 9 | 22 | 9 |
+| PHASE 13: BLOG INTEGRATION (Week 12) | 0 | 0 | 6 |
+| PHASE 14: TESTING & QA (Week 12) | 3 | 35 | 0 |
+| PHASE 15: DEPLOYMENT & LAUNCH (Week 12) | 10 | 16 | 0 |
+| FUTURE TASKS | 2 | 17 | 1 |
+| **Total** | **203** | **187** | **141** |
 
 ---
 

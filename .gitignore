@@ -50,3 +50,6 @@ generated-icon.png
 
 # custom
 /RULE_INCONSISTENCIES.md
+
+# package manager: this project uses yarn (yarn.lock); keep npm lockfiles out
+package-lock.json

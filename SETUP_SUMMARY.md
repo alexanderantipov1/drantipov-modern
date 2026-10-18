@@ -1,6 +1,8 @@
 # Setup Summary
 
-This document summarizes all the recent updates and configurations for the Dr. Antipov website.
+This document summarizes the analytics, email, and UI setup work from October 2025.
+
+> **Status note (2026-10-18):** The file references below still exist. Since then, analytics scripts (GA4, GTM, and Microsoft Clarity) load only after cookie consent (`src/components/analytics/ConsentGatedTracking.tsx`), and the dev server runs on port 5000 with Yarn. See README.md for the current stack, scripts, and full list of environment variables.
 
 ## ✅ Completed Tasks
 
@@ -14,8 +16,8 @@ This document summarizes all the recent updates and configurations for the Dr. A
 ### 2. Google Analytics 4 Integration
 - ✅ Created analytics utility library ([`src/lib/analytics.ts`](src/lib/analytics.ts))
 - ✅ Created Google Analytics component ([`src/components/analytics/GoogleAnalytics.tsx`](src/components/analytics/GoogleAnalytics.tsx))
-- ✅ Integrated into site layout
-- ✅ Event tracking utilities for:
+- ✅ Integrated into site layout (consent-gated)
+- ✅ Event tracking utilities (defined in `src/lib/analytics.ts`, not yet called from components) for:
   - Consultation form submissions
   - Phone/email clicks
   - CTA button clicks
@@ -65,8 +67,8 @@ CONTACT_PHONE=(916) 234-5678
 ## 🚀 Quick Start
 
 ### Development
-1. Copy `.env.local` and add your API keys
-2. Run `npm run dev`
+1. Copy `.env.example` to `.env.local` and add your API keys
+2. Run `yarn install`, then `yarn dev` (http://localhost:5000)
 3. Test the consultation form at `/for-patients/consultation`
 
 ### Production Deployment
@@ -131,9 +133,8 @@ When a patient submits a consultation request:
 - CTA button clicks (ready to implement)
 
 ### Privacy-Focused
-- Scripts only load if IDs are configured
-- No tracking in development (placeholder IDs ignored)
-- Easy to add cookie consent integration
+- Scripts load only after the visitor accepts cookies (`CookieConsent` + `ConsentGatedTracking`)
+- Placeholder IDs are ignored. Note: `src/lib/analytics.ts` falls back to a hard-coded GA4 ID when `NEXT_PUBLIC_GA_MEASUREMENT_ID` is unset
 
 ## 🔒 Security Features
 
@@ -216,5 +217,5 @@ Total monthly cost: **$0** (free tier sufficient for most practices)
 
 ---
 
-**Last Updated:** 2025-10-12
-**Status:** Ready for production deployment
+**Last Updated:** 2025-10-12 (status note added 2026-10-18)
+**Status:** Live in production on Vercel

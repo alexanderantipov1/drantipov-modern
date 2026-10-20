@@ -53,7 +53,14 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
     datePublished: article.datePublished,
     dateModified: article.datePublished,
     image: [`${SITE}${article.image}`],
-    author: article.editorialReviewPending
+    author: article.authorAttribution
+      ? {
+          "@type": article.authorAttribution.type,
+          name: article.authorAttribution.name,
+          url: `${SITE}${article.authorAttribution.url}`,
+          "@id": `${SITE}/#physician`,
+        }
+      : article.editorialReviewPending
       ? {
           "@type": "Organization",
           "@id": `${SITE}/#organization`,
@@ -119,7 +126,15 @@ export function InsightArticle({ article, locale = "en" }: { article: RevisionAr
               {article.title}
             </h1>
 
-            {article.editorialReviewPending ? (
+            {article.authorAttribution ? (
+              <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
+                {isRu ? "Автор: " : "By "}
+                <Link href={article.authorAttribution.url} className="not-italic font-bold text-neutral-900 underline decoration-primary-300 hover:decoration-primary-600">
+                  {article.authorAttribution.name}
+                </Link>.
+                {article.editorialReviewPending && (isRu ? " Клиническая проверка ожидается." : " Clinical review pending.")}
+              </p>
+            ) : article.editorialReviewPending ? (
               <p className="text-sm text-neutral-600 italic mb-8 -mt-2 border-l-2 border-primary-200 pl-3">
                 By {article.author}. Clinical review pending; this article has not yet been medically reviewed by{" "}
                 <Link href="/about" className="not-italic font-bold text-neutral-900 underline decoration-primary-300 hover:decoration-primary-600">

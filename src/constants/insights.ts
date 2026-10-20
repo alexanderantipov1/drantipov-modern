@@ -9,6 +9,7 @@ import { revisionArticles } from "@/constants/revisionArticles"
 import { guideArticles } from "@/constants/guideArticles"
 import { newInsightArticles } from "@/constants/newInsightArticles"
 import { brandInsightArticles } from "@/constants/brandInsightArticles"
+import { clinicalInsightArticles } from "@/constants/clinicalInsightArticles"
 
 export interface InsightPost {
   slug: string
@@ -375,7 +376,19 @@ const brandInsightPosts: InsightPost[] = brandInsightArticles.map((a) => ({
   author: a.author,
 }))
 
+const clinicalInsightPosts: InsightPost[] = clinicalInsightArticles.map((a) => ({
+  slug: a.slug,
+  title: a.title,
+  excerpt: a.excerpt,
+  date: a.date,
+  image: a.image,
+  category: a.category,
+  readTime: a.readTime,
+  author: a.author,
+}))
+
 export const insightPosts: InsightPost[] = [
+  ...clinicalInsightPosts,
   ...brandInsightPosts,
   ...newInsightPosts,
   ...guideInsightPosts,

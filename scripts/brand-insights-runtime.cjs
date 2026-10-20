@@ -59,8 +59,13 @@ for (const article of articles) {
     assert.ok(!tags.some(tag => tag.hreflang === "ru"), "no nonexistent Russian alternate");
     assert.ok(text.includes(article.title), "visible title");
     assert.ok(text.includes(article.disclaimer), "visible disclaimer");
-    assert.ok(text.includes(`By ${article.author}. Clinical review pending`), "editorial-team attribution");
-    assert.ok(text.includes("this article has not yet been medically reviewed by"), "explicit pending review");
+    assert.ok(text.includes(`By ${article.author}. Clinical review pending`), "visible author and independent review status");
+    if (!article.authorAttribution) {
+      assert.ok(text.includes("this article has not yet been medically reviewed by"), "explicit pending review");
+    } else {
+      assert.ok(!text.includes("Medically reviewed by"), "authorship does not claim medical review");
+      assert.match(html, /href="\/about"/, "linked author biography");
+    }
     for (const para of paras(article)) {
       assert.ok(text.includes(paraText(para).replace(/\s+/g, " ").trim()), "visible source paragraph/list parity");
     }
@@ -78,7 +83,11 @@ for (const article of articles) {
     const schema = schemas.find(node => node["@type"] === "Article");
     assert.ok(schema, "Article schema");
     assert.equal(schema.url, origin + route);
-    assert.equal(schema.author["@type"], "Organization", "no doctor authorship");
+    assert.equal(schema.author["@type"], article.authorAttribution ? "Person" : "Organization");
+    if (article.authorAttribution) {
+      assert.equal(schema.author.url, `${origin}/about`);
+      assert.equal(schema.author["@id"], `${origin}/#physician`);
+    }
     assert.equal(schema.author.name, article.author);
     assert.ok(!schema.reviewedBy, "no clinical review claim");
     const faq = schemas.filter(node => node["@type"] === "FAQPage");

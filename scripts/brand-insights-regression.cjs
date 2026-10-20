@@ -42,14 +42,19 @@ const longCopy = article => [
   ...content(article), ...article.faqs.map(faq => faq.answer),
 ].map(normalize).filter(text => text.length >= 80);
 
-test("nine source drafts retain exact content with editorial-only overrides", () => {
+test("nine source drafts retain exact content with requested author overrides only", () => {
   assert.equal(articles.length, 9);
   assert.deepEqual(articles.map(a => a.slug), expected);
   assert.deepEqual(sources.map(a => a.slug), expected);
   assert.equal(new Set(articles.map(a => a.slug)).size, 9);
   articles.forEach((article, i) => {
     assert.deepEqual(article, {
-      ...sources[i], author: "Dr. Antipov Practice Editorial Team", editorialReviewPending: true,
+      ...sources[i],
+      author: i < 8 ? "Dr. Alexander V. Antipov, DDS" : "Dr. Antipov Practice Editorial Team",
+      ...(i < 8 ? {
+        authorAttribution: { type: "Person", name: "Dr. Alexander V. Antipov, DDS", url: "/about" },
+      } : {}),
+      editorialReviewPending: true,
     }, article.slug);
     assert.equal(getBrandInsightArticle(article.slug), article);
     assert.ok(!/\b(explains|reviewed by|written by|authored by)\s+Dr\./i.test(content(article).map(normalize).join(" ")),

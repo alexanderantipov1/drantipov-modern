@@ -9,13 +9,16 @@ import { article as source7 } from "./brandInsightArticles/source-7"
 import { article as source8 } from "./brandInsightArticles/source-8"
 import { article as source9 } from "./brandInsightArticles/source-9"
 
-// Keep source content intact. These drafts have not been clinically reviewed;
-// publication must not imply doctor authorship or an approved clinical review.
+// Keep source content intact. Requested authorship for sources 1–8 is separate
+// from clinical review status; source 9 retains its existing editorial byline.
 export const brandInsightArticles: RevisionArticle[] = [
   source1, source2, source3, source4, source5, source6, source7, source8, source9,
-].map((article) => ({
+].map((article, index) => ({
   ...article,
-  author: "Dr. Antipov Practice Editorial Team",
+  author: index < 8 ? "Dr. Alexander V. Antipov, DDS" : "Dr. Antipov Practice Editorial Team",
+  ...(index < 8 ? {
+    authorAttribution: { type: "Person" as const, name: "Dr. Alexander V. Antipov, DDS", url: "/about" },
+  } : {}),
   editorialReviewPending: true,
 }))
 

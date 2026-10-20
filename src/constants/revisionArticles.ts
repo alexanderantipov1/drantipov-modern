@@ -37,6 +37,8 @@ export interface RevisionArticle {
   category: string
   readTime: string
   author: string
+  /** Explicit author byline, independent of whether clinical review has occurred. */
+  authorAttribution?: { type: "Person"; name: string; url: string }
   /** Editorial draft not yet clinically reviewed by Dr. Antipov. */
   editorialReviewPending?: boolean
   keywords: string[]

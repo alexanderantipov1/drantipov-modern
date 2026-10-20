@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start -H 0.0.0.0 -p 5000",
     "lint": "next lint",
-    "test:seo": "node --test scripts/foundation-regression.cjs scripts/conversion-regression.cjs scripts/test-trust-schema.cjs scripts/new-insights-regression.cjs scripts/brand-insights-regression.cjs",
+    "test:seo": "node --test scripts/foundation-regression.cjs scripts/conversion-regression.cjs scripts/test-trust-schema.cjs scripts/new-insights-regression.cjs scripts/brand-insights-regression.cjs scripts/clinical-insights-regression.cjs",
+    "test:clinical-insights:runtime": "node --test scripts/clinical-insights-runtime.cjs",
     "test:brand-insights:runtime": "node --test scripts/brand-insights-runtime.cjs",
     "test:seo:runtime": "node --test scripts/seo-runtime-404.cjs"
   },

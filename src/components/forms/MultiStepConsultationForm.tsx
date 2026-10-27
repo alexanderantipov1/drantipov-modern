@@ -62,18 +62,22 @@ interface FormData {
   assignedCenter: string
   appointmentDate: string
   appointmentTime: string
+  inquiry: string
 }
 
 interface MultiStepConsultationFormProps {
   onClose?: () => void
   variant?: "modal" | "inline"
   locale?: "en" | "ru"
+  treatment?: string
+  category?: "implant" | "cosmetic"
 }
 
-export function MultiStepConsultationForm({ onClose, variant = "modal", locale = "en" }: MultiStepConsultationFormProps) {
+export function MultiStepConsultationForm({ onClose, variant = "modal", locale = "en", treatment, category }: MultiStepConsultationFormProps) {
   const isRu = locale === "ru"
+  const isCosmetic = category === "cosmetic"
   const tr = (en: string, ru: string) => isRu ? ru : en
-  const [currentStep, setCurrentStep] = useState(1)
+  const [currentStep, setCurrentStep] = useState(isCosmetic ? 2 : 1)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
   const [submitErrorMessage, setSubmitErrorMessage] = useState("")
@@ -99,9 +103,13 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
     assignedCenter: "",
     appointmentDate: "",
     appointmentTime: "",
+    inquiry: "",
   })
 
-  const totalSteps = 4
+  const steps = isCosmetic ? [2, 3] : [1, 2, 3, 4]
+  const totalSteps = steps.length
+  const stepNumber = steps.indexOf(currentStep) + 1
+  const isLastStep = currentStep === steps[totalSteps - 1]
 
   const updateField = (field: keyof FormData, value: string | string[]) => {
     setFormData(prev => ({ ...prev, [field]: value }))
@@ -165,8 +173,8 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
         if (!formData.city.trim()) newErrors.city = tr("City is required", "Укажите город")
         if (!formData.state) newErrors.state = tr("State is required", "Выберите штат")
         if (!formData.zipCode.trim()) newErrors.zipCode = tr("ZIP code is required", "Укажите почтовый индекс")
-        if (!formData.paymentPlan) newErrors.paymentPlan = tr("Please select a payment option", "Выберите способ оплаты")
-        if (formData.paymentPlan === "yes" && !formData.ficoScore) newErrors.ficoScore = tr("Please select your FICO score range", "Выберите диапазон кредитного рейтинга FICO")
+        if (!isCosmetic && !formData.paymentPlan) newErrors.paymentPlan = tr("Please select a payment option", "Выберите способ оплаты")
+        if (!isCosmetic && formData.paymentPlan === "yes" && !formData.ficoScore) newErrors.ficoScore = tr("Please select your FICO score range", "Выберите диапазон кредитного рейтинга FICO")
         break
       case 4:
         if (!formData.consultationReadiness) newErrors.consultationReadiness = tr("Please select an option", "Выберите вариант")
@@ -183,11 +191,11 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
 
   const nextStep = () => {
     if (!validateStep(currentStep)) return
-    if (currentStep < totalSteps) setCurrentStep(currentStep + 1)
+    if (!isLastStep) setCurrentStep(steps[stepNumber]!)
   }
 
   const prevStep = () => {
-    if (currentStep > 1) setCurrentStep(currentStep - 1)
+    if (stepNumber > 1) setCurrentStep(steps[stepNumber - 2]!)
   }
 
   const getUrlParams = () => {
@@ -238,16 +246,19 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
         city: formData.city,
         state: formData.state,
         zip: formData.zipCode,
-        paymentOptions: String(formData.paymentPlan === "yes"),
-        ficoScore: formData.ficoScore,
-        damagedTeeth: String(formData.currentSituation.includes("damagedTeeth")),
-        missingTeeth: String(formData.currentSituation.includes("missingTeeth")),
-        gumDisease: String(formData.currentSituation.includes("gumDisease")),
-        currentSmileNone: String(formData.currentSituation.includes("noneApply")),
-        currentSolutionsNone: String(formData.currentTreatments.includes("none")),
-        currentSolutionsImplants: String(formData.currentTreatments.includes("implants")),
-        currentSolutionsBridgesCrowns: String(formData.currentTreatments.includes("bridgesCrowns")),
-        currentSolutionsDentures: String(formData.currentTreatments.includes("dentures")),
+        // Do not invent answers to implant/financing questions cosmetic patients never see.
+        ...(!isCosmetic ? {
+          paymentOptions: String(formData.paymentPlan === "yes"),
+          ficoScore: formData.ficoScore,
+          damagedTeeth: String(formData.currentSituation.includes("damagedTeeth")),
+          missingTeeth: String(formData.currentSituation.includes("missingTeeth")),
+          gumDisease: String(formData.currentSituation.includes("gumDisease")),
+          currentSmileNone: String(formData.currentSituation.includes("noneApply")),
+          currentSolutionsNone: String(formData.currentTreatments.includes("none")),
+          currentSolutionsImplants: String(formData.currentTreatments.includes("implants")),
+          currentSolutionsBridgesCrowns: String(formData.currentTreatments.includes("bridgesCrowns")),
+          currentSolutionsDentures: String(formData.currentTreatments.includes("dentures")),
+        } : {}),
         businessUnit: "Fusion Dental Implants",
         recaptchaToken,
         ...(formData.appointmentDate && formData.appointmentTime ? {
@@ -257,6 +268,15 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
         } : {}),
         ...trackingData,
         ...urlParams,
+        // The Fusion proxy allowlist has no treatment/message field. Carry service
+        // context in its existing referral_source field, preserving attribution.
+        ...(treatment ? {
+          referral_source: [
+            trackingData.referral_source,
+            `Treatment: ${treatment}`,
+            ...(isCosmetic && formData.inquiry.trim() ? [`Inquiry: ${formData.inquiry.trim()}`] : []),
+          ].filter(Boolean).join("\n"),
+        } : {}),
       }
       const response = await fetch("/api/submit-consultation", {
         method: "POST",
@@ -280,7 +300,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
   }
 
   const handleSubmit = () => {
-    if (!validateStep(4)) return
+    if (!validateStep(currentStep)) return
     submitForm()
   }
 
@@ -375,7 +395,9 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
         <p className="text-muted text-sm leading-relaxed max-w-sm mx-auto mb-6">
           {hasAppointment
             ? tr("Your consultation has been scheduled. An appointment coordinator will contact you to confirm the details.", "Вы записались на консультацию. Координатор свяжется с вами, чтобы подтвердить детали.")
-            : tr("Thank you for your interest! An appointment coordinator will contact you within 1 hour to discuss your options and provide personalized information.", "Спасибо за обращение! Координатор свяжется с вами в течение часа, чтобы обсудить возможные варианты лечения.")}
+            : isCosmetic
+              ? tr("Thank you for your inquiry. The clinic will contact you to discuss availability and consultation details.", "Спасибо за обращение. Клиника свяжется с вами, чтобы уточнить доступность процедуры и условия консультации.")
+              : tr("Thank you for your interest! An appointment coordinator will contact you within 1 hour to discuss your options and provide personalized information.", "Спасибо за обращение! Координатор свяжется с вами в течение часа, чтобы обсудить возможные варианты лечения.")}
         </p>
         {hasAppointment && (
           <div className={cn("rounded-2xl p-5 mb-6 text-left max-w-sm mx-auto", isInline ? "bg-white border border-dark/5" : "bg-light")}>
@@ -412,22 +434,23 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
         isInline ? "" : "-mx-6 -mt-2 px-6 pt-5"
       )}>
         <div className="flex items-center justify-between mb-1">
-          <h3 className="text-dark text-lg font-bold">{tr("Free Dental Implant Consultation Assessment", "Анкета для бесплатной консультации по имплантации")}</h3>
+          <h3 className="text-dark text-lg font-bold">{isCosmetic ? tr("Consultation inquiry", "Заявка на консультацию") : tr("Free Dental Implant Consultation Assessment", "Анкета для бесплатной консультации по имплантации")}</h3>
           <div className="flex items-center gap-1 bg-primary/5 rounded-lg px-2.5 py-1.5">
             <Star className="w-3 h-3 text-primary fill-primary" />
             <span className="text-dark text-xs font-bold">4.9</span>
             <span className="text-muted text-xs">(247)</span>
           </div>
         </div>
-        <p className="text-muted text-xs">{tr("No pressure · No cost · Includes 3D CT Scan", "Без давления · Бесплатная консультация по имплантации · 3D КТ включена · Действуют ограничения")}</p>
+        <p className="text-muted text-xs">{isCosmetic ? tr("The clinic will clarify availability, pricing and consultation details.", "Клиника уточнит доступность процедуры, стоимость и условия консультации.") : tr("No pressure · No cost · Includes 3D CT Scan", "Без давления · Бесплатная консультация по имплантации · 3D КТ включена · Действуют ограничения")}</p>
+        {treatment && <p className="mt-2 text-sm text-dark">{tr("Treatment of interest", "Направление обращения")}: {treatment}</p>}
       </div>
 
       <div className="pb-3">
         <div className="flex items-center justify-between mb-2">
-          {(isRu ? ["Анкета", "Контакты", "Адрес", "Запись"] : ["Assessment", "Contact", "Address", "Schedule"]).map((label, i) => (
+          {(isCosmetic ? (isRu ? ["Контакты", "Адрес"] : ["Contact", "Address"]) : (isRu ? ["Анкета", "Контакты", "Адрес", "Запись"] : ["Assessment", "Contact", "Address", "Schedule"])).map((label, i) => (
             <span key={label} className={cn(
               "text-[10px] font-semibold uppercase tracking-wider transition-colors",
-              currentStep === i + 1 ? "text-primary" : currentStep > i + 1 ? "text-primary/50" : "text-muted/30"
+              stepNumber === i + 1 ? "text-primary" : stepNumber > i + 1 ? "text-primary/50" : "text-muted/30"
             )}>
               {label}
             </span>
@@ -436,14 +459,14 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
         <div className="h-1.5 bg-dark/5 rounded-full overflow-hidden">
           <div
             className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-500 rounded-full"
-            style={{ width: `${(currentStep / totalSteps) * 100}%` }}
+            style={{ width: `${(stepNumber / totalSteps) * 100}%` }}
           />
         </div>
-        <p className="text-[11px] text-muted/60 mt-1.5 text-right font-medium">{isRu ? `Шаг ${currentStep} из ${totalSteps}` : `Step ${currentStep} of ${totalSteps}`}</p>
+        <p className="text-[11px] text-muted/60 mt-1.5 text-right font-medium">{isRu ? `Шаг ${stepNumber} из ${totalSteps}` : `Step ${stepNumber} of ${totalSteps}`}</p>
       </div>
 
       <div className={cn(isInline ? "" : "flex-1 overflow-y-auto pb-2")}>
-        {currentStep === 1 && (
+        {!isCosmetic && currentStep === 1 && (
           <div className="space-y-5">
             <div>
               <h3 className="text-sm font-bold text-dark mb-1">{tr("Do any of these apply to you?", "Что из перечисленного относится к вам?")}</h3>
@@ -506,6 +529,16 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
               <input type="email" value={formData.email} onChange={(e) => updateField("email", e.target.value)} placeholder="jane@email.com" className={cn(inputClass, errors.email && inputErrorClass)} />
               {errors.email && <p className="text-[11px] text-red-500 mt-1">{errors.email}</p>}
             </div>
+            {isCosmetic && (
+              <div>
+                <label htmlFor="consultation-inquiry" className="block text-xs font-semibold text-dark mb-1.5">{tr("Your question or wishes (optional)", "Ваш вопрос или пожелания (необязательно)")}</label>
+                <textarea id="consultation-inquiry" value={formData.inquiry} onChange={(e) => updateField("inquiry", e.target.value)} maxLength={2000} rows={3} className={inputClass} />
+                <p className="mt-3 text-[10px] text-muted">
+                  {tr("By clicking Next, you agree to be contacted by phone, text or email about your inquiry.", "Нажимая «Далее», вы соглашаетесь на звонки, SMS и электронные письма по вашему обращению.")}
+                  {" "}<a href={isRu ? "/ru/legal/privacy-policy" : "/legal/privacy-policy"} className="underline">{tr("Privacy Policy", "Политика конфиденциальности")}</a>
+                </p>
+              </div>
+            )}
           </div>
         )}
 
@@ -544,7 +577,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
               <input type="text" value={formData.zipCode} onChange={(e) => updateField("zipCode", e.target.value.replace(/\D/g, "").substring(0, 5))} placeholder="95678" className={cn(inputClass, errors.zipCode && inputErrorClass)} />
               {errors.zipCode && <p className="text-[11px] text-red-500 mt-1">{errors.zipCode}</p>}
             </div>
-            <div className="pt-3 border-t border-dark/5">
+            {!isCosmetic && <div className="pt-3 border-t border-dark/5">
               <h3 className="text-sm font-bold text-dark mb-1">{tr("Payment Options", "Варианты оплаты")}</h3>
               <p className="text-xs text-muted mb-3">{tr("Would you like to explore affordable payment options?", "Хотите узнать о доступных вариантах рассрочки?")}</p>
               <div className="space-y-2">
@@ -563,11 +596,11 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
                   {errors.ficoScore && <p className="text-xs text-red-500 mt-2">{errors.ficoScore}</p>}
                 </div>
               )}
-            </div>
+            </div>}
           </div>
         )}
 
-        {currentStep === 4 && (
+        {!isCosmetic && currentStep === 4 && (
           <div className="space-y-4">
             <div>
               <h3 className="text-sm font-bold text-dark mb-1">{tr("Ready to Schedule?", "Готовы записаться?")}</h3>
@@ -633,13 +666,13 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
       )}
 
       <div className={cn("flex items-center gap-3 pt-4 border-t border-dark/5", isInline ? "mt-2" : "")}>
-        {currentStep > 1 && (
+        {stepNumber > 1 && (
           <button onClick={prevStep} className="flex items-center gap-1.5 px-5 py-3 rounded-xl text-sm font-semibold text-muted bg-light hover:bg-dark/5 transition-colors">
             <ArrowLeft className="w-4 h-4" /> {tr("Back", "Назад")}
           </button>
         )}
         <button
-          onClick={currentStep === 4 ? handleSubmit : nextStep}
+          onClick={isLastStep ? handleSubmit : nextStep}
           disabled={isSubmitting}
           className={cn(
             "flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl text-sm font-bold text-white transition-all",
@@ -650,14 +683,14 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
         >
           {isSubmitting ? (
             <><Loader2 className="w-4 h-4 animate-spin" /> {tr("Submitting...", "Отправляем...")}</>
-          ) : currentStep === 4 ? (
+          ) : isLastStep ? (
             <>{formData.consultationReadiness === "yes" ? tr("Book Consultation", "Записаться на консультацию") : tr("Submit", "Отправить заявку")} <CheckCircle className="w-4 h-4" /></>
           ) : (
             <>{tr("Next", "Далее")} <ArrowRight className="w-4 h-4" /></>
           )}
         </button>
       </div>
-      {currentStep === 4 && (
+      {!isCosmetic && currentStep === 4 && (
         <p className="text-center text-muted/50 text-[10px] mt-3">
           {tr("Free dental implant consultation · Restrictions apply · No obligation · Includes complimentary CT scan", "Бесплатная консультация по имплантации · Действуют ограничения · Без обязательств · 3D КТ включена")}
         </p>

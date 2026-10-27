@@ -1,8 +1,7 @@
 import Link from "next/link";
 import type { ServiceBrief } from "@/data/ruServiceBriefs";
-import { ConsultationForm } from "@/components/forms/ConsultationForm";
+import { MultiStepConsultationForm } from "@/components/forms/MultiStepConsultationForm";
 import { siteConfig } from "@/constants/siteConfig";
-import { isEmailConfigured } from "@/lib/email";
 import {
   getBreadcrumbSchema,
   getFAQSchema,
@@ -156,19 +155,7 @@ export default function RuTreatmentServicePage({ service }: { service: ServiceBr
             </a>
           </div>
           <div className="rounded-3xl border border-dark/10 bg-white p-6 shadow-sm sm:p-8">
-            {isEmailConfigured() ? (
-              <ConsultationForm key={service.slug} locale="ru" treatment={service.treatment} category={service.category} />
-            ) : (
-              <div role="status">
-                <h3 className="text-xl font-bold">Запись по телефону</h3>
-                <p className="mt-3 leading-7 text-muted">
-                  Онлайн-форма временно недоступна. Позвоните в клинику и сообщите, что вас интересует: {service.treatment}.
-                </p>
-                <a href={`tel:${siteConfig.contact.phone.replace(/\D/g, "")}`} className="mt-5 inline-flex rounded-2xl bg-primary px-5 py-3 font-bold text-white">
-                  Позвонить {siteConfig.contact.phone}
-                </a>
-              </div>
-            )}
+            <MultiStepConsultationForm key={service.slug} variant="inline" locale="ru" treatment={service.treatment} category={service.category} />
           </div>
         </div>
       </section>

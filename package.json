@@ -11,7 +11,7 @@
     "test:clinical-insights:runtime": "node --test scripts/clinical-insights-runtime.cjs",
     "test:brand-insights:runtime": "node --test scripts/brand-insights-runtime.cjs",
     "test:seo:runtime": "node --test scripts/seo-runtime-404.cjs",
-    "test:ru-services": "node --test scripts/ru-services-regression.cjs",
+    "test:ru-services": "node --test scripts/ru-services-regression.cjs scripts/ru-treatment-service-regression.cjs",
     "test:ru-services:runtime": "node --test scripts/ru-services-runtime.cjs"
   },
   "dependencies": {

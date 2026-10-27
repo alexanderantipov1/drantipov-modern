@@ -36,9 +36,11 @@ function get(route) {
   })());
   return fetched.get(route);
 }
-const parentByGroup = { "full-arch": "full-arch-implants", multiple: "single-tooth", "bone-loss": "zygomatic-implants", cosmetic: "facial-cosmetic" };
+const parentByGroup = { "full-arch": "full-arch-implants", multiple: "single-tooth", "bone-loss": "bone-grafting", cosmetic: "facial-cosmetic", "implant-care": "implant-rescue", planning: "single-tooth" };
+const neutralSlugs = ["all-on-4-revision", "peri-implantitis", "implant-consultation", "sinus-lift"];
 
-test("seven new RU services: unique metadata, canonical/lang, FAQ parity, images and discovery", async t => {
+test("twelve RU services: unique metadata, canonical/lang, FAQ parity, images and discovery", async t => {
+  assert.equal(ruServiceDiscovery.length, 12);
   const [hub, sitemap] = await Promise.all([get("/ru/expertise"), get("/sitemap.xml")]);
   const titles = new Set();
   const descriptions = new Set();
@@ -57,6 +59,7 @@ test("seven new RU services: unique metadata, canonical/lang, FAQ parity, images
       const title = plain(html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || "");
       const description = metas.find(meta => meta.name === "description")?.content;
       assert.match(title, /[А-Яа-яЁё]/);
+       assert.ok(title.length <= 60, "concise page title");
       assert.ok(!titles.has(title), "unique title");
       assert.ok(description && description.length > 40 && /[А-Яа-яЁё]/.test(description), "specific Russian description");
       assert.ok(!descriptions.has(description), "unique description");
@@ -65,7 +68,9 @@ test("seven new RU services: unique metadata, canonical/lang, FAQ parity, images
       assert.equal((title.match(/Антипов/gi) || []).length, 1, "single branding");
       assert.equal([...html.matchAll(/<h1\b/gi)].length, 1);
       assert.ok(!metas.some(meta => meta.name === "robots" && /noindex/.test(meta.content)), "indexable service");
-      assert.doesNotMatch(visible, /100\s*%\s*(?:успех|гарант)|полностью\s+безопасн|гарантированн(?:ый|ая|ое)\s+результат|без\s+риска\s+осложнений|пожизненная\s+гарантия/i);
+      // The explicit disclaimer "a goal, not a guaranteed result" is not a promise.
+      const claims = visible.replace(/цель,\s*а\s+не\s+гарантированный\s+результат/gi, "");
+      assert.doesNotMatch(claims, /100\s*%\s*(?:успех|гарант)|полностью\s+безопасн|гарантированн(?:ый|ая|ое)\s+результат|без\s+риска\s+осложнений|пожизненная\s+гарантия/i);
       assert.doesNotMatch(visible, /Base64-Image-Removed|Редактору:|Выводим рандомные|медицински\s+проверено|клинически\s+проверено/i);
       const schemas = nodes(html);
       assert.ok(!schemas.some(node => node.reviewedBy), "no unsupported clinical-review attribution");
@@ -80,6 +85,19 @@ test("seven new RU services: unique metadata, canonical/lang, FAQ parity, images
       // Check any content images present, excluding shared branded chrome.
       const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1] || "";
       assert.ok(main, "rendered service main content");
+       const mainText = plain(main);
+       assert.match(mainText, /не заменяет очную консультацию/);
+       assert.match(mainText, /Результат лечения не гарантирован/);
+       assert.match(mainText, /Запись подтверждается сотрудником клиники/);
+       assert.equal([...html.matchAll(/<footer\b/g)].length, 1, "one shared footer remains rendered");
+       if (service.group === "cosmetic" || neutralSlugs.includes(service.id)) {
+         assert.doesNotMatch(mainText, /4\.9\s*\(247\)|сертифицированн.*(?:филлер|ботулин)/i, "no invented rating or cosmetic credential");
+         const consultation = main.match(/<section\b[^>]*id="consultation"[\s\S]*$/)?.[0] || "";
+         assert.ok(consultation, "service inquiry section renders");
+         assert.match(plain(consultation), /Заявка на консультацию/);
+         assert.match(plain(consultation), /Шаг 1 из 2/);
+         assert.doesNotMatch(plain(consultation), /бесплат|3D|КТ включена|отсутствуют зубы|рассроч|FICO|Запись подтверждена/i);
+       }
       for (const image of tags(main, "img")) {
         assert.match(image.alt || "", /[А-Яа-яЁё]/, "Russian descriptive image alt");
         const renderedImage = await fetch(new URL(image.src, base), { signal: AbortSignal.timeout(30000) });
@@ -111,6 +129,6 @@ test("seven new RU services: unique metadata, canonical/lang, FAQ parity, images
       assert.ok(!sitemap.includes(`<loc>${origin}${service.href.replace(/^\/ru/, "")}</loc>`), "no invented EN sitemap route");
     });
   }
-  assert.equal(titles.size, 7);
-  assert.equal(descriptions.size, 7);
+  assert.equal(titles.size, 12);
+  assert.equal(descriptions.size, 12);
 });

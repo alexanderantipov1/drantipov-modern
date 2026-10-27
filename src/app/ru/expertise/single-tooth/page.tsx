@@ -26,5 +26,5 @@ export const metadata: Metadata = finalizeMetadata({
 }, "/ru/expertise/single-tooth");
 
 export default function Page() {
-  return <><RuExpertiseTemplate data={data} /><RuServiceDetailsLinks group="multiple" /></>;
+  return <><RuExpertiseTemplate data={data} /><RuServiceDetailsLinks group="multiple" /><RuServiceDetailsLinks group="planning" /></>;
 }

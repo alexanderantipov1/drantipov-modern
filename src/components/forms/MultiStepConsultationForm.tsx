@@ -71,13 +71,14 @@ interface MultiStepConsultationFormProps {
   locale?: "en" | "ru"
   treatment?: string
   category?: "implant" | "cosmetic"
+  inquiryMode?: boolean
 }
 
-export function MultiStepConsultationForm({ onClose, variant = "modal", locale = "en", treatment, category }: MultiStepConsultationFormProps) {
+export function MultiStepConsultationForm({ onClose, variant = "modal", locale = "en", treatment, category, inquiryMode = false }: MultiStepConsultationFormProps) {
   const isRu = locale === "ru"
-  const isCosmetic = category === "cosmetic"
+  const isInquiry = category === "cosmetic" || inquiryMode
   const tr = (en: string, ru: string) => isRu ? ru : en
-  const [currentStep, setCurrentStep] = useState(isCosmetic ? 2 : 1)
+  const [currentStep, setCurrentStep] = useState(isInquiry ? 2 : 1)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
   const [submitErrorMessage, setSubmitErrorMessage] = useState("")
@@ -106,7 +107,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
     inquiry: "",
   })
 
-  const steps = isCosmetic ? [2, 3] : [1, 2, 3, 4]
+  const steps = isInquiry ? [2, 3] : [1, 2, 3, 4]
   const totalSteps = steps.length
   const stepNumber = steps.indexOf(currentStep) + 1
   const isLastStep = currentStep === steps[totalSteps - 1]
@@ -173,8 +174,8 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
         if (!formData.city.trim()) newErrors.city = tr("City is required", "Укажите город")
         if (!formData.state) newErrors.state = tr("State is required", "Выберите штат")
         if (!formData.zipCode.trim()) newErrors.zipCode = tr("ZIP code is required", "Укажите почтовый индекс")
-        if (!isCosmetic && !formData.paymentPlan) newErrors.paymentPlan = tr("Please select a payment option", "Выберите способ оплаты")
-        if (!isCosmetic && formData.paymentPlan === "yes" && !formData.ficoScore) newErrors.ficoScore = tr("Please select your FICO score range", "Выберите диапазон кредитного рейтинга FICO")
+        if (!isInquiry && !formData.paymentPlan) newErrors.paymentPlan = tr("Please select a payment option", "Выберите способ оплаты")
+        if (!isInquiry && formData.paymentPlan === "yes" && !formData.ficoScore) newErrors.ficoScore = tr("Please select your FICO score range", "Выберите диапазон кредитного рейтинга FICO")
         break
       case 4:
         if (!formData.consultationReadiness) newErrors.consultationReadiness = tr("Please select an option", "Выберите вариант")
@@ -246,8 +247,8 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
         city: formData.city,
         state: formData.state,
         zip: formData.zipCode,
-        // Do not invent answers to implant/financing questions cosmetic patients never see.
-        ...(!isCosmetic ? {
+        // Omit answers to assessment/financing questions inquiry patients never see.
+        ...(!isInquiry ? {
           paymentOptions: String(formData.paymentPlan === "yes"),
           ficoScore: formData.ficoScore,
           damagedTeeth: String(formData.currentSituation.includes("damagedTeeth")),
@@ -261,7 +262,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
         } : {}),
         businessUnit: "Fusion Dental Implants",
         recaptchaToken,
-        ...(formData.appointmentDate && formData.appointmentTime ? {
+        ...(!isInquiry && formData.appointmentDate && formData.appointmentTime ? {
           appointmentDate: formData.appointmentDate,
           appointmentTime: formData.appointmentTime,
           assignedCenter: formData.assignedCenter,
@@ -274,7 +275,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
           referral_source: [
             trackingData.referral_source,
             `Treatment: ${treatment}`,
-            ...(isCosmetic && formData.inquiry.trim() ? [`Inquiry: ${formData.inquiry.trim()}`] : []),
+             ...(isInquiry && formData.inquiry.trim() ? [`Inquiry: ${formData.inquiry.trim()}`] : []),
           ].filter(Boolean).join("\n"),
         } : {}),
       }
@@ -395,7 +396,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
         <p className="text-muted text-sm leading-relaxed max-w-sm mx-auto mb-6">
           {hasAppointment
             ? tr("Your consultation has been scheduled. An appointment coordinator will contact you to confirm the details.", "Вы записались на консультацию. Координатор свяжется с вами, чтобы подтвердить детали.")
-            : isCosmetic
+             : isInquiry
               ? tr("Thank you for your inquiry. The clinic will contact you to discuss availability and consultation details.", "Спасибо за обращение. Клиника свяжется с вами, чтобы уточнить доступность процедуры и условия консультации.")
               : tr("Thank you for your interest! An appointment coordinator will contact you within 1 hour to discuss your options and provide personalized information.", "Спасибо за обращение! Координатор свяжется с вами в течение часа, чтобы обсудить возможные варианты лечения.")}
         </p>
@@ -434,20 +435,20 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
         isInline ? "" : "-mx-6 -mt-2 px-6 pt-5"
       )}>
         <div className="flex items-center justify-between mb-1">
-          <h3 className="text-dark text-lg font-bold">{isCosmetic ? tr("Consultation inquiry", "Заявка на консультацию") : tr("Free Dental Implant Consultation Assessment", "Анкета для бесплатной консультации по имплантации")}</h3>
-          <div className="flex items-center gap-1 bg-primary/5 rounded-lg px-2.5 py-1.5">
+          <h3 className="text-dark text-lg font-bold">{isInquiry ? tr("Consultation inquiry", "Заявка на консультацию") : tr("Free Dental Implant Consultation Assessment", "Анкета для бесплатной консультации по имплантации")}</h3>
+          {!isInquiry && <div className="flex items-center gap-1 bg-primary/5 rounded-lg px-2.5 py-1.5">
             <Star className="w-3 h-3 text-primary fill-primary" />
             <span className="text-dark text-xs font-bold">4.9</span>
             <span className="text-muted text-xs">(247)</span>
-          </div>
+          </div>}
         </div>
-        <p className="text-muted text-xs">{isCosmetic ? tr("The clinic will clarify availability, pricing and consultation details.", "Клиника уточнит доступность процедуры, стоимость и условия консультации.") : tr("No pressure · No cost · Includes 3D CT Scan", "Без давления · Бесплатная консультация по имплантации · 3D КТ включена · Действуют ограничения")}</p>
+        <p className="text-muted text-xs">{isInquiry ? tr("The clinic will clarify availability, pricing and consultation details.", "Клиника уточнит доступность процедуры, стоимость и условия консультации.") : tr("No pressure · No cost · Includes 3D CT Scan", "Без давления · Бесплатная консультация по имплантации · 3D КТ включена · Действуют ограничения")}</p>
         {treatment && <p className="mt-2 text-sm text-dark">{tr("Treatment of interest", "Направление обращения")}: {treatment}</p>}
       </div>
 
       <div className="pb-3">
         <div className="flex items-center justify-between mb-2">
-          {(isCosmetic ? (isRu ? ["Контакты", "Адрес"] : ["Contact", "Address"]) : (isRu ? ["Анкета", "Контакты", "Адрес", "Запись"] : ["Assessment", "Contact", "Address", "Schedule"])).map((label, i) => (
+          {(isInquiry ? (isRu ? ["Контакты", "Адрес"] : ["Contact", "Address"]) : (isRu ? ["Анкета", "Контакты", "Адрес", "Запись"] : ["Assessment", "Contact", "Address", "Schedule"])).map((label, i) => (
             <span key={label} className={cn(
               "text-[10px] font-semibold uppercase tracking-wider transition-colors",
               stepNumber === i + 1 ? "text-primary" : stepNumber > i + 1 ? "text-primary/50" : "text-muted/30"
@@ -466,7 +467,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
       </div>
 
       <div className={cn(isInline ? "" : "flex-1 overflow-y-auto pb-2")}>
-        {!isCosmetic && currentStep === 1 && (
+        {!isInquiry && currentStep === 1 && (
           <div className="space-y-5">
             <div>
               <h3 className="text-sm font-bold text-dark mb-1">{tr("Do any of these apply to you?", "Что из перечисленного относится к вам?")}</h3>
@@ -529,7 +530,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
               <input type="email" value={formData.email} onChange={(e) => updateField("email", e.target.value)} placeholder="jane@email.com" className={cn(inputClass, errors.email && inputErrorClass)} />
               {errors.email && <p className="text-[11px] text-red-500 mt-1">{errors.email}</p>}
             </div>
-            {isCosmetic && (
+            {isInquiry && (
               <div>
                 <label htmlFor="consultation-inquiry" className="block text-xs font-semibold text-dark mb-1.5">{tr("Your question or wishes (optional)", "Ваш вопрос или пожелания (необязательно)")}</label>
                 <textarea id="consultation-inquiry" value={formData.inquiry} onChange={(e) => updateField("inquiry", e.target.value)} maxLength={2000} rows={3} className={inputClass} />
@@ -577,7 +578,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
               <input type="text" value={formData.zipCode} onChange={(e) => updateField("zipCode", e.target.value.replace(/\D/g, "").substring(0, 5))} placeholder="95678" className={cn(inputClass, errors.zipCode && inputErrorClass)} />
               {errors.zipCode && <p className="text-[11px] text-red-500 mt-1">{errors.zipCode}</p>}
             </div>
-            {!isCosmetic && <div className="pt-3 border-t border-dark/5">
+            {!isInquiry && <div className="pt-3 border-t border-dark/5">
               <h3 className="text-sm font-bold text-dark mb-1">{tr("Payment Options", "Варианты оплаты")}</h3>
               <p className="text-xs text-muted mb-3">{tr("Would you like to explore affordable payment options?", "Хотите узнать о доступных вариантах рассрочки?")}</p>
               <div className="space-y-2">
@@ -600,7 +601,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
           </div>
         )}
 
-        {!isCosmetic && currentStep === 4 && (
+        {!isInquiry && currentStep === 4 && (
           <div className="space-y-4">
             <div>
               <h3 className="text-sm font-bold text-dark mb-1">{tr("Ready to Schedule?", "Готовы записаться?")}</h3>
@@ -690,7 +691,7 @@ export function MultiStepConsultationForm({ onClose, variant = "modal", locale =
           )}
         </button>
       </div>
-      {!isCosmetic && currentStep === 4 && (
+      {!isInquiry && currentStep === 4 && (
         <p className="text-center text-muted/50 text-[10px] mt-3">
           {tr("Free dental implant consultation · Restrictions apply · No obligation · Includes complimentary CT scan", "Бесплатная консультация по имплантации · Действуют ограничения · Без обязательств · 3D КТ включена")}
         </p>

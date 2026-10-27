@@ -155,7 +155,14 @@ export default function RuTreatmentServicePage({ service }: { service: ServiceBr
             </a>
           </div>
           <div className="rounded-3xl border border-dark/10 bg-white p-6 shadow-sm sm:p-8">
-            <MultiStepConsultationForm key={service.slug} variant="inline" locale="ru" treatment={service.treatment} category={service.category} />
+            <MultiStepConsultationForm
+              key={service.slug}
+              variant="inline"
+              locale="ru"
+              treatment={service.treatment}
+              category={service.category}
+              inquiryMode={["all-on-4-revision", "peri-implantitis", "implant-consultation", "sinus-lift"].includes(service.slug)}
+            />
           </div>
         </div>
       </section>

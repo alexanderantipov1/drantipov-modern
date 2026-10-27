@@ -142,8 +142,8 @@ test("Server template always uses existing Fusion multistep form with RU service
   const structured = load("src/lib/structured-data.ts", { "@/constants/siteConfig": { siteConfig } });
   const { default: Page } = load("src/components/ru-services/RuTreatmentServicePage.tsx", {
     "next/link": { default: el("a"), __esModule: true },
-    "@/components/forms/MultiStepConsultationForm": { MultiStepConsultationForm: ({ treatment, category, locale, variant }) =>
-      React.createElement("form", { "data-treatment": treatment, "data-category": category, lang: locale, "data-variant": variant }) },
+    "@/components/forms/MultiStepConsultationForm": { MultiStepConsultationForm: ({ treatment, category, locale, variant, inquiryMode }) =>
+      React.createElement("form", { "data-treatment": treatment, "data-category": category, lang: locale, "data-variant": variant, "data-inquiry": String(inquiryMode) }) },
     "@/constants/siteConfig": { siteConfig },
     "@/lib/structured-data": structured,
   });
@@ -179,6 +179,14 @@ test("Server template always uses existing Fusion multistep form with RU service
     service: { ...service, category: "implant", treatment: "All-on-6" },
   }));
   assert.match(implant, /data-treatment="All-on-6" data-category="implant" lang="ru"/);
+  assert.match(implant, /data-inquiry="false"/);
+  for (const slug of ["all-on-4-revision", "peri-implantitis", "implant-consultation", "sinus-lift"]) {
+    const inquiry = renderToStaticMarkup(React.createElement(Page, {
+      service: { ...service, slug, category: "implant", treatment: "Оценка лечения" },
+    }));
+    assert.match(inquiry, /data-category="implant"/);
+    assert.match(inquiry, /data-inquiry="true"/);
+  }
 });
 
 // Existing multistep form, entirely offline: fetch and reCAPTCHA are test doubles.
@@ -237,10 +245,18 @@ const contactFields = {
   street: "Offline address", city: "Roseville", state: "CA", zipCode: "95678",
 };
 
-for (const treatment of ["Ботулинотерапия лица", "Увеличение и коррекция губ"]) {
-  test(`Existing multistep cosmetic RU inquiry skips implant/payment questions and sends permitted context: ${treatment}`, async () => {
-    const form = multistepHarness({ locale: "ru", variant: "inline", treatment, category: "cosmetic" });
-    const forbidden = /имплант|протез|отсутствуют зубы|оплат|рассроч|FICO|бесплат|3D|\bCT\b|Assessment|First Name/i;
+for (const [treatment, category, inquiryMode] of [
+  ["Ботулинотерапия лица", "cosmetic", false],
+  ["Увеличение и коррекция губ", "cosmetic", false],
+  ["Контурная пластика филлерами", "cosmetic", false],
+  ["Ревизия All-on-4", "implant", true],
+  ["Лечение периимплантита", "implant", true],
+  ["Консультация по имплантации", "implant", true],
+  ["Синус-лифтинг", "implant", true],
+]) {
+  test(`Existing multistep RU inquiry omits dental/finance/scheduling questions and sends permitted context: ${treatment}`, async () => {
+    const form = multistepHarness({ locale: "ru", variant: "inline", treatment, category, inquiryMode });
+    const forbidden = /отсутствуют зубы|У меня|рассроч|FICO|бесплат|3D|\bCT\b|Assessment|First Name|4\.9\s*\(247\)|Готовы записаться/i;
     let html = form.render();
     assert.ok(html.includes(treatment));
     assert.match(html, /Шаг 1 из 2/);
@@ -265,7 +281,12 @@ for (const treatment of ["Ботулинотерапия лица", "Увели�
     assert.equal(request.body.dob, "1990-01-02");
     assert.equal(request.body.recaptchaToken, "offline-test-token");
     assert.deepEqual(form.actions, ["form_submit"]);
-    for (const key of ["paymentOptions", "ficoScore", "missingTeeth", "currentSolutionsDentures", "treatment", "message"]) {
+    for (const key of [
+      "paymentOptions", "ficoScore", "damagedTeeth", "missingTeeth", "gumDisease",
+      "currentSmileNone", "currentSolutionsNone", "currentSolutionsImplants",
+      "currentSolutionsBridgesCrowns", "currentSolutionsDentures",
+      "appointmentDate", "appointmentTime", "assignedCenter", "treatment", "message",
+    ]) {
       assert.equal(key in request.body, false, `${key} is not fabricated or sent as an ignored field`);
     }
     assert.match(form.render(), /Мы свяжемся с вами/);
@@ -329,19 +350,35 @@ test("Implant selected treatment is carried in referral_source without changing 
   assert.equal(form.requests[0].body.referral_source, "https://referrer.example/\nTreatment: All-on-6");
 });
 
-test("Existing Fusion failure and unavailable verification never show success", async () => {
-  for (const options of [{ deliveryOK: false }, { tokenError: true }]) {
-    const form = multistepHarness({ locale: "ru", treatment: "Ботулинотерапия", category: "cosmetic" }, options);
-    form.render();
-    form.fields(contactFields);
-    form.step(3);
-    form.render();
-    await form.click("Отправить заявку");
+test("Original five implant configuration pages retain the four-step assessment", () => {
+  for (const treatment of ["All-on-4", "Полный ряд на пяти имплантах", "All-on-6", "Имплантация нескольких зубов", "Птеригоидные импланты"]) {
+    const form = multistepHarness({ locale: "ru", treatment, category: "implant" });
     const html = form.render();
-    assert.match(html, /Не удалось отправить заявку/);
-    assert.match(html, /tel:\+19167832110/);
-    assert.doesNotMatch(html, /Мы свяжемся с вами/);
-    if (options.tokenError) assert.equal(form.requests.length, 0);
+    assert.match(html, /Шаг 1 из 4/);
+    assert.match(html, /У меня отсутствуют зубы/);
+    assert.match(html, /Анкета для бесплатной консультации по имплантации/);
+    assert.match(html, /3D КТ включена/);
+  }
+});
+
+test("Existing Fusion failure and unavailable verification never show success", async () => {
+  for (const props of [
+    { locale: "ru", treatment: "Ботулинотерапия", category: "cosmetic" },
+    { locale: "ru", treatment: "Синус-лифтинг", category: "implant", inquiryMode: true },
+  ]) {
+    for (const options of [{ deliveryOK: false }, { tokenError: true }]) {
+      const form = multistepHarness(props, options);
+      form.render();
+      form.fields(contactFields);
+      form.step(3);
+      form.render();
+      await form.click("Отправить заявку");
+      const html = form.render();
+      assert.match(html, /Не удалось отправить заявку/);
+      assert.match(html, /tel:\+19167832110/);
+      assert.doesNotMatch(html, /Мы свяжемся с вами/);
+      if (options.tokenError) assert.equal(form.requests.length, 0);
+    }
   }
 });
 

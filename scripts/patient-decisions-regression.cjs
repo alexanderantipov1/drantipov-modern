@@ -15,6 +15,7 @@ Module._resolveFilename = function (name, ...args) {
 };
 
 const { patientDecisionArticles: articles } = require("../src/constants/patientDecisionArticles.ts");
+const { zygomaticVideoArticle } = require("../src/constants/zygomaticVideoArticle.ts");
 const { insightPosts } = require("../src/constants/insights.ts");
 const { indexableRoutes, getSeoAlternates } = require("../src/lib/seo-foundation.ts");
 const map = require("../research/article-sources/patient-decisions-source-map.json");
@@ -53,8 +54,30 @@ test("all six sources have unique original articles and discovery entries", () =
   }
 });
 
+test("video case preserves attribution, source timestamps, and discovery", () => {
+  const a = zygomaticVideoArticle;
+  const route = `/for-patients/insights/${a.slug}`;
+  assert.equal(insightPosts.filter(p => p.slug === a.slug).length, 1);
+  assert.ok(indexableRoutes.includes(route));
+  assert.equal(getSeoAlternates(route).languages, undefined);
+  assert.equal(a.editorialReviewPending, true);
+  assert.equal(a.faqs.length, 7);
+  assert.equal(a.sections[0].table.rows.length, 4);
+  for (const t of [0, 53, 170, 262]) {
+    assert.ok(links(a).includes(`https://www.youtube.com/watch?v=KBG7C6-WV7o&t=${t}s`));
+  }
+  for (const href of links(a).filter(h => h.startsWith("/"))) assert.ok(indexableRoutes.includes(href));
+  assert.ok(fs.existsSync(`public${a.image}`));
+  const body = paras(a).map(text).join(" ");
+  assert.match(body, /August 19, 2021/);
+  assert.match(body, /four zygomatic implants and one pterygoid implant/);
+  assert.match(body, /Exocad/);
+  assert.match(body, /3D-printed/);
+  assert.match(body, /does not establish long-term follow-up/);
+});
+
 // Validate the generated production HTML, not only the article data.
-for (const a of articles) test(`built page: ${a.slug}`, () => {
+for (const a of [...articles, zygomaticVideoArticle]) test(`built page: ${a.slug}`, () => {
   const route = `/for-patients/insights/${a.slug}`;
   const html = fs.readFileSync(`.next/server/app${route}.html`, "utf8");
   const visible = normalize(html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "").replace(/<\/(?:p|h[1-6]|div|li|td|th)>/gi, " ").replace(/<[^>]+>/g, ""));

@@ -18,7 +18,21 @@ import {
 import { Loader2, CheckCircle, AlertCircle } from "lucide-react"
 import Link from "next/link"
 
-export function ConsultationForm() {
+interface ConsultationFormProps {
+  locale?: "en" | "ru"
+  treatment?: string
+  category?: "implant" | "cosmetic"
+}
+
+export function ConsultationForm({ locale = "en", treatment, category }: ConsultationFormProps = {}) {
+  const isRu = locale === "ru"
+  const tr = (en: string, ru: string) => isRu ? ru : en
+  // Keep the existing API enum. The specific service is delivered in the
+  // existing message field, which the notification route already persists.
+  const treatmentPrefix = treatment ? `${isRu ? "Направление" : "Treatment"}: ${treatment}\n\n` : ""
+  const validationText = (message?: string) => isRu
+    ? "Проверьте поле: укажите корректные данные."
+    : message
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
@@ -32,6 +46,7 @@ export function ConsultationForm() {
     resolver: zodResolver(consultationFormSchema),
     defaultValues: {
       preferredContact: "email",
+      ...(treatment ? { interest: category === "implant" ? "Dental Implants" as const : "Other" as const } : {}),
     },
   })
 
@@ -45,7 +60,7 @@ export function ConsultationForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(treatment ? { ...data, message: `${treatmentPrefix}${data.message ?? ""}` } : data),
       })
 
       if (!response.ok) {
@@ -77,7 +92,7 @@ export function ConsultationForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
           <Label htmlFor="firstName">
-            First Name <span className="text-red-500">*</span>
+            {tr("First Name", "Имя")} <span className="text-red-500">*</span>
           </Label>
           <Input
             id="firstName"
@@ -86,13 +101,13 @@ export function ConsultationForm() {
             className={errors.firstName ? "border-red-500" : ""}
           />
           {errors.firstName && (
-            <p className="text-sm text-red-500">{errors.firstName.message}</p>
+            <p className="text-sm text-red-500">{validationText(errors.firstName.message)}</p>
           )}
         </div>
 
         <div className="space-y-2">
           <Label htmlFor="lastName">
-            Last Name <span className="text-red-500">*</span>
+            {tr("Last Name", "Фамилия")} <span className="text-red-500">*</span>
           </Label>
           <Input
             id="lastName"
@@ -101,7 +116,7 @@ export function ConsultationForm() {
             className={errors.lastName ? "border-red-500" : ""}
           />
           {errors.lastName && (
-            <p className="text-sm text-red-500">{errors.lastName.message}</p>
+            <p className="text-sm text-red-500">{validationText(errors.lastName.message)}</p>
           )}
         </div>
       </div>
@@ -110,7 +125,7 @@ export function ConsultationForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
           <Label htmlFor="email">
-            Email <span className="text-red-500">*</span>
+            {tr("Email", "Электронная почта")} <span className="text-red-500">*</span>
           </Label>
           <Input
             id="email"
@@ -119,13 +134,13 @@ export function ConsultationForm() {
             className={errors.email ? "border-red-500" : ""}
           />
           {errors.email && (
-            <p className="text-sm text-red-500">{errors.email.message}</p>
+            <p className="text-sm text-red-500">{validationText(errors.email.message)}</p>
           )}
         </div>
 
         <div className="space-y-2">
           <Label htmlFor="phone">
-            Phone <span className="text-red-500">*</span>
+            {tr("Phone", "Телефон")} <span className="text-red-500">*</span>
           </Label>
           <Input
             id="phone"
@@ -134,53 +149,62 @@ export function ConsultationForm() {
             className={errors.phone ? "border-red-500" : ""}
           />
           {errors.phone && (
-            <p className="text-sm text-red-500">{errors.phone.message}</p>
+            <p className="text-sm text-red-500">{validationText(errors.phone.message)}</p>
           )}
         </div>
       </div>
 
       {/* Interest Select */}
+      {treatment ? (
+        <div className="space-y-2">
+          <Label htmlFor="service-treatment">{tr("Treatment", "Направление обращения")}</Label>
+          <Input id="service-treatment" value={treatment} readOnly />
+          <input type="hidden" {...register("interest")} />
+        </div>
+      ) : (
       <div className="space-y-2">
         <Label htmlFor="interest">
-          I'm Interested In <span className="text-red-500">*</span>
+          {tr("I'm Interested In", "Что вас интересует")} <span className="text-red-500">*</span>
         </Label>
-        <Select onValueChange={(value) => setValue("interest", value as any)}>
+        <Select onValueChange={(value) => setValue("interest", value as ConsultationFormData["interest"])}>
           <SelectTrigger className={errors.interest ? "border-red-500" : ""}>
-            <SelectValue placeholder="Select a procedure" />
+            <SelectValue placeholder={tr("Select a procedure", "Выберите направление")} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="Dental Implants">Dental Implants</SelectItem>
-            <SelectItem value="Full-Arch Restoration">Full-Arch Restoration (All-on-X)</SelectItem>
-            <SelectItem value="Corrective Jaw Surgery">Corrective Jaw Surgery</SelectItem>
-            <SelectItem value="Bone Grafting">Bone Grafting</SelectItem>
-            <SelectItem value="Sleep Apnea Surgery">Sleep Apnea Surgery</SelectItem>
-            <SelectItem value="Wisdom Teeth Removal">Wisdom Teeth Removal</SelectItem>
-            <SelectItem value="Other">Other</SelectItem>
+            <SelectItem value="Dental Implants">{tr("Dental Implants", "Имплантация зубов")}</SelectItem>
+            <SelectItem value="Full-Arch Restoration">{tr("Full-Arch Restoration (All-on-X)", "Восстановление зубного ряда (All-on-X)")}</SelectItem>
+            <SelectItem value="Corrective Jaw Surgery">{tr("Corrective Jaw Surgery", "Коррекция челюстей")}</SelectItem>
+            <SelectItem value="Bone Grafting">{tr("Bone Grafting", "Костная пластика")}</SelectItem>
+            <SelectItem value="Sleep Apnea Surgery">{tr("Sleep Apnea Surgery", "Хирургическое лечение апноэ сна")}</SelectItem>
+            <SelectItem value="Wisdom Teeth Removal">{tr("Wisdom Teeth Removal", "Удаление зубов мудрости")}</SelectItem>
+            <SelectItem value="Other">{tr("Other", "Другое")}</SelectItem>
           </SelectContent>
         </Select>
         {errors.interest && (
-          <p className="text-sm text-red-500">{errors.interest.message}</p>
+          <p className="text-sm text-red-500">{validationText(errors.interest.message)}</p>
         )}
       </div>
+      )}
 
       {/* Message */}
       <div className="space-y-2">
-        <Label htmlFor="message">Tell Us About Your Situation (Optional)</Label>
+        <Label htmlFor="message">{tr("Tell Us About Your Situation (Optional)", "Ваш вопрос или пожелания (необязательно)")}</Label>
         <Textarea
           id="message"
           rows={4}
           {...register("message")}
-          placeholder="Share any details about your dental concerns, questions, or goals..."
+          maxLength={treatment ? 2000 - treatmentPrefix.length : undefined}
+          placeholder={isRu ? "Что вы хотите обсудить на консультации? Не указывайте медицинские документы или конфиденциальные сведения." : "Share any details about your dental concerns, questions, or goals..."}
           className={errors.message ? "border-red-500" : ""}
         />
         {errors.message && (
-          <p className="text-sm text-red-500">{errors.message.message}</p>
+          <p className="text-sm text-red-500">{validationText(errors.message.message)}</p>
         )}
       </div>
 
       {/* Preferred Contact Method */}
       <div className="space-y-2">
-        <Label>Preferred Contact Method <span className="text-red-500">*</span></Label>
+        <Label>{tr("Preferred Contact Method", "Предпочтительный способ связи")} <span className="text-red-500">*</span></Label>
         <div className="flex gap-4">
           <label className="flex items-center gap-2 cursor-pointer">
             <input
@@ -189,7 +213,7 @@ export function ConsultationForm() {
               {...register("preferredContact")}
               className="w-4 h-4 text-primary-600"
             />
-            <span className="text-sm text-neutral-700">Email</span>
+            <span className="text-sm text-neutral-700">{tr("Email", "Электронная почта")}</span>
           </label>
           <label className="flex items-center gap-2 cursor-pointer">
             <input
@@ -198,7 +222,7 @@ export function ConsultationForm() {
               {...register("preferredContact")}
               className="w-4 h-4 text-primary-600"
             />
-            <span className="text-sm text-neutral-700">Phone</span>
+            <span className="text-sm text-neutral-700">{tr("Phone", "Телефон")}</span>
           </label>
         </div>
       </div>
@@ -212,24 +236,24 @@ export function ConsultationForm() {
             className="mt-1 w-4 h-4 text-primary-600 border-neutral-300 rounded"
           />
           <span className="text-sm text-neutral-700">
-            I agree to the{" "}
-            <Link href="/legal/privacy-policy" className="text-primary-600 hover:underline">
-              Privacy Policy
+            {tr("I agree to the", "Я принимаю")}{" "}
+            <Link href={isRu ? "/ru/legal/privacy-policy" : "/legal/privacy-policy"} className="text-primary-600 hover:underline">
+              {tr("Privacy Policy", "Политику конфиденциальности")}
             </Link>{" "}
-            and consent to being contacted about my inquiry. <span className="text-red-500">*</span>
+            {tr("and consent to being contacted about my inquiry.", "и согласен(на) на связь со мной по моему обращению.")} <span className="text-red-500">*</span>
           </span>
         </label>
         {errors.consent && (
-          <p className="text-sm text-red-500">{errors.consent.message}</p>
+          <p className="text-sm text-red-500">{isRu ? "Для отправки необходимо ваше согласие." : errors.consent.message}</p>
         )}
       </div>
 
       {/* Security Notice */}
       <div className="bg-neutral-50 border border-neutral-200 rounded-lg p-4">
         <p className="text-xs text-neutral-600">
-          🔒 <strong>Your privacy is important to us.</strong> We follow best practices for data security.
+          {isRu ? <>Не отправляйте через форму медицинские документы или конфиденциальные сведения о здоровье. Контактные данные нужны для ответа на ваш запрос.</> : <>🔒 <strong>Your privacy is important to us.</strong> We follow best practices for data security.
           This form does NOT collect medical records or protected health information (PHI). We will only use
-          your contact information to respond to your consultation request.
+          your contact information to respond to your consultation request.</>}
         </p>
       </div>
 
@@ -243,33 +267,33 @@ export function ConsultationForm() {
         {isSubmitting ? (
           <>
             <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-            Submitting...
+            {tr("Submitting...", "Отправляем…")}
           </>
         ) : (
-          "Schedule Consultation"
+          tr("Schedule Consultation", "Отправить запрос на консультацию")
         )}
       </Button>
 
       {/* Success/Error Messages */}
       {submitStatus === "success" && (
-        <div className="bg-green-50 border border-green-200 rounded-lg p-4 flex items-start gap-3">
+        <div role="status" className="bg-green-50 border border-green-200 rounded-lg p-4 flex items-start gap-3">
           <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
           <div className="space-y-1">
-            <p className="font-semibold text-green-900">Thank you for your consultation request!</p>
+            <p className="font-semibold text-green-900">{tr("Thank you for your consultation request!", "Спасибо! Запрос отправлен.")}</p>
             <p className="text-sm text-green-700">
-              We've received your information and will contact you within 24 hours to schedule your consultation.
+              {tr("We've received your information and will contact you within 24 hours to schedule your consultation.", "Клиника свяжется с вами для уточнения деталей. Дата консультации ещё не подтверждена.")}
             </p>
           </div>
         </div>
       )}
 
       {submitStatus === "error" && (
-        <div className="bg-red-50 border border-red-200 rounded-lg p-4 flex items-start gap-3">
+        <div role="alert" className="bg-red-50 border border-red-200 rounded-lg p-4 flex items-start gap-3">
           <AlertCircle className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
           <div className="space-y-1">
-            <p className="font-semibold text-red-900">Oops! Something went wrong.</p>
+            <p className="font-semibold text-red-900">{tr("Oops! Something went wrong.", "Не удалось отправить запрос.")}</p>
             <p className="text-sm text-red-700">
-              Please try again or call us directly at (916) 783-2110.
+              {tr("Please try again or call us directly at (916) 783-2110.", "Попробуйте ещё раз или позвоните в клинику: (916) 783-2110.")}
             </p>
           </div>
         </div>

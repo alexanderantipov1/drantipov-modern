@@ -11,6 +11,8 @@ import LanguageToggle from "@/components/LanguageToggle";
 const expertiseItems = [
   { slug: "full-arch-implants", title: "Имплантация полного зубного ряда", desc: "All-on-4, All-on-6, скуловые импланты" },
   { slug: "single-tooth", title: "Одиночные импланты", desc: "Замена одного зуба" },
+  { slug: "multiple-teeth-implants", title: "Имплантация нескольких зубов", desc: "Коронки и мосты на имплантах" },
+  { slug: "facial-cosmetic", title: "Эстетика лица", desc: "Ботулинотерапия и филлеры для губ" },
   { slug: "jaw-surgery", title: "Корригирующая хирургия", desc: "Ортогнатическая хирургия" },
   { slug: "sleep-apnea", title: "Хирургия апноэ сна", desc: "Выдвижение верхней и нижней челюсти" },
   { slug: "bone-grafting", title: "Костная пластика", desc: "Синус-лифтинг, наращивание кости" },

@@ -9,6 +9,7 @@ import Link from "next/link"
 import DualCTA from "@/components/DualCTA"
 import { getBreadcrumbSchema, structuredDataScript } from "@/lib/structured-data"
 import { siteConfig } from "@/constants/siteConfig"
+import { ruServiceDiscovery } from "@/data/ruServiceDiscovery"
 
 const ruHero = {
   image: "/images/procedures/dental-implants@2x-06d1b2ea.jpg",
@@ -21,6 +22,7 @@ const ruHero = {
 }
 
 const ruExpertise = [
+  ...ruServiceDiscovery,
   {
     id: "full-arch-implants",
     shortTitle: "Импланты на полную челюсть",
@@ -169,11 +171,17 @@ export default function ExpertisePage() {
         { "@type": "ListItem", position: 8, name: "Удаление зубов мудрости", url: `${siteConfig.url}/ru/expertise/wisdom-teeth` },
         { "@type": "ListItem", position: 9, name: "Удаление зубов", url: `${siteConfig.url}/ru/expertise/tooth-extractions` },
         { "@type": "ListItem", position: 10, name: "Седация и анестезия", url: `${siteConfig.url}/ru/expertise/sedation-anesthesia` },
-        { "@type": "ListItem", position: 11, name: "Скуловые и крыловидные импланты", url: `${siteConfig.url}/ru/expertise/zygomatic-implants` },
+        { "@type": "ListItem", position: 11, name: "Скуловые импланты", url: `${siteConfig.url}/ru/expertise/zygomatic-implants` },
         { "@type": "ListItem", position: 12, name: "Спасение и переделка имплантов", url: `${siteConfig.url}/ru/expertise/implant-rescue` },
         { "@type": "ListItem", position: 13, name: "Съёмные протезы на имплантах", url: `${siteConfig.url}/ru/expertise/snap-on-dentures` },
         { "@type": "ListItem", position: 14, name: "Эстетика лица", url: `${siteConfig.url}/ru/expertise/facial-cosmetic` },
         { "@type": "ListItem", position: 15, name: "Патология полости рта и биопсия", url: `${siteConfig.url}/ru/expertise/oral-pathology` },
+        ...ruServiceDiscovery.map((service, index) => ({
+          "@type": "ListItem",
+          position: 16 + index,
+          name: service.shortTitle,
+          url: `${siteConfig.url}${service.href}`,
+        })),
       ],
     },
   ]

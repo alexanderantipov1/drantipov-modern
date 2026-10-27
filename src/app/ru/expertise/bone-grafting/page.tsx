@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import RuExpertiseTemplate from "@/components/ru-home/RuExpertiseTemplate";
 import { boneGraftingData as data } from "@/data/ruExpertiseData";
 import { siteUrl } from "@/data/russianImplantFunnel";
+import RuServiceDetailsLinks from "@/components/ru-home/RuServiceDetailsLinks";
 
 export const metadata: Metadata = finalizeMetadata({
   title: data.title,
@@ -25,5 +26,5 @@ export const metadata: Metadata = finalizeMetadata({
 }, "/ru/expertise/bone-grafting");
 
 export default function Page() {
-  return <RuExpertiseTemplate data={data} />;
+  return <><RuExpertiseTemplate data={data} /><RuServiceDetailsLinks group="bone-loss" /></>;
 }

@@ -24,6 +24,10 @@ assert.equal(schema.getAntipovPersonSchema()["@id"], schema.getPhysicianSchema()
 const city = schema.getCityLocalBusinessSchema({ slug: "reno", city: "Reno", state: "NV", stateName: "Nevada", lat: 39.5, lng: -119.8 });
 assert.equal(city["@id"], schema.getOrganizationSchema()["@id"]);
 assert.equal(city.address.addressLocality, "Roseville");
+assert.equal(city.inLanguage, undefined, "Language belongs on the page, not the business");
+const ruStateHub = read("src/app/ru/locations/[state]/page.tsx");
+assert.doesNotMatch(ruStateHub, /inLanguage\s*:/, "MedicalBusiness must not carry inLanguage");
+assert.match(ruStateHub, /<PageIdentity[^>]+locale="ru"/, "Keep Russian language on the page schema");
 const faqs = [{ question: "Вопрос?", answer: "Ответ." }];
 const faq = schema.getFAQSchema(faqs);
 assert.equal(faq.mainEntity[0].name, faqs[0].question);

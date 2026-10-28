@@ -70,7 +70,6 @@ export default async function StateHubPage({
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
       "@id": `${siteConfig.url}/#organization`,
-      inLanguage: "ru",
       name: siteConfig.name,
       description: `Практика челюстно-лицевой хирургии, обслуживающая пациентов по всему штату ${stateName}, под руководством Dr. Alexander V. Antipov (дипломант ABOMS).`,
       url: siteConfig.url,

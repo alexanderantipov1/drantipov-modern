@@ -16,6 +16,8 @@ Module._resolveFilename = function (name, ...args) {
 
 const { patientDecisionArticles: articles } = require("../src/constants/patientDecisionArticles.ts");
 const { zygomaticVideoArticle } = require("../src/constants/zygomaticVideoArticle.ts");
+const { ruToothReplacementArticles } = require("../src/constants/ruToothReplacementArticles.ts");
+const { ruInsightPosts } = require("../src/constants/ruInsights.ts");
 const { insightPosts } = require("../src/constants/insights.ts");
 const { indexableRoutes, getSeoAlternates } = require("../src/lib/seo-foundation.ts");
 const map = require("../research/article-sources/patient-decisions-source-map.json");
@@ -77,6 +79,49 @@ test("video case preserves attribution, source timestamps, and discovery", () =>
 });
 
 // Validate the generated production HTML, not only the article data.
+test("Russian briefs: discovery, localized links, and genuine language pairing", () => {
+  assert.equal(ruToothReplacementArticles.length, 2);
+  for (const a of ruToothReplacementArticles) {
+    const route = `/ru/for-patients/insights/${a.slug}`;
+    assert.equal(ruInsightPosts.filter(p => p.slug === a.slug).length, 1);
+    assert.ok(indexableRoutes.includes(route));
+    assert.ok(a.sections[0].table.rows.length >= 6);
+    assert.equal(a.faqs.length, 7);
+    for (const href of links(a).filter(h => h.startsWith("/"))) {
+      assert.ok(href.startsWith("/ru/"), href);
+      assert.ok(indexableRoutes.includes(href), href);
+    }
+    const html = fs.readFileSync(`.next/server/app${route}.html`, "utf8");
+    const visible = normalize(html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "").replace(/<\/(?:p|h[1-6]|div|li|td|th)>/gi, " ").replace(/<[^>]+>/g, ""));
+    assert.ok(visible.includes(a.title));
+    assert.ok(visible.includes("Клиническая проверка ожидается."));
+    assert.ok(visible.includes("Записаться на консультацию"));
+    assert.ok(html.includes('href="/ru/contact"'));
+    assert.ok(html.includes('href="/ru/about"'));
+    assert.ok(html.includes(`href="https://www.drantipov.com${route}"`));
+    assert.ok(html.includes('<html lang="ru"'));
+    for (const p of paras(a)) assert.ok(visible.includes(normalize(text(p))), "Russian paragraph parity");
+    const nodes = [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)]
+      .flatMap(m => { const v = JSON.parse(m[1]); return Array.isArray(v) ? v : [v]; });
+    const schema = nodes.find(n => n["@type"] === "Article");
+    assert.equal(schema.inLanguage, "ru");
+    assert.equal(schema.author.url, "https://www.drantipov.com/ru/about");
+    const faq = nodes.find(n => n["@type"] === "FAQPage");
+    assert.deepEqual(faq.mainEntity.map(q => ({ question: q.name, answer: q.acceptedAnswer.text })), a.faqs);
+    for (const f of a.faqs) {
+      assert.ok(visible.includes(normalize(f.question)));
+      assert.ok(visible.includes(normalize(f.answer)));
+    }
+    if (a.slug === "dental-bridge-vs-implant-which-is-right") {
+      const en = route.replace("/ru", "");
+      assert.equal(getSeoAlternates(route).languages.en, "https://www.drantipov.com" + en);
+      assert.equal(getSeoAlternates(en).languages.ru, "https://www.drantipov.com" + route);
+    } else {
+      assert.equal(getSeoAlternates(route).languages, undefined);
+    }
+  }
+});
+
 for (const a of [...articles, zygomaticVideoArticle]) test(`built page: ${a.slug}`, () => {
   const route = `/for-patients/insights/${a.slug}`;
   const html = fs.readFileSync(`.next/server/app${route}.html`, "utf8");

@@ -9,6 +9,7 @@
 import type { InsightPost } from "./insights"
 import { ruRevisionArticles } from "./ruRevisionArticles"
 import { ruGuideArticles } from "./ruGuideArticles"
+import { ruToothReplacementArticles } from "./ruToothReplacementArticles"
 
 const baseInsightPostsRu: InsightPost[] = [
   {
@@ -308,6 +309,10 @@ const guideInsightPostsRu: InsightPost[] = ruGuideArticles.map((a) => ({
 }))
 
 export const ruInsightPosts: InsightPost[] = [
+  ...ruToothReplacementArticles.map(a => ({
+    slug: a.slug, title: a.title, excerpt: a.excerpt, date: a.date,
+    image: a.image, category: a.category, readTime: a.readTime, author: a.author,
+  })),
   ...guideInsightPostsRu,
   ...revisionInsightPostsRu,
   ...baseInsightPostsRu,

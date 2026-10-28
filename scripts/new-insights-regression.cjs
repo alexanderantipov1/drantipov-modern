@@ -62,7 +62,12 @@ test("14 unique drafts match their EN route, registry and sitemap inventory; no 
     assert.match(page, /finalizeMetadata\(article \? buildMetadata\(article\)/);
     assert.match(page, /<InsightArticle article=\{article\}/);
     assert.equal(inventory.filter(item => item === route).length, 1, route);
-    assert.ok(!inventory.includes(`/ru${route}`), route);
+    if (slug === "dental-bridge-vs-implant-which-is-right") {
+      assert.ok(inventory.includes(`/ru${route}`), "genuine Russian counterpart");
+      assert.ok(fs.existsSync(`src/app/ru${route}/page.tsx`));
+    } else {
+      assert.ok(!inventory.includes(`/ru${route}`), route);
+    }
   }
   const { buildMetadata } = require("../src/constants/revisionArticles.ts");
   for (const article of articles) {
